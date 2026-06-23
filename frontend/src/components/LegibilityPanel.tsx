@@ -45,7 +45,7 @@ export function LegibilityPanel() {
       const data = await api.legibility(ctx, [a, b], sessionId)
       setSessionId(data.session_id ?? sessionId)
       setReport(data.report)
-      setStatus(data.report ? "" : `No structured output; raw: ${(data.answer || "").slice(0, 200)}`)
+      setStatus(data.report ? "" : "No audit could be generated for these brands — please try again.")
     } catch (e) {
       setStatus(`ERROR: ${(e as Error).message}`)
     } finally {
@@ -60,7 +60,7 @@ export function LegibilityPanel() {
       hint="Per-asset visibility scores for the two analyzed brands."
       actions={
         <Button onClick={onAudit} disabled={!ready || busy || !haveBrands}>
-          {busy ? "auditing…" : "Audit current brands"}
+          {busy ? "auditing…" : "Run audit"}
         </Button>
       }
     >
@@ -73,7 +73,7 @@ export function LegibilityPanel() {
             <span className="text-foreground-subtle">(the brands you analyzed above)</span>
           </>
         ) : (
-          "Analyze 2 brands in the Brand inventory above, then audit them here."
+          "Analyze 2 brands above, then audit them here."
         )}
       </p>
       <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>{status}</StatusLine>

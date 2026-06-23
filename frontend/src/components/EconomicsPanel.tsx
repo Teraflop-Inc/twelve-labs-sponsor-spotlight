@@ -40,7 +40,7 @@ export function EconomicsPanel() {
   const mult = audienceMultiplier(econ)
 
   return (
-    <SectionCard step="2" title="Economic assumptions" hint="Inputs to every $ figure below.">
+    <SectionCard step="2" title="Economic assumptions" hint="Inputs that drive every figure below.">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
         <NumField label="CPM $" value={econ.cpm} onChange={(cpm) => set({ cpm })} width="w-20" />
         <NumField
@@ -114,8 +114,8 @@ export function EconomicsPanel() {
       </div>
 
       <p className="mt-2 text-xs italic text-foreground-subtle">
-        Audience inputs are a transparent stub — pixels can't infer audience; replace with a
-        Nielsen/Samba feed in production.
+        Audience inputs are illustrative placeholders — video alone can't determine audience.
+        Connect a Nielsen or Samba feed for production.
       </p>
     </SectionCard>
   )

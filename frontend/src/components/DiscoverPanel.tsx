@@ -51,7 +51,7 @@ export function DiscoverPanel() {
       const brands = data.discovery?.brands || []
       setDiscovered(brands)
       if (data.discovery?.summary) setSummary(data.discovery.summary)
-      setStatus(`discover ${data.timings?.discover_secs ?? "?"}s · ${brands.length} brands`)
+      setStatus(`Found ${brands.length} brands in ${data.timings?.discover_secs ?? "?"}s.`)
     } catch (e) {
       setStatus(`ERROR: ${(e as Error).message}`)
     } finally {

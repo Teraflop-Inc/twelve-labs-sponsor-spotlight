@@ -130,7 +130,7 @@ export function FootagePanel() {
       title="Footage"
       hint={
         mode === "demo"
-          ? "Preloaded demo collection — locked."
+          ? "Preloaded demo collection (read-only)."
           : "Pick or create a collection, then add broadcasts to index."
       }
       actions={
@@ -156,7 +156,7 @@ export function FootagePanel() {
               </div>
             </div>
             <Chip variant="subtle" size="sm">
-              demo key
+              Server key
             </Chip>
           </div>
           {demo && !demo.enabled && (
@@ -174,7 +174,7 @@ export function FootagePanel() {
       <div className="mt-1 flex flex-wrap items-center gap-2">
         <Select value={picked} onValueChange={setPicked} disabled={!hasKey || stores.length === 0}>
           <SelectTrigger size="medium" className="min-w-[18rem] flex-1">
-            <SelectValue placeholder={hasKey ? "Select a collection" : "enter your API key first"} />
+            <SelectValue placeholder={hasKey ? "Select a collection" : "Add your API key first"} />
           </SelectTrigger>
           <SelectContent>
             {stores.map((s) => (
@@ -197,12 +197,12 @@ export function FootagePanel() {
           <TextField
             value={newName}
             onChange={(e) => setNewName(e.target.value)}
-            placeholder="new collection name, e.g. Bundesliga 2024"
+            placeholder="New collection name (e.g. Premier League 2024)"
             className="min-w-[16rem] flex-1"
           />
           <Select value={newSport} onValueChange={setNewSport}>
             <SelectTrigger size="medium" className="min-w-[10rem]">
-              <SelectValue placeholder="sport" />
+              <SelectValue placeholder="Sport" />
             </SelectTrigger>
             <SelectContent>
               {sports.map((s) => (
@@ -223,7 +223,7 @@ export function FootagePanel() {
         <div className="text-[11px] uppercase tracking-wide text-foreground-subtle">
           Add videos{" "}
           <span className="normal-case text-foreground-subtle">
-            {activeStore ? "→ into the current collection" : "→ load or create a collection first"}
+            {activeStore ? "— adding to the current collection" : "— load or create a collection first"}
           </span>
         </div>
         <p className="mt-1 max-w-prose text-xs text-foreground-muted">

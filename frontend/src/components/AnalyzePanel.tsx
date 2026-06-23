@@ -47,7 +47,7 @@ export function AnalyzePanel() {
       setBrandA(names[0] || "")
       setBrandB(names[1] || "")
       const t = data.timings || {}
-      setStatus(`analyze ${t.analyze_secs ?? "?"}s · ${t.succeeded ?? "?"}/${t.requested ?? "?"} succeeded`)
+      setStatus(`Analyzed ${t.succeeded ?? "?"} of ${t.requested ?? "?"} brands in ${t.analyze_secs ?? "?"}s.`)
     } catch (e) {
       setStatus(`ERROR: ${(e as Error).message}`)
     } finally {
@@ -64,7 +64,7 @@ export function AnalyzePanel() {
     <SectionCard
       step="4"
       title="Analyze brands"
-      hint="Deep-analyze the brands you selected and rank them by weighted media value."
+      hint="Analyze the selected brands and rank them by weighted media value."
       actions={
         <Button onClick={onAnalyze} disabled={!ready || busy || selectedBrands.length === 0}>
           {busy ? "analyzing…" : `Analyze ${selectedBrands.length || ""} selected`.trim()}

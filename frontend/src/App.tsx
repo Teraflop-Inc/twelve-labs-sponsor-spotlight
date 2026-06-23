@@ -64,9 +64,9 @@ function ModeTabs() {
       <p className="text-xs text-foreground-subtle">
         {mode === "demo"
           ? demo && !demo.enabled
-            ? "Demo mode isn't configured on this server."
-            : "Preloaded collection on our key — no key or setup needed."
-          : "Bring your own TwelveLabs key and your own collections."}
+            ? "Demo mode is not configured on this server."
+            : "Runs on a preloaded collection — no API key or setup required."
+          : "Use your own TwelveLabs API key and collections."}
       </p>
     </div>
   )
