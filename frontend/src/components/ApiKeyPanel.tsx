@@ -43,7 +43,7 @@ export function ApiKeyPanel() {
         Get a key from the{" "}
         <a
           className="text-foreground-status-info underline-offset-2 hover:underline"
-          href="https://playground.twelvelabs.io"
+          href="https://playground.twelvelabs.io/dashboard/api-keys"
           target="_blank"
           rel="noreferrer"
         >
