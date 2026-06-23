@@ -1,0 +1,13 @@
+# Runtime state & artifacts (not source)
+state.json
+*.log
+iconik_ingest.json
+
+# Python env
+.venv/
+__pycache__/
+*.pyc
+
+# Local footage
+../videos/
+../workspace/

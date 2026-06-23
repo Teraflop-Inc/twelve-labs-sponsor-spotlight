@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# vite / build caches (the deployable build is emitted to ../backend/webapp)
+.vite/
+dist/
+
+# logs & local env
+*.log
+.env
+.env.local
+.DS_Store

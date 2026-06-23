@@ -1,0 +1,357 @@
+@source "./**/*.{js,mjs,cjs}";
+
+@font-face {
+  font-family: "Milling";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://d2n8i6crd2t3p1.cloudfront.net/font/milling/205TF-Milling-Duplex1mm.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Milling";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://d2n8i6crd2t3p1.cloudfront.net/font/milling/205TF-Milling-Triplex1mm.woff2")
+    format("woff2");
+}
+
+@layer base {
+  :root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@theme inline {
+  /* Namespaced fonts — do not define --font-sans/--font-mono here: @theme
+     variables are global to the consuming app's Tailwind build, and --font-sans
+     also drives --default-font-family, which would silently change the host
+     app's base font. Components use font-tl-sans / font-tl-mono. */
+  --font-tl-sans: var(--tl-font-family-primary), ui-sans-serif, system-ui, sans-serif;
+  --font-tl-mono:
+    var(--tl-font-family-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --color-border-secondary: var(--tl-border-secondary);
+  --color-border-primary: var(--tl-border-primary);
+  --color-border-disabled: var(--tl-border-disabled);
+  --color-border-destructive: var(--tl-border-destructive);
+  --color-surface-body: var(--tl-surface-body);
+  --color-surface-white: var(--tl-surface-white);
+  --color-surface-card: var(--tl-surface-card);
+  --color-surface-primary: var(--tl-surface-primary);
+  --color-surface-primary-inverse: var(--tl-surface-primary-inverse);
+  --color-surface-primary-hover: var(--tl-surface-primary-hover);
+  --color-surface-secondary: var(--tl-surface-secondary);
+  --color-surface-secondary-hover: var(--tl-surface-secondary-hover);
+  --color-surface-muted: var(--tl-surface-muted);
+  --color-surface-disabled: var(--tl-surface-disabled);
+  --color-surface-destructive: var(--tl-surface-destructive);
+  --color-surface-tooltip: var(--tl-surface-tooltip);
+  --color-surface-status-success: var(--tl-surface-status-success);
+  --color-surface-status-warning: var(--tl-surface-status-warning);
+  --color-surface-status-error: var(--tl-surface-status-error);
+  --color-surface-embed: var(--tl-surface-embed);
+  --color-surface-analyze: var(--tl-surface-analyze);
+  --color-surface-search: var(--tl-surface-search);
+  --color-foreground-body: var(--tl-foreground-body);
+  --color-foreground-primary: var(--tl-foreground-primary);
+  --color-foreground-primary-inverse: var(--tl-foreground-primary-inverse);
+  --color-foreground-secondary: var(--tl-foreground-secondary);
+  --color-foreground-muted: var(--tl-foreground-muted);
+  --color-foreground-subtle: var(--tl-foreground-subtle);
+  --color-foreground-disabled: var(--tl-foreground-disabled);
+  --color-foreground-destructive: var(--tl-foreground-destructive);
+  --color-foreground-tooltip: var(--tl-foreground-tooltip);
+  --color-foreground-overlay: var(--tl-foreground-overlay);
+  --color-foreground-status-success: var(--tl-foreground-status-success);
+  --color-foreground-status-warning: var(--tl-foreground-status-warning);
+  --color-foreground-status-error: var(--tl-foreground-status-error);
+  --color-foreground-status-info: var(--tl-foreground-status-info);
+  --color-foreground-embed: var(--tl-foreground-embed);
+  --color-foreground-analyze: var(--tl-foreground-analyze);
+  --color-foreground-search: var(--tl-foreground-search);
+  --color-foreground-accent-purple: var(--tl-foreground-accent-purple);
+  --color-misc-overlay: var(--tl-misc-overlay);
+  --color-misc-border-light: var(--tl-misc-border-light);
+  --color-misc-border-medium: var(--tl-misc-border-medium);
+  --color-misc-ring: var(--tl-misc-ring);
+  --color-misc-status-success: var(--tl-misc-status-success);
+  --color-misc-status-warning: var(--tl-misc-status-warning);
+  --color-misc-status-error: var(--tl-misc-status-error);
+  --color-misc-status-info: var(--tl-misc-status-info);
+  --color-tl-black: var(--tl-color-black);
+  --color-tl-white: var(--tl-color-white);
+  --color-tl-gray-50: var(--tl-color-gray-50);
+  --color-tl-gray-100: var(--tl-color-gray-100);
+  --color-tl-gray-200: var(--tl-color-gray-200);
+  --color-tl-gray-300: var(--tl-color-gray-300);
+  --color-tl-gray-400: var(--tl-color-gray-400);
+  --color-tl-gray-500: var(--tl-color-gray-500);
+  --color-tl-gray-600: var(--tl-color-gray-600);
+  --color-tl-gray-700: var(--tl-color-gray-700);
+  --color-tl-search-lightest-purple: var(--tl-color-search-lightest-purple);
+  --color-tl-search-light-purple: var(--tl-color-search-light-purple);
+  --color-tl-search-purple: var(--tl-color-search-purple);
+  --color-tl-search-dark-purple: var(--tl-color-search-dark-purple);
+  --color-tl-search-lightest-lavender: var(--tl-color-search-lightest-lavender);
+  --color-tl-search-light-lavender: var(--tl-color-search-light-lavender);
+  --color-tl-search-lavender: var(--tl-color-search-lavender);
+  --color-tl-search-dark-lavender: var(--tl-color-search-dark-lavender);
+  --color-tl-embed-lightest-green: var(--tl-color-embed-lightest-green);
+  --color-tl-embed-light-green: var(--tl-color-embed-light-green);
+  --color-tl-embed-green: var(--tl-color-embed-green);
+  --color-tl-embed-dark-green: var(--tl-color-embed-dark-green);
+  --color-tl-embed-lightest-blue: var(--tl-color-embed-lightest-blue);
+  --color-tl-embed-light-blue: var(--tl-color-embed-light-blue);
+  --color-tl-embed-blue: var(--tl-color-embed-blue);
+  --color-tl-embed-dark-blue: var(--tl-color-embed-dark-blue);
+  --color-tl-analyze-lightest-orange: var(--tl-color-analyze-lightest-orange);
+  --color-tl-analyze-light-orange: var(--tl-color-analyze-light-orange);
+  --color-tl-analyze-orange: var(--tl-color-analyze-orange);
+  --color-tl-analyze-dark-orange: var(--tl-color-analyze-dark-orange);
+  --color-tl-analyze-lightest-peach: var(--tl-color-analyze-lightest-peach);
+  --color-tl-analyze-light-peach: var(--tl-color-analyze-light-peach);
+  --color-tl-analyze-peach: var(--tl-color-analyze-peach);
+  --color-tl-analyze-dark-peach: var(--tl-color-analyze-dark-peach);
+  --color-tl-system-color-lightest-red: var(--tl-color-system-color-lightest-red);
+  --color-tl-system-color-light-red: var(--tl-color-system-color-light-red);
+  --color-tl-system-color-red: var(--tl-color-system-color-red);
+  --color-tl-system-color-dark-red: var(--tl-color-system-color-dark-red);
+  --color-tl-system-color-lightest-green: var(--tl-color-system-color-lightest-green);
+  --color-tl-system-color-light-green: var(--tl-color-system-color-light-green);
+  --color-tl-system-color-green: var(--tl-color-system-color-green);
+  --color-tl-system-color-dark-green: var(--tl-color-system-color-dark-green);
+  --color-tl-system-color-lightest-blue: var(--tl-color-system-color-lightest-blue);
+  --color-tl-system-color-light-blue: var(--tl-color-system-color-light-blue);
+  --color-tl-system-color-blue: var(--tl-color-system-color-blue);
+  --color-tl-system-color-dark-blue: var(--tl-color-system-color-dark-blue);
+  --color-tl-system-color-lightest-orange: var(--tl-color-system-color-lightest-orange);
+  --color-tl-system-color-light-orange: var(--tl-color-system-color-light-orange);
+  --color-tl-system-color-orange: var(--tl-color-system-color-orange);
+  --color-tl-system-color-dark-orange: var(--tl-color-system-color-dark-orange);
+  --color-tl-system-color-lightest-emeraldgreen: var(--tl-color-system-color-lightest-emeraldgreen);
+  --color-tl-system-color-light-emeraldgreen: var(--tl-color-system-color-light-emeraldgreen);
+  --color-tl-system-color-emeraldgreen: var(--tl-color-system-color-emeraldgreen);
+  --color-tl-system-color-dark-emeraldgreen: var(--tl-color-system-color-dark-emeraldgreen);
+  --color-tl-system-color-lightest-indigo: var(--tl-color-system-color-lightest-indigo);
+  --color-tl-system-color-light-indigo: var(--tl-color-system-color-light-indigo);
+  --color-tl-system-color-indigo: var(--tl-color-system-color-indigo);
+  --color-tl-system-color-dark-indigo: var(--tl-color-system-color-dark-indigo);
+  --color-tl-master-brand-lightest-emeraldgreen: var(--tl-color-master-brand-lightest-emeraldgreen);
+  --color-tl-master-brand-green: var(--tl-color-master-brand-green);
+  --color-tl-master-brand-light-green: var(--tl-color-master-brand-light-green);
+  --color-tl-master-brand-dark-green: var(--tl-color-master-brand-dark-green);
+  --color-tl-master-brand-lightest-orange: var(--tl-color-master-brand-lightest-orange);
+  --color-tl-master-brand-light-orange: var(--tl-color-master-brand-light-orange);
+  --color-tl-master-brand-orange: var(--tl-color-master-brand-orange);
+  --color-tl-master-brand-dark-orange: var(--tl-color-master-brand-dark-orange);
+  --color-tl-master-brand-lightest-peach: var(--tl-color-master-brand-lightest-peach);
+  --color-tl-master-brand-peach: var(--tl-color-master-brand-peach);
+  --color-tl-master-brand-light-peach: var(--tl-color-master-brand-light-peach);
+  --color-tl-master-brand-dark-peach: var(--tl-color-master-brand-dark-peach);
+  --color-tl-master-brand-lightest-pink: var(--tl-color-master-brand-lightest-pink);
+  --color-tl-master-brand-light-pink: var(--tl-color-master-brand-light-pink);
+  --color-tl-master-brand-pink: var(--tl-color-master-brand-pink);
+  --color-tl-master-brand-dark-pink: var(--tl-color-master-brand-dark-pink);
+
+  --spacing-tl-0: var(--tl-spacing-0);
+  --spacing-tl-1: var(--tl-spacing-1);
+  --spacing-tl-2: var(--tl-spacing-2);
+  --spacing-tl-3: var(--tl-spacing-3);
+  --spacing-tl-4: var(--tl-spacing-4);
+  --spacing-tl-5: var(--tl-spacing-5);
+  --spacing-tl-6: var(--tl-spacing-6);
+  --spacing-tl-8: var(--tl-spacing-8);
+  --spacing-tl-10: var(--tl-spacing-10);
+  --spacing-tl-12: var(--tl-spacing-12);
+  --spacing-tl-16: var(--tl-spacing-16);
+  --spacing-tl-px: var(--tl-spacing-px);
+  --spacing-tl-half: var(--tl-spacing-half);
+  --spacing-tl-1-half: var(--tl-spacing-1-half);
+  --spacing-tl-2-half: var(--tl-spacing-2-half);
+  --spacing-tl-3-half: var(--tl-spacing-3-half);
+  --spacing-tl-4-half: var(--tl-spacing-4-half);
+  --spacing-tl-layout-navbar-height: var(--tl-spacing-layout-navbar-height);
+  --spacing-tl-layout-side-panel-width: var(--tl-spacing-layout-side-panel-width);
+  --spacing-tl-layout-play-top: var(--tl-spacing-layout-play-top);
+  --spacing-tl-layout-play-bottom: var(--tl-spacing-layout-play-bottom);
+  --spacing-tl-layout-generate-top-mobile: var(--tl-spacing-layout-generate-top-mobile);
+  --spacing-tl-size-pagination-item: var(--tl-sizing-pagination-item);
+  --spacing-tl-size-input-sm: var(--tl-sizing-input-sm);
+  --spacing-tl-size-input-md: var(--tl-sizing-input-md);
+  --spacing-tl-size-input-lg: var(--tl-sizing-input-lg);
+  --spacing-tl-size-menu-item-md: var(--tl-sizing-menu-item-md);
+  --spacing-tl-size-menu-item-lg: var(--tl-sizing-menu-item-lg);
+  --spacing-tl-size-select-sm: var(--tl-sizing-select-sm);
+  --spacing-tl-size-select-md: var(--tl-sizing-select-md);
+  --spacing-tl-size-select-lg: var(--tl-sizing-select-lg);
+  --spacing-tl-size-switch-sm-w: var(--tl-sizing-switch-sm-w);
+  --spacing-tl-size-switch-sm-h: var(--tl-sizing-switch-sm-h);
+  --spacing-tl-size-switch-md-w: var(--tl-sizing-switch-md-w);
+  --spacing-tl-size-switch-md-h: var(--tl-sizing-switch-md-h);
+  --spacing-tl-size-switch-thumb-sm: var(--tl-sizing-switch-thumb-sm);
+  --spacing-tl-size-switch-thumb-md: var(--tl-sizing-switch-thumb-md);
+  --spacing-tl-size-checkbox-sm: var(--tl-sizing-checkbox-sm);
+  --spacing-tl-size-checkbox-md: var(--tl-sizing-checkbox-md);
+  --spacing-tl-size-radio-outer: var(--tl-sizing-radio-outer);
+  --spacing-tl-size-radio-inner: var(--tl-sizing-radio-inner);
+  --spacing-tl-size-chip-sm-max-h: var(--tl-sizing-chip-sm-max-h);
+  --spacing-tl-size-chip-md-max-h: var(--tl-sizing-chip-md-max-h);
+
+  /* Do not redefine Tailwind's default --radius-* scale (xs/sm/md/...) here —
+     @theme variables are global to the consuming app's Tailwind build, so that
+     would change every rounded-md etc. in the host app. Use rounded-tlds-* or
+     component-token utilities in library components instead. */
+  --radius-tlds-1: var(--tl-radius-1);
+  --radius-tlds-2: var(--tl-radius-2);
+  --radius-tlds-3: var(--tl-radius-3);
+  --radius-tlds-4: var(--tl-radius-4);
+  --radius-tlds-5: var(--tl-radius-5);
+  --radius-tlds-6: var(--tl-radius-6);
+  --radius-tlds-32: var(--tl-radius-32);
+  --radius-tlds-40: var(--tl-radius-40);
+  --radius-tlds-48: var(--tl-radius-48);
+  --radius-tlds-1-half: var(--tl-radius-1-half);
+  --radius-tlds-2-half: var(--tl-radius-2-half);
+  --radius-textarea: var(--tl-radius-textarea);
+  --radius-chip-button: var(--tl-radius-chip-button);
+  --radius-dialog: var(--tl-radius-dialog);
+  --radius-menu: var(--tl-radius-menu);
+  --radius-pagination-item: var(--tl-radius-pagination-item);
+  --radius-usage-bar: var(--tl-radius-usage-bar);
+  --radius-nav-item: var(--tl-radius-nav-item);
+  --radius-new-button: var(--tl-radius-new-button);
+  --radius-tooltip: var(--tl-radius-tooltip);
+  --radius-spinner: var(--tl-radius-spinner);
+  --radius-dropzone: var(--tl-radius-dropzone);
+  --radius-dropzone-hover: var(--tl-radius-dropzone-hover);
+  --radius-video-thumbnail: var(--tl-radius-video-thumbnail);
+  --radius-video-thumbnail-hover: var(--tl-radius-video-thumbnail-hover);
+  --radius-button-mini: var(--tl-radius-button-mini);
+  --radius-button-mini-hover: var(--tl-radius-button-mini-hover);
+  --radius-button-small: var(--tl-radius-button-small);
+  --radius-button-small-hover: var(--tl-radius-button-small-hover);
+  --radius-button-regular: var(--tl-radius-button-regular);
+  --radius-button-regular-hover: var(--tl-radius-button-regular-hover);
+  --radius-button-medium: var(--tl-radius-button-medium);
+  --radius-button-medium-hover: var(--tl-radius-button-medium-hover);
+  --radius-button-large: var(--tl-radius-button-large);
+  --radius-button-large-hover: var(--tl-radius-button-large-hover);
+  --radius-button-x-large: var(--tl-radius-button-x-large);
+  --radius-button-x-large-hover: var(--tl-radius-button-x-large-hover);
+  --radius-input-sm: var(--tl-radius-input-sm);
+  --radius-input-md: var(--tl-radius-input-md);
+  --radius-input-lg: var(--tl-radius-input-lg);
+  --radius-select-sm: var(--tl-radius-select-sm);
+  --radius-select-md: var(--tl-radius-select-md);
+  --radius-select-lg: var(--tl-radius-select-lg);
+  --radius-chip-container: var(--tl-radius-chip-container);
+  --radius-chip-root: var(--tl-radius-chip-root);
+  --radius-switch-track: var(--tl-radius-switch-track);
+  --radius-switch-track-on-md: var(--tl-radius-switch-track-on-md);
+  --radius-switch-thumb-sm: var(--tl-radius-switch-thumb-sm);
+  --radius-switch-thumb-md: var(--tl-radius-switch-thumb-md);
+  --radius-menu-item-sm: var(--tl-radius-menu-item-sm);
+  --radius-menu-item-md: var(--tl-radius-menu-item-md);
+  --radius-menu-item-lg: var(--tl-radius-menu-item-lg);
+  --radius-slider-thumb: var(--tl-radius-slider-thumb);
+  --radius-slider-thumb-hover: var(--tl-radius-slider-thumb-hover);
+}
+
+/* ---------------------------------------------------------------------------
+ * Enter / exit animations
+ *
+ * Self-contained, dependency-free subset of the tailwindcss-animate API that
+ * the overlay components (tooltip, popover, dialog, dropdown, select, drawer,
+ * …) reference: `animate-in` / `animate-out` drive the keyframes, and the
+ * `fade-*` / `zoom-*` / `slide-*` helpers set the per-property start/end values
+ * via custom properties. Radix's presence machinery relies on these being real
+ * CSS *animations* (it waits for `animationend` before unmounting on close).
+ * ------------------------------------------------------------------------- */
+@keyframes enter {
+  from {
+    opacity: var(--tw-enter-opacity, 1);
+    transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0)
+      scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), 1)
+      rotate(var(--tw-enter-rotate, 0));
+  }
+}
+
+@keyframes exit {
+  to {
+    opacity: var(--tw-exit-opacity, 1);
+    transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0)
+      scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), 1) rotate(var(--tw-exit-rotate, 0));
+  }
+}
+
+@utility animate-in {
+  animation-name: enter;
+  animation-duration: 150ms;
+  animation-fill-mode: both;
+  --tw-enter-opacity: initial;
+  --tw-enter-scale: initial;
+  --tw-enter-rotate: initial;
+  --tw-enter-translate-x: initial;
+  --tw-enter-translate-y: initial;
+}
+
+@utility animate-out {
+  animation-name: exit;
+  animation-duration: 150ms;
+  animation-fill-mode: both;
+  --tw-exit-opacity: initial;
+  --tw-exit-scale: initial;
+  --tw-exit-rotate: initial;
+  --tw-exit-translate-x: initial;
+  --tw-exit-translate-y: initial;
+}
+
+/* Opacity helpers */
+@utility fade-in-0 {
+  --tw-enter-opacity: 0;
+}
+@utility fade-out-0 {
+  --tw-exit-opacity: 0;
+}
+
+/* Scale helpers (value is a percentage, e.g. 95 → 0.95) */
+@utility zoom-in-90 {
+  --tw-enter-scale: 0.9;
+}
+@utility zoom-in-95 {
+  --tw-enter-scale: 0.95;
+}
+@utility zoom-out-95 {
+  --tw-exit-scale: 0.95;
+}
+
+/* Slide helpers (value is the Tailwind spacing step: 2 → 0.5rem, 52 → 13rem) */
+@utility slide-in-from-top-2 {
+  --tw-enter-translate-y: -0.5rem;
+}
+@utility slide-in-from-bottom-2 {
+  --tw-enter-translate-y: 0.5rem;
+}
+@utility slide-in-from-left-2 {
+  --tw-enter-translate-x: -0.5rem;
+}
+@utility slide-in-from-right-2 {
+  --tw-enter-translate-x: 0.5rem;
+}
+@utility slide-in-from-left-52 {
+  --tw-enter-translate-x: -13rem;
+}
+@utility slide-in-from-right-52 {
+  --tw-enter-translate-x: 13rem;
+}
+@utility slide-out-to-left-52 {
+  --tw-exit-translate-x: -13rem;
+}
+@utility slide-out-to-right-52 {
+  --tw-exit-translate-x: 13rem;
+}

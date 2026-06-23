@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Vendored TwelveLabs design system: primitive + semantic tokens, then the
+   Tailwind @theme mapping that turns them into utilities (bg-surface-body,
+   text-foreground-muted, rounded-dialog, font-tl-sans, …). Order matters —
+   tailwindcss first so @theme inline resolves against an initialized build. */
+@import "./tlds/tokens.css";
+@import "./tlds/theme.css";
+
+/* Scan the vendored component sources so their utility classes are generated. */
+@source "./tlds/**/*.{ts,tsx}";
+@source "./**/*.{ts,tsx}";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--tl-surface-body);
+    color: var(--tl-foreground-body);
+    font-family: var(--tl-font-family-primary), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
