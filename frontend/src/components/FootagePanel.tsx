@@ -230,11 +230,11 @@ export function FootagePanel() {
           Upload broadcasts in the{" "}
           <a
             className="text-foreground-status-info underline-offset-2 hover:underline"
-            href="https://playground.twelvelabs.io"
+            href="https://playground.twelvelabs.io/assets"
             target="_blank"
             rel="noreferrer"
           >
-            TwelveLabs dashboard
+            TwelveLabs Assets dashboard
           </a>
           , then add them to this collection there and click Load — or paste their asset IDs below to
           attach &amp; index them here.
