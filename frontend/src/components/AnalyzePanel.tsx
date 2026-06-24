@@ -80,21 +80,9 @@ export function AnalyzePanel() {
       title="Analyze brands"
       hint="Analyze the selected brands and rank them by weighted media value."
       actions={
-        <div className="flex items-center gap-2">
-          {showCacheHint && (
-            <Button
-              variant="ghosted"
-              size="sm"
-              onClick={() => onAnalyze({ live: true })}
-              disabled={!ready || busy || selectedBrands.length === 0}
-            >
-              Run live
-            </Button>
-          )}
-          <Button onClick={() => onAnalyze()} disabled={!ready || busy || selectedBrands.length === 0}>
-            {busy ? "analyzing…" : `Analyze ${selectedBrands.length || ""} selected`.trim()}
-          </Button>
-        </div>
+        <Button onClick={() => onAnalyze()} disabled={!ready || busy || selectedBrands.length === 0}>
+          {busy ? "analyzing…" : `Analyze ${selectedBrands.length || ""} selected`.trim()}
+        </Button>
       }
     >
       <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-foreground-subtle">

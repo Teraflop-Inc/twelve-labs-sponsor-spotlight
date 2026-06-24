@@ -90,16 +90,9 @@ export function DiscoverPanel() {
       title="Brand discovery"
       hint="Find every sponsor, then pick up to 2 to analyze in the next step."
       actions={
-        <div className="flex items-center gap-2">
-          {showCacheHint && (
-            <Button variant="ghosted" size="sm" onClick={() => onDiscover({ live: true })} disabled={!ready || busy}>
-              Run live
-            </Button>
-          )}
-          <Button onClick={() => onDiscover()} disabled={!ready || busy}>
-            {busy ? "discovering…" : "Discover brands"}
-          </Button>
-        </div>
+        <Button onClick={() => onDiscover()} disabled={!ready || busy}>
+          {busy ? "discovering…" : "Discover brands"}
+        </Button>
       }
     >
       <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
