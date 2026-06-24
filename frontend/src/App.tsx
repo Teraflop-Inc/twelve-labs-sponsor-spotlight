@@ -1,4 +1,4 @@
-import { Chip, ToggleButton, ToggleButtons } from "@twelvelabs-io/react"
+import { Chip, ToggleButton, ToggleButtons, TwelveLabsLogoMark } from "@twelvelabs-io/react"
 import { AppProvider, useApp, type Mode } from "./state"
 import { Player } from "./components/Player"
 import { ApiKeyPanel } from "./components/ApiKeyPanel"
@@ -31,10 +31,7 @@ function Header() {
     <header className="sticky top-0 z-20 border-b border-border-secondary bg-surface-white/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <div className="flex items-center gap-3">
-          <span
-            className="inline-block size-5 rounded-tlds-1"
-            style={{ background: "var(--tl-color-master-brand-green)" }}
-          />
+          <TwelveLabsLogoMark className="h-6 w-auto text-foreground-body" />
           <div className="leading-tight">
             <div className="font-tl-sans text-lg font-semibold tracking-tight">Sponsor Spotlight</div>
             <div className="text-xs text-foreground-subtle">

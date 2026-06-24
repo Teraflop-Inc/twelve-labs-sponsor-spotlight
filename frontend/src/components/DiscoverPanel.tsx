@@ -9,6 +9,7 @@ const MAX_SELECT = 2 // Jockey's 2 req/min limit → analyze at most 2 brands
 
 export function DiscoverPanel() {
   const {
+    mode,
     activeStore,
     readyVideos,
     sessionId,
@@ -18,38 +19,47 @@ export function DiscoverPanel() {
     selectedBrands,
     setSelectedBrands,
     setInventory,
+    demoCached,
+    demoAutoNonce,
   } = useApp()
 
   const [discovered, setDiscovered] = useState<DiscoveryBrand[] | null>(null)
   const [summary, setSummary] = useState("")
   const [status, setStatus] = useState("")
   const [busy, setBusy] = useState(false)
+  const [fromCache, setFromCache] = useState(false)
 
   useEffect(() => {
     setDiscovered(null)
     setSummary("")
     setStatus("")
+    setFromCache(false)
   }, [storeEpoch])
 
   const ready = storeStatus === "ready"
+  const showCacheHint = mode === "demo" && demoCached
 
-  const onDiscover = async () => {
+  const onDiscover = async (opts: { live?: boolean; auto?: boolean } = {}) => {
     if (!activeStore) return
     setBusy(true)
-    setStatus("Discovering brands…")
+    setStatus(opts.live ? "Discovering brands (live)…" : "Discovering brands…")
     setDiscovered(null)
-    setSelectedBrands([])
-    setInventory(null)
+    // Auto-run preserves the pre-seeded demo selection; manual runs reset it.
+    if (!opts.auto) {
+      setSelectedBrands([])
+      setInventory(null)
+    }
     try {
       const ctx: StoreCtx = {
         store_id: activeStore.id,
         sport: activeStore.sport,
         videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
       }
-      const data = await api.discover(ctx, sessionId)
+      const data = await api.discover(ctx, sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
       const brands = data.discovery?.brands || []
       setDiscovered(brands)
+      setFromCache(showCacheHint && !opts.live)
       if (data.discovery?.summary) setSummary(data.discovery.summary)
       setStatus(`Found ${brands.length} brands in ${data.timings?.discover_secs ?? "?"}s.`)
     } catch (e) {
@@ -58,6 +68,12 @@ export function DiscoverPanel() {
       setBusy(false)
     }
   }
+
+  // Cached demo: auto-discover the moment the demo store is ready.
+  useEffect(() => {
+    if (demoAutoNonce > 0) void onDiscover({ auto: true })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [demoAutoNonce])
 
   const toggle = (name: string, on: boolean) => {
     if (on) {
@@ -74,12 +90,24 @@ export function DiscoverPanel() {
       title="Brand discovery"
       hint="Find every sponsor, then pick up to 2 to analyze in the next step."
       actions={
-        <Button onClick={onDiscover} disabled={!ready || busy}>
-          {busy ? "discovering…" : "Discover brands"}
-        </Button>
+        <div className="flex items-center gap-2">
+          {showCacheHint && (
+            <Button variant="ghosted" size="sm" onClick={() => onDiscover({ live: true })} disabled={!ready || busy}>
+              Run live
+            </Button>
+          )}
+          <Button onClick={() => onDiscover()} disabled={!ready || busy}>
+            {busy ? "discovering…" : "Discover brands"}
+          </Button>
+        </div>
       }
     >
-      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>{status}</StatusLine>
+      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
+        {status}
+        {fromCache && status && (
+          <span className="ml-1 text-foreground-subtle">· cached demo result</span>
+        )}
+      </StatusLine>
 
       {discovered && discovered.length > 0 && (
         <div className="mt-2 rounded-tlds-2 border border-border-secondary p-3">

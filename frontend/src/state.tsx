@@ -67,6 +67,13 @@ interface AppContextValue {
   setBrandA(v: string): void
   setBrandB(v: string): void
 
+  // --- demo auto-run (cached demo tab renders instantly, no clicks) ---
+  demoBrands: string[]
+  demoCached: boolean
+  // Bumps once each time the cached demo becomes ready; panels watch it to
+  // auto-run discover/analyze/legibility off the pre-baked cache.
+  demoAutoNonce: number
+
   // --- player bridge ---
   playerRef: React.MutableRefObject<PlayerHandle | null>
   seekTo(sec: number, videoFilename?: string): void
@@ -118,8 +125,14 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [brandA, setBrandA] = useState("")
   const [brandB, setBrandB] = useState("")
 
+  const [demoAutoNonce, setDemoAutoNonce] = useState(0)
+  const autoRanEpoch = useRef<number | null>(null)
+
   const playerRef = useRef<PlayerHandle | null>(null)
   const pollTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const demoBrands = useMemo(() => demo?.demo_brands ?? [], [demo])
+  const demoCached = Boolean(demo?.cached)
 
   // Effective active store: pinned demo collection, or the BYO user's store.
   const activeStore = useMemo<ActiveStore | null>(() => {
@@ -273,6 +286,21 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return "empty"
   }, [activeStore, videos, readyVideos])
 
+  // Cached demo first-impression: once the demo store is ready, pre-seed the
+  // canonical brands and fire a one-shot nonce so the three Jockey panels
+  // auto-run off the pre-baked cache (instant, no clicks). Guarded to run once
+  // per store epoch, and only in the locked demo with a complete cache.
+  useEffect(() => {
+    if (mode !== "demo" || !demo?.enabled || !demo?.cached || storeStatus !== "ready") return
+    if (autoRanEpoch.current === storeEpoch) return
+    autoRanEpoch.current = storeEpoch
+    const pair = (demo.demo_brands ?? []).slice(0, 2)
+    setSelectedBrands(pair)
+    setBrandA(pair[0] ?? "")
+    setBrandB(pair[1] ?? "")
+    setDemoAutoNonce((n) => n + 1)
+  }, [mode, demo, storeStatus, storeEpoch])
+
   const value: AppContextValue = {
     mode,
     setMode,
@@ -301,6 +329,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
     brandB,
     setBrandA,
     setBrandB,
+    demoBrands,
+    demoCached,
+    demoAutoNonce,
     playerRef,
     seekTo,
     storeEpoch,

@@ -15,26 +15,40 @@ const DIMS: { key: keyof LegibilityAsset; label: string }[] = [
 ]
 
 export function LegibilityPanel() {
-  const { activeStore, readyVideos, sessionId, setSessionId, storeStatus, storeEpoch, brandA, brandB } =
-    useApp()
+  const {
+    mode,
+    activeStore,
+    readyVideos,
+    sessionId,
+    setSessionId,
+    storeStatus,
+    storeEpoch,
+    brandA,
+    brandB,
+    demoCached,
+    demoAutoNonce,
+  } = useApp()
   const [report, setReport] = useState<LegibilityReport | null>(null)
   const [status, setStatus] = useState("")
   const [busy, setBusy] = useState(false)
+  const [fromCache, setFromCache] = useState(false)
 
   useEffect(() => {
     setReport(null)
     setStatus("")
+    setFromCache(false)
   }, [storeEpoch])
 
   const ready = storeStatus === "ready"
   const haveBrands = Boolean(brandA.trim() && brandB.trim())
+  const showCacheHint = mode === "demo" && demoCached
 
-  const onAudit = async () => {
+  const onAudit = async (opts: { live?: boolean } = {}) => {
     const a = brandA.trim()
     const b = brandB.trim()
     if (!a || !b || !activeStore) return
     setBusy(true)
-    setStatus("Auditing with Jockey…")
+    setStatus(opts.live ? "Auditing with Jockey (live)…" : "Auditing with Jockey…")
     setReport(null)
     try {
       const ctx: StoreCtx = {
@@ -42,9 +56,10 @@ export function LegibilityPanel() {
         sport: activeStore.sport,
         videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
       }
-      const data = await api.legibility(ctx, [a, b], sessionId)
+      const data = await api.legibility(ctx, [a, b], sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
       setReport(data.report)
+      setFromCache(showCacheHint && !opts.live && Boolean(data.report))
       setStatus(data.report ? "" : "No audit could be generated for these brands — please try again.")
     } catch (e) {
       setStatus(`ERROR: ${(e as Error).message}`)
@@ -53,15 +68,33 @@ export function LegibilityPanel() {
     }
   }
 
+  // Cached demo: auto-audit the pre-seeded brands once the store is ready.
+  useEffect(() => {
+    if (demoAutoNonce > 0) void onAudit()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [demoAutoNonce])
+
   return (
     <SectionCard
       step="5"
       title="Legibility audit"
       hint="Per-asset visibility scores for the two analyzed brands."
       actions={
-        <Button onClick={onAudit} disabled={!ready || busy || !haveBrands}>
-          {busy ? "auditing…" : "Run audit"}
-        </Button>
+        <div className="flex items-center gap-2">
+          {showCacheHint && (
+            <Button
+              variant="ghosted"
+              size="sm"
+              onClick={() => onAudit({ live: true })}
+              disabled={!ready || busy || !haveBrands}
+            >
+              Run live
+            </Button>
+          )}
+          <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
+            {busy ? "auditing…" : "Run audit"}
+          </Button>
+        </div>
       }
     >
       <p className="mb-2 text-xs text-foreground-subtle">
@@ -76,7 +109,12 @@ export function LegibilityPanel() {
           "Analyze 2 brands above, then audit them here."
         )}
       </p>
-      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>{status}</StatusLine>
+      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
+        {status}
+        {fromCache && !status && (
+          <span className="text-foreground-subtle">Cached demo result.</span>
+        )}
+      </StatusLine>
       {report && (
         <div className="mt-2 space-y-4">
           {report.brands.map((b) => (

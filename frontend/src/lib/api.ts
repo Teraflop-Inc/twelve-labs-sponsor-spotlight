@@ -111,14 +111,15 @@ export const api = {
       body: { store_id, asset_ids },
     }),
 
-  discover: (ctx: StoreCtx, session_id: string | null) =>
-    request<DiscoverResponse>("/api/jockey/discover", {
+  // `live` forces a fresh Jockey run in demo mode, bypassing the pre-baked cache.
+  discover: (ctx: StoreCtx, session_id: string | null, live = false) =>
+    request<DiscoverResponse>(`/api/jockey/discover${live ? "?live=1" : ""}`, {
       method: "POST",
       body: { ...ctx, session_id },
     }),
 
-  analyze: (ctx: StoreCtx, brands: string[], session_id: string | null) =>
-    request<AnalyzeResponse>("/api/jockey/analyze", {
+  analyze: (ctx: StoreCtx, brands: string[], session_id: string | null, live = false) =>
+    request<AnalyzeResponse>(`/api/jockey/analyze${live ? "?live=1" : ""}`, {
       method: "POST",
       body: { ...ctx, brands, session_id },
     }),
@@ -134,8 +135,8 @@ export const api = {
       body: { ...ctx, brands, session_id, max_top_moments },
     }),
 
-  legibility: (ctx: StoreCtx, brands: string[], session_id: string | null) =>
-    request<LegibilityResponse>("/api/jockey/legibility", {
+  legibility: (ctx: StoreCtx, brands: string[], session_id: string | null, live = false) =>
+    request<LegibilityResponse>(`/api/jockey/legibility${live ? "?live=1" : ""}`, {
       method: "POST",
       body: { ...ctx, brands, session_id },
     }),

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { Button, Chip } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
 import { brandValue, fmtMoney } from "../lib/econ"
@@ -9,6 +9,7 @@ import type { Brand, Moment } from "../lib/types"
 
 export function AnalyzePanel() {
   const {
+    mode,
     activeStore,
     readyVideos,
     sessionId,
@@ -20,18 +21,24 @@ export function AnalyzePanel() {
     setInventory,
     setBrandA,
     setBrandB,
+    demoCached,
+    demoAutoNonce,
   } = useApp()
 
   const [status, setStatus] = useState("")
   const [busy, setBusy] = useState(false)
+  const [fromCache, setFromCache] = useState(false)
 
   const ready = storeStatus === "ready"
+  const showCacheHint = mode === "demo" && demoCached
 
-  const onAnalyze = async () => {
+  const onAnalyze = async (opts: { live?: boolean } = {}) => {
     const names = selectedBrands.filter(Boolean)
     if (!names.length || !activeStore) return
     setBusy(true)
-    setStatus(`Analyzing ${names.length} brand${names.length > 1 ? "s" : ""}…`)
+    setStatus(
+      `Analyzing ${names.length} brand${names.length > 1 ? "s" : ""}${opts.live ? " (live)" : ""}…`,
+    )
     setInventory(null)
     try {
       const ctx: StoreCtx = {
@@ -39,10 +46,11 @@ export function AnalyzePanel() {
         sport: activeStore.sport,
         videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
       }
-      const data = await api.analyze(ctx, names, sessionId)
+      const data = await api.analyze(ctx, names, sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
       const brands = data.inventory?.brands || []
       setInventory(brands)
+      setFromCache(showCacheHint && !opts.live)
       // Hand the two analyzed brands to the Legibility audit (#5).
       setBrandA(names[0] || "")
       setBrandB(names[1] || "")
@@ -55,6 +63,12 @@ export function AnalyzePanel() {
     }
   }
 
+  // Cached demo: auto-analyze the pre-seeded brands once the store is ready.
+  useEffect(() => {
+    if (demoAutoNonce > 0) void onAnalyze()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [demoAutoNonce])
+
   const ranked = useMemo(() => {
     if (!inventory) return null
     return inventory.map((b) => ({ b, v: brandValue(b, econ) })).sort((a, b) => b.v - a.v)
@@ -66,9 +80,21 @@ export function AnalyzePanel() {
       title="Analyze brands"
       hint="Analyze the selected brands and rank them by weighted media value."
       actions={
-        <Button onClick={onAnalyze} disabled={!ready || busy || selectedBrands.length === 0}>
-          {busy ? "analyzing…" : `Analyze ${selectedBrands.length || ""} selected`.trim()}
-        </Button>
+        <div className="flex items-center gap-2">
+          {showCacheHint && (
+            <Button
+              variant="ghosted"
+              size="sm"
+              onClick={() => onAnalyze({ live: true })}
+              disabled={!ready || busy || selectedBrands.length === 0}
+            >
+              Run live
+            </Button>
+          )}
+          <Button onClick={() => onAnalyze()} disabled={!ready || busy || selectedBrands.length === 0}>
+            {busy ? "analyzing…" : `Analyze ${selectedBrands.length || ""} selected`.trim()}
+          </Button>
+        </div>
       }
     >
       <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-foreground-subtle">
@@ -86,7 +112,12 @@ export function AnalyzePanel() {
         )}
       </div>
 
-      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>{status}</StatusLine>
+      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
+        {status}
+        {fromCache && status && (
+          <span className="ml-1 text-foreground-subtle">· cached demo result</span>
+        )}
+      </StatusLine>
 
       {ranked && (
         <div className="mt-3 grid grid-cols-1 gap-4 md:grid-cols-2">
