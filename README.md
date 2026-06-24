@@ -33,6 +33,24 @@ A sticky video player plays the broadcast inline; clicking any moment seeks to i
 - **Use your own key** — paste a TwelveLabs API key (stored only in your browser)
   and bring your own collections.
 
+### Demo caching (instant first impression)
+
+In **Demo** mode the three Jockey steps (discover, analyze, legibility) are
+served from pre-baked fixtures in `backend/demo_fixtures/` for the canonical
+brand pair (`SPONSOR_SPOTLIGHT_DEMO_BRANDS`, default **Etihad, Emirates**), so
+the tab renders the full flow in milliseconds instead of minutes. The frontend
+pre-seeds those brands and auto-runs the flow on demo entry. A **Run live**
+button on each step (and any non-canonical brand selection) bypasses the cache
+with `?live=1`; "Use your own key" mode never touches the cache.
+
+Regenerate the fixtures whenever the demo collection or brand pair changes:
+
+```bash
+cd backend
+SPONSOR_SPOTLIGHT_TL_KEY=tlk_... uv run python capture_demo_cache.py
+# commit the updated backend/demo_fixtures/*.json
+```
+
 ---
 
 ## Architecture
@@ -110,6 +128,7 @@ Set the environment variables below in the Vercel project.
 | `SPONSOR_SPOTLIGHT_STORE_ID` | optional | Knowledge-store id the demo is pinned to. Defaults to the bundled PL Classics collection. |
 | `SPONSOR_SPOTLIGHT_STORE_NAME` | optional | Display name for the demo collection. |
 | `SPONSOR_SPOTLIGHT_SPORT` | optional | Sport profile for the demo collection (default `soccer`). |
+| `SPONSOR_SPOTLIGHT_DEMO_BRANDS` | optional | Comma-separated canonical brands the demo tab pre-bakes + auto-runs (default `Etihad,Emirates`). Must match the captured `demo_fixtures/`. |
 | `TWELVELABS_API_KEY` | CLI only | Used only by `backend/ingest_assets.py` for offline ingestion. **Not** used by the web app — there is no server-key fallback for browser requests, so a stray value can never become a shared key. |
 
 ## Notes

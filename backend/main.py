@@ -27,6 +27,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+import demo_cache
 import jockey
 import sports
 
@@ -50,6 +51,25 @@ DEMO_STORE_ID = os.environ.get(
 )
 DEMO_STORE_NAME = os.environ.get("SPONSOR_SPOTLIGHT_STORE_NAME", "PL Classics (enriched)")
 DEMO_SPORT = os.environ.get("SPONSOR_SPOTLIGHT_SPORT", "soccer")
+
+# The canonical brand pair the demo tab pre-bakes (see demo_cache / capture script).
+# Analyze + legibility cache hits require the request to match this set.
+DEMO_BRANDS = [
+    b.strip()
+    for b in os.environ.get("SPONSOR_SPOTLIGHT_DEMO_BRANDS", "Etihad,Emirates").split(",")
+    if b.strip()
+]
+
+
+def _demo_cache_hit(endpoint: str, brands: list[str] | None = None) -> dict[str, Any] | None:
+    """Cached demo response for ``endpoint``, or ``None`` to fall through to live Jockey.
+
+    Brand-scoped endpoints (analyze, legibility) only hit when the requested
+    brands match the canonical DEMO_BRANDS; discover is brand-agnostic.
+    """
+    if brands is not None and not demo_cache.brands_match(brands, DEMO_BRANDS):
+        return None
+    return demo_cache.load(endpoint)
 
 
 def _demo_key() -> str | None:
@@ -576,6 +596,9 @@ async def demo_info() -> dict[str, Any]:
         "store_id": DEMO_STORE_ID,
         "name": DEMO_STORE_NAME,
         "sport": DEMO_SPORT,
+        # The frontend pre-seeds these brands and auto-runs the cached flow.
+        "demo_brands": DEMO_BRANDS,
+        "cached": demo_cache.available(),
     }
 
 
@@ -748,9 +771,19 @@ async def jockey_query(req: QueryRequest, is_demo: bool = Depends(tl_key)) -> di
 
 
 @app.post("/api/jockey/discover")
-async def jockey_discover(req: DiscoverRequest, is_demo: bool = Depends(tl_key)) -> dict[str, Any]:
-    """Pass 1: list every distinct sponsor brand visible. No timestamps."""
+async def jockey_discover(
+    req: DiscoverRequest, live: bool = False, is_demo: bool = Depends(tl_key)
+) -> dict[str, Any]:
+    """Pass 1: list every distinct sponsor brand visible. No timestamps.
+
+    In demo mode, served instantly from the pre-baked fixture unless ``?live=1``.
+    """
     _apply_mode(req, is_demo)
+    if is_demo and not live:
+        cached = _demo_cache_hit("discover")
+        if cached is not None:
+            log.info("discover: served from demo cache")
+            return cached
     profile = _active_profile(req.sport)
     t0 = time.time()
     user_message = (
@@ -826,15 +859,24 @@ async def _fetch_brand_appearances(
 
 
 @app.post("/api/jockey/analyze")
-async def jockey_analyze(req: AnalyzeRequest, is_demo: bool = Depends(tl_key)) -> dict[str, Any]:
+async def jockey_analyze(
+    req: AnalyzeRequest, live: bool = False, is_demo: bool = Depends(tl_key)
+) -> dict[str, Any]:
     """Pass 2: fan out per-brand appearance queries for the selected brands.
 
     The UI caps this at 2 brands (= 2 calls), which fits Jockey's 2 req/min limit.
+    In demo mode, the canonical brand pair is served from cache unless ``?live=1``.
     """
     _apply_mode(req, is_demo)
     brand_names = [b.strip() for b in req.brands if b and b.strip()]
     if not brand_names:
         raise HTTPException(status_code=400, detail="provide at least one brand name")
+
+    if is_demo and not live:
+        cached = _demo_cache_hit("analyze", brand_names)
+        if cached is not None:
+            log.info("analyze: served from demo cache (%s)", ", ".join(brand_names))
+            return cached
 
     t0 = time.time()
     results = await asyncio.gather(
@@ -909,8 +951,15 @@ async def jockey_compare(req: CompareRequest, is_demo: bool = Depends(tl_key)) -
 
 
 @app.post("/api/jockey/legibility")
-async def jockey_legibility(req: LegibilityRequest, is_demo: bool = Depends(tl_key)) -> dict[str, Any]:
+async def jockey_legibility(
+    req: LegibilityRequest, live: bool = False, is_demo: bool = Depends(tl_key)
+) -> dict[str, Any]:
     _apply_mode(req, is_demo)
+    if is_demo and not live:
+        cached = _demo_cache_hit("legibility", req.brands)
+        if cached is not None:
+            log.info("legibility: served from demo cache (%s)", ", ".join(req.brands))
+            return cached
     profile = _active_profile(req.sport)
     hints = "\n".join(
         f"- {b}: {BRAND_VISUAL_HINTS.get(b, 'no visual hint provided')}"

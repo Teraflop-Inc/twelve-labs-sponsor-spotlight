@@ -134,6 +134,10 @@ export interface DemoInfo {
   store_id: string
   name: string
   sport: string
+  /** Canonical brands the demo tab pre-bakes; pre-seeded + auto-run on entry. */
+  demo_brands?: string[]
+  /** True when every demo step is pre-baked, so the demo flow renders instantly. */
+  cached?: boolean
 }
 export interface StoresResponse {
   stores: StoreSummary[]
