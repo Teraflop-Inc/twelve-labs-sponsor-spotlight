@@ -80,21 +80,9 @@ export function LegibilityPanel() {
       title="Legibility audit"
       hint="Per-asset visibility scores for the two analyzed brands."
       actions={
-        <div className="flex items-center gap-2">
-          {showCacheHint && (
-            <Button
-              variant="ghosted"
-              size="sm"
-              onClick={() => onAudit({ live: true })}
-              disabled={!ready || busy || !haveBrands}
-            >
-              Run live
-            </Button>
-          )}
-          <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
-            {busy ? "auditing…" : "Run audit"}
-          </Button>
-        </div>
+        <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
+          {busy ? "auditing…" : "Run audit"}
+        </Button>
       }
     >
       <p className="mb-2 text-xs text-foreground-subtle">
