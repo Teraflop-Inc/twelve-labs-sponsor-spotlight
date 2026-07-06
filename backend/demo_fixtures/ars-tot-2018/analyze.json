@@ -1,0 +1,3019 @@
+{
+  "session_id": null,
+  "inventory": {
+    "brands": [
+      {
+        "name": "AIA",
+        "total_seconds": 678.0,
+        "moments_count": 122,
+        "outside_whistle_to_whistle_seconds": 100.0,
+        "asset_types": [
+          "broadcast_overlay",
+          "other"
+        ],
+        "appearances": [
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.98,
+            "context": "pregame",
+            "description": "A virtual representation of the pitch showing the Tottenham Hotspur starting XI. The names and positions of the players are displayed, with Mauricio Pochettino listed as the manager.",
+            "end_sec": 79.0,
+            "start_sec": 52.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Harry Kane as he moves into an attacking position.",
+            "end_sec": 187.0,
+            "start_sec": 182.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Play resumes with Tottenham trying to build an attack from the back.",
+            "end_sec": 237.0,
+            "start_sec": 231.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Hector Bellerin receives the ball and sends a dangerous cross into the box. Juan Foyth makes a crucial clearance for Tottenham.",
+            "end_sec": 279.0,
+            "start_sec": 265.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.82,
+            "context": "close_up",
+            "description": "A close-up shot of Tottenham striker Harry Kane as he walks on the pitch. He is wearing the white Tottenham home kit with the number 10 on the back. The crowd is visible in the blurred background.",
+            "end_sec": 579.0,
+            "start_sec": 575.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Serge Aurier as he continues to look frustrated with the referee's decision.",
+            "end_sec": 630.0,
+            "start_sec": 629.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Another close-up of Serge Aurier, who is still talking to the referee and his teammates.",
+            "end_sec": 635.0,
+            "start_sec": 633.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Mike Dean shows a yellow card to Jan Vertonghen for the handball. Vertonghen looks dejected as he walks away.",
+            "end_sec": 668.0,
+            "start_sec": 663.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Jan Vertonghen looking down, clearly disappointed with the penalty decision.",
+            "end_sec": 683.0,
+            "start_sec": 680.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Tottenham goalkeeper Hugo Lloris as he prepares to face the penalty. He is bouncing on his line.",
+            "end_sec": 692.0,
+            "start_sec": 691.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Jan Vertonghen as he walks back towards the center circle. He looks dejected.",
+            "end_sec": 723.0,
+            "start_sec": 717.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Jan Vertonghen looking frustrated as he stands on the pitch.",
+            "end_sec": 790.0,
+            "start_sec": 783.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of Tottenham's Ben Davies as he prepares to take a throw-in. He is looking for a teammate to pass to.",
+            "end_sec": 804.0,
+            "start_sec": 799.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of play in the midfield. Tottenham's Dele Alli is on the ball, looking to create a chance.",
+            "end_sec": 830.0,
+            "start_sec": 824.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Son Heung-min as he reacts to his missed chance. He looks frustrated.",
+            "end_sec": 842.0,
+            "start_sec": 837.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of Dele Alli as he picks up the ball near the touchline to take a throw-in. He looks towards his teammates on the pitch.",
+            "end_sec": 879.0,
+            "start_sec": 877.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Christian Eriksen as he prepares for a set-piece or waits for play to resume.",
+            "end_sec": 1052.0,
+            "start_sec": 1048.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Jan Vertonghen as he organizes the defense.",
+            "end_sec": 1078.0,
+            "start_sec": 1071.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Juan Foyth, looking focused on the game.",
+            "end_sec": 1082.0,
+            "start_sec": 1078.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Ben Davies as he looks towards his teammates.",
+            "end_sec": 1101.0,
+            "start_sec": 1097.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Juan Foyth, showing a small cut or mark on his cheek.",
+            "end_sec": 1142.0,
+            "start_sec": 1131.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up tracking shot of Son Heung-min walking back towards his position, looking disappointed. The 'AIA' sponsor is clearly visible on his white Tottenham shirt. In the background, Arsenal fans and banners like 'ROCHESTER GOONERS' are seen.",
+            "end_sec": 1161.0,
+            "start_sec": 1155.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A medium tracking shot of Tottenham's Ben Davies walking on the pitch, looking focused. His white kit with the 'AIA' sponsor is visible.",
+            "end_sec": 1178.0,
+            "start_sec": 1170.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A medium close-up of Ben Davies preparing to take a throw-in for Tottenham.",
+            "end_sec": 1206.0,
+            "start_sec": 1200.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Medium shot at the corner flag. Christian Eriksen and Ben Davies of Tottenham are standing by the flag. Eriksen bends down to place the soccer ball on the corner arc. The Arsenal crest is visible on the corner flag.",
+            "end_sec": 1452.0,
+            "start_sec": 1442.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Christian Eriksen looking disappointed after his corner kick was cleared. He is wearing the white Tottenham kit with the AIA sponsor logo.",
+            "end_sec": 1467.0,
+            "start_sec": 1463.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.7,
+            "context": "close_up",
+            "description": "Close-up of Christian Eriksen walking on the pitch, seen from behind. His name and number 23 are visible on the back of his shirt.",
+            "end_sec": 1501.0,
+            "start_sec": 1499.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.7,
+            "context": "other",
+            "description": "Medium shot of Serge Aurier of Tottenham trying to control the ball while being closely challenged by Sead Kolasinac of Arsenal.",
+            "end_sec": 1623.0,
+            "start_sec": 1621.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.7,
+            "context": "other",
+            "description": "Medium shot of Harry Kane heading the ball clear while being challenged by Sokratis Papastathopoulos of Arsenal.",
+            "end_sec": 1675.0,
+            "start_sec": 1672.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Son Heung-min looking disappointed after being caught offside.",
+            "end_sec": 1683.0,
+            "start_sec": 1680.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.7,
+            "context": "close_up",
+            "description": "Close-up of Harry Kane walking on the pitch, looking towards the bench.",
+            "end_sec": 1693.0,
+            "start_sec": 1683.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of Son Heung-min (#7) sprinting with the ball down the right flank. The 'AIA' sponsor logo is clearly visible on his Tottenham shirt.",
+            "end_sec": 1737.0,
+            "start_sec": 1735.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Moussa Sissoko looking disappointed after his cross went out of play. The 'AIA' logo is visible on his shirt.",
+            "end_sec": 1751.0,
+            "start_sec": 1749.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Son Heung-min on the ground. The 'AIA' logo is visible on his Tottenham shirt.",
+            "end_sec": 1878.0,
+            "start_sec": 1877.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of Tottenham players Son Heung-min, Christian Eriksen, and Eric Dier talking to referee Mike Dean. The 'AIA' logo is visible on their shirts.",
+            "end_sec": 1900.0,
+            "start_sec": 1892.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Eric Dier looking focused as he prepares for the free kick. The 'AIA' logo is visible on his shirt.",
+            "end_sec": 1905.0,
+            "start_sec": 1900.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of referee Mike Dean talking to Eric Dier, likely giving instructions before the free kick.",
+            "end_sec": 1912.0,
+            "start_sec": 1905.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of referee Mike Dean continuing his conversation with Eric Dier.",
+            "end_sec": 1922.0,
+            "start_sec": 1912.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Eric Dier listening to the referee's instructions. The 'AIA' logo is visible on his shirt.",
+            "end_sec": 1925.0,
+            "start_sec": 1922.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Eric Dier celebrating his goal by running towards the corner flag. The 'AIA' logo is visible on his shirt, and 'Tempobet' is on the perimeter boards.",
+            "end_sec": 1945.0,
+            "start_sec": 1941.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Tottenham players celebrating with Eric Dier. The 'AIA' logo is visible on their shirts.",
+            "end_sec": 1948.0,
+            "start_sec": 1945.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Eric Dier running back towards the center of the pitch after his celebration. The 'AIA' logo is visible on his shirt.",
+            "end_sec": 1955.0,
+            "start_sec": 1951.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Eric Dier shouting during the scuffle. The 'AIA' logo is visible on his shirt.",
+            "end_sec": 1994.0,
+            "start_sec": 1992.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Eric Dier and Granit Xhaka having a heated exchange. The 'AIA' logo is visible on Dier's shirt.",
+            "end_sec": 2006.0,
+            "start_sec": 2001.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Mauricio Pochettino talking to Son Heung-min, likely trying to calm him down.",
+            "end_sec": 2009.0,
+            "start_sec": 2006.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A medium shot of Eric Dier walking away from the scuffle as order is slowly restored. The 'AIA' logo is visible on his shirt.",
+            "end_sec": 2012.0,
+            "start_sec": 2009.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Harry Kane's face as he focuses before taking the penalty.",
+            "end_sec": 2165.0,
+            "start_sec": 2161.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Harry Kane celebrates with his teammates, including Dele Alli and Son Heung-min.",
+            "end_sec": 2181.0,
+            "start_sec": 2174.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A close-up of Harry Kane celebrating his goal.",
+            "end_sec": 2187.0,
+            "start_sec": 2184.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A close-up of Son Heung-min and Harry Kane talking after the goal.",
+            "end_sec": 2196.0,
+            "start_sec": 2192.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of Harry Kane's celebration after scoring the penalty.",
+            "end_sec": 2213.0,
+            "start_sec": 2201.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Harry Kane running back to his position after the goal.",
+            "end_sec": 2230.0,
+            "start_sec": 2223.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Dele Alli looking focused on the pitch.",
+            "end_sec": 2237.0,
+            "start_sec": 2235.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A shot of Harry Kane and Henrikh Mkhitaryan near each other on the pitch.",
+            "end_sec": 2258.0,
+            "start_sec": 2254.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "As Son Heung-min approaches the penalty area, Shkodran Mustafi makes a sliding challenge. He misses the ball and catches Son, who falls to the ground. The referee, Mike Dean, immediately blows his whistle for a foul.",
+            "end_sec": 2338.0,
+            "start_sec": 2333.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A slow-motion replay of the foul. It shows Mustafi's sliding challenge from a different angle, highlighting the contact with Son's leg and the fact that his studs were showing.",
+            "end_sec": 2358.0,
+            "start_sec": 2351.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Son Heung-min is back on his feet and is being checked on by his teammates, including Ben Davies. They are standing near the spot where the foul occurred.",
+            "end_sec": 2370.0,
+            "start_sec": 2367.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Referee Mike Dean is seen talking to Son Heung-min, likely explaining the yellow card decision or checking on his condition. Son looks somewhat dissatisfied with the explanation.",
+            "end_sec": 2388.0,
+            "start_sec": 2370.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Tottenham striker Harry Kane. He is walking back towards the center circle, looking focused on the game.",
+            "end_sec": 2431.0,
+            "start_sec": 2428.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of a challenge between Tottenham's Juan Foyth and Arsenal's Pierre-Emerick Aubameyang. Foyth makes a strong tackle to win the ball back for his team.",
+            "end_sec": 2478.0,
+            "start_sec": 2464.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Juan Foyth after his successful tackle. He looks determined and is ready to continue the game.",
+            "end_sec": 2486.0,
+            "start_sec": 2478.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Tottenham's Serge Aurier. He is holding the ball above his head, preparing to take a throw-in. He is wearing the white Tottenham home kit with the 'AIA' sponsor on the front.",
+            "end_sec": 2648.0,
+            "start_sec": 2646.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Tottenham goalkeeper Hugo Lloris. He is smiling, likely relieved that the offside flag was raised. He is wearing his purple goalkeeper kit.",
+            "end_sec": 2743.0,
+            "start_sec": 2741.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Tottenham's Eric Dier. He is looking towards the play, ready to defend. He is wearing the white Tottenham home kit.",
+            "end_sec": 2825.0,
+            "start_sec": 2817.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Dele Alli as he runs across the field, looking for an opening in the Arsenal defense.",
+            "end_sec": 2963.0,
+            "start_sec": 2958.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of a Tottenham player, possibly Ben Davies, as he prepares for the upcoming corner.",
+            "end_sec": 2986.0,
+            "start_sec": 2983.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot showing Shkodran Mustafi's reaction to his missed chance, followed by Hugo Lloris organizing his defense.",
+            "end_sec": 3018.0,
+            "start_sec": 3015.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "halftime",
+            "description": "A close-up shot of Jan Vertonghen as he leaves the field for the halftime break.",
+            "end_sec": 3046.0,
+            "start_sec": 3041.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "halftime",
+            "description": "A close-up shot of Eric Dier walking towards the tunnel, wiping sweat from his face.",
+            "end_sec": 3052.0,
+            "start_sec": 3046.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "halftime",
+            "description": "A brief close-up shot of Dele Alli as he walks off the pitch.",
+            "end_sec": 3053.0,
+            "start_sec": 3052.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "halftime",
+            "description": "Son Heung-min is seen talking to referee Mike Dean as they walk off the pitch, possibly discussing a decision made during the first half.",
+            "end_sec": 3066.0,
+            "start_sec": 3053.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Moussa Sissoko as he tracks back to help his defense.",
+            "end_sec": 3141.0,
+            "start_sec": 3131.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Serge Aurier as he prepares for a throw-in.",
+            "end_sec": 3146.0,
+            "start_sec": 3141.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of a Tottenham player, possibly Ben Davies, looking focused as play resumes.",
+            "end_sec": 3153.0,
+            "start_sec": 3146.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Moussa Sissoko looking frustrated after the foul call. He is wearing the white Tottenham home shirt with the AIA sponsor logo clearly visible. He adjusts his ear as he looks towards the referee.",
+            "end_sec": 3491.0,
+            "start_sec": 3486.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Tottenham defender Juan Foyth looking focused as he prepares to take the free kick. He is wearing the white Tottenham home shirt.",
+            "end_sec": 3559.0,
+            "start_sec": 3555.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Dele Alli looking around as play continues. He is wearing the white Tottenham home shirt with the AIA sponsor logo.",
+            "end_sec": 3574.0,
+            "start_sec": 3570.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Eric Dier looking focused as he tracks the movement of the Arsenal players. He is wearing the white Tottenham home shirt.",
+            "end_sec": 3601.0,
+            "start_sec": 3598.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Dele Alli looking on as play is about to resume. He is wearing the white Tottenham home shirt with the AIA sponsor logo.",
+            "end_sec": 3681.0,
+            "start_sec": 3679.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "close_up",
+            "description": "Tottenham manager Mauricio Pochettino and his coaching staff are seen on the bench. They look concerned and are discussing the game.",
+            "end_sec": 3815.0,
+            "start_sec": 3808.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Tottenham defender Serge Aurier is seen preparing for a throw-in. He is looking for a teammate to pass to.",
+            "end_sec": 3858.0,
+            "start_sec": 3856.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Tottenham players are seen forming a wall to defend the free kick. They look focused and ready to block the shot.",
+            "end_sec": 3891.0,
+            "start_sec": 3882.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Aubameyang is challenged by Tottenham's Ben Davies. They are both fighting for the ball.",
+            "end_sec": 3919.0,
+            "start_sec": 3916.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Players from both teams are seen in the box, waiting for a corner kick. The atmosphere is tense.",
+            "end_sec": 3935.0,
+            "start_sec": 3928.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.82,
+            "context": "replay",
+            "description": "A slow-motion replay of the corner kick and Sokratis's header from a different angle, showing the ball narrowly missing the goal.",
+            "end_sec": 4052.0,
+            "start_sec": 4045.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Christian Eriksen as he prepares to take the free kick, looking at the goal and the wall.",
+            "end_sec": 4179.0,
+            "start_sec": 4174.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Dele Alli as he runs back, looking focused on the game.",
+            "end_sec": 4191.0,
+            "start_sec": 4186.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Moussa Sissoko and Granit Xhaka as they compete for the ball in the midfield.",
+            "end_sec": 4235.0,
+            "start_sec": 4231.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A slow-motion replay of Dele Alli's foul on Granit Xhaka, showing the contact that led to the yellow card.",
+            "end_sec": 4288.0,
+            "start_sec": 4280.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Dele Alli as he walks away, still looking unhappy about the yellow card.",
+            "end_sec": 4297.0,
+            "start_sec": 4288.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Juan Foyth (21) looking towards the referee after the foul. He has a small bandage on his right cheek. The background shows the spectators in the stands.",
+            "end_sec": 4335.0,
+            "start_sec": 4333.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of referee Mike Dean speaking with Son Heung-min (7). Dean is gesturing with his hands, explaining his decision. Son listens attentively.",
+            "end_sec": 4343.0,
+            "start_sec": 4340.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Juan Foyth (21) as he gets up from his block. He looks focused and determined. The Premier League logo is shown in a transition graphic at the end of the shot.",
+            "end_sec": 4397.0,
+            "start_sec": 4393.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "close_up",
+            "description": "Close-up of Mustafi speaking with referee Mike Dean and physio Chris Morgan. He seems to be indicating that he might be able to continue, but the medical staff looks cautious. Tottenham's Dele Alli (20) is also visible nearby.",
+            "end_sec": 4502.0,
+            "start_sec": 4496.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Serge Aurier. He looks frustrated after losing possession to Guendouzi.",
+            "end_sec": 4708.0,
+            "start_sec": 4705.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Juan Foyth. He looks disappointed and is seen talking to his teammates as they prepare for the restart.",
+            "end_sec": 4842.0,
+            "start_sec": 4839.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Eric Dier looks disappointed and frustrated after the goal, standing on the pitch.",
+            "end_sec": 4907.0,
+            "start_sec": 4905.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A close-up of Eric Dier, looking focused and determined as he prepares for the defensive set-piece.",
+            "end_sec": 4930.0,
+            "start_sec": 4928.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "timeout",
+            "description": "Lucas Moura runs onto the pitch, replacing Son Heung-min as part of a double substitution for Tottenham.",
+            "end_sec": 5112.0,
+            "start_sec": 5107.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "timeout",
+            "description": "Son Heung-min walks off the pitch, looking disappointed as he is substituted.",
+            "end_sec": 5117.0,
+            "start_sec": 5112.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "timeout",
+            "description": "Harry Winks runs onto the pitch, replacing Dele Alli in the second part of Tottenham's double substitution.",
+            "end_sec": 5120.0,
+            "start_sec": 5117.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "timeout",
+            "description": "Dele Alli walks off the pitch, acknowledging the fans as he is substituted.",
+            "end_sec": 5124.0,
+            "start_sec": 5120.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A close-up of Harry Winks, looking focused as he takes his place in the Tottenham midfield.",
+            "end_sec": 5128.0,
+            "start_sec": 5124.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Tottenham manager Mauricio Pochettino is seen on the bench, looking concerned and deep in thought.",
+            "end_sec": 5134.0,
+            "start_sec": 5128.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A close-up of Jan Vertonghen, looking frustrated after conceding the foul.",
+            "end_sec": 5174.0,
+            "start_sec": 5158.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Tottenham's Jan Vertonghen looking down and then up, appearing focused or perhaps frustrated as the match clock shows 79:54.",
+            "end_sec": 5176.0,
+            "start_sec": 5174.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Tottenham's Lucas Moura looking frustrated after a missed header or a lost possession in the box.",
+            "end_sec": 5275.0,
+            "start_sec": 5272.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Tottenham's Danny Rose is seen on the touchline, preparing to come on as a substitute. He is checking his equipment and receiving instructions.",
+            "end_sec": 5293.0,
+            "start_sec": 5284.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Danny Rose enters the pitch, replacing Ben Davies. They high-five as they cross paths on the touchline. The fourth official is visible holding the substitution board.",
+            "end_sec": 5300.0,
+            "start_sec": 5293.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Danny Rose as he runs onto the pitch and takes his position in the Tottenham defense. He looks ready to contribute to the game.",
+            "end_sec": 5314.0,
+            "start_sec": 5300.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Tottenham's Serge Aurier and Arsenal's Aaron Ramsey as they exchange words after a challenge. Both players look intense.",
+            "end_sec": 5369.0,
+            "start_sec": 5365.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Referee Mike Dean shows Jan Vertonghen a second yellow card, followed by a red card. Vertonghen is sent off, and his teammates gather around to protest the decision.",
+            "end_sec": 5443.0,
+            "start_sec": 5436.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Jan Vertonghen's reaction to the red card. He looks stunned and frustrated. His teammates, including Harry Kane and Christian Eriksen, continue to talk to the referee.",
+            "end_sec": 5451.0,
+            "start_sec": 5443.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Jan Vertonghen walks off the pitch, looking downcast. He is seen talking to Danny Rose as he exits. The Arsenal fans are cheering as the match nears its conclusion.",
+            "end_sec": 5461.0,
+            "start_sec": 5456.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Jan Vertonghen walks off the pitch, looking down, clearly disappointed by his dismissal.",
+            "end_sec": 5486.0,
+            "start_sec": 5476.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Serge Aurier running back into position on the pitch.",
+            "end_sec": 5701.0,
+            "start_sec": 5698.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Tottenham goalkeeper Hugo Lloris catches the ball and prepares to distribute it.",
+            "end_sec": 5740.0,
+            "start_sec": 5736.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.82,
+            "context": "close_up",
+            "description": "A close-up shot of Serge Aurier after the foul. He is wearing the white Tottenham away kit. He looks down, appearing frustrated. The background shows the blurred crowd and pitch.",
+            "end_sec": 5767.0,
+            "start_sec": 5765.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.82,
+            "context": "close_up",
+            "description": "A close-up shot of Serge Aurier looking dejected after receiving the yellow card. He is walking slowly on the pitch. The background shows the green grass and blurred stadium elements.",
+            "end_sec": 5779.0,
+            "start_sec": 5776.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "close_up",
+            "description": "Close-up of Mauricio Pochettino, Tottenham manager, sitting on the bench with his arms folded. He looks disappointed as his team is trailing. The AIA logo is visible on the bench structure behind him.",
+            "end_sec": 6083.0,
+            "start_sec": 6069.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "postgame",
+            "description": "Eric Dier and Christian Eriksen are seen walking off the pitch, looking dejected after the loss. They are both wearing the white Tottenham kit.",
+            "end_sec": 6185.0,
+            "start_sec": 6177.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "postgame",
+            "description": "Dele Alli and Harry Winks are seen walking off the pitch together. They look disappointed and are talking to each other.",
+            "end_sec": 6225.0,
+            "start_sec": 6218.0,
+            "video": "6a21c1827dfcff1fd72ecb09.mp4"
+          }
+        ],
+        "legibility_notes": "Non-fully-legible appearances: mostly_legible: 4 (placements=shirt_front_sponsor; contexts=close_up, replay); partially_legible: 4 (placements=shirt_front_sponsor; contexts=close_up, open_play)."
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "other",
+            "confidence": 0.92,
+            "context": "pregame",
+            "description": "Nike kit manufacturer logo is clearly visible on Mauricio Pochettino's apparel during a pre-match walk on the pitch.",
+            "end_sec": 91,
+            "start_sec": 88,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Nike logo appears clearly in a close-up of a tackle between an Arsenal and Tottenham player during open play.",
+            "end_sec": 169,
+            "start_sec": 167,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Nike logo is visible in a close-up of Juan Foyth after his clearance.",
+            "end_sec": 287,
+            "start_sec": 281,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.78,
+            "context": "close_up",
+            "description": "Nike logo is visible but smaller/less prominent in a close-up of Son Heung-min on the ground after a challenge.",
+            "end_sec": 2345,
+            "start_sec": 2342,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.78,
+            "context": "close_up",
+            "description": "Nike logo appears in a medium-close shot of Son Heung-min challenging near the touchline, with limited prominence.",
+            "end_sec": 4330,
+            "start_sec": 4327,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "close_up",
+            "description": "Nike appears prominently on Mauricio Pochettino's training kit during a bench close-up.",
+            "end_sec": 4856,
+            "start_sec": 4853,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.91,
+            "context": "close_up",
+            "description": "Nike logo is clearly visible on Harry Kane's Tottenham shirt in a reaction close-up.",
+            "end_sec": 6127,
+            "start_sec": 6121,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          }
+        ],
+        "asset_types": [
+          "other"
+        ],
+        "legibility_notes": "Mostly clear overall. Two appearances render less cleanly: 2342-2345 and 4327-4330 are only mostly legible and low-prominence/background-weighted. All other detected Nike exposures are fully legible.",
+        "moments_count": 7,
+        "name": "Nike",
+        "outside_whistle_to_whistle_seconds": 3,
+        "total_seconds": 26
+      },
+      {
+        "name": "Emirates",
+        "asset_types": [
+          "stadium_fascia_signage",
+          "perimeter_led_board",
+          "shirt_front_sponsor"
+        ],
+        "appearances": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 11.0,
+            "context": "pregame",
+            "asset_type": "other",
+            "description": "A wide shot of the Emirates Stadium filled with fans. A graphic overlay announces the upcoming match: Arsenal v. Tottenham Hotspur on NBCSN.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 102.0,
+            "end_sec": 130.0,
+            "context": "pregame",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the pitch as the players from both teams line up for the start of the match. The referee, Mike Dean, is also visible.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 162.0,
+            "end_sec": 167.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Play continues near the touchline, with players from both teams competing for the ball.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 194.0,
+            "end_sec": 208.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Play continues with Arsenal building an attack from the midfield.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 217.0,
+            "end_sec": 220.0,
+            "context": "other",
+            "asset_type": "jersey_patch",
+            "description": "A close-up of Henrikh Mkhitaryan as he reacts to the missed opportunity.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 248.0,
+            "end_sec": 256.0,
+            "context": "other",
+            "asset_type": "jersey_patch",
+            "description": "Another close-up of Aubameyang, showing his intensity and focus.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 256.0,
+            "end_sec": 265.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Arsenal wins the ball back and starts another attack down the right flank.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 290.0,
+            "end_sec": 294.0,
+            "context": "other",
+            "asset_type": "other",
+            "description": "Ben Davies of Tottenham Hotspur is seen from behind, walking towards the touchline with the soccer ball in his hands. He is wearing his white home jersey with the number 33 and his name on the back. The stadium stands, filled with fans, are visible in the background.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1011.0,
+            "end_sec": 1048.0,
+            "context": "other",
+            "asset_type": "other",
+            "description": "A wide shot of the match in progress, showing the tactical positioning of both teams as play unfolds.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1501.0,
+            "end_sec": 1528.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Wide shot of the pitch. Arsenal players are passing the ball around the midfield. Moussa Sissoko of Tottenham intercepts a pass and starts running forward with the ball.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1659.0,
+            "end_sec": 1672.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Wide shot. Arsenal players pass the ball around the Tottenham penalty area. Pierre-Emerick Aubameyang passes to Hector Bellerin, who crosses the ball into the box. Harry Kane of Tottenham heads the ball away to clear it.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1712.0,
+            "end_sec": 1724.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Wide shot. Eric Dier of Tottenham commits a foul on an Arsenal player, but the referee plays advantage. Arsenal continues their attack, and Alex Iwobi crosses the ball into the penalty area.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1724.0,
+            "end_sec": 1725.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A close-up shot of a tackle between an Arsenal player and Tottenham's Serge Aurier (#24) near the touchline. The Emirates logo is visible on the perimeter board in the background.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1725.0,
+            "end_sec": 1726.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "The camera pans as the ball goes out of play. Arsenal's Sead Kolasinac (#31) is seen nearby. The Emirates logo is prominent on the perimeter board.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1726.0,
+            "end_sec": 1727.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A medium shot of Sead Kolasinac with the ball at his feet, preparing to restart play. The Emirates logo remains visible in the background.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1733.0,
+            "end_sec": 1735.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot as Tottenham Hotspur begins a counter-attack after winning the ball back in their own half.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1850.0,
+            "end_sec": 1853.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of Tottenham continuing to pass the ball. 'Emirates' is now visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1853.0,
+            "end_sec": 1862.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of Tottenham passing the ball under pressure from Arsenal players. 'Emirates' is visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1862.0,
+            "end_sec": 1866.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of Tottenham passing the ball in the midfield area. 'Emirates' is visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1866.0,
+            "end_sec": 1871.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of Son Heung-min being fouled by Sokratis Papastathopoulos (#5) near the touchline. 'Emirates' is visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1873.0,
+            "end_sec": 1877.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A medium shot of Son Heung-min on the ground after the foul, with Sokratis Papastathopoulos standing nearby. 'Emirates' is visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1881.0,
+            "end_sec": 1888.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "A medium shot showing a replay of Sokratis Papastathopoulos fouling Son Heung-min. 'Emirates' is visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1925.0,
+            "end_sec": 1929.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of Tottenham players preparing to take the free kick. 'Emirates' is visible on the perimeter boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 1948.0,
+            "end_sec": 1951.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "A wide shot of the crowd at the Emirates Stadium reacting to the goal.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2299.0,
+            "end_sec": 2328.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the pitch at Emirates Stadium. Arsenal, in their red and white home kit, are in possession and passing the ball around their defensive third. Tottenham players in white shirts are pressing high. The camera pans to follow the ball as it moves from the right side to the center.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2338.0,
+            "end_sec": 2342.0,
+            "context": "wide_shot",
+            "asset_type": "other",
+            "description": "A cut to the Arsenal supporters in the stands. They are reacting to the foul and the referee's decision, with many shouting and gesturing towards the pitch.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2486.0,
+            "end_sec": 2492.0,
+            "context": "wide_shot",
+            "asset_type": "other",
+            "description": "The camera cuts to the Arsenal fans again. They are chanting loudly and clapping, creating a vibrant atmosphere in the stadium.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2874.0,
+            "end_sec": 2881.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the Arsenal penalty area during a free kick. Several players from both teams are positioned in and around the box. The ball is delivered into the area but is eventually cleared out of play for a corner.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2928.0,
+            "end_sec": 2936.0,
+            "context": "close_up",
+            "asset_type": "courtside_led",
+            "description": "A close-up shot of Pierre-Emerick Aubameyang as he walks back from the goal line, looking focused after his cross was cleared.",
+            "confidence": 0.97,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2975.0,
+            "end_sec": 2983.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Pierre-Emerick Aubameyang finds Alex Iwobi on the left. Iwobi's cross is deflected and goes out for another Arsenal corner.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 2993.0,
+            "end_sec": 2995.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the players from both teams jostling for position inside the Tottenham penalty area as they wait for the corner to be taken.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3024.0,
+            "end_sec": 3032.0,
+            "context": "replay",
+            "asset_type": "other",
+            "description": "Another replay angle, this time from behind the goal, showing the trajectory of the ball and Lloris's crucial intervention.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3080.0,
+            "end_sec": 3083.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "The second half kicks off. Tottenham starts with the ball, looking to maintain their lead.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3125.0,
+            "end_sec": 3131.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Play continues with Arsenal in possession, trying to build an attack from the back under pressure from Tottenham.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3712.0,
+            "end_sec": 3716.0,
+            "context": "score",
+            "asset_type": "other",
+            "description": "Wide shot. Aaron Ramsey plays a brilliant first-time pass through to Aubameyang, who strikes the ball beautifully from outside the area into the bottom corner of the net. Goal for Arsenal! The stadium erupts in celebration.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3718.0,
+            "end_sec": 3722.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "Wide shot of Aubameyang celebrating his goal, joined by his teammates. The crowd is erupting, with fans waving flags and cheering. The atmosphere is electric.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3736.0,
+            "end_sec": 3739.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "A wide shot of the Emirates Stadium shows the crowd celebrating Arsenal's goal. Fans are waving flags and cheering. The scoreboard shows Arsenal 2, Tottenham 2.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3748.0,
+            "end_sec": 3752.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "A shot from behind Aubameyang as he celebrates in front of the Arsenal fans. The crowd is a sea of red and white, cheering wildly.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3761.0,
+            "end_sec": 3766.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "Another replay angle shows the build-up to the goal. The ball is played across the edge of the box, and Aubameyang strikes it first-time.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3768.0,
+            "end_sec": 3776.0,
+            "context": "replay",
+            "asset_type": "other",
+            "description": "A low-angle replay from behind the goal captures the moment the ball hits the back of the net. The goalkeeper is left stranded.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3819.0,
+            "end_sec": 3826.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the pitch as play continues. Arsenal are in possession and trying to build an attack.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3847.0,
+            "end_sec": 3850.0,
+            "context": "wide_shot",
+            "asset_type": "other",
+            "description": "A wide shot of the crowd at the Emirates Stadium. Fans are cheering and waving flags.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 3926.0,
+            "end_sec": 3928.0,
+            "context": "wide_shot",
+            "asset_type": "other",
+            "description": "A wide shot of the crowd at the Emirates Stadium. Fans are cheering and waving flags.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4297.0,
+            "end_sec": 4311.0,
+            "context": "other",
+            "asset_type": "other",
+            "description": "A wide shot of play resuming after the foul. Arsenal players pass the ball around the midfield, maintaining possession.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4886.0,
+            "end_sec": 4888.0,
+            "context": "score",
+            "asset_type": "courtside_led",
+            "description": "Alexandre Lacazette is seen on the ground after scoring, with Eric Dier standing nearby. The scoreboard shows Arsenal leading 3-2.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4888.0,
+            "end_sec": 4896.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "A replay of Alexandre Lacazette's goal. He receives the ball outside the box, turns, and strikes a low shot that deflects off Eric Dier and into the bottom corner of the net.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4902.0,
+            "end_sec": 4905.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "Alexandre Lacazette runs back towards the center circle, looking focused after his goal.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4923.0,
+            "end_sec": 4928.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Aubameyang attempts a cross into the box, but Eric Dier is there to clear the ball for a throw-in.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4938.0,
+            "end_sec": 4941.0,
+            "context": "other",
+            "asset_type": "jersey_patch",
+            "description": "A close-up of Alexandre Lacazette, looking ready for the next phase of play.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4941.0,
+            "end_sec": 4945.0,
+            "context": "other",
+            "asset_type": "jersey_patch",
+            "description": "A close-up of Pierre-Emerick Aubameyang, showing his focus and intensity.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4945.0,
+            "end_sec": 4949.0,
+            "context": "other",
+            "asset_type": "jersey_patch",
+            "description": "Sead Kolasinac prepares to take a long throw-in into the Tottenham penalty area.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4949.0,
+            "end_sec": 4954.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Kolasinac throws the ball in, and Aaron Ramsey controls it under pressure from a Tottenham defender.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4956.0,
+            "end_sec": 4960.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Sead Kolasinac and Serge Aurier battle for possession near the touchline.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4966.0,
+            "end_sec": 4971.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Arsenal maintains possession, with players moving into space and supporting each other.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4975.0,
+            "end_sec": 4982.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Lucas Torreira receives the ball, drives into the right side of the penalty area, and prepares to shoot.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4982.0,
+            "end_sec": 4987.0,
+            "context": "score",
+            "asset_type": "courtside_led",
+            "description": "Lucas Torreira strikes a powerful low shot across the goalkeeper and into the far corner of the net. Goal for Arsenal!",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 4997.0,
+            "end_sec": 5002.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "A group of Arsenal players, including Hector Bellerin and Pierre-Emerick Aubameyang, embrace Torreira in a jubilant group hug.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5004.0,
+            "end_sec": 5007.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "Close-up shots of Arsenal fans in the stands, cheering, waving scarves, and celebrating the goal.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5007.0,
+            "end_sec": 5010.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "Lucas Torreira is seen being hugged by Aaron Ramsey and other teammates as they celebrate the goal.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5010.0,
+            "end_sec": 5019.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "Torreira is on the ground, overwhelmed with emotion, as his teammates continue to celebrate around him.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5019.0,
+            "end_sec": 5022.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "Lucas Torreira performs a knee slide celebration on the grass, his face filled with joy.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5022.0,
+            "end_sec": 5030.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "Torreira puts his shirt back on and is congratulated by Sead Kolasinac and Pierre-Emerick Aubameyang.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5047.0,
+            "end_sec": 5055.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "Another replay of the goal, this time from a lower angle, focusing on Torreira's strike and the goalkeeper's attempt to save it.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5062.0,
+            "end_sec": 5068.0,
+            "context": "celebration",
+            "asset_type": "jersey_patch",
+            "description": "A close-up of Lucas Torreira, screaming in celebration as he looks towards the fans.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5068.0,
+            "end_sec": 5074.0,
+            "context": "other",
+            "asset_type": "jersey_patch",
+            "description": "A close-up of Lucas Torreira, looking focused and ready to continue the match after his goal.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5074.0,
+            "end_sec": 5082.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Play resumes, and Lucas Torreira is fouled in midfield, winning a free-kick for Arsenal.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5089.0,
+            "end_sec": 5095.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Eric Dier clears the ball away from danger as Arsenal continues to attack.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5134.0,
+            "end_sec": 5146.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Play resumes after the substitutions, with Arsenal continuing to control the game.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5573.0,
+            "end_sec": 5610.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Tottenham gains possession briefly, but Arsenal quickly wins it back. The play moves towards the Tottenham penalty area before a foul is committed on Granit Xhaka.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5740.0,
+            "end_sec": 5749.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "Hugo Lloris throws the ball out, and play continues in the midfield.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5749.0,
+            "end_sec": 5750.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the Emirates Stadium pitch during the final minutes of the Arsenal vs Tottenham match. The score is 4-2 to Arsenal. Players from both teams are positioned across the field. The 'Emirates Fly Better' sponsorship is visible on the perimeter LED boards. The crowd is visible in the background, filling the stands.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5750.0,
+            "end_sec": 5759.0,
+            "context": "close_up",
+            "asset_type": "jersey_patch",
+            "description": "A close-up, tracking shot of Lucas Torreira running across the pitch. He is wearing the red and white Arsenal home kit with the 'Emirates' sponsor logo. He has a focused expression. The broadcast scoreboard in the top left corner shows the match time at 89:30.",
+            "confidence": 0.97,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5759.0,
+            "end_sec": 5765.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot following the action as Arsenal's Lucas Torreira is fouled by Tottenham's Serge Aurier in the center of the pitch. Torreira falls to the ground, and the referee immediately blows his whistle. The camera pans to follow the players. Perimeter advertising for 'Emirates' is visible.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5773.0,
+            "end_sec": 5776.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "A slow-motion replay of Serge Aurier's foul on Lucas Torreira. The camera follows the action as Aurier slides in recklessly, catching Torreira's ankle. Torreira is seen tumbling onto the pitch. The 'Emirates' branding is visible on the LED boards in the background.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5806.0,
+            "end_sec": 5813.0,
+            "context": "close_up",
+            "asset_type": "jersey_patch",
+            "description": "A close-up, tracking shot of Aaron Ramsey running on the pitch. He has a slight smile on his face, looking pleased with the team's performance. He is wearing the Arsenal home kit with the 'Emirates' logo. The background shows the blurred crowd.",
+            "confidence": 0.97,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5827.0,
+            "end_sec": 5833.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the pitch showing players from both teams as they prepare for a set piece. The atmosphere in the stadium is electric. 'Emirates' branding is visible on the LED boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5833.0,
+            "end_sec": 5838.0,
+            "context": "close_up",
+            "asset_type": "jersey_patch",
+            "description": "A medium shot of Serge Aurier and Arsenal's Alexandre Lacazette near the touchline. They are walking past each other. Lacazette is wearing the Arsenal home kit. The background shows the pitch and other players.",
+            "confidence": 0.9,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5838.0,
+            "end_sec": 5841.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the pitch as Arsenal prepares to take a corner kick. The crowd is cheering loudly. 'Emirates' branding is visible on the LED boards.",
+            "confidence": 0.78,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5906.0,
+            "end_sec": 5908.0,
+            "context": "close_up",
+            "asset_type": "jersey_patch",
+            "description": "A close-up shot of Aaron Ramsey reacting to the missed chance. He looks slightly disappointed but quickly refocuses on the game. He is wearing the Arsenal home kit. The background shows the blurred crowd.",
+            "confidence": 0.97,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5923.0,
+            "end_sec": 5925.0,
+            "context": "close_up",
+            "asset_type": "jersey_patch",
+            "description": "A close-up shot of Arsenal's Granit Xhaka as he prepares for the next phase of play. He is wearing the Arsenal home kit with the captain's armband. He looks focused and determined. The background shows the blurred pitch.",
+            "confidence": 0.97,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "start_sec": 5938.0,
+            "end_sec": 5941.0,
+            "context": "close_up",
+            "asset_type": "jersey_patch",
+            "description": "A close-up shot of Pierre-Emerick Aubameyang as he runs into space. He is wearing the Arsenal home kit. He looks alert, watching the movement of the ball. The background shows the blurred crowd.",
+            "confidence": 0.97,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          }
+        ],
+        "legibility_notes": "Mostly fully legible in extracted metadata; any poorer renders were not surfaced in these detections.",
+        "moments_count": 81,
+        "outside_whistle_to_whistle_seconds": 39.0,
+        "total_seconds": 575.0
+      },
+      {
+        "name": "Betfair",
+        "total_seconds": 303.0,
+        "moments_count": 33,
+        "outside_whistle_to_whistle_seconds": 0,
+        "asset_types": [
+          "other"
+        ],
+        "appearances": [
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 599.0,
+            "start_sec": 583.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 604.0,
+            "start_sec": 599.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "close_up",
+            "description": "Betfair on rotating perimeter LED boards in a close-up shot.",
+            "end_sec": 616.0,
+            "start_sec": 604.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 628.0,
+            "start_sec": 617.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 633.0,
+            "start_sec": 630.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 648.0,
+            "start_sec": 644.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 653.0,
+            "start_sec": 648.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 680.0,
+            "start_sec": 669.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 745.0,
+            "start_sec": 738.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 759.0,
+            "start_sec": 752.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 771.0,
+            "start_sec": 769.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 812.0,
+            "start_sec": 804.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 824.0,
+            "start_sec": 817.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 1011.0,
+            "start_sec": 998.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 1531.0,
+            "start_sec": 1528.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 1563.0,
+            "start_sec": 1531.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 2028.0,
+            "start_sec": 2021.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 2105.0,
+            "start_sec": 2094.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 2161.0,
+            "start_sec": 2154.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 2646.0,
+            "start_sec": 2641.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 2657.0,
+            "start_sec": 2648.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 2707.0,
+            "start_sec": 2692.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 2732.0,
+            "start_sec": 2713.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 2912.0,
+            "start_sec": 2902.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 3538.0,
+            "start_sec": 3531.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 3555.0,
+            "start_sec": 3549.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 3913.0,
+            "start_sec": 3907.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 3921.0,
+            "start_sec": 3919.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 3946.0,
+            "start_sec": 3939.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 3964.0,
+            "start_sec": 3954.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Betfair on rotating perimeter LED boards during replay.",
+            "end_sec": 3971.0,
+            "start_sec": 3964.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 3977.0,
+            "start_sec": 3976.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Betfair on rotating perimeter LED boards during open play.",
+            "end_sec": 5573.0,
+            "start_sec": 5545.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1827dfcff1fd72ecb09.mp4"
+          }
+        ],
+        "legibility_notes": "One appearance is only mostly legible; all others are fully legible."
+      },
+      {
+        "name": "12BET",
+        "total_seconds": 300.0,
+        "moments_count": 38,
+        "outside_whistle_to_whistle_seconds": 0.0,
+        "asset_types": [
+          "courtside_led"
+        ],
+        "appearances": [
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Hugo Lloris, the Tottenham goalkeeper, clears the ball from his area. He kicks it long towards the midfield. The camera follows the ball as it travels through the air and players from both sides prepare to challenge for it.",
+            "end_sec": 437.0,
+            "start_sec": 433.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Play continues in the midfield with both teams battling for possession. The camera follows the ball as it is passed around. The match remains very competitive with both sides showing great energy and commitment.",
+            "end_sec": 443.0,
+            "start_sec": 437.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of Tottenham passing the ball in midfield. Eric Dier (#15) and Moussa Sissoko are involved. '12BET' is now visible on the perimeter boards.",
+            "end_sec": 1824.0,
+            "start_sec": 1820.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of Tottenham attacking. Christian Eriksen and Son Heung-min are involved in the build-up. '12BET' is prominent on the perimeter boards.",
+            "end_sec": 1832.0,
+            "start_sec": 1824.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of Arsenal clearing the ball from their penalty area after a Tottenham attack. '12BET' is visible on the perimeter boards.",
+            "end_sec": 1835.0,
+            "start_sec": 1832.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of Pierre-Emerick Aubameyang (#14) chasing a long ball, but it goes out for a Tottenham goal kick. '12BET' is visible on the perimeter boards.",
+            "end_sec": 1842.0,
+            "start_sec": 1835.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot as Tottenham starts play from their goalkeeper. '12BET' is visible on the perimeter boards.",
+            "end_sec": 1846.0,
+            "start_sec": 1842.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of Tottenham passing the ball in their own half. '12BET' is visible on the perimeter boards.",
+            "end_sec": 1850.0,
+            "start_sec": 1846.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The match resumes with a Tottenham free kick. The ball is played into the Arsenal half, but Arsenal manage to regain possession. Lucas Torreira is seen battling for the ball in midfield.",
+            "end_sec": 2414.0,
+            "start_sec": 2388.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera shows a wide view of the pitch as Arsenal prepare to take a goal kick. The players are positioning themselves across the field.",
+            "end_sec": 2428.0,
+            "start_sec": 2418.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the pitch as play resumes. Tottenham is in possession in the middle of the field, looking to build an attack.",
+            "end_sec": 2902.0,
+            "start_sec": 2894.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The corner is taken and delivered into a crowded penalty area. The ball is headed away by a Tottenham defender, but Arsenal maintains pressure.",
+            "end_sec": 2955.0,
+            "start_sec": 2945.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The corner is delivered by Granit Xhaka. Shkodran Mustafi rises highest and connects with a powerful header that is heading for the top corner, but Hugo Lloris makes a spectacular fingertip save to tip it over the bar.",
+            "end_sec": 3007.0,
+            "start_sec": 3001.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Tottenham launches an attack down the right wing. The ball is played into the Arsenal half as they look to create a scoring opportunity.",
+            "end_sec": 3110.0,
+            "start_sec": 3103.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Tottenham players set up for a free kick in a dangerous position. Harry Kane and Christian Eriksen are both standing over the ball.",
+            "end_sec": 3352.0,
+            "start_sec": 3345.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Harry Kane as he focuses on the goal, preparing to take the free kick.",
+            "end_sec": 3356.0,
+            "start_sec": 3352.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Harry Kane takes the free kick, striking the ball powerfully towards the top corner of the goal.",
+            "end_sec": 3372.0,
+            "start_sec": 3356.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Bernd Leno makes a spectacular save, diving to his left to tip Harry Kane's free kick over the bar.",
+            "end_sec": 3377.0,
+            "start_sec": 3372.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Bernd Leno after his save. He looks relieved and focused.",
+            "end_sec": 3381.0,
+            "start_sec": 3377.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of Harry Kane's free kick and Bernd Leno's save from multiple angles, showing the power of the shot and the quality of the save.",
+            "end_sec": 3393.0,
+            "start_sec": 3381.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Harry Kane and Arsenal's Hector Bellerin as they exchange words after the save.",
+            "end_sec": 3397.0,
+            "start_sec": 3393.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Tottenham prepares to take a corner kick. Players from both teams jostle for position in the penalty area.",
+            "end_sec": 3401.0,
+            "start_sec": 3397.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Christian Eriksen takes the corner kick, sending the ball into a crowded penalty area.",
+            "end_sec": 3409.0,
+            "start_sec": 3401.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Bernd Leno catches the ball from the corner kick, ending the Tottenham attack.",
+            "end_sec": 3412.0,
+            "start_sec": 3409.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Arsenal continue to move the ball around the pitch, looking for an opening in the Tottenham defense.",
+            "end_sec": 3833.0,
+            "start_sec": 3826.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Arsenal launch an attack down the wing. The ball is played into the box, but the Tottenham defense manages to clear it.",
+            "end_sec": 3843.0,
+            "start_sec": 3833.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the pitch as play continues. Tottenham are in possession and trying to move the ball forward.",
+            "end_sec": 3862.0,
+            "start_sec": 3858.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot as Arsenal prepare to take the free kick. The camera pans across the field, showing the positioning of players from both teams. The perimeter LED boards now show '12BET' advertising.",
+            "end_sec": 4363.0,
+            "start_sec": 4343.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of an Arsenal attack. The ball is moved quickly through the midfield. Aaron Ramsey (8) and Alexandre Lacazette (9) are involved in the build-up. The crowd's roar increases as Arsenal approach the Tottenham penalty area.",
+            "end_sec": 4370.0,
+            "start_sec": 4363.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of play in the midfield. Both teams are battling for control. The camera pans to follow the ball as it is passed between players. '12BET' advertising is prominent on the perimeter boards.",
+            "end_sec": 4413.0,
+            "start_sec": 4400.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of a Tottenham attack. Son Heung-min (7) receives the ball on the left wing, cuts inside, and unleashes a powerful shot towards the near post. Arsenal goalkeeper Bernd Leno (19) makes a sharp save to turn the ball away.",
+            "end_sec": 4421.0,
+            "start_sec": 4413.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "other",
+            "description": "Play continues as Arsenal advances into the Tottenham half. The tension in the stadium is palpable as Arsenal looks for a breakthrough.",
+            "end_sec": 4748.0,
+            "start_sec": 4738.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "score",
+            "description": "Alexandre Lacazette receives a pass from Aaron Ramsey. He takes a shot from just outside the box, and the ball takes a slight deflection and goes into the net. Goal for Arsenal!",
+            "end_sec": 4752.0,
+            "start_sec": 4748.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "replay",
+            "description": "A replay of the goal build-up. It shows Aaron Ramsey winning the ball and passing it to Lacazette, who then takes the decisive shot.",
+            "end_sec": 4789.0,
+            "start_sec": 4779.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "replay",
+            "description": "Another replay of the goal, showing the pass from Ramsey and Lacazette's shot from a different angle. The deflection off a Tottenham defender is more visible here.",
+            "end_sec": 4821.0,
+            "start_sec": 4813.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "replay",
+            "description": "A replay of the goal from a low angle behind the goal. It shows the ball's trajectory and the deflection that helped it beat the goalkeeper.",
+            "end_sec": 4880.0,
+            "start_sec": 4869.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "replay",
+            "description": "Another replay angle of the goal, focusing on Lacazette's movement and his clinical finish from the edge of the area.",
+            "end_sec": 4886.0,
+            "start_sec": 4880.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of an Arsenal attack. The ball is played into the Tottenham box but is cleared by a defender. The camera follows the ball as it is cleared towards the midfield. '12BET' branding is visible on the LED boards.",
+            "end_sec": 5906.0,
+            "start_sec": 5898.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          }
+        ],
+        "legibility_notes": "Mostly legible during the Lacazette goal sequence and its replay angles; otherwise fully legible."
+      },
+      {
+        "name": "Lexus",
+        "total_seconds": 36.0,
+        "moments_count": 4,
+        "outside_whistle_to_whistle_seconds": 0.0,
+        "asset_types": [
+          "broadcast_overlay"
+        ],
+        "appearances": [
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.97,
+            "context": "other",
+            "description": "A wide shot of the pitch at Emirates Stadium during the Arsenal vs Tottenham match.",
+            "end_sec": 2589.0,
+            "start_sec": 2587.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.63,
+            "context": "other",
+            "description": "A close-up shot of referee Mike Dean running across the pitch, keeping up with the play.",
+            "end_sec": 2883.0,
+            "start_sec": 2882.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.63,
+            "context": "timeout",
+            "description": "A broadcast graphic confirms the Arsenal substitutions: Alexandre Lacazette and Aaron Ramsey have replaced Alex Iwobi and Henrikh Mkhitaryan.",
+            "end_sec": 3103.0,
+            "start_sec": 3090.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A wide shot of an Arsenal attack that ends with the ball going out for a throw-in.",
+            "end_sec": 5979.0,
+            "start_sec": 5959.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          }
+        ],
+        "legibility_notes": "All detected Lexus appearances were fully legible."
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "other",
+            "confidence": 0.81,
+            "context": "score",
+            "description": "Gatorade signage appears on stadium fascia during a bench shot of Unai Emery.",
+            "end_sec": 194,
+            "start_sec": 187,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.91,
+            "context": "score",
+            "description": "Gatorade rotates onto the perimeter LED boards as open play resumes from an Arsenal free kick.",
+            "end_sec": 377,
+            "start_sec": 373,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "Gatorade is visible on the perimeter LED boards during a slow-motion replay of Mustafi's header and Lloris's save.",
+            "end_sec": 3024,
+            "start_sec": 3018,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.92,
+            "context": "wide_shot",
+            "description": "Gatorade appears on the perimeter LED boards in a wide midfield setup before a Tottenham set piece.",
+            "end_sec": 3306,
+            "start_sec": 3291,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.89,
+            "context": "close_up",
+            "description": "Gatorade remains visible on the perimeter LED boards during a close-up of Juan Foyth preparing for a throw-in.",
+            "end_sec": 3311,
+            "start_sec": 3306,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.89,
+            "context": "wide_shot",
+            "description": "Gatorade stays on the perimeter LED boards as Foyth takes the throw-in and Xhaka fouls Dele Alli.",
+            "end_sec": 3316,
+            "start_sec": 3311,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "Gatorade is visible on the perimeter LED boards during the replay of Xhaka's foul on Dele Alli.",
+            "end_sec": 3330,
+            "start_sec": 3322,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.91,
+            "context": "score",
+            "description": "Gatorade appears on the perimeter LED boards during a wide open-play shot of Arsenal circulating the ball in midfield.",
+            "end_sec": 4231,
+            "start_sec": 4217,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.84,
+            "context": "celebration",
+            "description": "Gatorade is visible on the perimeter LED boards in a stadium-wide crowd shot during celebration after Arsenal's fourth goal.",
+            "end_sec": 5004,
+            "start_sec": 5002,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.58,
+            "context": "other",
+            "description": "Brief Gatorade appearance in a wide stoppage shot around the referee as Vertonghen prepares to leave the pitch; surface classified broadly as other in metadata.",
+            "end_sec": 5456,
+            "start_sec": 5451,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "score",
+            "description": "Gatorade branding is explicitly visible on the LED boards during Sokratis's forward run late in the match.",
+            "end_sec": 5997,
+            "start_sec": 5989,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led",
+          "other"
+        ],
+        "legibility_notes": "All detected Gatorade appearances in this broadcast were marked fully_legible in metadata. Most were secondary-background exposures rather than dominant foreground placements.",
+        "moments_count": 11,
+        "name": "Gatorade",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 79
+      },
+      {
+        "name": "BYD",
+        "total_seconds": 183.0,
+        "moments_count": 27,
+        "outside_whistle_to_whistle_seconds": 5.0,
+        "asset_types": [
+          "stadium_fascia_signage",
+          "perimeter_led_board",
+          "training_kit_sponsor",
+          "other"
+        ],
+        "legibility_notes": "All detected BYD appearances are marked fully_legible in metadata.",
+        "appearances": [
+          {
+            "start_sec": 97.0,
+            "end_sec": 102.0,
+            "context": "pregame",
+            "asset_type": "other",
+            "description": "Unai Emery is seen sitting on the Arsenal bench, smiling and talking to someone off-camera.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 349.0,
+            "end_sec": 351.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "A shot of Mauricio Pochettino, the Tottenham Hotspur manager, on the touchline. He is dressed in a dark suit and is looking intently at the pitch, possibly giving instructions to his players. His focused expression reflects the importance of the match.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 683.0,
+            "end_sec": 685.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of Pierre-Emerick Aubameyang placing the ball on the penalty spot. Hugo Lloris is in goal, and players from both teams are lined up outside the penalty area.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 692.0,
+            "end_sec": 693.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "description": "A wide shot of the penalty area as the referee blows his whistle for the penalty to be taken.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 693.0,
+            "end_sec": 698.0,
+            "context": "score",
+            "asset_type": "courtside_led",
+            "description": "Pierre-Emerick Aubameyang runs up and strikes the ball low into the bottom left corner of the net. Hugo Lloris dives the wrong way. Arsenal take a 1-0 lead.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 726.0,
+            "end_sec": 731.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "A replay of the penalty goal from a wide angle, showing Aubameyang's run-up and strike.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 731.0,
+            "end_sec": 737.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "A replay of the goal from behind the net, showing the ball flying past Hugo Lloris.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 737.0,
+            "end_sec": 738.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "description": "A close-up shot of the ball hitting the back of the net.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 790.0,
+            "end_sec": 799.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "A medium shot of Tottenham manager Mauricio Pochettino on the bench. He is talking to his assistants and looks concerned. The 'BYD' logo is visible on the bench seats.",
+            "confidence": 0.9,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 812.0,
+            "end_sec": 817.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "A medium shot of the Tottenham bench, showing Toby Alderweireld and Lucas Moura. They are watching the game intently.",
+            "confidence": 0.9,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 981.0,
+            "end_sec": 998.0,
+            "context": "close_up",
+            "asset_type": "courtside_led",
+            "description": "A close-up shot of Unai Emery watching the game intently from the technical area.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 2883.0,
+            "end_sec": 2894.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Arsenal manager Unai Emery is seen sitting on the bench, engaged in an animated tactical discussion with his assistant, Juan Carlos Carcedo. They are both gesturing as they talk.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3491.0,
+            "end_sec": 3495.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Medium shot of Tottenham manager Mauricio Pochettino standing in the technical area, looking concerned. He is wearing a dark suit and coat. Fans are visible in the background.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3495.0,
+            "end_sec": 3503.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Medium shot of Pochettino walking along the touchline, hands in his pockets, looking down at the pitch. He appears to be deep in thought about his team's performance.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3503.0,
+            "end_sec": 3508.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Medium shot of Pochettino looking towards the pitch, adjusting his hair. He remains in the technical area, observing the game as play is about to resume.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3508.0,
+            "end_sec": 3515.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Medium shot of Pochettino standing still, observing the game. He looks towards the referee and the players as they prepare for the free kick.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3681.0,
+            "end_sec": 3688.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Medium shot of Arsenal manager Unai Emery talking to his assistant coach on the bench. He is wearing a dark Arsenal jacket with the Puma logo. He looks focused and is giving instructions.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3688.0,
+            "end_sec": 3698.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Medium shot of Unai Emery looking focused and intense as he watches the game from the touchline. He is gesturing with his hands, seemingly urging his players on.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 3731.0,
+            "end_sec": 3736.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "Medium shot of Unai Emery celebrating the goal with his coaching staff and players on the bench. He is punching the air and shouting with joy. The Arsenal fans in the background are also celebrating wildly.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 4191.0,
+            "end_sec": 4203.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "A close-up of Tottenham manager Mauricio Pochettino on the bench, looking concerned and discussing tactics with his assistant.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 4502.0,
+            "end_sec": 4511.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Close-up of Arsenal manager Unai Emery on the touchline, speaking with substitute Matteo Guendouzi (29). Emery is giving tactical instructions using a small notepad. Guendouzi, with his distinctive long curly hair, listens intently. 'BYD' branding is visible on the stadium fascia behind them.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 4896.0,
+            "end_sec": 4902.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "Arsenal manager Unai Emery celebrates passionately on the touchline, pumping his fists in the air as the crowd roars.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 4930.0,
+            "end_sec": 4934.0,
+            "context": "other",
+            "asset_type": "other",
+            "description": "Unai Emery is seen shouting instructions to his players from the technical area.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 5055.0,
+            "end_sec": 5062.0,
+            "context": "celebration",
+            "asset_type": "other",
+            "description": "Unai Emery is seen celebrating again on the touchline, clearly delighted with his team's performance.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 5201.0,
+            "end_sec": 5210.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "Arsenal manager Unai Emery is shown sitting on the bench, looking calm and occasionally smiling as he watches the game unfold. He is wearing a black Arsenal jacket.",
+            "confidence": 0.75,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 5813.0,
+            "end_sec": 5827.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "A close-up shot of Arsenal manager Unai Emery on the touchline. He gives a double thumbs-up gesture towards his players, then turns and walks back to the dugout to sit down. The dugout seats feature 'BYD' branding. He appears satisfied.",
+            "confidence": 0.9,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          },
+          {
+            "start_sec": 6029.0,
+            "end_sec": 6036.0,
+            "context": "close_up",
+            "asset_type": "other",
+            "description": "A close-up shot of Unai Emery on the touchline, looking calm and composed as his team nears a significant victory. He is watching the play intently. The background shows the 'BYD' branding on the dugout seats.",
+            "confidence": 0.9,
+            "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+          }
+        ]
+      }
+    ],
+    "summary": ""
+  },
+  "timings": {}
+}

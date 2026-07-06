@@ -1,0 +1,42 @@
+{
+  "aia": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/aia-SadQ0YGhLpYqgGdS7pUYHKttVJtTjG.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "nike": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/nike-Ly8Uh2vHdaBsVHWZdJzPiNDJsmCqYD.mp4",
+    "duration_sec": 26.1,
+    "clips": 4
+  },
+  "emirates": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/emirates-xE3TwImu9ZywWaO8XUlmhs56jB13JG.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "betfair": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/betfair-cs7aL4tmHTisdLvJhL7IJpoQV5Rube.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "12bet": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/12bet-cR1IlQdrESoCNWZrx7qBXP8EcC5x4y.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "lexus": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/lexus-FhKsEgwfkjX4BMSP7lZlykk98MRRvz.mp4",
+    "duration_sec": 23.1,
+    "clips": 4
+  },
+  "gatorade": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/gatorade-3XE6apw2wjaeKoK84DPeTYcELVX15T.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "byd": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/byd-OD020AH9qFHTWEATh0HlFspHENgR9o.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  }
+}

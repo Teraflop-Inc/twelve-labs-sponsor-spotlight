@@ -1,0 +1,37 @@
+{
+  "aia": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/aia-14qZxcBfkkJLqKjhLPcao2nOAafkq8.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "nike": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/nike-fxB6Gc86yWlVkHpM8rIQgwEpShr46a.mp4",
+    "duration_sec": 28.1,
+    "clips": 4
+  },
+  "nexen tire": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/nexen-tire-dN6h2f83mpkyvLcdmFykY0OgRrkx5W.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "nissan": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/nissan-3CdhlmSgDXjSzMWeLyFvVKHU6KQkhd.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "emirates": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/emirates-7b8d7gQO1mMt0wAztcxCrERhaNnEXk.mp4",
+    "duration_sec": 15.1,
+    "clips": 2
+  },
+  "hublot": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/hublot-cMQkXB5GdUYXX1P5faJ1T0KtSJyB7H.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "etisalat": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-tot-2023/etisalat-ouHCwRlBAkKsgVduDFdwocAhSZpO2q.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  }
+}

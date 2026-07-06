@@ -1,0 +1,232 @@
+{
+  "session_id": "sess_019f24b4-faa1-74b0-93f1-69bbcb480a7b",
+  "report": {
+    "brands": [
+      {
+        "name": "Nike",
+        "summary": "Detected asset types: courtside_led, jersey_patch, other. Key weakness: jersey_patch legibility dips; other legibility dips.",
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "contrast": 8.5,
+            "size": 6.5,
+            "position": 6.5,
+            "camera_angle": 6.0,
+            "motion_blur": 6.5,
+            "overall_score": 8.5,
+            "issues": "Contexts: goal, open_play, replay. Some appearances sit in the secondary background.",
+            "suggestions": "Isolate the mark from action and avoid small moving placements."
+          },
+          {
+            "asset_type": "jersey_patch",
+            "contrast": 5.0,
+            "size": 4.5,
+            "position": 7.5,
+            "camera_angle": 7.5,
+            "motion_blur": 7.0,
+            "overall_score": 5.0,
+            "issues": "Contexts: celebration, close_up, open_play, replay. Weaker renders at 1527-1541s (A wide shot of the pitch. Liverpool launches a quick counter-attack. Trent Alexander-Arnold receives the ball on the right wing and drives forward, but Rasmus Hojlund tracks back impressively and makes a sliding tackle to concede a corner.); 2384-2385s (A close-up shot of a fan in the stands, wearing a black hooded jacket and looking on intently. In the foreground, the back of a Manchester United goalkeeper jersey with the name 'ONANA' and number '24' is partially visible.); 4432-4434s (More Liverpool players join the celebration, forming a huddle around Salah. The camera captures the intense emotion of the moment.); 4455-4458s (Salah sits on the pitch with his arms raised, soaking in the atmosphere and the cheers from the fans.); 4469-4472s (Liverpool manager Arne Slot is seen on the touchline, watching the action with a serious expression.). Some appearances are small in frame.",
+            "suggestions": "Enlarge the mark or add an outline, and reposition for cleaner close-up visibility on player shots."
+          },
+          {
+            "asset_type": "other",
+            "contrast": 5.0,
+            "size": 4.5,
+            "position": 5.5,
+            "camera_angle": 5.5,
+            "motion_blur": 4.5,
+            "overall_score": 5.0,
+            "issues": "Contexts: open_play, replay. Weaker renders at 2963-2974s (Wide shot of the pitch as the second half kicks off. Manchester United starts with the ball. The camera zooms out to show the full pitch and the crowd.); 4741-4744s (Mohamed Salah takes the free kick. The camera pans to follow the trajectory of the ball as it curls over the Manchester United wall but ultimately sails over the crossbar.); 4821-4830s (A challenge occurs in the midfield where Darwin Núñez fouls Matthijs de Ligt. The camera pans to capture the impact and the immediate reaction of the players.); 4842-4853s (A replay of the foul from a different angle, showing Núñez's challenge on De Ligt in slow motion.); 5893-5894s (A close-up shot of Andrew Robertson's hands as he places the yellow Nike flight ball on the corner arc. He carefully positions it for the upcoming corner kick.). Some appearances are small in frame.",
+            "suggestions": "Isolate the mark from action and avoid small moving placements."
+          }
+        ]
+      },
+      {
+        "name": "Hublot",
+        "summary": "Detected asset types: courtside_led, scorers_table, broadcast_overlay. No major weakness observed.",
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "contrast": 8.5,
+            "size": 6.5,
+            "position": 6.5,
+            "camera_angle": 6.0,
+            "motion_blur": 6.5,
+            "overall_score": 8.5,
+            "issues": "Contexts: open_play. Some appearances sit in the secondary background.",
+            "suggestions": "Isolate the mark from action and avoid small moving placements."
+          },
+          {
+            "asset_type": "scorers_table",
+            "contrast": 8.0,
+            "size": 4.5,
+            "position": 8.5,
+            "camera_angle": 8.5,
+            "motion_blur": 9.0,
+            "overall_score": 8.0,
+            "issues": "Contexts: open_play, replay. Some appearances are small in frame.",
+            "suggestions": "Enlarge the sponsor cell and increase dwell time and surrounding clear space."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "contrast": 8.5,
+            "size": 6.5,
+            "position": 8.5,
+            "camera_angle": 8.5,
+            "motion_blur": 9.0,
+            "overall_score": 8.5,
+            "issues": "Contexts: close_up, open_play, substitution. Some appearances sit in the secondary background.",
+            "suggestions": "Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space."
+          }
+        ]
+      },
+      {
+        "name": "Expedia",
+        "summary": "Detected asset types: courtside_led, jersey_patch. Key weakness: courtside_led legibility dips.",
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "contrast": 7.0,
+            "size": 6.5,
+            "position": 6.5,
+            "camera_angle": 6.0,
+            "motion_blur": 6.5,
+            "overall_score": 7.0,
+            "issues": "Contexts: close_up, goal, open_play, replay. Weaker renders at 307-318s (A wide shot of the pitch as Liverpool takes possession of the ball. The commentator mentions the inclusion of Ibrahima Konate and Virgil van Dijk in the Liverpool starting lineup. Expedia branding is visible on the perimeter LED boards.); 318-324s (A medium shot of Diogo Dalot dribbling the ball down the right wing. He is being tracked by Liverpool's Curtis Jones.); 1658-1736s (A wide shot of the pitch. Liverpool regains possession and continues to probe the Manchester United defense. A broadcast graphic shows possession statistics and shots on goal, highlighting Liverpool's dominance. Trent Alexander-Arnold and Andy Robertson are involved in the build-up.); 2073-2075s (A close-up shot of Trent Alexander-Arnold as he controls the ball near the touchline. Bruno Fernandes is seen tracking him. Expedia branding is visible in the background.); 2075-2088s (A wide shot showing Liverpool passing the ball in the midfield area. The camera pans to follow the ball's movement. Expedia and 'Made to Travel' branding is prominent on the boards.). Some appearances sit in the secondary background.",
+            "suggestions": "Increase contrast, simplify copy, and use a larger wordmark for better readability in live play angles."
+          },
+          {
+            "asset_type": "jersey_patch",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 7.5,
+            "camera_angle": 7.5,
+            "motion_blur": 8.0,
+            "overall_score": 9.0,
+            "issues": "Contexts: celebration, close_up, open_play, replay, substitution.",
+            "suggestions": "Enlarge the mark or add an outline, and reposition for cleaner close-up visibility on player shots."
+          }
+        ]
+      },
+      {
+        "name": "GEICO",
+        "summary": "Detected asset types: scorers_table, broadcast_overlay. No major weakness observed.",
+        "assets": [
+          {
+            "asset_type": "scorers_table",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 8.5,
+            "camera_angle": 8.5,
+            "motion_blur": 9.0,
+            "overall_score": 9.0,
+            "issues": "Contexts: open_play.",
+            "suggestions": "Enlarge the sponsor cell and increase dwell time and surrounding clear space."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 8.5,
+            "camera_angle": 8.5,
+            "motion_blur": 9.0,
+            "overall_score": 9.0,
+            "issues": "Contexts: close_up.",
+            "suggestions": "Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space."
+          }
+        ]
+      },
+      {
+        "name": "Google Pixel",
+        "summary": "Detected asset types: courtside_led. Key weakness: courtside_led legibility dips.",
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "contrast": 7.0,
+            "size": 6.5,
+            "position": 6.5,
+            "camera_angle": 6.0,
+            "motion_blur": 6.5,
+            "overall_score": 7.0,
+            "issues": "Contexts: close_up, open_play, replay. Weaker renders at 353-361s (A wide shot as Trent Alexander-Arnold takes the throw-in. Liverpool begins a period of sustained possession. Google Pixel 9 branding is visible on the LED boards.); 361-365s (A wide shot showing Andy Robertson receiving the ball and looking to advance play for Liverpool.); 665-730s (The camera returns to a wide view of the pitch as Manchester United continues their possession. Players are spread across the field, with the ball being moved through the midfield. The 'standard chartered' and 'Google Pixel 9' advertisements are prominent on the perimeter boards.); 831-857s (A wide shot of the pitch as Liverpool launches an attack. The ball is moved quickly down the right flank, with Mohamed Salah and Trent Alexander-Arnold involved in the play. The 'Google Pixel 9' branding is visible on the boards.); 1613-1656s (A wide shot of the pitch. Liverpool maintains possession, passing the ball around the Manchester United half. A broadcast graphic shows Liverpool's impressive home record. Alexis Mac Allister and Mohamed Salah are involved in the passing sequence.). Some appearances sit in the secondary background.",
+            "suggestions": "Increase contrast, simplify copy, and use a larger wordmark for better readability in live play angles."
+          }
+        ]
+      },
+      {
+        "name": "Lexus",
+        "summary": "Detected asset types: broadcast_overlay. No major weakness observed.",
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 8.5,
+            "camera_angle": 8.5,
+            "motion_blur": 9.0,
+            "overall_score": 9.0,
+            "issues": "Contexts: open_play, postgame, replay.",
+            "suggestions": "Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space."
+          }
+        ]
+      },
+      {
+        "name": "Kia",
+        "summary": "Detected asset types: courtside_led, broadcast_overlay. No major weakness observed.",
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 6.5,
+            "camera_angle": 6.0,
+            "motion_blur": 6.5,
+            "overall_score": 9.0,
+            "issues": "Contexts: open_play.",
+            "suggestions": "Isolate the mark from action and avoid small moving placements."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 8.5,
+            "camera_angle": 8.5,
+            "motion_blur": 9.0,
+            "overall_score": 9.0,
+            "issues": "Contexts: close_up, open_play, replay.",
+            "suggestions": "Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space."
+          }
+        ]
+      },
+      {
+        "name": "Adidas",
+        "summary": "Detected asset types: jersey_patch, other. Key weakness: jersey_patch legibility dips.",
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "contrast": 7.0,
+            "size": 6.5,
+            "position": 7.5,
+            "camera_angle": 7.5,
+            "motion_blur": 8.0,
+            "overall_score": 7.0,
+            "issues": "Contexts: celebration, close_up, open_play, postgame, replay. Weaker renders at 134-135s (Close-up of Lisandro Martínez sitting on the turf after a challenge. He looks focused.); 171-178s (Close-up of Kobbie Mainoo lying on the grass, holding his head. Liverpool players stand nearby.); 1930-1935s (A close-up shot of Manchester United manager Ruben Amorim on the touchline. He is seen drinking from a water bottle while observing the match intently. He appears focused and is likely considering tactical adjustments.); 2051-2054s (A close-up shot of André Onana as he strikes the goal kick. The power and technique of his kick are clearly visible. The ball travels high and long into the Liverpool half.); 3499-3506s (A close-up shot of Manchester United manager Ruben Amorim celebrating on the touchline. He is pumping his fists and shouting in joy. The camera pans to capture his exuberant reaction to the goal. He looks incredibly proud of his team.); 3548-3553s (A close-up shot of Manchester United defender Lisandro Martinez. He is looking towards the field, appearing focused. The Adidas logo and Manchester United crest are clearly visible on his white jersey.). Some appearances sit in the secondary background.",
+            "suggestions": "Enlarge the mark or add an outline, and reposition for cleaner close-up visibility on player shots."
+          },
+          {
+            "asset_type": "other",
+            "contrast": 9.0,
+            "size": 8.5,
+            "position": 5.5,
+            "camera_angle": 5.5,
+            "motion_blur": 5.5,
+            "overall_score": 9.0,
+            "issues": "Contexts: close_up.",
+            "suggestions": "Isolate the mark from action and avoid small moving placements."
+          }
+        ]
+      }
+    ]
+  },
+  "answer": "{\"brands\": [{\"name\": \"Nike\", \"summary\": \"Detected asset types: courtside_led, jersey_patch, other. Key weakness: jersey_patch legibility dips; other legibility dips.\", \"assets\": [{\"asset_type\": \"courtside_led\", \"contrast\": 8.5, \"size\": 6.5, \"position\": 6.5, \"camera_angle\": 6.0, \"motion_blur\": 6.5, \"overall_score\": 8.5, \"issues\": \"Contexts: goal, open_play, replay. Some appearances sit in the secondary background.\", \"suggestions\": \"Isolate the mark from action and avoid small moving placements.\"}, {\"asset_type\": \"jersey_patch\", \"contrast\": 5.0, \"size\": 4.5, \"position\": 7.5, \"camera_angle\": 7.5, \"motion_blur\": 7.0, \"overall_score\": 5.0, \"issues\": \"Contexts: celebration, close_up, open_play, replay. Weaker renders at 1527-1541s (A wide shot of the pitch. Liverpool launches a quick counter-attack. Trent Alexander-Arnold receives the ball on the right wing and drives forward, but Rasmus Hojlund tracks back impressively and makes a sliding tackle to concede a corner.); 2384-2385s (A close-up shot of a fan in the stands, wearing a black hooded jacket and looking on intently. In the foreground, the back of a Manchester United goalkeeper jersey with the name 'ONANA' and number '24' is partially visible.); 4432-4434s (More Liverpool players join the celebration, forming a huddle around Salah. The camera captures the intense emotion of the moment.); 4455-4458s (Salah sits on the pitch with his arms raised, soaking in the atmosphere and the cheers from the fans.); 4469-4472s (Liverpool manager Arne Slot is seen on the touchline, watching the action with a serious expression.). Some appearances are small in frame.\", \"suggestions\": \"Enlarge the mark or add an outline, and reposition for cleaner close-up visibility on player shots.\"}, {\"asset_type\": \"other\", \"contrast\": 5.0, \"size\": 4.5, \"position\": 5.5, \"camera_angle\": 5.5, \"motion_blur\": 4.5, \"overall_score\": 5.0, \"issues\": \"Contexts: open_play, replay. Weaker renders at 2963-2974s (Wide shot of the pitch as the second half kicks off. Manchester United starts with the ball. The camera zooms out to show the full pitch and the crowd.); 4741-4744s (Mohamed Salah takes the free kick. The camera pans to follow the trajectory of the ball as it curls over the Manchester United wall but ultimately sails over the crossbar.); 4821-4830s (A challenge occurs in the midfield where Darwin Núñez fouls Matthijs de Ligt. The camera pans to capture the impact and the immediate reaction of the players.); 4842-4853s (A replay of the foul from a different angle, showing Núñez's challenge on De Ligt in slow motion.); 5893-5894s (A close-up shot of Andrew Robertson's hands as he places the yellow Nike flight ball on the corner arc. He carefully positions it for the upcoming corner kick.). Some appearances are small in frame.\", \"suggestions\": \"Isolate the mark from action and avoid small moving placements.\"}]}, {\"name\": \"Hublot\", \"summary\": \"Detected asset types: courtside_led, scorers_table, broadcast_overlay. No major weakness observed.\", \"assets\": [{\"asset_type\": \"courtside_led\", \"contrast\": 8.5, \"size\": 6.5, \"position\": 6.5, \"camera_angle\": 6.0, \"motion_blur\": 6.5, \"overall_score\": 8.5, \"issues\": \"Contexts: open_play. Some appearances sit in the secondary background.\", \"suggestions\": \"Isolate the mark from action and avoid small moving placements.\"}, {\"asset_type\": \"scorers_table\", \"contrast\": 8.0, \"size\": 4.5, \"position\": 8.5, \"camera_angle\": 8.5, \"motion_blur\": 9.0, \"overall_score\": 8.0, \"issues\": \"Contexts: open_play, replay. Some appearances are small in frame.\", \"suggestions\": \"Enlarge the sponsor cell and increase dwell time and surrounding clear space.\"}, {\"asset_type\": \"broadcast_overlay\", \"contrast\": 8.5, \"size\": 6.5, \"position\": 8.5, \"camera_angle\": 8.5, \"motion_blur\": 9.0, \"overall_score\": 8.5, \"issues\": \"Contexts: close_up, open_play, substitution. Some appearances sit in the secondary background.\", \"suggestions\": \"Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space.\"}]}, {\"name\": \"Expedia\", \"summary\": \"Detected asset types: courtside_led, jersey_patch. Key weakness: courtside_led legibility dips.\", \"assets\": [{\"asset_type\": \"courtside_led\", \"contrast\": 7.0, \"size\": 6.5, \"position\": 6.5, \"camera_angle\": 6.0, \"motion_blur\": 6.5, \"overall_score\": 7.0, \"issues\": \"Contexts: close_up, goal, open_play, replay. Weaker renders at 307-318s (A wide shot of the pitch as Liverpool takes possession of the ball. The commentator mentions the inclusion of Ibrahima Konate and Virgil van Dijk in the Liverpool starting lineup. Expedia branding is visible on the perimeter LED boards.); 318-324s (A medium shot of Diogo Dalot dribbling the ball down the right wing. He is being tracked by Liverpool's Curtis Jones.); 1658-1736s (A wide shot of the pitch. Liverpool regains possession and continues to probe the Manchester United defense. A broadcast graphic shows possession statistics and shots on goal, highlighting Liverpool's dominance. Trent Alexander-Arnold and Andy Robertson are involved in the build-up.); 2073-2075s (A close-up shot of Trent Alexander-Arnold as he controls the ball near the touchline. Bruno Fernandes is seen tracking him. Expedia branding is visible in the background.); 2075-2088s (A wide shot showing Liverpool passing the ball in the midfield area. The camera pans to follow the ball's movement. Expedia and 'Made to Travel' branding is prominent on the boards.). Some appearances sit in the secondary background.\", \"suggestions\": \"Increase contrast, simplify copy, and use a larger wordmark for better readability in live play angles.\"}, {\"asset_type\": \"jersey_patch\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 7.5, \"camera_angle\": 7.5, \"motion_blur\": 8.0, \"overall_score\": 9.0, \"issues\": \"Contexts: celebration, close_up, open_play, replay, substitution.\", \"suggestions\": \"Enlarge the mark or add an outline, and reposition for cleaner close-up visibility on player shots.\"}]}, {\"name\": \"GEICO\", \"summary\": \"Detected asset types: scorers_table, broadcast_overlay. No major weakness observed.\", \"assets\": [{\"asset_type\": \"scorers_table\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 8.5, \"camera_angle\": 8.5, \"motion_blur\": 9.0, \"overall_score\": 9.0, \"issues\": \"Contexts: open_play.\", \"suggestions\": \"Enlarge the sponsor cell and increase dwell time and surrounding clear space.\"}, {\"asset_type\": \"broadcast_overlay\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 8.5, \"camera_angle\": 8.5, \"motion_blur\": 9.0, \"overall_score\": 9.0, \"issues\": \"Contexts: close_up.\", \"suggestions\": \"Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space.\"}]}, {\"name\": \"Google Pixel\", \"summary\": \"Detected asset types: courtside_led. Key weakness: courtside_led legibility dips.\", \"assets\": [{\"asset_type\": \"courtside_led\", \"contrast\": 7.0, \"size\": 6.5, \"position\": 6.5, \"camera_angle\": 6.0, \"motion_blur\": 6.5, \"overall_score\": 7.0, \"issues\": \"Contexts: close_up, open_play, replay. Weaker renders at 353-361s (A wide shot as Trent Alexander-Arnold takes the throw-in. Liverpool begins a period of sustained possession. Google Pixel 9 branding is visible on the LED boards.); 361-365s (A wide shot showing Andy Robertson receiving the ball and looking to advance play for Liverpool.); 665-730s (The camera returns to a wide view of the pitch as Manchester United continues their possession. Players are spread across the field, with the ball being moved through the midfield. The 'standard chartered' and 'Google Pixel 9' advertisements are prominent on the perimeter boards.); 831-857s (A wide shot of the pitch as Liverpool launches an attack. The ball is moved quickly down the right flank, with Mohamed Salah and Trent Alexander-Arnold involved in the play. The 'Google Pixel 9' branding is visible on the boards.); 1613-1656s (A wide shot of the pitch. Liverpool maintains possession, passing the ball around the Manchester United half. A broadcast graphic shows Liverpool's impressive home record. Alexis Mac Allister and Mohamed Salah are involved in the passing sequence.). Some appearances sit in the secondary background.\", \"suggestions\": \"Increase contrast, simplify copy, and use a larger wordmark for better readability in live play angles.\"}]}, {\"name\": \"Lexus\", \"summary\": \"Detected asset types: broadcast_overlay. No major weakness observed.\", \"assets\": [{\"asset_type\": \"broadcast_overlay\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 8.5, \"camera_angle\": 8.5, \"motion_blur\": 9.0, \"overall_score\": 9.0, \"issues\": \"Contexts: open_play, postgame, replay.\", \"suggestions\": \"Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space.\"}]}, {\"name\": \"Kia\", \"summary\": \"Detected asset types: courtside_led, broadcast_overlay. No major weakness observed.\", \"assets\": [{\"asset_type\": \"courtside_led\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 6.5, \"camera_angle\": 6.0, \"motion_blur\": 6.5, \"overall_score\": 9.0, \"issues\": \"Contexts: open_play.\", \"suggestions\": \"Isolate the mark from action and avoid small moving placements.\"}, {\"asset_type\": \"broadcast_overlay\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 8.5, \"camera_angle\": 8.5, \"motion_blur\": 9.0, \"overall_score\": 9.0, \"issues\": \"Contexts: close_up, open_play, replay.\", \"suggestions\": \"Keep the sponsor lockup isolated from stats clutter; if scorebug-style, enlarge the sponsor cell and add dwell time and clear space.\"}]}, {\"name\": \"Adidas\", \"summary\": \"Detected asset types: jersey_patch, other. Key weakness: jersey_patch legibility dips.\", \"assets\": [{\"asset_type\": \"jersey_patch\", \"contrast\": 7.0, \"size\": 6.5, \"position\": 7.5, \"camera_angle\": 7.5, \"motion_blur\": 8.0, \"overall_score\": 7.0, \"issues\": \"Contexts: celebration, close_up, open_play, postgame, replay. Weaker renders at 134-135s (Close-up of Lisandro Martínez sitting on the turf after a challenge. He looks focused.); 171-178s (Close-up of Kobbie Mainoo lying on the grass, holding his head. Liverpool players stand nearby.); 1930-1935s (A close-up shot of Manchester United manager Ruben Amorim on the touchline. He is seen drinking from a water bottle while observing the match intently. He appears focused and is likely considering tactical adjustments.); 2051-2054s (A close-up shot of André Onana as he strikes the goal kick. The power and technique of his kick are clearly visible. The ball travels high and long into the Liverpool half.); 3499-3506s (A close-up shot of Manchester United manager Ruben Amorim celebrating on the touchline. He is pumping his fists and shouting in joy. The camera pans to capture his exuberant reaction to the goal. He looks incredibly proud of his team.); 3548-3553s (A close-up shot of Manchester United defender Lisandro Martinez. He is looking towards the field, appearing focused. The Adidas logo and Manchester United crest are clearly visible on his white jersey.). Some appearances sit in the secondary background.\", \"suggestions\": \"Enlarge the mark or add an outline, and reposition for cleaner close-up visibility on player shots.\"}, {\"asset_type\": \"other\", \"contrast\": 9.0, \"size\": 8.5, \"position\": 5.5, \"camera_angle\": 5.5, \"motion_blur\": 5.5, \"overall_score\": 9.0, \"issues\": \"Contexts: close_up.\", \"suggestions\": \"Isolate the mark from action and avoid small moving placements.\"}]}]}"
+}

@@ -23,12 +23,15 @@ log = logging.getLogger("jockey-demo")
 
 from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 import demo_cache
+import games
 import jockey
+import reels
+import report as report_tpl
 import sports
 
 app = FastAPI(title="Sponsor Spotlight (Jockey-only) Demo")
@@ -61,15 +64,23 @@ DEMO_BRANDS = [
 ]
 
 
-def _demo_cache_hit(endpoint: str, brands: list[str] | None = None) -> dict[str, Any] | None:
+def _demo_cache_hit(
+    endpoint: str, brands: list[str] | None = None, game_id: str | None = None
+) -> dict[str, Any] | None:
     """Cached demo response for ``endpoint``, or ``None`` to fall through to live Jockey.
 
-    Brand-scoped endpoints (analyze, legibility) only hit when the requested
-    brands match the canonical DEMO_BRANDS; discover is brand-agnostic.
+    ``game_id`` selects the per-game fixture (``None`` / 'aggregate' = whole
+    collection). Brand-scoped endpoints (analyze, legibility) are served by
+    trimming the fixture's full brand set to the requested subset; if any
+    requested brand isn't in the fixture we fall through to live so nothing is
+    silently substituted.
     """
-    if brands is not None and not demo_cache.brands_match(brands, DEMO_BRANDS):
+    envelope = demo_cache.load(endpoint, game_id)
+    if envelope is None:
         return None
-    return demo_cache.load(endpoint)
+    if brands is None:
+        return envelope
+    return demo_cache.subset_brands(endpoint, envelope, brands)
 
 
 def _demo_key() -> str | None:
@@ -122,6 +133,44 @@ def _videos_roster_for_prompt(videos: list[str]) -> str:
         f"\n\nThe knowledge store contains {len(names)} broadcast(s):\n{lines}\n"
         f"When citing a moment, set the `video` field to the exact source video filename.\n"
     )
+
+
+def _game_scope_phrase(game_id: str | None) -> str:
+    """Prompt suffix that scopes the analysis to a single broadcast via ``{{sel:0}}``.
+
+    Used in place of ``_videos_roster_for_prompt`` when a ``game_id`` is set: the
+    ``{{sel:0}}`` token binds to ``selections[0]`` (the game's knowledge-store
+    item), telling Jockey to look only at that broadcast.
+    """
+    g = games.by_id(game_id)
+    if not g:
+        return ""
+    return (
+        f"\n\nAnalyze ONLY this single broadcast: {{{{sel:0}}}} ({g['label']}). "
+        f"Ignore every other video in the knowledge store. "
+        f"Set each moment's `video` field to this broadcast's filename.\n"
+    )
+
+
+async def _game_selections(store_id: str, game_id: str | None) -> list[dict[str, Any]] | None:
+    """Build the ``selections`` list for a per-game scope, or ``None`` for aggregate.
+
+    Resolves the game's knowledge-store ``item_id`` from the live item list
+    (falling back to the ``iconik_ingest.json`` manifest). Returns ``None`` when
+    no ``game_id`` is set or the item can't be resolved (→ whole-collection run).
+    """
+    if not games.by_id(game_id):
+        return None
+    items: list[dict[str, Any]] = []
+    try:
+        items = await jockey.list_items(store_id)
+    except Exception as e:  # noqa: BLE001 — fall back to manifest / aggregate
+        log.warning("selections: list_items failed for %s: %s", store_id, e)
+    item_id = games.resolve_item_id(game_id, items)
+    if not item_id:
+        log.warning("selections: could not resolve item for game_id=%s", game_id)
+        return None
+    return [{"kind": "item", "id": item_id}]
 
 
 SPONSOR_MOMENTS_SCHEMA: dict[str, Any] = {
@@ -532,6 +581,10 @@ class StoreContext(BaseModel):
     videos: list[str] = Field(
         default_factory=list, description="Filenames of the store's ready broadcasts"
     )
+    game_id: str | None = Field(
+        None,
+        description="Optional per-game scope (games.GAMES id). Omit / 'aggregate' = whole collection.",
+    )
 
 
 class DiscoverRequest(StoreContext):
@@ -598,7 +651,35 @@ async def demo_info() -> dict[str, Any]:
         "sport": DEMO_SPORT,
         # The frontend pre-seeds these brands and auto-runs the cached flow.
         "demo_brands": DEMO_BRANDS,
+        # Aggregate ("All games") is pre-baked → the classic instant-demo flag.
         "cached": demo_cache.available(),
+        # Per-game selector: every game + which of them are fully pre-baked.
+        "games": games.all_games(),
+        "cached_games": demo_cache.cached_games(games.game_ids()),
+    }
+
+
+@app.get("/api/demo/scope/{game_id}")
+async def demo_scope(game_id: str) -> dict[str, Any]:
+    """All pre-baked data for one demo scope — an exploration payload, not a run.
+
+    Reads committed fixtures only (no Jockey, no key): the full **detected** brand
+    list (``discovery``), the **analyzed** brands with appearance data
+    (``inventory``), the legibility report, and any built highlight-reel URLs. The
+    UI cross-references discovery (all) against inventory (run) to show which
+    brands are selectable to view. ``game_id`` is a games.GAMES id or ``all``.
+    """
+    scope = None if game_id in ("all", demo_cache.AGGREGATE) else game_id
+    disc = demo_cache.load("discover", scope) or {}
+    analyze = demo_cache.load("analyze", scope) or {}
+    legib = demo_cache.load("legibility", scope) or {}
+    return {
+        "game_id": game_id,
+        "label": games.label(scope),
+        "discovery": (disc.get("discovery") or {}).get("brands") or [],
+        "inventory": (analyze.get("inventory") or {}).get("brands") or [],
+        "legibility": legib.get("report"),
+        "reels": reels.load_all(scope),
     }
 
 
@@ -780,12 +861,16 @@ async def jockey_discover(
     """
     _apply_mode(req, is_demo)
     if is_demo and not live:
-        cached = _demo_cache_hit("discover")
+        cached = _demo_cache_hit("discover", game_id=req.game_id)
         if cached is not None:
-            log.info("discover: served from demo cache")
+            log.info("discover: served from demo cache (game=%s)", req.game_id or "all")
             return cached
     profile = _active_profile(req.sport)
     t0 = time.time()
+    selections = await _game_selections(req.store_id, req.game_id)
+    scope = (
+        _game_scope_phrase(req.game_id) if selections else _videos_roster_for_prompt(req.videos)
+    )
     user_message = (
         "List every distinct sponsor brand visible anywhere in this broadcast — "
         f"across these surfaces: {profile['surfaces_phrase']}. "
@@ -793,7 +878,7 @@ async def jockey_discover(
         "For each brand return ONLY: name and asset_types[]. "
         "Do NOT enumerate timestamps in this pass. "
         "End with a one-sentence `summary` of the sponsorship landscape."
-        + _videos_roster_for_prompt(req.videos)
+        + scope
     )
     resp = await jockey.responses(
         instructions=profile["instructions"],
@@ -801,6 +886,7 @@ async def jockey_discover(
         knowledge_store_id=req.store_id,
         session_id=req.session_id,
         json_schema=DISCOVERY_SCHEMA,
+        selections=selections,
     )
     text = jockey.extract_text(resp)
     parsed: dict[str, Any] | None = None
@@ -821,9 +907,17 @@ async def jockey_discover(
 
 
 async def _fetch_brand_appearances(
-    brand_name: str, store_id: str, sport: str | None, videos: list[str]
+    brand_name: str,
+    store_id: str,
+    sport: str | None,
+    videos: list[str],
+    game_id: str | None = None,
+    selections: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any] | None:
     """Pass-2 worker: fetch full appearances for a single brand."""
+    scope = (
+        _game_scope_phrase(game_id) if selections else _videos_roster_for_prompt(videos)
+    )
     user_message = (
         f"Focus ONLY on the sponsor brand '{brand_name}'. Return:\n"
         f"  - name: '{brand_name}'\n"
@@ -835,7 +929,7 @@ async def _fetch_brand_appearances(
         f"context, asset_type, brief description, confidence, source video filename. "
         f"Include all appearances you can identify; do not cap.\n"
         f"  - legibility_notes if it renders poorly anywhere."
-        + _videos_roster_for_prompt(videos)
+        + scope
     )
     try:
         resp = await jockey.responses(
@@ -844,6 +938,7 @@ async def _fetch_brand_appearances(
             knowledge_store_id=store_id,
             session_id=None,  # independent calls, no session interleaving
             json_schema=PER_BRAND_SCHEMA,
+            selections=selections,
         )
     except Exception as e:  # noqa: BLE001
         log.warning("per-brand fetch failed for %r: %s", brand_name, e)
@@ -873,15 +968,22 @@ async def jockey_analyze(
         raise HTTPException(status_code=400, detail="provide at least one brand name")
 
     if is_demo and not live:
-        cached = _demo_cache_hit("analyze", brand_names)
+        cached = _demo_cache_hit("analyze", brand_names, game_id=req.game_id)
         if cached is not None:
-            log.info("analyze: served from demo cache (%s)", ", ".join(brand_names))
+            log.info(
+                "analyze: served from demo cache (game=%s, %s)",
+                req.game_id or "all",
+                ", ".join(brand_names),
+            )
             return cached
 
     t0 = time.time()
+    selections = await _game_selections(req.store_id, req.game_id)
     results = await asyncio.gather(
         *(
-            _fetch_brand_appearances(name, req.store_id, req.sport, req.videos)
+            _fetch_brand_appearances(
+                name, req.store_id, req.sport, req.videos, req.game_id, selections
+            )
             for name in brand_names
         ),
         return_exceptions=False,
@@ -956,14 +1058,22 @@ async def jockey_legibility(
 ) -> dict[str, Any]:
     _apply_mode(req, is_demo)
     if is_demo and not live:
-        cached = _demo_cache_hit("legibility", req.brands)
+        cached = _demo_cache_hit("legibility", req.brands, game_id=req.game_id)
         if cached is not None:
-            log.info("legibility: served from demo cache (%s)", ", ".join(req.brands))
+            log.info(
+                "legibility: served from demo cache (game=%s, %s)",
+                req.game_id or "all",
+                ", ".join(req.brands),
+            )
             return cached
     profile = _active_profile(req.sport)
     hints = "\n".join(
         f"- {b}: {BRAND_VISUAL_HINTS.get(b, 'no visual hint provided')}"
         for b in req.brands
+    )
+    selections = await _game_selections(req.store_id, req.game_id)
+    scope = (
+        _game_scope_phrase(req.game_id) if selections else _videos_roster_for_prompt(req.videos)
     )
     user_message = (
         f"Produce a CREATIVE & VISIBILITY audit for these sponsor brands across the broadcast:\n"
@@ -976,7 +1086,7 @@ async def jockey_legibility(
         f"poorly. In `suggestions`, recommend concrete creative or placement "
         f"fixes (e.g. 'increase contrast — current navy-on-charcoal loses "
         f"detail in wide shots; switch to white outline')."
-        + _videos_roster_for_prompt(req.videos)
+        + scope
     )
 
     resp = await jockey.responses(
@@ -985,6 +1095,7 @@ async def jockey_legibility(
         knowledge_store_id=req.store_id,
         session_id=req.session_id,
         json_schema=LEGIBILITY_SCHEMA,
+        selections=selections,
     )
 
     text = jockey.extract_text(resp)
@@ -1001,6 +1112,143 @@ async def jockey_legibility(
         "answer": text,
         "raw": resp,
     }
+
+
+# --- Report (F5) --------------------------------------------------------------
+
+
+class ReportRequest(BaseModel):
+    brand: str
+    # Scopes to report: game ids and/or "aggregate". Empty = whole collection.
+    game_ids: list[str] = Field(default_factory=list)
+    # Client-computed (econ.ts) weighted media value, keyed by scope id. Optional.
+    media_values: dict[str, float] = Field(default_factory=dict)
+    total_media_value: float | None = None
+    generated_note: str = ""
+
+
+def _brand_in_inventory(envelope: dict[str, Any] | None, brand: str) -> dict[str, Any] | None:
+    if not envelope:
+        return None
+    want = brand.strip().lower()
+    for b in (envelope.get("inventory") or {}).get("brands") or []:
+        if (b.get("name") or "").strip().lower() == want:
+            return b
+    return None
+
+
+def _avg_legibility(envelope: dict[str, Any] | None, brand: str) -> float | None:
+    if not envelope:
+        return None
+    want = brand.strip().lower()
+    for b in (envelope.get("report") or {}).get("brands") or []:
+        if (b.get("name") or "").strip().lower() == want:
+            scores = [
+                a.get("overall_score")
+                for a in b.get("assets") or []
+                if isinstance(a.get("overall_score"), (int, float))
+            ]
+            return sum(scores) / len(scores) if scores else None
+    return None
+
+
+def _report_scopes(req: ReportRequest) -> list[dict[str, Any]]:
+    """Assemble per-scope report data for ``req.brand`` from committed fixtures.
+
+    Primary path: one scope per requested game id (or aggregate) that has an
+    analyze fixture containing the brand. Fallback: if nothing resolves, derive
+    per-game rows by grouping the aggregate fixture's appearances by source video.
+    """
+    scope_ids = req.game_ids or [demo_cache.AGGREGATE]
+    scopes: list[dict[str, Any]] = []
+    for sid in scope_ids:
+        metrics = _brand_in_inventory(demo_cache.load("analyze", sid), req.brand)
+        if metrics is None:
+            continue
+        scopes.append(
+            {
+                "game_id": sid,
+                "label": games.label(None if sid == demo_cache.AGGREGATE else sid),
+                "metrics": metrics,
+                "avg_legibility": _avg_legibility(demo_cache.load("legibility", sid), req.brand),
+                "media_value": req.media_values.get(sid),
+            }
+        )
+    if scopes:
+        return scopes
+
+    # Fallback: group the aggregate fixture's appearances by source video (game).
+    agg = _brand_in_inventory(demo_cache.load("analyze", demo_cache.AGGREGATE), req.brand)
+    if not agg:
+        return []
+    by_video: dict[str, list[dict[str, Any]]] = {}
+    for m in agg.get("appearances") or []:
+        by_video.setdefault(m.get("video") or "unknown", []).append(m)
+    avg_leg = _avg_legibility(demo_cache.load("legibility", demo_cache.AGGREGATE), req.brand)
+    for video, apps in by_video.items():
+        secs = sum(max(float(m.get("end_sec") or 0) - float(m.get("start_sec") or 0), 0) for m in apps)
+        scopes.append(
+            {
+                "game_id": video,
+                "label": video,
+                "metrics": {
+                    "total_seconds": round(secs, 1),
+                    "moments_count": len(apps),
+                    "outside_whistle_to_whistle_seconds": 0,
+                    "appearances": apps,
+                },
+                "avg_legibility": avg_leg,
+                "media_value": req.media_values.get(video),
+            }
+        )
+    return scopes
+
+
+@app.post("/api/report")
+async def performance_report(req: ReportRequest, is_demo: bool = Depends(tl_key)) -> HTMLResponse:
+    """Templated, printable performance report for one brand across game(s).
+
+    Reads raw exposure/legibility from the committed demo fixtures; weighted media
+    value / ROI are computed client-side and passed in ``media_values`` (backend
+    does no economics). Returns standalone HTML (print-to-PDF for the demo).
+    """
+    if not req.brand.strip():
+        raise HTTPException(status_code=400, detail="brand is required")
+    scopes = _report_scopes(req)
+    if not scopes:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No pre-baked analysis found for {req.brand!r}. Run the demo analysis first.",
+        )
+    html = report_tpl.build_report_html(
+        req.brand,
+        scopes,
+        total_media_value=req.total_media_value,
+        generated_note=req.generated_note,
+    )
+    return HTMLResponse(content=html)
+
+
+# --- Highlight reels (F6) -----------------------------------------------------
+
+
+@app.get("/api/reel/{game_id}/{brand}")
+async def highlight_reel(game_id: str, brand: str) -> Any:
+    """Redirect to a brand's pre-built ~30s highlight reel (Vercel Blob URL).
+
+    Reels are produced offline by ``build_reels.py`` and their URLs committed to
+    ``demo_fixtures/<scope>/reels.json``. 404 until a reel has been built. No auth:
+    the target is a public Blob URL and this only reads committed metadata, so the
+    UI can open it directly in a new tab.
+    """
+    scope = None if game_id in ("all", demo_cache.AGGREGATE) else game_id
+    record = reels.get(scope, brand)
+    if not record or not record.get("url"):
+        raise HTTPException(
+            status_code=404,
+            detail=f"No highlight reel built yet for {brand!r} ({game_id}). Run build_reels.py.",
+        )
+    return RedirectResponse(url=record["url"])
 
 
 # --- Static UI ----------------------------------------------------------------

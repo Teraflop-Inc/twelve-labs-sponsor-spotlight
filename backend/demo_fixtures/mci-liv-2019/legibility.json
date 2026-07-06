@@ -1,0 +1,374 @@
+{
+  "session_id": "sess_019f249e-9f88-76c3-aa6c-4e31c0136663",
+  "report": {
+    "brands": [
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 3188,
+                "note": "Very brief sleeve hit on Danilo; close-up helps, but exposure is only ~0.2s.",
+                "start_sec": 3186,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Detected once as Manchester City sleeve sponsor in a tight close-up. Creative is readable, but frequency is very low, so campaign value comes from isolated player-facing shots rather than sustained exposure.",
+            "motion_blur": 8,
+            "overall_score": 7.9,
+            "position": 7,
+            "size": 6,
+            "suggestions": "Increase repeat frequency via more right-side player close-ups or complementary board rotations. If controllable, enlarge sleeve mark or add brighter white edging so the logo separates faster from sky-blue fabric in motion shots."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.9,
+            "contrast": 8.2,
+            "examples": [
+              {
+                "end_sec": 2053,
+                "note": "Replay angle keeps the brand secondary to the football action; visible but not commanding.",
+                "start_sec": 2046,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 3217,
+                "note": "Long possession sequence creates many board hits, but most are standard sideline wides where the logo sits low in frame.",
+                "start_sec": 3182,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 4252,
+                "note": "Set-piece phase shows the board, but it remains background signage rather than focal creative.",
+                "start_sec": 4245,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Strong volume of LED exposure, mostly during open-play wides. Readability is consistently good, but placement is usually background and low in frame, so impact depends on duration rather than dominance.",
+            "motion_blur": 6.8,
+            "overall_score": 7.1,
+            "position": 5.8,
+            "size": 5.9,
+            "suggestions": "Boost impact by using thicker letterforms and higher luminance contrast for wide-gameplay viewing. Consider shorter message cycles with fewer words so the brand resolves before pans and ball-tracking motion reduce attention."
+          }
+        ],
+        "name": "Etisalat",
+        "summary": "Detected on perimeter LED boards throughout the second half and once on Manchester City’s sleeve. Best creative performance comes from the sleeve close-up; LED exposure is plentiful but usually secondary-background in wide play."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 9.5,
+            "contrast": 9.2,
+            "examples": [
+              {
+                "end_sec": 3423,
+                "note": "The 'Geico' casing variant appears in a wide live-play moment; still readable, but reduced editorial separation versus the earlier longer GEICO run.",
+                "start_sec": 3413,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "On-screen insurance graphic is foreground-dominant and highly legible. The main weakness is contextual clutter: it runs over live play and close-ups, so brand clarity is high but viewer attention may be split with match action.",
+            "motion_blur": 9.8,
+            "overall_score": 9.1,
+            "position": 8.8,
+            "size": 8.3,
+            "suggestions": "Keep the large overlay treatment, but add a slightly cleaner safe-area buffer from score/other bugs. If possible, reduce dwell over active attacking sequences and bias toward stoppages or slower buildup so recall improves without competing with key play."
+          }
+        ],
+        "name": "GEICO",
+        "summary": "Detected only as broadcast graphic/overlay, including GEICO and Geico casing variants. Creative execution is the strongest in the set: large, high-contrast, stable, and repeatedly foregrounded."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 9.4,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 5275,
+                "note": "Overlay competes with animated touchline confrontation; visible, but audience attention is on Guardiola/referee exchange.",
+                "start_sec": 5269,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 5285,
+                "note": "Close-up sideline dispute reduces practical attention even though the Lexus graphic remains crisp.",
+                "start_sec": 5280,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 5331,
+                "note": "Late touchline close-up keeps the graphic readable but secondary to intense human reaction.",
+                "start_sec": 5327,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Overlay is consistently foreground-dominant and clean. Weakness is not visual execution but editorial timing: several insertions sit over emotionally charged live or touchline moments, lowering effective attention share.",
+            "motion_blur": 9.8,
+            "overall_score": 9,
+            "position": 8.7,
+            "size": 8.2,
+            "suggestions": "Maintain current graphic treatment, but shift more insertions into resets, goal kicks, or explicit sponsorship tosses. A slightly shorter lockup or cleaner corner anchoring would reduce competition with score and action framing."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.2,
+            "contrast": 7.6,
+            "examples": [
+              {
+                "end_sec": 2870,
+                "note": "Close-up of Laporte with yellow-card graphic makes the board only a secondary background hit.",
+                "start_sec": 2867,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Very limited LED exposure. One open-play phase is clearly visible, but the close-up example loses scale and centrality.",
+            "motion_blur": 6.8,
+            "overall_score": 6.9,
+            "position": 5.6,
+            "size": 5.8,
+            "suggestions": "Prioritize longer uninterrupted Lexus board rotations during settled possession or stoppages. Increase letter height and keep the mark centered in the board creative so it survives tighter crops."
+          },
+          {
+            "asset_type": "scorers_table",
+            "camera_angle": 8.3,
+            "contrast": 8.1,
+            "examples": [
+              {
+                "end_sec": 2856,
+                "note": "Appears as a tiny yellow-card scorebug sponsor; readable in metadata, but on-screen size is minimal.",
+                "start_sec": 2855,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 5736,
+                "note": "Late scorebug presence is secondary to the match clock/state display.",
+                "start_sec": 5734,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Detected as scorebug sponsorship, but very small and utility-led. Strong placement consistency cannot fully offset tiny scale.",
+            "motion_blur": 9.4,
+            "overall_score": 6.8,
+            "position": 8.4,
+            "size": 3.9,
+            "suggestions": "Increase sponsor box width or simplify adjacent bug elements. If size cannot grow, use a bolder mono lockup or icon-led treatment optimized for tiny-screen readability."
+          }
+        ],
+        "name": "Lexus",
+        "summary": "Detected across broadcast graphic, perimeter LED, and scorebug-like placements. The overlay executions are excellent; the scoreboard/bug and LED instances are materially weaker because of reduced scale."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.8,
+            "contrast": 8.1,
+            "examples": [
+              {
+                "end_sec": 971,
+                "note": "Close-up background hit behind Fernandinho; readable but not attention-leading.",
+                "start_sec": 969,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 987,
+                "note": "Close-up on Salah turns the board into incidental background exposure.",
+                "start_sec": 978,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 3556,
+                "note": "Substitution-area and transition sequences show the board, but with standard low-frame placement.",
+                "start_sec": 3545,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "High-frequency LED presence with some replay and substitution spillover. Legibility is strong, but most exposures are classic perimeter-background hits rather than premium central shots.",
+            "motion_blur": 6.9,
+            "overall_score": 7.3,
+            "position": 5.9,
+            "size": 6.1,
+            "suggestions": "Creative is already readable; biggest gain is editorial/placement. Favor brighter edge outlining and shorter copy to improve snap recognition during pans, and negotiate rotations near corners or attack-end zones where boards sit higher in the camera line."
+          }
+        ],
+        "name": "Marathonbet",
+        "summary": "Detected only on perimeter LED boards, but with strong repetition across open play, replays, and substitution context. Visibility is solid rather than standout: dependable exposure, moderate dominance."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.8,
+            "contrast": 8.1,
+            "examples": [
+              {
+                "end_sec": 5853,
+                "note": "Late-match wide shot drops to mostly legible; fatigue, camera distance, and pace reduce clarity.",
+                "start_sec": 5848,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 5857,
+                "note": "Aerial-duel sequence keeps the board readable but less clean than earlier half-close-ups.",
+                "start_sec": 5853,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 5872,
+                "note": "Very late wide-play exposure remains secondary and loses punch versus shirt-sleeve executions.",
+                "start_sec": 5868,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Frequent board presence with good readability, though usually as secondary-background signage. Late-match instances degrade from fully to mostly legible in fast, stretched gameplay.",
+            "motion_blur": 6.9,
+            "overall_score": 7.2,
+            "position": 5.8,
+            "size": 6,
+            "suggestions": "Improve late-game resilience with thicker strokes and stronger contrast against the LED field. Consider reducing any fine internal detail so the wordmark survives long-lens wides and fast pans."
+          },
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 8.6,
+            "contrast": 8.4,
+            "examples": [
+              {
+                "end_sec": 1479,
+                "note": "Early goalkeeper/back-view hit is readable but not hero-framed.",
+                "start_sec": 1470,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 2605,
+                "note": "Very short open-play glimpse on Sané; visibility depends on freeze-frame attention.",
+                "start_sec": 2603,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Sleeve placement performs better than the LED boards whenever the director cuts to player close-ups. Exposure is still vulnerable to brevity and arm rotation, but overall execution is strong.",
+            "motion_blur": 8.2,
+            "overall_score": 8.1,
+            "position": 7.4,
+            "size": 6.8,
+            "suggestions": "Preserve current sleeve contrast; main opportunity is scale and repetition. Slightly enlarge the patch or add a stronger border so it holds when players turn side-on or when only partial torsos are shown."
+          }
+        ],
+        "name": "Nexen Tire",
+        "summary": "Detected heavily on Manchester City shirt sleeves and also across perimeter LEDs. The sleeve sponsor is the stronger asset: closer, cleaner, and more distinctive than the recurring but backgrounded board exposure."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.9,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 873,
+                "note": "Sustained open-play sequence is readable but remains a standard lower-frame board hit.",
+                "start_sec": 860,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 2885,
+                "note": "Free-kick wide view lowers brand centrality despite full legibility.",
+                "start_sec": 2875,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 3907,
+                "note": "Long possession run is visible but repetitive, with limited standout framing.",
+                "start_sec": 3878,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Good volume and dependable legibility on LED rotations. Most value comes from repeated open-play exposure, not from premium focal moments.",
+            "motion_blur": 6.9,
+            "overall_score": 7.3,
+            "position": 5.9,
+            "size": 6.1,
+            "suggestions": "Keep the clean board look but increase distinctiveness via bolder icon/wordmark lockup and less dead space. End-zone or corner-proximate rotations would improve camera angle and center-frame incidence."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7.4,
+            "contrast": 7.8,
+            "examples": [
+              {
+                "end_sec": 1542,
+                "note": "Bench-area logo is visible during Pep/Arteta close-up, but partially dependent on background recognition rather than direct focal framing.",
+                "start_sec": 1533,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Single bench/dugout-area appearance. Useful as off-play inventory, but not a scale driver.",
+            "motion_blur": 8.4,
+            "overall_score": 7.1,
+            "position": 6.1,
+            "size": 5.6,
+            "suggestions": "If dugout branding is a strategic asset, enlarge the seat/bench lockup and increase contrast with surrounding dark materials. A repeated pattern or illuminated panel would convert this from incidental to bankable exposure."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.9,
+            "contrast": 8.1,
+            "examples": [
+              {
+                "end_sec": 4592,
+                "note": "Dugout/fascia background behind Sané is visible but easy to overlook.",
+                "start_sec": 4587,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 4625,
+                "note": "Touchline close-up on Guardiola keeps the mark background-only.",
+                "start_sec": 4621,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              },
+              {
+                "end_sec": 5916,
+                "note": "Late-match signage remains readable but non-dominant.",
+                "start_sec": 5912,
+                "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+              }
+            ],
+            "issues": "Metadata classifies these as fascia/dugout-style signage rather than board rotations. They add useful non-live-play and touchline inventory, but with limited size and secondary placement.",
+            "motion_blur": 8.1,
+            "overall_score": 7.2,
+            "position": 6.1,
+            "size": 5.7,
+            "suggestions": "Increase panel brightness and isolate the logo from seat textures/background clutter. Larger repeated fascia tiles would raise effective exposure during coach and bench reaction shots."
+          }
+        ],
+        "name": "Nissan",
+        "summary": "Detected most often on perimeter LED boards, plus bench/fascia-style signage in touchline shots. Creative is consistently readable, but value is spread across many background impressions rather than a few dominant hero moments."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "floor_decal",
+            "camera_angle": 0,
+            "contrast": 0,
+            "examples": [],
+            "issues": "No detected appearance in this broadcast across the indexed sponsor-surface metadata.",
+            "motion_blur": 0,
+            "overall_score": 0,
+            "position": 0,
+            "size": 0,
+            "suggestions": "No recommendation from this match because the brand was not detected."
+          }
+        ],
+        "name": "Nike",
+        "summary": "Detected on perimeter LED boards, kit manufacturer logo, and stadium fascia signage. Best visibility comes from close-up kit logo shots; board and fascia executions are readable but usually backgrounded."
+      }
+    ]
+  },
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":3188,\"note\":\"Very brief sleeve hit on Danilo; close-up helps, but exposure is only ~0.2s.\",\"start_sec\":3186,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Detected once as Manchester City sleeve sponsor in a tight close-up. Creative is readable, but frequency is very low, so campaign value comes from isolated player-facing shots rather than sustained exposure.\",\"motion_blur\":8,\"overall_score\":7.9,\"position\":7,\"size\":6,\"suggestions\":\"Increase repeat frequency via more right-side player close-ups or complementary board rotations. If controllable, enlarge sleeve mark or add brighter white edging so the logo separates faster from sky-blue fabric in motion shots.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.9,\"contrast\":8.2,\"examples\":[{\"end_sec\":2053,\"note\":\"Replay angle keeps the brand secondary to the football action; visible but not commanding.\",\"start_sec\":2046,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":3217,\"note\":\"Long possession sequence creates many board hits, but most are standard sideline wides where the logo sits low in frame.\",\"start_sec\":3182,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":4252,\"note\":\"Set-piece phase shows the board, but it remains background signage rather than focal creative.\",\"start_sec\":4245,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Strong volume of LED exposure, mostly during open-play wides. Readability is consistently good, but placement is usually background and low in frame, so impact depends on duration rather than dominance.\",\"motion_blur\":6.8,\"overall_score\":7.1,\"position\":5.8,\"size\":5.9,\"suggestions\":\"Boost impact by using thicker letterforms and higher luminance contrast for wide-gameplay viewing. Consider shorter message cycles with fewer words so the brand resolves before pans and ball-tracking motion reduce attention.\"}],\"name\":\"Etisalat\",\"summary\":\"Detected on perimeter LED boards throughout the second half and once on Manchester City’s sleeve. Best creative performance comes from the sleeve close-up; LED exposure is plentiful but usually secondary-background in wide play.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":9.5,\"contrast\":9.2,\"examples\":[{\"end_sec\":3423,\"note\":\"The 'Geico' casing variant appears in a wide live-play moment; still readable, but reduced editorial separation versus the earlier longer GEICO run.\",\"start_sec\":3413,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"On-screen insurance graphic is foreground-dominant and highly legible. The main weakness is contextual clutter: it runs over live play and close-ups, so brand clarity is high but viewer attention may be split with match action.\",\"motion_blur\":9.8,\"overall_score\":9.1,\"position\":8.8,\"size\":8.3,\"suggestions\":\"Keep the large overlay treatment, but add a slightly cleaner safe-area buffer from score/other bugs. If possible, reduce dwell over active attacking sequences and bias toward stoppages or slower buildup so recall improves without competing with key play.\"}],\"name\":\"GEICO\",\"summary\":\"Detected only as broadcast graphic/overlay, including GEICO and Geico casing variants. Creative execution is the strongest in the set: large, high-contrast, stable, and repeatedly foregrounded.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":9.4,\"contrast\":9,\"examples\":[{\"end_sec\":5275,\"note\":\"Overlay competes with animated touchline confrontation; visible, but audience attention is on Guardiola/referee exchange.\",\"start_sec\":5269,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":5285,\"note\":\"Close-up sideline dispute reduces practical attention even though the Lexus graphic remains crisp.\",\"start_sec\":5280,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":5331,\"note\":\"Late touchline close-up keeps the graphic readable but secondary to intense human reaction.\",\"start_sec\":5327,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Overlay is consistently foreground-dominant and clean. Weakness is not visual execution but editorial timing: several insertions sit over emotionally charged live or touchline moments, lowering effective attention share.\",\"motion_blur\":9.8,\"overall_score\":9,\"position\":8.7,\"size\":8.2,\"suggestions\":\"Maintain current graphic treatment, but shift more insertions into resets, goal kicks, or explicit sponsorship tosses. A slightly shorter lockup or cleaner corner anchoring would reduce competition with score and action framing.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.2,\"contrast\":7.6,\"examples\":[{\"end_sec\":2870,\"note\":\"Close-up of Laporte with yellow-card graphic makes the board only a secondary background hit.\",\"start_sec\":2867,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Very limited LED exposure. One open-play phase is clearly visible, but the close-up example loses scale and centrality.\",\"motion_blur\":6.8,\"overall_score\":6.9,\"position\":5.6,\"size\":5.8,\"suggestions\":\"Prioritize longer uninterrupted Lexus board rotations during settled possession or stoppages. Increase letter height and keep the mark centered in the board creative so it survives tighter crops.\"},{\"asset_type\":\"scorers_table\",\"camera_angle\":8.3,\"contrast\":8.1,\"examples\":[{\"end_sec\":2856,\"note\":\"Appears as a tiny yellow-card scorebug sponsor; readable in metadata, but on-screen size is minimal.\",\"start_sec\":2855,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":5736,\"note\":\"Late scorebug presence is secondary to the match clock/state display.\",\"start_sec\":5734,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Detected as scorebug sponsorship, but very small and utility-led. Strong placement consistency cannot fully offset tiny scale.\",\"motion_blur\":9.4,\"overall_score\":6.8,\"position\":8.4,\"size\":3.9,\"suggestions\":\"Increase sponsor box width or simplify adjacent bug elements. If size cannot grow, use a bolder mono lockup or icon-led treatment optimized for tiny-screen readability.\"}],\"name\":\"Lexus\",\"summary\":\"Detected across broadcast graphic, perimeter LED, and scorebug-like placements. The overlay executions are excellent; the scoreboard/bug and LED instances are materially weaker because of reduced scale.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6.8,\"contrast\":8.1,\"examples\":[{\"end_sec\":971,\"note\":\"Close-up background hit behind Fernandinho; readable but not attention-leading.\",\"start_sec\":969,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":987,\"note\":\"Close-up on Salah turns the board into incidental background exposure.\",\"start_sec\":978,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":3556,\"note\":\"Substitution-area and transition sequences show the board, but with standard low-frame placement.\",\"start_sec\":3545,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"High-frequency LED presence with some replay and substitution spillover. Legibility is strong, but most exposures are classic perimeter-background hits rather than premium central shots.\",\"motion_blur\":6.9,\"overall_score\":7.3,\"position\":5.9,\"size\":6.1,\"suggestions\":\"Creative is already readable; biggest gain is editorial/placement. Favor brighter edge outlining and shorter copy to improve snap recognition during pans, and negotiate rotations near corners or attack-end zones where boards sit higher in the camera line.\"}],\"name\":\"Marathonbet\",\"summary\":\"Detected only on perimeter LED boards, but with strong repetition across open play, replays, and substitution context. Visibility is solid rather than standout: dependable exposure, moderate dominance.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6.8,\"contrast\":8.1,\"examples\":[{\"end_sec\":5853,\"note\":\"Late-match wide shot drops to mostly legible; fatigue, camera distance, and pace reduce clarity.\",\"start_sec\":5848,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":5857,\"note\":\"Aerial-duel sequence keeps the board readable but less clean than earlier half-close-ups.\",\"start_sec\":5853,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":5872,\"note\":\"Very late wide-play exposure remains secondary and loses punch versus shirt-sleeve executions.\",\"start_sec\":5868,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Frequent board presence with good readability, though usually as secondary-background signage. Late-match instances degrade from fully to mostly legible in fast, stretched gameplay.\",\"motion_blur\":6.9,\"overall_score\":7.2,\"position\":5.8,\"size\":6,\"suggestions\":\"Improve late-game resilience with thicker strokes and stronger contrast against the LED field. Consider reducing any fine internal detail so the wordmark survives long-lens wides and fast pans.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":8.6,\"contrast\":8.4,\"examples\":[{\"end_sec\":1479,\"note\":\"Early goalkeeper/back-view hit is readable but not hero-framed.\",\"start_sec\":1470,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":2605,\"note\":\"Very short open-play glimpse on Sané; visibility depends on freeze-frame attention.\",\"start_sec\":2603,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Sleeve placement performs better than the LED boards whenever the director cuts to player close-ups. Exposure is still vulnerable to brevity and arm rotation, but overall execution is strong.\",\"motion_blur\":8.2,\"overall_score\":8.1,\"position\":7.4,\"size\":6.8,\"suggestions\":\"Preserve current sleeve contrast; main opportunity is scale and repetition. Slightly enlarge the patch or add a stronger border so it holds when players turn side-on or when only partial torsos are shown.\"}],\"name\":\"Nexen Tire\",\"summary\":\"Detected heavily on Manchester City shirt sleeves and also across perimeter LEDs. The sleeve sponsor is the stronger asset: closer, cleaner, and more distinctive than the recurring but backgrounded board exposure.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6.9,\"contrast\":8,\"examples\":[{\"end_sec\":873,\"note\":\"Sustained open-play sequence is readable but remains a standard lower-frame board hit.\",\"start_sec\":860,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":2885,\"note\":\"Free-kick wide view lowers brand centrality despite full legibility.\",\"start_sec\":2875,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":3907,\"note\":\"Long possession run is visible but repetitive, with limited standout framing.\",\"start_sec\":3878,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Good volume and dependable legibility on LED rotations. Most value comes from repeated open-play exposure, not from premium focal moments.\",\"motion_blur\":6.9,\"overall_score\":7.3,\"position\":5.9,\"size\":6.1,\"suggestions\":\"Keep the clean board look but increase distinctiveness via bolder icon/wordmark lockup and less dead space. End-zone or corner-proximate rotations would improve camera angle and center-frame incidence.\"},{\"asset_type\":\"other\",\"camera_angle\":7.4,\"contrast\":7.8,\"examples\":[{\"end_sec\":1542,\"note\":\"Bench-area logo is visible during Pep/Arteta close-up, but partially dependent on background recognition rather than direct focal framing.\",\"start_sec\":1533,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Single bench/dugout-area appearance. Useful as off-play inventory, but not a scale driver.\",\"motion_blur\":8.4,\"overall_score\":7.1,\"position\":6.1,\"size\":5.6,\"suggestions\":\"If dugout branding is a strategic asset, enlarge the seat/bench lockup and increase contrast with surrounding dark materials. A repeated pattern or illuminated panel would convert this from incidental to bankable exposure.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.9,\"contrast\":8.1,\"examples\":[{\"end_sec\":4592,\"note\":\"Dugout/fascia background behind Sané is visible but easy to overlook.\",\"start_sec\":4587,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":4625,\"note\":\"Touchline close-up on Guardiola keeps the mark background-only.\",\"start_sec\":4621,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"},{\"end_sec\":5916,\"note\":\"Late-match signage remains readable but non-dominant.\",\"start_sec\":5912,\"video\":\"Manchester City v. Liverpool (FULL MATCH) ｜ 1⟃3⟂2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4\"}],\"issues\":\"Metadata classifies these as fascia/dugout-style signage rather than board rotations. They add useful non-live-play and touchline inventory, but with limited size and secondary placement.\",\"motion_blur\":8.1,\"overall_score\":7.2,\"position\":6.1,\"size\":5.7,\"suggestions\":\"Increase panel brightness and isolate the logo from seat textures/background clutter. Larger repeated fascia tiles would raise effective exposure during coach and bench reaction shots.\"}],\"name\":\"Nissan\",\"summary\":\"Detected most often on perimeter LED boards, plus bench/fascia-style signage in touchline shots. Creative is consistently readable, but value is spread across many background impressions rather than a few dominant hero moments.\"},{\"assets\":[{\"asset_type\":\"floor_decal\",\"camera_angle\":0,\"contrast\":0,\"examples\":[],\"issues\":\"No detected appearance in this broadcast across the indexed sponsor-surface metadata.\",\"motion_blur\":0,\"overall_score\":0,\"position\":0,\"size\":0,\"suggestions\":\"No recommendation from this match because the brand was not detected.\"}],\"name\":\"Nike\",\"summary\":\"Detected on perimeter LED boards, kit manufacturer logo, and stadium fascia signage. Best visibility comes from close-up kit logo shots; board and fascia executions are readable but usually backgrounded.\"}]}"
+}

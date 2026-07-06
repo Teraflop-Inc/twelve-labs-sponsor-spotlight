@@ -1,0 +1,304 @@
+{
+  "session_id": "sess_019f24b5-f081-7670-836b-0e801ccb67fd",
+  "discovery": {
+    "brands": [
+      {
+        "name": "AIA",
+        "asset_types": [
+          "corner_flag_branding",
+          "other",
+          "perimeter_led_board",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage",
+          "stand_signage",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "AIMS",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Acura",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Alipay+",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Antom",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Barclays",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "BetMGM",
+        "asset_types": [
+          "other",
+          "perimeter_led_board",
+          "stadium_fascia_signage",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "BingX",
+        "asset_types": [
+          "shirt_sleeve_sponsor",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Coca-Cola",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "DeWalt",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "EA Sports",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "EA Sports FC",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "ExpressVPN",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "F1 Drive London",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Fever",
+        "asset_types": [
+          "shirt_front_sponsor",
+          "shirt_sleeve_sponsor",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Fever Tree",
+        "asset_types": [
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Geico",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board",
+          "scorebug"
+        ]
+      },
+      {
+        "name": "HSBC",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Heineken",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Hewlett Packard Enterprise",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Hublot",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board",
+          "scoreboard_ad",
+          "scorebug",
+          "substitution_board_branding"
+        ]
+      },
+      {
+        "name": "Ineos Grenadier",
+        "asset_types": [
+          "perimeter_led_board",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Infinite Athlete",
+        "asset_types": [
+          "shirt_front_sponsor"
+        ]
+      },
+      {
+        "name": "Kraken",
+        "asset_types": [
+          "perimeter_led_board",
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Kumho Tire",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Lexus",
+        "asset_types": [
+          "broadcast_graphic",
+          "scorebug"
+        ]
+      },
+      {
+        "name": "Mad Voltage",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Monster Energy",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Monster Juiced",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Monster Ultra",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "NBC Sports",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Nike",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "other",
+          "perimeter_led_board",
+          "stadium_fascia_signage",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Oracle Cloud",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Peacock",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Powerstack",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Sidiz",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Sims Lifecycle Services",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Sky Sports",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Socios.com",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Three",
+        "asset_types": [
+          "shirt_front_sponsor"
+        ]
+      },
+      {
+        "name": "Toyota",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "USA Network",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Verizon",
+        "asset_types": [
+          "broadcast_graphic",
+          "on_screen_bug"
+        ]
+      },
+      {
+        "name": "WorldFirst",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      }
+    ],
+    "summary": "The broadcast mixes club and kit sponsorship, heavy perimeter LED rotation, and broadcaster/scorebug graphics with several retail and auto-tech advertisers."
+  },
+  "answer": "{\"brands\": [{\"name\": \"AIA\", \"asset_types\": [\"corner_flag_branding\", \"other\", \"perimeter_led_board\", \"shirt_front_sponsor\", \"stadium_fascia_signage\", \"stand_signage\", \"training_kit_sponsor\"]}, {\"name\": \"AIMS\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Acura\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Alipay+\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Antom\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Barclays\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"BetMGM\", \"asset_types\": [\"other\", \"perimeter_led_board\", \"stadium_fascia_signage\", \"training_kit_sponsor\"]}, {\"name\": \"BingX\", \"asset_types\": [\"shirt_sleeve_sponsor\", \"training_kit_sponsor\"]}, {\"name\": \"Coca-Cola\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"DeWalt\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"EA Sports\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"EA Sports FC\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"ExpressVPN\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"F1 Drive London\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Fever\", \"asset_types\": [\"shirt_front_sponsor\", \"shirt_sleeve_sponsor\", \"training_kit_sponsor\"]}, {\"name\": \"Fever Tree\", \"asset_types\": [\"shirt_sleeve_sponsor\"]}, {\"name\": \"Geico\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\", \"scorebug\"]}, {\"name\": \"HSBC\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Heineken\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Hewlett Packard Enterprise\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Hublot\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\", \"scoreboard_ad\", \"scorebug\", \"substitution_board_branding\"]}, {\"name\": \"Ineos Grenadier\", \"asset_types\": [\"perimeter_led_board\", \"stadium_fascia_signage\"]}, {\"name\": \"Infinite Athlete\", \"asset_types\": [\"shirt_front_sponsor\"]}, {\"name\": \"Kraken\", \"asset_types\": [\"perimeter_led_board\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"Kumho Tire\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Lexus\", \"asset_types\": [\"broadcast_graphic\", \"scorebug\"]}, {\"name\": \"Mad Voltage\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Monster Energy\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Monster Juiced\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Monster Ultra\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"NBC Sports\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Nike\", \"asset_types\": [\"kit_manufacturer_logo\", \"other\", \"perimeter_led_board\", \"stadium_fascia_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Oracle Cloud\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\"]}, {\"name\": \"Peacock\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Powerstack\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Sidiz\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Sims Lifecycle Services\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Sky Sports\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\"]}, {\"name\": \"Socios.com\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Three\", \"asset_types\": [\"shirt_front_sponsor\"]}, {\"name\": \"Toyota\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"USA Network\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Verizon\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_bug\"]}, {\"name\": \"WorldFirst\", \"asset_types\": [\"perimeter_led_board\"]}], \"summary\": \"The broadcast mixes club and kit sponsorship, heavy perimeter LED rotation, and broadcaster/scorebug graphics with several retail and auto-tech advertisers.\"}",
+  "timings": {
+    "discover_secs": 21.8
+  }
+}

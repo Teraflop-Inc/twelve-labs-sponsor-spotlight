@@ -1,0 +1,1661 @@
+{
+  "session_id": null,
+  "inventory": {
+    "brands": [
+      {
+        "name": "AIA",
+        "total_seconds": 344.0,
+        "moments_count": 63,
+        "outside_whistle_to_whistle_seconds": 58.0,
+        "asset_types": [
+          "jersey_patch"
+        ],
+        "appearances": [
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "pregame",
+            "description": "A similar high-angle shot shows the Tottenham Hotspur players in their huddle. They are wearing their taupe/brown away kits. The camera pans slightly as the players break the huddle and head to their positions. The Etihad Stadium signage is visible in the background.",
+            "end_sec": 90.0,
+            "start_sec": 83.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Tottenham's Brennan Johnson as he reacts to a foul or a stoppage in play. He is wearing the taupe away kit with the AIA sponsor. He looks towards the referee.",
+            "end_sec": 157.0,
+            "start_sec": 153.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Tottenham goalkeeper Guglielmo Vicario. He looks relieved after the ball is cleared. He is wearing his yellow goalkeeper jersey with the number 13.",
+            "end_sec": 266.0,
+            "start_sec": 262.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up shot of Yves Bissouma looking frustrated after losing the ball. He is wearing the Tottenham away kit with the 'AIA' sponsor logo clearly visible.",
+            "end_sec": 382.0,
+            "start_sec": 377.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up shot of goalkeeper Guglielmo Vicario after making the save. He looks focused and alert. He is wearing a yellow goalkeeper kit with the 'AIA' sponsor logo.",
+            "end_sec": 435.0,
+            "start_sec": 433.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Close-up shot of Son Heung-min celebrating his goal. He is smiling and running towards the corner flag. He is wearing the captain's armband. The 'AIA' sponsor logo is visible on his shirt.",
+            "end_sec": 474.0,
+            "start_sec": 473.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Medium shot of Tottenham's Bryan Gil (#11) running to join the celebration. He looks ecstatic. The 'AIA' sponsor logo is visible on his shirt.",
+            "end_sec": 475.0,
+            "start_sec": 474.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Medium shot of several Tottenham players, including Son, Bryan Gil, and Brennan Johnson (#22), celebrating together. They are hugging and cheering. The 'AIA' sponsor logo is visible on their shirts.",
+            "end_sec": 481.0,
+            "start_sec": 475.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Another medium shot of the Tottenham players celebrating from a different angle. The joy on their faces is evident. Pedro Porro (#23) is also seen joining the group.",
+            "end_sec": 486.0,
+            "start_sec": 481.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Medium shot of Son Heung-min being congratulated by Giovani Lo Celso (#18) and other teammates. The score graphic updates to MC 0 - 1 TOT. The 'AIA' sponsor logo is visible.",
+            "end_sec": 492.0,
+            "start_sec": 486.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Close-up shot of Son Heung-min continuing his celebration, doing his signature 'camera' gesture. The 'AIA' sponsor logo is visible on his shirt.",
+            "end_sec": 536.0,
+            "start_sec": 531.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Medium shot of Son and Bryan Gil walking back to the center circle, still smiling and talking. The 'AIA' sponsor logo is visible on their shirts.",
+            "end_sec": 541.0,
+            "start_sec": 536.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Son Heung-min's face, showing his frustration after scoring the own goal.",
+            "end_sec": 628.0,
+            "start_sec": 626.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Another close-up of Son Heung-min as he walks back to the center circle for the restart.",
+            "end_sec": 671.0,
+            "start_sec": 664.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Vicario as he gets up after making the save, looking focused.",
+            "end_sec": 717.0,
+            "start_sec": 714.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.9,
+            "context": "close_up",
+            "description": "A medium shot of Giovani Lo Celso lying on the pitch, holding his leg in apparent pain after committing the foul on Haaland.",
+            "end_sec": 971.0,
+            "start_sec": 968.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Tottenham manager Ange Postecoglou on the touchline, looking pensive. The camera is static.",
+            "end_sec": 1495.0,
+            "start_sec": 1492.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Pedro Porro runs towards the corner flag to take the corner kick. He is wearing the brown Tottenham away kit with the 'AIA' sponsor on the front. The crowd is visible in the background.",
+            "end_sec": 1651.0,
+            "start_sec": 1647.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Close-up of Ben Davies after making a pass.",
+            "end_sec": 1800.0,
+            "start_sec": 1798.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Close-up of Yves Bissouma looking frustrated.",
+            "end_sec": 1936.0,
+            "start_sec": 1933.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Close-up of Ben Davies looking disappointed.",
+            "end_sec": 2058.0,
+            "start_sec": 2054.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Destiny Udogie after receiving the yellow card. He looks down, appearing to accept the decision. The AIA logo is visible on his shirt.",
+            "end_sec": 2370.0,
+            "start_sec": 2364.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up shot of Tottenham Hotspur defender Ben Davies running with the soccer ball. He is looking forward, assessing his passing options. The camera tracks his movement from left to right.",
+            "end_sec": 2401.0,
+            "start_sec": 2398.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Pedro Porro, the Tottenham defender, looking focused as he prepares for the restart. He is wearing the brown Tottenham away kit with the 'AIA' sponsor logo.",
+            "end_sec": 2764.0,
+            "start_sec": 2758.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Emerson Royal, the Tottenham defender, looking focused as he walks back into position. He is wearing the brown Tottenham away kit with the 'AIA' sponsor logo.",
+            "end_sec": 2971.0,
+            "start_sec": 2963.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Pierre-Emile Højbjerg arguing with referee Simon Hooper about the handball decision. Højbjerg looks frustrated and gestures with his hands.",
+            "end_sec": 3315.0,
+            "start_sec": 3307.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Emerson Royal sitting on the pitch, holding his head after the collision. He looks dazed as medical staff are called onto the field.",
+            "end_sec": 3398.0,
+            "start_sec": 3389.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Emerson Royal with the ball at his feet. He is looking for a passing option while under pressure from a Manchester City player.",
+            "end_sec": 3484.0,
+            "start_sec": 3482.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Brennan Johnson looking disappointed after his shot was saved. He is walking back into position.",
+            "end_sec": 3511.0,
+            "start_sec": 3509.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Tottenham's Yves Bissouma on the pitch. He is looking around, assessing the tactical situation.",
+            "end_sec": 3529.0,
+            "start_sec": 3522.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot from behind of Dejan Kulusevski walking away after committing a foul.",
+            "end_sec": 3593.0,
+            "start_sec": 3591.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A shot of Erling Haaland and Yves Bissouma standing near each other in the penalty area.",
+            "end_sec": 3625.0,
+            "start_sec": 3621.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Brennan Johnson smiling and reacting after his shot was blocked.",
+            "end_sec": 3659.0,
+            "start_sec": 3657.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Dejan Kulusevski reacting to the offside call, looking disappointed.",
+            "end_sec": 3723.0,
+            "start_sec": 3718.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Destiny Udogie reacting to the foul call, appearing to protest the decision.",
+            "end_sec": 3740.0,
+            "start_sec": 3735.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "The referee continues to talk to Manuel Akanji and Giovani Lo Celso, trying to calm the situation down.",
+            "end_sec": 3769.0,
+            "start_sec": 3754.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Brennan Johnson on the ground after being fouled, looking in pain.",
+            "end_sec": 3889.0,
+            "start_sec": 3885.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Emerson Royal, looking disappointed after a missed opportunity or a decision.",
+            "end_sec": 4328.0,
+            "start_sec": 4323.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A close-up of Giovani Lo Celso celebrating his goal, running towards the fans with his arms outstretched.",
+            "end_sec": 4440.0,
+            "start_sec": 4433.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Tottenham player Yves Bissouma. He looks disappointed and is looking down at the pitch. He is wearing the number 8 jersey.",
+            "end_sec": 5256.0,
+            "start_sec": 5252.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Tottenham player Pedro Porro, who is preparing to take the free kick. He looks focused and is looking towards the Manchester City goal. He is wearing the number 23 jersey.",
+            "end_sec": 5350.0,
+            "start_sec": 5347.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Close-up of Tottenham players Son Heung-min and Yves Bissouma talking near the free kick spot. They are likely discussing the strategy for the set piece. The camera follows their interaction closely.",
+            "end_sec": 5353.0,
+            "start_sec": 5350.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Close-up of Pedro Porro running back towards his defensive position after taking the free kick. He looks disappointed that the set piece didn't lead to a goal. The camera follows him closely.",
+            "end_sec": 5368.0,
+            "start_sec": 5361.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A medium shot following Tottenham player Dejan Kulusevski as he walks away from the play, looking back over his shoulder.",
+            "end_sec": 5484.0,
+            "start_sec": 5480.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A slow-motion replay showing a previous incident where Tottenham's Dejan Kulusevski tackles Manchester City's Rico Lewis, clipping his foot and causing him to fall to the ground.",
+            "end_sec": 5497.0,
+            "start_sec": 5484.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "A medium shot showing Tottenham substitutes Yves Bissouma and Richarlison walking onto the pitch to join the game.",
+            "end_sec": 5549.0,
+            "start_sec": 5536.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A close-up tracking shot of Dejan Kulusevski as he runs towards the fans, shouting in celebration.",
+            "end_sec": 5714.0,
+            "start_sec": 5713.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Kulusevski is joined by teammates Destiny Udogie, Brennan Johnson, and Oliver Skipp as they celebrate the goal together.",
+            "end_sec": 5724.0,
+            "start_sec": 5717.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A close-up of Kulusevski and Emerson Royal embracing and celebrating the late equalizer.",
+            "end_sec": 5734.0,
+            "start_sec": 5731.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A close-up of Dejan Kulusevski shouting in celebration as he walks back to his half.",
+            "end_sec": 5795.0,
+            "start_sec": 5788.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Dejan Kulusevski looking down after receiving the yellow card.",
+            "end_sec": 5845.0,
+            "start_sec": 5838.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "As Jack Grealish receives the ball and prepares to run towards the goal, referee Simon Hooper blows his whistle for the earlier foul on Haaland, effectively stopping a clear goal-scoring opportunity. The camera follows Grealish as he realizes the play has been stopped.",
+            "end_sec": 5991.0,
+            "start_sec": 5987.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Emerson Royal and Erling Haaland are seen arguing on the pitch. Haaland is visibly upset and gestures towards the referee while Emerson Royal looks on.",
+            "end_sec": 6000.0,
+            "start_sec": 5996.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "A close-up shot of Brennan Johnson as he walks off the pitch to be substituted. He looks tired but focused.",
+            "end_sec": 6031.0,
+            "start_sec": 6028.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Jamie Donley enters the field of play, replacing Brennan Johnson. He looks determined as he takes his position on the pitch.",
+            "end_sec": 6048.0,
+            "start_sec": 6042.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The ball is cleared by the Tottenham defense, but Manchester City quickly regain possession and continue their attack. The camera pans to follow the action.",
+            "end_sec": 6075.0,
+            "start_sec": 6067.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the Tottenham penalty area as the corner is delivered. Players from both sides jump for the ball, and there is a lot of physical contact.",
+            "end_sec": 6093.0,
+            "start_sec": 6089.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A cross is played into the Tottenham penalty area from the right wing. Players from both teams jump for the ball, and there is a scramble in the box.",
+            "end_sec": 6109.0,
+            "start_sec": 6103.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The final moments of the match are shown as both teams fight for possession. The atmosphere in the stadium is electric as the final whistle approaches.",
+            "end_sec": 6198.0,
+            "start_sec": 6172.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "postgame",
+            "description": "Dejan Kulusevski is shown sitting on the pitch, looking completely exhausted. He has given his all in the match and is now catching his breath.",
+            "end_sec": 6222.0,
+            "start_sec": 6216.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "postgame",
+            "description": "Erling Haaland and Giovani Lo Celso are shown having a heated exchange on the pitch. They are both shouting and gesturing at each other.",
+            "end_sec": 6236.0,
+            "start_sec": 6226.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "postgame",
+            "description": "Son Heung-min and Kyle Walker are shown talking calmly on the pitch. They are both captains and are trying to set a good example for their teammates.",
+            "end_sec": 6258.0,
+            "start_sec": 6253.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.98,
+            "context": "postgame",
+            "description": "Pep Guardiola is shown shaking hands with Tottenham goalkeeper Guglielmo Vicario. They exchange a few words before Guardiola walks away.",
+            "end_sec": 6266.0,
+            "start_sec": 6258.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "legibility_notes": "mostly_legible: 968-971s"
+      },
+      {
+        "name": "Nike",
+        "appearances": [
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "close_up",
+            "description": "Close-up of Son Heung-min, the Tottenham captain. He is looking down, then looks up towards the camera. He is wearing the grey Tottenham away kit with the captain's armband.",
+            "end_sec": 3016.0,
+            "start_sec": 3007.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Referee Simon Hooper walks away from the Manchester City players, gesturing that he is sticking to his decision. The camera pans to follow him as he moves across the pitch.",
+            "end_sec": 5996.0,
+            "start_sec": 5993.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "timeout",
+            "description": "Jamie Donley prepares to enter the pitch for his senior debut. Tottenham manager Ange Postecoglou is seen giving him final instructions and a pat on the back.",
+            "end_sec": 6042.0,
+            "start_sec": 6031.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Referee Simon Hooper is shown gesturing and pointing to where the free kick should be taken. He is surrounded by players from both teams.",
+            "end_sec": 6056.0,
+            "start_sec": 6051.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Referee Simon Hooper is shown running across the pitch, waiting for the final decision from the VAR. He looks calm and composed.",
+            "end_sec": 6155.0,
+            "start_sec": 6152.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "asset_types": [
+          "other"
+        ],
+        "legibility_notes": "One exposure is mostly legible; the remaining exposures are fully legible.",
+        "moments_count": 5,
+        "outside_whistle_to_whistle_seconds": 11.0,
+        "total_seconds": 31.0
+      },
+      {
+        "name": "Nexen Tire",
+        "total_seconds": 414.0,
+        "moments_count": 52,
+        "outside_whistle_to_whistle_seconds": 0,
+        "asset_types": [
+          "courtside_led"
+        ],
+        "appearances": [
+          {
+            "start_sec": 256.0,
+            "end_sec": 262.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The corner kick is taken from the right side. The ball is swung into the center of the box. Manuel Akanji rises highest and connects with a powerful header. The ball flies towards the goal but is saved or cleared.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 959.0,
+            "end_sec": 968.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "A wide shot showing Erling Haaland receiving a pass near the center circle. As he turns with the ball, he is fouled from behind by Giovani Lo Celso, who slides in and takes him down.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1327.0,
+            "end_sec": 1339.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. The corner is cleared, but Tottenham retains possession. They move the ball around the edge of the area. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1339.0,
+            "end_sec": 1346.0,
+            "context": "close_up",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Close-up of Brennan Johnson (number 22) as he moves into space. The camera is static. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1346.0,
+            "end_sec": 1351.0,
+            "context": "wide_shot",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot of the penalty area. Tottenham is preparing for another set piece or corner. The camera is static. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1351.0,
+            "end_sec": 1357.0,
+            "context": "wide_shot",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Players are positioning themselves in the box. The camera is static. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1357.0,
+            "end_sec": 1362.0,
+            "context": "wide_shot",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. More positioning and tactical adjustments by players. The camera is static. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1362.0,
+            "end_sec": 1367.0,
+            "context": "wide_shot",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. The referee, Simon Hooper, is seen managing the players in the box. The camera is static. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1367.0,
+            "end_sec": 1374.0,
+            "context": "wide_shot",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Final preparations before the corner is taken. The camera is static. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1374.0,
+            "end_sec": 1379.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. The corner kick is taken. The ball is crossed into a crowded penalty area. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1379.0,
+            "end_sec": 1386.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. The ball is cleared by the Manchester City defense. Play moves out of the box. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1386.0,
+            "end_sec": 1392.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Manchester City starts a counter-attack. The camera pans to follow the ball. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1392.0,
+            "end_sec": 1404.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Manchester City moves the ball into the Tottenham half. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1404.0,
+            "end_sec": 1410.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Play continues in the Tottenham half. Manchester City looks for an opening. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1410.0,
+            "end_sec": 1415.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Manchester City switches play. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1415.0,
+            "end_sec": 1423.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Manchester City continues to dominate possession. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1423.0,
+            "end_sec": 1433.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. A long ball is played forward towards Erling Haaland. The camera pans to follow. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1433.0,
+            "end_sec": 1440.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Tottenham wins the ball back and starts to build from the back. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1440.0,
+            "end_sec": 1450.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Tottenham moves the ball through the midfield. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1450.0,
+            "end_sec": 1458.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Tottenham probes the Manchester City defense. The camera pans. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1458.0,
+            "end_sec": 1464.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "description": "Wide shot. Tottenham moves the ball to the right wing. The camera pans right. Nexen Tire branding is visible.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 1726.0,
+            "end_sec": 1729.0,
+            "context": "close_up",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A close-up of Manchester City's Manuel Akanji on the ball, being pressured by Tottenham's Bryan Gil. Akanji is looking for a pass. A 'Nexen Tire' advertising board is visible in the background.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2128.0,
+            "end_sec": 2133.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot of the match continuing. Manchester City is in possession in the midfield. The Nexen Tire logo is visible on the perimeter LED board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2169.0,
+            "end_sec": 2173.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot of the pitch as play resumes. Manchester City players are positioned for a free kick or a restart. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2175.0,
+            "end_sec": 2193.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot of a Manchester City attack. Julian Alvarez receives the ball and takes a shot that hits the post. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2195.0,
+            "end_sec": 2201.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A replay of Julian Alvarez's shot hitting the post. The camera follows the ball's trajectory. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2201.0,
+            "end_sec": 2208.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Another replay angle of Julian Alvarez's shot. This angle shows the ball striking the base of the post. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2208.0,
+            "end_sec": 2213.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot of the match continuing. Manchester City is in possession, building an attack from the back. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2213.0,
+            "end_sec": 2248.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot of a Manchester City attack. Erling Haaland receives a pass in the box but misses a clear chance, shooting wide. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2259.0,
+            "end_sec": 2268.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A replay of Erling Haaland's missed chance. The camera follows the ball as it goes wide of the post. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2268.0,
+            "end_sec": 2274.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Another replay angle of Erling Haaland's miss. This angle shows the ball going past the goalkeeper. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 2274.0,
+            "end_sec": 2285.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot of the match continuing. Manchester City is in possession in the midfield. The Nexen Tire logo is visible on the perimeter board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3226.0,
+            "end_sec": 3240.0,
+            "context": "wide_shot",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Wide shot of the preparation for a Manchester City free kick. The wall is being set up by Tottenham players.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3240.0,
+            "end_sec": 3253.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Wide shot of the free kick being taken by Julian Alvarez. The ball is played into the box but cleared by the Tottenham defense.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3668.0,
+            "end_sec": 3678.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Phil Foden is on the ball for Manchester City, being challenged by Destiny Udogie. The camera follows the action as they move down the wing.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3678.0,
+            "end_sec": 3684.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The play continues in the middle of the pitch with both teams fighting for the ball.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3684.0,
+            "end_sec": 3692.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The ball goes out of play for a Tottenham throw-in. Players reposition themselves.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3692.0,
+            "end_sec": 3700.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Tottenham takes the throw-in and starts to build an attack from their own half.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3700.0,
+            "end_sec": 3714.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Tottenham players pass the ball among themselves, trying to find a way through the Manchester City defense.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 3999.0,
+            "end_sec": 4003.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The camera pans as play continues. A 'NEXEN TIRE' advertisement is visible on the perimeter LED board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4003.0,
+            "end_sec": 4008.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The camera follows the action as the ball is played into the Manchester City half. The 'NEXEN TIRE' branding is still prominent.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4016.0,
+            "end_sec": 4018.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The camera pans as play continues. A 'NEXEN TIRE' advertisement is visible on the perimeter LED board.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4018.0,
+            "end_sec": 4022.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "The camera follows the action as the ball is played into the Manchester City half. The 'NEXEN TIRE' branding is still prominent.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4291.0,
+            "end_sec": 4300.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Tottenham Hotspur players pass the ball in Manchester City's half, looking for a way through the defense.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4300.0,
+            "end_sec": 4308.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Tottenham Hotspur attack down the right flank, with the ball being played into the box.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4807.0,
+            "end_sec": 4812.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A wide shot showing the play resuming after the throw-in. The camera remains static as the players reposition themselves on the pitch.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4812.0,
+            "end_sec": 4818.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Manchester City launches an attack. The camera pans to follow the ball as it is passed quickly between the City players, moving towards the Tottenham penalty area.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4818.0,
+            "end_sec": 4823.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Rico Lewis receives the ball in the box and lays it back for Rodri. Rodri takes a first-time shot from the edge of the area, but it sails over the crossbar. The camera follows the flight of the ball.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4828.0,
+            "end_sec": 4834.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "A replay of the chance from a wide angle. It shows the build-up play and Rodri's shot from a different perspective. The Premier League logo is visible in the transition.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 4834.0,
+            "end_sec": 4841.0,
+            "context": "replay",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Another replay of the chance, this time focusing more closely on Rico Lewis's pass and Rodri's subsequent shot. The camera pans to follow the action.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 5336.0,
+            "end_sec": 5347.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Wide shot of the pitch as Tottenham prepares to take the free kick resulting from Gvardiol's foul. Players from both teams are positioned near the Manchester City penalty area. The camera pans to follow the action.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "start_sec": 5353.0,
+            "end_sec": 5361.0,
+            "context": "other",
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "description": "Wide shot as the free kick is taken by Pedro Porro. He crosses the ball into the Manchester City penalty area. The ball is cleared by a Manchester City defender. The camera pans to follow the ball.",
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "legibility_notes": "Fully legible in all detected appearances."
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "other",
+            "confidence": 0.93,
+            "context": "other",
+            "description": "Perimeter LED board shows Nissan behind players jostling in the box during a set-piece sequence.",
+            "end_sec": 256,
+            "start_sec": 248,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.94,
+            "context": "replay",
+            "description": "Nissan is clearly visible on the perimeter LED board during the slow-motion replay of the corner and header.",
+            "end_sec": 280,
+            "start_sec": 272,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.96,
+            "context": "close_up",
+            "description": "Close-up of Giovani Lo Celso preparing to take a corner with Nissan visible and legible on the perimeter LED board.",
+            "end_sec": 1322,
+            "start_sec": 1320,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.96,
+            "context": "other",
+            "description": "Nissan remains clearly visible on the perimeter LED board as Lo Celso delivers the corner from a wide match shot.",
+            "end_sec": 1327,
+            "start_sec": 1322,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Close-up of Pedro Porro at the corner flag with a Nissan perimeter board behind him.",
+            "end_sec": 1663,
+            "start_sec": 1658,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Another corner-setup close-up of Pedro Porro with Nissan visible on the perimeter LED board in the background.",
+            "end_sec": 1783,
+            "start_sec": 1777,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.97,
+            "context": "other",
+            "description": "Long open-play stretch with Nissan clearly visible on perimeter LED boards while Manchester City attacks around the Tottenham box.",
+            "end_sec": 1855,
+            "start_sec": 1800,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "other",
+            "description": "Nissan is visible on the perimeter LED boards during Tottenham's restart from the center circle.",
+            "end_sec": 2054,
+            "start_sec": 2045,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.91,
+            "context": "other",
+            "description": "Nissan branding appears on LED boards as play resumes after an offside and City rebuild from the back.",
+            "end_sec": 2773,
+            "start_sec": 2764,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "close_up",
+            "description": "Brief close-up midfield challenge with Nissan branding still visible in the background on the perimeter board.",
+            "end_sec": 2775,
+            "start_sec": 2773,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "close_up",
+            "description": "Nissan appears on stadium fascia signage behind Jack Grealish on the bench as he prepares to come on.",
+            "end_sec": 3330,
+            "start_sec": 3323,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan is legible on stadium fascia signage during City's short free-kick routine and passing sequence.",
+            "end_sec": 3363,
+            "start_sec": 3351,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Stadium fascia signage carries Nissan during the cross into the box and head clash that stops play.",
+            "end_sec": 3388,
+            "start_sec": 3380,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan remains visible on stadium fascia signage during a midfield foul and whistle.",
+            "end_sec": 3462,
+            "start_sec": 3453,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan appears on stadium fascia signage during Brennan Johnson's left-wing attack and shot.",
+            "end_sec": 3508,
+            "start_sec": 3501,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan stays visible on stadium fascia signage during City's attack down the left involving Grealish.",
+            "end_sec": 3560,
+            "start_sec": 3553,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Fascia-sign Nissan remains on screen during Grealish's cross and Haaland's header over the bar.",
+            "end_sec": 3571,
+            "start_sec": 3561,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.91,
+            "context": "replay",
+            "description": "Nissan on stadium fascia signage is visible again during replay of Grealish's cross and Haaland's header.",
+            "end_sec": 3584,
+            "start_sec": 3576,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "other",
+            "description": "Nissan remains visible on stadium fascia signage as play restarts with a Tottenham goal kick.",
+            "end_sec": 3590,
+            "start_sec": 3585,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.86,
+            "context": "other",
+            "description": "Brief open-play touchline sequence with Nissan visible on the perimeter LED board.",
+            "end_sec": 3936,
+            "start_sec": 3934,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.86,
+            "context": "other",
+            "description": "Camera pan catches Nissan on the perimeter LED board as the ball is played away from a crowded area.",
+            "end_sec": 3938,
+            "start_sec": 3936,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.45,
+            "context": "close_up",
+            "description": "Very brief, poor-quality glimpse of Nissan on the perimeter board behind a frustrated Jack Grealish close-up.",
+            "end_sec": 3943,
+            "start_sec": 3942,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Nissan is visible on the perimeter LED board in a wide restart shot with the score at 2-1.",
+            "end_sec": 4082,
+            "start_sec": 4077,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan remains on the perimeter board as the camera pans toward the Manchester City goal.",
+            "end_sec": 4085,
+            "start_sec": 4082,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "other",
+            "description": "Nissan appears on stadium fascia signage during a quick Manchester City free kick into the Tottenham half.",
+            "end_sec": 4981,
+            "start_sec": 4976,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "other",
+            "description": "Nissan remains legible on stadium fascia signage during the ensuing cross into the box and defensive clearance.",
+            "end_sec": 4987,
+            "start_sec": 4981,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "After a goal, Nissan is visible on the perimeter LED board as Tottenham restarts and builds play.",
+            "end_sec": 5247,
+            "start_sec": 5240,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Nissan continues on the perimeter LED board during Tottenham possession in a wide shot.",
+            "end_sec": 5263,
+            "start_sec": 5256,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan remains visible on the perimeter LED board as City win the ball back and counter.",
+            "end_sec": 5278,
+            "start_sec": 5273,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Nissan is visible on the perimeter LED board during Tottenham's high press in City's half.",
+            "end_sec": 5289,
+            "start_sec": 5281,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Nissan stays visible on the perimeter LED board as Tottenham build down the right through Kulusevski.",
+            "end_sec": 5295,
+            "start_sec": 5289,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan remains on the perimeter LED board during the cross into the Manchester City penalty area.",
+            "end_sec": 5298,
+            "start_sec": 5295,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Nissan is still visible on the perimeter LED board as City clear long from their box.",
+            "end_sec": 5303,
+            "start_sec": 5298,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "asset_types": [
+          "other"
+        ],
+        "legibility_notes": "Nissan is fully legible in nearly all detections. One brief exposure at 3942-3943 sec is marked not_legible/small_background in a Jack Grealish close-up. Most other appearances are background signage rather than dominant foreground branding.",
+        "moments_count": 33,
+        "name": "Nissan",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 247
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "wide_shot",
+            "description": "Emirates appears on the pitchside rotating LED boards during a high-angle wide shot of the Manchester City penalty area as players set up for a corner kick.",
+            "end_sec": 1315,
+            "start_sec": 1306,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.94,
+            "context": "wide_shot",
+            "description": "Emirates remains visible on the perimeter LED boards in a lower-angle wide shot of the penalty area while players jostle for position before the restart.",
+            "end_sec": 1320,
+            "start_sec": 1315,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led"
+        ],
+        "legibility_notes": "Detected only on perimeter LED boards. Metadata marks both shots fully legible; frame-level review suggests the first exposure includes a very brief partially obscured/moving glimpse before the logo settles, but overall readability remains strong.",
+        "moments_count": 2,
+        "name": "Emirates",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 14
+      },
+      {
+        "name": "Hublot",
+        "appearances": [
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
+            "context": "wide_shot",
+            "description": "Wide shot of Jeremy Doku (#11) receiving the ball on the left side of the box. He cuts inside and unleashes a powerful shot towards the top corner. Guglielmo Vicario makes a spectacular diving save to tip the ball over the bar. 'Hublot' branding is visible on the perimeter boards.",
+            "end_sec": 422.0,
+            "start_sec": 414.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
+            "context": "wide_shot",
+            "description": "Wide shot of the resulting corner for Manchester City. The players are once again positioning themselves in the box. 'Hublot' branding is displayed on the perimeter boards.",
+            "end_sec": 429.0,
+            "start_sec": 422.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.95,
+            "context": "close_up",
+            "description": "A close-up shot of Erling Haaland looking disappointed and wiping his nose after the missed opportunity from the corner.",
+            "end_sec": 1079.0,
+            "start_sec": 1070.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "halftime",
+            "description": "A close-up of the fourth official holding up the electronic board showing '+3' minutes of added time for the first half. The 'Hublot' brand is visible on the board.",
+            "end_sec": 2825.0,
+            "start_sec": 2823.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "A close-up shot of the substitution taking place. Jeremy Doku walks off the pitch and is greeted with a hug from Pep Guardiola. Jack Grealish is ready to enter.",
+            "end_sec": 3428.0,
+            "start_sec": 3415.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
+            "context": "close_up",
+            "description": "Another close-up of Jack Grealish as he reacts to the referee. A Hublot advertisement is visible in the background.",
+            "end_sec": 3945.0,
+            "start_sec": 3943.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.52,
+            "context": "close_up",
+            "description": "A close-up of the referee, Simon Hooper, as he shows a yellow card to Jack Grealish for kicking the ball away. The yellow card is clearly visible.",
+            "end_sec": 3948.0,
+            "start_sec": 3945.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Oliver Skipp is preparing to come on as a substitute for Tottenham. He is talking to the manager, Ange Postecoglou, on the touchline. The fourth official is holding the substitution board.",
+            "end_sec": 4996.0,
+            "start_sec": 4990.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Oliver Skipp enters the pitch, replacing Giovani Lo Celso. The camera pans to follow him as he runs onto the field. The crowd is audible.",
+            "end_sec": 5002.0,
+            "start_sec": 4996.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Wide shot of the pitch as Manchester City prepares to take the free kick. The ball is placed on the ground, and players are lining up. The scoreboard shows the time as 80:00.",
+            "end_sec": 5138.0,
+            "start_sec": 5132.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "A shot of the sideline area where substitutions are taking place. The fourth official is holding up the electronic substitution board displaying the numbers of the players coming on and off. Manchester City's Nathan Ake and Mateo Kovacic are preparing to enter the game, while Tottenham's Richarlison is also seen getting ready.",
+            "end_sec": 5516.0,
+            "start_sec": 5497.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "The camera cuts back to the sideline showing the fourth official holding up the substitution board again, this time for Tottenham Hotspur's changes.",
+            "end_sec": 5536.0,
+            "start_sec": 5526.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "The substitution board is shown, indicating that Jamie Donley is coming on for Tottenham. Jack Grealish is seen in the background, still complaining to the fourth official.",
+            "end_sec": 6024.0,
+            "start_sec": 6020.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led",
+          "broadcast_overlay",
+          "other"
+        ],
+        "legibility_notes": "Most Hublot exposures are fully legible, but the perimeter LED glimpse at 3945-3948s is not legible.",
+        "moments_count": 13,
+        "outside_whistle_to_whistle_seconds": 60.0,
+        "total_seconds": 95.0
+      },
+      {
+        "name": "OKX",
+        "appearances": [],
+        "asset_types": [],
+        "legibility_notes": "All appearances fully legible.",
+        "moments_count": 0,
+        "total_seconds": 0.0,
+        "outside_whistle_to_whistle_seconds": 0.0
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Etisalat appears on the rotating perimeter LED boards during live play, visible in the background from a wider field-level camera angle.",
+            "end_sec": 153,
+            "start_sec": 146,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Etisalat branding remains visible on the perimeter LED boards through an extended open-play sequence.",
+            "end_sec": 171,
+            "start_sec": 157,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "celebration",
+            "description": "Etisalat is clearly visible on the perimeter LED boards during a goal celebration shot.",
+            "end_sec": 1988,
+            "start_sec": 1980,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
+            "context": "other",
+            "description": "Etisalat appears again on the perimeter LED boards during open play, seen as secondary background signage.",
+            "end_sec": 4232,
+            "start_sec": 4218,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
+            "context": "other",
+            "description": "Brief Etisalat exposure on the perimeter LED boards during another live-play sequence.",
+            "end_sec": 4807,
+            "start_sec": 4798,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led"
+        ],
+        "legibility_notes": "All detected Etisalat appearances were marked fully legible in metadata; no poorly rendered instances were identified.",
+        "moments_count": 5,
+        "name": "Etisalat",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 52
+      }
+    ],
+    "summary": ""
+  },
+  "timings": {}
+}

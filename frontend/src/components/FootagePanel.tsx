@@ -10,7 +10,7 @@ import {
   TextField,
 } from "@twelvelabs-io/react"
 import { api } from "../lib/api"
-import { useApp } from "../state"
+import { ALL_GAMES, useApp } from "../state"
 import { SectionCard, StatusLine } from "../ui"
 import type { StoreSummary, Video } from "../lib/types"
 
@@ -27,6 +27,9 @@ export function FootagePanel() {
     refreshStore,
     sports,
     defaultSport,
+    gameId,
+    setGameId,
+    games,
   } = useApp()
 
   const [stores, setStores] = useState<StoreSummary[]>([])
@@ -163,6 +166,33 @@ export function FootagePanel() {
             <p className="mt-2 text-xs text-foreground-status-error">
               Demo mode isn't configured on this server (SPONSOR_SPOTLIGHT_TL_KEY unset).
             </p>
+          )}
+          {games.length > 0 && (
+            <div className="mt-3 border-t border-border-secondary pt-3">
+              <div className="mb-1 text-[11px] uppercase tracking-wide text-foreground-subtle">
+                Game scope
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <Select value={gameId} onValueChange={setGameId}>
+                  <SelectTrigger size="medium" className="min-w-[20rem]">
+                    <SelectValue placeholder="All games" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value={ALL_GAMES}>All games (whole collection)</SelectItem>
+                    {games.map((g) => (
+                      <SelectItem key={g.id} value={g.id}>
+                        {g.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <span className="text-xs text-foreground-subtle">
+                  {gameId === ALL_GAMES
+                    ? "Analyzing all five broadcasts together."
+                    : "Analysis is scoped to this single broadcast."}
+                </span>
+              </div>
+            </div>
           )}
         </div>
       )}

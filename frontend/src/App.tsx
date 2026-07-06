@@ -5,6 +5,7 @@ import { ApiKeyPanel } from "./components/ApiKeyPanel"
 import { FootagePanel } from "./components/FootagePanel"
 import { EconomicsPanel } from "./components/EconomicsPanel"
 import { DiscoverPanel } from "./components/DiscoverPanel"
+import { BrandExplorerPanel } from "./components/BrandExplorerPanel"
 import { AnalyzePanel } from "./components/AnalyzePanel"
 import { LegibilityPanel } from "./components/LegibilityPanel"
 
@@ -80,7 +81,7 @@ function Shell() {
         <FootagePanel />
         <Player />
         <EconomicsPanel />
-        <DiscoverPanel />
+        {mode === "demo" ? <BrandExplorerPanel /> : <DiscoverPanel />}
         <AnalyzePanel />
         <LegibilityPanel />
         <footer className="pb-10 pt-4 text-center text-xs text-foreground-subtle">

@@ -10,7 +10,20 @@ import {
 } from "react"
 import { api, getKey, setKey as persistKey, clearKey as wipeKey, setDemoMode } from "./lib/api"
 import { DEFAULT_ECON, loadEcon, saveEcon, type EconState } from "./lib/econ"
-import type { ActiveStore, Brand, DemoInfo, SportProfile, Video } from "./lib/types"
+import type {
+  ActiveStore,
+  Brand,
+  DemoInfo,
+  DiscoveryBrand,
+  GameOption,
+  LegibilityReport,
+  ReelInfo,
+  SportProfile,
+  Video,
+} from "./lib/types"
+
+/** Sentinel game id for the whole-collection ("All games") scope. */
+export const ALL_GAMES = "all"
 
 const STORE_LS = "sponsor-spotlight-store-v2" // BYO-key user's chosen collection
 const MODE_LS = "sponsor-spotlight-mode-v1"
@@ -21,6 +34,8 @@ export type Mode = "demo" | "byok"
 export interface PlayerHandle {
   seekTo(sec: number, videoFilename?: string): void
   loadAsset(assetId: string): void
+  /** Play an arbitrary MP4 URL (e.g. a highlight reel) in the sticky player. */
+  playUrl(url: string, label?: string): void
 }
 
 interface AppContextValue {
@@ -55,24 +70,38 @@ interface AppContextValue {
   econ: EconState
   setEcon(next: EconState | ((prev: EconState) => EconState)): void
 
-  // --- brand inventory (shared between Discover #3 and Analyze #4) ---
+  // --- per-game scope (5 games + "all") ---
+  gameId: string
+  setGameId(id: string): void
+  games: GameOption[]
+
+  // --- brand inventory (BYO generate flow: Discover #3 → Analyze #4) ---
   selectedBrands: string[]
   setSelectedBrands(names: string[]): void
   inventory: Brand[] | null
   setInventory(b: Brand[] | null): void
+  // Legibility audit report (BYO; shared with the export/report tools).
+  legibility: LegibilityReport | null
+  setLegibility(r: LegibilityReport | null): void
 
-  // --- the two analyzed brands (Analyze #4 sets; Legibility #5 audits) ---
+  // --- the two analyzed brands (BYO Analyze #4 sets; Legibility #5 audits) ---
   brandA: string
   brandB: string
   setBrandA(v: string): void
   setBrandB(v: string): void
 
-  // --- demo auto-run (cached demo tab renders instantly, no clicks) ---
+  // --- demo explore: view the pre-baked outputs for the selected scope ---
   demoBrands: string[]
   demoCached: boolean
-  // Bumps once each time the cached demo becomes ready; panels watch it to
-  // auto-run discover/analyze/legibility off the pre-baked cache.
-  demoAutoNonce: number
+  // All brands detected in the scope vs. the analyzed ("run") subset with data.
+  scopeDiscovery: DiscoveryBrand[]
+  scopeInventory: Brand[]
+  scopeLegibility: LegibilityReport | null
+  scopeReels: Record<string, ReelInfo>
+  scopeLoading: boolean
+  // The analyzed brands the user has chosen to view (drives Analyze + Legibility).
+  viewBrands: string[]
+  setViewBrands(names: string[]): void
 
   // --- player bridge ---
   playerRef: React.MutableRefObject<PlayerHandle | null>
@@ -118,21 +147,31 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [sessionId, setSessionId] = useState<string | null>(null)
   const [econ, setEconState] = useState<EconState>(() => loadEcon())
   const [storeEpoch, setStoreEpoch] = useState(0)
-  // Brand inventory, shared across the Discover/Analyze/Legibility panels.
+  // Per-game scope; "all" = whole collection (the aggregate fixture).
+  const [gameId, setGameId] = useState<string>(ALL_GAMES)
+  // BYO generate flow: brand inventory shared across Discover/Analyze/Legibility.
   const [selectedBrands, setSelectedBrands] = useState<string[]>([])
   const [inventory, setInventory] = useState<Brand[] | null>(null)
+  const [legibility, setLegibility] = useState<LegibilityReport | null>(null)
   // The two analyzed brands; Legibility audits these.
   const [brandA, setBrandA] = useState("")
   const [brandB, setBrandB] = useState("")
 
-  const [demoAutoNonce, setDemoAutoNonce] = useState(0)
-  const autoRanEpoch = useRef<number | null>(null)
+  // Demo explore: cached data for the current scope + the viewed brand subset.
+  const [scopeDiscovery, setScopeDiscovery] = useState<DiscoveryBrand[]>([])
+  const [scopeInventory, setScopeInventory] = useState<Brand[]>([])
+  const [scopeLegibility, setScopeLegibility] = useState<LegibilityReport | null>(null)
+  const [scopeReels, setScopeReels] = useState<Record<string, ReelInfo>>({})
+  const [scopeLoading, setScopeLoading] = useState(false)
+  const [viewBrands, setViewBrands] = useState<string[]>([])
 
   const playerRef = useRef<PlayerHandle | null>(null)
   const pollTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const demoBrands = useMemo(() => demo?.demo_brands ?? [], [demo])
   const demoCached = Boolean(demo?.cached)
+  const games = useMemo<GameOption[]>(() => demo?.games ?? [], [demo])
+  const pickedInitialGame = useRef(false)
 
   // Effective active store: pinned demo collection, or the BYO user's store.
   const activeStore = useMemo<ActiveStore | null>(() => {
@@ -246,12 +285,19 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setDemoMode(mode === "demo")
   }, [mode])
 
-  // Clear brand inventory + analyzed brands whenever the store/mode changes.
+  // Clear all analysis state whenever the store/mode changes.
   useEffect(() => {
     setSelectedBrands([])
     setInventory(null)
+    setLegibility(null)
     setBrandA("")
     setBrandB("")
+    setGameId(ALL_GAMES)
+    setScopeDiscovery([])
+    setScopeInventory([])
+    setScopeLegibility(null)
+    setScopeReels({})
+    setViewBrands([])
   }, [storeEpoch])
 
   // On key change / store change / mode change: refresh the roster.
@@ -286,20 +332,52 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return "empty"
   }, [activeStore, videos, readyVideos])
 
-  // Cached demo first-impression: once the demo store is ready, pre-seed the
-  // canonical brands and fire a one-shot nonce so the three Jockey panels
-  // auto-run off the pre-baked cache (instant, no clicks). Guarded to run once
-  // per store epoch, and only in the locked demo with a complete cache.
+  // Open the demo on a random game rather than "All games" — the aggregate scope
+  // has no reels and thin legibility, so a single game is the stronger first
+  // impression. Picked once per load (fresh game each refresh) before the scope
+  // loader fires; the user can still switch to "All games" afterwards.
   useEffect(() => {
-    if (mode !== "demo" || !demo?.enabled || !demo?.cached || storeStatus !== "ready") return
-    if (autoRanEpoch.current === storeEpoch) return
-    autoRanEpoch.current = storeEpoch
-    const pair = (demo.demo_brands ?? []).slice(0, 2)
-    setSelectedBrands(pair)
-    setBrandA(pair[0] ?? "")
-    setBrandB(pair[1] ?? "")
-    setDemoAutoNonce((n) => n + 1)
-  }, [mode, demo, storeStatus, storeEpoch])
+    if (mode !== "demo" || pickedInitialGame.current) return
+    const gs = demo?.games ?? []
+    if (!gs.length) return
+    pickedInitialGame.current = true
+    setGameId(gs[Math.floor(Math.random() * gs.length)].id)
+  }, [mode, demo])
+
+  // Demo explore: load the selected scope's pre-baked outputs (all detected
+  // brands + the analyzed subset + legibility + reels) from the cache — no
+  // Jockey, no clicks. Re-fetches on scope change; defaults the viewed set to
+  // every analyzed brand. Panels render instantly from this shared state.
+  useEffect(() => {
+    if (mode !== "demo" || !demo?.enabled || storeStatus !== "ready") return
+    let cancelled = false
+    setScopeLoading(true)
+    api
+      .demoScope(gameId)
+      .then((s) => {
+        if (cancelled) return
+        setScopeDiscovery(s.discovery ?? [])
+        setScopeInventory(s.inventory ?? [])
+        setScopeLegibility(s.legibility ?? null)
+        setScopeReels(s.reels ?? {})
+        setViewBrands((s.inventory ?? []).map((b) => b.name))
+      })
+      .catch((e) => {
+        if (cancelled) return
+        console.warn("demoScope failed", e)
+        setScopeDiscovery([])
+        setScopeInventory([])
+        setScopeLegibility(null)
+        setScopeReels({})
+        setViewBrands([])
+      })
+      .finally(() => {
+        if (!cancelled) setScopeLoading(false)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [mode, demo, storeStatus, gameId])
 
   const value: AppContextValue = {
     mode,
@@ -321,17 +399,28 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setSessionId,
     econ,
     setEcon,
+    gameId,
+    setGameId,
+    games,
     selectedBrands,
     setSelectedBrands,
     inventory,
     setInventory,
+    legibility,
+    setLegibility,
     brandA,
     brandB,
     setBrandA,
     setBrandB,
     demoBrands,
     demoCached,
-    demoAutoNonce,
+    scopeDiscovery,
+    scopeInventory,
+    scopeLegibility,
+    scopeReels,
+    scopeLoading,
+    viewBrands,
+    setViewBrands,
     playerRef,
     seekTo,
     storeEpoch,

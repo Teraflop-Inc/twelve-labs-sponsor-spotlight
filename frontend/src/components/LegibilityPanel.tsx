@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
 import { cn } from "@/lib/utils"
-import { useApp } from "../state"
+import { ALL_GAMES, useApp } from "../state"
 import { MomentRow, ScoreBar, SectionCard, StatusLine } from "../ui"
 import type { LegibilityAsset, LegibilityBrand, LegibilityReport } from "../lib/types"
 
@@ -23,10 +23,13 @@ export function LegibilityPanel() {
     setSessionId,
     storeStatus,
     storeEpoch,
+    gameId,
     brandA,
     brandB,
     demoCached,
-    demoAutoNonce,
+    scopeLegibility,
+    viewBrands,
+    setLegibility,
   } = useApp()
   const [report, setReport] = useState<LegibilityReport | null>(null)
   const [status, setStatus] = useState("")
@@ -39,9 +42,24 @@ export function LegibilityPanel() {
     setFromCache(false)
   }, [storeEpoch])
 
+  // Mirror the report into shared state so the export/report tools can read the
+  // legibility scores (avg legibility per brand).
+  useEffect(() => {
+    setLegibility(report)
+  }, [report, setLegibility])
+
   const ready = storeStatus === "ready"
   const haveBrands = Boolean(brandA.trim() && brandB.trim())
+  const demoView = mode === "demo"
   const showCacheHint = mode === "demo" && demoCached
+
+  // Demo = the scope's cached audit filtered to the viewed brands; BYO = the
+  // locally-run `report`. Only some scopes/brands have legibility data.
+  const displayReport: LegibilityReport | null = demoView
+    ? scopeLegibility
+      ? { brands: scopeLegibility.brands.filter((b) => viewBrands.includes(b.name)) }
+      : null
+    : report
 
   const onAudit = async (opts: { live?: boolean } = {}) => {
     const a = brandA.trim()
@@ -55,6 +73,7 @@ export function LegibilityPanel() {
         store_id: activeStore.id,
         sport: activeStore.sport,
         videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
+        game_id: gameId === ALL_GAMES ? undefined : gameId,
       }
       const data = await api.legibility(ctx, [a, b], sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
@@ -68,44 +87,54 @@ export function LegibilityPanel() {
     }
   }
 
-  // Cached demo: auto-audit the pre-seeded brands once the store is ready.
-  useEffect(() => {
-    if (demoAutoNonce > 0) void onAudit()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [demoAutoNonce])
-
   return (
     <SectionCard
       step="5"
       title="Legibility audit"
-      hint="Per-asset visibility scores for the two analyzed brands."
+      hint="Per-asset visibility scores for the selected brands."
       actions={
-        <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
-          {busy ? "auditing…" : "Run audit"}
-        </Button>
+        demoView ? undefined : (
+          <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
+            {busy ? "auditing…" : "Run audit"}
+          </Button>
+        )
       }
     >
-      <p className="mb-2 text-xs text-foreground-subtle">
-        {haveBrands ? (
-          <>
-            Auditing{" "}
-            <span className="font-tl-mono text-foreground-body">{brandA}</span> vs{" "}
-            <span className="font-tl-mono text-foreground-body">{brandB}</span>{" "}
-            <span className="text-foreground-subtle">(the brands you analyzed above)</span>
-          </>
-        ) : (
-          "Analyze 2 brands above, then audit them here."
-        )}
-      </p>
-      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
-        {status}
-        {fromCache && !status && (
-          <span className="text-foreground-subtle">Cached demo result.</span>
-        )}
-      </StatusLine>
-      {report && (
+      {!demoView && (
+        <p className="mb-2 text-xs text-foreground-subtle">
+          {haveBrands ? (
+            <>
+              Auditing{" "}
+              <span className="font-tl-mono text-foreground-body">{brandA}</span> vs{" "}
+              <span className="font-tl-mono text-foreground-body">{brandB}</span>{" "}
+              <span className="text-foreground-subtle">(the brands you analyzed above)</span>
+            </>
+          ) : (
+            "Analyze 2 brands above, then audit them here."
+          )}
+        </p>
+      )}
+      {!demoView && (
+        <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
+          {status}
+          {fromCache && !status && (
+            <span className="text-foreground-subtle">Cached demo result.</span>
+          )}
+        </StatusLine>
+      )}
+      {demoView && !displayReport && (
+        <p className="text-xs text-foreground-subtle">
+          No legibility audit is cached for the selected brands in this scope.
+        </p>
+      )}
+      {displayReport && (
         <div className="mt-2 space-y-4">
-          {report.brands.map((b) => (
+          {displayReport.brands.length === 0 && (
+            <p className="text-xs text-foreground-subtle">
+              Select analyzed brands above to see their legibility scores.
+            </p>
+          )}
+          {displayReport.brands.map((b) => (
             <BrandLegibility key={b.name} brand={b} />
           ))}
         </div>

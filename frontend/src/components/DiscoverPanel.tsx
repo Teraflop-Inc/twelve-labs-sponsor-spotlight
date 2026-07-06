@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Button, Checkbox } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
-import { useApp } from "../state"
+import { ALL_GAMES, useApp } from "../state"
 import { SectionCard, StatusLine } from "../ui"
 import type { DiscoveryBrand } from "../lib/types"
 
@@ -16,11 +16,11 @@ export function DiscoverPanel() {
     setSessionId,
     storeStatus,
     storeEpoch,
+    gameId,
     selectedBrands,
     setSelectedBrands,
     setInventory,
     demoCached,
-    demoAutoNonce,
   } = useApp()
 
   const [discovered, setDiscovered] = useState<DiscoveryBrand[] | null>(null)
@@ -54,6 +54,7 @@ export function DiscoverPanel() {
         store_id: activeStore.id,
         sport: activeStore.sport,
         videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
+        game_id: gameId === ALL_GAMES ? undefined : gameId,
       }
       const data = await api.discover(ctx, sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
@@ -68,12 +69,6 @@ export function DiscoverPanel() {
       setBusy(false)
     }
   }
-
-  // Cached demo: auto-discover the moment the demo store is ready.
-  useEffect(() => {
-    if (demoAutoNonce > 0) void onDiscover({ auto: true })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [demoAutoNonce])
 
   const toggle = (name: string, on: boolean) => {
     if (on) {

@@ -1,0 +1,284 @@
+{
+  "session_id": "sess_019f24aa-810b-7632-b769-402c1248b171",
+  "report": {
+    "brands": [
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 9,
+            "contrast": 9,
+            "examples": [],
+            "issues": "Video: Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4. Pregame starting-XI graphic is very clean and fully legible at 52-79s; strongest non-live exposure in the audit.",
+            "motion_blur": 10,
+            "overall_score": 9,
+            "position": 9,
+            "size": 8,
+            "suggestions": "Keep this asset class prominent: retain flat graphic treatment, generous clear space, and center-weighted layout. If extended, add a slightly thicker red outline/shadow so it stays crisp on smaller mobile screens."
+          },
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 7.5,
+            "contrast": 8.5,
+            "examples": [],
+            "issues": "Tottenham shirt-front sponsor appears throughout the match and is usually fully legible, but weakest moments occur when players turn away or are mid-stride: 1499-1501s (partially legible, back/angled view of Eriksen), 1621-1623s (partially legible during duel), 1672-1675s (partially legible in aerial challenge), 1683-1693s (partially legible in moving close-up of Kane). Stronger hero moments include 1155-1161s, 1170-1178s, 1200-1206s, 1735-1737s, 1941-1955s.",
+            "motion_blur": 7,
+            "overall_score": 8,
+            "position": 8,
+            "size": 8,
+            "suggestions": "Very effective overall. To improve edge cases, enlarge the wordmark height slightly or add a darker keyline around red letters so the sponsor survives torso twist, folds, and partial occlusion in action shots."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 6,
+            "contrast": 7,
+            "examples": [],
+            "issues": "Bench/fascia AIA appears only briefly and in background close-ups around 3808-3815s and 6069-6083s. Fully legible, but secondary and easy to miss.",
+            "motion_blur": 9,
+            "overall_score": 6,
+            "position": 5,
+            "size": 4,
+            "suggestions": "If bench branding is meant to carry weight, increase panel scale and place it directly behind seated coach eyelines; avoid low-slung placements that sit below the editorial focal point."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 6,
+            "contrast": 7,
+            "examples": [],
+            "issues": "Training-kit AIA appears once around 5128-5134s and is background-only.",
+            "motion_blur": 9,
+            "overall_score": 6,
+            "position": 5,
+            "size": 4,
+            "suggestions": "Use larger benchwear marks or repeat the logo on outerwear/chest zones most likely to face camera during manager/staff reactions."
+          }
+        ],
+        "name": "AIA",
+        "summary": "Best-performing brand in the broadcast. It wins on volume and editorial context: pregame graphic plus 118 shirt-front hits across open play, close-ups, celebrations, halftime, substitutions, and postgame. Weakness is not contrast but orientation/motion when players rotate or sprint."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 6,
+            "contrast": 7.5,
+            "examples": [],
+            "issues": "Nike appears as Tottenham kit manufacturer logo. Because the swoosh is small, it loses legibility faster than shirt sponsors. Weak examples: 2342-2345s (mostly legible, player down on turf), 4327-4330s (mostly legible during touchline duel). Better examples: 88-91s pregame, 167-169s, 281-287s.",
+            "motion_blur": 5,
+            "overall_score": 5,
+            "position": 6,
+            "size": 3,
+            "suggestions": "Increase logo scale slightly or add stronger contrast separation from fabric texture. The current chest-scale mark is too small for moving match coverage; a brighter outline/embroidery edge would help."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [],
+            "issues": "Nike also appears on bench/training apparel around 4853-4856s in a close-up and reads better than the on-kit swoosh because of steadier framing.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 7,
+            "size": 5,
+            "suggestions": "Benchwear execution is stronger; prioritize camera-facing staff outerwear with larger chest placement for more dependable broadcast pickup."
+          }
+        ],
+        "name": "Nike",
+        "summary": "Creatively clean but broadcast-limited by scale. The logo is recognizable in close-ups, yet often too small to carry value in motion-heavy play."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [],
+            "issues": "Emirates perimeter LED is the most consistently readable board brand in the match, spanning pregame, open play, replay, and goal contexts. Even in wide play it stays fully legible: 102-130s, 162-167s, 194-208s, 1501-1528s, 1659-1672s, 1712-1737s, 1850-1929s. Main limitation is distance rather than readability.",
+            "motion_blur": 8,
+            "overall_score": 8,
+            "position": 6,
+            "size": 6,
+            "suggestions": "Already strong. For extra standout in the widest camera, increase letter height or shorten copy cycles so the mark is centered during attacking-third action."
+          },
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 8,
+            "contrast": 9,
+            "examples": [],
+            "issues": "Arsenal shirt-front sponsor is strong in player close-ups and celebrations: 217-220s, 248-256s, multiple goal/celebration hits later in match. No poor metadata examples were flagged; weaknesses are mainly occasional partial folds when players twist.",
+            "motion_blur": 8,
+            "overall_score": 8.5,
+            "position": 8,
+            "size": 8,
+            "suggestions": "Maintain current white-on-red/white kit approach. A slightly thicker letter weight would help in fast tracking shots, but this is already premium broadcast inventory."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [],
+            "issues": "Stadium fascia/signage performs well from the opening hero shot 0-11s and later wide or celebration cuts (including 1011-1048s and 1948-1951s). Always fully legible in metadata, though naturally secondary to play.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 6,
+            "size": 5,
+            "suggestions": "Lean into opening, goal, and crowd-reaction framing with repeated fascia blocks near camera-facing stands. This is valuable emotional-context inventory that conventional play-only audits undercount."
+          }
+        ],
+        "name": "Emirates",
+        "summary": "One of the strongest all-around brands: excellent home-team shirt visibility plus frequent, clean perimeter and stadium signage exposure. Strong across both live action and emotional context shots."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 7,
+            "examples": [],
+            "issues": "Betfair appears only on perimeter LED but with solid volume across open play and replay. Weakest render is 583-599s (mostly legible in midfield wide shot). Better moments: 599-648s around the foul/free-kick buildup, 669-745s replays, 752-817s resumption. QA suggests distance, lower-frame placement, and player obstruction are the main issues.",
+            "motion_blur": 8,
+            "overall_score": 7,
+            "position": 6,
+            "size": 6,
+            "suggestions": "Increase luminance separation between text and board background, and avoid keeping the wordmark too low in frame. A bolder white/yellow lockup or tighter copy block would survive wide-camera distance better."
+          }
+        ],
+        "name": "Betfair",
+        "summary": "Good frequency, but creative effectiveness is capped by standard wide-shot LED conditions. Works best on stoppage/replay sequences when the camera settles."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 6.5,
+            "contrast": 7,
+            "examples": [],
+            "issues": "12BET appears on both stadium signage and perimeter LED. Stadium signage at 433-443s is clean. Perimeter LED delivers long runs later in match, but weaker examples include 4738-4752s during the Arsenal goal sequence and 4779-4789s replay, where metadata drops to mostly legible. Distance and foreground player clutter reduce clarity.",
+            "motion_blur": 8,
+            "overall_score": 6.5,
+            "position": 6,
+            "size": 5.5,
+            "suggestions": "Improve wide-shot pickup with larger numeral/letter proportions and more negative space. The red/white-on-dark palette is decent, but a stronger white border/glow would help against crowd and player clutter."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7,
+            "contrast": 7.5,
+            "examples": [],
+            "issues": "Stadium fascia exposure at 433-443s is fully legible but brief and secondary.",
+            "motion_blur": 9,
+            "overall_score": 6,
+            "position": 5,
+            "size": 4,
+            "suggestions": "Repeat fascia units more densely or place them closer to dugout/throw-in camera positions for longer incidental visibility."
+          }
+        ],
+        "name": "12BET",
+        "summary": "Moderate creative performance. The brand has useful later-match LED volume, but readability softens in the biggest moments because of wide angles and foreground interference."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 9,
+            "examples": [],
+            "issues": "Lexus performs best as a broadcast graphic/bug rather than as an in-stadium asset. Strong moments: 2587-2589s top-frame graphic and 5959-5979s stoppage-time bug. Always fully legible because it is screen-native.",
+            "motion_blur": 10,
+            "overall_score": 8.5,
+            "position": 8,
+            "size": 6,
+            "suggestions": "Keep using overlay inventory. To maximize value, hold the bug a touch longer and anchor it slightly farther from the extreme corner so it is less ignorable on mobile crops."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 8,
+            "examples": [],
+            "issues": "Scorebug/substitution integration at 2882-2883s and 3090-3103s is fully legible but small and peripheral.",
+            "motion_blur": 10,
+            "overall_score": 7,
+            "position": 5,
+            "size": 4,
+            "suggestions": "Enlarge sponsor lockup within the scorebug package or give it a brief animated reveal during substitutions/stoppage announcements to command more attention."
+          }
+        ],
+        "name": "Lexus",
+        "summary": "High-quality but low-volume exposure. Lexus benefits from clean broadcast-native graphics, though the asset is small and peripheral rather than immersive."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [],
+            "issues": "Gatorade perimeter LED is fully legible whenever shown, including 373-377s and later replay/wide-shot moments. Frequency is limited. Background usage means it rarely dominates the frame.",
+            "motion_blur": 8,
+            "overall_score": 7,
+            "position": 6,
+            "size": 5,
+            "suggestions": "Good color separation already; improve impact by increasing logo scale or reducing ancillary copy so the icon/wordmark reads faster from the main wide camera."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 6,
+            "contrast": 7,
+            "examples": [],
+            "issues": "Fascia/other placements are brief: 187-194s and 5451-5456s. They are readable but incidental.",
+            "motion_blur": 9,
+            "overall_score": 6,
+            "position": 5,
+            "size": 4,
+            "suggestions": "Shift background placements nearer benches, tunnel, or substitution zones where editorial cutaways linger; current placements are visible but not memorable."
+          }
+        ],
+        "name": "Gatorade",
+        "summary": "Limited but tidy presence. Creative holds up technically, yet lack of scale and editorial focus keep total impact moderate."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [],
+            "issues": "BYD perimeter LED is clean around the penalty/goal sequence: 683-698s plus replays 726-738s. Strong emotional-context usage boosts value. No poor-render examples flagged in metadata.",
+            "motion_blur": 8,
+            "overall_score": 7.5,
+            "position": 6,
+            "size": 6,
+            "suggestions": "Continue owning high-attention moments, but increase board brightness consistency during replay packages so the brand pops equally from alternate angles."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [],
+            "issues": "BYD is heavily present on bench/fascia/technical-area inventory: 97-102s pregame, 349-351s, 790-817s, 981-998s, and multiple later close-ups. This off-ball exposure is valuable because it lands during manager reaction shots. Some placements are classified as 'other' or training-kit/bench signage rather than standard stadium boards.",
+            "motion_blur": 9,
+            "overall_score": 8,
+            "position": 7,
+            "size": 6,
+            "suggestions": "This is a strong non-play asset. To maximize it, keep branding directly behind coaches and substitutes, and use repeated seat-back/bench-panel marks so every reaction shot carries the logo."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 8,
+            "contrast": 8.5,
+            "examples": [],
+            "issues": "Training-kit/bench-seat BYD at 790-799s and 812-817s is clearly visible and benefits from stable close-up framing.",
+            "motion_blur": 9,
+            "overall_score": 8,
+            "position": 8,
+            "size": 6,
+            "suggestions": "Preserve this exact placement strategy; it converts routine bench cutaways into high-quality sponsorship inventory."
+          }
+        ],
+        "name": "BYD",
+        "summary": "Best hidden-value brand in the audit. Beyond a short but useful goal-sequence LED run, BYD scores especially well in bench and technical-area close-ups that many standard reports miss."
+      }
+    ]
+  },
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":9,\"contrast\":9,\"examples\":[],\"issues\":\"Video: Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4. Pregame starting-XI graphic is very clean and fully legible at 52-79s; strongest non-live exposure in the audit.\",\"motion_blur\":10,\"overall_score\":9,\"position\":9,\"size\":8,\"suggestions\":\"Keep this asset class prominent: retain flat graphic treatment, generous clear space, and center-weighted layout. If extended, add a slightly thicker red outline/shadow so it stays crisp on smaller mobile screens.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":7.5,\"contrast\":8.5,\"examples\":[],\"issues\":\"Tottenham shirt-front sponsor appears throughout the match and is usually fully legible, but weakest moments occur when players turn away or are mid-stride: 1499-1501s (partially legible, back/angled view of Eriksen), 1621-1623s (partially legible during duel), 1672-1675s (partially legible in aerial challenge), 1683-1693s (partially legible in moving close-up of Kane). Stronger hero moments include 1155-1161s, 1170-1178s, 1200-1206s, 1735-1737s, 1941-1955s.\",\"motion_blur\":7,\"overall_score\":8,\"position\":8,\"size\":8,\"suggestions\":\"Very effective overall. To improve edge cases, enlarge the wordmark height slightly or add a darker keyline around red letters so the sponsor survives torso twist, folds, and partial occlusion in action shots.\"},{\"asset_type\":\"other\",\"camera_angle\":6,\"contrast\":7,\"examples\":[],\"issues\":\"Bench/fascia AIA appears only briefly and in background close-ups around 3808-3815s and 6069-6083s. Fully legible, but secondary and easy to miss.\",\"motion_blur\":9,\"overall_score\":6,\"position\":5,\"size\":4,\"suggestions\":\"If bench branding is meant to carry weight, increase panel scale and place it directly behind seated coach eyelines; avoid low-slung placements that sit below the editorial focal point.\"},{\"asset_type\":\"other\",\"camera_angle\":6,\"contrast\":7,\"examples\":[],\"issues\":\"Training-kit AIA appears once around 5128-5134s and is background-only.\",\"motion_blur\":9,\"overall_score\":6,\"position\":5,\"size\":4,\"suggestions\":\"Use larger benchwear marks or repeat the logo on outerwear/chest zones most likely to face camera during manager/staff reactions.\"}],\"name\":\"AIA\",\"summary\":\"Best-performing brand in the broadcast. It wins on volume and editorial context: pregame graphic plus 118 shirt-front hits across open play, close-ups, celebrations, halftime, substitutions, and postgame. Weakness is not contrast but orientation/motion when players rotate or sprint.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":6,\"contrast\":7.5,\"examples\":[],\"issues\":\"Nike appears as Tottenham kit manufacturer logo. Because the swoosh is small, it loses legibility faster than shirt sponsors. Weak examples: 2342-2345s (mostly legible, player down on turf), 4327-4330s (mostly legible during touchline duel). Better examples: 88-91s pregame, 167-169s, 281-287s.\",\"motion_blur\":5,\"overall_score\":5,\"position\":6,\"size\":3,\"suggestions\":\"Increase logo scale slightly or add stronger contrast separation from fabric texture. The current chest-scale mark is too small for moving match coverage; a brighter outline/embroidery edge would help.\"},{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":8,\"examples\":[],\"issues\":\"Nike also appears on bench/training apparel around 4853-4856s in a close-up and reads better than the on-kit swoosh because of steadier framing.\",\"motion_blur\":9,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Benchwear execution is stronger; prioritize camera-facing staff outerwear with larger chest placement for more dependable broadcast pickup.\"}],\"name\":\"Nike\",\"summary\":\"Creatively clean but broadcast-limited by scale. The logo is recognizable in close-ups, yet often too small to carry value in motion-heavy play.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[],\"issues\":\"Emirates perimeter LED is the most consistently readable board brand in the match, spanning pregame, open play, replay, and goal contexts. Even in wide play it stays fully legible: 102-130s, 162-167s, 194-208s, 1501-1528s, 1659-1672s, 1712-1737s, 1850-1929s. Main limitation is distance rather than readability.\",\"motion_blur\":8,\"overall_score\":8,\"position\":6,\"size\":6,\"suggestions\":\"Already strong. For extra standout in the widest camera, increase letter height or shorten copy cycles so the mark is centered during attacking-third action.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":9,\"examples\":[],\"issues\":\"Arsenal shirt-front sponsor is strong in player close-ups and celebrations: 217-220s, 248-256s, multiple goal/celebration hits later in match. No poor metadata examples were flagged; weaknesses are mainly occasional partial folds when players twist.\",\"motion_blur\":8,\"overall_score\":8.5,\"position\":8,\"size\":8,\"suggestions\":\"Maintain current white-on-red/white kit approach. A slightly thicker letter weight would help in fast tracking shots, but this is already premium broadcast inventory.\"},{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":8,\"examples\":[],\"issues\":\"Stadium fascia/signage performs well from the opening hero shot 0-11s and later wide or celebration cuts (including 1011-1048s and 1948-1951s). Always fully legible in metadata, though naturally secondary to play.\",\"motion_blur\":9,\"overall_score\":7,\"position\":6,\"size\":5,\"suggestions\":\"Lean into opening, goal, and crowd-reaction framing with repeated fascia blocks near camera-facing stands. This is valuable emotional-context inventory that conventional play-only audits undercount.\"}],\"name\":\"Emirates\",\"summary\":\"One of the strongest all-around brands: excellent home-team shirt visibility plus frequent, clean perimeter and stadium signage exposure. Strong across both live action and emotional context shots.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":7,\"examples\":[],\"issues\":\"Betfair appears only on perimeter LED but with solid volume across open play and replay. Weakest render is 583-599s (mostly legible in midfield wide shot). Better moments: 599-648s around the foul/free-kick buildup, 669-745s replays, 752-817s resumption. QA suggests distance, lower-frame placement, and player obstruction are the main issues.\",\"motion_blur\":8,\"overall_score\":7,\"position\":6,\"size\":6,\"suggestions\":\"Increase luminance separation between text and board background, and avoid keeping the wordmark too low in frame. A bolder white/yellow lockup or tighter copy block would survive wide-camera distance better.\"}],\"name\":\"Betfair\",\"summary\":\"Good frequency, but creative effectiveness is capped by standard wide-shot LED conditions. Works best on stoppage/replay sequences when the camera settles.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":7,\"examples\":[],\"issues\":\"12BET appears on both stadium signage and perimeter LED. Stadium signage at 433-443s is clean. Perimeter LED delivers long runs later in match, but weaker examples include 4738-4752s during the Arsenal goal sequence and 4779-4789s replay, where metadata drops to mostly legible. Distance and foreground player clutter reduce clarity.\",\"motion_blur\":8,\"overall_score\":6.5,\"position\":6,\"size\":5.5,\"suggestions\":\"Improve wide-shot pickup with larger numeral/letter proportions and more negative space. The red/white-on-dark palette is decent, but a stronger white border/glow would help against crowd and player clutter.\"},{\"asset_type\":\"other\",\"camera_angle\":7,\"contrast\":7.5,\"examples\":[],\"issues\":\"Stadium fascia exposure at 433-443s is fully legible but brief and secondary.\",\"motion_blur\":9,\"overall_score\":6,\"position\":5,\"size\":4,\"suggestions\":\"Repeat fascia units more densely or place them closer to dugout/throw-in camera positions for longer incidental visibility.\"}],\"name\":\"12BET\",\"summary\":\"Moderate creative performance. The brand has useful later-match LED volume, but readability softens in the biggest moments because of wide angles and foreground interference.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[],\"issues\":\"Lexus performs best as a broadcast graphic/bug rather than as an in-stadium asset. Strong moments: 2587-2589s top-frame graphic and 5959-5979s stoppage-time bug. Always fully legible because it is screen-native.\",\"motion_blur\":10,\"overall_score\":8.5,\"position\":8,\"size\":6,\"suggestions\":\"Keep using overlay inventory. To maximize value, hold the bug a touch longer and anchor it slightly farther from the extreme corner so it is less ignorable on mobile crops.\"},{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":8,\"examples\":[],\"issues\":\"Scorebug/substitution integration at 2882-2883s and 3090-3103s is fully legible but small and peripheral.\",\"motion_blur\":10,\"overall_score\":7,\"position\":5,\"size\":4,\"suggestions\":\"Enlarge sponsor lockup within the scorebug package or give it a brief animated reveal during substitutions/stoppage announcements to command more attention.\"}],\"name\":\"Lexus\",\"summary\":\"High-quality but low-volume exposure. Lexus benefits from clean broadcast-native graphics, though the asset is small and peripheral rather than immersive.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[],\"issues\":\"Gatorade perimeter LED is fully legible whenever shown, including 373-377s and later replay/wide-shot moments. Frequency is limited. Background usage means it rarely dominates the frame.\",\"motion_blur\":8,\"overall_score\":7,\"position\":6,\"size\":5,\"suggestions\":\"Good color separation already; improve impact by increasing logo scale or reducing ancillary copy so the icon/wordmark reads faster from the main wide camera.\"},{\"asset_type\":\"other\",\"camera_angle\":6,\"contrast\":7,\"examples\":[],\"issues\":\"Fascia/other placements are brief: 187-194s and 5451-5456s. They are readable but incidental.\",\"motion_blur\":9,\"overall_score\":6,\"position\":5,\"size\":4,\"suggestions\":\"Shift background placements nearer benches, tunnel, or substitution zones where editorial cutaways linger; current placements are visible but not memorable.\"}],\"name\":\"Gatorade\",\"summary\":\"Limited but tidy presence. Creative holds up technically, yet lack of scale and editorial focus keep total impact moderate.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[],\"issues\":\"BYD perimeter LED is clean around the penalty/goal sequence: 683-698s plus replays 726-738s. Strong emotional-context usage boosts value. No poor-render examples flagged in metadata.\",\"motion_blur\":8,\"overall_score\":7.5,\"position\":6,\"size\":6,\"suggestions\":\"Continue owning high-attention moments, but increase board brightness consistency during replay packages so the brand pops equally from alternate angles.\"},{\"asset_type\":\"other\",\"camera_angle\":7,\"contrast\":8,\"examples\":[],\"issues\":\"BYD is heavily present on bench/fascia/technical-area inventory: 97-102s pregame, 349-351s, 790-817s, 981-998s, and multiple later close-ups. This off-ball exposure is valuable because it lands during manager reaction shots. Some placements are classified as 'other' or training-kit/bench signage rather than standard stadium boards.\",\"motion_blur\":9,\"overall_score\":8,\"position\":7,\"size\":6,\"suggestions\":\"This is a strong non-play asset. To maximize it, keep branding directly behind coaches and substitutes, and use repeated seat-back/bench-panel marks so every reaction shot carries the logo.\"},{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":8.5,\"examples\":[],\"issues\":\"Training-kit/bench-seat BYD at 790-799s and 812-817s is clearly visible and benefits from stable close-up framing.\",\"motion_blur\":9,\"overall_score\":8,\"position\":8,\"size\":6,\"suggestions\":\"Preserve this exact placement strategy; it converts routine bench cutaways into high-quality sponsorship inventory.\"}],\"name\":\"BYD\",\"summary\":\"Best hidden-value brand in the audit. Beyond a short but useful goal-sequence LED run, BYD scores especially well in bench and technical-area close-ups that many standard reports miss.\"}]}"
+}

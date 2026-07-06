@@ -113,10 +113,28 @@ export function Player() {
     [resolveAssetByFilename, currentAsset, loadAsset],
   )
 
+  // Play an arbitrary MP4 (a highlight reel) directly in the sticky player,
+  // bypassing the HLS/roster path. currentAsset is cleared so the reel isn't
+  // mistaken for a roster broadcast; seeking a moment afterwards reloads its HLS.
+  const playUrl = useCallback((url: string, label?: string) => {
+    const v = videoEl.current
+    if (!v) return
+    if (hls.current) {
+      hls.current.destroy()
+      hls.current = null
+    }
+    setCurrentAsset(null)
+    v.src = url
+    v.load()
+    v.play()?.catch(() => {})
+    setCaption(label ? `▶ ${label}` : "▶ highlight reel")
+    document.getElementById("player-section")?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }, [])
+
   // Register the imperative handle for panels.
   useEffect(() => {
-    playerRef.current = { seekTo, loadAsset: (id) => loadAsset(id) }
-  }, [playerRef, seekTo, loadAsset])
+    playerRef.current = { seekTo, loadAsset: (id) => loadAsset(id), playUrl }
+  }, [playerRef, seekTo, loadAsset, playUrl])
 
   // Keep a valid asset loaded as the roster changes.
   useEffect(() => {
@@ -150,7 +168,7 @@ export function Player() {
   return (
     <section
       id="player-section"
-      className="sticky top-[68px] z-10 -mx-2 mb-2 rounded-dialog border border-border-secondary bg-surface-white/95 p-3 backdrop-blur"
+      className="sticky top-[68px] z-10 rounded-dialog border border-border-secondary bg-surface-white/95 p-4 backdrop-blur"
     >
       {readyVideos.length > 1 && (
         <div className="mb-2 flex items-center gap-2">
