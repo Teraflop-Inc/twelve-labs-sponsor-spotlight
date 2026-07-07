@@ -1,24 +1,20 @@
-// Client-side data export (F4). All raw metrics come from the analyze/legibility
-// results already rendered in the browser; economics come from econ.ts. We merge
-// them at download time into CSV/JSON — the file matches the on-screen numbers
-// exactly, and nothing is posted to the server (locked decision 2026-07-01).
+// Client-side data export (F4). Exports the FULL data returned from the Jockey
+// runs — not a rolled-up summary. Everything is already in the browser (the
+// analyze appearances + the legibility assets); economics come from econ.ts. We
+// merge them at download time; nothing is posted to the server.
+//
+//  • CSV  = one row per detected appearance (moment-level, every field) with the
+//           brand-level rollups + economics carried on each row for easy pivoting.
+//  • JSON = the complete nested payload per brand: all appearances, all
+//           legibility assets (with dimension scores + examples), economics, plus
+//           the full detected-brand list.
+//
+// Scope-based: the currently selected game (or "All games").
 
-import type { Brand, LegibilityReport, Moment } from "./types"
-import { brandValue, unionWeightedSeconds, type EconState } from "./econ"
+import type { Brand, LegibilityBrand, LegibilityReport, Moment } from "./types"
+import { audienceMultiplier, brandValue, unionWeightedSeconds, type EconState } from "./econ"
 
 const OUTSIDE_W2W = new Set(["pregame", "halftime", "postgame", "timeout"])
-
-export interface ExportRow {
-  brand: string
-  game: string
-  impressions: number
-  duration_seconds: number
-  moments: number
-  outside_whistle_to_whistle_seconds: number
-  avg_legibility: number | null
-  cpm: number
-  weighted_media_value: number
-}
 
 /** Mean 0–10 legibility across a brand's audited assets, or null if none. */
 export function avgLegibility(report: LegibilityReport | null, brand: string): number | null {
@@ -30,87 +26,130 @@ export function avgLegibility(report: LegibilityReport | null, brand: string): n
   return Math.round((scores.reduce((s, n) => s + n, 0) / scores.length) * 10) / 10
 }
 
+function legBrand(report: LegibilityReport | null, brand: string): LegibilityBrand | undefined {
+  return report?.brands.find((x) => x.name.trim().toLowerCase() === brand.trim().toLowerCase())
+}
+
 function sumOutsideW2W(moments: Moment[]): number {
   return moments
     .filter((m) => OUTSIDE_W2W.has(String(m.context)))
     .reduce((s, m) => s + Math.max(0, (Number(m.end_sec) || 0) - (Number(m.start_sec) || 0)), 0)
 }
 
-function row(
-  brand: Brand,
-  game: string,
-  moments: Moment[],
-  econ: EconState,
-  leg: number | null,
-  opts: { aggregate?: boolean } = {},
-): ExportRow {
-  // Aggregate uses the brand's headline value (matches the on-screen $); per-game
-  // rebuilds a scoped pseudo-brand from just that game's appearances.
-  const scoped: Brand = opts.aggregate
-    ? brand
-    : { name: brand.name, appearances: moments, total_seconds: unionWeightedSeconds(moments, econ.weights).unionSecs }
-  const wmv = brandValue(scoped, econ)
-  const duration = opts.aggregate
-    ? brand.total_seconds || unionWeightedSeconds(moments, econ.weights).unionSecs
-    : unionWeightedSeconds(moments, econ.weights).unionSecs
-  const outside = opts.aggregate
-    ? brand.outside_whistle_to_whistle_seconds ?? sumOutsideW2W(moments)
-    : sumOutsideW2W(moments)
-  return {
-    brand: brand.name,
-    game,
-    // Gross impressions implied by the media value: value = impressions/1000 × CPM.
-    impressions: econ.cpm > 0 ? Math.round((wmv / econ.cpm) * 1000) : 0,
-    duration_seconds: Math.round(duration * 10) / 10,
-    moments: opts.aggregate ? brand.moments_count ?? moments.length : moments.length,
-    outside_whistle_to_whistle_seconds: Math.round(outside * 10) / 10,
-    avg_legibility: leg,
-    cpm: econ.cpm,
-    weighted_media_value: Math.round(wmv),
-  }
+const num = (v: unknown) => (Number.isFinite(Number(v)) ? Number(v) : null)
+
+// --- CSV: one row per appearance (the full moment-level detail) ----------------
+
+export interface AppearanceRow {
+  brand: string
+  game: string
+  // brand-level rollups + economics, repeated on each appearance row
+  weighted_media_value: number
+  impressions: number
+  avg_legibility: number | null
+  cpm: number
+  reach_millions: number
+  audience_multiplier: number
+  brand_total_seconds: number
+  brand_moments: number
+  brand_outside_w2w_seconds: number
+  // the appearance itself
+  start_sec: number | null
+  end_sec: number | null
+  duration_sec: number | null
+  context: string
+  context_weight: number
+  asset_type: string
+  confidence: number | null
+  description: string
+  video: string
 }
 
-/**
- * Build export rows: one per (brand × game) grouped by the appearance `video`
- * field, plus an aggregate "All games" total row per brand.
- */
-export function buildExportRows(
+const APPEARANCE_COLUMNS: (keyof AppearanceRow)[] = [
+  "brand",
+  "game",
+  "weighted_media_value",
+  "impressions",
+  "avg_legibility",
+  "cpm",
+  "reach_millions",
+  "audience_multiplier",
+  "brand_total_seconds",
+  "brand_moments",
+  "brand_outside_w2w_seconds",
+  "start_sec",
+  "end_sec",
+  "duration_sec",
+  "context",
+  "context_weight",
+  "asset_type",
+  "confidence",
+  "description",
+  "video",
+]
+
+export function buildAppearanceRows(
   brands: Brand[],
   legibility: LegibilityReport | null,
   econ: EconState,
-): ExportRow[] {
-  const rows: ExportRow[] = []
+  gameLabel: string,
+): AppearanceRow[] {
+  const rows: AppearanceRow[] = []
+  const audMult = Math.round(audienceMultiplier(econ) * 1000) / 1000
   for (const b of brands) {
     const apps = b.appearances || b.top_moments || []
+    const wmv = brandValue(b, econ)
     const leg = avgLegibility(legibility, b.name)
-    // Per-game rows, grouped by source video.
-    const byGame = new Map<string, Moment[]>()
+    const base = {
+      brand: b.name,
+      game: gameLabel,
+      weighted_media_value: Math.round(wmv),
+      impressions: econ.cpm > 0 ? Math.round((wmv / econ.cpm) * 1000) : 0,
+      avg_legibility: leg,
+      cpm: econ.cpm,
+      reach_millions: econ.reach,
+      audience_multiplier: audMult,
+      brand_total_seconds:
+        Math.round((b.total_seconds || unionWeightedSeconds(apps, econ.weights).unionSecs) * 10) / 10,
+      brand_moments: b.moments_count ?? apps.length,
+      brand_outside_w2w_seconds:
+        Math.round((b.outside_whistle_to_whistle_seconds ?? sumOutsideW2W(apps)) * 10) / 10,
+    }
+    if (apps.length === 0) {
+      rows.push({
+        ...base,
+        start_sec: null,
+        end_sec: null,
+        duration_sec: null,
+        context: "",
+        context_weight: 0,
+        asset_type: "",
+        confidence: null,
+        description: "",
+        video: "",
+      })
+      continue
+    }
     for (const m of apps) {
-      const g = m.video || "unknown"
-      const list = byGame.get(g) || []
-      list.push(m)
-      byGame.set(g, list)
+      const s = num(m.start_sec)
+      const e = num(m.end_sec)
+      const ctx = String(m.context ?? "")
+      rows.push({
+        ...base,
+        start_sec: s,
+        end_sec: e,
+        duration_sec: s != null && e != null ? Math.round((e - s) * 10) / 10 : null,
+        context: ctx,
+        context_weight: econ.weights[ctx] ?? econ.weights.other ?? 1,
+        asset_type: String(m.asset_type ?? ""),
+        confidence: num(m.confidence),
+        description: String(m.description ?? ""),
+        video: String(m.video ?? ""),
+      })
     }
-    for (const [game, moments] of [...byGame.entries()].sort()) {
-      rows.push(row(b, game, moments, econ, leg))
-    }
-    // Aggregate total row.
-    rows.push(row(b, "All games", apps, econ, leg, { aggregate: true }))
   }
   return rows
 }
-
-const COLUMNS: (keyof ExportRow)[] = [
-  "brand",
-  "game",
-  "impressions",
-  "duration_seconds",
-  "moments",
-  "outside_whistle_to_whistle_seconds",
-  "avg_legibility",
-  "cpm",
-  "weighted_media_value",
-]
 
 function csvCell(v: unknown): string {
   if (v == null) return ""
@@ -118,17 +157,63 @@ function csvCell(v: unknown): string {
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
 }
 
-export function toCSV(rows: ExportRow[]): string {
-  const header = COLUMNS.join(",")
-  const body = rows.map((r) => COLUMNS.map((c) => csvCell(r[c])).join(","))
+export function toCSV(rows: AppearanceRow[]): string {
+  const header = APPEARANCE_COLUMNS.join(",")
+  const body = rows.map((r) => APPEARANCE_COLUMNS.map((c) => csvCell(r[c])).join(","))
   return [header, ...body].join("\n") + "\n"
 }
 
-export function toJSON(rows: ExportRow[]): string {
-  return JSON.stringify(rows, null, 2)
+// --- JSON: complete nested payload per brand -----------------------------------
+
+export function buildFullExport(
+  brands: Brand[],
+  legibility: LegibilityReport | null,
+  econ: EconState,
+  gameLabel: string,
+  detected: string[] = [],
+) {
+  return {
+    scope: gameLabel,
+    // The economic assumptions that produced every weighted_media_value below.
+    assumptions: {
+      cpm: econ.cpm,
+      reach_millions: econ.reach,
+      audience_premium_pct: econ.audPremium,
+      audience_regional_pct: econ.audRegional,
+      audience_streaming_pct: econ.audStreaming,
+      audience_multiplier: Math.round(audienceMultiplier(econ) * 1000) / 1000,
+      context_weights: econ.weights,
+    },
+    detected_brands: detected,
+    brands: brands.map((b) => {
+      const apps = b.appearances || b.top_moments || []
+      const wmv = brandValue(b, econ)
+      const lb = legBrand(legibility, b.name)
+      return {
+        brand: b.name,
+        game: gameLabel,
+        economics: {
+          cpm: econ.cpm,
+          weighted_media_value: Math.round(wmv),
+          impressions: econ.cpm > 0 ? Math.round((wmv / econ.cpm) * 1000) : 0,
+        },
+        total_seconds: b.total_seconds ?? null,
+        moments_count: b.moments_count ?? apps.length,
+        outside_whistle_to_whistle_seconds: b.outside_whistle_to_whistle_seconds ?? null,
+        asset_types: b.asset_types ?? [],
+        legibility_notes: b.legibility_notes ?? null,
+        avg_legibility: avgLegibility(legibility, b.name),
+        // Raw Jockey outputs, verbatim — every field the run returned.
+        appearances: apps,
+        legibility_summary: lb?.summary ?? null,
+        legibility_assets: lb?.assets ?? [],
+      }
+    }),
+  }
 }
 
-/** Trigger a client-side file download of `content`. */
+// --- download ------------------------------------------------------------------
+
 export function download(filename: string, content: string, mime: string) {
   const blob = new Blob([content], { type: mime })
   const url = URL.createObjectURL(blob)
@@ -141,18 +226,24 @@ export function download(filename: string, content: string, mime: string) {
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
+function slug(s: string): string {
+  return s.replace(/[^a-z0-9]+/gi, "-").toLowerCase().replace(/^-+|-+$/g, "")
+}
+
 export function exportData(
   brands: Brand[],
   legibility: LegibilityReport | null,
   econ: EconState,
   format: "csv" | "json",
-  scopeLabel = "all-games",
+  gameLabel: string,
+  detected: string[] = [],
 ) {
-  const rows = buildExportRows(brands, legibility, econ)
-  const stamp = scopeLabel.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
+  const name = `sponsor-spotlight-${slug(gameLabel) || "export"}`
   if (format === "csv") {
-    download(`sponsor-spotlight-${stamp}.csv`, toCSV(rows), "text/csv;charset=utf-8")
+    const rows = buildAppearanceRows(brands, legibility, econ, gameLabel)
+    download(`${name}.csv`, toCSV(rows), "text/csv;charset=utf-8")
   } else {
-    download(`sponsor-spotlight-${stamp}.json`, toJSON(rows), "application/json")
+    const full = buildFullExport(brands, legibility, econ, gameLabel, detected)
+    download(`${name}.json`, JSON.stringify(full, null, 2), "application/json")
   }
 }

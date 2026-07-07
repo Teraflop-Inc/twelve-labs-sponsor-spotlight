@@ -2,11 +2,13 @@ import { useMemo, useState } from "react"
 import { Button, Chip } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
 import { brandValue, fmtMoney } from "../lib/econ"
-import { exportData } from "../lib/export"
 import { ALL_GAMES, useApp } from "../state"
 import { MetricTile, MomentRow, SectionCard, StatusLine } from "../ui"
 import { Timeline } from "./Timeline"
 import type { Brand, Moment } from "../lib/types"
+
+/** Stable DOM id for a brand card, so the Viewing chips can scroll to it. */
+const brandDomId = (name: string) => "brand-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
 
 export function AnalyzePanel() {
   const {
@@ -27,7 +29,6 @@ export function AnalyzePanel() {
     setBrandB,
     demoCached,
     scopeInventory,
-    scopeLegibility,
     scopeReels,
     viewBrands,
     playerRef,
@@ -46,7 +47,6 @@ export function AnalyzePanel() {
   const displayBrands = demoView
     ? scopeInventory.filter((b) => viewBrands.includes(b.name))
     : inventory
-  const exportLegibility = demoView ? scopeLegibility : legibility
 
   const onAnalyze = async (opts: { live?: boolean } = {}) => {
     const names = selectedBrands.filter(Boolean)
@@ -85,9 +85,22 @@ export function AnalyzePanel() {
     return displayBrands.map((b) => ({ b, v: brandValue(b, econ) })).sort((a, b) => b.v - a.v)
   }, [displayBrands, econ])
 
-  const scopeLabel =
-    gameId === ALL_GAMES ? "all-games" : games.find((g) => g.id === gameId)?.label ?? gameId
+  const gameLabel =
+    gameId === ALL_GAMES ? "All games" : games.find((g) => g.id === gameId)?.label ?? gameId
   const reelScope = gameId === ALL_GAMES ? "all" : gameId
+
+  // Card expand/collapse is lifted here so the Viewing chips can open + scroll
+  // to a brand. All start collapsed.
+  const [openBrands, setOpenBrands] = useState<Record<string, boolean>>({})
+  const toggleBrand = (name: string) =>
+    setOpenBrands((m) => ({ ...m, [name]: !m[name] }))
+  const goToBrand = (name: string) => {
+    setOpenBrands((m) => ({ ...m, [name]: true }))
+    setTimeout(
+      () => document.getElementById(brandDomId(name))?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      0,
+    )
+  }
 
   const [reportBusy, setReportBusy] = useState<string | null>(null)
   const onReport = async (b: Brand) => {
@@ -100,7 +113,7 @@ export function AnalyzePanel() {
         game_ids: gameId === ALL_GAMES ? [] : [gameId],
         media_values: { [scopeKey]: value },
         total_media_value: value,
-        generated_note: `Scope: ${scopeLabel}.`,
+        generated_note: `Scope: ${gameLabel}.`,
       })
       const url = URL.createObjectURL(new Blob([html], { type: "text/html" }))
       window.open(url, "_blank")
@@ -147,9 +160,17 @@ export function AnalyzePanel() {
             <>
               <span>Viewing:</span>
               {(displayBrands ?? []).map((b) => (
-                <Chip key={b.name} variant="subtle" size="sm">
-                  {b.name}
-                </Chip>
+                <button
+                  key={b.name}
+                  type="button"
+                  onClick={() => goToBrand(b.name)}
+                  className="cursor-pointer"
+                  title={`Go to ${b.name}`}
+                >
+                  <Chip variant="subtle" size="sm">
+                    {b.name}
+                  </Chip>
+                </button>
               ))}
             </>
           )
@@ -174,30 +195,8 @@ export function AnalyzePanel() {
         )}
       </StatusLine>
 
-      {ranked && ranked.length > 0 && (
-        <div className="mt-3 flex flex-wrap items-center gap-2 rounded-tlds-2 border border-border-secondary bg-surface-body p-2">
-          <span className="text-xs text-foreground-subtle">
-            Export <span className="font-tl-mono">{scopeLabel}</span> — per-game rows + totals:
-          </span>
-          <Button
-            size="sm"
-            variant="outlined-gray"
-            onClick={() => exportData(displayBrands ?? [], exportLegibility, econ, "csv", scopeLabel)}
-          >
-            CSV
-          </Button>
-          <Button
-            size="sm"
-            variant="outlined-gray"
-            onClick={() => exportData(displayBrands ?? [], exportLegibility, econ, "json", scopeLabel)}
-          >
-            JSON
-          </Button>
-        </div>
-      )}
-
       {ranked && (
-        <div className="mt-3 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="mt-3 flex flex-col gap-2">
           {ranked.length === 0 && (
             <div className="text-xs text-foreground-subtle">No brands returned.</div>
           )}
@@ -207,6 +206,8 @@ export function AnalyzePanel() {
               brand={b}
               value={v}
               rank={i + 1}
+              open={Boolean(openBrands[b.name])}
+              onToggle={() => toggleBrand(b.name)}
               onReport={() => onReport(b)}
               onReel={() => onReel(b)}
               reportBusy={reportBusy === b.name}
@@ -223,6 +224,8 @@ function BrandCard({
   brand,
   value,
   rank,
+  open,
+  onToggle,
   onReport,
   onReel,
   reportBusy,
@@ -231,6 +234,8 @@ function BrandCard({
   brand: Brand
   value: number
   rank: number
+  open: boolean
+  onToggle: () => void
   onReport: () => void
   onReel: () => void
   reportBusy: boolean
@@ -238,17 +243,31 @@ function BrandCard({
 }) {
   const apps: Moment[] = brand.appearances || []
   return (
-    <div className="flex flex-col rounded-tlds-3 border border-border-secondary bg-surface-white p-3">
-      <div className="mb-2 flex items-baseline justify-between">
-        <div className="flex items-baseline gap-2">
-          <Chip variant={rank === 1 ? "success" : "subtle"} size="sm">
-            #{rank}
-          </Chip>
-          <h3 className="font-tl-sans text-base font-semibold">{brand.name}</h3>
-        </div>
-        <span className="font-tl-mono text-sm text-tl-embed-dark-green">{fmtMoney(value)}</span>
-      </div>
-      <div className="mb-2 grid grid-cols-3 gap-1">
+    <div
+      id={brandDomId(brand.name)}
+      className="scroll-mt-24 rounded-tlds-3 border border-border-secondary bg-surface-white"
+    >
+      {/* Header row — click anywhere to minimize/maximize the brand. */}
+      <button
+        type="button"
+        onClick={onToggle}
+        className="flex w-full items-center gap-2 px-3 pt-3 text-left"
+        aria-expanded={open}
+      >
+        <span className="w-3 shrink-0 font-tl-mono text-xs text-foreground-subtle">
+          {open ? "▾" : "▸"}
+        </span>
+        <Chip variant={rank === 1 ? "success" : "subtle"} size="sm">
+          #{rank}
+        </Chip>
+        <h3 className="truncate font-tl-sans text-base font-semibold">{brand.name}</h3>
+        <span className="ml-auto font-tl-mono text-sm text-tl-embed-dark-green">
+          {fmtMoney(value)}
+        </span>
+      </button>
+
+      {/* Summary tiles stay visible when minimized. */}
+      <div className="grid grid-cols-3 gap-1 p-3">
         <MetricTile label="Exposure" value={`${(brand.total_seconds || 0).toFixed(0)}s`} />
         <MetricTile label="Moments" value={brand.moments_count ?? apps.length} />
         <MetricTile
@@ -256,42 +275,47 @@ function BrandCard({
           value={`${(brand.outside_whistle_to_whistle_seconds || 0).toFixed(0)}s`}
         />
       </div>
-      {brand.asset_types && brand.asset_types.length > 0 && (
-        <div className="mb-2 flex flex-wrap gap-1">
-          {brand.asset_types.map((a) => (
-            <Chip key={a} variant="subtle" size="sm">
-              {a}
-            </Chip>
-          ))}
+
+      {open && (
+        <div className="px-3 pb-3">
+          {brand.asset_types && brand.asset_types.length > 0 && (
+            <div className="mb-2 flex flex-wrap gap-1">
+              {brand.asset_types.map((a) => (
+                <Chip key={a} variant="subtle" size="sm">
+                  {a}
+                </Chip>
+              ))}
+            </div>
+          )}
+          {brand.legibility_notes && (
+            <div className="mb-2 text-[11px] italic text-tl-analyze-dark-orange">
+              {brand.legibility_notes}
+            </div>
+          )}
+          <div className="mb-2 flex flex-wrap gap-2">
+            <Button size="sm" variant="outlined-gray" onClick={onReport} disabled={reportBusy}>
+              {reportBusy ? "building…" : "Report"}
+            </Button>
+            {hasReel && (
+              <Button size="sm" variant="outlined-gray" onClick={onReel}>
+                ▶ Play reel
+              </Button>
+            )}
+          </div>
+          <Timeline moments={apps} />
+          <div className="mb-1 mt-1 text-[10px] uppercase tracking-wide text-foreground-subtle">
+            Appearances ({apps.length})
+          </div>
+          <ul className="max-h-60 overflow-y-auto">
+            {apps.length === 0 && <li className="text-xs text-foreground-subtle">none returned</li>}
+            {apps.map((m, i) => (
+              <MomentRow key={i} m={m}>
+                {m.asset_type || m.description || ""}
+              </MomentRow>
+            ))}
+          </ul>
         </div>
       )}
-      {brand.legibility_notes && (
-        <div className="mb-2 text-[11px] italic text-tl-analyze-dark-orange">
-          {brand.legibility_notes}
-        </div>
-      )}
-      <div className="mb-2 flex flex-wrap gap-2">
-        <Button size="sm" variant="outlined-gray" onClick={onReport} disabled={reportBusy}>
-          {reportBusy ? "building…" : "Report"}
-        </Button>
-        {hasReel && (
-          <Button size="sm" variant="outlined-gray" onClick={onReel}>
-            ▶ Play reel
-          </Button>
-        )}
-      </div>
-      <Timeline moments={apps} />
-      <div className="mb-1 mt-1 text-[10px] uppercase tracking-wide text-foreground-subtle">
-        Appearances ({apps.length})
-      </div>
-      <ul className="max-h-60 overflow-y-auto">
-        {apps.length === 0 && <li className="text-xs text-foreground-subtle">none returned</li>}
-        {apps.map((m, i) => (
-          <MomentRow key={i} m={m}>
-            {m.asset_type || m.description || ""}
-          </MomentRow>
-        ))}
-      </ul>
     </div>
   )
 }

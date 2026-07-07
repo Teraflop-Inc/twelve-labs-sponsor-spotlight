@@ -168,7 +168,7 @@ export function Player() {
   return (
     <section
       id="player-section"
-      className="sticky top-[68px] z-10 rounded-dialog border border-border-secondary bg-surface-white/95 p-4 backdrop-blur"
+      className="rounded-dialog border border-border-secondary bg-surface-white/95 p-4 backdrop-blur"
     >
       {readyVideos.length > 1 && (
         <div className="mb-2 flex items-center gap-2">

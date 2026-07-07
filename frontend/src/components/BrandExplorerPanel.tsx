@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { Button, Checkbox, Chip, TextField } from "@twelvelabs-io/react"
 import { useApp } from "../state"
 import { SectionCard } from "../ui"
@@ -19,6 +19,12 @@ export function BrandExplorerPanel() {
     scopeLoading,
   } = useApp()
   const [query, setQuery] = useState("")
+  const [showAll, setShowAll] = useState(false)
+  // Each scope opens collapsed (analyzed brands only) with a fresh search.
+  useEffect(() => {
+    setShowAll(false)
+    setQuery("")
+  }, [scopeInventory])
 
   // Which detected brands were actually analyzed (have data to view).
   const analyzedSet = useMemo(
@@ -40,16 +46,20 @@ export function BrandExplorerPanel() {
     return [...run, ...rest]
   }, [scopeDiscovery, scopeInventory, analyzedSet])
 
+  const q = query.trim().toLowerCase()
+  // Default view = only the analyzed (run) brands; "show all" reveals the greyed
+  // detected-but-not-analyzed ones. A search always spans the full list.
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    return q ? ordered.filter((b) => b.name.toLowerCase().includes(q)) : ordered
-  }, [ordered, query])
+    if (q) return ordered.filter((b) => b.name.toLowerCase().includes(q))
+    return showAll ? ordered : ordered.filter((b) => analyzedSet.has(b.name.toLowerCase()))
+  }, [ordered, q, showAll, analyzedSet])
 
   const toggle = (name: string, on: boolean) =>
     setViewBrands(on ? [...viewBrands, name] : viewBrands.filter((n) => n !== name))
 
   const detected = scopeDiscovery.length
   const analyzed = analyzedNames.length
+  const hiddenCount = detected - analyzed
   const showSearch = detected > 15
 
   return (
@@ -143,6 +153,15 @@ export function BrandExplorerPanel() {
           )
         })}
       </div>
+      {!q && hiddenCount > 0 && (
+        <button
+          type="button"
+          onClick={() => setShowAll((s) => !s)}
+          className="mt-2 text-xs font-semibold text-foreground-status-info hover:underline"
+        >
+          {showAll ? "Show fewer" : `Show all ${detected} detected (+${hiddenCount} not analyzed)`}
+        </button>
+      )}
       {!scopeLoading && detected === 0 && (
         <div className="text-xs text-foreground-subtle">No brands cached for this scope.</div>
       )}

@@ -122,7 +122,8 @@ export function useApp(): AppContextValue {
 const INDEXING_DONE = new Set(["ready", "failed", "error"])
 
 function initialMode(): Mode {
-  return localStorage.getItem(MODE_LS) === "byok" ? "byok" : "demo"
+  // The bring-your-own-key tab was removed — the app is demo-only.
+  return "demo"
 }
 
 export function AppProvider({ children }: { children: ReactNode }) {
