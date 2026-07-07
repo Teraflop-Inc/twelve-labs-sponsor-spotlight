@@ -1,0 +1,477 @@
+{
+  "session_id": "sess_019f24bb-9e5e-7e52-8935-7288dbfc41ad",
+  "report": {
+    "brands": [
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 9,
+            "contrast": 10,
+            "examples": [
+              {
+                "end_sec": 106,
+                "note": "Strong in pregame huddle close-up; logo reads cleanly.",
+                "start_sec": 100,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 964,
+                "note": "Drops in wider live-play framing; logo shrinks and loses edge detail.",
+                "start_sec": 962,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Generally excellent on Tottenham shirt front. Poorer render examples: 868-871s (wide shot, only partially legible), 962-964s (injury stoppage, partial legibility from distance).",
+            "motion_blur": 10,
+            "overall_score": 9,
+            "position": 10,
+            "size": 5,
+            "suggestions": "Keep current red-on-white execution. To improve long-lens/wide-shot retention, slightly thicken letterforms or add a subtle dark keyline so the wordmark holds up when players are small in frame."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 149,
+                "note": "Pregame high wide shot; board is barely legible because of distance.",
+                "start_sec": 128,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 287,
+                "note": "Wide live-play view; logo becomes a small background glimpse.",
+                "start_sec": 284,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Very frequent perimeter exposure, but performance is inconsistent in high/wide camera. Metadata flags barely legible moments at 128-149s and 284-287s.",
+            "motion_blur": 8,
+            "overall_score": 7,
+            "position": 7,
+            "size": 5,
+            "suggestions": "Increase character height and dwell time in the LED rotation. Use fewer words per cycle and stronger white/red separation; current creative is effective in medium shots but weak in stadium-wide framing."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 2711,
+                "note": "Fascia/signage visible during open play but remains secondary background.",
+                "start_sec": 2696,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Stadium fascia appearance exists but is not dominant; usually background support rather than primary branding.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 6,
+            "size": 4,
+            "suggestions": "If this fascia inventory is sold to AIA, use larger repeated lockups and brighter panel illumination so the mark separates from dark seating backgrounds."
+          }
+        ],
+        "name": "AIA",
+        "summary": "Best-performing brand in the match. Dominant as Tottenham shirt-front sponsor and heavily present on perimeter LEDs; strongest during close-ups and celebrations, weaker only in very wide shots."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 1178,
+                "note": "Celebration shot; manufacturer logo is visible but secondary, not hero-sized.",
+                "start_sec": 1168,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 862,
+                "note": "Boot/sock-related sighting is tiny and motion-affected.",
+                "start_sec": 862,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Nike appears often as kit manufacturer logo, but scale is the limiting factor. Poorer render examples: 862-863s (very small footwear/logo glimpse), frequent live-play close-ups where logo is readable only because of pause-worthy framing, not because of size.",
+            "motion_blur": 8,
+            "overall_score": 7,
+            "position": 7,
+            "size": 2,
+            "suggestions": "As a small manufacturer mark, legibility ceiling is limited. Favor placements on chest/shoulder zones with clearer contrast, or complement with branded apparel moments in bench/touchline shots where the swoosh can fill more of frame."
+          },
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 9,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 114,
+                "note": "Manager apparel logo is visible but still relatively small in medium framing.",
+                "start_sec": 114,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 5532,
+                "note": "Sideline coaching shot; logo remains secondary because of dark garment and modest scale.",
+                "start_sec": 5528,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Training-jacket/bench apparel executions are cleaner than on-player kit marks, but still not large. Dark-on-dark outerwear can suppress quick recognition.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 8,
+            "size": 3,
+            "suggestions": "Use higher-contrast white swoosh or reflective piping on dark jackets. On bench apparel, place logo slightly higher and enlarge 10-20% for better touchline pickup."
+          }
+        ],
+        "name": "Nike",
+        "summary": "High frequency but mostly small-form branding. Visibility is dependable in close-ups, coaches' apparel, and replays, yet rarely dominant because the swoosh is compact by design."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 10,
+            "examples": [
+              {
+                "end_sec": 149,
+                "note": "Scorebug/clock exposure is clear but physically small versus full-screen graphics.",
+                "start_sec": 149,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Clock/scorebug branding is crisp and stable, but its size is modest compared with larger insert graphics.",
+            "motion_blur": 10,
+            "overall_score": 9,
+            "position": 10,
+            "size": 4,
+            "suggestions": "No creative issue on legibility. If seeking more impact, supplement scorebug association with slightly larger branded transition slates or replay wipes."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 2988,
+                "note": "Halftime player walk-off graphic is visible, but not as dominant as substitution-board inventory.",
+                "start_sec": 2980,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Broadcast graphics read cleanly; main limitation is time on screen rather than legibility.",
+            "motion_blur": 10,
+            "overall_score": 8.5,
+            "position": 9,
+            "size": 6,
+            "suggestions": "Extend graphic dwell by an extra second in stoppages or pair with branded lower-third styling to convert recognition into stronger recall."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 8,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 3497,
+                "note": "Board is readable but still shares frame with players and official.",
+                "start_sec": 3490,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Substitution board branding is one of Hublot's strongest executions. Slight loss occurs when board is angled or partially blocked by hands/players.",
+            "motion_blur": 9,
+            "overall_score": 8,
+            "position": 7,
+            "size": 6,
+            "suggestions": "Keep current high-contrast board treatment. Improve by increasing logo area on the board header/footer and ensuring officials present the board square-on to the main camera."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 3345,
+                "note": "Visible during build-up, but remains secondary background in wide play.",
+                "start_sec": 3339,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Pitchside Hublot exposure is present but not premium-looking enough to match the stronger substitution-board executions.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 7,
+            "size": 5,
+            "suggestions": "Use a simpler, larger wordmark-only LED creative. Remove fine detail and maximize black/white contrast so luxury branding survives distance shots."
+          }
+        ],
+        "name": "Hublot",
+        "summary": "Very strong in official broadcast and substitution contexts. The brand benefits from static, front-facing graphics more than live-play LED inventory."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 1300,
+                "note": "Graphic is clear, though not full-screen dominant.",
+                "start_sec": 1251,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Geico broadcast-graphic insertions are legible and stable; issue is limited screen share with football action, not readability.",
+            "motion_blur": 10,
+            "overall_score": 9,
+            "position": 9,
+            "size": 7,
+            "suggestions": "Maintain current clean broadcast treatment. To raise impact, use a slightly thicker sponsor frame or bolder color banding so the brand pops even more during replay packages."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 3420,
+                "note": "Open-play sequence; visible but backgrounded behind active attack.",
+                "start_sec": 3383,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 3438,
+                "note": "Replay behind-goal angle keeps brand visible, but perspective distortion reduces punch.",
+                "start_sec": 3431,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "LED presence is fully legible but rarely prominent. Perspective angle and active play compete with the wordmark.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 7,
+            "size": 5,
+            "suggestions": "Increase logo scale within the board loop and prefer shorter one-line creative. A stronger white-on-solid-color panel would help in oblique replay angles."
+          }
+        ],
+        "name": "Geico",
+        "summary": "Good legibility wherever it appears, especially in broadcast graphics. Pitchside exposure is competent but not visually commanding."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 9,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 909,
+                "note": "Excellent touchline close-up, but only available when manager is isolated on camera.",
+                "start_sec": 901,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 5899,
+                "note": "Late-match close-up remains readable but dark jacket/lighting reduce punch slightly.",
+                "start_sec": 5891,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "BestMGM performs best on Ange Postecoglou's training jacket in touchline close-ups. Weakness is dependence on editorial cutaways rather than constant in-play exposure.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 8,
+            "size": 4,
+            "suggestions": "Increase logo size on manager/staff outerwear and use brighter gold/white treatment against the grey jacket. A chest placement with stronger edge contrast would improve instant recognition."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 599,
+                "note": "Replay/open-play wide shots keep the board in background only.",
+                "start_sec": 574,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 4274,
+                "note": "Visible in live build-up but secondary to players and ball.",
+                "start_sec": 4263,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Frequent but not dominant on pitchside LEDs; wide angles reduce size and editorial focus.",
+            "motion_blur": 9,
+            "overall_score": 7,
+            "position": 7,
+            "size": 5,
+            "suggestions": "Use higher-contrast, simplified LED creative with larger wordmark and fewer decorative elements. Consider alternating a logo-only burst during stoppages to improve salience."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 537,
+                "note": "Fascia/signage sighting is readable but background-level during celebration cutaway.",
+                "start_sec": 483,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Stadium fascia usage exists but lacks enough frame share to become memorable.",
+            "motion_blur": 9,
+            "overall_score": 6.5,
+            "position": 6,
+            "size": 4,
+            "suggestions": "Increase repeat frequency and panel brightness on fascia units, especially near dugouts and camera-side zones that receive more editorial cutaways."
+          }
+        ],
+        "name": "BetMGM",
+        "summary": "Solid touchline brand thanks to manager-apparel visibility, with additional LED/fascia support. Most value comes outside central live-play action, exactly where conventional reports undercount."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 9,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 878,
+                "note": "Sleeve mark is barely legible in moving live play.",
+                "start_sec": 872,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 3238,
+                "note": "Goalkeeper sleeve close-up is much stronger, but still limited by small patch size.",
+                "start_sec": 3236,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Sleeve-patch visibility is highly situational. Poor render example at 872-878s shows the core issue: tiny mark plus player movement.",
+            "motion_blur": 8,
+            "overall_score": 6.5,
+            "position": 6,
+            "size": 2,
+            "suggestions": "Use a larger sleeve patch or stronger color contrast around the logo border. Sleeve branding needs a bolder frame/outline to survive arm motion and side-on angles."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 944,
+                "note": "Early LED sighting is only mostly legible during moving build-up.",
+                "start_sec": 936,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 2343,
+                "note": "Long wide build-up shot is clear but still background inventory.",
+                "start_sec": 2320,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "LED execution is materially better than the sleeve patch. Only early oblique/fast-play moments soften readability.",
+            "motion_blur": 9,
+            "overall_score": 8,
+            "position": 8,
+            "size": 6,
+            "suggestions": "Keep the current LED presence; it is strong. For even better wide-shot pickup, maintain large wordmark spans and avoid cluttered companion copy."
+          }
+        ],
+        "name": "Kraken",
+        "summary": "Kraken works better on perimeter LEDs than on sleeve inventory. Sleeve presence is easy to miss unless the camera isolates the player, while LED boards deliver repeatable exposure."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 10,
+            "examples": [
+              {
+                "end_sec": 5798,
+                "note": "Stoppage-time bug remains on screen, but shares space with live action and feels smaller after the first hit.",
+                "start_sec": 5763,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Lexus is extremely clear in stoppage-time graphic form; only minor issue is reduced novelty/impact once the overlay persists during resumed play.",
+            "motion_blur": 10,
+            "overall_score": 10,
+            "position": 10,
+            "size": 10,
+            "suggestions": "No readability fix needed. If optimizing recall, animate the opener slightly longer or add a brief sonic sting/transition before it settles into the corner bug."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 2896,
+                "note": "Scorebug association is clear but relatively small compared with the dedicated stoppage-time graphic.",
+                "start_sec": 2874,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Smaller scorebug/clock association is legible but not especially prominent.",
+            "motion_blur": 10,
+            "overall_score": 8,
+            "position": 8,
+            "size": 4,
+            "suggestions": "If Lexus wants more value from scorebug integration, slightly enlarge the sponsor lockup or increase contrast between the bug background and the logo mark."
+          }
+        ],
+        "name": "Lexus",
+        "summary": "Best pure-visibility performer among the non-team brands. Broadcast overlay executions are near-perfect: stable, front-facing, high-contrast, and unaffected by motion."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 2462,
+                "note": "Corner-flag setup shot makes the board visible, but still secondary behind the taker.",
+                "start_sec": 2449,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              },
+              {
+                "end_sec": 5646,
+                "note": "Wide-play and table-graphic moments retain legibility but not dominance.",
+                "start_sec": 5633,
+                "video": "Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4"
+              }
+            ],
+            "issues": "Heineken appears only as perimeter LED branding. It is readable, especially near set pieces, but usually background-level rather than center-frame.",
+            "motion_blur": 9,
+            "overall_score": 7.5,
+            "position": 8,
+            "size": 6,
+            "suggestions": "Capitalize on set-piece camera holds: use larger static wordmark phases during corners/free kicks. Brighten the green or add white border/halo so the board pops more against turf and crowd tones."
+          }
+        ],
+        "name": "Heineken",
+        "summary": "Consistent LED-only presence with its strongest moments around dead-ball situations. Good clarity, but limited by background placement and lack of dedicated broadcast graphics."
+      }
+    ]
+  },
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":9,\"contrast\":10,\"examples\":[{\"end_sec\":106,\"note\":\"Strong in pregame huddle close-up; logo reads cleanly.\",\"start_sec\":100,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":964,\"note\":\"Drops in wider live-play framing; logo shrinks and loses edge detail.\",\"start_sec\":962,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Generally excellent on Tottenham shirt front. Poorer render examples: 868-871s (wide shot, only partially legible), 962-964s (injury stoppage, partial legibility from distance).\",\"motion_blur\":10,\"overall_score\":9,\"position\":10,\"size\":5,\"suggestions\":\"Keep current red-on-white execution. To improve long-lens/wide-shot retention, slightly thicken letterforms or add a subtle dark keyline so the wordmark holds up when players are small in frame.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":149,\"note\":\"Pregame high wide shot; board is barely legible because of distance.\",\"start_sec\":128,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":287,\"note\":\"Wide live-play view; logo becomes a small background glimpse.\",\"start_sec\":284,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Very frequent perimeter exposure, but performance is inconsistent in high/wide camera. Metadata flags barely legible moments at 128-149s and 284-287s.\",\"motion_blur\":8,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Increase character height and dwell time in the LED rotation. Use fewer words per cycle and stronger white/red separation; current creative is effective in medium shots but weak in stadium-wide framing.\"},{\"asset_type\":\"other\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":2711,\"note\":\"Fascia/signage visible during open play but remains secondary background.\",\"start_sec\":2696,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Stadium fascia appearance exists but is not dominant; usually background support rather than primary branding.\",\"motion_blur\":9,\"overall_score\":7,\"position\":6,\"size\":4,\"suggestions\":\"If this fascia inventory is sold to AIA, use larger repeated lockups and brighter panel illumination so the mark separates from dark seating backgrounds.\"}],\"name\":\"AIA\",\"summary\":\"Best-performing brand in the match. Dominant as Tottenham shirt-front sponsor and heavily present on perimeter LEDs; strongest during close-ups and celebrations, weaker only in very wide shots.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":1178,\"note\":\"Celebration shot; manufacturer logo is visible but secondary, not hero-sized.\",\"start_sec\":1168,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":862,\"note\":\"Boot/sock-related sighting is tiny and motion-affected.\",\"start_sec\":862,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Nike appears often as kit manufacturer logo, but scale is the limiting factor. Poorer render examples: 862-863s (very small footwear/logo glimpse), frequent live-play close-ups where logo is readable only because of pause-worthy framing, not because of size.\",\"motion_blur\":8,\"overall_score\":7,\"position\":7,\"size\":2,\"suggestions\":\"As a small manufacturer mark, legibility ceiling is limited. Favor placements on chest/shoulder zones with clearer contrast, or complement with branded apparel moments in bench/touchline shots where the swoosh can fill more of frame.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":9,\"contrast\":8,\"examples\":[{\"end_sec\":114,\"note\":\"Manager apparel logo is visible but still relatively small in medium framing.\",\"start_sec\":114,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":5532,\"note\":\"Sideline coaching shot; logo remains secondary because of dark garment and modest scale.\",\"start_sec\":5528,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Training-jacket/bench apparel executions are cleaner than on-player kit marks, but still not large. Dark-on-dark outerwear can suppress quick recognition.\",\"motion_blur\":9,\"overall_score\":7,\"position\":8,\"size\":3,\"suggestions\":\"Use higher-contrast white swoosh or reflective piping on dark jackets. On bench apparel, place logo slightly higher and enlarge 10-20% for better touchline pickup.\"}],\"name\":\"Nike\",\"summary\":\"High frequency but mostly small-form branding. Visibility is dependable in close-ups, coaches' apparel, and replays, yet rarely dominant because the swoosh is compact by design.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":10,\"examples\":[{\"end_sec\":149,\"note\":\"Scorebug/clock exposure is clear but physically small versus full-screen graphics.\",\"start_sec\":149,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Clock/scorebug branding is crisp and stable, but its size is modest compared with larger insert graphics.\",\"motion_blur\":10,\"overall_score\":9,\"position\":10,\"size\":4,\"suggestions\":\"No creative issue on legibility. If seeking more impact, supplement scorebug association with slightly larger branded transition slates or replay wipes.\"},{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":2988,\"note\":\"Halftime player walk-off graphic is visible, but not as dominant as substitution-board inventory.\",\"start_sec\":2980,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Broadcast graphics read cleanly; main limitation is time on screen rather than legibility.\",\"motion_blur\":10,\"overall_score\":8.5,\"position\":9,\"size\":6,\"suggestions\":\"Extend graphic dwell by an extra second in stoppages or pair with branded lower-third styling to convert recognition into stronger recall.\"},{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":9,\"examples\":[{\"end_sec\":3497,\"note\":\"Board is readable but still shares frame with players and official.\",\"start_sec\":3490,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Substitution board branding is one of Hublot's strongest executions. Slight loss occurs when board is angled or partially blocked by hands/players.\",\"motion_blur\":9,\"overall_score\":8,\"position\":7,\"size\":6,\"suggestions\":\"Keep current high-contrast board treatment. Improve by increasing logo area on the board header/footer and ensuring officials present the board square-on to the main camera.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":3345,\"note\":\"Visible during build-up, but remains secondary background in wide play.\",\"start_sec\":3339,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Pitchside Hublot exposure is present but not premium-looking enough to match the stronger substitution-board executions.\",\"motion_blur\":9,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Use a simpler, larger wordmark-only LED creative. Remove fine detail and maximize black/white contrast so luxury branding survives distance shots.\"}],\"name\":\"Hublot\",\"summary\":\"Very strong in official broadcast and substitution contexts. The brand benefits from static, front-facing graphics more than live-play LED inventory.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":1300,\"note\":\"Graphic is clear, though not full-screen dominant.\",\"start_sec\":1251,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Geico broadcast-graphic insertions are legible and stable; issue is limited screen share with football action, not readability.\",\"motion_blur\":10,\"overall_score\":9,\"position\":9,\"size\":7,\"suggestions\":\"Maintain current clean broadcast treatment. To raise impact, use a slightly thicker sponsor frame or bolder color banding so the brand pops even more during replay packages.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":3420,\"note\":\"Open-play sequence; visible but backgrounded behind active attack.\",\"start_sec\":3383,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":3438,\"note\":\"Replay behind-goal angle keeps brand visible, but perspective distortion reduces punch.\",\"start_sec\":3431,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"LED presence is fully legible but rarely prominent. Perspective angle and active play compete with the wordmark.\",\"motion_blur\":9,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Increase logo scale within the board loop and prefer shorter one-line creative. A stronger white-on-solid-color panel would help in oblique replay angles.\"}],\"name\":\"Geico\",\"summary\":\"Good legibility wherever it appears, especially in broadcast graphics. Pitchside exposure is competent but not visually commanding.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":9,\"contrast\":8,\"examples\":[{\"end_sec\":909,\"note\":\"Excellent touchline close-up, but only available when manager is isolated on camera.\",\"start_sec\":901,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":5899,\"note\":\"Late-match close-up remains readable but dark jacket/lighting reduce punch slightly.\",\"start_sec\":5891,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"BestMGM performs best on Ange Postecoglou's training jacket in touchline close-ups. Weakness is dependence on editorial cutaways rather than constant in-play exposure.\",\"motion_blur\":9,\"overall_score\":7,\"position\":8,\"size\":4,\"suggestions\":\"Increase logo size on manager/staff outerwear and use brighter gold/white treatment against the grey jacket. A chest placement with stronger edge contrast would improve instant recognition.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":599,\"note\":\"Replay/open-play wide shots keep the board in background only.\",\"start_sec\":574,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":4274,\"note\":\"Visible in live build-up but secondary to players and ball.\",\"start_sec\":4263,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Frequent but not dominant on pitchside LEDs; wide angles reduce size and editorial focus.\",\"motion_blur\":9,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Use higher-contrast, simplified LED creative with larger wordmark and fewer decorative elements. Consider alternating a logo-only burst during stoppages to improve salience.\"},{\"asset_type\":\"other\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":537,\"note\":\"Fascia/signage sighting is readable but background-level during celebration cutaway.\",\"start_sec\":483,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Stadium fascia usage exists but lacks enough frame share to become memorable.\",\"motion_blur\":9,\"overall_score\":6.5,\"position\":6,\"size\":4,\"suggestions\":\"Increase repeat frequency and panel brightness on fascia units, especially near dugouts and camera-side zones that receive more editorial cutaways.\"}],\"name\":\"BetMGM\",\"summary\":\"Solid touchline brand thanks to manager-apparel visibility, with additional LED/fascia support. Most value comes outside central live-play action, exactly where conventional reports undercount.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":9,\"contrast\":8,\"examples\":[{\"end_sec\":878,\"note\":\"Sleeve mark is barely legible in moving live play.\",\"start_sec\":872,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":3238,\"note\":\"Goalkeeper sleeve close-up is much stronger, but still limited by small patch size.\",\"start_sec\":3236,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Sleeve-patch visibility is highly situational. Poor render example at 872-878s shows the core issue: tiny mark plus player movement.\",\"motion_blur\":8,\"overall_score\":6.5,\"position\":6,\"size\":2,\"suggestions\":\"Use a larger sleeve patch or stronger color contrast around the logo border. Sleeve branding needs a bolder frame/outline to survive arm motion and side-on angles.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":944,\"note\":\"Early LED sighting is only mostly legible during moving build-up.\",\"start_sec\":936,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":2343,\"note\":\"Long wide build-up shot is clear but still background inventory.\",\"start_sec\":2320,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"LED execution is materially better than the sleeve patch. Only early oblique/fast-play moments soften readability.\",\"motion_blur\":9,\"overall_score\":8,\"position\":8,\"size\":6,\"suggestions\":\"Keep the current LED presence; it is strong. For even better wide-shot pickup, maintain large wordmark spans and avoid cluttered companion copy.\"}],\"name\":\"Kraken\",\"summary\":\"Kraken works better on perimeter LEDs than on sleeve inventory. Sleeve presence is easy to miss unless the camera isolates the player, while LED boards deliver repeatable exposure.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":10,\"examples\":[{\"end_sec\":5798,\"note\":\"Stoppage-time bug remains on screen, but shares space with live action and feels smaller after the first hit.\",\"start_sec\":5763,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Lexus is extremely clear in stoppage-time graphic form; only minor issue is reduced novelty/impact once the overlay persists during resumed play.\",\"motion_blur\":10,\"overall_score\":10,\"position\":10,\"size\":10,\"suggestions\":\"No readability fix needed. If optimizing recall, animate the opener slightly longer or add a brief sonic sting/transition before it settles into the corner bug.\"},{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":8,\"examples\":[{\"end_sec\":2896,\"note\":\"Scorebug association is clear but relatively small compared with the dedicated stoppage-time graphic.\",\"start_sec\":2874,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Smaller scorebug/clock association is legible but not especially prominent.\",\"motion_blur\":10,\"overall_score\":8,\"position\":8,\"size\":4,\"suggestions\":\"If Lexus wants more value from scorebug integration, slightly enlarge the sponsor lockup or increase contrast between the bug background and the logo mark.\"}],\"name\":\"Lexus\",\"summary\":\"Best pure-visibility performer among the non-team brands. Broadcast overlay executions are near-perfect: stable, front-facing, high-contrast, and unaffected by motion.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":2462,\"note\":\"Corner-flag setup shot makes the board visible, but still secondary behind the taker.\",\"start_sec\":2449,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"},{\"end_sec\":5646,\"note\":\"Wide-play and table-graphic moments retain legibility but not dominance.\",\"start_sec\":5633,\"video\":\"Premier League Classics： Tottenham Hotspur v. Chelsea ｜ FULL MATCH ｜ 12⧸8⧸2024 ｜ NBC Sports [vTmz85EvYCQ].mp4\"}],\"issues\":\"Heineken appears only as perimeter LED branding. It is readable, especially near set pieces, but usually background-level rather than center-frame.\",\"motion_blur\":9,\"overall_score\":7.5,\"position\":8,\"size\":6,\"suggestions\":\"Capitalize on set-piece camera holds: use larger static wordmark phases during corners/free kicks. Brighten the green or add white border/halo so the board pops more against turf and crowd tones.\"}],\"name\":\"Heineken\",\"summary\":\"Consistent LED-only presence with its strongest moments around dead-ball situations. Good clarity, but limited by background placement and lack of dedicated broadcast graphics.\"}]}"
+}

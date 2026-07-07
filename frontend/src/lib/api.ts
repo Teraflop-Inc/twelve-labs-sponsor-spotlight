@@ -1,5 +1,6 @@
 import type {
   DemoInfo,
+  DemoScope,
   AddAssetsResponse,
   AnalyzeResponse,
   CompareResponse,
@@ -84,12 +85,44 @@ export interface StoreCtx {
   store_id: string
   sport?: string
   videos: string[]
+  /** Optional per-game scope (games.GAMES id). Omit for the whole collection. */
+  game_id?: string
+}
+
+/** POST that returns raw text (not JSON) — used for the HTML report. */
+async function requestText(path: string, body: unknown): Promise<string> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" }
+  if (_demoMode) headers["x-demo"] = "1"
+  else headers["x-api-key"] = getKey()
+  const res = await fetch(path, { method: "POST", headers, body: JSON.stringify(body) })
+  if (!res.ok) {
+    let detail = res.statusText
+    try {
+      detail = (await res.json()).detail || detail
+    } catch {
+      /* non-JSON error body */
+    }
+    throw new ApiError(res.status, detail)
+  }
+  return res.text()
+}
+
+export interface ReportArgs {
+  brand: string
+  game_ids: string[]
+  media_values?: Record<string, number>
+  total_media_value?: number
+  generated_note?: string
 }
 
 export const api = {
   sports: () => request<SportsResponse>("/api/sports", { noKey: true }),
 
   demoInfo: () => request<DemoInfo>("/api/demo/info", { noKey: true }),
+
+  // Explore payload for one scope (game id or "all") — all cached brands, no run.
+  demoScope: (game_id: string) =>
+    request<DemoScope>(`/api/demo/scope/${encodeURIComponent(game_id)}`, { noKey: true }),
 
   listStores: () => request<StoresResponse>("/api/knowledge-stores"),
 
@@ -140,4 +173,11 @@ export const api = {
       method: "POST",
       body: { ...ctx, brands, session_id },
     }),
+
+  // Templated performance report — returns standalone HTML (print-to-PDF).
+  report: (args: ReportArgs) => requestText("/api/report", args),
+
+  // Highlight reel — public redirect to the Blob URL; safe to open in a new tab.
+  reelUrl: (game_id: string, brand: string) =>
+    `/api/reel/${encodeURIComponent(game_id)}/${encodeURIComponent(brand)}`,
 }

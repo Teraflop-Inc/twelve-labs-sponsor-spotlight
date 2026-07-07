@@ -36,20 +36,59 @@ A sticky video player plays the broadcast inline; clicking any moment seeks to i
 ### Demo caching (instant first impression)
 
 In **Demo** mode the three Jockey steps (discover, analyze, legibility) are
-served from pre-baked fixtures in `backend/demo_fixtures/` for the canonical
-brand pair (`SPONSOR_SPOTLIGHT_DEMO_BRANDS`, default **Etihad, Emirates**), so
-the tab renders the full flow in milliseconds instead of minutes. The frontend
-pre-seeds those brands and auto-runs the flow on demo entry. A **Run live**
-button on each step (and any non-canonical brand selection) bypasses the cache
-with `?live=1`; "Use your own key" mode never touches the cache.
+served from pre-baked JSON fixtures, so the tab renders the full flow in
+milliseconds instead of minutes. "Use your own key" mode never touches the
+cache; `?live=1` (and any brand not present in the fixture) bypasses it.
 
-Regenerate the fixtures whenever the demo collection or brand pair changes:
+**Per-game layout (v2).** Fixtures are keyed by game, plus a whole-collection
+aggregate:
+
+```
+backend/demo_fixtures/
+  aggregate/{discover,analyze,legibility}.json   # "All games" scope
+  <game_id>/{discover,analyze,legibility}.json   # one per games.GAMES id
+  <game_id>/reels.json                            # highlight-reel Blob URLs
+  {discover,analyze,legibility}.json              # legacy flat == aggregate
+```
+
+The game selector (Footage panel) scopes analysis to one broadcast via the
+Jockey `/responses` `selections` param (`backend/games.py` maps `game_id` →
+`asset_id` → knowledge-store `item_id`); **All games** uses the aggregate.
+Analyze/legibility fixtures hold the full brand set — a request for a subset is
+served by trimming the fixture in-memory.
+
+**Regenerating fixtures.** Runs the real discover → analyze → legibility flow per
+game (scoped) + aggregate. Resumable (existing files are skipped) and
+rate-limited (~2 req/min):
 
 ```bash
 cd backend
 SPONSOR_SPOTLIGHT_TL_KEY=tlk_... uv run python capture_demo_cache.py
-# commit the updated backend/demo_fixtures/*.json
+# knobs: SPONSOR_SPOTLIGHT_CAPTURE_BRANDS=A,B  CAPTURE_GAMES=aggregate,mci-liv-2019
+#        CAPTURE_TOP_N=8  CAPTURE_DELAY=30  CAPTURE_FORCE=1
+# then commit backend/demo_fixtures/<scope>/*.json
 ```
+
+**Highlight reels** (`POST`-free, offline → Vercel Blob). Builds a ~30s MP4 of a
+brand's top moments per game (FFmpeg `-c copy` over the broadcast HLS), uploads
+to Vercel Blob, and records the URL in `demo_fixtures/<game_id>/reels.json`.
+`GET /api/reel/{game_id}/{brand}` redirects to it (404 until built):
+
+```bash
+cd backend
+SPONSOR_SPOTLIGHT_TL_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
+    uv run python build_reels.py
+# commit the updated demo_fixtures/<game_id>/reels.json
+```
+
+**Performance report.** `POST /api/report {brand, game_ids[], media_values}`
+renders a printable HTML report (`backend/report.py`) from the fixtures; the
+weighted media value / ROI figures are computed client-side (`lib/econ.ts`) and
+passed in — the backend does no economics. The **Report** button per brand opens
+it in a new tab. **Data export** (CSV/JSON) is fully client-side
+(`frontend/src/lib/export.ts`): per-game rows grouped by the appearance `video`
+field + an aggregate total, merged with econ at download time so the file
+matches the on-screen numbers exactly.
 
 ---
 

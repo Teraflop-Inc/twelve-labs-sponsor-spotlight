@@ -7,13 +7,13 @@ import type { Moment } from "./lib/types"
 
 /** A numbered section card — the spine of the demo layout. */
 export function SectionCard({
-  step,
   title,
   hint,
   actions,
   children,
 }: {
-  step: string
+  /** Legacy step label — no longer rendered, kept so callers still type-check. */
+  step?: string
   title: string
   hint?: string
   actions?: ReactNode
@@ -22,14 +22,9 @@ export function SectionCard({
   return (
     <section className="rounded-dialog border border-border-secondary bg-surface-white p-6 shadow-[0_1px_2px_rgba(29,28,27,0.04)]">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <span className="grid size-7 place-items-center rounded-tlds-2 bg-surface-secondary font-tl-mono text-[13px] font-semibold text-foreground-secondary">
-            {step}
-          </span>
-          <div>
-            <h2 className="font-tl-sans text-base font-semibold leading-tight">{title}</h2>
-            {hint && <p className="text-xs text-foreground-subtle">{hint}</p>}
-          </div>
+        <div>
+          <h2 className="font-tl-sans text-base font-semibold leading-tight">{title}</h2>
+          {hint && <p className="text-xs text-foreground-subtle">{hint}</p>}
         </div>
         {actions && <div className="flex flex-wrap items-center gap-2">{actions}</div>}
       </div>
@@ -132,11 +127,14 @@ export function MomentRow({
         {fmtTime(m.start_sec)}–{fmtTime(m.end_sec)}
       </span>
       <ContextChip context={m.context} />
-      <span className="flex-1 text-xs text-foreground-muted">
+      <span className="min-w-0 flex-1 text-xs text-foreground-muted">
         {children ?? m.description ?? m.asset_type ?? ""}
       </span>
       {m.video && (
-        <span className="shrink-0 font-tl-mono text-[10px] text-foreground-subtle" title="source video">
+        <span
+          className="min-w-0 max-w-[40%] shrink truncate font-tl-mono text-[10px] text-foreground-subtle"
+          title={m.video}
+        >
           {m.video}
         </span>
       )}

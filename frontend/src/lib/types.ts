@@ -129,6 +129,11 @@ export interface SportsResponse {
   sports: SportProfile[]
   default: string
 }
+/** A selectable game in the per-game scope selector. */
+export interface GameOption {
+  id: string
+  label: string
+}
 export interface DemoInfo {
   enabled: boolean
   store_id: string
@@ -136,8 +141,12 @@ export interface DemoInfo {
   sport: string
   /** Canonical brands the demo tab pre-bakes; pre-seeded + auto-run on entry. */
   demo_brands?: string[]
-  /** True when every demo step is pre-baked, so the demo flow renders instantly. */
+  /** True when the aggregate ("All games") demo is pre-baked → instant flow. */
   cached?: boolean
+  /** The 5 curated games for the per-game selector. */
+  games?: GameOption[]
+  /** Which game ids have a complete per-game fixture set. */
+  cached_games?: string[]
 }
 export interface StoresResponse {
   stores: StoreSummary[]
@@ -176,6 +185,26 @@ export interface LegibilityResponse {
   session_id: string | null
   report: LegibilityReport | null
   answer?: string
+}
+
+/** A built highlight reel's metadata (Vercel Blob URL). */
+export interface ReelInfo {
+  url: string
+  duration_sec?: number
+  clips?: number
+}
+
+/** All pre-baked data for one demo scope — the explore payload (no run). */
+export interface DemoScope {
+  game_id: string
+  label: string
+  /** Every brand detected in the scope (name + asset_types). */
+  discovery: DiscoveryBrand[]
+  /** The analyzed ("run") brands, with full appearance data. */
+  inventory: Brand[]
+  legibility: LegibilityReport | null
+  /** brand(lowercased) → reel metadata, for brands with a built reel. */
+  reels: Record<string, ReelInfo>
 }
 
 /** Active knowledge store, held client-side (the server is stateless). */

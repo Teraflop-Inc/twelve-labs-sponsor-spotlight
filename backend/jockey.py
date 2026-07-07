@@ -184,6 +184,7 @@ async def responses(
     knowledge_store_id: str,
     session_id: str | None = None,
     json_schema: dict[str, Any] | None = None,
+    selections: list[dict[str, Any]] | None = None,
     timeout_s: float = 600.0,
     max_attempts: int = 5,
 ) -> dict[str, Any]:
@@ -195,6 +196,10 @@ async def responses(
     }
     if session_id:
         body["session_id"] = session_id
+    # Per-game scoping: reference selected knowledge-store items (``ksi_…``) via a
+    # ``{{sel:N}}`` token in the prompt. Passed through verbatim to /responses.
+    if selections:
+        body["selections"] = selections
     if json_schema:
         body["text"] = {
             "format": {

@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
-import { Button } from "@twelvelabs-io/react"
+import { Button, Chip } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
 import { cn } from "@/lib/utils"
-import { useApp } from "../state"
+import { ALL_GAMES, useApp } from "../state"
 import { MomentRow, ScoreBar, SectionCard, StatusLine } from "../ui"
 import type { LegibilityAsset, LegibilityBrand, LegibilityReport } from "../lib/types"
+
+/** Stable DOM id for a legibility card, so the Viewing chips can scroll to it. */
+const legibDomId = (name: string) => "legib-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
 
 const DIMS: { key: keyof LegibilityAsset; label: string }[] = [
   { key: "contrast", label: "contrast" },
@@ -23,10 +26,13 @@ export function LegibilityPanel() {
     setSessionId,
     storeStatus,
     storeEpoch,
+    gameId,
     brandA,
     brandB,
     demoCached,
-    demoAutoNonce,
+    scopeLegibility,
+    viewBrands,
+    setLegibility,
   } = useApp()
   const [report, setReport] = useState<LegibilityReport | null>(null)
   const [status, setStatus] = useState("")
@@ -39,9 +45,36 @@ export function LegibilityPanel() {
     setFromCache(false)
   }, [storeEpoch])
 
+  // Mirror the report into shared state so the export/report tools can read the
+  // legibility scores (avg legibility per brand).
+  useEffect(() => {
+    setLegibility(report)
+  }, [report, setLegibility])
+
   const ready = storeStatus === "ready"
   const haveBrands = Boolean(brandA.trim() && brandB.trim())
+  const demoView = mode === "demo"
   const showCacheHint = mode === "demo" && demoCached
+
+  // Demo = the scope's cached audit filtered to the viewed brands; BYO = the
+  // locally-run `report`. Only some scopes/brands have legibility data.
+  const displayReport: LegibilityReport | null = demoView
+    ? scopeLegibility
+      ? { brands: scopeLegibility.brands.filter((b) => viewBrands.includes(b.name)) }
+      : null
+    : report
+
+  // Card expand/collapse lifted here so the Viewing chips can open + scroll to a
+  // brand's audit. All start collapsed.
+  const [openBrands, setOpenBrands] = useState<Record<string, boolean>>({})
+  const toggleBrand = (name: string) => setOpenBrands((m) => ({ ...m, [name]: !m[name] }))
+  const goToBrand = (name: string) => {
+    setOpenBrands((m) => ({ ...m, [name]: true }))
+    setTimeout(
+      () => document.getElementById(legibDomId(name))?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      0,
+    )
+  }
 
   const onAudit = async (opts: { live?: boolean } = {}) => {
     const a = brandA.trim()
@@ -55,6 +88,7 @@ export function LegibilityPanel() {
         store_id: activeStore.id,
         sport: activeStore.sport,
         videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
+        game_id: gameId === ALL_GAMES ? undefined : gameId,
       }
       const data = await api.legibility(ctx, [a, b], sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
@@ -68,45 +102,78 @@ export function LegibilityPanel() {
     }
   }
 
-  // Cached demo: auto-audit the pre-seeded brands once the store is ready.
-  useEffect(() => {
-    if (demoAutoNonce > 0) void onAudit()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [demoAutoNonce])
-
   return (
     <SectionCard
       step="5"
       title="Legibility audit"
-      hint="Per-asset visibility scores for the two analyzed brands."
+      hint="Per-asset visibility scores for the selected brands."
       actions={
-        <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
-          {busy ? "auditing…" : "Run audit"}
-        </Button>
+        demoView ? undefined : (
+          <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
+            {busy ? "auditing…" : "Run audit"}
+          </Button>
+        )
       }
     >
-      <p className="mb-2 text-xs text-foreground-subtle">
-        {haveBrands ? (
-          <>
-            Auditing{" "}
-            <span className="font-tl-mono text-foreground-body">{brandA}</span> vs{" "}
-            <span className="font-tl-mono text-foreground-body">{brandB}</span>{" "}
-            <span className="text-foreground-subtle">(the brands you analyzed above)</span>
-          </>
-        ) : (
-          "Analyze 2 brands above, then audit them here."
-        )}
-      </p>
-      <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
-        {status}
-        {fromCache && !status && (
-          <span className="text-foreground-subtle">Cached demo result.</span>
-        )}
-      </StatusLine>
-      {report && (
+      {!demoView && (
+        <p className="mb-2 text-xs text-foreground-subtle">
+          {haveBrands ? (
+            <>
+              Auditing{" "}
+              <span className="font-tl-mono text-foreground-body">{brandA}</span> vs{" "}
+              <span className="font-tl-mono text-foreground-body">{brandB}</span>{" "}
+              <span className="text-foreground-subtle">(the brands you analyzed above)</span>
+            </>
+          ) : (
+            "Analyze 2 brands above, then audit them here."
+          )}
+        </p>
+      )}
+      {!demoView && (
+        <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
+          {status}
+          {fromCache && !status && (
+            <span className="text-foreground-subtle">Cached demo result.</span>
+          )}
+        </StatusLine>
+      )}
+      {demoView && !displayReport && (
+        <p className="text-xs text-foreground-subtle">
+          No legibility audit is cached for the selected brands in this scope.
+        </p>
+      )}
+      {displayReport && (
         <div className="mt-2 space-y-4">
-          {report.brands.map((b) => (
-            <BrandLegibility key={b.name} brand={b} />
+          {displayReport.brands.length === 0 && (
+            <p className="text-xs text-foreground-subtle">
+              Select analyzed brands above to see their legibility scores.
+            </p>
+          )}
+          {displayReport.brands.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2 text-xs text-foreground-subtle">
+              <span>Viewing:</span>
+              {displayReport.brands.map((b) => (
+                <button
+                  key={b.name}
+                  type="button"
+                  onClick={() => goToBrand(b.name)}
+                  className="cursor-pointer"
+                  title={`Go to ${b.name}`}
+                >
+                  <Chip variant="subtle" size="sm">
+                    {b.name}
+                  </Chip>
+                </button>
+              ))}
+            </div>
+          )}
+          {displayReport.brands.map((b) => (
+            <BrandLegibility
+              key={b.name}
+              brand={b}
+              open={Boolean(openBrands[b.name])}
+              onToggle={() => toggleBrand(b.name)}
+            />
           ))}
         </div>
       )}
@@ -122,17 +189,58 @@ function overallColor(score: number) {
       : "text-tl-master-brand-dark-green"
 }
 
-function BrandLegibility({ brand }: { brand: LegibilityBrand }) {
+function BrandLegibility({
+  brand,
+  open,
+  onToggle,
+}: {
+  brand: LegibilityBrand
+  open: boolean
+  onToggle: () => void
+}) {
+  const assets = brand.assets || []
+  const avg = assets.length
+    ? assets.reduce((s, a) => s + (Number(a.overall_score) || 0), 0) / assets.length
+    : null
   return (
-    <div className="rounded-tlds-3 border border-border-secondary bg-surface-white p-3">
-      <h3 className="font-tl-sans text-lg font-semibold">{brand.name}</h3>
-      {brand.summary && <p className="mb-2 text-xs italic text-foreground-subtle">{brand.summary}</p>}
-      {(brand.assets || []).length === 0 && (
-        <div className="text-xs text-foreground-subtle">No assets returned.</div>
+    <div
+      id={legibDomId(brand.name)}
+      className="scroll-mt-24 rounded-tlds-3 border border-border-secondary bg-surface-white"
+    >
+      {/* Click to minimize/maximize the brand's per-asset scores. */}
+      <button
+        type="button"
+        onClick={onToggle}
+        className="flex w-full items-center gap-2 p-3 text-left"
+        aria-expanded={open}
+      >
+        <span className="w-3 shrink-0 font-tl-mono text-xs text-foreground-subtle">
+          {open ? "▾" : "▸"}
+        </span>
+        <h3 className="flex-1 truncate font-tl-sans text-lg font-semibold">{brand.name}</h3>
+        <span className="shrink-0 text-[10px] uppercase tracking-wide text-foreground-subtle">
+          {assets.length} asset{assets.length === 1 ? "" : "s"}
+        </span>
+        {avg != null && (
+          <span className={cn("font-tl-mono text-base", overallColor(avg))}>
+            {avg.toFixed(1)}
+            <span className="text-xs text-foreground-subtle">/10</span>
+          </span>
+        )}
+      </button>
+      {open && (
+        <div className="px-3 pb-3">
+          {brand.summary && (
+            <p className="mb-2 text-xs italic text-foreground-subtle">{brand.summary}</p>
+          )}
+          {assets.length === 0 && (
+            <div className="text-xs text-foreground-subtle">No assets returned.</div>
+          )}
+          {assets.map((a, i) => (
+            <AssetReport key={i} asset={a} first={i === 0} />
+          ))}
+        </div>
       )}
-      {(brand.assets || []).map((a, i) => (
-        <AssetReport key={i} asset={a} first={i === 0} />
-      ))}
     </div>
   )
 }

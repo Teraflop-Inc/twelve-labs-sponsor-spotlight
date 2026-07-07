@@ -1,0 +1,290 @@
+{
+  "session_id": "sess_019f249f-a9ad-7f30-9914-841bada365ea",
+  "discovery": {
+    "brands": [
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "8Xbet"
+      },
+      {
+        "asset_types": [
+          "shirt_front_sponsor"
+        ],
+        "name": "AIA"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Aldar"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "alltoplayfor.com"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Asahi Super Dry"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Axi"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "Barclays"
+      },
+      {
+        "asset_types": [
+          "shirt_sleeve_sponsor"
+        ],
+        "name": "cinch"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "City in the Community"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "DSQUARED2"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "e&"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "EA Sports FC 24"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Emirates"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Emirates Palace Mandarin Oriental Abu Dhabi"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage"
+        ],
+        "name": "Etihad Airways"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board",
+          "stadium_fascia_signage"
+        ],
+        "name": "Etihad Stadium"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Etisalat"
+      },
+      {
+        "asset_types": [
+          "training_kit_sponsor",
+          "other"
+        ],
+        "name": "Getir"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board",
+          "scoreboard_ad",
+          "scorebug",
+          "substitution_board_branding",
+          "broadcast_graphic"
+        ],
+        "name": "Hublot"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "LeoVegas"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Mandarin Oriental"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Midea"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "NBC Sports"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Nexen Tire"
+      },
+      {
+        "asset_types": [
+          "kit_manufacturer_logo"
+        ],
+        "name": "Nike"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board",
+          "stadium_fascia_signage",
+          "static_pitchside_board"
+        ],
+        "name": "Nissan"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board",
+          "shirt_front_sponsor",
+          "shirt_sleeve_sponsor",
+          "training_kit_sponsor"
+        ],
+        "name": "OKX"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "Oracle Cloud"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic",
+          "corner_flag_branding",
+          "lower_third",
+          "on_screen_bug",
+          "other",
+          "perimeter_led_board",
+          "shirt_sleeve_sponsor"
+        ],
+        "name": "Premier League"
+      },
+      {
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "perimeter_led_board"
+        ],
+        "name": "Puma"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "QNET"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Rexona"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Sky Sports"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Socios.com"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Sportium"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Ultra"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "USA Network"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "Verizon"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Visit Abu Dhabi"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "visitabudhabi.ae"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Visit India"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Wix"
+      },
+      {
+        "asset_types": [
+          "perimeter_led_board"
+        ],
+        "name": "Xylem"
+      }
+    ],
+    "summary": "This broadcast mixes heavy perimeter-LED rotation with core kit branding (Etihad Airways, AIA, OKX, Nike, Puma), plus recurring broadcast/integration brands such as Hublot, Premier League, NBC Sports, Barclays, Oracle Cloud and Verizon, creating a dense multi-surface sponsorship environment across live play and studio-style graphics."
+  },
+  "answer": "{\"brands\":[{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"8Xbet\"},{\"asset_types\":[\"shirt_front_sponsor\"],\"name\":\"AIA\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Aldar\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"alltoplayfor.com\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Asahi Super Dry\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Axi\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"Barclays\"},{\"asset_types\":[\"shirt_sleeve_sponsor\"],\"name\":\"cinch\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"City in the Community\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"DSQUARED2\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"e&\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"EA Sports FC 24\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Emirates\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Emirates Palace Mandarin Oriental Abu Dhabi\"},{\"asset_types\":[\"perimeter_led_board\",\"shirt_front_sponsor\",\"stadium_fascia_signage\"],\"name\":\"Etihad Airways\"},{\"asset_types\":[\"perimeter_led_board\",\"stadium_fascia_signage\"],\"name\":\"Etihad Stadium\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Etisalat\"},{\"asset_types\":[\"training_kit_sponsor\",\"other\"],\"name\":\"Getir\"},{\"asset_types\":[\"perimeter_led_board\",\"scoreboard_ad\",\"scorebug\",\"substitution_board_branding\",\"broadcast_graphic\"],\"name\":\"Hublot\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"LeoVegas\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Mandarin Oriental\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Midea\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"NBC Sports\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Nexen Tire\"},{\"asset_types\":[\"kit_manufacturer_logo\"],\"name\":\"Nike\"},{\"asset_types\":[\"perimeter_led_board\",\"stadium_fascia_signage\",\"static_pitchside_board\"],\"name\":\"Nissan\"},{\"asset_types\":[\"perimeter_led_board\",\"shirt_front_sponsor\",\"shirt_sleeve_sponsor\",\"training_kit_sponsor\"],\"name\":\"OKX\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"Oracle Cloud\"},{\"asset_types\":[\"broadcast_graphic\",\"corner_flag_branding\",\"lower_third\",\"on_screen_bug\",\"other\",\"perimeter_led_board\",\"shirt_sleeve_sponsor\"],\"name\":\"Premier League\"},{\"asset_types\":[\"kit_manufacturer_logo\",\"perimeter_led_board\"],\"name\":\"Puma\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"QNET\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Rexona\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Sky Sports\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Socios.com\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Sportium\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Ultra\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"USA Network\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"Verizon\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Visit Abu Dhabi\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"visitabudhabi.ae\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Visit India\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Wix\"},{\"asset_types\":[\"perimeter_led_board\"],\"name\":\"Xylem\"}],\"summary\":\"This broadcast mixes heavy perimeter-LED rotation with core kit branding (Etihad Airways, AIA, OKX, Nike, Puma), plus recurring broadcast/integration brands such as Hublot, Premier League, NBC Sports, Barclays, Oracle Cloud and Verizon, creating a dense multi-surface sponsorship environment across live play and studio-style graphics.\"}",
+  "timings": {
+    "discover_secs": 19.1
+  }
+}
