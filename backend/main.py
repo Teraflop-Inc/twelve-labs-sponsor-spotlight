@@ -1263,6 +1263,11 @@ WEBAPP_DIR = Path(__file__).parent / "webapp"
 if (WEBAPP_DIR / "assets").exists():
     app.mount("/assets", StaticFiles(directory=WEBAPP_DIR / "assets"), name="assets")
 
+# Static brand assets (favicon / logo lockups) live at the web root under /brand;
+# Vercel routes every path through this function, so serve them here too.
+if (WEBAPP_DIR / "brand").exists():
+    app.mount("/brand", StaticFiles(directory=WEBAPP_DIR / "brand"), name="brand")
+
 
 @app.get("/")
 async def index() -> Any:
