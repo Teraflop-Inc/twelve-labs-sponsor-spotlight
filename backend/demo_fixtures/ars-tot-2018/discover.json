@@ -1,117 +1,167 @@
 {
-  "session_id": "sess_019f24a6-5be8-7bd3-8716-9db4b8bf1946",
+  "session_id": "sess_019f6291-158d-75b3-82a2-4c2f2d25e746",
   "discovery": {
     "brands": [
       {
-        "name": "12BET",
+        "name": "126 Live Premier League Games",
         "asset_types": [
-          "perimeter_led_board",
-          "stadium_fascia_signage"
+          "perimeter_led_board_rotating"
         ]
       },
       {
-        "name": "Acronis",
+        "name": "12BET",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "12Bet",
+        "asset_types": [
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "AIA",
         "asset_types": [
-          "broadcast_graphic",
           "shirt_front_sponsor",
-          "stadium_fascia_signage",
-          "training_kit_sponsor"
+          "stand_signage"
+        ]
+      },
+      {
+        "name": "Acronis",
+        "asset_types": [
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Arsenal",
         "asset_types": [
-          "stadium_fascia_signage"
+          "broadcast_graphic",
+          "kit_manufacturer_logo",
+          "stand_signage"
         ]
       },
       {
-        "name": "Arsenal.com",
+        "name": "Arsenal.com/membership",
         "asset_types": [
-          "stadium_fascia_signage"
+          "perimeter_led_board_rotating"
         ]
       },
       {
-        "name": "Betfair",
+        "name": "ArsenalDirect.com",
         "asset_types": [
-          "perimeter_led_board"
-        ]
-      },
-      {
-        "name": "BVD",
-        "asset_types": [
-          "stadium_fascia_signage"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "BYD",
         "asset_types": [
           "other",
-          "perimeter_led_board",
+          "perimeter_led_board_rotating",
           "stadium_fascia_signage",
-          "training_kit_sponsor"
+          "stand_signage",
+          "tunnel_signage"
+        ]
+      },
+      {
+        "name": "Betfair",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Cooper Tire",
+        "asset_types": [
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Cooper Tires",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Cover-More",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "DAZN",
         "asset_types": [
-          "scorebug"
+          "broadcast_graphic",
+          "on_screen_ident"
+        ]
+      },
+      {
+        "name": "DIRECTV",
+        "asset_types": [
+          "broadcast_graphic"
         ]
       },
       {
         "name": "EA Sports",
         "asset_types": [
           "broadcast_graphic",
-          "other",
-          "shirt_sleeve_sponsor",
-          "training_kit_sponsor"
+          "kit_manufacturer_logo",
+          "other"
         ]
       },
       {
         "name": "Emirates",
         "asset_types": [
-          "perimeter_led_board",
+          "perimeter_led_board_rotating",
+          "press_conference_backdrop",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Emirates Fly Better",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Emirates Fly Better to Dubai",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Fidelity Wealth Management",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Fly Emirates",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "on_screen_ident",
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static",
           "shirt_front_sponsor",
           "stadium_fascia_signage",
-          "stand_signage",
           "training_kit_sponsor"
         ]
       },
       {
-        "name": "Emirates FLY BETTER to the Indian Ocean",
+        "name": "Future",
         "asset_types": [
-          "perimeter_led_board"
-        ]
-      },
-      {
-        "name": "Fidelity Investments",
-        "asset_types": [
-          "broadcast_graphic"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Gatorade",
         "asset_types": [
           "other",
-          "perimeter_led_board",
-          "stadium_fascia_signage"
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
         ]
       },
       {
@@ -121,60 +171,73 @@
         ]
       },
       {
-        "name": "Grinch",
+        "name": "Grinch in cinemas now",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
-        "name": "Holsten",
+        "name": "Health Insurance with Vitality",
         "asset_types": [
-          "other"
-        ]
-      },
-      {
-        "name": "Hospitality",
-        "asset_types": [
-          "perimeter_led_board"
-        ]
-      },
-      {
-        "name": "LAVAZZA",
-        "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Lavazza",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
         ]
       },
       {
         "name": "Lexus",
         "asset_types": [
           "broadcast_graphic",
+          "on_screen_ident",
           "scorebug"
+        ]
+      },
+      {
+        "name": "M88",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "NBC",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "NBC Sports",
+        "asset_types": [
+          "lower_third"
+        ]
+      },
+      {
+        "name": "NBC Sports Gold",
+        "asset_types": [
+          "broadcast_graphic"
         ]
       },
       {
         "name": "NBCSN",
         "asset_types": [
           "broadcast_graphic",
-          "on_screen_bug"
+          "on_screen_ident"
         ]
       },
       {
         "name": "Nike",
         "asset_types": [
-          "kit_manufacturer_logo",
-          "training_kit_sponsor"
+          "kit_manufacturer_logo"
         ]
       },
       {
         "name": "Octopus Energy",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
@@ -187,7 +250,9 @@
         "name": "Premier League",
         "asset_types": [
           "broadcast_graphic",
-          "other",
+          "kit_manufacturer_logo",
+          "on_screen_ident",
+          "perimeter_led_board_rotating",
           "scorebug"
         ]
       },
@@ -200,19 +265,29 @@
       {
         "name": "Puma",
         "asset_types": [
-          "broadcast_graphic",
           "kit_manufacturer_logo",
           "other",
-          "perimeter_led_board",
-          "stadium_fascia_signage",
-          "training_kit_sponsor"
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Puma One",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Shop Now",
+        "asset_types": [
+          "perimeter_led_board_static"
         ]
       },
       {
         "name": "Sky Sports",
         "asset_types": [
-          "broadcast_graphic",
-          "perimeter_led_board"
+          "broadcast_graphic"
         ]
       },
       {
@@ -224,29 +299,39 @@
       {
         "name": "SportPesa",
         "asset_types": [
-          "perimeter_led_board"
-        ]
-      },
-      {
-        "name": "Tag Heuer",
-        "asset_types": [
-          "broadcast_graphic",
-          "scorebug",
-          "substitution_board_branding"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "TAG Heuer",
         "asset_types": [
           "broadcast_graphic",
-          "perimeter_led_board",
+          "other",
+          "perimeter_led_board_static",
+          "scorebug",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Tag Heuer",
+        "asset_types": [
+          "broadcast_graphic",
+          "on_screen_ident",
+          "perimeter_led_board_rotating",
           "substitution_board_branding"
         ]
       },
       {
         "name": "Tempobet",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "asset_types": [
+          "broadcast_graphic"
         ]
       },
       {
@@ -256,61 +341,79 @@
         ]
       },
       {
-        "name": "Visit Rwanda",
+        "name": "U.S. Army",
         "asset_types": [
-          "perimeter_led_board",
-          "shirt_sleeve_sponsor",
-          "stadium_fascia_signage"
+          "broadcast_graphic",
+          "scorebug"
         ]
       },
       {
-        "name": "VISIT RWANDA",
+        "name": "VW",
         "asset_types": [
-          "perimeter_led_board"
+          "scorebug"
+        ]
+      },
+      {
+        "name": "Visit Rwanda",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static",
+          "shirt_sleeve_sponsor"
         ]
       },
       {
         "name": "Vitality",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Vitality Health Insurance",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Volkswagen",
         "asset_types": [
-          "broadcast_graphic",
-          "perimeter_led_board"
+          "broadcast_graphic"
         ]
       },
       {
         "name": "Wanda",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "WorldRemit",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
         ]
       },
       {
         "name": "Worldremit",
         "asset_types": [
-          "perimeter_led_board"
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "fuboTV",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "optimum",
+        "asset_types": [
+          "broadcast_graphic"
         ]
       }
     ],
-    "summary": "This broadcast features a broad sponsor mix led by recurring Emirates, Puma, EA Sports, Nike, and Gatorade visibility, spanning on-shirt and kit branding alongside LED board, fascia, and broadcast-graphic exposure throughout the match coverage."
+    "summary": "The broadcast features 60 distinct sponsor brands, appearing across placements such as broadcast_graphic, kit_manufacturer_logo, lower_third, on_screen_ident, other, perimeter_led_board_rotating, perimeter_led_board_static, press_conference_backdrop, scorebug, shirt_front_sponsor, shirt_sleeve_sponsor, stadium_fascia_signage, stand_signage, substitution_board_branding, training_kit_sponsor, tunnel_signage."
   },
-  "answer": "{\"brands\": [{\"name\": \"12BET\", \"asset_types\": [\"perimeter_led_board\", \"stadium_fascia_signage\"]}, {\"name\": \"Acronis\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"AIA\", \"asset_types\": [\"broadcast_graphic\", \"shirt_front_sponsor\", \"stadium_fascia_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Arsenal\", \"asset_types\": [\"stadium_fascia_signage\"]}, {\"name\": \"Arsenal.com\", \"asset_types\": [\"stadium_fascia_signage\"]}, {\"name\": \"Betfair\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"BVD\", \"asset_types\": [\"stadium_fascia_signage\"]}, {\"name\": \"BYD\", \"asset_types\": [\"other\", \"perimeter_led_board\", \"stadium_fascia_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Cooper Tires\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Cover-More\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"DAZN\", \"asset_types\": [\"scorebug\"]}, {\"name\": \"EA Sports\", \"asset_types\": [\"broadcast_graphic\", \"other\", \"shirt_sleeve_sponsor\", \"training_kit_sponsor\"]}, {\"name\": \"Emirates\", \"asset_types\": [\"perimeter_led_board\", \"shirt_front_sponsor\", \"stadium_fascia_signage\", \"stand_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Emirates FLY BETTER to the Indian Ocean\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Fidelity Investments\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Gatorade\", \"asset_types\": [\"other\", \"perimeter_led_board\", \"stadium_fascia_signage\"]}, {\"name\": \"Google Earth\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Grinch\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Holsten\", \"asset_types\": [\"other\"]}, {\"name\": \"Hospitality\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"LAVAZZA\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Lavazza\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Lexus\", \"asset_types\": [\"broadcast_graphic\", \"scorebug\"]}, {\"name\": \"NBCSN\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_bug\"]}, {\"name\": \"Nike\", \"asset_types\": [\"kit_manufacturer_logo\", \"training_kit_sponsor\"]}, {\"name\": \"Octopus Energy\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Peacock\", \"asset_types\": [\"other\"]}, {\"name\": \"Premier League\", \"asset_types\": [\"broadcast_graphic\", \"other\", \"scorebug\"]}, {\"name\": \"Progressive\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Puma\", \"asset_types\": [\"broadcast_graphic\", \"kit_manufacturer_logo\", \"other\", \"perimeter_led_board\", \"stadium_fascia_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Sky Sports\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\"]}, {\"name\": \"Soccer.com\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"SportPesa\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Tag Heuer\", \"asset_types\": [\"broadcast_graphic\", \"scorebug\", \"substitution_board_branding\"]}, {\"name\": \"TAG Heuer\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\", \"substitution_board_branding\"]}, {\"name\": \"Tempobet\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"U.S. ARMY\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Visit Rwanda\", \"asset_types\": [\"perimeter_led_board\", \"shirt_sleeve_sponsor\", \"stadium_fascia_signage\"]}, {\"name\": \"VISIT RWANDA\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Vitality\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Vitality Health Insurance\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Volkswagen\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board\"]}, {\"name\": \"Wanda\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"WorldRemit\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Worldremit\", \"asset_types\": [\"perimeter_led_board\"]}], \"summary\": \"This broadcast features a broad sponsor mix led by recurring Emirates, Puma, EA Sports, Nike, and Gatorade visibility, spanning on-shirt and kit branding alongside LED board, fascia, and broadcast-graphic exposure throughout the match coverage.\"}",
+  "answer": "{\"brands\": [{\"name\": \"126 Live Premier League Games\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"12BET\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"12Bet\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"AIA\", \"asset_types\": [\"shirt_front_sponsor\", \"stand_signage\"]}, {\"name\": \"Acronis\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Arsenal\", \"asset_types\": [\"broadcast_graphic\", \"kit_manufacturer_logo\", \"stand_signage\"]}, {\"name\": \"Arsenal.com/membership\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"ArsenalDirect.com\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"BYD\", \"asset_types\": [\"other\", \"perimeter_led_board_rotating\", \"stadium_fascia_signage\", \"stand_signage\", \"tunnel_signage\"]}, {\"name\": \"Betfair\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"Cooper Tire\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Cooper Tires\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Cover-More\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"DAZN\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\"]}, {\"name\": \"DIRECTV\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"EA Sports\", \"asset_types\": [\"broadcast_graphic\", \"kit_manufacturer_logo\", \"other\"]}, {\"name\": \"Emirates\", \"asset_types\": [\"perimeter_led_board_rotating\", \"press_conference_backdrop\", \"shirt_front_sponsor\", \"stadium_fascia_signage\"]}, {\"name\": \"Emirates Fly Better\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"Emirates Fly Better to Dubai\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Fidelity Wealth Management\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Fly Emirates\", \"asset_types\": [\"kit_manufacturer_logo\", \"on_screen_ident\", \"perimeter_led_board_rotating\", \"perimeter_led_board_static\", \"shirt_front_sponsor\", \"stadium_fascia_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Future\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Gatorade\", \"asset_types\": [\"other\", \"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"Google Earth\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Grinch in cinemas now\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Health Insurance with Vitality\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Lavazza\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"Lexus\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\", \"scorebug\"]}, {\"name\": \"M88\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"NBC\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"NBC Sports\", \"asset_types\": [\"lower_third\"]}, {\"name\": \"NBC Sports Gold\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"NBCSN\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\"]}, {\"name\": \"Nike\", \"asset_types\": [\"kit_manufacturer_logo\"]}, {\"name\": \"Octopus Energy\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Peacock\", \"asset_types\": [\"other\"]}, {\"name\": \"Premier League\", \"asset_types\": [\"broadcast_graphic\", \"kit_manufacturer_logo\", \"on_screen_ident\", \"perimeter_led_board_rotating\", \"scorebug\"]}, {\"name\": \"Progressive\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Puma\", \"asset_types\": [\"kit_manufacturer_logo\", \"other\", \"perimeter_led_board_rotating\", \"perimeter_led_board_static\", \"stadium_fascia_signage\"]}, {\"name\": \"Puma One\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Shop Now\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Sky Sports\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Soccer.com\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"SportPesa\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"TAG Heuer\", \"asset_types\": [\"broadcast_graphic\", \"other\", \"perimeter_led_board_static\", \"scorebug\", \"stadium_fascia_signage\"]}, {\"name\": \"Tag Heuer\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\", \"perimeter_led_board_rotating\", \"substitution_board_branding\"]}, {\"name\": \"Tempobet\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"Tottenham Hotspur\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"U.S. ARMY\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"U.S. Army\", \"asset_types\": [\"broadcast_graphic\", \"scorebug\"]}, {\"name\": \"VW\", \"asset_types\": [\"scorebug\"]}, {\"name\": \"Visit Rwanda\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"Vitality\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Vitality Health Insurance\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Volkswagen\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Wanda\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"WorldRemit\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Worldremit\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"fuboTV\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"optimum\", \"asset_types\": [\"broadcast_graphic\"]}], \"summary\": \"The broadcast features 60 distinct sponsor brands, appearing across placements such as broadcast_graphic, kit_manufacturer_logo, lower_third, on_screen_ident, other, perimeter_led_board_rotating, perimeter_led_board_static, press_conference_backdrop, scorebug, shirt_front_sponsor, shirt_sleeve_sponsor, stadium_fascia_signage, stand_signage, substitution_board_branding, training_kit_sponsor, tunnel_signage.\"}",
   "timings": {
-    "discover_secs": 19.7
+    "discover_secs": 23.2
   }
 }

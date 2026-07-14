@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import asyncio
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -187,10 +188,11 @@ async def build_one(game: dict[str, str], brand: str, workdir: Path) -> None:
         print(f"  {scope}/{brand}: asset has no HLS manifest — skip", file=sys.stderr)
         return
 
+    safe = re.sub(r"[^a-z0-9]+", "-", brand.strip().lower()).strip("-") or "brand"
     segs: list[Path] = []
     cut_secs = 0.0
     for i, m in enumerate(moments):
-        seg = workdir / f"{scope}-{brand}-{i}.ts"
+        seg = workdir / f"{scope}-{safe}-{i}.ts"
         start = float(m["start_sec"]) - PAD  # pad before; length already padded + capped
         if _ffmpeg_cut(hls_url, start, m["_clip"], seg):
             segs.append(seg)
@@ -199,11 +201,11 @@ async def build_one(game: dict[str, str], brand: str, workdir: Path) -> None:
         print(f"  {scope}/{brand}: all clips failed — skip", file=sys.stderr)
         return
 
-    reel = workdir / f"{scope}-{brand}.mp4"
+    reel = workdir / f"{scope}-{safe}.mp4"
     if not _ffmpeg_concat(segs, reel):
         return
 
-    url = _upload_blob(reel, f"reels/{scope}/{brand.strip().lower().replace(' ', '-')}.mp4")
+    url = _upload_blob(reel, f"reels/{scope}/{safe}.mp4")
     dur = _probe_duration(reel) or round(cut_secs, 1)  # ground-truth length
     reels.save(scope, brand, {"url": url, "duration_sec": dur, "clips": len(segs)})
     print(f"  {scope}/{brand}: {len(segs)} clips, {dur:.0f}s → {url}")

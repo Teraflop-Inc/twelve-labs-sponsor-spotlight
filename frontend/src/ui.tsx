@@ -1,7 +1,7 @@
 import type { ReactNode } from "react"
 import { Chip } from "@twelvelabs-io/react"
 import { cn } from "@/lib/utils"
-import { fmtTime } from "./lib/econ"
+import { fmtTime, formatGameTime } from "./lib/econ"
 import { useApp } from "./state"
 import type { Moment } from "./lib/types"
 
@@ -124,9 +124,21 @@ export function MomentRow({
       onClick={() => seekTo(Number(m.start_sec) || 0, m.video)}
     >
       <span className="w-[88px] shrink-0 font-tl-mono text-xs text-foreground-subtle">
-        {fmtTime(m.start_sec)}–{fmtTime(m.end_sec)}
+        <span className="block">
+          {fmtTime(m.start_sec)}–{fmtTime(m.end_sec)}
+        </span>
+        {formatGameTime(m.period, m.game_clock) && (
+          <span className="block text-[10px] text-tl-search-dark-purple" title="match time">
+            {formatGameTime(m.period, m.game_clock)}
+          </span>
+        )}
       </span>
       <ContextChip context={m.context} />
+      {m.placement === "primary" && (
+        <Chip variant="success" size="sm" title="primary / foreground exposure">
+          primary
+        </Chip>
+      )}
       <span className="min-w-0 flex-1 text-xs text-foreground-muted">
         {children ?? m.description ?? m.asset_type ?? ""}
       </span>

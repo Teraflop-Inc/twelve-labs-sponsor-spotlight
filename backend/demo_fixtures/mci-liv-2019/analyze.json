@@ -3,2172 +3,893 @@
   "inventory": {
     "brands": [
       {
+        "name": "ETIHAD",
         "appearances": [
           {
             "asset_type": "courtside_led",
-            "confidence": 0.96,
+            "confidence": 0.78,
             "context": "other",
-            "description": "Nike LED advertising board visible during open play as Manchester City continue an attack after a foul on Raheem Sterling.",
-            "end_sec": 355,
-            "start_sec": 350,
+            "description": "ETIHAD visible on rotating perimeter LED board in background during play",
+            "end_sec": 3450.0,
+            "game_clock": "57:24",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3444.0,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
             "asset_type": "courtside_led",
-            "confidence": 0.97,
-            "context": "wide_shot",
-            "description": "Nike advertising visible on perimeter LED boards during a long wide-shot passage of play with City circulating possession and Liverpool pressing.",
-            "end_sec": 646,
-            "start_sec": 614,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.95,
-            "context": "close_up",
-            "description": "Nike kit manufacturer logo visible in a close-up from behind of Leroy Sané on Manchester City's shirt.",
-            "end_sec": 846,
-            "start_sec": 841,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
+            "confidence": 0.78,
             "context": "other",
-            "description": "\"NIKE.COM/FOOTBALL\" fascia signage visible while Liverpool build from the back under Manchester City's press.",
-            "end_sec": 1565,
-            "start_sec": 1553,
+            "description": "ETIHAD visible on rotating perimeter LED board in background during play",
+            "end_sec": 3460.0,
+            "game_clock": "57:35",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3455.0,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "asset_type": "courtside_led",
-            "confidence": 0.97,
-            "context": "wide_shot",
-            "description": "Nike campaign creative ('MERCURIAL SERIES' and 'PHANTOM SERIES') appears on the perimeter LED boards during City's possession.",
-            "end_sec": 2033,
-            "start_sec": 2022,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "wide_shot",
-            "description": "Nike 'ALWAYS FORWARD' perimeter board visible as Leroy Sané attacks down the left wing.",
-            "end_sec": 2036,
-            "start_sec": 2033,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.88,
-            "context": "close_up",
-            "description": "Nike kit logo visible in a medium/close aftermath shot as Anthony Taylor books Vincent Kompany and Mohamed Salah remains on the ground.",
-            "end_sec": 2318,
-            "start_sec": 2310,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "celebration",
-            "description": "Nike kit manufacturer logo visible on Manchester City players during a goal celebration huddle near the corner flag.",
-            "end_sec": 2498,
-            "start_sec": 2482,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "wide_shot",
-            "description": "Nike perimeter LED branding remains visible for an extended wide-shot build-up sequence alongside AvaTrade branding.",
-            "end_sec": 2779,
-            "start_sec": 2718,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "close_up",
-            "description": "Nike branding appears in the background on the perimeter boards during a close-up of referee Anthony Taylor.",
-            "end_sec": 3219,
-            "start_sec": 3217,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
+            "asset_type": "jersey_patch",
             "confidence": 0.93,
-            "context": "other",
-            "description": "Nike branding visible on the perimeter boards as Liverpool carry the ball in midfield.",
-            "end_sec": 3222,
-            "start_sec": 3219,
+            "context": "timeout",
+            "description": "ETIHAD visible on Manchester City shirt-front sponsor in close-up",
+            "end_sec": 3651.0,
+            "game_clock": "60:48",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 3648.0,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "asset_type": "courtside_led",
+            "asset_type": "jersey_patch",
             "confidence": 0.93,
-            "context": "other",
-            "description": "Nike branding continues on the boards during midfield play with both teams contesting possession.",
-            "end_sec": 3225,
-            "start_sec": 3222,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Nike branding visible on the perimeter LED boards during open play as Trent Alexander-Arnold overhits a diagonal ball.",
-            "end_sec": 4905,
-            "start_sec": 4899,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.89,
-            "context": "celebration",
-            "description": "Nike signage visible on stadium fascia during Manchester City players' on-pitch celebration.",
-            "end_sec": 5983,
-            "start_sec": 5979,
+            "context": "timeout",
+            "description": "ETIHAD visible on Manchester City shirt-front sponsor in close-up",
+            "end_sec": 3653.0,
+            "game_clock": "60:51",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 3651.0,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           }
         ],
         "asset_types": [
           "courtside_led",
-          "other"
+          "jersey_patch"
         ],
-        "legibility_notes": "Most Nike appearances are fully legible. One kit-logo exposure at 2310-2318 sec is only mostly legible in the close-up aftermath of Kompany's booking.",
-        "moments_count": 14,
-        "name": "Nike",
-        "outside_whistle_to_whistle_seconds": 0,
-        "total_seconds": 171
+        "legibility_notes": "Generally fully legible in the indexed ETIHAD exposures; smaller background board/fascia appearances are brief but readable.",
+        "moments_count": 4,
+        "outside_whistle_to_whistle_seconds": 5.0,
+        "total_seconds": 16.0
       },
       {
+        "name": "NEXEN TIRE",
         "appearances": [
           {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "other",
-            "description": "Open-play close-up of Alisson Becker; Nexen Tire is fully legible on the Manchester City shirt sleeve sponsor visible in frame.",
-            "end_sec": 156,
-            "start_sec": 147,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
+            "start_sec": 2713.0,
+            "end_sec": 2719.0,
+            "asset_type": "other",
+            "context": "wide_shot",
+            "description": "A medium shot of Sergio Agüero walking back towards his position. He looks slightly frustrated. The NEXEN TIRE sponsor logo is clearly visible on the left sleeve of his jersey.",
+            "game_clock": "45:13",
+            "period": "first half",
+            "placement": "primary",
+            "video": "Manchester City v. Liverpool (2019-01-03)"
           },
           {
+            "start_sec": 2719.0,
+            "end_sec": 2733.0,
             "asset_type": "courtside_led",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "Wide open-play shot with Nexen Tire fully legible on the perimeter LED boards as Sterling attacks down the right.",
-            "end_sec": 183,
-            "start_sec": 161,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
+            "context": "wide_shot",
+            "description": "A wide shot showing Manchester City attacking. A pass is intercepted by Liverpool's Roberto Firmino, who immediately tries to slide a through ball forward to Mohamed Salah, but the pass is cut out. 'NEXEN TIRE' is visible on the perimeter boards.",
+            "game_clock": "45:19",
+            "period": "first half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (2019-01-03)"
           },
           {
-            "asset_type": "courtside_led",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "Wide open-play shot; Nexen Tire remains fully legible on perimeter LED boards while Laporte advances play.",
-            "end_sec": 194,
-            "start_sec": 183,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Extended wide open-play passage with Manchester City circulating possession; Nexen Tire visible on perimeter LED boards.",
-            "end_sec": 737,
-            "start_sec": 702,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.97,
-            "context": "score",
-            "description": "Liverpool break forward; Nexen Tire is fully legible on the perimeter LED board during the attacking move.",
-            "end_sec": 1030,
-            "start_sec": 1027,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.97,
-            "context": "score",
-            "description": "Mane's shot strikes the post; Nexen Tire remains fully legible on the perimeter boards.",
-            "end_sec": 1033,
-            "start_sec": 1030,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.97,
-            "context": "score",
-            "description": "Goal-line scramble and Stones clearance; Nexen Tire fully legible on perimeter boards.",
-            "end_sec": 1037,
-            "start_sec": 1033,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.96,
-            "context": "score",
-            "description": "Play continues after the goal-line clearance with Nexen Tire still visible on the perimeter boards.",
-            "end_sec": 1045,
-            "start_sec": 1037,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Manchester City settle possession after the scramble; Nexen Tire remains fully legible on the perimeter boards.",
-            "end_sec": 1055,
-            "start_sec": 1045,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.92,
-            "context": "close_up",
-            "description": "Close-up of Sergio Aguero with Nexen Tire visible in the background on the perimeter LED board.",
-            "end_sec": 1057,
-            "start_sec": 1055,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.92,
-            "context": "close_up",
-            "description": "Close-up of Dejan Lovren; Nexen Tire visible in background perimeter signage.",
-            "end_sec": 1060,
-            "start_sec": 1057,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Open-play restart through Alisson with Nexen Tire fully legible on the perimeter boards.",
-            "end_sec": 1065,
-            "start_sec": 1060,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Close-up of Sergio Aguero after a foul; Nexen Tire fully legible on his shirt sleeve.",
-            "end_sec": 1279,
-            "start_sec": 1273,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Medium close-up of David Silva before a free kick; Nexen Tire fully legible on his shirt sleeve.",
-            "end_sec": 1299,
-            "start_sec": 1295,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Medium shot of Aguero reacting to an offside call; Nexen Tire fully legible on sleeve.",
-            "end_sec": 1312,
-            "start_sec": 1306,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Medium shot of Leroy Sane; Nexen Tire fully legible on shirt sleeve.",
-            "end_sec": 1375,
-            "start_sec": 1371,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Tracking shot of Aguero challenged by Robertson; Nexen Tire clearly visible on sleeve.",
-            "end_sec": 1409,
-            "start_sec": 1402,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Liverpool counterattack in open play; Nexen Tire fully legible on the perimeter LED boards.",
-            "end_sec": 1737,
-            "start_sec": 1730,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Close-up of David Silva jogging back into position; Nexen Tire fully legible on sleeve.",
-            "end_sec": 1743,
-            "start_sec": 1740,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Close-up of David Silva reacting after a missed chance, with appearance graphic on screen; Nexen Tire fully legible on sleeve.",
-            "end_sec": 1770,
-            "start_sec": 1764,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Close-up of Vincent Kompany arguing with the referee; Nexen Tire fully legible on sleeve.",
-            "end_sec": 1820,
-            "start_sec": 1818,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Another close-up of Vincent Kompany speaking to the referee; Nexen Tire fully legible on sleeve.",
-            "end_sec": 1854,
-            "start_sec": 1848,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.95,
-            "context": "close_up",
-            "description": "Close-up of Bernardo Silva walking away frustrated; Nexen Tire visible on shirt sleeve.",
-            "end_sec": 2079,
-            "start_sec": 2068,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Wide open-play sequence recycling possession to Ederson; Nexen Tire visible on perimeter boards.",
-            "end_sec": 2110,
-            "start_sec": 2093,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Aguero celebrates his goal running toward the corner; Nexen Tire fully legible on Manchester City sleeves.",
-            "end_sec": 2482,
-            "start_sec": 2472,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "other",
-            "description": "Brief open-play close-up of Leroy Sane tracking back; Nexen Tire fully legible on sleeve.",
-            "end_sec": 2605,
-            "start_sec": 2603,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Open-play midfield circulation by Manchester City; Nexen Tire fully legible on perimeter boards.",
-            "end_sec": 2964,
-            "start_sec": 2957,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Bernardo Silva is fouled in midfield; Nexen Tire remains fully legible on perimeter boards.",
-            "end_sec": 2970,
-            "start_sec": 2964,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Liverpool pass through midfield in open play; Nexen Tire visible on perimeter LED boards.",
-            "end_sec": 3023,
-            "start_sec": 3016,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Liverpool continue possession in midfield; Nexen Tire remains visible on perimeter boards.",
-            "end_sec": 3030,
-            "start_sec": 3023,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Manchester City regain the ball and build from the back; Nexen Tire visible on perimeter boards.",
-            "end_sec": 3037,
-            "start_sec": 3030,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Bernardo Silva carries forward into Liverpool's half; Nexen Tire remains visible on perimeter boards.",
-            "end_sec": 3042,
-            "start_sec": 3037,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Manchester City continue midfield passing; Nexen Tire fully legible on perimeter boards.",
-            "end_sec": 3094,
-            "start_sec": 3085,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Liverpool press high while City pass under pressure; Nexen Tire visible on perimeter boards.",
-            "end_sec": 3101,
-            "start_sec": 3094,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.94,
-            "context": "other",
-            "description": "Medium open-play shot of Laporte controlling and passing; Nexen Tire visible on perimeter boards.",
-            "end_sec": 3876,
-            "start_sec": 3864,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.92,
-            "context": "other",
-            "description": "Brief throw-in sequence with Nexen Tire visible on perimeter signage.",
-            "end_sec": 3938,
-            "start_sec": 3936,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.99,
-            "context": "close_up",
-            "description": "Close-up of Leroy Sane after a blocked shot; Nexen Tire is foreground-dominant and fully legible on sleeve.",
-            "end_sec": 4419,
-            "start_sec": 4415,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.99,
-            "context": "close_up",
-            "description": "Close-up of Ilkay Gundogan before a set piece; Nexen Tire is foreground-dominant and fully legible on sleeve.",
-            "end_sec": 4464,
-            "start_sec": 4455,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Liverpool build an attack with Nexen Tire branding visible on the perimeter boards.",
-            "end_sec": 4951,
-            "start_sec": 4941,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Kompany intercepts and Nexen Tire remains visible on perimeter boards.",
-            "end_sec": 4956,
-            "start_sec": 4951,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Manchester City recycle possession; Nexen Tire stays visible on the perimeter boards.",
-            "end_sec": 4963,
-            "start_sec": 4956,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.99,
-            "context": "close_up",
-            "description": "Close-up of Aguero after a saved shot; Nexen Tire is foreground-dominant and fully legible on sleeve.",
-            "end_sec": 5848,
-            "start_sec": 5846,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "Late open-play sequence as Alisson restarts quickly; Nexen Tire visible on perimeter boards but less crisp.",
-            "end_sec": 5853,
-            "start_sec": 5848,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "Aerial-duel phase late in the match; Nexen Tire remains visible on perimeter boards with reduced legibility.",
-            "end_sec": 5857,
-            "start_sec": 5853,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "Midfield scramble in the final minute; Nexen Tire still visible on perimeter boards with reduced legibility.",
-            "end_sec": 5862,
-            "start_sec": 5857,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "Van Dijk pushed forward late; Nexen Tire remains visible on perimeter boards, mostly legible.",
-            "end_sec": 5866,
-            "start_sec": 5862,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "Final defensive challenge sequence with Nexen Tire still visible on perimeter boards, mostly legible.",
-            "end_sec": 5872,
-            "start_sec": 5866,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
+            "start_sec": 5450.0,
+            "end_sec": 5459.0,
+            "asset_type": "other",
+            "context": "timeout",
+            "description": "Nicolás Otamendi stands on the sideline, preparing to enter the match. Pep Guardiola stands next to him, giving instructions and placing a hand on his shoulder.",
+            "game_clock": "",
+            "period": "stoppage",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (2019-01-03)"
           }
         ],
         "asset_types": [
-          "jersey_patch",
+          "other",
           "courtside_led"
         ],
-        "legibility_notes": "Nexen Tire is fully legible in most detections. Reduced clarity occurs on perimeter LED board exposures from 5848-5872 seconds, where it is only mostly legible during fast late-match play. No pregame/halftime/postgame commercial or backdrop appearances were identified for this brand in this broadcast.",
-        "moments_count": 48,
-        "name": "Nexen Tire",
-        "outside_whistle_to_whistle_seconds": 0,
-        "total_seconds": 336
+        "legibility_notes": "All detected instances are fully legible with no poor renders in the identified moments.",
+        "moments_count": 3,
+        "outside_whistle_to_whistle_seconds": 9.0,
+        "total_seconds": 29.0
       },
       {
         "name": "Nissan",
         "appearances": [
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 786.0,
-            "end_sec": 816.0,
-            "context": "other",
             "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) A wide shot showing the tactical battle in midfield. Both teams are fighting for control, with frequent transitions in possession. Advertising for Nissan is visible."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 860.0,
-            "end_sec": 861.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) A wide shot of the pitch at Etihad Stadium. Manchester City players in light blue kits are in possession, passing the ball in their own half. Liverpool players in red kits are pressing high. The Nissan logo is visible on the perimeter LED board."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 861.0,
-            "end_sec": 863.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) The camera pans as the ball is played long towards the touchline. It goes out for a throw-in. The Nissan logo remains visible on the perimeter boards."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 863.0,
-            "end_sec": 871.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Liverpool win the ball back and launch a quick counter-attack. Sadio Mané and Mohamed Salah are involved in the build-up. The Nissan logo is still visible in the background."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 871.0,
-            "end_sec": 873.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Bernardo Silva makes a crucial sliding tackle on Sadio Mané to stop the Liverpool attack. The Nissan logo is prominent on the perimeter board."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 1279.0,
-            "end_sec": 1289.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) A wide shot shows Manchester City preparing to take a free kick. Players from both teams are positioned in and around the penalty area. Nissan branding is visible on the perimeter boards."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 1533.0,
-            "end_sec": 1542.0,
-            "context": "close_up",
-            "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(other) Manchester City manager Pep Guardiola is seen on the touchline, talking animatedly to his assistant Mikel Arteta. Arteta holds a notepad and listens intently. The 'NISSAN' logo is visible on the bench area."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 2875.0,
-            "end_sec": 2883.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Players are gathered near the center circle. Liverpool players in red are preparing for a free kick. Virgil van Dijk and Dejan Lovren are mentioned by the commentator as being forward."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 2883.0,
-            "end_sec": 2885.0,
+            "confidence": 0.95,
             "context": "wide_shot",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Wide view of the pitch as the free kick is about to be taken. The referee blows his whistle."
+            "description": "Nissan courtside LED board exposure: Liverpool tries to break forward. Sadio Mané chases a long ball but is blocked by Danilo. The two players tangle and fall, but the referee Anthony Taylor signals no foul and play continues with Manchester City regaining the ball.",
+            "end_sec": 435.0,
+            "game_clock": "07:04",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 424.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 2885.0,
-            "end_sec": 2890.0,
-            "context": "other",
             "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Liverpool takes a short free kick. The ball is passed around to improve the angle for a cross into the box."
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: The shot opens with Manchester City in possession in the Liverpool half. The ball is cleared by the Liverpool defense as City players attempt to build an attack. The Nissan sponsor logo is visible on the pitchside LED boards.",
+            "end_sec": 862.0,
+            "game_clock": "14:20",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 860.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3482.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "replay",
+            "description": "Nissan courtside LED board exposure: A closer replay angle from behind the goal, showing John Stones' incredible clearance. The ball is seen very close to the goal line as Stones slides in to hook it away just before Salah can tap it in.",
+            "end_sec": 1215.0,
+            "game_clock": "20:07",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1207.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "close_up",
+            "description": "Nissan signage/fascia placement exposure: Manchester City manager Pep Guardiola is seen on the bench, talking intensely to his assistant Mikel Arteta. They appear to be discussing tactical adjustments.",
+            "end_sec": 1542.0,
+            "game_clock": "25:33",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1533.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Live play continues with Manchester City's Danilo being fouled by Liverpool's Sadio Mané. Danilo is knocked to the ground as he tries to shield the ball. The referee immediately blows for a free kick. The camera pans to follow the action and the players' reactions. 'Nissan' logos are visible on the perimeter boards.",
+            "end_sec": 2154.0,
+            "game_clock": "35:48",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2148.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Live play resumes with Manchester City taking the free kick awarded after the foul on Danilo. They play the ball back to their goalkeeper and then begin to build an attack from their own half. The camera pans to follow the ball as it is moved across the pitch. 'Gatorade' and 'Nissan' logos are visible on the perimeter boards. The 'DIRECTV' logo is visible as a broadcast graphic.",
+            "end_sec": 2228.0,
+            "game_clock": "36:35",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2195.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "close_up",
+            "description": "Nissan signage/fascia placement exposure: A medium shot of Manchester City manager Pep Guardiola standing in his technical area. He is wearing a dark grey jacket with a high collar and has his arms crossed, looking intently at the game. Behind him, the Manchester City bench is visible with Etihad Airways and Nissan branding on the seats.",
+            "end_sec": 2612.0,
+            "game_clock": "43:29",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2609.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Medium shot of players in the penalty area. Virgil van Dijk (#4) and Dejan Lovren (#6) are positioned for the upcoming cross. They are surrounded by Manchester City defenders.",
+            "end_sec": 2883.0,
+            "game_clock": "47:57",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2877.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Wide shot of the penalty area. The cross is cleared by a Manchester City defender. Two City players collide and fall to the ground in the process of defending.",
+            "end_sec": 2893.0,
+            "game_clock": "48:09",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2889.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Wide shot of the goal area. Virgil van Dijk headers the ball towards goal, but Fernandinho clears it off the line or near it, preventing a goal.",
+            "end_sec": 2901.0,
+            "game_clock": "48:17",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2897.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Liverpool continues to circulate the ball, but a misplaced pass from Wijnaldum near the halfway line is intercepted by Sergio Agüero.",
+            "end_sec": 3472.0,
+            "game_clock": "57:40",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3460.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Sterling's cross causes chaos in the box. Virgil van Dijk fails to clear cleanly, but Andrew Robertson eventually manages to hack the ball away.",
             "end_sec": 3486.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Raheem Sterling battles with Dejan Lovren in the box. Virgil van Dijk makes a miscue, but the ball is eventually cleared. Nissan branding is visible on the LED boards."
+            "game_clock": "58:01",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3481.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3486.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Robertson brings the ball under control and launches a long clearance downfield to relieve the pressure on the Liverpool defense.",
             "end_sec": 3490.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Andrew Robertson brings the ball down and looks to clear it from the danger zone. The wide shot shows the positioning of players from both teams around the box. Nissan branding continues to be visible."
+            "game_clock": "58:06",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3486.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: A wide view of the pitch shows Manchester City settled into a compact defensive shape. Liverpool has possession near the halfway line, looking for a way through.",
+            "end_sec": 3504.0,
+            "game_clock": "58:10",
+            "period": "second half",
+            "placement": "secondary",
             "start_sec": 3490.0,
-            "end_sec": 3494.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City regains control and starts to build an attack from the back. The wide shot captures the movement of players as they look to exploit gaps in the Liverpool defense. Nissan branding is still visible."
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3494.0,
-            "end_sec": 3498.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City players pass the ball across the midfield, maintaining possession and looking for an opening. The camera pans to follow the ball's movement."
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan signage/fascia placement exposure: A wide shot shows Alisson Becker taking a goal kick for Liverpool. He sends the ball long into the Manchester City half. The stadium's fascia displays Etihad Airways and Nissan branding. The perimeter boards show Visit Etihad.com.",
+            "end_sec": 3777.0,
+            "game_clock": "01:02:43",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3763.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3498.0,
-            "end_sec": 3502.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City continues to dominate possession, with players moving the ball quickly to keep the Liverpool defense on their toes. The wide shot shows the tactical discipline of both teams."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3502.0,
-            "end_sec": 3505.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City players look for a way through the Liverpool midfield. The camera follows the ball as it is passed between the City defenders and midfielders."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3505.0,
-            "end_sec": 3508.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Danilo controls the ball and looks for a forward pass. The medium shot captures his focus as he assesses his options on the pitch."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3508.0,
-            "end_sec": 3512.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City continues to pass the ball, trying to stretch the Liverpool defense. The wide shot shows the movement of players off the ball."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3512.0,
-            "end_sec": 3516.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City players look for an opening in the Liverpool defense. The camera follows the ball as it is moved across the pitch."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3516.0,
-            "end_sec": 3520.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City maintains possession, with players moving into space to receive the ball. The wide shot captures the tactical setup of both teams."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3520.0,
-            "end_sec": 3524.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "description": "(perimeter_led_board) Manchester City players look for a way through the Liverpool midfield. The camera follows the ball as it is passed between the City defenders and midfielders."
-          },
-          {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3782.0,
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan signage/fascia placement exposure: A wide shot shows Liverpool attempting to build an attack from their own half. They pass the ball among their defenders and midfielders, looking for an opening. Manchester City players maintain a disciplined defensive shape. Branding for Etihad Airways, Nissan, and Visit Etihad.com is visible around the stadium.",
             "end_sec": 3808.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Liverpool passes the ball among their defenders and midfielders in their own half. Manchester City maintains a high press, making it difficult for Liverpool to advance."
+            "game_clock": "01:03:01",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3781.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3878.0,
-            "end_sec": 3890.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Manchester City continues to pass the ball in their own half. Andrew Robertson is seen pressing high up the pitch."
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "close_up",
+            "description": "Nissan signage/fascia placement exposure: A close-up shot of Pep Guardiola on the touchline. He is wearing a dark coat and a grey scarf, and he looks focused and intense as he watches the match. Mikel Arteta is visible behind him on the bench. Etihad Airways and Nissan branding is visible on the dugout.",
+            "end_sec": 3855.0,
+            "game_clock": "01:04:06",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3846.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 3890.0,
-            "end_sec": 3907.0,
-            "context": "other",
             "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Andrew Robertson carries the ball forward for Liverpool, looking for a teammate. He is being tracked by Manchester City players."
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: A medium shot follows Andrew Robertson as he dribbles the ball down the left flank. He is pursued by Raheem Sterling. The Nissan logo is visible on the perimeter board.",
+            "end_sec": 3893.0,
+            "game_clock": "01:04:49",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3889.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4075.0,
-            "end_sec": 4078.0,
+            "asset_type": "other",
+            "confidence": 0.95,
             "context": "celebration",
-            "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) Jurgen Klopp is seen on the touchline, gesturing and celebrating the goal. Nissan branding is visible on the dugout."
+            "description": "Nissan signage/fascia placement exposure: Jürgen Klopp is shown on the touchline, celebrating the goal with his characteristic passion. He is pumping his fists and shouting. The camera pans to follow his energetic movements in the technical area.",
+            "end_sec": 4078.0,
+            "game_clock": "01:07:55",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4075.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4587.0,
-            "end_sec": 4592.0,
-            "context": "other",
             "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) A close-up shot from behind Leroy Sané as he walks on the pitch. The back of his light blue Manchester City jersey with 'SANÉ' and the number '19' is clearly visible. The scoreboard in the top left corner shows Manchester City leading Liverpool 2-1 at the 72:25 mark of the match."
+            "confidence": 0.95,
+            "context": "celebration",
+            "description": "Nissan signage/fascia placement exposure: Jürgen Klopp is shown again on the touchline, still celebrating. He is handed a water bottle and takes a quick drink while continuing to gesture and shout instructions. The camera pans to follow him as he moves around the technical area.",
+            "end_sec": 4123.0,
+            "game_clock": "01:08:33",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4113.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4621.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Manchester City continues to build their attack patiently. They pass the ball across the midfield, looking for an opening in the Liverpool defense. The crowd is audible, cheering for their team. Perimeter boards for Etihad Airways and Nissan are visible.",
+            "end_sec": 4415.0,
+            "game_clock": "01:13:09",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 4389.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: A wide shot of the pitch as play resumes. Manchester City players are in possession, moving the ball through the midfield. Liverpool players in red are pressing to regain control. The crowd is visible in the background, and various perimeter LED boards are showing sponsors like Etisalat and Nissan.",
+            "end_sec": 4621.0,
+            "game_clock": "01:16:32",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4592.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Nissan signage/fascia placement exposure: A close-up shot of Pep Guardiola on the touchline. He is watching the game intently, with his hands in his pockets. The Nissan logo is visible on the dugout behind him.",
             "end_sec": 4625.0,
-            "context": "close_up",
-            "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) A close-up shot of Manchester City manager Pep Guardiola on the touchline. He is wearing a dark jacket and a grey scarf, looking focused and gesturing towards his players. The background shows the dugout area with the Nissan logo visible on the seats."
+            "game_clock": "01:17:01",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4621.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4625.0,
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Nissan signage/fascia placement exposure: A close-up shot of Jürgen Klopp on the touchline. He looks concerned as he watches his team trail. The New Balance logo is visible on his coat.",
             "end_sec": 4631.0,
-            "context": "close_up",
-            "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) A close-up shot of Liverpool manager Jürgen Klopp on the touchline. He is wearing a dark jacket, glasses, and a scarf, appearing concerned as he watches the match. The background shows the Liverpool coaching staff and the Nissan logo on the seats."
+            "game_clock": "01:17:05",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4625.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4647.0,
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Nissan signage/fascia placement exposure: A shot of Jürgen Klopp on the bench, talking to his assistant coaches. He is gesturing with his hands, likely discussing tactical changes. The Nissan logo is visible on the dugout.",
             "end_sec": 4656.0,
-            "context": "close_up",
-            "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) A close-up shot of Jürgen Klopp on the touchline, talking to his assistant coaches. He is gesturing and discussing tactics, likely planning a substitution. The background shows the intense atmosphere of the match with fans visible in the stands."
+            "game_clock": "01:17:27",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4647.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4656.0,
+            "asset_type": "other",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Nissan signage/fascia placement exposure: A close-up of Pep Guardiola on the touchline, shouting instructions to his players. He is gesturing with both hands. The crowd is blurred in the background.",
             "end_sec": 4663.0,
-            "context": "close_up",
-            "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) A close-up shot of Pep Guardiola on the touchline, looking animated and shouting instructions to his players. He is using his hands to emphasize his points, showing his passion and involvement in the game."
+            "game_clock": "01:17:36",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4656.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 4728.0,
-            "end_sec": 4815.0,
-            "context": "other",
             "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) A wide shot of the pitch as play continues. Manchester City is in possession, moving the ball across their defensive line. Virgil van Dijk is seen organizing the Liverpool defense, trying to win the ball back. The camera pans to follow the play as it moves towards the middle of the field."
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Nissan signage/fascia placement exposure: A shot of Jürgen Klopp on the touchline, drinking from a water bottle. Behind him, Xherdan Shaqiri is seen preparing to come on as a substitute. The Nissan logo is visible on the dugout.",
+            "end_sec": 4728.0,
+            "game_clock": "01:18:40",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4720.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Play resumes with a wide shot of the pitch. Liverpool are now trying to be more direct with Shaqiri on the pitch. Manchester City are defending their lead. Perimeter boards for Nissan and Etisalat are visible.",
+            "end_sec": 4848.0,
+            "game_clock": "01:20:36",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4836.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Liverpool launches a dangerous attack. Trent Alexander-Arnold sends a cross into the box. There is a scramble as City defenders try to clear. Ederson eventually gathers the ball. Perimeter boards for Nissan and Wix.com are visible.",
+            "end_sec": 5106.0,
+            "game_clock": "84:43",
+            "period": "second half",
+            "placement": "secondary",
             "start_sec": 5083.0,
-            "end_sec": 5094.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) Liverpool switches the play to Andrew Robertson on the left flank. Nissan branding is visible on the perimeter boards."
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 5504.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "timeout",
+            "description": "Nissan courtside LED board exposure: The camera follows referee Anthony Taylor as he runs towards the sideline to address the situation with Guardiola and Atkinson. He looks serious and focused. The green pitch and the crowd in the background are visible.",
+            "end_sec": 5272.0,
+            "game_clock": "01:27:42",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5262.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "replay",
+            "description": "Nissan courtside LED board exposure: A quick replay shows a goal kick or a long clearance from the Manchester City goalkeeper, Alisson Becker is seen in the distance.",
             "end_sec": 5506.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) A medium shot of Ederson, the Manchester City goalkeeper, standing in his goal. He is wearing his green goalkeeper kit and looking focused."
+            "game_clock": "01:30:47",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5504.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 5506.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Live play resumes with the ball in the midfield area. Players from both teams are seen competing for possession. The atmosphere in the stadium is electric.",
             "end_sec": 5516.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) A wide shot of the play as Ederson takes a goal kick. The ball travels high into the air towards the midfield. Players from both teams are positioned across the pitch."
+            "game_clock": "01:30:47",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5506.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 5516.0,
-            "end_sec": 5536.0,
-            "context": "other",
             "asset_type": "courtside_led",
-            "confidence": 0.78,
-            "description": "(perimeter_led_board) A wide shot of the play continuing in the midfield. Players are competing for the ball. The camera pans to follow the action as the ball is moved around."
+            "confidence": 0.95,
+            "context": "wide_shot",
+            "description": "Nissan courtside LED board exposure: Liverpool passes the ball around, trying to find an opening in the Manchester City defense. Fabinho, Andrew Robertson, and Virgil van Dijk are all involved in the build-up.",
+            "end_sec": 5734.0,
+            "game_clock": "01:30:47",
+            "period": "stoppage",
+            "placement": "secondary",
+            "start_sec": 5701.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 5903.0,
-            "end_sec": 5913.0,
-            "context": "close_up",
             "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) Close-up of Pep Guardiola on the touchline, looking anxious as he waits for the final whistle."
+            "confidence": 0.7,
+            "context": "timeout",
+            "description": "Nissan signage/fascia placement exposure: A medium shot showing both managers, Jürgen Klopp and Pep Guardiola, on the touchline. Klopp is gesturing intensely, while Guardiola appears focused and slightly anxious as the match nears its end.",
+            "end_sec": 5765.0,
+            "game_clock": "96:03",
+            "period": "stoppage",
+            "placement": "secondary",
+            "start_sec": 5763.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4",
-            "start_sec": 5913.0,
+            "asset_type": "other",
+            "confidence": 0.7,
+            "context": "postgame",
+            "description": "Nissan signage/fascia placement exposure: A medium shot of Jürgen Klopp on the Liverpool bench. He looks stoic but disappointed, watching the Manchester City celebrations.",
+            "end_sec": 5903.0,
+            "game_clock": "98:16",
+            "period": "postgame",
+            "placement": "secondary",
+            "start_sec": 5896.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.7,
+            "context": "postgame",
+            "description": "Nissan signage/fascia placement exposure: A medium shot of Pep Guardiola celebrating the victory. He is punching the air and shouting in joy, clearly relieved by the result.",
             "end_sec": 5916.0,
-            "context": "close_up",
+            "game_clock": "98:23",
+            "period": "postgame",
+            "placement": "secondary",
+            "start_sec": 5903.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
             "asset_type": "other",
-            "confidence": 0.78,
-            "description": "(stadium_fascia_signage) Close-up of Pep Guardiola gesturing to his players to stay focused and keep their shape."
+            "confidence": 0.7,
+            "context": "postgame",
+            "description": "Nissan signage/fascia placement exposure: A wide shot showing Jürgen Klopp and Pep Guardiola shaking hands on the touchline after the match. They show mutual respect despite the intense rivalry.",
+            "end_sec": 5970.0,
+            "game_clock": "99:27",
+            "period": "postgame",
+            "placement": "secondary",
+            "start_sec": 5967.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           }
         ],
         "asset_types": [
           "courtside_led",
           "other"
         ],
-        "legibility_notes": "All logged Nissan appearances were tagged fully legible. Visibility is sometimes background-only (especially perimeter/bench signage), but not marked as poorly legible.",
+        "legibility_notes": "Most Nissan exposures are fully legible, but several late stoppage/postgame dugout shots are logo_only, and some dugout/fascia exposures are categorized as generic 'other' because the source metadata did not specify a tighter surface class.",
         "moments_count": 37,
-        "outside_whistle_to_whistle_seconds": 0.0,
-        "total_seconds": 351.0
+        "outside_whistle_to_whistle_seconds": 103.0,
+        "total_seconds": 392.0
       },
       {
-        "name": "GEICO",
         "appearances": [
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1451.0,
-            "start_sec": 1441.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1460.0,
-            "start_sec": 1455.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1474.0,
-            "start_sec": 1465.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1492.0,
-            "start_sec": 1485.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1514.0,
-            "start_sec": 1507.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "GEICO shown in broadcast graphic during close_up",
-            "end_sec": 1533.0,
-            "start_sec": 1528.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1553.0,
-            "start_sec": 1547.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1572.0,
-            "start_sec": 1565.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "GEICO shown in broadcast graphic during close_up",
-            "end_sec": 1579.0,
-            "start_sec": 1576.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "GEICO shown in broadcast graphic during close_up",
-            "end_sec": 1592.0,
-            "start_sec": 1583.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1608.0,
-            "start_sec": 1592.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1631.0,
-            "start_sec": 1620.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "GEICO shown in broadcast graphic during close_up",
-            "end_sec": 1635.0,
-            "start_sec": 1631.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1656.0,
-            "start_sec": 1645.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1670.0,
-            "start_sec": 1663.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1702.0,
-            "start_sec": 1687.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "GEICO shown in broadcast graphic during open_play",
-            "end_sec": 1720.0,
-            "start_sec": 1718.0,
-            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1820ca24504b0499294.mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "On-screen GEICO ad overlay reading \"15 MINUTES COULD SAVE YOU 15% OR MORE ON CAR INSURANCE\" appears while Manchester City circulate possession in their own half.",
-            "end_sec": 1451,
-            "start_sec": 1441,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.89,
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
             "context": "wide_shot",
-            "description": "GEICO broadcast graphic appears during a wide live-play sequence following a goal kick, with players contesting the ball in midfield.",
-            "end_sec": 3423,
-            "start_sec": 3413,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          }
-        ],
-        "asset_types": [
-          "broadcast_overlay"
-        ],
-        "legibility_notes": "Fully legible in all detected appearances.",
-        "moments_count": 19,
-        "outside_whistle_to_whistle_seconds": 0,
-        "total_seconds": 154.0
-      },
-      {
-        "name": "Marathonbet",
-        "total_seconds": 310.0,
-        "moments_count": 46,
-        "outside_whistle_to_whistle_seconds": 3.0,
-        "asset_types": [
-          "perimeter_led_board"
-        ],
-        "legibility_notes": "Non-fully-legible rows: 5783-5788s mostly_legible; 5788-5793s mostly_legible; 5793-5797s mostly_legible",
-        "appearances": [
-          {
-            "start_sec": 194.0,
-            "end_sec": 196.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "A close-up shot of Leroy Sane being challenged by Trent Alexander-Arnold near the touchline.",
-            "confidence": 0.92,
+            "description": "Nike appears on rotating perimeter LED boards during open play in a wide midfield shot.",
+            "end_sec": 631,
+            "game_clock": "10:11",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 611,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "start_sec": 200.0,
-            "end_sec": 203.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "A wide shot of play continuing near the touchline.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 210.0,
-            "end_sec": 218.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "A wide shot as Manchester City attacks. Sergio Aguero receives the ball in the box but is closed down by Liverpool defenders.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 946.0,
-            "end_sec": 958.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City build an attack from the back, moving the ball through their defensive line. The Marathonbet logo is visible on the perimeter LED board.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 958.0,
-            "end_sec": 969.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City continue to control possession, looking for an opening in the Liverpool defense. The Marathonbet logo is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 969.0,
-            "end_sec": 971.0,
-            "context": "close_up",
-            "asset_type": "courtside_led",
-            "description": "A close-up of Fernandinho as he directs his teammates on the pitch. The Marathonbet logo is visible in the background.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 971.0,
-            "end_sec": 978.0,
-            "context": "close_up",
-            "asset_type": "courtside_led",
-            "description": "A close-up of Mohamed Salah as he prepares for a Liverpool counter-attack. The Marathonbet logo is visible in the background.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 978.0,
-            "end_sec": 987.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City maintain possession, moving the ball across the midfield. The Marathonbet logo is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 987.0,
-            "end_sec": 990.0,
-            "context": "close_up",
-            "asset_type": "courtside_led",
-            "description": "A close-up of Aymeric Laporte as he looks for a passing option. The Marathonbet logo is visible in the background.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 990.0,
-            "end_sec": 996.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City continue to control the game, passing the ball in their own half. The Marathonbet logo is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 996.0,
-            "end_sec": 1000.0,
-            "context": "close_up",
-            "asset_type": "courtside_led",
-            "description": "A close-up of Jordan Henderson as he tracks the movement of Manchester City players. The Marathonbet logo is visible in the background.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 1000.0,
-            "end_sec": 1007.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City maintain possession, moving the ball across their defensive line. The Marathonbet logo is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 1007.0,
-            "end_sec": 1009.0,
-            "context": "close_up",
-            "asset_type": "courtside_led",
-            "description": "A close-up of Aymeric Laporte as he prepares to play a long ball. The Marathonbet logo is visible in the background.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 1009.0,
-            "end_sec": 1027.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City continue to control possession, moving the ball across the pitch. The Marathonbet logo is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 1355.0,
-            "end_sec": 1368.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City moves the ball forward into the Liverpool half. The camera pans to follow the action. Marathonbet branding is visible on the perimeter boards.",
+            "asset_type": "other",
             "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 1492.0,
-            "end_sec": 1495.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "A Manchester City player attempts a cross from the left wing into the Liverpool box. The ball is cleared by a Liverpool defender, but City quickly regains possession. The 'MARATHONBET' logo is visible on the LED boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 2122.0,
-            "end_sec": 2126.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Wide shot. Fernandinho (#25) wins a header in midfield but is then challenged by Sadio Mané (#10).",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 2651.0,
-            "end_sec": 2666.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Wide shot of play in the middle of the pitch. Both teams are battling for possession. The Marathonbet logo is now visible on the perimeter LED boards.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 2668.0,
-            "end_sec": 2713.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Wide shot. Liverpool attempts to build an attack from the back. Manchester City's press is high, making it difficult for Liverpool to progress. Marathonbet and Etihad branding are visible.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3062.0,
-            "end_sec": 3075.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City maintains possession in the midfield, passing the ball from side to side.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3075.0,
-            "end_sec": 3077.0,
             "context": "close_up",
-            "asset_type": "courtside_led",
-            "description": "Close-up of Aymeric Laporte with the ball. He is looking for a passing option.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3077.0,
-            "end_sec": 3085.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Manchester City passes the ball back to their defenders to reset the attack.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3321.0,
-            "end_sec": 3325.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Sterling goes down in the penalty area after a challenge from Robertson, leading to a huge appeal from the crowd. Marathonbet branding is now visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3325.0,
-            "end_sec": 3329.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Georginio Wijnaldum clears the ball as the referee waves away the penalty appeals. Marathonbet branding is visible.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3329.0,
-            "end_sec": 3332.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Liverpool looks to launch a counter-attack after the cleared ball. Marathonbet branding continues on the boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3332.0,
-            "end_sec": 3335.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Mohamed Salah has the ball in the midfield as Liverpool tries to move forward. Marathonbet branding is visible.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3335.0,
-            "end_sec": 3339.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "The crowd continues to boo as play goes on. Marathonbet branding remains on the boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3344.0,
-            "end_sec": 3348.0,
-            "context": "replay",
-            "asset_type": "courtside_led",
-            "description": "A slow-motion replay of Raheem Sterling's run and his 'chop back' move before the challenge. Marathonbet branding is visible on the boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3348.0,
-            "end_sec": 3350.0,
-            "context": "replay",
-            "asset_type": "courtside_led",
-            "description": "The replay continues, showing Sterling going down after the contact with Robertson. Marathonbet branding is visible.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3350.0,
-            "end_sec": 3354.0,
-            "context": "replay",
-            "asset_type": "courtside_led",
-            "description": "Another replay angle shows Andrew Robertson holding onto Sterling as he tries to move past him. Marathonbet branding is visible.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3354.0,
-            "end_sec": 3358.0,
-            "context": "replay",
-            "asset_type": "courtside_led",
-            "description": "The replay shows Sterling on the ground after the challenge. Marathonbet branding continues on the boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3541.0,
-            "end_sec": 3545.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Liverpool regains possession and starts to build an attack. Marathonbet branding is visible on the perimeter LED boards. The wide shot shows the movement of players as they look to move forward.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3545.0,
-            "end_sec": 3548.0,
-            "context": "timeout",
-            "asset_type": "courtside_led",
-            "description": "Fabinho is seen in the technical area, ready to come on as a substitute for Liverpool. The medium shot captures him receiving final instructions from the coaching staff.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3548.0,
-            "end_sec": 3552.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Liverpool continues their attack, with players moving the ball quickly towards the Manchester City goal. Marathonbet branding is still visible on the LED boards.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3552.0,
-            "end_sec": 3556.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Mohamed Salah receives the ball in the box and looks for support. The wide shot captures the Manchester City defenders closing him down. Marathonbet branding continues to be visible.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3556.0,
-            "end_sec": 3559.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Leroy Sane wins the ball back for Manchester City and starts a counter-attack. Marathonbet branding is still visible on the LED boards. The wide shot shows the transition from defense to attack.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3559.0,
-            "end_sec": 3563.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Leroy Sane clears the ball away from the Manchester City half. The wide shot shows the ball traveling down the pitch as both teams reset their positions.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 3563.0,
-            "end_sec": 3567.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Dejan Lovren passes the ball back to his goalkeeper, Alisson Becker, to reset the play. The wide shot captures the positioning of the Liverpool defense.",
-            "confidence": 0.97,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 4978.0,
-            "end_sec": 4994.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Leroy Sane breaks forward on the left wing and passes the ball into the box. Raheem Sterling and Andrew Robertson battle for the ball. Marathonbet branding is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 4994.0,
-            "end_sec": 5004.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Andrew Robertson clears the ball away from danger. Liverpool starts a counter-attack. Marathonbet branding is still visible.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 5421.0,
-            "end_sec": 5424.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "The ball goes out of play for a Manchester City goal kick. 'Marathonbet' branding is visible on the perimeter boards.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 5584.0,
-            "end_sec": 5590.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "A medium shot of Danilo preparing to take a throw-in for Manchester City. He is looking for an open teammate.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 5590.0,
-            "end_sec": 5596.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "A wide shot of the play following Danilo's throw-in. The ball is contested in the midfield and then moved towards the Liverpool half.",
-            "confidence": 0.92,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 5783.0,
-            "end_sec": 5788.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Robertson crosses again, but Ilkay Gundogan is there to clear the danger for the home side.",
-            "confidence": 0.84,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 5788.0,
-            "end_sec": 5793.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Raheem Sterling and Andrew Robertson battle for possession near the touchline as the tension rises.",
-            "confidence": 0.84,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "start_sec": 5793.0,
-            "end_sec": 5797.0,
-            "context": "other",
-            "asset_type": "courtside_led",
-            "description": "Fabinho lofts a ball into the area, but Danilo is well-positioned to clear it away.",
-            "confidence": 0.84,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          }
-        ]
-      },
-      {
-        "name": "Etisalat",
-        "total_seconds": 218.0,
-        "moments_count": 52,
-        "outside_whistle_to_whistle_seconds": 0.0,
-        "asset_types": [
-          "perimeter_led_board",
-          "shirt_sleeve_sponsor"
-        ],
-        "appearances": [
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Wide shot. Sané crosses the ball into the box. Virgil van Dijk (#4) makes a sliding clearance to put the...",
-            "end_sec": 2040.0,
-            "start_sec": 2036.0,
+            "description": "Nike kit manufacturer logo is clearly visible on Aymeric Laporte's Manchester City shirt during a throw-in close-up.",
+            "end_sec": 888,
+            "game_clock": "14:41",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 881,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
             "asset_type": "other",
-            "confidence": 0.94,
-            "context": "replay",
-            "description": "perimeter_led_board: Replay of the MC attack. Sané's cross and Van Dijk's clearance are shown from a different angle. Etisalat...",
-            "end_sec": 2053.0,
-            "start_sec": 2046.0,
+            "confidence": 0.7,
+            "context": "wide_shot",
+            "description": "Small Nike logo visible on a player's kit during Manchester City's build-up from the back.",
+            "end_sec": 1451,
+            "game_clock": "23:53",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1433,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City continues to pass the ball around the back. Goalkeeper Ederson passes to Aymeric Laporte,...",
-            "end_sec": 2368.0,
-            "start_sec": 2355.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Sadio Mane is fouled by Danilo in the midfield, resulting in a free kick for Liverpool. Etisalat branding...",
-            "end_sec": 3186.0,
-            "start_sec": 3182.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "shirt_sleeve_sponsor: A close-up of Danilo after the foul. He is wearing the light blue Manchester City kit with the Etisalat...",
-            "end_sec": 3188.0,
-            "start_sec": 3186.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Sergio Aguero makes a run as Manchester City looks to exploit a gap in the Liverpool defense. Etisalat...",
-            "end_sec": 3193.0,
-            "start_sec": 3190.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Dejan Lovren heads the ball away to clear the danger for Liverpool. Etisalat branding continues on the boards.",
-            "end_sec": 3197.0,
-            "start_sec": 3193.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: A Liverpool player controls the ball near their own goal as they look to build an attack. Etisalat...",
-            "end_sec": 3201.0,
-            "start_sec": 3197.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City employs a high press, forcing Liverpool to play quickly. Etisalat branding remains on the...",
-            "end_sec": 3204.0,
-            "start_sec": 3201.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City wins the ball back in a dangerous position. Etisalat branding is visible.",
-            "end_sec": 3207.0,
-            "start_sec": 3204.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Raheem Sterling crosses the ball towards David Silva in the Liverpool penalty area. Etisalat branding...",
-            "end_sec": 3210.0,
-            "start_sec": 3207.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Trent Alexander-Arnold partially clears the ball for Liverpool. Etisalat branding is visible.",
-            "end_sec": 3213.0,
-            "start_sec": 3210.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Leroy Sane tries to keep the ball in play near the touchline. Etisalat branding remains on the boards.",
-            "end_sec": 3215.0,
-            "start_sec": 3213.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Dejan Lovren clears the ball again as Manchester City continues to press. Etisalat branding is visible.",
-            "end_sec": 3217.0,
-            "start_sec": 3215.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: The game restarts with a wide shot of the pitch. Both teams are back in their tactical positions as...",
-            "end_sec": 3628.0,
-            "start_sec": 3624.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool players pass the ball among themselves, trying to build an attack from the back. The wide shot...",
-            "end_sec": 3632.0,
-            "start_sec": 3628.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Fernandinho controls the ball for Manchester City and looks for a pass. The wide shot captures his...",
-            "end_sec": 3635.0,
-            "start_sec": 3632.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City players pass the ball across the midfield, maintaining possession and looking for an...",
-            "end_sec": 3639.0,
-            "start_sec": 3635.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City continues to dominate possession, with players moving the ball quickly to keep the...",
-            "end_sec": 3643.0,
-            "start_sec": 3639.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City players look for a way through the Liverpool midfield. The camera follows the ball as it...",
-            "end_sec": 3647.0,
-            "start_sec": 3643.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City continues to pass the ball, trying to stretch the Liverpool defense. The wide shot shows...",
-            "end_sec": 3650.0,
-            "start_sec": 3647.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Aymeric Laporte controls the ball and looks for a forward pass. The medium shot captures his focus as he...",
-            "end_sec": 3653.0,
-            "start_sec": 3650.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Trent Alexander-Arnold takes a throw-in for Liverpool. The wide shot captures the positioning of players...",
-            "end_sec": 3658.0,
-            "start_sec": 3653.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool players pass the ball among themselves, trying to build an attack. The wide shot captures the...",
-            "end_sec": 3662.0,
-            "start_sec": 3658.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool continues their attack, with players moving the ball quickly towards the Manchester City goal....",
-            "end_sec": 3666.0,
-            "start_sec": 3662.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool players look for an opening in the Manchester City defense. The camera follows the ball as it is...",
-            "end_sec": 3670.0,
-            "start_sec": 3666.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Sadio Mane is flagged for offside as he attempts to run onto a pass. The wide shot captures the moment the...",
-            "end_sec": 3673.0,
-            "start_sec": 3670.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: A close-up shot of Sadio Mane shows his reaction after being flagged for offside. He looks frustrated as...",
-            "end_sec": 3676.0,
-            "start_sec": 3673.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Xherdan Shaqiri is seen warming up on the sidelines, ready to be called upon by Jurgen Klopp. The medium...",
-            "end_sec": 3679.0,
-            "start_sec": 3676.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: A close-up shot of Xherdan Shaqiri as he continues his warm-up. He looks ready and eager to get onto the...",
-            "end_sec": 3683.0,
-            "start_sec": 3679.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: Another close-up of Xherdan Shaqiri as he watches the game from the sidelines. He looks focused on the...",
-            "end_sec": 3687.0,
-            "start_sec": 3683.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: A final close-up of Xherdan Shaqiri before the camera cuts back to the action on the pitch. He looks ready...",
-            "end_sec": 3690.0,
-            "start_sec": 3687.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: Jurgen Klopp is seen giving instructions to Sadio Mane on the sidelines. The medium shot captures the...",
-            "end_sec": 3693.0,
-            "start_sec": 3690.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: A close-up shot of Jurgen Klopp as he watches the game intently. He looks focused on his team's...",
-            "end_sec": 3696.0,
-            "start_sec": 3693.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "close_up",
-            "description": "perimeter_led_board: Another close-up of Jurgen Klopp as he reacts to a moment in the game. He looks concerned as his team...",
-            "end_sec": 3699.0,
-            "start_sec": 3696.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City players pass the ball among themselves, maintaining possession and looking for an opening....",
-            "end_sec": 3702.0,
-            "start_sec": 3699.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City continues to dominate possession, with players moving the ball quickly to keep the...",
-            "end_sec": 3706.0,
-            "start_sec": 3702.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Gundogan takes the free kick, crossing it into the box. Aymeric Laporte gets a touch but fails to direct...",
-            "end_sec": 4252.0,
-            "start_sec": 4245.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Manchester City regains possession and starts to build from the back. Ilkay Gundogan and Sergio Aguero are...",
-            "end_sec": 4918.0,
-            "start_sec": 4905.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: A battle for possession in the center circle. Manchester City players press high to disrupt Liverpool's...",
-            "end_sec": 5213.0,
-            "start_sec": 5208.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool regains possession and starts another move. The crowd noise is audible as the tension builds.",
-            "end_sec": 5217.0,
-            "start_sec": 5213.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: The long ball is aimed towards Mohamed Salah, but Vincent Kompany is there to head it away. 'Etisalat'...",
-            "end_sec": 5225.0,
-            "start_sec": 5220.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Raheem Sterling clears the ball high into the air to relieve the pressure on the Manchester City defense.",
-            "end_sec": 5229.0,
-            "start_sec": 5225.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool players pass the ball around in the midfield, trying to find a way through the Manchester City...",
-            "end_sec": 5406.0,
-            "start_sec": 5401.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool continues to build their attack, moving the ball from side to side. The Manchester City players...",
-            "end_sec": 5411.0,
-            "start_sec": 5406.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: Liverpool moves the ball wide to the right wing. The camera follows the action as they look to cross the...",
-            "end_sec": 5416.0,
-            "start_sec": 5411.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.96,
-            "context": "other",
-            "description": "perimeter_led_board: A cross is played into the Manchester City box, but it is headed away by a defender. Liverpool regains...",
-            "end_sec": 5421.0,
-            "start_sec": 5416.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.88,
-            "context": "close_up",
-            "description": "perimeter_led_board: Close-up of Trent Alexander-Arnold taking another throw-in as the match enters its final moments.",
-            "end_sec": 5801.0,
-            "start_sec": 5797.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "perimeter_led_board: The throw-in finds Daniel Sturridge, who tries to turn and create a chance, but he is crowded out by...",
-            "end_sec": 5805.0,
-            "start_sec": 5801.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "perimeter_led_board: Fabinho lofts another ball into the box as Liverpool throw everyone forward in search of an equalizer.",
-            "end_sec": 5809.0,
-            "start_sec": 5805.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "perimeter_led_board: Virgil van Dijk wins a header in the box, and Trent Alexander-Arnold battles Leroy Sane for the second ball.",
-            "end_sec": 5813.0,
-            "start_sec": 5809.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "perimeter_led_board: The ball is cleared out of the Manchester City penalty area as the home fans cheer every defensive action.",
-            "end_sec": 5818.0,
-            "start_sec": 5813.0,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          }
-        ],
-        "legibility_notes": "Non-fully-legible appearances at 5797-5801s (mostly_legible), 5801-5805s (mostly_legible), 5805-5809s (mostly_legible), 5809-5813s (mostly_legible), 5813-5818s (mostly_legible). Late-match perimeter LED appearances are only mostly legible at 5797-5801s, 5801-5805s, 5805-5809s, 5809-5813s, 5813-5818s."
-      },
-      {
-        "appearances": [
           {
             "asset_type": "courtside_led",
             "confidence": 0.94,
-            "context": "other",
-            "description": "Perimeter LED board shows Lexus during open play near midfield as Manchester City circulate possession.",
-            "end_sec": 2426,
-            "start_sec": 2402,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.68,
-            "context": "score",
-            "description": "Very brief Lexus presence in the scorebug/booking graphic during a referee yellow-card close-up.",
-            "end_sec": 2856,
-            "start_sec": 2855,
+            "context": "wide_shot",
+            "description": "Nike rotates onto the perimeter LED boards during live play as City build from the back and a foul is called.",
+            "end_sec": 1572,
+            "game_clock": "25:47",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1547,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
             "asset_type": "courtside_led",
-            "confidence": 0.78,
+            "confidence": 0.96,
+            "context": "wide_shot",
+            "description": "Nike.com/football is fully legible on the rotating perimeter LED boards during a City attack down the left ending in a corner.",
+            "end_sec": 2040,
+            "game_clock": "33:27",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2007,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
+            "context": "replay",
+            "description": "Nike.com/football remains visible on the perimeter LED boards in replay of Sané's run and Van Dijk's clearance.",
+            "end_sec": 2053,
+            "game_clock": "34:04",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2044,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.96,
+            "context": "wide_shot",
+            "description": "NIKE.COM/FOOTBALL is visible on static perimeter boards as Liverpool overhit a pass and the ball runs out for a goal kick.",
+            "end_sec": 2787,
+            "game_clock": "46:20",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2780,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9,
+            "context": "halftime",
+            "description": "Nike logo visible on Sergio Agüero's kit in a halftime close-up as he walks toward the tunnel after scoring.",
+            "end_sec": 2910,
+            "game_clock": "48:23",
+            "period": "halftime",
+            "placement": "secondary",
+            "start_sec": 2903,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "wide_shot",
+            "description": "Nike appears again on the perimeter LED boards during second-half live play as Agüero feeds Sterling on the right.",
+            "end_sec": 3481,
+            "game_clock": "57:55",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3475,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.72,
             "context": "close_up",
-            "description": "Lexus appears in the background on perimeter LED signage during a close-up of Aymeric Laporte after the caution.",
-            "end_sec": 2870,
-            "start_sec": 2867,
+            "description": "Nike logo is faintly visible on Leroy Sané's shirt in a post-goal close-up with scorebug and scorer graphic on screen.",
+            "end_sec": 4592,
+            "game_clock": "01:16:31",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4587,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Full-screen-style Lexus broadcast graphic overlay appears during open play in midfield.",
-            "end_sec": 5189,
-            "start_sec": 5184,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Lexus overlay returns as Ederson prepares a goal kick.",
-            "end_sec": 5198,
-            "start_sec": 5194,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Lexus overlay remains on-screen during a close-up/open-play phase as Alexander-Arnold plays long.",
-            "end_sec": 5220,
-            "start_sec": 5217,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Lexus overlay visible as Van Dijk challenges Agüero and play continues.",
-            "end_sec": 5234,
-            "start_sec": 5229,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Lexus overlay shown while referee Anthony Taylor runs toward the touchline to intervene.",
-            "end_sec": 5269,
-            "start_sec": 5262,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Lexus overlay continues during the referee's approach to Guardiola and Atkinson.",
-            "end_sec": 5275,
-            "start_sec": 5269,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
+            "asset_type": "other",
+            "confidence": 0.72,
             "context": "close_up",
-            "description": "Lexus overlay remains during a tight shot of Guardiola being warned by Anthony Taylor.",
-            "end_sec": 5280,
-            "start_sec": 5275,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "close_up",
-            "description": "Lexus overlay visible through a close-up of the Taylor-Guardiola discussion.",
-            "end_sec": 5285,
-            "start_sec": 5280,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "close_up",
-            "description": "Lexus overlay continues as Guardiola gestures and Taylor turns away.",
-            "end_sec": 5291,
-            "start_sec": 5285,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "other",
-            "description": "Lexus overlay appears again as Liverpool are awarded a free kick.",
-            "end_sec": 5314,
-            "start_sec": 5309,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "close_up",
-            "description": "Lexus overlay shown on a touchline close-up of Pep Guardiola watching intensely.",
-            "end_sec": 5331,
-            "start_sec": 5327,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.99,
-            "context": "timeout",
-            "description": "Lexus overlay appears during a substitution setup shot of Daniel Sturridge on the touchline.",
-            "end_sec": 5344,
-            "start_sec": 5341,
-            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.76,
-            "context": "score",
-            "description": "Lexus appears as a small secondary-background element in the scorebug during late open play.",
-            "end_sec": 5736,
-            "start_sec": 5734,
+            "description": "Nike logo is visible on Leroy Sané's Manchester City kit in a late second-half running close-up.",
+            "end_sec": 5172,
+            "game_clock": "01:26:09",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5169,
             "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
           }
         ],
         "asset_types": [
           "courtside_led",
-          "broadcast_overlay"
+          "other"
         ],
-        "legibility_notes": "Metadata marks Lexus as fully legible in all detected appearances. A few exposures are still weak in practical terms because they are very brief or small/background placements, especially the 2855–2856 scorebug hit, the 2867–2870 perimeter-board background shot, and the 5734–5736 late scorebug appearance.",
-        "moments_count": 16,
-        "name": "Lexus",
-        "outside_whistle_to_whistle_seconds": 3,
-        "total_seconds": 88
+        "legibility_notes": "Most board exposures are fully legible, often as 'Nike' or 'Nike.com/football'. Several kit-logo moments are logo-only or small, especially at 1433-1451, 4587-4592, and 5169-5172, so those are lower-confidence and secondary placements.",
+        "moments_count": 11,
+        "name": "Nike",
+        "outside_whistle_to_whistle_seconds": 7,
+        "total_seconds": 140
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.92,
+            "context": "other",
+            "description": "AVATRADE appears fully legible on the pitchside LED perimeter boards during live play/stoppage sequence; accompanying board copy includes 'TRADE CRYPTO WITH CONFIDENCE'. Wide shot with the branding in the background as Liverpool counter and a foul is called.",
+            "end_sec": 2846,
+            "game_clock": "47:14",
+            "period": "stoppage",
+            "placement": "secondary",
+            "start_sec": 2834,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led"
+        ],
+        "legibility_notes": "One confirmed AVATRADE exposure. The brand is fully legible, but it appears as a secondary/background perimeter LED board rather than a foreground close-up. Exact scorebug game clock was not persisted frame-by-frame in metadata; using the overlapping game-state segment start clock (47:14) from the on-screen broadcast state.",
+        "moments_count": 1,
+        "name": "AVATRADE",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 12
+      },
+      {
+        "name": "Aabar",
+        "appearances": [
+          {
+            "start_sec": 636.0,
+            "end_sec": 644.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.83,
+            "context": "other",
+            "description": "Stoppage sequence with Aabar visible on perimeter LED boards",
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 2816.0,
+            "end_sec": 2823.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.83,
+            "context": "wide_shot",
+            "description": "Wide shot of live play with Aabar visible on perimeter LED boards",
+            "game_clock": "46:56",
+            "period": "stoppage",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 2823.0,
+            "end_sec": 2825.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.83,
+            "context": "other",
+            "description": "Aabar LED visible on perimeter boards",
+            "game_clock": "47:03",
+            "period": "stoppage",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 3042.0,
+            "end_sec": 3052.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.83,
+            "context": "wide_shot",
+            "description": "Wide shot of live play with Aabar visible on perimeter LED boards",
+            "game_clock": "50:42",
+            "period": "second half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led"
+        ],
+        "legibility_notes": "All detected Aabar exposures are fully legible but small/background, with one early first-half clip having ambiguous scorebug timing in metadata so game_clock is left blank.",
+        "moments_count": 4,
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 27
+      },
+      {
+        "appearances": [
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.76,
+            "context": "close_up",
+            "description": "Abu Dhabi is visible on the Manchester City player's sleeve patch during a close-up; text is only partly readable because of motion and angle.",
+            "end_sec": 599,
+            "game_clock": "18:35",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 595,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          }
+        ],
+        "asset_types": [
+          "jersey_patch"
+        ],
+        "legibility_notes": "Only one Abu Dhabi exposure was identified in this broadcast. It appears on a player sleeve patch and is partially legible due to player movement, angle, and brief close-up duration. No confirmed fully legible perimeter-board or other-surface Abu Dhabi exposure was found in the analyzed evidence.",
+        "moments_count": 1,
+        "name": "Abu Dhabi",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 4
+      },
+      {
+        "name": "Acronis",
+        "appearances": [
+          {
+            "start_sec": 318.0,
+            "end_sec": 328.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "replay",
+            "description": "A slow-motion replay of the foul. Fernandinho is seen chasing the ball and then jumping into a challenge with Robertson. His hand clearly makes contact with Robertson's head as they collide. Robertson falls immediately. Acronis appears on rotating perimeter LED boards.",
+            "game_clock": "05:18",
+            "period": "first half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 328.0,
+            "end_sec": 333.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "replay",
+            "description": "Another replay angle of the foul, showing the intensity of the collision from a different perspective. Fernandinho's aggressive challenge is highlighted as he catches Robertson's head with his arm/hand. Acronis appears on rotating perimeter LED boards.",
+            "game_clock": "05:28",
+            "period": "first half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 1634.0,
+            "end_sec": 1720.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "wide_shot",
+            "description": "Manchester City continues their patient build-up. Ederson is heavily involved, receiving the ball and passing it to his defenders. John Stones and Fernandinho are also key figures in this phase of play. Liverpool goalkeeper Alisson Becker makes a long clearance, which is intercepted by Danilo. The segment ends with City still in possession, building slowly from the back. Acronis appears on rotating perimeter LED boards.",
+            "game_clock": "27:14",
+            "period": "first half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 4631.0,
+            "end_sec": 4639.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "wide_shot",
+            "description": "A wide shot of a Liverpool attack. The ball is played into the box for Sadio Mané, but his touch is heavy, and the chance is lost. Manchester City's defense clears the ball. Perimeter boards for Acronis are visible. Acronis appears on rotating perimeter LED boards.",
+            "game_clock": "01:17:11",
+            "period": "second half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "start_sec": 4855.0,
+            "end_sec": 4874.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "wide_shot",
+            "description": "The final wide shot of the segment. The game is very open now, with both teams attacking. The atmosphere in the stadium is electric. Perimeter boards for Acronis and AvaTrade are visible. Acronis appears on rotating perimeter LED boards.",
+            "game_clock": "01:20:55",
+            "period": "second half",
+            "placement": "secondary",
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          }
+        ],
+        "asset_types": [
+          "courtside_led"
+        ],
+        "legibility_notes": "Fully legible in all detected moments; always secondary/background on rotating perimeter LED boards.",
+        "moments_count": 5,
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 128.0
       }
     ],
     "summary": ""

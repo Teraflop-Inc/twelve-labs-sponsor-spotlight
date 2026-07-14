@@ -162,3 +162,42 @@ export function fmtMoney(n: number): string {
   if (Math.abs(n) >= 1000) return "$" + Math.round(n).toLocaleString()
   return "$" + n.toFixed(0)
 }
+
+/** Parse a scorebug clock ("23:31" or "01:07:34") to whole match minutes. */
+function clockMinutes(clock?: string): number | null {
+  if (!clock) return null
+  const p = clock.trim().split(":").map(Number)
+  if (p.some((n) => !isFinite(n))) return null
+  const mins = p.length === 3 ? p[0] * 60 + p[1] + p[2] / 60 : p.length === 2 ? p[0] + p[1] / 60 : NaN
+  return isFinite(mins) ? Math.floor(mins) : null
+}
+
+/**
+ * Human match time from the scorebug `period` + `game_clock`, e.g.
+ * "2nd half · 67'" or "1st half · 45+2'". Soccer clocks count up continuously,
+ * so `period` disambiguates stoppage: >45 in the 1st half is 45+X, >90 in the
+ * 2nd half is 90+X. Non-play periods return a plain label.
+ */
+export function formatGameTime(period?: string, clock?: string): string {
+  const p = (period || "").toLowerCase()
+  if (p.startsWith("pre")) return "Pre-game"
+  if (p.startsWith("post")) return "Post-game"
+  if (p === "halftime" || p === "half-time" || p === "half time") return "Half-time"
+
+  const min = clockMinutes(clock)
+  const first = p.includes("first") || p === "1st half"
+  const second = p.includes("second") || p === "2nd half"
+  const stoppage = p.includes("stoppage")
+  const label = first ? "1st half" : second ? "2nd half" : period ? period : ""
+  if (min == null) return label
+
+  let m: string
+  if (second || (stoppage && min >= 46)) {
+    m = min > 90 ? `90+${min - 90}'` : `${min}'`
+  } else if (first || stoppage) {
+    m = min > 45 ? `45+${min - 45}'` : `${min}'`
+  } else {
+    m = `${min}'`
+  }
+  return label ? `${label} · ${m}` : m
+}

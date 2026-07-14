@@ -3,1639 +3,1414 @@
   "inventory": {
     "brands": [
       {
-        "name": "Nike",
         "appearances": [
           {
             "asset_type": "courtside_led",
+            "confidence": 0.84,
+            "context": "other",
+            "description": "Rotating perimeter LED board along the pitch shows Nike branding in the background during open play.",
+            "end_sec": 680,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 665,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.84,
+            "context": "other",
+            "description": "Nike returns on the rotating perimeter LED board; background exposure during live action.",
+            "end_sec": 821,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 807,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.88,
+            "context": "wide_shot",
+            "description": "Nike swoosh visible as a kit manufacturer logo on a player kit in-frame.",
+            "end_sec": 2388,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 2384,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.74,
+            "context": "close_up",
+            "description": "Brief Nike swoosh visibility on kit apparel during a stoppage.",
+            "end_sec": 2680,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2677,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.65,
+            "context": "close_up",
+            "description": "Very brief Nike kit-logo exposure during a stoppage shot.",
+            "end_sec": 4714,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4713,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
             "confidence": 0.9,
             "context": "other",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 1395.0,
-            "start_sec": 1386.0,
+            "description": "Rotating perimeter LED board carries Nike branding during a break in play.",
+            "end_sec": 4741,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4728,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "other",
-            "confidence": 0.68,
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
+            "context": "replay",
+            "description": "Nike branding remains visible on the perimeter LED board during replay coverage.",
+            "end_sec": 4753,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4746,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
             "context": "other",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 1541.0,
-            "start_sec": 1527.0,
+            "description": "Nike branding appears again on the rotating perimeter LED board in live match coverage.",
+            "end_sec": 5313,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5302,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "other",
+            "asset_type": "courtside_led",
             "confidence": 0.83,
+            "context": "other",
+            "description": "Short continuation of Nike perimeter-board exposure.",
+            "end_sec": 5317,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5313,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.82,
+            "context": "other",
+            "description": "Another brief Nike hit on the rotating sideline LED board.",
+            "end_sec": 5335,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5331,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "other",
+            "description": "Nike perimeter LED board visible during a late stoppage sequence.",
+            "end_sec": 5376,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5371,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.91,
             "context": "close_up",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 2385.0,
-            "start_sec": 2384.0,
+            "description": "Extended close-up of Nike swoosh as kit manufacturer logo on player/goalkeeper apparel during stoppage.",
+            "end_sec": 5402,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 5376,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "other",
-            "confidence": 0.83,
+            "confidence": 0.86,
             "context": "other",
-            "description": "Nike branding visible briefly in frame",
-            "end_sec": 2974.0,
-            "start_sec": 2963.0,
+            "description": "Nike swoosh visible on kit apparel during live play.",
+            "end_sec": 5481,
+            "game_clock": "",
+            "period": "stoppage",
+            "placement": "primary",
+            "start_sec": 5477,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
-            "confidence": 0.98,
+            "confidence": 0.81,
             "context": "other",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 4070.0,
-            "start_sec": 4062.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4434.0,
-            "start_sec": 4432.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4458.0,
-            "start_sec": 4455.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4472.0,
-            "start_sec": 4469.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4478.0,
-            "start_sec": 4472.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4519.0,
-            "start_sec": 4515.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4522.0,
-            "start_sec": 4519.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4537.0,
-            "start_sec": 4533.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4625.0,
-            "start_sec": 4623.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4630.0,
-            "start_sec": 4628.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4648.0,
-            "start_sec": 4639.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4653.0,
-            "start_sec": 4648.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Nike kit manufacturer logo visible on player apparel",
-            "end_sec": 4657.0,
-            "start_sec": 4653.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.68,
-            "context": "other",
-            "description": "Nike branding visible briefly in frame",
-            "end_sec": 4744.0,
-            "start_sec": 4741.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.68,
-            "context": "other",
-            "description": "Nike branding visible briefly in frame",
-            "end_sec": 4830.0,
-            "start_sec": 4821.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.68,
-            "context": "replay",
-            "description": "Nike branding visible briefly in frame",
-            "end_sec": 4853.0,
-            "start_sec": 4842.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "other",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 5318.0,
-            "start_sec": 5302.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "other",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 5376.0,
-            "start_sec": 5372.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "other",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 5477.0,
-            "start_sec": 5454.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "other",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 5553.0,
-            "start_sec": 5511.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "score",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 5585.0,
-            "start_sec": 5579.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "replay",
-            "description": "Nike visible on rotating pitchside LED board",
-            "end_sec": 5596.0,
-            "start_sec": 5588.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Nike branding visible briefly in frame",
-            "end_sec": 5894.0,
-            "start_sec": 5893.0,
+            "description": "Final detected Nike exposure on the rotating perimeter LED board late in the broadcast.",
+            "end_sec": 5574,
+            "game_clock": "",
+            "period": "stoppage",
+            "placement": "secondary",
+            "start_sec": 5570,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           }
         ],
         "asset_types": [
-          "kit_manufacturer_logo",
-          "other",
-          "perimeter_led_board"
+          "courtside_led",
+          "other"
         ],
-        "legibility_notes": "Non-fully-legible moments include a partially legible kit_manufacturer_logo around 1527-1541s, several partially legible 'other' background glimpses around 4741-4853s, and a mostly legible close-up kit logo at 2384-2385s.",
-        "moments_count": 27,
-        "outside_whistle_to_whistle_seconds": 0.0,
-        "total_seconds": 213.0
+        "legibility_notes": "Nike is often small or fleeting in this broadcast. Perimeter-board hits are usually background exposures on rotating LED inventory; several kit-logo detections are brief and partially obscured by player movement or camera distance. I could not reliably read a clean scorebug clock for these Nike moments, so game_clock is left blank.",
+        "moments_count": 14,
+        "name": "Nike",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 115
       },
       {
         "appearances": [
           {
             "asset_type": "broadcast_overlay",
-            "confidence": 0.88,
-            "context": "other",
-            "description": "Hublot appears on a broadcast graphic during a Manchester United counter-attack.",
-            "end_sec": 1002,
-            "start_sec": 990,
+            "confidence": 0.94,
+            "context": "wide_shot",
+            "description": "Hublot appears in the scorebug during early live play as the camera follows midfield action.",
+            "end_sec": 134,
+            "game_clock": "01:52",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 112,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.87,
-            "context": "close_up",
-            "description": "Hublot branding is visible on a broadcast graphic during a close-up of Liverpool manager Arne Slot on the touchline.",
-            "end_sec": 1613,
-            "start_sec": 1607,
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "wide_shot",
+            "description": "Rotating perimeter LED boards show Hublot while Liverpool circulate possession against a deep Manchester United block.",
+            "end_sec": 409,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 401,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "wide_shot",
+            "description": "Hublot continues on rotating perimeter LED boards during sustained Liverpool pressure.",
+            "end_sec": 436,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 409,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.9,
             "context": "other",
-            "description": "Hublot is visible on the perimeter LED boards as Manchester United try to break forward and Bruno Fernandes loses possession.",
-            "end_sec": 2228,
-            "start_sec": 2214,
+            "description": "Hublot is visible on the perimeter LED boards as Manchester United prepare to take a free kick.",
+            "end_sec": 1007,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1002,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "broadcast_overlay",
-            "confidence": 0.91,
+            "confidence": 0.88,
+            "context": "close_up",
+            "description": "A Hublot broadcast graphic is visible during a medium touchline shot of Arne Slot.",
+            "end_sec": 1614,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1608,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.93,
             "context": "other",
-            "description": "Hublot appears on the on-screen scoreboard graphic while Amad Diallo stumbles in the box and Liverpool clear.",
+            "description": "The scorebug carries HUBLOT during a free-kick sequence that ends with an offside whistle.",
+            "end_sec": 2356,
+            "game_clock": "39:09",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2349,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.92,
+            "context": "other",
+            "description": "Hublot appears in the added-time graphic when '+2' minutes is shown on screen.",
+            "end_sec": 2728,
+            "game_clock": "43:31",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2720,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.94,
+            "context": "wide_shot",
+            "description": "Hublot remains in the scorebug during live play after 45:00.",
+            "end_sec": 3005,
+            "game_clock": "45:05",
+            "period": "stoppage",
+            "placement": "secondary",
+            "start_sec": 2974,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.88,
+            "context": "wide_shot",
+            "description": "HUBLOT is visible in the scorebug/scoreboard advert during a wide live-play sequence with Dalot crossing and Diallo slipping.",
             "end_sec": 3278,
-            "start_sec": 3273,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3272,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "other",
-            "confidence": 0.94,
+            "confidence": 0.97,
             "context": "other",
-            "description": "Hublot branding is clearly visible on the electronic substitution board as Darwin Nunez prepares to enter.",
+            "description": "Hublot branding is prominently shown on the substitution board for Liverpool's change involving Darwin Nunez and Luis Diaz.",
             "end_sec": 3865,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
             "start_sec": 3858,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "broadcast_overlay",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Hublot branding is shown on a broadcast graphic during open play as Liverpool attack down the right.",
-            "end_sec": 3929,
+            "confidence": 0.9,
+            "context": "wide_shot",
+            "description": "Hublot is visible again in the scorebug/scoreboard advert after play resumes.",
+            "end_sec": 3945,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
             "start_sec": 3891,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "courtside_led",
-            "confidence": 0.89,
+            "asset_type": "other",
+            "confidence": 0.97,
             "context": "other",
-            "description": "Hublot is visible on the perimeter LED boards during a Liverpool attacking phase.",
-            "end_sec": 4515,
-            "start_sec": 4502,
+            "description": "Hublot branding is clearly visible on the substitution board during Manchester United's change with Garnacho coming on for Mainoo.",
+            "end_sec": 4547,
+            "game_clock": "75:37",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 4537,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "other",
-            "confidence": 0.96,
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "A Hublot graphic appears at top right during a wide-angle replay of Amad Diallo's goal sequence.",
+            "end_sec": 5085,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5071,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.91,
+            "context": "close_up",
+            "description": "Hublot appears in the '+7' stoppage-time broadcast graphic during a close-up of Onana and Mac Allister.",
+            "end_sec": 5681,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5675,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "Hublot is visible in the replay graphic during a slow-motion replay of Maguire's missed late chance.",
+            "end_sec": 6101,
+            "game_clock": "",
+            "period": "stoppage",
+            "placement": "secondary",
+            "start_sec": 6083,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          }
+        ],
+        "asset_types": [
+          "broadcast_overlay",
+          "courtside_led",
+          "other"
+        ],
+        "legibility_notes": "All detected Hublot exposures were tagged as fully legible in metadata. A few overlay instances are small/secondary, and several game-clock readings were not recoverable from metadata with certainty, so those fields are left blank rather than guessed.",
+        "moments_count": 15,
+        "name": "Hublot",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 229
+      },
+      {
+        "name": "Barclays",
+        "appearances": [
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.98,
+            "context": "pregame",
+            "description": "An animated graphic for 'Official banking partner BARCLAYS STARTING LINEUPS'.",
+            "end_sec": 11.0,
+            "game_clock": "",
+            "period": "pregame",
+            "placement": "primary",
+            "start_sec": 9.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.88,
+            "context": "pregame",
+            "description": "A detailed graphic showing Liverpool's 4-3-3 formation and starting lineup, including substitutes and head coach Arne Slot.",
+            "end_sec": 58.0,
+            "game_clock": "",
+            "period": "pregame",
+            "placement": "secondary",
+            "start_sec": 12.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.88,
             "context": "other",
-            "description": "Hublot branding dominates the substitution board as Alejandro Garnacho prepares to come on for Manchester United.",
-            "end_sec": 4547,
-            "start_sec": 4537,
+            "description": "Salah continues his walk back to the center circle. He is still being cheered by the fans. A graphic appears on the screen showing his goal statistics for the season.",
+            "end_sec": 4485.0,
+            "game_clock": "74:38",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4478.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          }
+        ],
+        "asset_types": [
+          "broadcast_overlay"
+        ],
+        "legibility_notes": "All detected Barclays exposures are fully legible in the enrichment. Two lineup/stat graphics are tagged as secondary/background placements, and no Barclays field-side signage was detected in the metadata for this broadcast.",
+        "moments_count": 3,
+        "outside_whistle_to_whistle_seconds": 48.0,
+        "total_seconds": 55.0
+      },
+      {
+        "name": "GEICO",
+        "appearances": [
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A close-up shot of Kobbie Mainoo on the ground with medical staff. He appears to have a head injury. GEICO visible as a broadcast graphic.",
+            "end_sec": 178.0,
+            "game_clock": "02:51",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 171.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Medical staff continue to treat Kobbie Mainoo on the pitch. Bruno Fernandes and other players are standing nearby, looking concerned. The referee, Michael Oliver, is also present. GEICO visible as a broadcast graphic.",
+            "end_sec": 198.0,
+            "game_clock": "03:06",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 186.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A shot of Manchester United manager Ruben Amorim on the bench, watching the situation on the pitch. GEICO visible as a broadcast graphic.",
+            "end_sec": 206.0,
+            "game_clock": "03:18",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 198.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Medical staff continue to attend to Kobbie Mainoo. Lisandro Martinez and Bruno Fernandes are close by. GEICO visible as a broadcast graphic.",
+            "end_sec": 223.0,
+            "game_clock": "03:26",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 206.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "A close-up shot of Ruben Amorim on the touchline. GEICO visible as a broadcast graphic.",
+            "end_sec": 227.0,
+            "game_clock": "03:43",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 223.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Harry Maguire and Bruno Fernandes are seen talking on the pitch during the stoppage. GEICO visible as a broadcast graphic.",
+            "end_sec": 234.0,
+            "game_clock": "03:47",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 227.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Ruben Amorim is seen again on the touchline, looking down. GEICO visible as a broadcast graphic.",
+            "end_sec": 241.0,
+            "game_clock": "03:54",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 234.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "other",
+            "description": "Kobbie Mainoo is able to walk off the pitch, accompanied by the medical staff. He looks a bit dazed but is on his feet. GEICO visible as a broadcast graphic.",
+            "end_sec": 254.0,
+            "game_clock": "04:01",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 241.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "wide_shot",
+            "description": "Play resumes with a wide shot of the pitch. The ball is moved around as both teams try to regain their rhythm after the long stoppage. GEICO visible as a broadcast graphic.",
+            "end_sec": 294.0,
+            "game_clock": "04:14",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 254.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "wide_shot",
+            "description": "The shot opens with a wide view of the pitch at Anfield. Manchester United is in possession, with Diogo Dalot receiving the ball on the right flank. He looks to advance as Liverpool players press him. The crowd is visible in the background, and the on-screen scorebug shows LIV 0-0 MU at 3:05. Sponsors like GEICO and KODANSHA are visible on the perimeter boards. GEICO visible as a broadcast graphic.",
+            "end_sec": 301.0,
+            "game_clock": "04:54",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 294.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          }
+        ],
+        "asset_types": [
+          "broadcast_overlay"
+        ],
+        "legibility_notes": "All detected GEICO exposures are fully legible but consistently secondary/background, mostly via broadcast graphic overlays during a first-half injury stoppage and subsequent restart, and no pregame/halftime/postgame GEICO exposure was detected in the metadata evidence.",
+        "moments_count": 10,
+        "outside_whistle_to_whistle_seconds": 0.0,
+        "total_seconds": 122.0
+      },
+      {
+        "name": "Kodansha",
+        "appearances": [
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: A long shot of a dangerous Liverpool attack. Mohamed Salah receives the ball on the right, cuts inside, and passes to Trent Alexander-Arnold. Alexander-Arnold's shot is blocked, and the rebound falls to Luis Diaz, whose shot is also blocked by the Manchester United defense. Perimeter boards show 'Strauss', 'Orion', and 'Kodansha' branding.",
+            "end_sec": 881.0,
+            "game_clock": "14:31",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 871.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.88,
             "context": "other",
-            "description": "Hublot appears on the perimeter LED boards during a midfield duel.",
-            "end_sec": 4581,
-            "start_sec": 4573,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.86,
-            "context": "other",
-            "description": "Hublot remains visible on the perimeter LED boards during an aerial challenge.",
-            "end_sec": 4601,
-            "start_sec": 4597,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.82,
-            "context": "replay",
-            "description": "Hublot appears on the scoreboard graphic during a wide-angle replay of the goal sequence.",
-            "end_sec": 5085,
-            "start_sec": 5072,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Hublot branding is prominently visible on the substitution board during a touchline substitution sequence with both managers in frame.",
-            "end_sec": 5402,
-            "start_sec": 5376,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          }
-        ],
-        "asset_types": [
-          "broadcast_graphic",
-          "perimeter_led_board",
-          "scoreboard_ad",
-          "substitution_board_branding"
-        ],
-        "legibility_notes": "All identified Hublot appearances in metadata are marked fully_legible. One replay scoreboard exposure (5072-5085) is less prominent/small in frame, but still legible.",
-        "moments_count": 12,
-        "name": "Hublot",
-        "outside_whistle_to_whistle_seconds": 0,
-        "total_seconds": 156
-      },
-      {
-        "name": "Expedia",
-        "appearances": [
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "A wide shot of the pitch as Liverpool takes possession of the ball. The commentator mentions the inclusion of Ibrahima Konate and Virgil van Dijk in the Liverpool starting lineup. Expedia branding is visible on the perimeter LED boards.",
-            "end_sec": 318.0,
-            "start_sec": 307.0,
+            "description": "Kodansha visible on rotating perimeter LED boards during: Manchester United players form a wall as Liverpool prepares to take a free kick from a dangerous position.",
+            "end_sec": 1418.0,
+            "game_clock": "23:34",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1414.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.93,
-            "context": "other",
-            "description": "A medium shot of Diogo Dalot dribbling the ball down the right wing. He is being tracked by Liverpool's Curtis Jones.",
-            "end_sec": 324.0,
-            "start_sec": 318.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "Another replay angle of the missed chance, this time from a lower perspective near the goal. It shows how close the ball came to the post and Onana's attempt to cover the angle.",
-            "end_sec": 955.0,
-            "start_sec": 949.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up shot of Ibrahima Konate reacting after his crucial block. He touches his face and looks relieved, acknowledging the importance of his defensive intervention.",
-            "end_sec": 1527.0,
-            "start_sec": 1518.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up shot of Alisson Becker holding the ball and looking for options to distribute it quickly. Rasmus Hojlund is nearby.",
-            "end_sec": 1570.0,
-            "start_sec": 1565.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "other",
-            "description": "A wide shot of the pitch. Liverpool regains possession and continues to probe the Manchester United defense. A broadcast graphic shows possession statistics and shots on goal, highlighting Liverpool's dominance. Trent Alexander-Arnold and Andy Robertson are involved in the build-up.",
-            "end_sec": 1736.0,
-            "start_sec": 1658.0,
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: The match is in progress at Anfield. Manchester United is leading 1-0. Liverpool is trying to build an attack from the back. Trent Alexander-Arnold has the ball and looks for a pass. The camera pans as the ball is played into the midfield.",
+            "end_sec": 3546.0,
+            "game_clock": "58:54",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3534.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.93,
-            "context": "close_up",
-            "description": "A close-up shot of Trent Alexander-Arnold as he controls the ball near the touchline. Bruno Fernandes is seen tracking him. Expedia branding is visible in the background.",
-            "end_sec": 2075.0,
-            "start_sec": 2073.0,
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: The ball falls to Mohamed Salah on the edge of the penalty area. He controls it with his chest and looks to create a shooting opportunity as defenders close in.",
+            "end_sec": 4140.0,
+            "game_clock": "68:44",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4138.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.93,
-            "context": "other",
-            "description": "A wide shot showing Liverpool passing the ball in the midfield area. The camera pans to follow the ball's movement. Expedia and 'Made to Travel' branding is prominent on the boards.",
-            "end_sec": 2088.0,
-            "start_sec": 2075.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "Another close-up of Alexis Mac Allister as he continues to walk back, looking down at the pitch in disappointment.",
-            "end_sec": 2398.0,
-            "start_sec": 2396.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up of Andrew Robertson looking towards the center of the pitch, assessing the tactical situation.",
-            "end_sec": 2439.0,
-            "start_sec": 2434.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up shot from behind Andrew Robertson, clearly showing his name and the number '26' on the back of his Liverpool jersey.",
-            "end_sec": 2442.0,
-            "start_sec": 2439.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up of Andrew Robertson as he prepares to take a throw-in. He is seen drying the ball with his jersey to ensure a good grip.",
-            "end_sec": 2475.0,
-            "start_sec": 2465.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up of Lisandro Martinez lying on the pitch after a heavy challenge. He appears to be in some pain as he waits for the referee's whistle.",
-            "end_sec": 2512.0,
-            "start_sec": 2508.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up of Alisson Becker adjusting his gloves and looking focused. A broadcast graphic shows Rasmus Højlund's stats for the season.",
-            "end_sec": 2685.0,
-            "start_sec": 2680.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Manchester United builds an attack from the back. The camera pans as the ball is moved through the midfield. An Expedia advertisement is visible on the perimeter LED board. United players are patient, looking for a gap in the Liverpool defense.",
-            "end_sec": 3335.0,
-            "start_sec": 3296.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Diogo Dalot (MU #20) receives the ball on the right wing and sends a cross into the Liverpool penalty area. The camera pans to follow the flight of the ball. Liverpool defenders are well-positioned to deal with the threat.",
-            "end_sec": 3342.0,
-            "start_sec": 3335.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Virgil van Dijk (LIV #4) heads the ball clear for Liverpool. The camera pans as the ball is cleared out of the box. Manchester United players immediately look to regain possession and sustain the pressure.",
-            "end_sec": 3348.0,
-            "start_sec": 3342.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Manchester United regains possession in the midfield. The camera pans as they quickly transition into an attack. The Liverpool defense is momentarily stretched as United players move into advanced positions.",
-            "end_sec": 3356.0,
-            "start_sec": 3348.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "score",
-            "description": "GOAL! Lisandro Martinez (MU #6) scores for Manchester United. He receives a clever reverse pass from Bruno Fernandes (MU #8) and finishes clinically past the Liverpool goalkeeper. The camera pans to follow the ball into the net and then captures the immediate celebration. The scoreboard updates to LIV 0 - 1 MU at 51:28.",
-            "end_sec": 3362.0,
-            "start_sec": 3356.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "A replay of the build-up to the goal. The camera pans as Manchester United moves the ball quickly through the midfield. The technical skill and vision of the United players are highlighted in this slow-motion sequence.",
-            "end_sec": 3436.0,
-            "start_sec": 3410.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "A slow-motion replay of the goal itself. The camera pans to follow the ball as it is passed from Bruno Fernandes to Lisandro Martinez, who then strikes it into the net. The precision of the pass and the finish are clearly visible.",
-            "end_sec": 3447.0,
-            "start_sec": 3436.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "Another replay of the goal from a different angle, behind the goal. The camera pans as the ball flies into the top corner of the net. This angle emphasizes the power and accuracy of Martinez's shot.",
-            "end_sec": 3453.0,
-            "start_sec": 3447.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "A wide shot of the pitch as both teams prepare to restart the match. The camera pans across the field, showing the players in their positions. The atmosphere in the stadium is still buzzing after the goal, and the anticipation for the rest of the match is high.",
-            "end_sec": 3534.0,
-            "start_sec": 3518.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "A medium shot tracking Cody Gakpo as he celebrates the goal being awarded. He turns, walks back towards his own half, and raises his hand in a salute to the crowd.",
-            "end_sec": 3858.0,
-            "start_sec": 3842.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "A medium shot showing Curtis Jones coming off the pitch and high-fiving manager Arne Slot.",
-            "end_sec": 3882.0,
-            "start_sec": 3878.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "replay",
-            "description": "A replay showing a medium shot of Ibrahima Konate's crucial clearance, getting to the ball just ahead of Harry Maguire and Rasmus Hojlund.",
-            "end_sec": 4039.0,
-            "start_sec": 4028.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Salah walks back towards the center circle, acknowledging the crowd. He looks focused and determined.",
-            "end_sec": 4452.0,
-            "start_sec": 4440.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Salah gets up and continues to walk back, still being congratulated by teammates and fans.",
-            "end_sec": 4461.0,
-            "start_sec": 4458.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "celebration",
-            "description": "Salah continues walking back, and a graphic appears on screen showing his goal statistics for the season.",
-            "end_sec": 4486.0,
-            "start_sec": 4478.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Alexander-Arnold walks back onto the pitch, still wiping snow off his kit. He looks focused on the game.",
-            "end_sec": 4533.0,
-            "start_sec": 4522.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.9,
-            "context": "other",
-            "description": "The match resumes with a goal kick from Onana. The camera pans as the ball is played into the midfield, where both teams battle for possession.",
-            "end_sec": 4768.0,
-            "start_sec": 4761.0,
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: Salah passes the ball back to Andrew Robertson on the left wing. Robertson controls the ball and prepares to cross it back into the box.",
+            "end_sec": 4143.0,
+            "game_clock": "68:44",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4140.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.93,
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: Robertson crosses the ball into the penalty area, but it is again cleared by the Manchester United defense. The ball travels towards the midfield.",
+            "end_sec": 4148.0,
+            "game_clock": "68:44",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4143.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.88,
             "context": "other",
-            "description": "A wide shot of the pitch at Anfield. Liverpool players in red and Manchester United players in white are positioned across the field. The camera pans right as play develops in the midfield. The scoreboard shows Liverpool leading 2-1 in the 79th minute.",
-            "end_sec": 5013.0,
-            "start_sec": 5007.0,
+            "description": "Kodansha visible on rotating perimeter LED boards during: A wide shot showing the setup for the free kick. The wall is in place, and players are positioned in the box. The referee is ready to blow his whistle. The crowd is silent in anticipation.",
+            "end_sec": 4696.0,
+            "game_clock": "78:05",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4685.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
-            "confidence": 0.93,
+            "confidence": 0.88,
             "context": "other",
-            "description": "Liverpool's Ibrahima Konate attempts to head the ball away, but it falls to Alejandro Garnacho. Garnacho controls the ball and begins a rapid run down the right flank, pursued by Konate.",
-            "end_sec": 5026.0,
-            "start_sec": 5018.0,
+            "description": "Kodansha visible on rotating perimeter LED boards during: A final wide shot showing the wall and the players in the box as they wait for the free kick to be taken. The referee is about to blow his whistle. The tension is at its peak.",
+            "end_sec": 4713.0,
+            "game_clock": "78:25",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4705.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.93,
-            "context": "score",
-            "description": "Garnacho reaches the edge of the penalty area and delivers a low, precise cut-back across the face of the goal. Amad Diallo arrives at the far post and calmly slots the ball into the net past Alisson Becker. The Manchester United players begin to celebrate.",
-            "end_sec": 5032.0,
-            "start_sec": 5030.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "replay",
-            "description": "A replay from behind the goal, showing Diallo's finish from the perspective of the goalkeeper. The ball is seen hitting the back of the net.",
-            "end_sec": 5101.0,
-            "start_sec": 5097.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Trent throws the ball in, but Manchester United quickly regain possession and launch another counter-attack.",
-            "end_sec": 5146.0,
-            "start_sec": 5144.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Bruno Fernandes delivers the corner into the box. It is headed away by a Liverpool defender, but Manchester United maintain pressure.",
-            "end_sec": 5200.0,
-            "start_sec": 5195.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "A scramble for the ball ensues in the midfield. Mohamed Salah briefly gains possession for Liverpool, but he is quickly tackled and Manchester United win the ball back.",
-            "end_sec": 5215.0,
-            "start_sec": 5200.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Bruno Fernandes is in possession and is fouled by Trent Alexander-Arnold. The referee immediately blows his whistle and points for a free kick.",
-            "end_sec": 5220.0,
-            "start_sec": 5215.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Play resumes with the free kick. Manchester United players are positioned around the ball, while Liverpool set up their defensive wall.",
-            "end_sec": 5277.0,
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: Live play resumes. Manchester United attack down the right wing. Noussair Mazraoui is involved. The ball is eventually cleared by the Liverpool defense. The camera follows the action across the pitch.",
+            "end_sec": 5281.0,
+            "game_clock": "01:27:52",
+            "period": "second half",
+            "placement": "secondary",
             "start_sec": 5272.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.93,
-            "context": "other",
-            "description": "Bruno Fernandes delivers a dangerous free kick into the box. Harry Maguire rises highest and connects with a powerful header, but Alisson Becker makes a comfortable save.",
+            "context": "wide_shot",
+            "description": "Kodansha visible on rotating perimeter LED boards during: Bruno Fernandes delivers a cross into the box. Harry Maguire is the target, but the ball is cleared by the Liverpool defense. The camera follows the flight of the ball and the subsequent clearance.",
             "end_sec": 5285.0,
-            "start_sec": 5277.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "courtside_led",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "The final seconds of the video show Manchester United keeping possession in the Liverpool half, before a loose pass allows Liverpool to win the ball back and start a final attack.",
-            "end_sec": 5302.0,
-            "start_sec": 5289.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "close_up",
-            "description": "A close-up shot of Alisson Becker after his successful clearance. He looks focused and is seen organizing his defense for the next phase of play. Virgil van Dijk is also visible nearby.",
-            "end_sec": 5588.0,
-            "start_sec": 5585.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Robertson stands over the ball at the corner flag, adjusting his socks and looking into the penalty area. The Anfield crowd is visible in the background, creating a tense atmosphere.",
-            "end_sec": 5896.0,
-            "start_sec": 5894.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "A shot from behind Robertson as he looks towards the goal. The Manchester United defenders are seen positioning themselves in the box, ready to defend the corner.",
-            "end_sec": 5899.0,
-            "start_sec": 5897.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Gravenberch passes the ball out wide to a teammate, continuing Liverpool's build-up play. The camera follows the ball as it moves across the pitch.",
-            "end_sec": 5917.0,
-            "start_sec": 5915.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Elliott passes the ball to Alexis Mac Allister, who is positioned just outside the penalty area. The camera follows the ball as it moves between the Liverpool midfielders.",
-            "end_sec": 5930.0,
-            "start_sec": 5928.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Mac Allister passes the ball back to Gravenberch, as Liverpool continues to probe for an opening. The camera follows the ball as it moves back towards the midfield.",
-            "end_sec": 5932.0,
-            "start_sec": 5931.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Gravenberch plays a long ball towards the left wing, where Diogo Jota is waiting. The camera follows the flight of the ball as it travels across the pitch.",
-            "end_sec": 5936.0,
-            "start_sec": 5934.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Gravenberch looks disappointed as a Liverpool attack breaks down. He is seen shaking his head and looking down at the pitch, reflecting the frustration of the home side.",
-            "end_sec": 5965.0,
-            "start_sec": 5963.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "A shot of Andrew Robertson from behind as he walks back towards his own half. He is seen looking at his teammates and giving instructions, showing his leadership on the pitch.",
-            "end_sec": 5967.0,
-            "start_sec": 5965.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Robertson kicks the ball away in frustration after the foul is given. The referee is seen talking to him, warning him about his conduct.",
-            "end_sec": 6010.0,
-            "start_sec": 6007.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "A close-up shot of Robertson as he continues to complain to the referee. He is seen shaking his head and looking frustrated as the United players prepare for the free kick.",
-            "end_sec": 6016.0,
-            "start_sec": 6013.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Robertson walks away from the scene, still looking frustrated. He is seen talking to himself and shaking his head as he moves back into the defensive line.",
-            "end_sec": 6029.0,
-            "start_sec": 6027.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.98,
-            "context": "other",
-            "description": "Quansah passes the ball to a teammate, but it is intercepted by Joshua Zirkzee. The camera follows the ball as it is won by the United forward.",
-            "end_sec": 6063.0,
-            "start_sec": 6060.0,
+            "game_clock": "01:28:01",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5281.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           }
         ],
+        "asset_types": [
+          "courtside_led"
+        ],
+        "legibility_notes": "All detected Kodansha exposures were fully legible but appeared as secondary/background branding on rotating perimeter LED boards. The first row's narrative summary mentions 3:05, but the structured game_state_segment window is 04:54-05:01, so game_clock uses the structured game_state value.",
+        "moments_count": 10,
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 68.0
+      },
+      {
+        "name": "Expedia",
+        "total_seconds": 471.0,
+        "moments_count": 27,
+        "outside_whistle_to_whistle_seconds": 6.0,
         "asset_types": [
           "courtside_led",
-          "jersey_patch"
+          "jersey_patch",
+          "broadcast_overlay"
         ],
-        "legibility_notes": "Most exposures are fully legible, with reduced readability in the perimeter LED shots at 1658-1736 and 4761-4768 marked mostly_legible.",
-        "moments_count": 55,
-        "outside_whistle_to_whistle_seconds": 4.0,
-        "total_seconds": 458.0
-      },
-      {
         "appearances": [
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.87,
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "wide_shot",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 112.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 104.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
             "context": "close_up",
-            "description": "GEICO logo appears in the upper-left broadcast graphic during a touchline close-up of Ruben Amorim; briefly logo-only before the fuller sponsor message.",
-            "end_sec": 206,
-            "start_sec": 198,
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 142.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 139.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "wide_shot",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 329.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 307.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "wide_shot",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 972.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 961.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 1525.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1519.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 1779.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 1774.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "wide_shot",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 2103.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 2075.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "other",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 2329.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 2324.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.78,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 2388.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "primary",
+            "start_sec": 2384.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "replay",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 2671.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2663.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 2680.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2677.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 2712.0,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2709.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "broadcast_overlay",
-            "confidence": 0.92,
-            "context": "close_up",
-            "description": "GEICO / 'GET MORE WITH GEICO' branding remains in the upper-left broadcast graphic while play is stopped for Mainoo treatment.",
-            "end_sec": 215,
-            "start_sec": 206,
+            "confidence": 0.86,
+            "context": "other",
+            "description": "Expedia broadcast graphic/bug visible across live play, stoppages, and replay sequence",
+            "end_sec": 3518.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3296.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.92,
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
             "context": "close_up",
-            "description": "GEICO branding continues in the same upper-left broadcast graphic over another treatment-stoppage close-up.",
-            "end_sec": 223,
-            "start_sec": 215,
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 3563.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3552.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 3832.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3830.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 3842.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3841.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 3881.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3878.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 3970.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3962.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "broadcast_overlay",
             "confidence": 0.84,
-            "context": "close_up",
-            "description": "GEICO remains visible in broadcast graphics during a close-up of Amorim watching the stoppage.",
-            "end_sec": 227,
-            "start_sec": 223,
+            "context": "replay",
+            "description": "Expedia broadcast graphic visible during replay",
+            "end_sec": 4038.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 4028.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.84,
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
             "context": "close_up",
-            "description": "GEICO branding appears again in the broadcast overlay during another close-up of Amorim.",
-            "end_sec": 241,
-            "start_sec": 234,
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 4434.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4430.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "score",
-            "description": "GEICO logo is visible in the top-right scoreboard/scorebug during open play in a wide shot of the pitch.",
-            "end_sec": 301,
-            "start_sec": 294,
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "wide_shot",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 5026.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 5007.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 5069.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5066.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "wide_shot",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 5145.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 5132.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.8,
+            "context": "other",
+            "description": "Expedia rotating perimeter LED board visible around the pitch",
+            "end_sec": 5200.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 5185.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 5553.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5501.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.72,
+            "context": "close_up",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 5893.0,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 5892.0,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "jersey_patch",
+            "confidence": 0.7,
+            "context": "postgame",
+            "description": "Expedia logo visible on Liverpool shirt sleeve",
+            "end_sec": 6144.0,
+            "game_clock": "",
+            "period": "postgame",
+            "placement": "secondary",
+            "start_sec": 6138.0,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           }
         ],
-        "asset_types": [
-          "broadcast_overlay"
-        ],
-        "legibility_notes": "All detected GEICO appearances were fully legible in metadata. The only potentially less prominent exposures were the brief close-up overlays around 198-241s, but QA still found them clearly readable.",
-        "moments_count": 6,
-        "name": "GEICO",
-        "outside_whistle_to_whistle_seconds": 43,
-        "total_seconds": 43
+        "legibility_notes": "Several sleeve-patch exposures are brief and background-sized; the long Expedia broadcast-graphic run is clear but scorebug clock/period text was not reliably recoverable from the extracted metadata, so game_clock is left blank."
       },
       {
         "appearances": [
           {
             "asset_type": "courtside_led",
-            "confidence": 0.95,
+            "confidence": 0.92,
             "context": "wide_shot",
-            "description": "Google Pixel 9 branding visible on the perimeter LED boards during open play as Trent Alexander-Arnold takes a throw-in and Liverpool build possession.",
-            "end_sec": 361,
-            "start_sec": 353,
+            "description": "Rotating perimeter LED board shows Verizon during sustained Liverpool pressure.",
+            "end_sec": 436,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 409,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.89,
+            "context": "close_up",
+            "description": "Verizon visible on perimeter LED behind a brief referee shot during a stoppage.",
+            "end_sec": 438,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 436,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.92,
+            "context": "replay",
+            "description": "Replay begins with Amad Diallo on the ball; Verizon visible on rotating perimeter LED.",
+            "end_sec": 440,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 438,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.92,
+            "context": "replay",
+            "description": "Replay continues with Amad Diallo passing; Verizon remains visible on the LED boards.",
+            "end_sec": 444,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 440,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.91,
+            "context": "replay",
+            "description": "Replay of Alexis Mac Allister on the ball with Verizon still visible on perimeter LEDs.",
+            "end_sec": 446,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 444,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "Replay of Bruno Fernandes defending; Verizon remains visible on perimeter LED boards.",
+            "end_sec": 447,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 446,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "Wide replay shot of team shape with Verizon visible along the pitchside LEDs.",
+            "end_sec": 449,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 447,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.92,
+            "context": "wide_shot",
+            "description": "Live play resumes; Verizon visible on rotating perimeter LED as Liverpool attacks.",
+            "end_sec": 459,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 449,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.91,
+            "context": "wide_shot",
+            "description": "Salah's shot is blocked and the ball goes for a corner; Verizon visible on pitchside LEDs.",
+            "end_sec": 462,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 459,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "After the block, play stops and Verizon remains visible on the rotating perimeter LED.",
+            "end_sec": 464,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 462,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.89,
+            "context": "close_up",
+            "description": "Close-up of Harry Maguire with Verizon visible in the background on perimeter signage.",
+            "end_sec": 467,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 464,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
             "confidence": 0.88,
-            "context": "wide_shot",
-            "description": "Continuation of the same perimeter LED rotation showing Google Pixel 9 while Andy Robertson receives the ball and Liverpool advance.",
-            "end_sec": 365,
-            "start_sec": 361,
+            "context": "close_up",
+            "description": "Close-up of Mohamed Salah preparing for the corner; Verizon visible behind him.",
+            "end_sec": 468,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 467,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
             "asset_type": "courtside_led",
-            "confidence": 0.9,
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Players gather in the box for the corner; Verizon still visible on perimeter LEDs.",
+            "end_sec": 470,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 468,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.95,
             "context": "wide_shot",
-            "description": "Google Pixel branding appears on the perimeter LED boards during a midfield challenge between Noussair Mazraoui and Andrew Robertson before the referee stops play for a foul.",
-            "end_sec": 2776,
-            "start_sec": 2752,
+            "description": "Long live-play wide shot with Verizon rotating on perimeter LED boards.",
+            "end_sec": 663,
+            "game_clock": "8:00",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 589,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.66,
+            "context": "wide_shot",
+            "description": "Metadata flags a simultaneous Verizon-branded scorebug/overlay during the same long live-play shot.",
+            "end_sec": 663,
+            "game_clock": "8:00",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 589,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.87,
+            "context": "wide_shot",
+            "description": "Another long shot of play with Verizon visible on perimeter LED boards.",
+            "end_sec": 700,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 693,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.86,
+            "context": "wide_shot",
+            "description": "Repeat long shot of the pitch with Verizon visible again on perimeter signage.",
+            "end_sec": 840,
+            "game_clock": "",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 833,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.96,
+            "context": "other",
+            "description": "VAR graphic appears over split-screen of the managers with Verizon branding in the foreground.",
+            "end_sec": 3837,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 3836,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.96,
+            "context": "replay",
+            "description": "VAR replay sequence carries a prominent Verizon broadcast graphic.",
+            "end_sec": 3841,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 3837,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.95,
+            "context": "celebration",
+            "description": "Goal confirmation graphic remains Verizon-branded as Cody Gakpo starts celebrating.",
+            "end_sec": 3845,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "primary",
+            "start_sec": 3842,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.9,
+            "context": "replay",
+            "description": "Split-screen VAR review carries Verizon branding alongside replay angles and Michael Oliver at the monitor.",
+            "end_sec": 4331,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4315,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "confidence": 0.89,
+            "context": "other",
+            "description": "Verizon-branded review graphic remains on screen as the referee awards Liverpool a penalty.",
+            "end_sec": 4335,
+            "game_clock": "",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 4331,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           }
         ],
         "asset_types": [
-          "courtside_led"
-        ],
-        "legibility_notes": "Most exposures are readable. The 353–365s appearances render as fully legible 'Google Pixel 9' on the perimeter LED boards. The 2752–2776s appearance is only mostly legible rather than fully crisp.",
-        "moments_count": 3,
-        "name": "Google Pixel",
-        "outside_whistle_to_whistle_seconds": 0,
-        "total_seconds": 36
-      },
-      {
-        "name": "Lexus",
-        "total_seconds": 84.0,
-        "moments_count": 23,
-        "outside_whistle_to_whistle_seconds": 7.0,
-        "asset_types": [
+          "courtside_led",
           "broadcast_overlay"
         ],
+        "legibility_notes": "Stored sponsor_exposure detections mark Verizon as fully legible in all returned moments. Most pitchside-board exposures are secondary/background and brief; the only explicitly identified scorebug/overlay exposure is the 589-663s span, where metadata indicates a Verizon scorebug element but the exact wordmark styling should be treated with slightly lower confidence than the board and VAR-graphic hits.",
+        "moments_count": 22,
+        "name": "Verizon",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 177
+      },
+      {
         "appearances": [
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Mohamed Salah is dribbling the ball down the right wing. Diogo Dalot challenges him from behind, pulling him down and committing a foul. The camera pans to follow the action.",
-            "end_sec": 1474.0,
-            "start_sec": 1472.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.96,
+            "context": "replay",
+            "description": "Perimeter LED boards show Coca-Cola during a replay sequence as Amad Diallo passes the ball.",
+            "end_sec": 444,
+            "game_clock": "07:20",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 440,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot as the fourth official announces two minutes of stoppage time. A broadcast graphic with Lexus and Hublot branding appears on screen.",
-            "end_sec": 2818.0,
-            "start_sec": 2809.0,
+            "asset_type": "courtside_led",
+            "confidence": 0.96,
+            "context": "replay",
+            "description": "Coca-Cola remains visible on rotating perimeter LEDs during replay of Alexis Mac Allister on the ball.",
+            "end_sec": 446,
+            "game_clock": "07:24",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 444,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           },
           {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch at Anfield after a significant event. Players from both Liverpool and Manchester United are seen standing around, some looking dejected, others focused. The score is 2-2 in the 93rd minute. Andre Onana is visible in his green goalkeeper kit near the goal.",
-            "end_sec": 5892.0,
-            "start_sec": 5891.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Robertson delivers the corner kick into the box. Van Dijk rises highest to meet it with a header, but the ball is cleared away by Amad Diallo at the near post. The crowd roars as the ball is cleared.",
-            "end_sec": 5908.0,
-            "start_sec": 5905.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "The ball is played back into the Liverpool half as they regain possession. Players from both teams are seen moving across the pitch, adjusting their positions for the next phase of play.",
-            "end_sec": 5913.0,
-            "start_sec": 5911.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch as Liverpool continues to press for a winning goal. The Manchester United defense is sitting deep, trying to absorb the pressure and protect the draw.",
-            "end_sec": 5921.0,
-            "start_sec": 5917.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Liverpool works the ball into the final third, but a cross is blocked and goes out for a throw-in. The players quickly reset as they look to maintain the pressure on the United goal.",
-            "end_sec": 5925.0,
-            "start_sec": 5921.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch as Jota controls the ball on the left wing. He is immediately closed down by a United defender, but he manages to keep the ball in play.",
-            "end_sec": 5939.0,
-            "start_sec": 5936.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the penalty area as Maguire blocks Jota's shot. The ball is eventually cleared by the United defense, and the Liverpool players appeal for a handball, which is ignored by the referee.",
-            "end_sec": 5947.0,
-            "start_sec": 5945.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch as the match enters its final stages. The intensity is high, and every challenge is fiercely contested by both sets of players.",
-            "end_sec": 5960.0,
-            "start_sec": 5954.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch as the match enters the final minute of stoppage time. The crowd is on its feet, creating a deafening noise as they urge their team forward.",
-            "end_sec": 5982.0,
-            "start_sec": 5979.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Players from both teams are seen positioning themselves for a throw-in. The tension is high as every second counts in these final moments.",
-            "end_sec": 5985.0,
-            "start_sec": 5982.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch as Manchester United looks to launch one final attack. The Liverpool defense is well-organized and is trying to win the ball back.",
-            "end_sec": 5997.0,
-            "start_sec": 5990.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the pitch as the Manchester United players set up for the free kick. The Liverpool defenders are seen organizing themselves in the box, ready to defend the cross.",
-            "end_sec": 6035.0,
-            "start_sec": 6029.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "A wide shot of the free kick as Bruno Fernandes delivers the ball into the box. The camera follows the flight of the ball as it travels towards the penalty area.",
-            "end_sec": 6049.0,
-            "start_sec": 6046.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Maguire meets the free kick with a header, but it is cleared away by Virgil van Dijk. The ball is played back into the midfield, and the Liverpool players scramble to win it back.",
-            "end_sec": 6052.0,
-            "start_sec": 6049.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "The ball is played back into the Liverpool half as they regain possession. The players are seen moving across the pitch, looking for one final chance to win the game.",
-            "end_sec": 6055.0,
-            "start_sec": 6052.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Liverpool works the ball forward, but a pass is intercepted by a United defender. The players quickly reset as they look to win the ball back and launch another attack.",
-            "end_sec": 6058.0,
-            "start_sec": 6055.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "other",
-            "description": "Maguire receives the ball in the box and has a golden opportunity to win the game, but he misses the target. The ball goes wide of the post, and the United players are seen with their hands on their heads in disbelief.",
-            "end_sec": 6067.0,
-            "start_sec": 6065.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "postgame",
-            "description": "A wide shot of the pitch as the players from both teams react to the final whistle. The match has ended in a 2-2 draw, and the players are seen shaking hands and talking to each other.",
-            "end_sec": 6075.0,
-            "start_sec": 6073.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "postgame",
-            "description": "Players from both teams are seen walking off the pitch. The intensity of the match is over, and the players are seen reflecting on the result.",
-            "end_sec": 6078.0,
-            "start_sec": 6075.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "confidence": 0.95,
-            "context": "postgame",
-            "description": "The referee signals the end of the match. He is seen blowing his whistle and gesturing towards the center circle.",
-            "end_sec": 6080.0,
-            "start_sec": 6078.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "broadcast_overlay",
+            "asset_type": "courtside_led",
             "confidence": 0.95,
             "context": "replay",
-            "description": "A replay of Harry Maguire's missed chance in the final seconds of the match. The camera shows the build-up play and the moment Maguire takes the shot.",
-            "end_sec": 6092.0,
-            "start_sec": 6084.0,
+            "description": "Coca-Cola appears on the perimeter LED boards in replay as Bruno Fernandes defends.",
+            "end_sec": 447,
+            "game_clock": "07:26",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 446,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.96,
+            "context": "replay",
+            "description": "Wide replay shot of the pitch with Coca-Cola visible on rotating perimeter LED boards.",
+            "end_sec": 449,
+            "game_clock": "07:27",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 447,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.96,
+            "context": "other",
+            "description": "Live play resumes and Coca-Cola is visible on perimeter LED boards while Liverpool attack and Salah receives the ball.",
+            "end_sec": 459,
+            "game_clock": "07:29",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 449,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.96,
+            "context": "other",
+            "description": "Coca-Cola remains visible on perimeter LEDs as Salah's effort is blocked and the ball goes out for a corner.",
+            "end_sec": 462,
+            "game_clock": "07:39",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 459,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.97,
+            "context": "wide_shot",
+            "description": "Wide shot in a stoppage/set-piece setup shows Coca-Cola and 'Believing Is Magic' on the LED boards around the pitch.",
+            "end_sec": 2343,
+            "game_clock": "38:59",
+            "period": "first half",
+            "placement": "secondary",
+            "start_sec": 2339,
+            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
+          },
+          {
+            "asset_type": "courtside_led",
+            "confidence": 0.93,
+            "context": "other",
+            "description": "During second-half live play around the Liverpool box, Coca-Cola appears on rotating perimeter LED boards as the camera follows play.",
+            "end_sec": 4022,
+            "game_clock": "01:06:32",
+            "period": "second half",
+            "placement": "secondary",
+            "start_sec": 3992,
             "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
           }
         ],
-        "legibility_notes": "All detected Lexus appearances were fully legible in metadata."
-      },
-      {
-        "name": "Kia",
-        "total_seconds": 183.0,
-        "moments_count": 14,
-        "outside_whistle_to_whistle_seconds": 0,
         "asset_types": [
-          "broadcast_overlay",
           "courtside_led"
         ],
-        "appearances": [
-          {
-            "start_sec": 3006.0,
-            "end_sec": 3083.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of play. Liverpool continues to attack, moving the ball into the Manchester United half. Man Utd defends deep.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3093.0,
-            "end_sec": 3101.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of the pitch as Liverpool prepares for a corner kick. Players from both teams are positioning themselves in the box.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3114.0,
-            "end_sec": 3124.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of the corner kick being taken. The ball is delivered into the box, but it's cleared by the Manchester United defense.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3136.0,
-            "end_sec": 3150.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of another Liverpool corner. The ball is swung in, and there's a scramble in the box. André Onana eventually punches the ball clear.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3150.0,
-            "end_sec": 3162.0,
-            "asset_type": "broadcast_overlay",
-            "context": "replay",
-            "description": "Replay of the corner action, showing André Onana's punch and the subsequent scramble.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3162.0,
-            "end_sec": 3167.0,
-            "asset_type": "broadcast_overlay",
-            "context": "close_up",
-            "description": "Close-up of Manchester United manager Erik ten Hag on the touchline. He is shouting instructions and gesturing to his players.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3176.0,
-            "end_sec": 3185.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of play. Manchester United attempts a counter-attack. Diogo Dalot carries the ball forward down the right wing.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3191.0,
-            "end_sec": 3201.0,
-            "asset_type": "broadcast_overlay",
-            "context": "replay",
-            "description": "Wide shot of play. Replay of the Manchester United counter-attack and Van Dijk's intervention.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3201.0,
-            "end_sec": 3208.0,
-            "asset_type": "broadcast_overlay",
-            "context": "replay",
-            "description": "Replay of the challenge between Diogo Dalot and Virgil van Dijk from a different angle.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3221.0,
-            "end_sec": 3236.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of the Manchester United corner. The ball is delivered into the box, but Liverpool's defense clears it.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3236.0,
-            "end_sec": 3240.0,
-            "asset_type": "broadcast_overlay",
-            "context": "other",
-            "description": "Wide shot of play. Liverpool attempts to launch a quick counter-attack after clearing the corner.",
-            "confidence": 0.9,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3240.0,
-            "end_sec": 3242.0,
-            "asset_type": "courtside_led",
-            "context": "other",
-            "description": "A wide shot of the pitch at Anfield. Bruno Fernandes (MU #8) is positioned at the corner flag, preparing to take a corner kick. Players from both teams are clustered in the penalty area. The scoreboard shows LIV 0 - 0 MU at 49:27. A prominent Kia logo is visible on the perimeter LED board.",
-            "confidence": 0.95,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3242.0,
-            "end_sec": 3245.0,
-            "asset_type": "courtside_led",
-            "context": "other",
-            "description": "Bruno Fernandes takes the corner kick, sending the ball into the box. The camera pans to follow the ball's trajectory. Harry Maguire (MU #5) attempts to reach it, but the ball is cleared by a Liverpool defender. The play continues as the ball is headed out of the immediate danger zone.",
-            "confidence": 0.95,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "start_sec": 3245.0,
-            "end_sec": 3252.0,
-            "asset_type": "courtside_led",
-            "context": "other",
-            "description": "Manchester United regains possession outside the box. Kobbie Mainoo (MU #37) receives the ball and looks for an opening. The camera pans as he moves with the ball, surrounded by Liverpool players in red. The atmosphere in the stadium is tense.",
-            "confidence": 0.95,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          }
-        ],
-        "legibility_notes": "All detected Kia exposures were tagged fully_legible in metadata."
-      },
-      {
-        "name": "Adidas",
-        "appearances": [
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: Close-up of Lisandro Martínez sitting on the turf after a challenge. He looks focused.",
-            "end_sec": 135.0,
-            "start_sec": 134.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: Close-up of Kobbie Mainoo lying on the grass, holding his head. Liverpool players stand nearby.",
-            "end_sec": 178.0,
-            "start_sec": 171.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot of Manchester United manager Ruben Amorim on the touchline. He is seen drinking from a water bottle while observing the match intently. He appears focused and is likely considering tactical adjustments.",
-            "end_sec": 1935.0,
-            "start_sec": 1930.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot of André Onana as he strikes the goal kick. The power and technique of his kick are clearly visible. The ball travels high and long into the Liverpool half.",
-            "end_sec": 2054.0,
-            "start_sec": 2051.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.93,
-            "context": "celebration",
-            "description": "Adidas visible on training_kit_sponsor: A close-up shot of Manchester United manager Ruben Amorim celebrating on the touchline. He is pumping his fists and shouting in joy. The camera pans to capture his exuberant reaction to the goal. He looks incredibly proud of his team.",
-            "end_sec": 3506.0,
-            "start_sec": 3499.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot of Manchester United defender Lisandro Martinez. He is looking towards the field, appearing focused. The Adidas logo and Manchester United crest are clearly visible on his white jersey.",
-            "end_sec": 3553.0,
-            "start_sec": 3548.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot of Manchester United goalkeeper André Onana in his green kit, looking focused and adjusting his position in the goal as he prepares for the free kick.",
-            "end_sec": 4727.0,
-            "start_sec": 4721.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.78,
-            "context": "replay",
-            "description": "Adidas visible on kit_manufacturer_logo: A replay of the free kick from a low angle behind the goal, showing the ball's path over the wall and the goalkeeper's reaction.",
-            "end_sec": 4753.0,
-            "start_sec": 4746.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up of Matthijs de Ligt on the ground, holding his face after the challenge from Núñez.",
-            "end_sec": 4837.0,
-            "start_sec": 4833.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: The referee, Michael Oliver, shows a yellow card to Darwin Núñez for the foul on De Ligt.",
-            "end_sec": 4842.0,
-            "start_sec": 4837.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on other: A shot of Manchester United manager Ruben Amorim on the touchline, looking concerned and giving instructions to his players.",
-            "end_sec": 4927.0,
-            "start_sec": 4922.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up of Alejandro Garnacho as he runs down the wing, looking for an opportunity to create a chance for Manchester United.",
-            "end_sec": 4971.0,
-            "start_sec": 4968.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on other: Another shot of Ruben Amorim on the touchline, gesturing to his players and looking intensely at the play.",
-            "end_sec": 4988.0,
-            "start_sec": 4983.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "celebration",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot of Amad Diallo immediately after scoring. He has a look of intense joy and runs towards the corner flag to celebrate with the traveling fans.",
-            "end_sec": 5035.0,
-            "start_sec": 5032.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "celebration",
-            "description": "Adidas visible on kit_manufacturer_logo: A tight shot of Alejandro Garnacho and Amad Diallo embracing. They share a moment of triumph as the score is now level at 2-2.",
-            "end_sec": 5051.0,
-            "start_sec": 5044.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.78,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: The camera returns to a wide shot, following the play as Liverpool continues to press in the Manchester United half. The ball is passed around the edge of the penalty area as Liverpool players look for a gap in the organized United defense.",
-            "end_sec": 5331.0,
-            "start_sec": 5321.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot of Rasmus Hojlund shows him looking frustrated. He is wearing his white Manchester United away kit and appears to be reacting to a missed chance or a foul that wasn't called.",
-            "end_sec": 5372.0,
-            "start_sec": 5368.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.86,
-            "context": "close_up",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up shot captures a fierce tackle in the midfield. A Manchester United player successfully wins the ball from a Liverpool opponent, sparking a counter-attack.",
-            "end_sec": 5481.0,
-            "start_sec": 5477.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on other: A close-up shot of Manchester United manager Erik ten Hag on the touchline. He looks concerned as he watches the final minutes of the match.",
-            "end_sec": 5792.0,
-            "start_sec": 5787.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "other",
-            "confidence": 0.97,
-            "context": "close_up",
-            "description": "Adidas visible on other: A close-up shot of Liverpool manager Ruben Amorim on the touchline. He is animated, giving instructions to his players.",
-            "end_sec": 5797.0,
-            "start_sec": 5792.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: A closer shot of Van Dijk and Zirkzee as they continue to battle for space. The referee is watching closely to ensure no fouls are committed in the box.",
-            "end_sec": 5905.0,
-            "start_sec": 5904.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: Maguire challenges for a high ball in the midfield, showing his aerial dominance. He is determined to keep Liverpool at bay in the final minutes of the match.",
-            "end_sec": 5954.0,
-            "start_sec": 5951.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: Erik ten Hag is seen on the Manchester United bench, looking focused and calm. He is wearing a dark jacket and is seen observing the play closely.",
-            "end_sec": 5979.0,
-            "start_sec": 5973.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: Diallo throws the ball into play, and the match continues. The camera follows the ball as it is contested by players from both teams.",
-            "end_sec": 5990.0,
-            "start_sec": 5988.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: Fernandes passes the ball to Diallo, who is running down the right wing. The camera follows the ball as it moves towards the touchline.",
-            "end_sec": 6001.0,
-            "start_sec": 5999.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: Diallo looks towards the referee, waiting for the signal to take the free kick. He is determined to make the most of this late opportunity for his team.",
-            "end_sec": 6023.0,
-            "start_sec": 6019.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: The players continue to jostle as the referee gives the signal for the free kick to be taken. The intensity in the box is at its peak.",
-            "end_sec": 6046.0,
-            "start_sec": 6041.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "other",
-            "description": "Adidas visible on kit_manufacturer_logo: Maguire looks dejected as he walks away from the goal. He is seen shaking his head and looking down at the pitch, reflecting the disappointment of the United players.",
-            "end_sec": 6073.0,
-            "start_sec": 6070.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "replay",
-            "description": "Adidas visible on kit_manufacturer_logo: A close-up replay of the moment Maguire takes the shot. The camera shows the ball leaving his foot and traveling towards the goal, only to miss the target.",
-            "end_sec": 6100.0,
-            "start_sec": 6095.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          },
-          {
-            "asset_type": "jersey_patch",
-            "confidence": 0.93,
-            "context": "postgame",
-            "description": "Adidas visible on kit_manufacturer_logo: Martinez and Andre Onana are seen hugging on the pitch. They are seen talking to each other and reflecting on the match, showing the strong bond between the United players.",
-            "end_sec": 6123.0,
-            "start_sec": 6119.0,
-            "video": "Premier League Classics： Liverpool v. Manchester United ｜ FULL MATCH ｜ 1⧸5⧸25 ｜ NBC Sports [QK_9C81hkxk].mp4"
-          }
-        ],
-        "asset_types": [
-          "kit_manufacturer_logo",
-          "training_kit_sponsor",
-          "other"
-        ],
-        "legibility_notes": "Mostly legible rather than fully crisp in a behind-goal replay (4746-4753s), a wide open-play return shot (5321-5331s), and a midfield tackle close-up (5477-5481s). Several touchline shots are tagged surface_placement_type=other, so Adidas is visible but the exact branded article/surface is less specifically classified in metadata.",
-        "moments_count": 30,
-        "outside_whistle_to_whistle_seconds": 4.0,
-        "total_seconds": 136.0
+        "legibility_notes": "All detected Coca-Cola exposures were marked fully legible in metadata. They appear consistently as secondary/background perimeter LED signage; no pregame, halftime, postgame, timeout, interview-backdrop, scorebug, or commercial Coca-Cola exposure was identified in the available sponsor-exposure metadata for this broadcast.",
+        "moments_count": 8,
+        "name": "Coca-Cola",
+        "outside_whistle_to_whistle_seconds": 0,
+        "total_seconds": 56
       }
     ],
     "summary": ""

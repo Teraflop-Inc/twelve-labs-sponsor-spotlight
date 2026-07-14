@@ -49,10 +49,12 @@ app.add_middleware(
 # A locked, server-key demo. Requests carrying the ``x-demo`` header use the
 # backend SPONSOR_SPOTLIGHT_TL_KEY and are pinned to one read-only collection —
 # the caller never supplies a key and cannot point our key at another store.
+# v2 store (2026-07-14): re-indexed with an enrichment prompt that also captures
+# game state (scorebug score/period/clock) and primary-vs-background placement.
 DEMO_STORE_ID = os.environ.get(
-    "SPONSOR_SPOTLIGHT_STORE_ID", "ks_019e955d-a87a-7c80-b96b-5eb52838a136"
+    "SPONSOR_SPOTLIGHT_STORE_ID", "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f"
 )
-DEMO_STORE_NAME = os.environ.get("SPONSOR_SPOTLIGHT_STORE_NAME", "PL Classics (enriched)")
+DEMO_STORE_NAME = os.environ.get("SPONSOR_SPOTLIGHT_STORE_NAME", "PL Classics (enriched v2)")
 DEMO_SPORT = os.environ.get("SPONSOR_SPOTLIGHT_SPORT", "soccer")
 
 # The canonical brand pair the demo tab pre-bakes (see demo_cache / capture script).
@@ -553,6 +555,19 @@ PER_BRAND_SCHEMA: dict[str, Any] = {
                                 "interview_backdrop", "commercial", "other",
                             ],
                         },
+                        "placement": {
+                            "type": "string",
+                            "enum": ["primary", "secondary"],
+                            "description": "primary = large/sharp/foreground exposure; secondary = small/background",
+                        },
+                        "period": {
+                            "type": "string",
+                            "description": "match period from the scorebug: pregame, first half, halftime, second half, stoppage, postgame",
+                        },
+                        "game_clock": {
+                            "type": "string",
+                            "description": "on-screen match clock exactly as shown on the scorebug, e.g. 23:31, 45:00, 01:07:34; empty if not legible",
+                        },
                         "description": {"type": "string"},
                         "confidence": {"type": "number"},
                         "video": {"type": "string"},
@@ -926,8 +941,11 @@ async def _fetch_brand_appearances(
         f"  - outside_whistle_to_whistle_seconds (pregame, halftime, postgame, timeouts)\n"
         f"  - asset_types: every surface it appears on\n"
         f"  - appearances[]: every distinct exposure with start_sec, end_sec, "
-        f"context, asset_type, brief description, confidence, source video filename. "
-        f"Include all appearances you can identify; do not cap.\n"
+        f"context, asset_type, brief description, confidence, source video filename, "
+        f"placement (primary = large/sharp/foreground, secondary = small/background), and — "
+        f"read from the on-screen scorebug — the match period (first half / halftime / "
+        f"second half / stoppage / pre/postgame) and the game_clock exactly as shown "
+        f"(e.g. 23:31, 45:00, 01:07:34). Include all appearances you can identify; do not cap.\n"
         f"  - legibility_notes if it renders poorly anywhere."
         + scope
     )

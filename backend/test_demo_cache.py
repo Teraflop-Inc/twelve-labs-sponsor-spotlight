@@ -134,8 +134,9 @@ def test_demo_scope_returns_detected_and_analyzed(client, spy):
 
 def test_demo_scope_all_maps_to_aggregate(client):
     s = client.get("/api/demo/scope/all").json()
-    # Aggregate holds the whole-collection analyze roll-up (many brands).
-    assert len(s["inventory"]) > 50
+    # "all" resolves to the aggregate analyze roll-up (top-N brands across games).
+    assert s["game_id"] == "all"
+    assert len(s["inventory"]) >= 5
 
 
 # --- per-game scoping (v2) ------------------------------------------------------

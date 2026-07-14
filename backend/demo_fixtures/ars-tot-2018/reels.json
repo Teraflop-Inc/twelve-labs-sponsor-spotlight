@@ -1,41 +1,36 @@
 {
+  "emirates": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/emirates-WAOYJg7jqaEChUJqoLqqm51xMyIazy.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
   "aia": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/aia-0eaGMxyKK60y5itAXKywzQ23AROSPL.mp4",
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/aia-vb9Gw4o8HK91ps2OkMdMwSOdksa5JW.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
   "nike": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/nike-dJNAnYqqKX8Qk3GMLpuLBh2v5HwqKv.mp4",
-    "duration_sec": 26.1,
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/nike-uooEgGnLuNe2PZDW4dKYZP6CNfTjDL.mp4",
+    "duration_sec": 29.1,
     "clips": 4
   },
-  "emirates": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/emirates-7CX1uVPVt0CTqWogYtWxwnaAVea0nd.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
-  },
-  "betfair": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/betfair-FhAAQkHMDP9qyeVMMLVPGROxVrShjc.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
+  "126 live premier league games": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/126-live-premier-league-games-AkNJGMZd4EhMMCpm0U5iWCWhb3cwdP.mp4",
+    "duration_sec": 8.0,
+    "clips": 1
   },
   "12bet": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/12bet-9ojmZ4Ks2m3rkEdJK70Ob5W1rgSYm6.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/12bet-8VBstllcvwEWtYYYMVIkYEbhr4C0SZ.mp4",
+    "duration_sec": 16.1,
+    "clips": 2
   },
-  "lexus": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/lexus-Gdhoixwk7dOsY6hcN5plVABvtGzDWn.mp4",
-    "duration_sec": 23.1,
-    "clips": 4
+  "acronis": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/acronis-vAAfJxIRC3kdDS766nJ33LBf7TFuDD.mp4",
+    "duration_sec": 16.1,
+    "clips": 2
   },
-  "gatorade": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/gatorade-o8oJygcibDRuuBsQfQtG1HQ4Hupf9q.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
-  },
-  "byd": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/byd-NeV7Shy7n0wE7P2zxEcmfdU8UFJAlm.mp4",
+  "arsenal": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/arsenal-Y0WBjnPID1WQlPZzXr4PfIBftMP7Z6.mp4",
     "duration_sec": 24.1,
     "clips": 3
   }

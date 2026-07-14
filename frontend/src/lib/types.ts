@@ -37,6 +37,12 @@ export interface Moment {
   suggested_weight?: number
   /** Source video filename, so we can attribute + seek the right asset. */
   video?: string
+  /** primary = large/sharp/foreground exposure; secondary = small/background. */
+  placement?: "primary" | "secondary" | string
+  /** Match period read from the scorebug (first half / second half / stoppage / …). */
+  period?: string
+  /** Match clock as shown on the scorebug, e.g. "23:31" or "01:07:34". */
+  game_clock?: string
 }
 
 export interface SportProfile {
