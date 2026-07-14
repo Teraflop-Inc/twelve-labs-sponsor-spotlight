@@ -1,5 +1,5 @@
 import { Button } from "@twelvelabs-io/react"
-import { exportData } from "../lib/export"
+import { exportData, exportNielsen } from "../lib/export"
 import { ALL_GAMES, useApp } from "../state"
 
 /**
@@ -34,6 +34,14 @@ export function GameExport() {
           </Button>
           <Button size="sm" variant="outlined-gray" onClick={() => run("json")}>
             JSON
+          </Button>
+          <Button
+            size="sm"
+            variant="outlined-gray"
+            onClick={() => exportNielsen(scopeInventory, econ, gameLabel)}
+            title="Value / Impressions / Exposures / Duration / Share of Voice, by partner × asset"
+          >
+            Nielsen CSV
           </Button>
         </div>
       </div>

@@ -1124,6 +1124,9 @@ class ReportRequest(BaseModel):
     # Client-computed (econ.ts) weighted media value, keyed by scope id. Optional.
     media_values: dict[str, float] = Field(default_factory=dict)
     total_media_value: float | None = None
+    # Per-context value weights from the client (econ.ts); ranks top moments by
+    # monetizability. Falls back to weights.CONTEXT_WEIGHTS when omitted.
+    context_weights: dict[str, float] = Field(default_factory=dict)
     generated_note: str = ""
 
 
@@ -1225,6 +1228,7 @@ async def performance_report(req: ReportRequest, is_demo: bool = Depends(tl_key)
         scopes,
         total_media_value=req.total_media_value,
         generated_note=req.generated_note,
+        weights=req.context_weights or None,
     )
     return HTMLResponse(content=html)
 

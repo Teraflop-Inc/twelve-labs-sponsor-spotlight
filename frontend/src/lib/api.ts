@@ -112,6 +112,7 @@ export interface ReportArgs {
   game_ids: string[]
   media_values?: Record<string, number>
   total_media_value?: number
+  context_weights?: Record<string, number>
   generated_note?: string
 }
 

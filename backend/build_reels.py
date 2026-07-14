@@ -37,6 +37,7 @@ import demo_cache
 import games
 import jockey
 import reels
+import weights as ctx_weights
 
 MAX_SECS = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_MAXSECS", "30"))
 PAD = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_PAD", "1"))
@@ -68,13 +69,18 @@ def _env_list(name: str) -> list[str]:
 
 
 def _rank_moments(brand_entry: dict[str, Any]) -> list[dict[str, Any]]:
-    """Top moments by impact (confidence × duration), greedily filling ~MAX_SECS."""
+    """Top moments by monetizable impact = context_weight × duration × confidence.
+
+    Context weighting (goal 3×, celebration 2.5×, … wide_shot 1×) makes the reel
+    favour the actual game moments over long background exposure.
+    """
     apps = []
     for m in brand_entry.get("appearances") or []:
         s, e = float(m.get("start_sec") or 0), float(m.get("end_sec") or 0)
         if e <= s:
             continue
-        apps.append({**m, "_dur": e - s, "_impact": (e - s) * float(m.get("confidence") or 0.5)})
+        cw = ctx_weights.weight_for(m.get("context"))
+        apps.append({**m, "_dur": e - s, "_impact": cw * (e - s) * float(m.get("confidence") or 0.5)})
     apps.sort(key=lambda m: m["_impact"], reverse=True)
     picked, total = [], 0.0
     for m in apps:

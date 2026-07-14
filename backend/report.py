@@ -14,6 +14,8 @@ from __future__ import annotations
 import html
 from typing import Any
 
+import weights as ctx_weights
+
 
 def _fmt_secs(v: Any) -> str:
     try:
@@ -45,15 +47,25 @@ def _tile(label: str, value: str) -> str:
     )
 
 
-def _top_moments(scopes: list[dict[str, Any]], limit: int = 8) -> list[dict[str, Any]]:
-    """Rank appearances across all scopes by impact (confidence × duration)."""
+def _top_moments(
+    scopes: list[dict[str, Any]],
+    limit: int = 8,
+    weights: dict[str, float] | None = None,
+) -> list[dict[str, Any]]:
+    """Rank appearances by monetizable impact = context_weight × duration × confidence.
+
+    Weighting by broadcast context (goal 3×, celebration 2.5×, … wide_shot 1×)
+    surfaces the most valuable moments — a logo during a goal outranks a long
+    background board. Legibility is deliberately *not* the primary signal.
+    """
     moments: list[dict[str, Any]] = []
     for sc in scopes:
         label = sc.get("label", "")
         for m in (sc.get("metrics") or {}).get("appearances") or []:
-            dur = (float(m.get("end_sec") or 0) - float(m.get("start_sec") or 0)) or 0.0
+            dur = max((float(m.get("end_sec") or 0) - float(m.get("start_sec") or 0)), 0.0)
             conf = float(m.get("confidence") or 0.5)
-            moments.append({**m, "_game": label, "_impact": max(dur, 0) * conf})
+            cw = ctx_weights.weight_for(m.get("context"), weights)
+            moments.append({**m, "_game": label, "_impact": cw * dur * conf})
     moments.sort(key=lambda m: m["_impact"], reverse=True)
     return moments[:limit]
 
@@ -64,6 +76,7 @@ def build_report_html(
     *,
     total_media_value: float | None = None,
     generated_note: str = "",
+    weights: dict[str, float] | None = None,
 ) -> str:
     """Assemble the report HTML.
 
@@ -112,7 +125,7 @@ def build_report_html(
 
     # Top moments (proof-of-play).
     moment_items = ""
-    for m in _top_moments(scopes):
+    for m in _top_moments(scopes, weights=weights):
         moment_items += (
             "<li>"
             f"<span class='mono'>{_fmt_time(m.get('start_sec'))}</span> "
