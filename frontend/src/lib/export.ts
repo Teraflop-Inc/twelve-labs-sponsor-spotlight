@@ -12,7 +12,13 @@
 // Scope-based: the currently selected game (or "All games").
 
 import type { Brand, LegibilityBrand, LegibilityReport, Moment } from "./types"
-import { audienceMultiplier, brandValue, unionWeightedSeconds, type EconState } from "./econ"
+import {
+  audienceMultiplier,
+  brandValue,
+  formatGameTime,
+  unionWeightedSeconds,
+  type EconState,
+} from "./econ"
 
 const OUTSIDE_W2W = new Set(["pregame", "halftime", "postgame", "timeout"])
 
@@ -57,9 +63,13 @@ export interface AppearanceRow {
   start_sec: number | null
   end_sec: number | null
   duration_sec: number | null
+  period: string
+  game_clock: string
+  game_time: string
   context: string
   context_weight: number
   asset_type: string
+  placement: string
   confidence: number | null
   description: string
   video: string
@@ -80,9 +90,13 @@ const APPEARANCE_COLUMNS: (keyof AppearanceRow)[] = [
   "start_sec",
   "end_sec",
   "duration_sec",
+  "period",
+  "game_clock",
+  "game_time",
   "context",
   "context_weight",
   "asset_type",
+  "placement",
   "confidence",
   "description",
   "video",
@@ -121,9 +135,13 @@ export function buildAppearanceRows(
         start_sec: null,
         end_sec: null,
         duration_sec: null,
+        period: "",
+        game_clock: "",
+        game_time: "",
         context: "",
         context_weight: 0,
         asset_type: "",
+        placement: "",
         confidence: null,
         description: "",
         video: "",
@@ -139,9 +157,13 @@ export function buildAppearanceRows(
         start_sec: s,
         end_sec: e,
         duration_sec: s != null && e != null ? Math.round((e - s) * 10) / 10 : null,
+        period: String(m.period ?? ""),
+        game_clock: String(m.game_clock ?? ""),
+        game_time: formatGameTime(m.period, m.game_clock),
         context: ctx,
         context_weight: econ.weights[ctx] ?? econ.weights.other ?? 1,
         asset_type: String(m.asset_type ?? ""),
+        placement: String(m.placement ?? ""),
         confidence: num(m.confidence),
         description: String(m.description ?? ""),
         video: String(m.video ?? ""),
