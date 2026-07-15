@@ -12,7 +12,13 @@
 // Scope-based: the currently selected game (or "All games").
 
 import type { Brand, LegibilityBrand, LegibilityReport, Moment } from "./types"
-import { audienceMultiplier, brandValue, unionWeightedSeconds, type EconState } from "./econ"
+import {
+  audienceMultiplier,
+  brandValue,
+  formatGameTime,
+  unionWeightedSeconds,
+  type EconState,
+} from "./econ"
 
 const OUTSIDE_W2W = new Set(["pregame", "halftime", "postgame", "timeout"])
 
@@ -57,9 +63,13 @@ export interface AppearanceRow {
   start_sec: number | null
   end_sec: number | null
   duration_sec: number | null
+  period: string
+  game_clock: string
+  game_time: string
   context: string
   context_weight: number
   asset_type: string
+  placement: string
   confidence: number | null
   description: string
   video: string
@@ -80,9 +90,13 @@ const APPEARANCE_COLUMNS: (keyof AppearanceRow)[] = [
   "start_sec",
   "end_sec",
   "duration_sec",
+  "period",
+  "game_clock",
+  "game_time",
   "context",
   "context_weight",
   "asset_type",
+  "placement",
   "confidence",
   "description",
   "video",
@@ -121,9 +135,13 @@ export function buildAppearanceRows(
         start_sec: null,
         end_sec: null,
         duration_sec: null,
+        period: "",
+        game_clock: "",
+        game_time: "",
         context: "",
         context_weight: 0,
         asset_type: "",
+        placement: "",
         confidence: null,
         description: "",
         video: "",
@@ -139,9 +157,13 @@ export function buildAppearanceRows(
         start_sec: s,
         end_sec: e,
         duration_sec: s != null && e != null ? Math.round((e - s) * 10) / 10 : null,
+        period: String(m.period ?? ""),
+        game_clock: String(m.game_clock ?? ""),
+        game_time: formatGameTime(m.period, m.game_clock),
         context: ctx,
         context_weight: econ.weights[ctx] ?? econ.weights.other ?? 1,
         asset_type: String(m.asset_type ?? ""),
+        placement: String(m.placement ?? ""),
         confidence: num(m.confidence),
         description: String(m.description ?? ""),
         video: String(m.video ?? ""),
@@ -228,6 +250,88 @@ export function download(filename: string, content: string, mime: string) {
 
 function slug(s: string): string {
   return s.replace(/[^a-z0-9]+/gi, "-").toLowerCase().replace(/^-+|-+$/g, "")
+}
+
+// --- Nielsen-format CSV --------------------------------------------------------
+// Matches the shape of the CSVs the customer already gets from Nielsen: Value,
+// Impressions, Exposures, Duration, Share of Voice — broken down by both partner
+// (brand) and asset (placement/asset_type), so it drops into their workflow.
+
+export interface NielsenRow {
+  partner: string
+  asset: string
+  value: number
+  impressions: number
+  exposures: number
+  duration_seconds: number
+  share_of_voice_pct: number
+}
+
+const NIELSEN_HEADERS = [
+  "Partner",
+  "Asset",
+  "Value",
+  "Impressions",
+  "Exposures",
+  "Duration",
+  "Share of Voice",
+]
+
+export function buildNielsenRows(brands: Brand[], econ: EconState): NielsenRow[] {
+  const rows: NielsenRow[] = []
+  for (const b of brands) {
+    const apps = b.appearances || b.top_moments || []
+    const byAsset = new Map<string, Moment[]>()
+    for (const m of apps) {
+      const a = String(m.asset_type || "other")
+      const list = byAsset.get(a) || []
+      list.push(m)
+      byAsset.set(a, list)
+    }
+    for (const [asset, moments] of byAsset) {
+      // Per-partner×asset value from a pseudo-brand of just that asset's moments.
+      const value = brandValue({ name: b.name, appearances: moments }, econ)
+      const dur = unionWeightedSeconds(moments, econ.weights).unionSecs
+      rows.push({
+        partner: b.name,
+        asset,
+        value: Math.round(value),
+        impressions: econ.cpm > 0 ? Math.round((value / econ.cpm) * 1000) : 0,
+        exposures: moments.length,
+        duration_seconds: Math.round(dur * 10) / 10,
+        share_of_voice_pct: 0, // filled below
+      })
+    }
+  }
+  const total = rows.reduce((s, r) => s + r.value, 0) || 1
+  for (const r of rows) r.share_of_voice_pct = Math.round((r.value / total) * 1000) / 10
+  return rows.sort((a, b) => b.value - a.value)
+}
+
+export function toNielsenCSV(rows: NielsenRow[]): string {
+  const body = rows.map((r) =>
+    [
+      r.partner,
+      r.asset,
+      r.value,
+      r.impressions,
+      r.exposures,
+      r.duration_seconds,
+      r.share_of_voice_pct,
+    ]
+      .map(csvCell)
+      .join(","),
+  )
+  return [NIELSEN_HEADERS.join(","), ...body].join("\n") + "\n"
+}
+
+export function exportNielsen(brands: Brand[], econ: EconState, gameLabel: string) {
+  const rows = buildNielsenRows(brands, econ)
+  download(
+    `sponsor-spotlight-${slug(gameLabel) || "export"}-nielsen.csv`,
+    toNielsenCSV(rows),
+    "text/csv;charset=utf-8",
+  )
 }
 
 export function exportData(

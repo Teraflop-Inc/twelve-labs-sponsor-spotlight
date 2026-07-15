@@ -113,6 +113,7 @@ export function AnalyzePanel() {
         game_ids: gameId === ALL_GAMES ? [] : [gameId],
         media_values: { [scopeKey]: value },
         total_media_value: value,
+        context_weights: econ.weights,
         generated_note: `Scope: ${gameLabel}.`,
       })
       const url = URL.createObjectURL(new Blob([html], { type: "text/html" }))

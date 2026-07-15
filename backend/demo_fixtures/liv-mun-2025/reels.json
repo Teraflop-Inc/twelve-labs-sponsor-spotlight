@@ -1,42 +1,42 @@
 {
   "nike": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/nike-hbe4ACDe8h8IrTXnXuTxGJcMZTmKA0.mp4",
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/nike-5mUTF0JibFGCXqoLZTDRU4DJcJX8gW.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
   "hublot": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/hublot-JIEFf3ER8FiYf5xhmqDWPwIRNwkbcu.mp4",
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/hublot-MLELLb27Rc0wpg0mqwMtN2z59q9y8D.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "barclays": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/barclays-WpWUjI0PjiuXFwoOi9JIz6101jn6tz.mp4",
+    "duration_sec": 20.1,
+    "clips": 3
+  },
+  "geico": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/geico-3gmNVG4TJAImtRI9vwO4m3LaTA1xoG.mp4",
+    "duration_sec": 24.1,
+    "clips": 3
+  },
+  "kodansha": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/kodansha-tnmSahbXYNNBQKiZXWH5V5EOj8H5m3.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
   "expedia": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/expedia-9tIirVUvgLMzSR2go9VRfQOKW0HuiC.mp4",
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/expedia-nFdQSYk4Q8YFRAIOGH5CG0Y0UlK4sT.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
-  "geico": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/geico-jwUN142TWlmIBnvsRqvsmaQbj7c6xv.mp4",
+  "verizon": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/verizon-SHNgcdenhxPX6DlKYidt9YhHUFXJJl.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
-  "google pixel": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/google-pixel-fK54Ih65wgcYOyQMdchTSVpD2IMG0M.mp4",
-    "duration_sec": 22.1,
-    "clips": 3
-  },
-  "lexus": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/lexus-iLHtXZcuqflpSqBBcU6WVK4gHblysO.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
-  },
-  "kia": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/kia-BEAJeWYRaUsmTDllaHEVQrk2jDj1iZ.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
-  },
-  "adidas": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/adidas-AHR7IyGU8UknchQJddEAzR5SXz7iZO.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
+  "coca-cola": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/liv-mun-2025/coca-cola-ILwb3dDRmAAcPAKYxbuKHTIeu8QUxr.mp4",
+    "duration_sec": 28.1,
+    "clips": 4
   }
 }

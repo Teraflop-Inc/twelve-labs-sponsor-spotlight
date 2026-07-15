@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import asyncio
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -37,6 +38,7 @@ import demo_cache
 import games
 import jockey
 import reels
+import weights as ctx_weights
 
 MAX_SECS = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_MAXSECS", "30"))
 PAD = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_PAD", "1"))
@@ -68,13 +70,18 @@ def _env_list(name: str) -> list[str]:
 
 
 def _rank_moments(brand_entry: dict[str, Any]) -> list[dict[str, Any]]:
-    """Top moments by impact (confidence × duration), greedily filling ~MAX_SECS."""
+    """Top moments by monetizable impact = context_weight × duration × confidence.
+
+    Context weighting (goal 3×, celebration 2.5×, … wide_shot 1×) makes the reel
+    favour the actual game moments over long background exposure.
+    """
     apps = []
     for m in brand_entry.get("appearances") or []:
         s, e = float(m.get("start_sec") or 0), float(m.get("end_sec") or 0)
         if e <= s:
             continue
-        apps.append({**m, "_dur": e - s, "_impact": (e - s) * float(m.get("confidence") or 0.5)})
+        cw = ctx_weights.weight_for(m.get("context"))
+        apps.append({**m, "_dur": e - s, "_impact": cw * (e - s) * float(m.get("confidence") or 0.5)})
     apps.sort(key=lambda m: m["_impact"], reverse=True)
     picked, total = [], 0.0
     for m in apps:
@@ -181,10 +188,11 @@ async def build_one(game: dict[str, str], brand: str, workdir: Path) -> None:
         print(f"  {scope}/{brand}: asset has no HLS manifest — skip", file=sys.stderr)
         return
 
+    safe = re.sub(r"[^a-z0-9]+", "-", brand.strip().lower()).strip("-") or "brand"
     segs: list[Path] = []
     cut_secs = 0.0
     for i, m in enumerate(moments):
-        seg = workdir / f"{scope}-{brand}-{i}.ts"
+        seg = workdir / f"{scope}-{safe}-{i}.ts"
         start = float(m["start_sec"]) - PAD  # pad before; length already padded + capped
         if _ffmpeg_cut(hls_url, start, m["_clip"], seg):
             segs.append(seg)
@@ -193,11 +201,11 @@ async def build_one(game: dict[str, str], brand: str, workdir: Path) -> None:
         print(f"  {scope}/{brand}: all clips failed — skip", file=sys.stderr)
         return
 
-    reel = workdir / f"{scope}-{brand}.mp4"
+    reel = workdir / f"{scope}-{safe}.mp4"
     if not _ffmpeg_concat(segs, reel):
         return
 
-    url = _upload_blob(reel, f"reels/{scope}/{brand.strip().lower().replace(' ', '-')}.mp4")
+    url = _upload_blob(reel, f"reels/{scope}/{safe}.mp4")
     dur = _probe_duration(reel) or round(cut_secs, 1)  # ground-truth length
     reels.save(scope, brand, {"url": url, "duration_sec": dur, "clips": len(segs)})
     print(f"  {scope}/{brand}: {len(segs)} clips, {dur:.0f}s → {url}")

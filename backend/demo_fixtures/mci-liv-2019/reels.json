@@ -1,36 +1,41 @@
 {
-  "nike": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/nike-9x2iWZKyedamkZz33i2KfkSSQfH88e.mp4",
+  "etihad": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/etihad-TylodWYSBA7FQbCs8egIPXCe0sE4XT.mp4",
     "duration_sec": 24.1,
-    "clips": 3
+    "clips": 4
   },
   "nexen tire": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/nexen-tire-RHxIy9v8vKFh3PVpedjbKAt0d1lwiY.mp4",
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/nexen-tire-qYf51fkTodtBuup3lm5yLTklUZ2dG0.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
   "nissan": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/nissan-PsAJMmRE0JAT0y9H0qKGmyf6hLfUEe.mp4",
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/nissan-alwL4iVK6eZWl9yfrftNtjtyJlNyAQ.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
-  "geico": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/geico-hACL6AHOb7Mgxh8S90MOtSRmogiLG4.mp4",
+  "nike": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/nike-nLH2Fr99XUCn1DYV7BigoB8wgXGX3J.mp4",
     "duration_sec": 24.1,
     "clips": 3
   },
-  "marathonbet": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/marathonbet-xcg9fLOByP3TnsbCDJvVgXri5jmU8x.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
+  "avatrade": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/avatrade-jeqZYnQUmlbWj7Ipwfc4pWwH40nk6S.mp4",
+    "duration_sec": 8.0,
+    "clips": 1
   },
-  "etisalat": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/etisalat-ySf7easY84WPkwOmVvOw3ngCnkrf7j.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
+  "aabar": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/aabar-aRt6nh4zgssVTmkwFNONHicoF6F8Oz.mp4",
+    "duration_sec": 28.1,
+    "clips": 4
   },
-  "lexus": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/lexus-Wk0KM7LBHkUYp7B937o8yL7KWFUjg4.mp4",
+  "abu dhabi": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/abu-dhabi-LTsLCLe3PSVWHOlDWivAoU6p4D8gp7.mp4",
+    "duration_sec": 6.0,
+    "clips": 1
+  },
+  "acronis": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/mci-liv-2019/acronis-kSnFu2IgKr2oztNme8fAuZgCSoMZiK.mp4",
     "duration_sec": 24.1,
     "clips": 3
   }
