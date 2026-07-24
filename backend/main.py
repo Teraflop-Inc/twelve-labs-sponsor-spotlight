@@ -1146,6 +1146,11 @@ class ReportRequest(BaseModel):
     # monetizability. Falls back to weights.CONTEXT_WEIGHTS when omitted.
     context_weights: dict[str, float] = Field(default_factory=dict)
     generated_note: str = ""
+    # Data-source labels for the resolved economics (Detected / Customer-Uploaded
+    # / Simulated), e.g. {"audience": "Simulated", "rate": "Simulated"}. Rendered
+    # as provenance badges on the report so a simulated placeholder is never
+    # mistaken for a measured value (PRD step 10).
+    sources: dict[str, str] = Field(default_factory=dict)
 
 
 def _brand_in_inventory(envelope: dict[str, Any] | None, brand: str) -> dict[str, Any] | None:
@@ -1247,6 +1252,7 @@ async def performance_report(req: ReportRequest, is_demo: bool = Depends(tl_key)
         total_media_value=req.total_media_value,
         generated_note=req.generated_note,
         weights=req.context_weights or None,
+        sources=req.sources or None,
     )
     return HTMLResponse(content=html)
 

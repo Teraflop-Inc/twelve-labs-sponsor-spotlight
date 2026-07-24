@@ -1,9 +1,18 @@
 import { useMemo, useState } from "react"
 import { Button, Chip } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
-import { brandValue, fmtMoney } from "../lib/econ"
+import {
+  brandEconomics,
+  CONTEXT_WEIGHTS,
+  fmtMoney,
+  legibility01,
+  resolveEcon,
+  shareOfVoice,
+  type BrandEconomics,
+} from "../lib/econ"
+import { SOURCE_LABEL } from "../lib/econData"
 import { ALL_GAMES, useApp } from "../state"
-import { MetricTile, MomentRow, SectionCard, StatusLine } from "../ui"
+import { MetricTile, MomentRow, SectionCard, SourceBadge, StatusLine } from "../ui"
 import { Timeline } from "./Timeline"
 import type { Brand, Moment } from "../lib/types"
 
@@ -29,6 +38,7 @@ export function AnalyzePanel() {
     setBrandB,
     demoCached,
     scopeInventory,
+    scopeLegibility,
     scopeReels,
     viewBrands,
     playerRef,
@@ -47,6 +57,7 @@ export function AnalyzePanel() {
   const displayBrands = demoView
     ? scopeInventory.filter((b) => viewBrands.includes(b.name))
     : inventory
+  const legReport = demoView ? scopeLegibility : legibility
 
   const onAnalyze = async (opts: { live?: boolean } = {}) => {
     const names = selectedBrands.filter(Boolean)
@@ -80,10 +91,26 @@ export function AnalyzePanel() {
     }
   }
 
+  // Resolve the scope's economics inputs once (audience curve + spot rate, each
+  // source-tagged), then compute EMV / ROI / Clean-Exposure per brand and
+  // Share-of-Voice across the set.
+  const resolved = useMemo(() => {
+    const apps: Moment[] = []
+    for (const b of displayBrands ?? []) apps.push(...(b.appearances || b.top_moments || []))
+    return resolveEcon(econ, gameId === ALL_GAMES ? null : gameId, apps)
+  }, [displayBrands, econ, gameId])
+
   const ranked = useMemo(() => {
     if (!displayBrands) return null
-    return displayBrands.map((b) => ({ b, v: brandValue(b, econ) })).sort((a, b) => b.v - a.v)
-  }, [displayBrands, econ])
+    const withEcon = displayBrands.map((b) => ({
+      b,
+      ec: brandEconomics(b, resolved, legibility01(legReport, b.name)),
+    }))
+    const sov = shareOfVoice(withEcon.map((x) => x.ec.emv))
+    return withEcon
+      .map((x, i) => ({ ...x, sov: sov[i] }))
+      .sort((a, b) => b.ec.emv - a.ec.emv)
+  }, [displayBrands, resolved, legReport])
 
   const gameLabel =
     gameId === ALL_GAMES ? "All games" : games.find((g) => g.id === gameId)?.label ?? gameId
@@ -106,15 +133,20 @@ export function AnalyzePanel() {
   const onReport = async (b: Brand) => {
     setReportBusy(b.name)
     try {
-      const value = Math.round(brandValue(b, econ))
+      const value = Math.round(brandEconomics(b, resolved, legibility01(legReport, b.name)).emv)
       const scopeKey = gameId === ALL_GAMES ? "aggregate" : gameId
       const html = await api.report({
         brand: b.name,
         game_ids: gameId === ALL_GAMES ? [] : [gameId],
         media_values: { [scopeKey]: value },
         total_media_value: value,
-        context_weights: econ.weights,
+        context_weights: CONTEXT_WEIGHTS,
         generated_note: `Scope: ${gameLabel}.`,
+        sources: {
+          audience: resolved.audience.source,
+          rate: resolved.rate.source,
+          rights_fee: resolved.rightsFeeSource,
+        },
       })
       const url = URL.createObjectURL(new Blob([html], { type: "text/html" }))
       window.open(url, "_blank")
@@ -196,16 +228,31 @@ export function AnalyzePanel() {
         )}
       </StatusLine>
 
+      {ranked && ranked.length > 0 && (
+        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-foreground-subtle">
+          <span className="inline-flex items-center gap-1">
+            Audience <SourceBadge source={resolved.audience.source} />
+          </span>
+          <span className="inline-flex items-center gap-1">
+            Rate ${resolved.rate.value.toLocaleString()}/:30 <SourceBadge source={resolved.rate.source} />
+          </span>
+          <span className="text-foreground-subtle">
+            EMV = seconds × legibility × clutter × audience × rate
+          </span>
+        </div>
+      )}
+
       {ranked && (
         <div className="mt-3 flex flex-col gap-2">
           {ranked.length === 0 && (
             <div className="text-xs text-foreground-subtle">No brands returned.</div>
           )}
-          {ranked.map(({ b, v }, i) => (
+          {ranked.map(({ b, ec, sov }, i) => (
             <BrandCard
               key={b.name}
               brand={b}
-              value={v}
+              ec={ec}
+              sov={sov}
               rank={i + 1}
               open={Boolean(openBrands[b.name])}
               onToggle={() => toggleBrand(b.name)}
@@ -223,7 +270,8 @@ export function AnalyzePanel() {
 
 function BrandCard({
   brand,
-  value,
+  ec,
+  sov,
   rank,
   open,
   onToggle,
@@ -233,7 +281,8 @@ function BrandCard({
   hasReel,
 }: {
   brand: Brand
-  value: number
+  ec: BrandEconomics
+  sov: number
   rank: number
   open: boolean
   onToggle: () => void
@@ -262,8 +311,8 @@ function BrandCard({
           #{rank}
         </Chip>
         <h3 className="truncate font-tl-sans text-base font-semibold">{brand.name}</h3>
-        <span className="ml-auto font-tl-mono text-sm text-tl-embed-dark-green">
-          {fmtMoney(value)}
+        <span className="ml-auto font-tl-mono text-sm text-tl-embed-dark-green" title="Estimated Media Value">
+          {fmtMoney(ec.emv)}
         </span>
       </button>
 
@@ -274,6 +323,12 @@ function BrandCard({
         <MetricTile
           label="Outside W2W"
           value={`${(brand.outside_whistle_to_whistle_seconds || 0).toFixed(0)}s`}
+        />
+        <MetricTile label="ROI" value={ec.roi == null ? "—" : `${ec.roi.toFixed(2)}×`} accent />
+        <MetricTile label="Share of voice" value={`${sov.toFixed(1)}%`} />
+        <MetricTile
+          label="Clean exposure"
+          value={ec.cleanExposurePct == null ? "—" : `${ec.cleanExposurePct.toFixed(0)}%`}
         />
       </div>
 

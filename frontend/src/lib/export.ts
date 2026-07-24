@@ -1,24 +1,29 @@
-// Client-side data export (F4). Exports the FULL data returned from the Jockey
-// runs — not a rolled-up summary. Everything is already in the browser (the
-// analyze appearances + the legibility assets); economics come from econ.ts. We
-// merge them at download time; nothing is posted to the server.
+// Client-side data export (F4), reworked for the economics rebuild. Exports the
+// FULL data from the Jockey runs (appearances + legibility) merged with the
+// resolved economics (EMV / ROI / Share-of-Voice / Clean-Exposure) at download
+// time — nothing is posted to the server, so the file matches the on-screen
+// numbers exactly.
 //
-//  • CSV  = one row per detected appearance (moment-level, every field) with the
-//           brand-level rollups + economics carried on each row for easy pivoting.
-//  • JSON = the complete nested payload per brand: all appearances, all
-//           legibility assets (with dimension scores + examples), economics, plus
-//           the full detected-brand list.
+// PRD step 10: every economics field carries a `source` (Detected /
+// Customer-Uploaded / Simulated), so a simulated placeholder is never mistaken
+// for a measured value downstream.
 //
-// Scope-based: the currently selected game (or "All games").
+//  • CSV  = one row per detected appearance (moment-level) with brand rollups +
+//           economics + source tags carried on each row.
+//  • JSON = the complete nested payload per brand, plus the resolved assumptions
+//           (rate card + audience) with their sources.
 
 import type { Brand, LegibilityBrand, LegibilityReport, Moment } from "./types"
 import {
-  audienceMultiplier,
-  brandValue,
+  brandEconomics,
   formatGameTime,
+  legibility01,
+  resolveEcon,
+  shareOfVoice,
   unionWeightedSeconds,
   type EconState,
 } from "./econ"
+import { SOURCE_LABEL } from "./econData"
 
 const OUTSIDE_W2W = new Set(["pregame", "halftime", "postgame", "timeout"])
 
@@ -44,18 +49,39 @@ function sumOutsideW2W(moments: Moment[]): number {
 
 const num = (v: unknown) => (Number.isFinite(Number(v)) ? Number(v) : null)
 
+/** Resolve the scope economics + a per-brand SoV lookup, computed once. */
+function scopeContext(
+  brands: Brand[],
+  econ: EconState,
+  gameId: string | null,
+  legibility: LegibilityReport | null,
+) {
+  const apps: Moment[] = []
+  for (const b of brands) apps.push(...(b.appearances || b.top_moments || []))
+  const resolved = resolveEcon(econ, gameId, apps)
+  const emv = brands.map((b) => brandEconomics(b, resolved, legibility01(legibility, b.name)).emv)
+  const sovByIndex = shareOfVoice(emv)
+  const sovByBrand = new Map<string, number>()
+  brands.forEach((b, i) => sovByBrand.set(b.name, sovByIndex[i]))
+  return { resolved, sovByBrand }
+}
+
 // --- CSV: one row per appearance (the full moment-level detail) ----------------
 
 export interface AppearanceRow {
   brand: string
   game: string
-  // brand-level rollups + economics, repeated on each appearance row
-  weighted_media_value: number
+  // brand-level economics, repeated on each appearance row
+  emv: number
+  roi: number | null
+  share_of_voice_pct: number
+  clean_exposure_pct: number | null
   impressions: number
   avg_legibility: number | null
-  cpm: number
-  reach_millions: number
-  audience_multiplier: number
+  rate_per_30: number
+  rate_source: string
+  audience_source: string
+  rights_fee: number
   brand_total_seconds: number
   brand_moments: number
   brand_outside_w2w_seconds: number
@@ -67,7 +93,6 @@ export interface AppearanceRow {
   game_clock: string
   game_time: string
   context: string
-  context_weight: number
   asset_type: string
   placement: string
   confidence: number | null
@@ -78,12 +103,16 @@ export interface AppearanceRow {
 const APPEARANCE_COLUMNS: (keyof AppearanceRow)[] = [
   "brand",
   "game",
-  "weighted_media_value",
+  "emv",
+  "roi",
+  "share_of_voice_pct",
+  "clean_exposure_pct",
   "impressions",
   "avg_legibility",
-  "cpm",
-  "reach_millions",
-  "audience_multiplier",
+  "rate_per_30",
+  "rate_source",
+  "audience_source",
+  "rights_fee",
   "brand_total_seconds",
   "brand_moments",
   "brand_outside_w2w_seconds",
@@ -94,7 +123,6 @@ const APPEARANCE_COLUMNS: (keyof AppearanceRow)[] = [
   "game_clock",
   "game_time",
   "context",
-  "context_weight",
   "asset_type",
   "placement",
   "confidence",
@@ -107,24 +135,29 @@ export function buildAppearanceRows(
   legibility: LegibilityReport | null,
   econ: EconState,
   gameLabel: string,
+  gameId: string | null,
 ): AppearanceRow[] {
   const rows: AppearanceRow[] = []
-  const audMult = Math.round(audienceMultiplier(econ) * 1000) / 1000
+  const { resolved, sovByBrand } = scopeContext(brands, econ, gameId, legibility)
   for (const b of brands) {
     const apps = b.appearances || b.top_moments || []
-    const wmv = brandValue(b, econ)
+    const ec = brandEconomics(b, resolved, legibility01(legibility, b.name))
     const leg = avgLegibility(legibility, b.name)
     const base = {
       brand: b.name,
       game: gameLabel,
-      weighted_media_value: Math.round(wmv),
-      impressions: econ.cpm > 0 ? Math.round((wmv / econ.cpm) * 1000) : 0,
+      emv: Math.round(ec.emv),
+      roi: ec.roi == null ? null : Math.round(ec.roi * 100) / 100,
+      share_of_voice_pct: sovByBrand.get(b.name) ?? 0,
+      clean_exposure_pct: ec.cleanExposurePct == null ? null : Math.round(ec.cleanExposurePct),
+      impressions: ec.impressions,
       avg_legibility: leg,
-      cpm: econ.cpm,
-      reach_millions: econ.reach,
-      audience_multiplier: audMult,
+      rate_per_30: resolved.rate.value,
+      rate_source: SOURCE_LABEL[resolved.rate.source],
+      audience_source: SOURCE_LABEL[resolved.audience.source],
+      rights_fee: resolved.rightsFee,
       brand_total_seconds:
-        Math.round((b.total_seconds || unionWeightedSeconds(apps, econ.weights).unionSecs) * 10) / 10,
+        Math.round((b.total_seconds || unionWeightedSeconds(apps).unionSecs) * 10) / 10,
       brand_moments: b.moments_count ?? apps.length,
       brand_outside_w2w_seconds:
         Math.round((b.outside_whistle_to_whistle_seconds ?? sumOutsideW2W(apps)) * 10) / 10,
@@ -139,7 +172,6 @@ export function buildAppearanceRows(
         game_clock: "",
         game_time: "",
         context: "",
-        context_weight: 0,
         asset_type: "",
         placement: "",
         confidence: null,
@@ -151,7 +183,6 @@ export function buildAppearanceRows(
     for (const m of apps) {
       const s = num(m.start_sec)
       const e = num(m.end_sec)
-      const ctx = String(m.context ?? "")
       rows.push({
         ...base,
         start_sec: s,
@@ -160,8 +191,7 @@ export function buildAppearanceRows(
         period: String(m.period ?? ""),
         game_clock: String(m.game_clock ?? ""),
         game_time: formatGameTime(m.period, m.game_clock),
-        context: ctx,
-        context_weight: econ.weights[ctx] ?? econ.weights.other ?? 1,
+        context: String(m.context ?? ""),
         asset_type: String(m.asset_type ?? ""),
         placement: String(m.placement ?? ""),
         confidence: num(m.confidence),
@@ -192,32 +222,49 @@ export function buildFullExport(
   legibility: LegibilityReport | null,
   econ: EconState,
   gameLabel: string,
+  gameId: string | null,
   detected: string[] = [],
 ) {
+  const { resolved, sovByBrand } = scopeContext(brands, econ, gameId, legibility)
   return {
     scope: gameLabel,
-    // The economic assumptions that produced every weighted_media_value below.
+    // The resolved economic inputs that produced every EMV below, with sources.
     assumptions: {
-      cpm: econ.cpm,
-      reach_millions: econ.reach,
-      audience_premium_pct: econ.audPremium,
-      audience_regional_pct: econ.audRegional,
-      audience_streaming_pct: econ.audStreaming,
-      audience_multiplier: Math.round(audienceMultiplier(econ) * 1000) / 1000,
-      context_weights: econ.weights,
+      rights_fee: { value: resolved.rightsFee, source: SOURCE_LABEL[resolved.rightsFeeSource] },
+      rate_card: {
+        rate_per_30sec: resolved.rate.value,
+        network: resolved.rate.broadcast.network,
+        daypart: resolved.rate.broadcast.daypart,
+        source: SOURCE_LABEL[resolved.rate.source],
+      },
+      audience: {
+        peak_ama_millions: Math.round(resolved.audience.peak * 100) / 100,
+        mean_ama_millions: Math.round(resolved.audience.mean * 100) / 100,
+        peak_minute: resolved.audience.peakMinute,
+        source: SOURCE_LABEL[resolved.audience.source],
+      },
+      emv_formula: "seconds × legibility × clutter × audience-at-that-moment × rate",
     },
     detected_brands: detected,
     brands: brands.map((b) => {
       const apps = b.appearances || b.top_moments || []
-      const wmv = brandValue(b, econ)
+      const ec = brandEconomics(b, resolved, legibility01(legibility, b.name))
       const lb = legBrand(legibility, b.name)
       return {
         brand: b.name,
         game: gameLabel,
         economics: {
-          cpm: econ.cpm,
-          weighted_media_value: Math.round(wmv),
-          impressions: econ.cpm > 0 ? Math.round((wmv / econ.cpm) * 1000) : 0,
+          emv: Math.round(ec.emv),
+          roi: ec.roi == null ? null : Math.round(ec.roi * 100) / 100,
+          share_of_voice_pct: sovByBrand.get(b.name) ?? 0,
+          clean_exposure_pct: ec.cleanExposurePct == null ? null : Math.round(ec.cleanExposurePct),
+          impressions: ec.impressions,
+          rate_per_30sec: resolved.rate.value,
+          sources: {
+            rate: SOURCE_LABEL[resolved.rate.source],
+            audience: SOURCE_LABEL[resolved.audience.source],
+            rights_fee: SOURCE_LABEL[resolved.rightsFeeSource],
+          },
         },
         total_seconds: b.total_seconds ?? null,
         moments_count: b.moments_count ?? apps.length,
@@ -254,8 +301,8 @@ function slug(s: string): string {
 
 // --- Nielsen-format CSV --------------------------------------------------------
 // Matches the shape of the CSVs the customer already gets from Nielsen: Value,
-// Impressions, Exposures, Duration, Share of Voice — broken down by both partner
-// (brand) and asset (placement/asset_type), so it drops into their workflow.
+// Impressions, Exposures, Duration, Share of Voice — broken down by partner
+// (brand) × asset — plus source columns so simulated vs uploaded is explicit.
 
 export interface NielsenRow {
   partner: string
@@ -265,6 +312,8 @@ export interface NielsenRow {
   exposures: number
   duration_seconds: number
   share_of_voice_pct: number
+  value_source: string
+  audience_source: string
 }
 
 const NIELSEN_HEADERS = [
@@ -275,12 +324,21 @@ const NIELSEN_HEADERS = [
   "Exposures",
   "Duration",
   "Share of Voice",
+  "Value Source",
+  "Audience Source",
 ]
 
-export function buildNielsenRows(brands: Brand[], econ: EconState): NielsenRow[] {
+export function buildNielsenRows(
+  brands: Brand[],
+  econ: EconState,
+  gameId: string | null,
+  legibility: LegibilityReport | null,
+): NielsenRow[] {
+  const { resolved } = scopeContext(brands, econ, gameId, legibility)
   const rows: NielsenRow[] = []
   for (const b of brands) {
     const apps = b.appearances || b.top_moments || []
+    const leg = legibility01(legibility, b.name)
     const byAsset = new Map<string, Moment[]>()
     for (const m of apps) {
       const a = String(m.asset_type || "other")
@@ -289,17 +347,17 @@ export function buildNielsenRows(brands: Brand[], econ: EconState): NielsenRow[]
       byAsset.set(a, list)
     }
     for (const [asset, moments] of byAsset) {
-      // Per-partner×asset value from a pseudo-brand of just that asset's moments.
-      const value = brandValue({ name: b.name, appearances: moments }, econ)
-      const dur = unionWeightedSeconds(moments, econ.weights).unionSecs
+      const ec = brandEconomics({ name: b.name, appearances: moments }, resolved, leg)
       rows.push({
         partner: b.name,
         asset,
-        value: Math.round(value),
-        impressions: econ.cpm > 0 ? Math.round((value / econ.cpm) * 1000) : 0,
+        value: Math.round(ec.emv),
+        impressions: ec.impressions,
         exposures: moments.length,
-        duration_seconds: Math.round(dur * 10) / 10,
+        duration_seconds: Math.round(unionWeightedSeconds(moments).unionSecs * 10) / 10,
         share_of_voice_pct: 0, // filled below
+        value_source: SOURCE_LABEL[resolved.rate.source],
+        audience_source: SOURCE_LABEL[resolved.audience.source],
       })
     }
   }
@@ -318,6 +376,8 @@ export function toNielsenCSV(rows: NielsenRow[]): string {
       r.exposures,
       r.duration_seconds,
       r.share_of_voice_pct,
+      r.value_source,
+      r.audience_source,
     ]
       .map(csvCell)
       .join(","),
@@ -325,8 +385,14 @@ export function toNielsenCSV(rows: NielsenRow[]): string {
   return [NIELSEN_HEADERS.join(","), ...body].join("\n") + "\n"
 }
 
-export function exportNielsen(brands: Brand[], econ: EconState, gameLabel: string) {
-  const rows = buildNielsenRows(brands, econ)
+export function exportNielsen(
+  brands: Brand[],
+  econ: EconState,
+  gameLabel: string,
+  gameId: string | null,
+  legibility: LegibilityReport | null,
+) {
+  const rows = buildNielsenRows(brands, econ, gameId, legibility)
   download(
     `sponsor-spotlight-${slug(gameLabel) || "export"}-nielsen.csv`,
     toNielsenCSV(rows),
@@ -340,14 +406,15 @@ export function exportData(
   econ: EconState,
   format: "csv" | "json",
   gameLabel: string,
+  gameId: string | null,
   detected: string[] = [],
 ) {
   const name = `sponsor-spotlight-${slug(gameLabel) || "export"}`
   if (format === "csv") {
-    const rows = buildAppearanceRows(brands, legibility, econ, gameLabel)
+    const rows = buildAppearanceRows(brands, legibility, econ, gameLabel, gameId)
     download(`${name}.csv`, toCSV(rows), "text/csv;charset=utf-8")
   } else {
-    const full = buildFullExport(brands, legibility, econ, gameLabel, detected)
+    const full = buildFullExport(brands, legibility, econ, gameLabel, gameId, detected)
     download(`${name}.json`, JSON.stringify(full, null, 2), "application/json")
   }
 }

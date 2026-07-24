@@ -2,8 +2,41 @@ import type { ReactNode } from "react"
 import { Chip } from "@twelvelabs-io/react"
 import { cn } from "@/lib/utils"
 import { fmtTime, formatGameTime } from "./lib/econ"
+import { SOURCE_LABEL, type DataSource } from "./lib/econData"
 import { useApp } from "./state"
 import type { Moment } from "./lib/types"
+
+// Data-provenance badge (PRD step 9): every economics number is labelled
+// Detected / Customer-Uploaded / Simulated so a simulated placeholder never
+// reads as a real measured value.
+const SOURCE_STYLE: Record<DataSource, string> = {
+  detected: "bg-tl-embed-lightest-green text-tl-embed-dark-green",
+  customer_upload: "bg-tl-system-color-lightest-blue text-tl-system-color-dark-blue",
+  simulated: "bg-tl-analyze-lightest-orange text-tl-analyze-dark-orange",
+}
+
+export function SourceBadge({
+  source,
+  label,
+  title,
+}: {
+  source: DataSource
+  /** Override the default source word (e.g. prefix with what it describes). */
+  label?: string
+  title?: string
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex h-5 shrink-0 items-center rounded-[6px] px-1.5 font-tl-mono text-[10px] uppercase leading-4 tracking-wide",
+        SOURCE_STYLE[source],
+      )}
+      title={title ?? `Data source: ${SOURCE_LABEL[source]}`}
+    >
+      {label ?? SOURCE_LABEL[source]}
+    </span>
+  )
+}
 
 /** A numbered section card — the spine of the demo layout. */
 export function SectionCard({
