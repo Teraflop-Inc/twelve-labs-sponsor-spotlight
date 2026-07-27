@@ -38,6 +38,56 @@ export function SourceBadge({
   )
 }
 
+/**
+ * Minimal inline SVG sparkline (no chart lib). Draws `values` as a filled line
+ * over a fixed internal viewBox that CSS stretches to the container width, so it
+ * stays crisp at any size. `peakIndex` gets a marker dot. Colour comes from
+ * `currentColor`, so callers set it with a text-* class.
+ */
+export function Sparkline({
+  values,
+  peakIndex,
+  className,
+}: {
+  values: number[]
+  peakIndex?: number
+  className?: string
+}) {
+  if (values.length < 2) return null
+  const W = 240
+  const H = 40
+  const PAD = 3
+  const max = Math.max(...values)
+  const min = Math.min(...values)
+  const range = max - min || 1
+  const stepX = W / (values.length - 1)
+  const y = (v: number) => H - PAD - ((v - min) / range) * (H - PAD * 2)
+  const pts = values.map((v, i) => `${(i * stepX).toFixed(1)},${y(v).toFixed(1)}`).join(" ")
+  const px = peakIndex != null ? peakIndex * stepX : null
+  const py = peakIndex != null ? y(values[peakIndex]) : null
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      preserveAspectRatio="none"
+      className={cn("h-10 w-full", className)}
+      role="img"
+      aria-hidden
+    >
+      <polyline points={`0,${H} ${pts} ${W},${H}`} fill="currentColor" opacity={0.1} stroke="none" />
+      <polyline
+        points={pts}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        vectorEffect="non-scaling-stroke"
+      />
+      {px != null && py != null && <circle cx={px} cy={py} r={2.75} fill="currentColor" />}
+    </svg>
+  )
+}
+
 /** A numbered section card — the spine of the demo layout. */
 export function SectionCard({
   title,

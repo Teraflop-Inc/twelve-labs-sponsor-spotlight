@@ -104,7 +104,9 @@ function num(v: unknown, fallback: number): number {
 
 export interface ResolvedEcon {
   audience: AudienceModel
-  rate: { value: number; source: DataSource; broadcast: Broadcast }
+  rate: { value: number; source: DataSource; broadcast: Broadcast; row: RateCardRow }
+  /** The rate card actually consulted (customer upload or synthetic) — for UI preview. */
+  card: RateCard
   rightsFee: number
   /** Rights fee is a manual customer input → labelled Customer-Uploaded. */
   rightsFeeSource: DataSource
@@ -135,6 +137,7 @@ export function resolveEcon(
   return {
     audience,
     rate: { ...rate, broadcast },
+    card,
     rightsFee: econ.rightsFee,
     rightsFeeSource: "customer_upload",
   }

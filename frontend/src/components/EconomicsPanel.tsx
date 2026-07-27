@@ -1,17 +1,18 @@
-import { useMemo, useRef, useState } from "react"
+import { useMemo, useRef, useState, type ReactNode } from "react"
 import { Button, TextField } from "@twelvelabs-io/react"
-import { resolveEcon, type EconState } from "../lib/econ"
+import { resolveEcon, type EconState, type ResolvedEcon } from "../lib/econ"
 import {
-  isSpreadsheetBinary,
+  fileToCsvText,
   parseAudienceCSV,
   parseRateCardCSV,
   SOURCE_LABEL,
+  SYNTHETIC_RATE_CARD,
   type AudiencePoint,
   type DataSource,
   type RateCardRow,
 } from "../lib/econData"
 import { ALL_GAMES, useApp } from "../state"
-import { SectionCard, SourceBadge } from "../ui"
+import { SectionCard, SourceBadge, Sparkline } from "../ui"
 import type { Moment } from "../lib/types"
 
 /** All appearances across the brands currently in scope — sizes the resolver. */
@@ -58,16 +59,17 @@ export function EconomicsPanel() {
       <div className="mt-4 grid gap-3 md:grid-cols-2">
         <UploadCard
           title="Audience data"
-          formatHint="Nielsen / Comscore CSV — columns: minute, ama_millions"
+          formatHint="Nielsen / Comscore CSV or XLSX — columns: minute, ama_millions"
           uploadedName={econ.audienceUploadName}
           source={econ.audienceUpload ? "customer_upload" : "simulated"}
           summary={
             resolved.audience.points.length
-              ? `Peak ${resolved.audience.peak.toFixed(1)}M at min ${resolved.audience.peakMinute} · mean ${resolved.audience.mean.toFixed(1)}M`
+              ? `Peak ${resolved.audience.peak.toFixed(1)}M at min ${resolved.audience.peakMinute} · mean ${resolved.audience.mean.toFixed(1)}M · ${resolved.audience.points.length} pts`
               : "—"
           }
+          preview={<AudiencePreview resolved={resolved} />}
           onFile={async (file) => {
-            const res = await readCsv(file, (t) => parseAudienceCSV(t))
+            const res = await readUpload(file, (t) => parseAudienceCSV(t))
             if (res.error) {
               // Bad file → fall back to synthetic (PRD Definition of Done).
               set({ audienceUpload: null, audienceUploadName: null })
@@ -81,12 +83,13 @@ export function EconomicsPanel() {
 
         <UploadCard
           title="Media rate card"
-          formatHint="CSV — columns: network, daypart, rate_per_30sec"
+          formatHint="CSV or XLSX — columns: network, daypart, rate_per_30sec"
           uploadedName={econ.rateCardUploadName}
           source={resolved.rate.source}
           summary={`$${resolved.rate.value.toLocaleString()} /:30 · ${resolved.rate.broadcast.network} · ${resolved.rate.broadcast.daypart}`}
+          preview={<RateCardPreview resolved={resolved} />}
           onFile={async (file) => {
-            const res = await readCsv(file, (t) => parseRateCardCSV(t))
+            const res = await readUpload(file, (t) => parseRateCardCSV(t))
             if (res.error) {
               // Bad file → fall back to synthetic (PRD Definition of Done).
               set({ rateCardUpload: null, rateCardUploadName: null })
@@ -114,18 +117,96 @@ export function EconomicsPanel() {
   )
 }
 
-/** Read a file as text and parse; returns rows or a friendly error string. */
-async function readCsv<T>(
+/** Minute-by-minute audience curve (the AMA that scales every EMV). */
+function AudiencePreview({ resolved }: { resolved: ResolvedEcon }) {
+  const { points, peakMinute, source } = resolved.audience
+  if (points.length < 2) return null
+  const values = points.map((p) => p.ama)
+  const peakIndex = points.findIndex((p) => p.minute === peakMinute)
+  const lastMinute = points[points.length - 1].minute
+  const tone =
+    source === "customer_upload" ? "text-tl-system-color-dark-blue" : "text-tl-analyze-dark-orange"
+  return (
+    <div className="mt-2">
+      <Sparkline values={values} peakIndex={peakIndex >= 0 ? peakIndex : undefined} className={tone} />
+      <div className="mt-0.5 flex justify-between font-tl-mono text-[10px] text-foreground-subtle">
+        <span>0′</span>
+        <span>AMA (millions) · minute-by-minute</span>
+        <span>{lastMinute}′</span>
+      </div>
+    </div>
+  )
+}
+
+/** The rate-card rows in play, with the active broadcast's row highlighted. */
+function RateCardPreview({ resolved }: { resolved: ResolvedEcon }) {
+  const MAX = 8
+  // Show the card the rate actually came from: the customer card if it matched,
+  // otherwise the synthetic card we fell back to (per-number tagging).
+  const usingCard = resolved.rate.source === resolved.card.source
+  const rows = usingCard ? resolved.card.rows : SYNTHETIC_RATE_CARD.rows
+  const shown = rows.slice(0, MAX)
+  const active = resolved.rate.row
+  const fellBack = resolved.card.source === "customer_upload" && resolved.rate.source === "simulated"
+
+  return (
+    <div className="mt-2">
+      <div className="overflow-hidden rounded-tlds-1 border border-border-secondary">
+        <table className="w-full text-[11px]">
+          <thead>
+            <tr className="bg-tl-gray-50 text-foreground-subtle">
+              <th className="px-2 py-1 text-left font-medium">Network</th>
+              <th className="px-2 py-1 text-left font-medium">Daypart</th>
+              <th className="px-2 py-1 text-right font-medium">$/:30</th>
+            </tr>
+          </thead>
+          <tbody className="font-tl-mono">
+            {shown.map((r, i) => {
+              const isActive = r === active
+              return (
+                <tr
+                  key={`${r.network}-${r.daypart}-${i}`}
+                  className={
+                    isActive
+                      ? "bg-tl-system-color-lightest-blue text-tl-system-color-dark-blue"
+                      : "text-foreground-muted"
+                  }
+                >
+                  <td className="px-2 py-1">
+                    {isActive && <span aria-hidden>▸ </span>}
+                    {r.network}
+                  </td>
+                  <td className="px-2 py-1">{r.daypart}</td>
+                  <td className="px-2 py-1 text-right tabular-nums">${r.ratePer30.toLocaleString()}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
+      {rows.length > MAX && (
+        <div className="mt-1 text-[10px] text-foreground-subtle">+{rows.length - MAX} more rows</div>
+      )}
+      {fellBack && (
+        <div className="mt-1 text-[10px] text-tl-analyze-dark-orange">
+          “{resolved.rate.broadcast.network} · {resolved.rate.broadcast.daypart}” isn’t in your file —
+          using the synthetic rate for this broadcast.
+        </div>
+      )}
+    </div>
+  )
+}
+
+/** Read a file (CSV or XLSX) as text and parse; returns rows or a friendly error. */
+async function readUpload<T>(
   file: File,
   parse: (text: string) => { rows: T[]; error?: string },
 ): Promise<{ rows: T[]; error?: string }> {
-  if (isSpreadsheetBinary(file.name))
-    return { rows: [], error: "XLSX isn't supported yet — please export the sheet as CSV." }
   try {
-    const text = await file.text()
+    const text = await fileToCsvText(file)
     return parse(text)
   } catch {
-    return { rows: [], error: "Couldn't read the file." }
+    return { rows: [], error: "Couldn't read the file — is it a valid CSV or XLSX?" }
   }
 }
 
@@ -135,6 +216,7 @@ function UploadCard({
   uploadedName,
   source,
   summary,
+  preview,
   onFile,
   onClear,
 }: {
@@ -143,6 +225,7 @@ function UploadCard({
   uploadedName: string | null
   source: DataSource
   summary: string
+  preview?: ReactNode
   onFile: (file: File) => Promise<string | null>
   onClear: () => void
 }) {
@@ -170,10 +253,18 @@ function UploadCard({
       </div>
       <div className="mt-1 text-xs text-foreground-subtle">{summary}</div>
 
+      {preview}
+
       <div className="mt-2 flex flex-wrap items-center gap-2">
-        <input ref={inputRef} type="file" accept=".csv,text/csv" className="hidden" onChange={onChange} />
+        <input
+          ref={inputRef}
+          type="file"
+          accept=".csv,.xlsx,.xls,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"
+          className="hidden"
+          onChange={onChange}
+        />
         <Button size="sm" variant="outlined-gray" onClick={pick} disabled={busy}>
-          {busy ? "reading…" : uploadedName ? "Replace file" : "Upload CSV"}
+          {busy ? "reading…" : uploadedName ? "Replace file" : "Upload CSV / XLSX"}
         </Button>
         {uploadedName && (
           <>

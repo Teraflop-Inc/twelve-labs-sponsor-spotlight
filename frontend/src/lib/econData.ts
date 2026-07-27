@@ -176,7 +176,7 @@ export const SYNTHETIC_RATE_CARD: RateCard = {
 export function resolveRate(
   card: RateCard,
   b: Broadcast,
-): { value: number; source: DataSource } {
+): { value: number; source: DataSource; row: RateCardRow } {
   const match = (rows: RateCardRow[]) =>
     rows.find(
       (r) =>
@@ -186,10 +186,10 @@ export function resolveRate(
     rows.find((r) => r.network.trim().toLowerCase() === b.network.toLowerCase())
 
   const hit = match(card.rows)
-  if (hit) return { value: hit.ratePer30, source: card.source }
+  if (hit) return { value: hit.ratePer30, source: card.source, row: hit }
   // No row for this broadcast in the (customer) card → synthetic fallback.
   const syn = match(SYNTHETIC_RATE_CARD.rows) ?? SYNTHETIC_RATE_CARD.rows[3]
-  return { value: syn.ratePer30, source: "simulated" }
+  return { value: syn.ratePer30, source: "simulated", row: syn }
 }
 
 // --- broadcast duration + goal minutes from the run --------------------------
@@ -308,7 +308,24 @@ export function parseRateCardCSV(text: string): ParseResult<RateCardRow> {
   return { rows }
 }
 
-/** True for an .xlsx/.xls filename — we accept CSV only, and say so gracefully. */
-export function isSpreadsheetBinary(filename: string): boolean {
-  return /\.xlsx?$/i.test(filename)
+/**
+ * Read an upload as CSV text (PRD steps 5–6: "Accept CSV/XLSX"). A `.xlsx`/`.xls`
+ * file is converted from its first worksheet via SheetJS so the same column
+ * parsers validate both formats. Throws only when the bytes can't be read as a
+ * workbook at all — a structurally-valid file with the wrong columns still
+ * returns text so the parser can produce a friendly error and fall back to
+ * synthetic (never crash).
+ */
+export async function fileToCsvText(file: File): Promise<string> {
+  if (/\.xlsx?$/i.test(file.name)) {
+    // Lazy-load SheetJS so the ~430KB parser is only fetched when a user
+    // actually uploads a spreadsheet — CSV uploads and initial load never pay.
+    const XLSX = await import("xlsx")
+    const buf = await file.arrayBuffer()
+    const wb = XLSX.read(buf, { type: "array" })
+    const first = wb.SheetNames[0]
+    if (!first) return ""
+    return XLSX.utils.sheet_to_csv(wb.Sheets[first])
+  }
+  return file.text()
 }
