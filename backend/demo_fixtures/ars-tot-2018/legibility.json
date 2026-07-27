@@ -1,325 +1,192 @@
 {
-  "session_id": "sess_019f629c-87b0-7230-93fb-a4de0ecea5b2",
+  "session_id": "sess_019fa5f5-7a9c-7253-b092-e502bb7663e0",
   "report": {
     "brands": [
       {
         "assets": [
           {
-            "asset_type": "broadcast_overlay",
-            "camera_angle": 10,
-            "contrast": 9,
-            "examples": [
-              {
-                "end_sec": 52,
-                "note": "Pregame Starting XI graphic is highly readable; no major failure moment observed.",
-                "start_sec": 10,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 130,
-                "note": "Venue line 'Emirates Stadium' in match intro is smaller than team names, so secondary text can be missed on small screens.",
-                "start_sec": 102,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Strong in pregame graphics, but 'Emirates Stadium' functions as secondary text rather than dominant sponsor copy, so brand recall is weaker than a dedicated slate.",
-            "motion_blur": 10,
-            "overall_score": 8.8,
-            "position": 9,
-            "size": 7,
-            "suggestions": "If venue naming rights are meant to work as paid exposure, isolate 'Emirates' in a larger font or contrasting panel instead of embedding it as part of venue text."
-          },
-          {
             "asset_type": "jersey_patch",
-            "camera_angle": 7,
-            "contrast": 9,
-            "examples": [
-              {
-                "end_sec": 691,
-                "note": "On Aubameyang close-up the shirt-front is clear, but folds in the shirt slightly distort the wordmark.",
-                "start_sec": 686,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 704,
-                "note": "During the front-flip celebration the logo is visible but motion blur reduces perfect readability.",
-                "start_sec": 699,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Very strong white-on-red contrast, but legibility drops during celebrations and running shots because of torso rotation and fabric creasing.",
-            "motion_blur": 6,
-            "overall_score": 8.2,
-            "position": 8,
-            "size": 8,
-            "suggestions": "Best-in-class contrast already; gains would come from securing more close-up chest-level shots in celebrations and replays rather than creative changes."
-          },
-          {
-            "asset_type": "interview_backdrop",
             "camera_angle": 8,
             "contrast": 8,
             "examples": [
               {
-                "end_sec": 97,
-                "note": "Seen as secondary background signage during manager handshake; not isolated long enough for full sponsor impact.",
-                "start_sec": 88,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+                "end_sec": 102,
+                "note": "Arsenal crest on Unai Emery jacket is visible but modest in size; readable only in the bench close-up.",
+                "start_sec": 97,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
               }
             ],
-            "issues": "Readable as fascia/tunnel branding but not held in frame long enough to deliver premium sponsorship value.",
+            "issues": "Observed as Arsenal crest/jacket branding in the pregame bench close-up rather than a large standalone sponsor execution. Legibility drops outside close framing.",
             "motion_blur": 9,
-            "overall_score": 7.7,
-            "position": 7,
-            "size": 7,
-            "suggestions": "Use repeated larger-format tunnel/fascia panels with more negative space around the wordmark so short cutaways still read instantly."
-          }
-        ],
-        "name": "Emirates",
-        "summary": "Highest-value exposure comes from Arsenal shirt-front plus pregame/venue-related signage. Strong brand recall, with the main weakness being motion blur during celebrations and the sponsor sometimes appearing as venue text rather than standalone branding."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "jersey_patch",
-            "camera_angle": 8,
-            "contrast": 9,
-            "examples": [
-              {
-                "end_sec": 683,
-                "note": "Jan Vertonghen close-up is clear, but head-down posture slightly compresses the chest mark.",
-                "start_sec": 681,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 5113,
-                "note": "Son walk-off shot is readable, though partial body framing briefly crops the lower part of the shirt.",
-                "start_sec": 5108,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 5117,
-                "note": "Lucas Moura entry shot is brief; logo is visible but exposure duration is short.",
-                "start_sec": 5113,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Excellent red-on-white contrast and strong central chest placement. Main limitation is brief duration in close-ups and occasional cropping during substitution coverage.",
-            "motion_blur": 7,
-            "overall_score": 8.6,
-            "position": 9,
-            "size": 8,
-            "suggestions": "No creative fix needed; maximize value by favoring tighter isolated player close-ups during stoppages and substitutions where the chest mark is square to camera."
-          }
-        ],
-        "name": "AIA",
-        "summary": "Very strong shirt-front sponsor: bold, central, and highly legible in stoppages and player close-ups. Exposure quality is better in substitutions/stoppages than in open play."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "jersey_patch",
-            "camera_angle": 6,
-            "contrast": 8,
-            "examples": [
-              {
-                "end_sec": 153,
-                "note": "Visible on Tottenham kit near kickoff, but very small in the wide opening shot.",
-                "start_sec": 146,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 5113,
-                "note": "Seen in substitution close-ups, but the swoosh is tiny relative to frame and easy to miss beside the larger AIA mark.",
-                "start_sec": 5108,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Good contrast, but the Nike swoosh is intrinsically small and subordinate to the shirt sponsor; it loses impact in anything wider than a head-and-torso shot.",
-            "motion_blur": 7,
-            "overall_score": 6.9,
-            "position": 7,
-            "size": 4,
-            "suggestions": "Increase logo scale where kit regulations allow, or use higher-contrast outline/trim on the swoosh so it separates better in medium shots."
-          }
-        ],
-        "name": "Nike",
-        "summary": "Present on Tottenham kit, but visibility is limited by small mark size. It reads mainly in close-ups, not in standard broadcast wides."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "courtside_led",
-            "camera_angle": 5,
-            "contrast": 8,
-            "examples": [
-              {
-                "end_sec": 10,
-                "note": "Visible on far-side LED in pregame wide, but distance makes the long copy hard to read quickly.",
-                "start_sec": 0,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 710,
-                "note": "During goal celebration wides, long text competes with crowd and pitch action.",
-                "start_sec": 705,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Copy length is the problem: even with decent contrast, a long promotional phrase is hard to parse in wide match cameras.",
-            "motion_blur": 7,
-            "overall_score": 6.3,
-            "position": 6,
-            "size": 5,
-            "suggestions": "Shorten copy to a 2-3 word hook plus league bug, or split the message across sequential LED rotations with fewer words per exposure."
-          }
-        ],
-        "name": "126 Live Premier League Games",
-        "summary": "The LED creative is serviceable but text-heavy. It is visible, yet not instantly digestible from standard broadcast wide angles."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "courtside_led",
-            "camera_angle": 5,
-            "contrast": 8,
-            "examples": [
-              {
-                "end_sec": 10,
-                "note": "Far-side pregame LED is readable but still relatively small in the establishing wide.",
-                "start_sec": 0,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 710,
-                "note": "In celebration/wide-play contexts the board is visible but partially competed away by player movement and crowd detail.",
-                "start_sec": 705,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Solid short brand name and good contrast help, but perimeter placement keeps it secondary unless the camera lingers on the touchline side.",
-            "motion_blur": 7,
-            "overall_score": 7.1,
-            "position": 6,
-            "size": 6,
-            "suggestions": "Use larger glyph height and more dead space around the logotype; avoid crowded companion copy so the mark pops in wide play shots."
-          }
-        ],
-        "name": "12BET",
-        "summary": "A decent perimeter LED execution: short name, readable contrast, moderate visibility. Value is constrained mostly by distance and broadcast framing."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "courtside_led",
-            "camera_angle": 5,
-            "contrast": 7,
-            "examples": [
-              {
-                "end_sec": 10,
-                "note": "Readable in pregame wide, but smaller letterforms and distance reduce snap recognition.",
-                "start_sec": 0,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 710,
-                "note": "During fan/celebration cutaways the board is present but not focal, so legibility depends on viewer attention.",
-                "start_sec": 705,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Longer wordmark than 12BET and less punchy contrast make it somewhat softer in wides.",
-            "motion_blur": 7,
-            "overall_score": 6.8,
-            "position": 6,
-            "size": 6,
-            "suggestions": "Increase luminance contrast and consider a bolder, simplified wordmark treatment for LED use so letters hold at distance."
-          }
-        ],
-        "name": "Acronis",
-        "summary": "Visible on perimeter LED, but less forceful than shorter betting-style marks. Needs stronger contrast or simplified rendering for wide-shot effectiveness."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "broadcast_overlay",
-            "camera_angle": 10,
-            "contrast": 9,
-            "examples": [
-              {
-                "end_sec": 52,
-                "note": "Starting XI graphic is clear and dominant; no serious legibility issue.",
-                "start_sec": 10,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              },
-              {
-                "end_sec": 710,
-                "note": "Scorebug/goal-related Arsenal identifiers are small relative to full-screen action, so they function as identifiers more than branding.",
-                "start_sec": 699,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Excellent in full-screen pregame graphics, but in scorebug usage the club branding becomes small and purely informational.",
-            "motion_blur": 10,
-            "overall_score": 8.4,
-            "position": 9,
-            "size": 7,
-            "suggestions": "Keep crest/wordmark pairing larger in transitional graphics; for scorebug, slightly enlarge the crest or add more clearspace if branding value matters."
-          },
-          {
-            "asset_type": "interview_backdrop",
-            "camera_angle": 7,
-            "contrast": 8,
-            "examples": [
-              {
-                "end_sec": 4066,
-                "note": "Large stand bannering is visible, but the pan across the crowd means viewers get limited dwell time.",
-                "start_sec": 4056,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
-              }
-            ],
-            "issues": "Strong club-color contrast, but signage is often captured in moving crowd pans rather than static branded holds.",
-            "motion_blur": 8,
             "overall_score": 7.5,
             "position": 7,
-            "size": 7,
-            "suggestions": "Place larger Arsenal marks in camera-favored stand zones and avoid cluttered supporter-banner environments where multiple messages compete."
+            "size": 6,
+            "suggestions": "If this crest/jacket branding is being counted as Arsenal brand presence, increase scale on outerwear or place staff in mixed zones/interview positions for longer dwell. Current exposure depends on editorial close-ups."
+          },
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 1001,
+                "note": "Only the abbreviated team label/scorebug is visible; brand impact is functional rather than promotional.",
+                "start_sec": 998,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+              }
+            ],
+            "issues": "Arsenal appears as team identification in the scorebug/graphics, not as a sponsor asset. Small but crisp.",
+            "motion_blur": 10,
+            "overall_score": 8.5,
+            "position": 9,
+            "size": 5,
+            "suggestions": "No creative fix needed for readability. If the objective is commercial branding rather than editorial team ID, pair team wordmark with larger branded inserts elsewhere."
           }
         ],
         "name": "Arsenal",
-        "summary": "Arsenal branding performs well in pregame graphics and stadium visuals. Club identifiers are clear, though some signage loses value because the camera treats it as atmosphere rather than a focal brand asset."
+        "summary": "Arsenal is visible mainly as club branding rather than paid sponsor creative: pregame staff apparel and broadcast team-identification graphics. Readability is good in close-ups and overlays, but exposure volume is limited."
+      },
+      {
+        "assets": [],
+        "name": "Arsenal.com/membership",
+        "summary": "I did not find a metadata-grounded or clearly verified example of Arsenal.com/membership in the inspected windows. A vision pass suggested possible perimeter presence, but I would not treat that as confirmed without a wider manual scan."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 6185,
+                "note": "Back-of-shirt shot of Harry Kane after full time offers no AIA exposure; sponsor disappears when editorial favors reverse angles.",
+                "start_sec": 6181,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+              }
+            ],
+            "issues": "AIA is naturally strong on Tottenham shirt fronts, but visibility is highly angle-dependent. Reverse-angle walk-offs and wider live-play frames reduce legibility fast.",
+            "motion_blur": 8,
+            "overall_score": 7,
+            "position": 7,
+            "size": 5,
+            "suggestions": "Maintain high-contrast red-on-white lockup, but maximize front-facing exposure in player walk-ins, set pieces, and celebration/reaction shots. Back-view editorial moments waste the asset."
+          }
+        ],
+        "name": "AIA",
+        "summary": "AIA appears on Tottenham shirt fronts. The creative is strong and clean, but actual legibility varies with whether players are front-facing and how tight the camera is."
+      },
+      {
+        "assets": [],
+        "name": "Acronis",
+        "summary": "Not confidently verified in the metadata-backed clips I inspected. One vision pass suggested perimeter-board presence, but I would not score it as confirmed without additional manual review."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "jersey_patch",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 1001,
+                "note": "Emery bench close-up shows Emirates branding in a small apparel execution; readable but not dominant.",
+                "start_sec": 983,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+              }
+            ],
+            "issues": "On Arsenal apparel/shirt-front contexts, Emirates benefits from strong white-on-red contrast, but size still depends on how tight the director frames the subject.",
+            "motion_blur": 9,
+            "overall_score": 8,
+            "position": 8,
+            "size": 7,
+            "suggestions": "Already strong creatively. To improve secondary shots, add more front-on editorial opportunities during walkouts, celebrations, and bench reactions."
+          },
+          {
+            "asset_type": "courtside_led",
+            "camera_angle": 7,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 1048,
+                "note": "'Emirates - Fly Better to Dubai' is readable in the wide live-play pan, but copy density limits instant recognition compared with a shorter logo-only execution.",
+                "start_sec": 1011,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+              }
+            ],
+            "issues": "Good luminance and field-side position, but the long tagline execution loses punch in panning wide shots. Exposure quality depends on board angle and camera motion.",
+            "motion_blur": 7,
+            "overall_score": 7.5,
+            "position": 8,
+            "size": 6,
+            "suggestions": "For live-play boards, shorten copy or increase logo-to-copy ratio. A simpler 'Emirates' or 'Fly Better' lockup with more whitespace would hold better during pans."
+          }
+        ],
+        "name": "Emirates",
+        "summary": "Emirates is one of the strongest brands in this broadcast, appearing both on Arsenal apparel/shirt-front contexts and on perimeter LED. Its main weakness is not contrast but copy length on LED boards during moving wide shots."
+      },
+      {
+        "assets": [],
+        "name": "126 Live Premier League Games",
+        "summary": "Not confidently verified in metadata-backed evidence. A vision pass suggested perimeter-board exposure, but I cannot confirm it robustly enough to score as an observed asset."
       },
       {
         "assets": [
           {
             "asset_type": "courtside_led",
-            "camera_angle": 5,
-            "contrast": 8,
+            "camera_angle": 6,
+            "contrast": 9,
             "examples": [
               {
-                "end_sec": 10,
-                "note": "If present on the pregame LED rotation, the long URL-style copy is difficult to read in one glance from the high wide.",
-                "start_sec": 0,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+                "end_sec": 486,
+                "note": "Visible during live-play wide shot, but fast ball movement and camera pan soften edge detail; Chinese-character variant is less immediately legible for some audiences.",
+                "start_sec": 433,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
               },
               {
-                "end_sec": 710,
-                "note": "During celebration/wide stadium shots, the slash-based copy structure becomes especially hard to parse at distance.",
-                "start_sec": 705,
-                "video": "Arsenal v. Tottenham Hotspur (2018-12-02)"
+                "end_sec": 4363,
+                "note": "At 66:05 match clock, the board is visible again, but only briefly before play resumes and the eye follows the action.",
+                "start_sec": 4343,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
               }
             ],
-            "issues": "Longest and weakest-read message in the set: URL-style copy does not resolve quickly on far-side LED during live broadcast framing.",
-            "motion_blur": 7,
-            "overall_score": 5.8,
-            "position": 6,
-            "size": 4,
-            "suggestions": "Do not run the full URL/message as a single distant LED read. Replace with a shorter CTA such as 'JOIN ARSENAL' and move the full web address to static close-range assets or digital overlays."
+            "issues": "Bright, high-contrast board with strong sideline position, but exposure is mostly in wide live-play frames where motion blur and short dwell reduce readability. Alternate-language/character executions can further slow recognition.",
+            "motion_blur": 5,
+            "overall_score": 7,
+            "position": 8,
+            "size": 6,
+            "suggestions": "Keep the bright palette, but simplify copy and increase static hold time during stoppages or replays. If using character-based creative, add a Latin-script companion mark/logo for faster recognition in motion."
           }
         ],
-        "name": "Arsenal.com/membership",
-        "summary": "Low-efficiency creative for broadcast. The likely issue is not placement alone but the message format itself: URL-like copy is too long for perimeter LED readability in standard match cameras."
+        "name": "12BET",
+        "summary": "12BET is clearly present on perimeter LED boards and benefits from strong brightness and placement. Its main challenge is wide-shot motion and short dwell time rather than contrast."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "other",
+            "camera_angle": 8,
+            "contrast": 6,
+            "examples": [
+              {
+                "end_sec": 1072,
+                "note": "On Tottenham players, the swoosh is tiny and becomes effectively unreadable once the camera widens or pans.",
+                "start_sec": 1069,
+                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+              }
+            ],
+            "issues": "Nike appears as a small kit manufacturer logo on Tottenham kit. High familiarity helps recognition, but physical size is the limiting factor, especially in live play.",
+            "motion_blur": 8,
+            "overall_score": 6,
+            "position": 7,
+            "size": 3,
+            "suggestions": "Manufacturer marks are inherently small; best fix is editorial rather than creative. Seek more chest-up player close-ups, tunnel shots, and set-piece holds where the swoosh sits square to camera."
+          }
+        ],
+        "name": "Nike",
+        "summary": "Nike is present as Tottenham’s kit manufacturer mark. Brand recognition is helped by the iconic shape, but the logo is simply too small to perform strongly except in close-ups."
       }
     ]
   },
-  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":52,\"note\":\"Pregame Starting XI graphic is highly readable; no major failure moment observed.\",\"start_sec\":10,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":130,\"note\":\"Venue line 'Emirates Stadium' in match intro is smaller than team names, so secondary text can be missed on small screens.\",\"start_sec\":102,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Strong in pregame graphics, but 'Emirates Stadium' functions as secondary text rather than dominant sponsor copy, so brand recall is weaker than a dedicated slate.\",\"motion_blur\":10,\"overall_score\":8.8,\"position\":9,\"size\":7,\"suggestions\":\"If venue naming rights are meant to work as paid exposure, isolate 'Emirates' in a larger font or contrasting panel instead of embedding it as part of venue text.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":7,\"contrast\":9,\"examples\":[{\"end_sec\":691,\"note\":\"On Aubameyang close-up the shirt-front is clear, but folds in the shirt slightly distort the wordmark.\",\"start_sec\":686,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":704,\"note\":\"During the front-flip celebration the logo is visible but motion blur reduces perfect readability.\",\"start_sec\":699,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Very strong white-on-red contrast, but legibility drops during celebrations and running shots because of torso rotation and fabric creasing.\",\"motion_blur\":6,\"overall_score\":8.2,\"position\":8,\"size\":8,\"suggestions\":\"Best-in-class contrast already; gains would come from securing more close-up chest-level shots in celebrations and replays rather than creative changes.\"},{\"asset_type\":\"interview_backdrop\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":97,\"note\":\"Seen as secondary background signage during manager handshake; not isolated long enough for full sponsor impact.\",\"start_sec\":88,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Readable as fascia/tunnel branding but not held in frame long enough to deliver premium sponsorship value.\",\"motion_blur\":9,\"overall_score\":7.7,\"position\":7,\"size\":7,\"suggestions\":\"Use repeated larger-format tunnel/fascia panels with more negative space around the wordmark so short cutaways still read instantly.\"}],\"name\":\"Emirates\",\"summary\":\"Highest-value exposure comes from Arsenal shirt-front plus pregame/venue-related signage. Strong brand recall, with the main weakness being motion blur during celebrations and the sponsor sometimes appearing as venue text rather than standalone branding.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":9,\"examples\":[{\"end_sec\":683,\"note\":\"Jan Vertonghen close-up is clear, but head-down posture slightly compresses the chest mark.\",\"start_sec\":681,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":5113,\"note\":\"Son walk-off shot is readable, though partial body framing briefly crops the lower part of the shirt.\",\"start_sec\":5108,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":5117,\"note\":\"Lucas Moura entry shot is brief; logo is visible but exposure duration is short.\",\"start_sec\":5113,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Excellent red-on-white contrast and strong central chest placement. Main limitation is brief duration in close-ups and occasional cropping during substitution coverage.\",\"motion_blur\":7,\"overall_score\":8.6,\"position\":9,\"size\":8,\"suggestions\":\"No creative fix needed; maximize value by favoring tighter isolated player close-ups during stoppages and substitutions where the chest mark is square to camera.\"}],\"name\":\"AIA\",\"summary\":\"Very strong shirt-front sponsor: bold, central, and highly legible in stoppages and player close-ups. Exposure quality is better in substitutions/stoppages than in open play.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":6,\"contrast\":8,\"examples\":[{\"end_sec\":153,\"note\":\"Visible on Tottenham kit near kickoff, but very small in the wide opening shot.\",\"start_sec\":146,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":5113,\"note\":\"Seen in substitution close-ups, but the swoosh is tiny relative to frame and easy to miss beside the larger AIA mark.\",\"start_sec\":5108,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Good contrast, but the Nike swoosh is intrinsically small and subordinate to the shirt sponsor; it loses impact in anything wider than a head-and-torso shot.\",\"motion_blur\":7,\"overall_score\":6.9,\"position\":7,\"size\":4,\"suggestions\":\"Increase logo scale where kit regulations allow, or use higher-contrast outline/trim on the swoosh so it separates better in medium shots.\"}],\"name\":\"Nike\",\"summary\":\"Present on Tottenham kit, but visibility is limited by small mark size. It reads mainly in close-ups, not in standard broadcast wides.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":5,\"contrast\":8,\"examples\":[{\"end_sec\":10,\"note\":\"Visible on far-side LED in pregame wide, but distance makes the long copy hard to read quickly.\",\"start_sec\":0,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":710,\"note\":\"During goal celebration wides, long text competes with crowd and pitch action.\",\"start_sec\":705,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Copy length is the problem: even with decent contrast, a long promotional phrase is hard to parse in wide match cameras.\",\"motion_blur\":7,\"overall_score\":6.3,\"position\":6,\"size\":5,\"suggestions\":\"Shorten copy to a 2-3 word hook plus league bug, or split the message across sequential LED rotations with fewer words per exposure.\"}],\"name\":\"126 Live Premier League Games\",\"summary\":\"The LED creative is serviceable but text-heavy. It is visible, yet not instantly digestible from standard broadcast wide angles.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":5,\"contrast\":8,\"examples\":[{\"end_sec\":10,\"note\":\"Far-side pregame LED is readable but still relatively small in the establishing wide.\",\"start_sec\":0,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":710,\"note\":\"In celebration/wide-play contexts the board is visible but partially competed away by player movement and crowd detail.\",\"start_sec\":705,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Solid short brand name and good contrast help, but perimeter placement keeps it secondary unless the camera lingers on the touchline side.\",\"motion_blur\":7,\"overall_score\":7.1,\"position\":6,\"size\":6,\"suggestions\":\"Use larger glyph height and more dead space around the logotype; avoid crowded companion copy so the mark pops in wide play shots.\"}],\"name\":\"12BET\",\"summary\":\"A decent perimeter LED execution: short name, readable contrast, moderate visibility. Value is constrained mostly by distance and broadcast framing.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":5,\"contrast\":7,\"examples\":[{\"end_sec\":10,\"note\":\"Readable in pregame wide, but smaller letterforms and distance reduce snap recognition.\",\"start_sec\":0,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":710,\"note\":\"During fan/celebration cutaways the board is present but not focal, so legibility depends on viewer attention.\",\"start_sec\":705,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Longer wordmark than 12BET and less punchy contrast make it somewhat softer in wides.\",\"motion_blur\":7,\"overall_score\":6.8,\"position\":6,\"size\":6,\"suggestions\":\"Increase luminance contrast and consider a bolder, simplified wordmark treatment for LED use so letters hold at distance.\"}],\"name\":\"Acronis\",\"summary\":\"Visible on perimeter LED, but less forceful than shorter betting-style marks. Needs stronger contrast or simplified rendering for wide-shot effectiveness.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":52,\"note\":\"Starting XI graphic is clear and dominant; no serious legibility issue.\",\"start_sec\":10,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":710,\"note\":\"Scorebug/goal-related Arsenal identifiers are small relative to full-screen action, so they function as identifiers more than branding.\",\"start_sec\":699,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Excellent in full-screen pregame graphics, but in scorebug usage the club branding becomes small and purely informational.\",\"motion_blur\":10,\"overall_score\":8.4,\"position\":9,\"size\":7,\"suggestions\":\"Keep crest/wordmark pairing larger in transitional graphics; for scorebug, slightly enlarge the crest or add more clearspace if branding value matters.\"},{\"asset_type\":\"interview_backdrop\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":4066,\"note\":\"Large stand bannering is visible, but the pan across the crowd means viewers get limited dwell time.\",\"start_sec\":4056,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Strong club-color contrast, but signage is often captured in moving crowd pans rather than static branded holds.\",\"motion_blur\":8,\"overall_score\":7.5,\"position\":7,\"size\":7,\"suggestions\":\"Place larger Arsenal marks in camera-favored stand zones and avoid cluttered supporter-banner environments where multiple messages compete.\"}],\"name\":\"Arsenal\",\"summary\":\"Arsenal branding performs well in pregame graphics and stadium visuals. Club identifiers are clear, though some signage loses value because the camera treats it as atmosphere rather than a focal brand asset.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":5,\"contrast\":8,\"examples\":[{\"end_sec\":10,\"note\":\"If present on the pregame LED rotation, the long URL-style copy is difficult to read in one glance from the high wide.\",\"start_sec\":0,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"},{\"end_sec\":710,\"note\":\"During celebration/wide stadium shots, the slash-based copy structure becomes especially hard to parse at distance.\",\"start_sec\":705,\"video\":\"Arsenal v. Tottenham Hotspur (2018-12-02)\"}],\"issues\":\"Longest and weakest-read message in the set: URL-style copy does not resolve quickly on far-side LED during live broadcast framing.\",\"motion_blur\":7,\"overall_score\":5.8,\"position\":6,\"size\":4,\"suggestions\":\"Do not run the full URL/message as a single distant LED read. Replace with a shorter CTA such as 'JOIN ARSENAL' and move the full web address to static close-range assets or digital overlays.\"}],\"name\":\"Arsenal.com/membership\",\"summary\":\"Low-efficiency creative for broadcast. The likely issue is not placement alone but the message format itself: URL-like copy is too long for perimeter LED readability in standard match cameras.\"}]}"
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":102,\"note\":\"Arsenal crest on Unai Emery jacket is visible but modest in size; readable only in the bench close-up.\",\"start_sec\":97,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Observed as Arsenal crest/jacket branding in the pregame bench close-up rather than a large standalone sponsor execution. Legibility drops outside close framing.\",\"motion_blur\":9,\"overall_score\":7.5,\"position\":7,\"size\":6,\"suggestions\":\"If this crest/jacket branding is being counted as Arsenal brand presence, increase scale on outerwear or place staff in mixed zones/interview positions for longer dwell. Current exposure depends on editorial close-ups.\"},{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":1001,\"note\":\"Only the abbreviated team label/scorebug is visible; brand impact is functional rather than promotional.\",\"start_sec\":998,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Arsenal appears as team identification in the scorebug/graphics, not as a sponsor asset. Small but crisp.\",\"motion_blur\":10,\"overall_score\":8.5,\"position\":9,\"size\":5,\"suggestions\":\"No creative fix needed for readability. If the objective is commercial branding rather than editorial team ID, pair team wordmark with larger branded inserts elsewhere.\"}],\"name\":\"Arsenal\",\"summary\":\"Arsenal is visible mainly as club branding rather than paid sponsor creative: pregame staff apparel and broadcast team-identification graphics. Readability is good in close-ups and overlays, but exposure volume is limited.\"},{\"assets\":[],\"name\":\"Arsenal.com/membership\",\"summary\":\"I did not find a metadata-grounded or clearly verified example of Arsenal.com/membership in the inspected windows. A vision pass suggested possible perimeter presence, but I would not treat that as confirmed without a wider manual scan.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":6185,\"note\":\"Back-of-shirt shot of Harry Kane after full time offers no AIA exposure; sponsor disappears when editorial favors reverse angles.\",\"start_sec\":6181,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"AIA is naturally strong on Tottenham shirt fronts, but visibility is highly angle-dependent. Reverse-angle walk-offs and wider live-play frames reduce legibility fast.\",\"motion_blur\":8,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Maintain high-contrast red-on-white lockup, but maximize front-facing exposure in player walk-ins, set pieces, and celebration/reaction shots. Back-view editorial moments waste the asset.\"}],\"name\":\"AIA\",\"summary\":\"AIA appears on Tottenham shirt fronts. The creative is strong and clean, but actual legibility varies with whether players are front-facing and how tight the camera is.\"},{\"assets\":[],\"name\":\"Acronis\",\"summary\":\"Not confidently verified in the metadata-backed clips I inspected. One vision pass suggested perimeter-board presence, but I would not score it as confirmed without additional manual review.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":1001,\"note\":\"Emery bench close-up shows Emirates branding in a small apparel execution; readable but not dominant.\",\"start_sec\":983,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"On Arsenal apparel/shirt-front contexts, Emirates benefits from strong white-on-red contrast, but size still depends on how tight the director frames the subject.\",\"motion_blur\":9,\"overall_score\":8,\"position\":8,\"size\":7,\"suggestions\":\"Already strong creatively. To improve secondary shots, add more front-on editorial opportunities during walkouts, celebrations, and bench reactions.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":1048,\"note\":\"'Emirates - Fly Better to Dubai' is readable in the wide live-play pan, but copy density limits instant recognition compared with a shorter logo-only execution.\",\"start_sec\":1011,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Good luminance and field-side position, but the long tagline execution loses punch in panning wide shots. Exposure quality depends on board angle and camera motion.\",\"motion_blur\":7,\"overall_score\":7.5,\"position\":8,\"size\":6,\"suggestions\":\"For live-play boards, shorten copy or increase logo-to-copy ratio. A simpler 'Emirates' or 'Fly Better' lockup with more whitespace would hold better during pans.\"}],\"name\":\"Emirates\",\"summary\":\"Emirates is one of the strongest brands in this broadcast, appearing both on Arsenal apparel/shirt-front contexts and on perimeter LED. Its main weakness is not contrast but copy length on LED boards during moving wide shots.\"},{\"assets\":[],\"name\":\"126 Live Premier League Games\",\"summary\":\"Not confidently verified in metadata-backed evidence. A vision pass suggested perimeter-board exposure, but I cannot confirm it robustly enough to score as an observed asset.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":9,\"examples\":[{\"end_sec\":486,\"note\":\"Visible during live-play wide shot, but fast ball movement and camera pan soften edge detail; Chinese-character variant is less immediately legible for some audiences.\",\"start_sec\":433,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"},{\"end_sec\":4363,\"note\":\"At 66:05 match clock, the board is visible again, but only briefly before play resumes and the eye follows the action.\",\"start_sec\":4343,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Bright, high-contrast board with strong sideline position, but exposure is mostly in wide live-play frames where motion blur and short dwell reduce readability. Alternate-language/character executions can further slow recognition.\",\"motion_blur\":5,\"overall_score\":7,\"position\":8,\"size\":6,\"suggestions\":\"Keep the bright palette, but simplify copy and increase static hold time during stoppages or replays. If using character-based creative, add a Latin-script companion mark/logo for faster recognition in motion.\"}],\"name\":\"12BET\",\"summary\":\"12BET is clearly present on perimeter LED boards and benefits from strong brightness and placement. Its main challenge is wide-shot motion and short dwell time rather than contrast.\"},{\"assets\":[{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":6,\"examples\":[{\"end_sec\":1072,\"note\":\"On Tottenham players, the swoosh is tiny and becomes effectively unreadable once the camera widens or pans.\",\"start_sec\":1069,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Nike appears as a small kit manufacturer logo on Tottenham kit. High familiarity helps recognition, but physical size is the limiting factor, especially in live play.\",\"motion_blur\":8,\"overall_score\":6,\"position\":7,\"size\":3,\"suggestions\":\"Manufacturer marks are inherently small; best fix is editorial rather than creative. Seek more chest-up player close-ups, tunnel shots, and set-piece holds where the swoosh sits square to camera.\"}],\"name\":\"Nike\",\"summary\":\"Nike is present as Tottenham’s kit manufacturer mark. Brand recognition is helped by the iconic shape, but the logo is simply too small to perform strongly except in close-ups.\"}]}"
 }

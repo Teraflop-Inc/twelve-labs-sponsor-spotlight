@@ -1,5 +1,6 @@
 import { useMemo } from "react"
 import { fmtTime } from "../lib/econ"
+import { momentTags, primaryTag } from "../lib/moments"
 import { useApp } from "../state"
 import type { Moment } from "../lib/types"
 
@@ -17,6 +18,7 @@ export const CTX_COLOR: Record<string, string> = {
   halftime: "var(--tl-color-search-purple)",
   postgame: "var(--tl-color-search-purple)",
   timeout: "var(--tl-color-search-purple)",
+  substitution: "var(--tl-color-search-purple)",
   commercial: "var(--tl-color-gray-400)",
   other: "var(--tl-color-gray-500)",
 }
@@ -37,7 +39,9 @@ export function Timeline({ moments }: { moments: Moment[] }) {
       .map((m) => ({
         s: Number(m.start_sec) || 0,
         e: Number(m.end_sec) || 0,
-        ctx: m.context || "other",
+        // Segment color = highest-value tag; tooltip lists every tag (events + view).
+        ctx: primaryTag(m),
+        tags: momentTags(m),
         video: m.video,
       }))
       .filter((m) => m.e > m.s)
@@ -62,7 +66,7 @@ export function Timeline({ moments }: { moments: Moment[] }) {
               key={i}
               type="button"
               onClick={() => seekTo(m.s, m.video)}
-              title={`${fmtTime(m.s)}–${fmtTime(m.e)} · ${ctxLabel(m.ctx)}`}
+              title={`${fmtTime(m.s)}–${fmtTime(m.e)} · ${m.tags.map(ctxLabel).join(", ")}`}
               className="absolute top-0 h-full cursor-pointer transition-opacity hover:opacity-70"
               style={{
                 left: `${left}%`,

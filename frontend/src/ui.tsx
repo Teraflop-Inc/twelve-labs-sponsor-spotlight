@@ -3,6 +3,7 @@ import { Chip } from "@twelvelabs-io/react"
 import { cn } from "@/lib/utils"
 import { fmtTime, formatGameTime } from "./lib/econ"
 import { SOURCE_LABEL, type DataSource } from "./lib/econData"
+import { momentEvents, momentView } from "./lib/moments"
 import { useApp } from "./state"
 import type { Moment } from "./lib/types"
 
@@ -128,6 +129,7 @@ const CTX_STYLE: Record<string, string> = {
   halftime: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
   postgame: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
   timeout: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
+  substitution: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
   commercial: "bg-tl-gray-100 text-foreground-muted",
   other: "bg-tl-gray-100 text-foreground-subtle",
 }
@@ -141,8 +143,24 @@ export function ContextChip({ context }: { context?: string }) {
         CTX_STYLE[ctx] || CTX_STYLE.other,
       )}
     >
-      {ctx}
+      {ctx.replace(/_/g, " ")}
     </span>
+  )
+}
+
+/** Both axes of a moment as chips: each event (0..n) then the camera view.
+ *  Falls back to a single "other" chip when a moment carries neither. */
+export function MomentTags({ m }: { m: Moment }) {
+  const events = momentEvents(m)
+  const view = momentView(m)
+  if (!events.length && !view) return <ContextChip context="other" />
+  return (
+    <>
+      {events.map((e) => (
+        <ContextChip key={`e-${e}`} context={e} />
+      ))}
+      {view && <ContextChip context={view} />}
+    </>
   )
 }
 
@@ -216,7 +234,7 @@ export function MomentRow({
           </span>
         )}
       </span>
-      <ContextChip context={m.context} />
+      <MomentTags m={m} />
       {m.placement === "primary" && (
         <Chip variant="success" size="sm" title="primary / foreground exposure">
           primary

@@ -1,0 +1,859 @@
+{
+  "windows": [
+    {
+      "confidence": 0.99,
+      "description": "Pierre-Emerick Aubameyang scores Arsenal's opening goal from the penalty spot, sending Hugo Lloris the wrong way and hitting the back of the net.",
+      "end_sec": 698.0,
+      "start_sec": 693.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "goal"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Eric Dier equalizes for Tottenham, glancing Christian Eriksen's free-kick past Bernd Leno and into the net.",
+      "end_sec": 1941.0,
+      "start_sec": 1934.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "goal"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Harry Kane scores Tottenham's penalty, sending Bernd Leno the wrong way to put Spurs ahead.",
+      "end_sec": 2176.0,
+      "start_sec": 2166.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "goal"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Pierre-Emerick Aubameyang scores Arsenal's second with a curling finish into the far corner after a Ramsey setup.",
+      "end_sec": 3716.0,
+      "start_sec": 3709.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "goal"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Alexandre Lacazette puts Arsenal ahead, turning and hitting a low shot that deflects off Eric Dier and beats Hugo Lloris into the bottom corner.",
+      "end_sec": 4752.0,
+      "start_sec": 4749.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "goal"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Lucas Torreira scores Arsenal's fourth, bursting into the box and firing low across Hugo Lloris into the far corner.",
+      "end_sec": 4982.0,
+      "start_sec": 4945.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "goal"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Arsenal players begin celebrating Aubameyang's penalty; he runs toward the corner and performs a front flip as teammates join.",
+      "end_sec": 704.0,
+      "start_sec": 699.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Arsenal fans in the stands cheer and celebrate the goal.",
+      "end_sec": 710.0,
+      "start_sec": 705.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Aubameyang continues celebrating, hugging teammates and acknowledging the crowd.",
+      "end_sec": 717.0,
+      "start_sec": 711.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Eric Dier sprints to the corner after scoring and celebrates in front of the crowd with a shushing gesture.",
+      "end_sec": 1945.0,
+      "start_sec": 1941.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Dier is mobbed by Tottenham teammates in a close-up celebration after the equalizer.",
+      "end_sec": 1947.0,
+      "start_sec": 1945.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Tottenham fans in the away end celebrate wildly, jumping, waving flags, and singing.",
+      "end_sec": 1951.0,
+      "start_sec": 1947.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Dier continues celebrating near the corner as the aftermath spills into a confrontation.",
+      "end_sec": 1956.0,
+      "start_sec": 1951.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Harry Kane celebrates his penalty goal with teammates in a huddle.",
+      "end_sec": 2182.0,
+      "start_sec": 2176.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Tottenham fans in the away section celebrate the go-ahead goal.",
+      "end_sec": 2185.0,
+      "start_sec": 2182.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Close-up of Kane still celebrating, with teammates behind him.",
+      "end_sec": 2188.0,
+      "start_sec": 2185.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.95,
+      "description": "Kane and Son continue walking back while talking and celebrating.",
+      "end_sec": 2197.0,
+      "start_sec": 2192.0,
+      "team": "Tottenham Hotspur",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Close-up of Aubameyang shouting in joy right after curling Arsenal level.",
+      "end_sec": 3718.0,
+      "start_sec": 3716.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Aubameyang runs toward the corner, slides on his knees, and celebrates as the crowd erupts.",
+      "end_sec": 3722.0,
+      "start_sec": 3718.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Arsenal players celebrate together in a large huddle near the corner flag, with fans celebrating behind them.",
+      "end_sec": 3731.0,
+      "start_sec": 3722.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.96,
+      "description": "Wide stadium shot of Arsenal players gathered celebrating while the crowd cheers.",
+      "end_sec": 3739.0,
+      "start_sec": 3736.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Aubameyang is hugged by teammates including Guendouzi and Lacazette during the continuing celebration.",
+      "end_sec": 3747.0,
+      "start_sec": 3739.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Aubameyang breaks from the group and keeps celebrating toward the crowd with fist pumps.",
+      "end_sec": 3752.0,
+      "start_sec": 3747.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Lucas Torreira rips off his shirt and sprints toward the corner in an explosive celebration after scoring.",
+      "end_sec": 4987.0,
+      "start_sec": 4982.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Torreira knee-slides in front of Arsenal supporters and is swarmed by teammates.",
+      "end_sec": 4995.0,
+      "start_sec": 4987.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Bellerin and Aubameyang reach Torreira first as the team piles into the celebration.",
+      "end_sec": 5002.0,
+      "start_sec": 4995.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Wide shot of Arsenal fans bouncing and cheering in the stands.",
+      "end_sec": 5005.0,
+      "start_sec": 5002.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Close-up of Arsenal fans hugging and shouting in celebration.",
+      "end_sec": 5007.0,
+      "start_sec": 5005.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Back on the pitch, Ramsey hugs Torreira and pats him on the head as celebrations continue.",
+      "end_sec": 5011.0,
+      "start_sec": 5007.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.98,
+      "description": "More Arsenal players join in, shouting and celebrating the crucial goal.",
+      "end_sec": 5018.0,
+      "start_sec": 5011.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Torreira remains on the ground smiling as teammates mob him.",
+      "end_sec": 5020.0,
+      "start_sec": 5018.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Torreira gets up shirtless with arms raised, still celebrating.",
+      "end_sec": 5023.0,
+      "start_sec": 5020.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Torreira hugs Kolasinac and Guendouzi as the celebration winds on.",
+      "end_sec": 5029.0,
+      "start_sec": 5023.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "celebration"
+    },
+    {
+      "confidence": 0.95,
+      "description": "Replay of Dele Alli stepping across Lucas Torreira and bringing him down; introduced and ended by Premier League wipe graphics.",
+      "end_sec": 433.0,
+      "start_sec": 424.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Replay of the Arsenal attack and Juan Foyth's crucial block in the box.",
+      "end_sec": 570.0,
+      "start_sec": 552.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Slow-motion replay of Jan Vertonghen fouling Pierre-Emerick Aubameyang in the penalty area.",
+      "end_sec": 627.0,
+      "start_sec": 618.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Replay of the free kick sequence leading to the penalty, showing the ball striking Vertonghen's hand.",
+      "end_sec": 655.0,
+      "start_sec": 645.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Second replay angle of Vertonghen's handball, clearly showing contact with the raised arm.",
+      "end_sec": 675.0,
+      "start_sec": 670.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Third replay angle of the handball, focused tightly on arm-ball contact.",
+      "end_sec": 680.0,
+      "start_sec": 676.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Replay of Pierre-Emerick Aubameyang's penalty goal from a wide angle.",
+      "end_sec": 731.0,
+      "start_sec": 727.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Behind-goal replay of Aubameyang's penalty goal, following the ball into the net.",
+      "end_sec": 737.0,
+      "start_sec": 732.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.96,
+      "description": "Replay combining the handball incident and the resulting penalty goal from a side angle.",
+      "end_sec": 745.0,
+      "start_sec": 738.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Replay of Aubameyang's celebration, including his front flip.",
+      "end_sec": 752.0,
+      "start_sec": 746.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Replay of Son Heung-min's chance and Bernd Leno's save.",
+      "end_sec": 853.0,
+      "start_sec": 843.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Close-up replay of Son's shot and Leno's reaction save.",
+      "end_sec": 862.0,
+      "start_sec": 854.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "High-angle replay of Arsenal's missed chance, showing the buildup and Aubameyang's mistimed finish.",
+      "end_sec": 931.0,
+      "start_sec": 917.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "Second replay angle from behind goal of Aubameyang's missed chance, emphasizing the bobble before contact.",
+      "end_sec": 939.0,
+      "start_sec": 931.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Series of replay angles of Arsenal's attack: Iwobi's shot saved by Lloris and Bellerin's blocked follow-up.",
+      "end_sec": 1272.0,
+      "start_sec": 1239.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.91,
+      "description": "Replay confirming the offside decision against Moussa Sissoko.",
+      "end_sec": 1310.0,
+      "start_sec": 1306.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Replay of Sead Kolasinac's dangerous cross and Tottenham's defensive clearance.",
+      "end_sec": 1388.0,
+      "start_sec": 1378.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "Replay of Son Heung-min's run and shot from a different angle.",
+      "end_sec": 1497.0,
+      "start_sec": 1489.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Replay of Tottenham's counterattack, highlighting Son's speed and Sissoko's cross.",
+      "end_sec": 1766.0,
+      "start_sec": 1754.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.88,
+      "description": "Premier League transition graphic signaling upcoming replay of a foul.",
+      "end_sec": 1882.0,
+      "start_sec": 1881.0,
+      "team": "",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Replay of Sokratis Papastathopoulos fouling Son Heung-min from a close-up angle.",
+      "end_sec": 1888.0,
+      "start_sec": 1882.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Replay from behind goal of Christian Eriksen's free kick and Eric Dier's touch into the net.",
+      "end_sec": 2029.0,
+      "start_sec": 2022.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Second behind-goal replay of Eric Dier's headed goal and Leno's failed save attempt.",
+      "end_sec": 2038.0,
+      "start_sec": 2029.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Replay of the foul on Son Heung-min, showing Rob Holding's contact in the box.",
+      "end_sec": 2143.0,
+      "start_sec": 2136.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Second replay angle of the penalty incident involving Holding and Son.",
+      "end_sec": 2149.0,
+      "start_sec": 2143.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Behind-goal replay of Harry Kane's penalty hitting the back of the net.",
+      "end_sec": 2202.0,
+      "start_sec": 2198.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Replay of Harry Kane's celebration after scoring the penalty.",
+      "end_sec": 2207.0,
+      "start_sec": 2202.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.95,
+      "description": "High-angle replay of the buildup and foul on Son Heung-min.",
+      "end_sec": 2214.0,
+      "start_sec": 2207.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Replay of Son on the ground after the foul, clutching his ankle.",
+      "end_sec": 2221.0,
+      "start_sec": 2214.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "Slow-motion replay of Mustafi's late challenge catching Son's trailing leg.",
+      "end_sec": 2358.0,
+      "start_sec": 2351.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Replay of Arsenal attack ending in Aubameyang scoring, then confirming he was offside.",
+      "end_sec": 2612.0,
+      "start_sec": 2595.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.86,
+      "description": "Replay of a midfield foul with an Arsenal player tripped by a Tottenham defender.",
+      "end_sec": 2760.0,
+      "start_sec": 2748.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Slow-motion replay of Son Heung-min being tripped after dribbling past defenders.",
+      "end_sec": 2913.0,
+      "start_sec": 2903.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Replay of Mustafi's header and Hugo Lloris's save, including a second angle from behind goal.",
+      "end_sec": 3033.0,
+      "start_sec": 3019.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "Replay of Harry Kane's shot and Bernd Leno's save from multiple angles.",
+      "end_sec": 3131.0,
+      "start_sec": 3115.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.91,
+      "description": "Slow-motion replay of Rob Holding's late challenge on Dele Alli.",
+      "end_sec": 3198.0,
+      "start_sec": 3189.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Replay of the free kick and Bernd Leno's save from another angle.",
+      "end_sec": 3240.0,
+      "start_sec": 3231.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Replay of Granit Xhaka's foul on Dele Alli, confirming the yellow card.",
+      "end_sec": 3329.0,
+      "start_sec": 3323.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Replay of Harry Kane's free kick and Leno's save.",
+      "end_sec": 3386.0,
+      "start_sec": 3382.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Behind-goal replay of the same Harry Kane free kick, showing its trajectory.",
+      "end_sec": 3388.0,
+      "start_sec": 3386.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Another replay angle of Leno's save with full extension visible.",
+      "end_sec": 3393.0,
+      "start_sec": 3388.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "High wide replay of Aubameyang's open-play goal after Ramsey's flick.",
+      "end_sec": 3766.0,
+      "start_sec": 3752.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Low behind-goal replay of Aubameyang's goal curling past Lloris.",
+      "end_sec": 3776.0,
+      "start_sec": 3766.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.95,
+      "description": "Replay of Aubameyang celebrating the goal with Sead Kolasinac.",
+      "end_sec": 3782.0,
+      "start_sec": 3776.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.97,
+      "description": "Another high-angle replay of Aubameyang's goal, widening the buildup view.",
+      "end_sec": 3798.0,
+      "start_sec": 3793.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Replay of the corner where Mustafi's header is acrobatically cleared off the line by Dele Alli.",
+      "end_sec": 3964.0,
+      "start_sec": 3954.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.92,
+      "description": "Lower-angle replay of Lucas Torreira's follow-up shot flying just wide.",
+      "end_sec": 3971.0,
+      "start_sec": 3964.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "Slow-motion replay of the corner and Sokratis header, showing how close Arsenal came.",
+      "end_sec": 4052.0,
+      "start_sec": 4045.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Replay of an Arsenal attack ending with Aaron Ramsey's blocked shot.",
+      "end_sec": 4137.0,
+      "start_sec": 4123.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Replay of Dele Alli's late foul on Granit Xhaka, confirming the booking.",
+      "end_sec": 4268.0,
+      "start_sec": 4260.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Slow-motion replay of Lacazette's chance, including Juan Foyth's deflection and how close Arsenal came.",
+      "end_sec": 4394.0,
+      "start_sec": 4380.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.94,
+      "description": "Slow-motion replay of Son's chance and Bernd Leno's save.",
+      "end_sec": 4440.0,
+      "start_sec": 4425.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.91,
+      "description": "Slow-motion replay of the non-contact injury moment for Shkodran Mustafi after a clearance.",
+      "end_sec": 4485.0,
+      "start_sec": 4476.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Behind-goal replay of Alexandre Lacazette's goal, following the ball's deflected path past Lloris.",
+      "end_sec": 4779.0,
+      "start_sec": 4762.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Side-angle replay of Lacazette's goal, focusing on his technique and the strike in slow motion.",
+      "end_sec": 4868.0,
+      "start_sec": 4822.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.98,
+      "description": "Another replay of Lacazette's goal, emphasizing the Eric Dier deflection that wrong-footed Lloris.",
+      "end_sec": 4896.0,
+      "start_sec": 4888.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Wide-angle replay of Lucas Torreira's goal, showing the full buildup and finish.",
+      "end_sec": 5047.0,
+      "start_sec": 5030.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.99,
+      "description": "Behind-player replay of Torreira's goal, highlighting the precision of the shot into the far corner.",
+      "end_sec": 5055.0,
+      "start_sec": 5047.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.86,
+      "description": "Replay of a midfield challenge between an Arsenal and Tottenham player with the referee nearby.",
+      "end_sec": 5082.0,
+      "start_sec": 5074.0,
+      "team": "",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.89,
+      "description": "Replay of Lucas Moura's header from a corner going over the bar.",
+      "end_sec": 5282.0,
+      "start_sec": 5276.0,
+      "team": "Tottenham",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.93,
+      "description": "Slow-motion replay of Jan Vertonghen's tackle making contact with Alexandre Lacazette's ankle.",
+      "end_sec": 5475.0,
+      "start_sec": 5469.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    },
+    {
+      "confidence": 0.9,
+      "description": "Slow-motion replay of Serge Aurier's late foul from behind on Aaron Ramsey.",
+      "end_sec": 5776.0,
+      "start_sec": 5773.0,
+      "team": "Arsenal",
+      "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4",
+      "kind": "replay"
+    }
+  ]
+}

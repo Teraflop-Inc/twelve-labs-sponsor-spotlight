@@ -64,10 +64,22 @@ def _top_moments(
         for m in (sc.get("metrics") or {}).get("appearances") or []:
             dur = max((float(m.get("end_sec") or 0) - float(m.get("start_sec") or 0)), 0.0)
             conf = float(m.get("confidence") or 0.5)
-            cw = ctx_weights.weight_for(m.get("context"), weights)
+            cw = ctx_weights.weight_for_moment(m, weights)
             moments.append({**m, "_game": label, "_impact": cw * dur * conf})
     moments.sort(key=lambda m: m["_impact"], reverse=True)
     return moments[:limit]
+
+
+def _moment_tags(m: dict[str, Any]) -> str:
+    """Human-readable tag string for a moment: events + view (both axes), with a
+    fallback to the legacy single ``context`` for pre-split fixtures."""
+    tags = [str(e) for e in (m.get("events") or [])]
+    view = m.get("view")
+    if view:
+        tags.append(str(view))
+    if not tags and m.get("context"):
+        tags.append(str(m.get("context")))
+    return ", ".join(t.replace("_", " ") for t in tags)
 
 
 def _source_badges(sources: dict[str, str] | None) -> str:
@@ -151,7 +163,7 @@ def build_report_html(
             "<li>"
             f"<span class='mono'>{_fmt_time(m.get('start_sec'))}</span> "
             f"<strong>{html.escape(str(m.get('asset_type') or 'exposure'))}</strong> "
-            f"<span class='ctx'>{html.escape(str(m.get('context') or ''))}</span> — "
+            f"<span class='ctx'>{html.escape(_moment_tags(m))}</span> — "
             f"{html.escape(str(m.get('description') or ''))} "
             f"<span class='muted'>({html.escape(str(m.get('_game') or ''))})</span>"
             "</li>"

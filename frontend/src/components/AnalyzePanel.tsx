@@ -11,13 +11,11 @@ import {
   type BrandEconomics,
 } from "../lib/econ"
 import { SOURCE_LABEL } from "../lib/econData"
+import { momentTags } from "../lib/moments"
 import { ALL_GAMES, useApp } from "../state"
 import { MetricTile, MomentRow, SectionCard, SourceBadge, StatusLine } from "../ui"
 import { CTX_COLOR, ctxLabel, Timeline } from "./Timeline"
 import type { Brand, Moment } from "../lib/types"
-
-/** The broadcast-context (event) key we filter on. */
-const ctxKey = (m: Moment) => m.context || "other"
 
 /** Stable DOM id for a brand card, so the Viewing chips can scroll to it. */
 const brandDomId = (name: string) => "brand-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
@@ -120,10 +118,12 @@ export function AnalyzePanel() {
   // are computed across every displayed brand so the chip row is stable.
   const [hiddenCtx, setHiddenCtx] = useState<Set<string>>(new Set())
   const ctxCounts = useMemo(() => {
+    // Count per TAG (a moment contributes to each of its events + its view), so
+    // a goal+close-up moment shows under both the "goal" and "close-up" chips.
     const counts = new Map<string, number>()
     for (const b of displayBrands ?? [])
       for (const m of b.appearances || b.top_moments || [])
-        counts.set(ctxKey(m), (counts.get(ctxKey(m)) ?? 0) + 1)
+        for (const t of momentTags(m)) counts.set(t, (counts.get(t) ?? 0) + 1)
     return [...counts.entries()].sort((a, b) => b[1] - a[1])
   }, [displayBrands])
   const toggleCtx = (ctx: string) =>
@@ -356,10 +356,11 @@ function BrandCard({
   hasReel: boolean
 }) {
   const allApps: Moment[] = brand.appearances || []
-  // View-only event filter: drop moments whose context is toggled off. The
-  // summary tiles + economics above are intentionally left on the full set.
+  // View-only event filter: a moment is hidden only when ALL of its tags are
+  // toggled off — so hiding "close-up" keeps a goal+close-up moment (its goal
+  // tag is still shown). Summary tiles + economics above stay on the full set.
   const apps = useMemo(
-    () => allApps.filter((m) => !hiddenCtx.has(ctxKey(m))),
+    () => allApps.filter((m) => momentTags(m).some((t) => !hiddenCtx.has(t))),
     [allApps, hiddenCtx],
   )
   const hiddenCount = allApps.length - apps.length

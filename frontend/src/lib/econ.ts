@@ -29,24 +29,13 @@ import {
   type RateCard,
   type RateCardRow,
 } from "./econData"
+import { CONTEXT_WEIGHTS, momentWeight } from "./moments"
 
-// Internal context multipliers — used to RANK moments ("top plays", reel/report
-// selection), NOT to compute the EMV dollar figure (the PRD dropped context
-// weighting from value in favour of audience-at-that-moment). No longer editable.
-export const CONTEXT_WEIGHTS: Record<string, number> = {
-  score: 3,
-  goal: 3,
-  celebration: 2.5,
-  replay: 2,
-  close_up: 1.5,
-  wide_shot: 1,
-  pregame: 1.2,
-  halftime: 1.2,
-  postgame: 1.0,
-  timeout: 1.0,
-  commercial: 0.5,
-  other: 1,
-}
+// Context multipliers live in moments.ts (single source of truth, shared with the
+// tag helpers). Re-exported here so existing importers of econ.CONTEXT_WEIGHTS
+// keep working. They RANK moments ("top plays", reel/report selection), NOT the
+// EMV dollar figure (the PRD uses audience-at-that-moment for value).
+export { CONTEXT_WEIGHTS }
 
 // --- state (what the user can actually set / upload) -------------------------
 
@@ -200,7 +189,7 @@ export function unionWeightedSeconds(
     .map((m) => ({
       s: Number(m.start_sec) || 0,
       e: Number(m.end_sec) || 0,
-      w: weights[m.context ?? "other"] ?? 1,
+      w: momentWeight(m, weights),
     }))
     .filter((m) => m.e > m.s)
     .sort((a, b) => a.s - b.s)

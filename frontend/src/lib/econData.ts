@@ -7,6 +7,7 @@
 //
 //   "Synthetic data is a placeholder, not a lie." — every simulated number says so.
 
+import { momentEvents } from "./moments"
 import type { Moment } from "./types"
 
 // --- source tagging ----------------------------------------------------------
@@ -210,7 +211,8 @@ const GOAL_CTX = new Set(["score", "goal", "celebration"])
 export function goalMinutes(appearances: Moment[]): number[] {
   const mins: number[] = []
   for (const m of appearances) {
-    if (GOAL_CTX.has(String(m.context))) mins.push((Number(m.start_sec) || 0) / 60)
+    if (momentEvents(m).some((e) => GOAL_CTX.has(e)))
+      mins.push((Number(m.start_sec) || 0) / 60)
   }
   return mins
 }

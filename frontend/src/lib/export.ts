@@ -24,6 +24,7 @@ import {
   type EconState,
 } from "./econ"
 import { SOURCE_LABEL } from "./econData"
+import { momentEvents, momentView, primaryTag } from "./moments"
 
 const OUTSIDE_W2W = new Set(["pregame", "halftime", "postgame", "timeout"])
 
@@ -43,7 +44,7 @@ function legBrand(report: LegibilityReport | null, brand: string): LegibilityBra
 
 function sumOutsideW2W(moments: Moment[]): number {
   return moments
-    .filter((m) => OUTSIDE_W2W.has(String(m.context)))
+    .filter((m) => momentEvents(m).some((e) => OUTSIDE_W2W.has(e)))
     .reduce((s, m) => s + Math.max(0, (Number(m.end_sec) || 0) - (Number(m.start_sec) || 0)), 0)
 }
 
@@ -92,7 +93,12 @@ export interface AppearanceRow {
   period: string
   game_clock: string
   game_time: string
+  /** Highest-value tag, kept for CSV back-compat with the old single column. */
   context: string
+  /** Camera framing (single). */
+  view: string
+  /** Match events (0..n), ";"-joined. */
+  events: string
   asset_type: string
   placement: string
   confidence: number | null
@@ -123,6 +129,8 @@ const APPEARANCE_COLUMNS: (keyof AppearanceRow)[] = [
   "game_clock",
   "game_time",
   "context",
+  "view",
+  "events",
   "asset_type",
   "placement",
   "confidence",
@@ -172,6 +180,8 @@ export function buildAppearanceRows(
         game_clock: "",
         game_time: "",
         context: "",
+        view: "",
+        events: "",
         asset_type: "",
         placement: "",
         confidence: null,
@@ -191,7 +201,9 @@ export function buildAppearanceRows(
         period: String(m.period ?? ""),
         game_clock: String(m.game_clock ?? ""),
         game_time: formatGameTime(m.period, m.game_clock),
-        context: String(m.context ?? ""),
+        context: primaryTag(m),
+        view: momentView(m) ?? "",
+        events: momentEvents(m).join(";"),
         asset_type: String(m.asset_type ?? ""),
         placement: String(m.placement ?? ""),
         confidence: num(m.confidence),
