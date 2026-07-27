@@ -139,6 +139,8 @@ export interface SportsResponse {
 export interface GameOption {
   id: string
   label: string
+  /** Knowledge-store asset id for this game's broadcast — joins to Video.asset_id. */
+  asset_id?: string
 }
 export interface DemoInfo {
   enabled: boolean

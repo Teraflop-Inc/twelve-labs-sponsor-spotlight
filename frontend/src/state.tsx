@@ -332,15 +332,34 @@ export function AppProvider({ children }: { children: ReactNode }) {
     playerRef.current?.seekTo(sec, videoFilename)
   }, [])
 
-  const readyVideos = useMemo(() => videos.filter((v) => v.status === "ready"), [videos])
+  // Raw roster readiness — drives the status chip (watches ALL store videos).
+  const readyVideosAll = useMemo(() => videos.filter((v) => v.status === "ready"), [videos])
+
+  // Demo is pinned to one game (PINNED_GAME_ID): show only that game's broadcast
+  // in the player + roster. Join game→video by asset_id. BYOK shows all videos.
+  const pinnedAssetId = useMemo(
+    () => games.find((g) => g.id === gameId)?.asset_id ?? null,
+    [games, gameId],
+  )
+  const visibleVideos = useMemo(
+    () =>
+      mode === "demo" && pinnedAssetId
+        ? videos.filter((v) => v.asset_id === pinnedAssetId)
+        : videos,
+    [mode, pinnedAssetId, videos],
+  )
+  const readyVideos = useMemo(
+    () => visibleVideos.filter((v) => v.status === "ready"),
+    [visibleVideos],
+  )
 
   const storeStatus = useMemo<AppContextValue["storeStatus"]>(() => {
     if (!activeStore) return "idle"
     if (videos.some((v) => v.status && !INDEXING_DONE.has(v.status))) return "indexing"
-    if (readyVideos.length > 0) return "ready"
+    if (readyVideosAll.length > 0) return "ready"
     if (videos.length > 0) return "failed"
     return "empty"
-  }, [activeStore, videos, readyVideos])
+  }, [activeStore, videos, readyVideosAll])
 
   // Open the demo on the pinned game (PINNED_GAME_ID) — the aggregate scope has
   // no reels and thin legibility, and this is our highest-accuracy broadcast, so
@@ -400,7 +419,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     clearKey,
     activeStore,
     setActiveStore,
-    videos,
+    videos: visibleVideos,
     readyVideos,
     refreshStore,
     storeStatus,
