@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState, type ReactNode } from "react"
 import { Button, TextField } from "@twelvelabs-io/react"
-import { resolveEcon, type EconState, type ResolvedEcon } from "../lib/econ"
+import { DEFAULT_ECON, resolveEcon, type EconState, type ResolvedEcon } from "../lib/econ"
 import {
   fileToCsvText,
   parseAudienceCSV,
@@ -52,6 +52,16 @@ export function EconomicsPanel() {
           />
         </label>
         <SourceBadge source="customer_upload" label="Manual" title="Rights fee is a manual input" />
+        {econ.rightsFee !== DEFAULT_ECON.rightsFee && (
+          <Button
+            size="sm"
+            variant="ghosted"
+            onClick={() => set({ rightsFee: DEFAULT_ECON.rightsFee })}
+            title={`Reset to default ($${DEFAULT_ECON.rightsFee.toLocaleString()})`}
+          >
+            reset
+          </Button>
+        )}
         <span className="text-xs text-foreground-subtle">Drives ROI = EMV ÷ rights fee.</span>
       </div>
 
