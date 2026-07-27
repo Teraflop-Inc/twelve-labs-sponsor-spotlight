@@ -6,7 +6,7 @@ import type { Moment } from "../lib/types"
 // JIL "temporal" mark: a horizontal exposure track with context-colored
 // segments positioned by timestamp. Clicking a segment seeks the player.
 // Solid color per broadcast context, from the TLDS palette.
-const CTX_COLOR: Record<string, string> = {
+export const CTX_COLOR: Record<string, string> = {
   score: "var(--tl-color-system-color-red)",
   goal: "var(--tl-color-system-color-red)",
   celebration: "var(--tl-color-master-brand-peach)",
@@ -20,6 +20,14 @@ const CTX_COLOR: Record<string, string> = {
   commercial: "var(--tl-color-gray-400)",
   other: "var(--tl-color-gray-500)",
 }
+
+/** Friendly display label for a broadcast-context (event) key. */
+const CTX_LABEL: Record<string, string> = {
+  close_up: "close-up",
+  wide_shot: "wide",
+}
+export const ctxLabel = (ctx: string): string =>
+  CTX_LABEL[ctx] ?? ctx.replace(/_/g, " ")
 
 export function Timeline({ moments }: { moments: Moment[] }) {
   const { seekTo } = useApp()
@@ -54,7 +62,7 @@ export function Timeline({ moments }: { moments: Moment[] }) {
               key={i}
               type="button"
               onClick={() => seekTo(m.s, m.video)}
-              title={`${fmtTime(m.s)}–${fmtTime(m.e)} · ${m.ctx}`}
+              title={`${fmtTime(m.s)}–${fmtTime(m.e)} · ${ctxLabel(m.ctx)}`}
               className="absolute top-0 h-full cursor-pointer transition-opacity hover:opacity-70"
               style={{
                 left: `${left}%`,

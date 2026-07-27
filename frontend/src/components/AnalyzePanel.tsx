@@ -13,8 +13,11 @@ import {
 import { SOURCE_LABEL } from "../lib/econData"
 import { ALL_GAMES, useApp } from "../state"
 import { MetricTile, MomentRow, SectionCard, SourceBadge, StatusLine } from "../ui"
-import { Timeline } from "./Timeline"
+import { CTX_COLOR, ctxLabel, Timeline } from "./Timeline"
 import type { Brand, Moment } from "../lib/types"
+
+/** The broadcast-context (event) key we filter on. */
+const ctxKey = (m: Moment) => m.context || "other"
 
 /** Stable DOM id for a brand card, so the Viewing chips can scroll to it. */
 const brandDomId = (name: string) => "brand-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
@@ -111,6 +114,26 @@ export function AnalyzePanel() {
       .map((x, i) => ({ ...x, sov: sov[i] }))
       .sort((a, b) => b.ec.emv - a.ec.emv)
   }, [displayBrands, resolved, legReport])
+
+  // Event (broadcast-context) filter — view-only: hides moments from the
+  // Timeline + Appearances list without touching the economics above. Counts
+  // are computed across every displayed brand so the chip row is stable.
+  const [hiddenCtx, setHiddenCtx] = useState<Set<string>>(new Set())
+  const ctxCounts = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const b of displayBrands ?? [])
+      for (const m of b.appearances || b.top_moments || [])
+        counts.set(ctxKey(m), (counts.get(ctxKey(m)) ?? 0) + 1)
+    return [...counts.entries()].sort((a, b) => b[1] - a[1])
+  }, [displayBrands])
+  const toggleCtx = (ctx: string) =>
+    setHiddenCtx((prev) => {
+      const next = new Set(prev)
+      if (next.has(ctx)) next.delete(ctx)
+      else next.add(ctx)
+      return next
+    })
+  const anyHidden = hiddenCtx.size > 0
 
   const gameLabel =
     gameId === ALL_GAMES ? "All games" : games.find((g) => g.id === gameId)?.label ?? gameId
@@ -242,6 +265,44 @@ export function AnalyzePanel() {
         </div>
       )}
 
+      {ranked && ranked.length > 0 && ctxCounts.length > 1 && (
+        <div className="mt-3 flex flex-wrap items-center gap-1.5">
+          <span className="mr-0.5 text-[10px] uppercase tracking-wide text-foreground-subtle">
+            Events
+          </span>
+          {ctxCounts.map(([ctx, count]) => {
+            const hidden = hiddenCtx.has(ctx)
+            return (
+              <button
+                key={ctx}
+                type="button"
+                onClick={() => toggleCtx(ctx)}
+                aria-pressed={!hidden}
+                title={hidden ? `Show ${ctxLabel(ctx)}` : `Hide ${ctxLabel(ctx)}`}
+                className={`inline-flex items-center gap-1 rounded-tlds-1 border px-1.5 py-0.5 text-[11px] transition-colors ${
+                  hidden
+                    ? "border-border-secondary text-foreground-subtle line-through opacity-60"
+                    : "border-border-secondary bg-surface-secondary text-foreground-body"
+                }`}
+              >
+                <span
+                  aria-hidden
+                  className="h-2 w-2 shrink-0 rounded-full"
+                  style={{ background: CTX_COLOR[ctx] || CTX_COLOR.other }}
+                />
+                {ctxLabel(ctx)}
+                <span className="font-tl-mono text-foreground-subtle">{count}</span>
+              </button>
+            )
+          })}
+          {anyHidden && (
+            <Button size="sm" variant="ghosted" onClick={() => setHiddenCtx(new Set())}>
+              show all
+            </Button>
+          )}
+        </div>
+      )}
+
       {ranked && (
         <div className="mt-3 flex flex-col gap-2">
           {ranked.length === 0 && (
@@ -254,6 +315,7 @@ export function AnalyzePanel() {
               ec={ec}
               sov={sov}
               rank={i + 1}
+              hiddenCtx={hiddenCtx}
               open={Boolean(openBrands[b.name])}
               onToggle={() => toggleBrand(b.name)}
               onReport={() => onReport(b)}
@@ -273,6 +335,7 @@ function BrandCard({
   ec,
   sov,
   rank,
+  hiddenCtx,
   open,
   onToggle,
   onReport,
@@ -284,6 +347,7 @@ function BrandCard({
   ec: BrandEconomics
   sov: number
   rank: number
+  hiddenCtx: Set<string>
   open: boolean
   onToggle: () => void
   onReport: () => void
@@ -291,7 +355,14 @@ function BrandCard({
   reportBusy: boolean
   hasReel: boolean
 }) {
-  const apps: Moment[] = brand.appearances || []
+  const allApps: Moment[] = brand.appearances || []
+  // View-only event filter: drop moments whose context is toggled off. The
+  // summary tiles + economics above are intentionally left on the full set.
+  const apps = useMemo(
+    () => allApps.filter((m) => !hiddenCtx.has(ctxKey(m))),
+    [allApps, hiddenCtx],
+  )
+  const hiddenCount = allApps.length - apps.length
   return (
     <div
       id={brandDomId(brand.name)}
@@ -361,9 +432,18 @@ function BrandCard({
           <Timeline moments={apps} />
           <div className="mb-1 mt-1 text-[10px] uppercase tracking-wide text-foreground-subtle">
             Appearances ({apps.length})
+            {hiddenCount > 0 && (
+              <span className="ml-1 normal-case text-foreground-subtle">
+                · {hiddenCount} hidden by event filter
+              </span>
+            )}
           </div>
           <ul className="max-h-60 overflow-y-auto">
-            {apps.length === 0 && <li className="text-xs text-foreground-subtle">none returned</li>}
+            {apps.length === 0 && (
+              <li className="text-xs text-foreground-subtle">
+                {hiddenCount > 0 ? "all appearances hidden by the event filter" : "none returned"}
+              </li>
+            )}
             {apps.map((m, i) => (
               <MomentRow key={i} m={m}>
                 {m.asset_type || m.description || ""}
