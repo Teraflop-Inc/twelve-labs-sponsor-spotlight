@@ -1,19 +1,82 @@
-# Sponsor Spotlight
+<h1 align="center">Sponsor Spotlight</h1>
 
-A sales-grade demo of the **TwelveLabs Jockey (Agents API)** for sponsorship
-analytics. Point it at a collection of indexed broadcast footage and it
-discovers every sponsor brand, analyzes their on-screen exposure, ranks them by
-weighted media value, and audits how legibly each logo renders — every result
-produced by the Jockey **`/responses`** API over a knowledge store.
+<p align="center">
+  Turn broadcast footage into a defensible sponsorship valuation —
+  every result produced by <b>TwelveLabs Jockey</b> over a knowledge store.
+</p>
 
-Built with React + the TwelveLabs design system on the front end and a stateless
-FastAPI backend. Runs as a single deployment.
+Sponsorship is still valued the way it was twenty years ago: analysts hand-log
+logo-seconds, or a panel estimates them. That misses at three points — **scale**
+(nobody watches every minute of every broadcast), **legibility** (a logo on
+screen is not a logo *seen* — contrast, size and motion blur decide that), and
+**provenance** (a number in a renewal deck with no audit trail behind it).
+
+Sponsor Spotlight closes all three with a single reasoning interface. Point it
+at indexed footage and it discovers every sponsor present, times every
+appearance, scores how legibly each mark renders, and turns that into media
+value you can trace back to a timestamp.
 
 ---
 
-## What it does
+## Features
 
-The app walks a prospect through a sponsor-ROI story in five steps:
+**Brand discovery** — one Jockey call enumerates every sponsor visible anywhere
+in the footage, including small, partial and briefly-visible marks. No watchlist
+to maintain; you find out who's actually there.
+
+**Timed exposure analysis** — per-brand appearances with start/end seconds,
+surface (perimeter LED, shirt-front, backdrop, broadcast overlay…), framing,
+match period and on-screen game clock read from the scorebug.
+
+**Legibility audit** — each brand asset scored 0–10 on contrast, size, position,
+camera angle and motion blur, with timestamped examples of where a mark failed
+and concrete creative fixes. This is the step that separates "on screen" from
+"seen".
+
+**Match-event context** — dedicated passes find every goal, celebration and
+replay, then stamp them onto overlapping sponsor moments. Exposure during a goal
+is worth more than exposure during a throw-in, and the weighting reflects that.
+
+**Media value with provenance** — EMV from seconds × legibility × clutter ×
+audience-at-minute × rate, with every input tagged Detected / Customer-Uploaded /
+Simulated so a placeholder is never mistaken for a measurement.
+
+**Highlight reels** — a ~60s cut of a brand's top moments per game, built offline
+with FFmpeg over the broadcast HLS and served from Vercel Blob.
+
+**Export and reporting** — CSV/JSON per game plus aggregate totals, and a
+printable performance report whose figures match the screen exactly.
+
+---
+
+## Who this is for
+
+- **Rights-holders** proving delivered value at renewal, with an audit trail.
+- **Agencies** comparing a brand's exposure across properties on one basis.
+- **Brands** finding out which placements actually render legibly on air.
+- **Developers** building on Jockey — this repo is a worked example of
+  multi-pass structured extraction over video (see [the tutorial](#tutorial)).
+
+---
+
+## Tech stack
+
+| Layer | Choice |
+|-------|--------|
+| Video intelligence | **TwelveLabs Jockey 1.0** (`/responses`) over a knowledge store |
+| Backend | Python 3.11, FastAPI, httpx |
+| Frontend | React 19, TypeScript, Vite, Tailwind v4, `hls.js` |
+| Design system | TwelveLabs design system (vendored, `frontend/src/tlds`) |
+| Media | FFmpeg (reels), Vercel Blob (hosting) |
+| Deploy | Vercel — one Python function |
+
+Jockey is the *only* model interface used. There is no separate search index, no
+embedding store, and no bespoke CV — every result on screen comes from a
+schema-constrained `/responses` call.
+
+---
+
+## The five-step flow
 
 | Step | Section | What happens |
 |------|---------|--------------|
@@ -90,6 +153,60 @@ Jockey Agents API  (api.twelvelabs.io/v1.3/responses)
   live in the browser and are sent with each request. All Jockey calls happen
   server-side; the backend persists nothing.
 
+### Offline vs. runtime
+
+The split exists because a Jockey `/responses` call takes ~45s–3min and the beta
+is rate-limited to ~2 req/min — a live demo cannot call it on the demo path.
+
+```
+OFFLINE (local, minutes-hours)          RUNTIME (Vercel, milliseconds)
+────────────────────────────────        ──────────────────────────────
+ingest_assets      → knowledge store
+capture_demo_cache → demo_fixtures/ ──▶ Demo tab reads committed JSON
+build_reels        → Vercel Blob    ──▶ /api/reel redirects
+                                        BYO-key mode calls Jockey live
+```
+
+---
+
+## API reference
+
+Base URL is the deployment root. Analysis endpoints require either
+`x-api-key: <your key>` (BYO mode) or `x-demo: 1` (locked demo mode).
+
+| Method | Path | Purpose |
+|--------|------|---------|
+| `GET` | `/api/health` | Health check |
+| `GET` | `/api/sports` | Sport profiles available for new collections |
+| `GET` | `/api/demo/info` | Whether demo mode is on, its collection, games, cache state |
+| `GET` | `/api/demo/scope/{game_id}` | All pre-baked data for one scope (fixtures only, no key) |
+| `GET` | `/api/knowledge-stores` | List the account's collections |
+| `POST` | `/api/knowledge-stores/create` | Create a collection with sport-aware enrichment |
+| `POST` | `/api/knowledge-stores/add-assets` | Attach uploaded TwelveLabs assets to a collection |
+| `POST` | `/api/use-knowledge-store` | Load a collection: sport + video roster |
+| `POST` | `/api/jockey/discover` | **Pass 1** — every sponsor brand present (no timestamps) |
+| `POST` | `/api/jockey/analyze` | **Pass 2** — timed appearances per brand |
+| `POST` | `/api/jockey/legibility` | **Pass 3** — contrast/size/position/angle/blur audit |
+| `POST` | `/api/jockey/compare` | Two-brand head-to-head with a winner + rationale |
+| `POST` | `/api/jockey/query` | Free-form question, optionally schema-constrained |
+| `POST` | `/api/report` | Printable performance report (HTML) |
+| `GET` | `/api/reel/{game_id}/{brand}` | Redirect to a pre-built highlight reel |
+
+Add `?live=1` to `discover` / `analyze` / `legibility` to bypass the demo
+fixtures and force a real Jockey call.
+
+Interactive docs are at `/docs` (FastAPI generates them from the route
+signatures).
+
+<a name="tutorial"></a>
+### Reading the Jockey integration
+
+`backend/domain/sponsor/schemas.py` and `backend/domain/sponsor/prompts.py` are
+the entire contract with the API — the JSON schemas that force computable output,
+and the prompts that ask for it (including the `selections` / `{{sel:N}}` trick
+that scopes a call to one broadcast in a multi-game store). Everything in
+`services/` and `routes/` is plumbing around those two files.
+
 ---
 
 ## Quick start (local)
@@ -110,11 +227,15 @@ npm run dev
 ```
 
 Open the Vite URL. Setting `TWELVELABS_API_KEY` enables the **Demo** tab; without
-it, use **"Use your own key"** and paste a key in the UI. Exported environment
-variables take precedence over `.env`, so this works too:
+it, use **"Use your own key"** and paste a key in the UI.
+
+`backend/.env` is only one way to supply it. Exported variables take precedence
+over the file, so any of these work equally well:
 
 ```bash
-TWELVELABS_API_KEY=tlk_... uv run uvicorn main:app --port 8001
+source ../set-env.sh                              # if you keep keys in a shell script
+export TWELVELABS_API_KEY=tlk_...                 # or export it directly
+TWELVELABS_API_KEY=tlk_... uv run uvicorn main:app --port 8001   # or inline
 ```
 
 > Jockey (`jockey1.0`) is in private beta and requires an allowlisted API key.
