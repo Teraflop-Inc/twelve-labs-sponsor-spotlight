@@ -47,6 +47,29 @@ def _api_key() -> str:
     return key
 
 
+class JockeyError(RuntimeError):
+    """A /responses call that failed after retries.
+
+    Carries the upstream HTTP status and TwelveLabs' own message so callers can
+    surface something actionable — "daily Response limit (15/day), resets at
+    …" is useful; "Internal Server Error" is not.
+    """
+
+    def __init__(self, status: int, body: str, *, sent: Any = None) -> None:
+        self.status = status
+        self.code = ""
+        self.message = body[:500]
+        try:
+            parsed = json.loads(body)
+        except (ValueError, TypeError):
+            parsed = None
+        if isinstance(parsed, dict):
+            self.code = str(parsed.get("code") or "")
+            self.message = str(parsed.get("message") or self.message)
+        self.sent = sent
+        super().__init__(f"/responses failed {status} ({self.code or 'error'}): {self.message}")
+
+
 def _headers(send_json: bool = True) -> dict[str, str]:
     h = {"x-api-key": _api_key()}
     if send_json:
@@ -219,15 +242,20 @@ async def responses(
                 "schema": json_schema["schema"],
             }
         }
-    last_err = ""
+    last_err: JockeyError | None = None
     async with httpx.AsyncClient(timeout=httpx.Timeout(timeout_s)) as client:
         for attempt in range(max_attempts):
             r = await client.post(f"{BASE_URL}/responses", headers=_headers(), json=body)
             if r.status_code < 400:
                 return r.json()
-            last_err = f"/responses failed {r.status_code}: {r.text[:1500]}"
-            # Retry rate-limits (429) and transient server errors (5xx).
-            if (r.status_code == 429 or r.status_code >= 500) and attempt < max_attempts - 1:
+            last_err = JockeyError(r.status_code, r.text, sent=body)
+            # Retry per-minute rate-limits (429) and transient server errors
+            # (5xx). A plan/quota cap is also a 429 but will not clear for hours,
+            # so retrying it just burns a minute before failing anyway.
+            retryable = (
+                r.status_code == 429 or r.status_code >= 500
+            ) and last_err.code != "plan_limit_exceeded"
+            if retryable and attempt < max_attempts - 1:
                 delay = _retry_delay(r.text, attempt)
                 log.warning(
                     "/responses %s — retry %d/%d in %.0fs",
@@ -236,7 +264,9 @@ async def responses(
                 await asyncio.sleep(delay)
                 continue
             break
-    raise RuntimeError(f"{last_err} | sent body: {body!r}")
+    if last_err is None:  # pragma: no cover — the loop always sets it
+        raise JockeyError(0, "/responses failed with no response")
+    raise last_err
 
 
 def extract_text(response: dict[str, Any]) -> str:

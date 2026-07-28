@@ -38,12 +38,15 @@ export function BrandExplorerPanel() {
   const [showAll, setShowAll] = useState(false)
   const [finding, setFinding] = useState(false)
   const [findError, setFindError] = useState("")
+  // A live re-run replaces the pre-baked brand list, so every brand it
+  // returns becomes selectable even in the locked demo.
+  const [ranLive, setRanLive] = useState(false)
 
   // Locked demo loads its brands from the committed fixtures; unlocked has to
   // ask Jockey, because an arbitrary collection has no pre-baked scope.
   const canDiscover = mode !== "demo"
 
-  const onFindBrands = async () => {
+  const onFindBrands = async (opts: { live?: boolean } = {}) => {
     if (!activeStore) return
     setFinding(true)
     setFindError("")
@@ -57,10 +60,11 @@ export function BrandExplorerPanel() {
         asset_label:
           videos.find((v) => v.asset_id === assetId)?.video_filename || undefined,
       }
-      const data = await api.discover(ctx, sessionId)
+      const data = await api.discover(ctx, sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
       setScopeDiscovery(data.discovery?.brands ?? [])
       setViewBrands([])
+      if (opts.live) setRanLive(true)
     } catch (e) {
       setFindError((e as Error).message)
     } finally {
@@ -80,7 +84,8 @@ export function BrandExplorerPanel() {
   )
   const analyzedNames = useMemo(() => scopeInventory.map((b) => b.name), [scopeInventory])
   // Locked demo: only pre-analyzed brands. Unlocked: anything discovered.
-  const selectableNames = canDiscover ? scopeDiscovery.map((b) => b.name) : analyzedNames
+  const openSelection = canDiscover || ranLive
+  const selectableNames = openSelection ? scopeDiscovery.map((b) => b.name) : analyzedNames
 
   // Analyzed brands first (in exposure order from the fixture), then the rest
   // alphabetically. Guard against a brand appearing only in the analyze fixture.
@@ -100,9 +105,9 @@ export function BrandExplorerPanel() {
   // detected-but-not-analyzed ones. A search always spans the full list.
   const filtered = useMemo(() => {
     if (q) return ordered.filter((b) => b.name.toLowerCase().includes(q))
-    if (showAll || canDiscover) return ordered
+    if (showAll || openSelection) return ordered
     return ordered.filter((b) => analyzedSet.has(b.name.toLowerCase()))
-  }, [ordered, q, showAll, analyzedSet, canDiscover])
+  }, [ordered, q, showAll, analyzedSet, openSelection])
 
   const toggle = (name: string, on: boolean) =>
     setViewBrands(on ? [...viewBrands, name] : viewBrands.filter((n) => n !== name))
@@ -123,11 +128,14 @@ export function BrandExplorerPanel() {
       }
       actions={
         <div className="flex items-center gap-2">
-          {canDiscover && (
-            <Button size="sm" onClick={onFindBrands} disabled={finding || !activeStore}>
-              {finding ? "Finding brands…" : "Find brands"}
-            </Button>
-          )}
+          <Button
+            size="sm"
+            onClick={() => onFindBrands({ live: !canDiscover })}
+            disabled={finding || !activeStore}
+            title="Runs brand discovery against the selected broadcast. Takes 1–3 minutes."
+          >
+            {finding ? "Finding brands…" : canDiscover ? "Find brands" : "Re-run brands"}
+          </Button>
           <Button
             variant="ghosted"
             size="sm"
@@ -174,7 +182,7 @@ export function BrandExplorerPanel() {
 
       <div className="grid grid-cols-2 gap-1.5 md:grid-cols-3 lg:grid-cols-4">
         {filtered.map((b) => {
-          const isRun = canDiscover || analyzedSet.has(b.name.toLowerCase())
+          const isRun = openSelection || analyzedSet.has(b.name.toLowerCase())
           const isSel = viewBrands.includes(b.name)
           return (
             <label

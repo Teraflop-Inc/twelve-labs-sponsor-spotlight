@@ -426,3 +426,70 @@ def test_unknown_asset_id_falls_back_to_whole_collection(client, spy, unlocked, 
     body = {**BODY, "asset_id": "asset_missing"}
     client.post("/api/jockey/discover", json=body, headers=DEMO)
     assert seen["selections"] is None  # whole-collection run, not a wrong scope
+
+
+# --- upstream errors reach the caller -------------------------------------------
+
+
+def test_plan_limit_is_reported_not_swallowed(client, monkeypatch, unlocked):
+    """A quota cap must arrive as an actionable message, not "Internal Server
+    Error" — the user needs to know it resets, not that something broke."""
+    limit_body = (
+        '{"code":"plan_limit_exceeded","message":"You have reached your free '
+        'plan\'s daily Response limit (15/day). It resets at 2026-07-28T23:25:06Z."}'
+    )
+
+    async def boom(**_kw):
+        raise jockey.JockeyError(429, limit_body)
+
+    monkeypatch.setattr(jockey, "responses", boom)
+    r = client.post("/api/jockey/discover", json=BODY, headers=DEMO)
+    assert r.status_code == 429
+    body = r.json()
+    assert body["code"] == "plan_limit_exceeded"
+    assert "daily Response limit" in body["detail"]
+    assert "resets at" in body["detail"]
+
+
+def test_upstream_5xx_becomes_a_bad_gateway(client, monkeypatch, unlocked):
+    async def boom(**_kw):
+        raise jockey.JockeyError(503, '{"message":"upstream unavailable"}')
+
+    monkeypatch.setattr(jockey, "responses", boom)
+    r = client.post("/api/jockey/discover", json=BODY, headers=DEMO)
+    assert r.status_code == 502
+    assert r.json()["detail"] == "upstream unavailable"
+
+
+def test_plan_limit_is_not_retried(monkeypatch):
+    """Retrying a daily cap wastes a minute before failing anyway."""
+    import asyncio
+
+    calls = {"n": 0}
+    limit = '{"code":"plan_limit_exceeded","message":"daily limit"}'
+
+    class FakeResponse:
+        status_code = 429
+        text = limit
+
+        def json(self):
+            return json.loads(limit)
+
+    class FakeClient:
+        async def __aenter__(self):
+            return self
+
+        async def __aexit__(self, *_a):
+            return False
+
+        async def post(self, *_a, **_k):
+            calls["n"] += 1
+            return FakeResponse()
+
+    monkeypatch.setattr(jockey.httpx, "AsyncClient", lambda **_k: FakeClient())
+    monkeypatch.setattr(jockey, "_api_key", lambda: "k")
+
+    with pytest.raises(jockey.JockeyError) as excinfo:
+        asyncio.run(jockey.responses("i", "m", "ks_x"))
+    assert excinfo.value.code == "plan_limit_exceeded"
+    assert calls["n"] == 1  # tried once, no backoff loop

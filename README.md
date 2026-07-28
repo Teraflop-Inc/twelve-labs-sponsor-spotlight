@@ -147,6 +147,8 @@ matches the on-screen numbers exactly.
 
 ## Architecture
 
+![Sponsor Spotlight architecture](docs/architecture.svg)
+
 ```
 Browser (React + TwelveLabs design system)
     │  fetch /api/*   (x-demo → server key)

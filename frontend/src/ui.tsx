@@ -85,12 +85,16 @@ export function ReRunButton({
   disabled,
   busy,
   scope,
+  label = "Re-run analysis",
+  busyLabel = "Analyzing…",
 }: {
   onClick: () => void
   disabled?: boolean
   busy?: boolean
   /** How much of the selection the run covers, e.g. "2 of 5 brands". */
   scope?: string
+  label?: string
+  busyLabel?: string
 }) {
   return (
     <span className="inline-flex items-center gap-2">
@@ -105,7 +109,7 @@ export function ReRunButton({
           (scope ? ` This run covers ${scope}.` : "")
         }
       >
-        {busy ? "Analyzing…" : "Re-run analysis"}
+        {busy ? busyLabel : label}
       </Button>
     </span>
   )

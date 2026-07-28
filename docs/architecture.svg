@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Sponsor Spotlight architecture. An offline pipeline ingests broadcasts into a TwelveLabs Knowledge Store, captures analysis fixtures and builds reels. A runtime Vercel function serves those committed fixtures, or calls Jockey live when unlocked. Both phases use the same POST /v1.3/responses API.">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A7A78"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1A8B5C"/>
+    </marker>
+  </defs>
+
+  <style>
+    .lane     { fill: #FAFAF9; stroke: #E3E1DF; stroke-width: 1; rx: 12; }
+    .hdr      { font-size: 12px; font-weight: 700; letter-spacing: .09em; fill: #7A7A78; }
+    .sub      { font-size: 11px; fill: #9B9B98; }
+    .box      { fill: #FFFFFF; stroke: #D3D1CF; stroke-width: 1.25; rx: 8; }
+    .boxg     { fill: #FFFFFF; stroke: #1A8B5C; stroke-width: 1.5; rx: 8; }
+    .boxfill  { fill: #F4FBF7; stroke: #1A8B5C; stroke-width: 1.5; rx: 8; }
+    .t        { font-size: 13px; font-weight: 600; fill: #1D1C1B; }
+    .m        { font-size: 11px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; fill: #6B6B69; }
+    .cap      { font-size: 11px; fill: #7A7A78; }
+    .e        { stroke: #7A7A78; stroke-width: 1.4; fill: none; marker-end: url(#a); }
+    .eg       { stroke: #1A8B5C; stroke-width: 1.6; fill: none; marker-end: url(#ag); }
+    .dash     { stroke-dasharray: 5 4; }
+  </style>
+
+  <text x="24" y="32" font-size="17" font-weight="700" fill="#1D1C1B">Sponsor Spotlight — architecture</text>
+  <text x="24" y="52" font-size="12" fill="#7A7A78">Every result comes from one API: Jockey <tspan font-family="ui-monospace, Menlo, monospace">/responses</tspan> over a Knowledge Store.</text>
+
+  <!-- ══ OFFLINE ══════════════════════════════════════════════════════ -->
+  <rect class="lane" x="24" y="72" width="420" height="404"/>
+  <text class="hdr" x="44" y="100">OFFLINE — RUN LOCALLY</text>
+  <text class="sub" x="44" y="118">Minutes to hours. Never runs on Vercel.</text>
+
+  <rect class="box" x="44" y="136" width="380" height="52"/>
+  <text class="t" x="60" y="159">Step 0 · Ingest</text>
+  <text class="m" x="60" y="177">pre_processing.ingest_assets</text>
+
+  <rect class="boxfill" x="44" y="212" width="380" height="58"/>
+  <text class="t" x="60" y="235">TwelveLabs Knowledge Store</text>
+  <text class="cap" x="60" y="254">Enrichment prompt applied once, at index time</text>
+
+  <rect class="box" x="44" y="294" width="380" height="70"/>
+  <text class="t" x="60" y="317">Step 1 · Capture fixtures</text>
+  <text class="m" x="60" y="335">pre_processing.capture_demo_cache</text>
+  <text class="cap" x="60" y="353">discover → analyze → legibility · resumable, paced</text>
+
+  <rect class="box" x="44" y="388" width="380" height="66"/>
+  <text class="t" x="60" y="411">Step 2 · Build reels</text>
+  <text class="m" x="60" y="429">pre_processing.build_reels · FFmpeg</text>
+  <text class="cap" x="60" y="446">→ demo_fixtures/ · Vercel Blob</text>
+
+  <path class="e" d="M 234 188 V 212"/>
+  <path class="e" d="M 234 270 V 294"/>
+  <path class="e" d="M 234 364 V 388"/>
+
+  <!-- ══ RUNTIME ══════════════════════════════════════════════════════ -->
+  <rect class="lane" x="516" y="72" width="420" height="404"/>
+  <text class="hdr" x="536" y="100">RUNTIME — VERCEL</text>
+  <text class="sub" x="536" y="118">Milliseconds, unless a live run is requested.</text>
+
+  <rect class="box" x="536" y="136" width="380" height="52"/>
+  <text class="t" x="552" y="159">Browser · React + TwelveLabs design system</text>
+  <text class="m" x="552" y="177">fetch /api/*  ·  x-demo → server key</text>
+
+  <rect class="box" x="536" y="212" width="380" height="58"/>
+  <text class="t" x="552" y="235">FastAPI · one Python function</text>
+  <text class="m" x="552" y="254">routes → services → domain/sponsor</text>
+
+  <rect class="box" x="536" y="294" width="380" height="48"/>
+  <text class="t" x="552" y="323">DEMO_MODE ?</text>
+
+  <rect class="box" x="536" y="366" width="184" height="88"/>
+  <text class="t" x="552" y="389">Saved</text>
+  <text class="cap" x="552" y="408">committed fixture,</text>
+  <text class="cap" x="552" y="424">bound to its store</text>
+  <text class="cap" x="552" y="443">locked · instant</text>
+
+  <rect class="boxg" x="732" y="366" width="184" height="88"/>
+  <text class="t" x="748" y="389">Live</text>
+  <text class="cap" x="748" y="408">fresh Jockey call</text>
+  <text class="cap" x="748" y="424">45s – 3 min</text>
+  <text class="cap" x="748" y="443">unlocked · re-run</text>
+
+  <path class="e" d="M 726 188 V 212"/>
+  <path class="e" d="M 726 270 V 294"/>
+  <path class="e" d="M 628 342 V 366"/>
+  <path class="eg" d="M 824 342 V 366"/>
+
+  <!-- ══ SHARED API ═══════════════════════════════════════════════════ -->
+  <rect class="boxfill" x="24" y="540" width="912" height="52"/>
+  <text class="t" x="44" y="563">Jockey 1.0 · POST /v1.3/responses</text>
+  <text class="cap" x="44" y="581">model + instructions + knowledge_store_id + json_schema [+ selections]</text>
+
+  <!-- offline → API -->
+  <path class="eg" d="M 234 454 V 500 H 300 V 540"/>
+  <!-- live → API -->
+  <path class="eg" d="M 824 454 V 540"/>
+  <!-- fixtures → saved (committed, read at request time) -->
+  <path class="e dash" d="M 424 410 H 536"/>
+  <text class="cap" x="428" y="404">committed</text>
+  <text class="cap" x="428" y="500">both phases call the same endpoint</text>
+</svg>
