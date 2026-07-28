@@ -261,9 +261,30 @@ Writes `backend/iconik_ingest.json` (gitignored) mapping `asset_id` → `item_id
 uv run python -m pre_processing.ingest_assets
 ```
 
-Edit `ASSETS` in `pre_processing/ingest_assets.py` and the matching `GAMES`
-registry in `games.py` to point at your own footage. Assets must already exist
-in your TwelveLabs account.
+Edit `ASSETS` in `pre_processing/ingest_assets.py` to point at your own footage;
+assets must already exist in your TwelveLabs account.
+
+Then register those games for the app — no code edit needed:
+
+```bash
+# backend/games.json (or the SPONSOR_SPOTLIGHT_GAMES env var)
+[
+  {"id": "wk1", "asset_id": "6a2...", "label": "Week 1 — Team A v Team B"},
+  {"id": "wk2", "asset_id": "6a2...", "label": "Week 2 — Team C v Team D"}
+]
+```
+
+Keep `id` short and URL-safe — it becomes the fixture directory name and appears
+in `/api/reel/{game_id}/…`.
+
+### Bringing your own footage
+
+Set `TWELVELABS_API_KEY`, `SPONSOR_SPOTLIGHT_STORE_ID` and the roster above, and
+the app runs entirely on your collection. The committed fixtures record the
+store they were captured from, so they stop matching and every request runs live
+against your footage rather than replaying our Premier League results — expect
+Jockey latency (~45s–3min per call) instead of the instant cached demo. Run
+Step 1 below to bake your own fixtures and get the instant path back.
 
 ### Step 1 — Capture demo fixtures
 
@@ -331,6 +352,7 @@ Set the environment variables below in the Vercel project.
 | `SPONSOR_SPOTLIGHT_STORE_NAME` | optional | Display name for the demo collection. |
 | `SPONSOR_SPOTLIGHT_SPORT` | optional | Sport profile for the demo collection (default `soccer`). |
 | `SPONSOR_SPOTLIGHT_DEMO_BRANDS` | optional | Comma-separated canonical brands the demo tab pre-bakes + auto-runs (default `Etihad,Emirates`). Must match the captured `demo_fixtures/`. |
+| `SPONSOR_SPOTLIGHT_GAMES` | optional | JSON array replacing the per-game roster: `[{"id":"wk1","asset_id":"6a2…","label":"Week 1"}]`. A `backend/games.json` file of the same shape works too; the env var wins. Malformed values are ignored with a warning and the bundled roster is used. |
 
 > **Deploying:** setting `TWELVELABS_API_KEY` on a public deployment means every
 > visitor's Demo-tab request spends that key. The demo is served from committed

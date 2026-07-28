@@ -260,3 +260,62 @@ def test_reel_missing_returns_404(client):
     # No reel built yet → 404 (endpoint is public, no auth header needed).
     r = client.get("/api/reel/all/Etihad")
     assert r.status_code == 404
+
+
+# --- roster is configurable (bring your own footage) ----------------------------
+
+
+def test_games_roster_defaults_to_bundled_demo():
+    import games
+
+    assert [g["id"] for g in games.DEFAULT_GAMES] == [g["id"] for g in games.GAMES]
+    assert len(games.GAMES) == 5
+
+
+def test_games_roster_can_be_replaced_by_env(monkeypatch):
+    import games
+
+    monkeypatch.setenv(
+        games.GAMES_ENV_VAR,
+        json.dumps([{"id": "wk1", "asset_id": "6a2abc", "label": "Week 1"}]),
+    )
+    games.reload_games()
+    try:
+        assert games.game_ids() == ["wk1"]
+        assert games.label("wk1") == "Week 1"
+        assert games.by_asset("6a2abc")["id"] == "wk1"
+        # Bundled games are gone — override replaces, never merges.
+        assert games.by_id("mci-liv-2019") is None
+    finally:
+        monkeypatch.delenv(games.GAMES_ENV_VAR)
+        games.reload_games()
+
+
+def test_games_label_falls_back_to_id_when_omitted(monkeypatch):
+    import games
+
+    monkeypatch.setenv(games.GAMES_ENV_VAR, json.dumps([{"id": "wk1", "asset_id": "6a2abc"}]))
+    games.reload_games()
+    try:
+        assert games.label("wk1") == "wk1"
+    finally:
+        monkeypatch.delenv(games.GAMES_ENV_VAR)
+        games.reload_games()
+
+
+@pytest.mark.parametrize(
+    "bad",
+    ['[{"id": "no-asset"}]', "not json at all", "[]", '{"id": "not-a-list"}'],
+    ids=["missing-asset_id", "invalid-json", "empty", "not-a-list"],
+)
+def test_malformed_roster_override_falls_back_to_bundled(monkeypatch, bad):
+    # A bad env var on a live deployment should degrade, not 500 every request.
+    import games
+
+    monkeypatch.setenv(games.GAMES_ENV_VAR, bad)
+    games.reload_games()
+    try:
+        assert len(games.GAMES) == 5
+    finally:
+        monkeypatch.delenv(games.GAMES_ENV_VAR)
+        games.reload_games()
