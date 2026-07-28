@@ -372,3 +372,57 @@ def test_unlocked_mode_does_not_serve_demo_fixtures_for_another_store(client, sp
     r = client.post("/api/jockey/discover", json=body, headers=DEMO)
     assert r.json()["provenance"]["source"] == "jockey_live"
     assert spy["n"] == 1
+
+
+# --- per-broadcast scoping by asset id ------------------------------------------
+
+
+def test_unlocked_mode_never_serves_fixtures(client, spy, unlocked):
+    # DEMO_MODE=False means a working app: always a real run, even for the demo
+    # collection whose fixtures would otherwise match.
+    r = client.post("/api/jockey/discover", json=BODY, headers=DEMO)
+    assert r.json()["provenance"]["source"] == "jockey_live"
+    assert spy["n"] == 1
+
+
+def test_asset_id_scopes_the_call_to_one_broadcast(client, spy, unlocked, monkeypatch):
+    seen = {}
+
+    async def fake_items(store_id, *_a, **_k):
+        return [
+            {"_id": "ksi_one", "asset_id": "asset_one"},
+            {"_id": "ksi_two", "asset_id": "asset_two"},
+        ]
+
+    async def fake_responses(**kw):
+        seen.update(kw)
+        return {"session_id": "s"}
+
+    monkeypatch.setattr(jockey, "list_items", fake_items)
+    monkeypatch.setattr(jockey, "responses", fake_responses)
+
+    body = {**BODY, "asset_id": "asset_two", "asset_label": "Match 2"}
+    client.post("/api/jockey/discover", json=body, headers=DEMO)
+
+    # Bound to that asset's knowledge-store item, and named in the prompt.
+    assert seen["selections"] == [{"kind": "item", "id": "ksi_two"}]
+    assert "{{sel:0}}" in seen["user_message"]
+    assert "Match 2" in seen["user_message"]
+
+
+def test_unknown_asset_id_falls_back_to_whole_collection(client, spy, unlocked, monkeypatch):
+    seen = {}
+
+    async def fake_items(*_a, **_k):
+        return [{"_id": "ksi_one", "asset_id": "asset_one"}]
+
+    async def fake_responses(**kw):
+        seen.update(kw)
+        return {"session_id": "s"}
+
+    monkeypatch.setattr(jockey, "list_items", fake_items)
+    monkeypatch.setattr(jockey, "responses", fake_responses)
+
+    body = {**BODY, "asset_id": "asset_missing"}
+    client.post("/api/jockey/discover", json=body, headers=DEMO)
+    assert seen["selections"] is None  # whole-collection run, not a wrong scope

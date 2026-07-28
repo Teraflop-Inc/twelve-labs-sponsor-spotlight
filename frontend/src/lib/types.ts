@@ -179,10 +179,6 @@ export interface UseStoreResponse {
   sport: string
   videos: Video[]
 }
-export interface AddAssetsResponse {
-  store_id: string
-  added: { asset_id: string; item_id?: string; status: string; error?: string }[]
-}
 /** Where a result came from — stated by the server, never inferred here.
  *
  * The backend stamps this on every analysis response (see

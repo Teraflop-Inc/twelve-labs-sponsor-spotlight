@@ -42,7 +42,6 @@ export function AnalyzePanel() {
     storeStatus,
     gameId,
     games,
-    selectedBrands,
     inventory,
     setInventory,
     legibility,
@@ -79,11 +78,8 @@ export function AnalyzePanel() {
   // allows ~2 requests/minute, so running the full viewed set (often 5+) is a
   // guaranteed 429 storm. The backoff recovers, but it turns a demo into a
   // three-minute wait.
-  const runBrands = (demoView ? viewBrands : selectedBrands.filter(Boolean)).slice(
-    0,
-    MAX_LIVE_BRANDS,
-  )
-  const cappedFrom = demoView ? viewBrands.length : selectedBrands.filter(Boolean).length
+  const runBrands = viewBrands.slice(0, MAX_LIVE_BRANDS)
+  const cappedFrom = viewBrands.length
   const legReport = demoView ? scopeLegibility : legibility
 
   const onAnalyze = async (opts: { live?: boolean } = {}) => {
@@ -270,12 +266,12 @@ export function AnalyzePanel() {
               ))}
             </>
           )
-        ) : selectedBrands.length === 0 ? (
+        ) : viewBrands.length === 0 ? (
           "Select up to 2 brands in Brand discovery (#3), then analyze them here."
         ) : (
           <>
             <span>Selected:</span>
-            {selectedBrands.map((n) => (
+            {viewBrands.map((n) => (
               <Chip key={n} variant="subtle" size="sm">
                 {n}
               </Chip>

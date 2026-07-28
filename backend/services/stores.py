@@ -1,4 +1,4 @@
-"""Knowledge-store (collection) management — list, create, load, add assets.
+"""Knowledge-store (collection) management — list, create, load.
 
 Stateless: nothing is persisted server-side. The client holds the active
 ``store_id`` and sends it with each request.
@@ -105,23 +105,3 @@ async def load(store_id: str) -> dict[str, Any]:
     log.info("use-knowledge-store: ks=%s videos=%d sport=%s", store_id, len(videos), sport)
     return {"store_id": store_id, "sport": sport, "videos": videos}
 
-
-async def add_assets(store_id: str, asset_ids: list[str]) -> dict[str, Any]:
-    """Attach already-uploaded TwelveLabs asset(s) to a store.
-
-    Returns immediately after enqueuing each item; indexing happens on the
-    TwelveLabs side and the client polls ``/api/use-knowledge-store`` for status.
-    (No server-side polling — serverless functions can't run for minutes.)
-    """
-    added: list[dict[str, Any]] = []
-    for aid in asset_ids:
-        try:
-            item_id = await jockey.add_item(store_id, aid)
-            added.append({"asset_id": aid, "item_id": item_id, "status": "indexing"})
-            log.info("add-asset: %s -> item %s (%s)", aid, item_id, store_id)
-        except Exception as e:  # noqa: BLE001
-            added.append(
-                {"asset_id": aid, "status": "error", "error": f"{type(e).__name__}: {e}"}
-            )
-            log.warning("add-asset failed for %s: %s", aid, e)
-    return {"store_id": store_id, "added": added}

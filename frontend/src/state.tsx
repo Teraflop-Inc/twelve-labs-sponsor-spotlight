@@ -80,6 +80,9 @@ interface AppContextValue {
 
   // --- per-game scope (5 games + "all") ---
   gameId: string
+  /** Broadcast to scope to (TwelveLabs asset id); "" = every video. */
+  assetId: string
+  setAssetId(id: string): void
   setGameId(id: string): void
   games: GameOption[]
 
@@ -103,6 +106,7 @@ interface AppContextValue {
   demoCached: boolean
   // All brands detected in the scope vs. the analyzed ("run") subset with data.
   scopeDiscovery: DiscoveryBrand[]
+  setScopeDiscovery(b: DiscoveryBrand[]): void
   scopeInventory: Brand[]
   scopeLegibility: LegibilityReport | null
   scopeReels: Record<string, ReelInfo>
@@ -166,6 +170,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   // Per-game scope. Demo is pinned to one game (PINNED_GAME_ID); "all" = whole
   // collection (the aggregate fixture) remains available via the ALL_GAMES paths.
   const [gameId, setGameId] = useState<string>(PINNED_GAME_ID)
+  const [assetId, setAssetId] = useState<string>("")
   // BYO generate flow: brand inventory shared across Discover/Analyze/Legibility.
   const [selectedBrands, setSelectedBrands] = useState<string[]>([])
   const [inventory, setInventory] = useState<Brand[] | null>(null)
@@ -250,10 +255,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
       setVideos([])
       return
     }
-    if (mode === "byok" && getKey().length === 0) {
-      setVideos([])
-      return
-    }
     try {
       const data = await api.useStore(activeStore.id)
       if (mode === "byok" && data.sport && data.sport !== byokStore?.sport) {
@@ -317,6 +318,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setBrandA("")
     setBrandB("")
     setGameId(PINNED_GAME_ID)
+    setAssetId("")
     setScopeDiscovery([])
     setScopeInventory([])
     setScopeLegibility(null)
@@ -444,6 +446,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     econ,
     setEcon,
     gameId,
+    assetId,
+    setAssetId,
     setGameId,
     games,
     selectedBrands,
@@ -465,6 +469,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     scopeLoading,
     viewBrands,
     setViewBrands,
+    setScopeDiscovery,
     playerRef,
     seekTo,
     storeEpoch,

@@ -13,7 +13,7 @@ from fastapi import APIRouter, Depends, HTTPException
 
 from core import config
 from core.deps import tl_key
-from domain.sponsor.models import AddAssetsRequest, CreateStoreRequest, UseStoreRequest
+from domain.sponsor.models import CreateStoreRequest, UseStoreRequest
 from services import stores as svc
 
 router = APIRouter(prefix="/api")
@@ -54,13 +54,3 @@ async def use_knowledge_store(
     store_id = config.DEMO_STORE_ID if (is_demo and config.DEMO_MODE) else req.store_id
     return await svc.load(store_id)
 
-
-@router.post("/knowledge-stores/add-assets")
-async def add_assets(
-    req: AddAssetsRequest, is_demo: bool = Depends(tl_key)
-) -> dict[str, Any]:
-    _require_unlocked(is_demo)
-    ids = [a.strip() for a in req.asset_ids if a.strip()]
-    if not ids:
-        raise HTTPException(status_code=400, detail="no asset_ids provided")
-    return await svc.add_assets(req.store_id, ids)

@@ -31,9 +31,10 @@ async def fetch_brand_appearances(
     videos: list[str],
     game_id: str | None = None,
     selections: list[dict[str, Any]] | None = None,
+    asset_label: str | None = None,
 ) -> dict[str, Any] | None:
     """Pass-2 worker: fetch full appearances for a single brand."""
-    scope = prompts.scope_phrase(game_id, videos, selections)
+    scope = prompts.scope_phrase(game_id, videos, selections, asset_label)
     try:
         resp = await jockey.responses(
             instructions=prompts.active_profile(sport)["instructions"],
@@ -106,16 +107,20 @@ async def run(
     videos: list[str],
     game_id: str | None = None,
     session_id: str | None = None,
+    asset_id: str | None = None,
+    asset_label: str | None = None,
 ) -> dict[str, Any]:
     """Fan out one per-brand call for each of ``brand_names`` and merge the results.
 
     The UI caps this at 2 brands (= 2 calls), which fits Jockey's 2 req/min limit.
     """
     t0 = time.time()
-    selections = await scoping.game_selections(store_id, game_id)
+    selections = await scoping.resolve(store_id, game_id, asset_id)
     results = await asyncio.gather(
         *(
-            fetch_brand_appearances(name, store_id, sport, videos, game_id, selections)
+            fetch_brand_appearances(
+                name, store_id, sport, videos, game_id, selections, asset_label
+            )
             for name in brand_names
         ),
         return_exceptions=False,

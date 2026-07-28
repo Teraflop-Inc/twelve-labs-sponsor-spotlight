@@ -1,7 +1,6 @@
 import type {
   DemoInfo,
   DemoScope,
-  AddAssetsResponse,
   AnalyzeResponse,
   CompareResponse,
   CreateStoreResponse,
@@ -92,6 +91,11 @@ export interface StoreCtx {
   videos: string[]
   /** Optional per-game scope (games.GAMES id). Omit for the whole collection. */
   game_id?: string
+  /** Scope to one broadcast by asset id — works for any collection, no roster
+   *  entry needed. Takes precedence over game_id. */
+  asset_id?: string
+  /** Display name for asset_id, used in the prompt. */
+  asset_label?: string
 }
 
 /** POST that returns raw text (not JSON) — used for the HTML report. */
@@ -144,12 +148,6 @@ export const api = {
     request<UseStoreResponse>("/api/use-knowledge-store", {
       method: "POST",
       body: { store_id },
-    }),
-
-  addAssets: (store_id: string, asset_ids: string[]) =>
-    request<AddAssetsResponse>("/api/knowledge-stores/add-assets", {
-      method: "POST",
-      body: { store_id, asset_ids },
     }),
 
   // `live` forces a fresh Jockey run in demo mode, bypassing the pre-baked cache.

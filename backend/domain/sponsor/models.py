@@ -22,6 +22,17 @@ class StoreContext(BaseModel):
         None,
         description="Optional per-game scope (games.GAMES id). Omit / 'aggregate' = whole collection.",
     )
+    asset_id: str | None = Field(
+        None,
+        description=(
+            "Scope to one broadcast by TwelveLabs asset id. Takes precedence over "
+            "game_id and needs no roster entry, so any collection's videos can be "
+            "analyzed individually."
+        ),
+    )
+    asset_label: str | None = Field(
+        None, description="Display name for asset_id, used in the prompt."
+    )
 
 
 class DiscoverRequest(StoreContext):
@@ -57,11 +68,6 @@ class CreateStoreRequest(BaseModel):
 
 class UseStoreRequest(BaseModel):
     store_id: str
-
-
-class AddAssetsRequest(BaseModel):
-    store_id: str
-    asset_ids: list[str]
 
 
 class ReportRequest(BaseModel):

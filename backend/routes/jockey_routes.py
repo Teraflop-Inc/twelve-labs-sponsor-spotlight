@@ -11,6 +11,7 @@ from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException
 
+from core import config
 from core.deps import apply_mode, tl_key
 from domain.sponsor.models import (
     AnalyzeRequest,
@@ -53,7 +54,7 @@ async def jockey_discover(
     In demo mode, served instantly from the pre-baked fixture unless ``?live=1``.
     """
     apply_mode(req, is_demo)
-    if is_demo and not live:
+    if is_demo and config.DEMO_MODE and not live:
         cached = demo.cache_hit("discover", req.store_id, game_id=req.game_id)
         if cached is not None:
             log.info("discover: served from demo cache (game=%s)", req.game_id or "all")
@@ -64,6 +65,8 @@ async def jockey_discover(
         videos=req.videos,
         game_id=req.game_id,
         session_id=req.session_id,
+        asset_id=req.asset_id,
+        asset_label=req.asset_label,
     )
 
 
@@ -80,7 +83,7 @@ async def jockey_analyze(
     if not brand_names:
         raise HTTPException(status_code=400, detail="provide at least one brand name")
 
-    if is_demo and not live:
+    if is_demo and config.DEMO_MODE and not live:
         cached = demo.cache_hit("analyze", req.store_id, brand_names, game_id=req.game_id)
         if cached is not None:
             log.info(
@@ -97,6 +100,8 @@ async def jockey_analyze(
         videos=req.videos,
         game_id=req.game_id,
         session_id=req.session_id,
+        asset_id=req.asset_id,
+        asset_label=req.asset_label,
     )
 
 
@@ -106,7 +111,7 @@ async def jockey_legibility(
 ) -> dict[str, Any]:
     """Pass 3: contrast / size / position / angle / blur audit per brand asset."""
     apply_mode(req, is_demo)
-    if is_demo and not live:
+    if is_demo and config.DEMO_MODE and not live:
         cached = demo.cache_hit("legibility", req.store_id, req.brands, game_id=req.game_id)
         if cached is not None:
             log.info(
@@ -122,6 +127,8 @@ async def jockey_legibility(
         videos=req.videos,
         game_id=req.game_id,
         session_id=req.session_id,
+        asset_id=req.asset_id,
+        asset_label=req.asset_label,
     )
 
 

@@ -1,18 +1,34 @@
 import { useEffect, useMemo, useState } from "react"
 import { Button, Checkbox, Chip, TextField } from "@twelvelabs-io/react"
-import { useApp } from "../state"
-import { SectionCard } from "../ui"
+import { api, type StoreCtx } from "../lib/api"
+import { ALL_GAMES, useApp } from "../state"
+import { SectionCard, StatusLine } from "../ui"
 import type { DiscoveryBrand } from "../lib/types"
 
 /**
- * Demo explore surface: every brand detected in the current scope, with the
- * **analyzed** (run) ones selectable to view. Un-analyzed brands are shown greyed
+ * The brand surface, for both modes.
+ *
+ * With the demo locked, every brand in the pre-baked scope is listed and the
+ * **analyzed** (run) ones are selectable; un-analyzed brands are greyed
  * ("detected · not analyzed") so the full inventory is visible without offering
- * data that doesn't exist. Selection drives the Analyze + Legibility panels.
+ * data that doesn't exist.
+ *
+ * With `DEMO_MODE=False` there is no pre-baked scope, so **Find brands** runs
+ * discovery against the loaded collection and fills the list. Selection drives
+ * the Analyze + Legibility panels either way.
  */
 export function BrandExplorerPanel() {
   const {
+    mode,
+    activeStore,
+    readyVideos,
+    gameId,
+    assetId,
+    videos,
+    sessionId,
+    setSessionId,
     scopeDiscovery,
+    setScopeDiscovery,
     scopeInventory,
     viewBrands,
     setViewBrands,
@@ -20,6 +36,37 @@ export function BrandExplorerPanel() {
   } = useApp()
   const [query, setQuery] = useState("")
   const [showAll, setShowAll] = useState(false)
+  const [finding, setFinding] = useState(false)
+  const [findError, setFindError] = useState("")
+
+  // Locked demo loads its brands from the committed fixtures; unlocked has to
+  // ask Jockey, because an arbitrary collection has no pre-baked scope.
+  const canDiscover = mode !== "demo"
+
+  const onFindBrands = async () => {
+    if (!activeStore) return
+    setFinding(true)
+    setFindError("")
+    try {
+      const ctx: StoreCtx = {
+        store_id: activeStore.id,
+        sport: activeStore.sport,
+        videos: readyVideos.map((v) => v.video_filename).filter(Boolean),
+        game_id: gameId === ALL_GAMES ? undefined : gameId,
+        asset_id: assetId || undefined,
+        asset_label:
+          videos.find((v) => v.asset_id === assetId)?.video_filename || undefined,
+      }
+      const data = await api.discover(ctx, sessionId)
+      setSessionId(data.session_id ?? sessionId)
+      setScopeDiscovery(data.discovery?.brands ?? [])
+      setViewBrands([])
+    } catch (e) {
+      setFindError((e as Error).message)
+    } finally {
+      setFinding(false)
+    }
+  }
   // Each scope opens collapsed (analyzed brands only) with a fresh search.
   useEffect(() => {
     setShowAll(false)
@@ -32,6 +79,8 @@ export function BrandExplorerPanel() {
     [scopeInventory],
   )
   const analyzedNames = useMemo(() => scopeInventory.map((b) => b.name), [scopeInventory])
+  // Locked demo: only pre-analyzed brands. Unlocked: anything discovered.
+  const selectableNames = canDiscover ? scopeDiscovery.map((b) => b.name) : analyzedNames
 
   // Analyzed brands first (in exposure order from the fixture), then the rest
   // alphabetically. Guard against a brand appearing only in the analyze fixture.
@@ -51,8 +100,9 @@ export function BrandExplorerPanel() {
   // detected-but-not-analyzed ones. A search always spans the full list.
   const filtered = useMemo(() => {
     if (q) return ordered.filter((b) => b.name.toLowerCase().includes(q))
-    return showAll ? ordered : ordered.filter((b) => analyzedSet.has(b.name.toLowerCase()))
-  }, [ordered, q, showAll, analyzedSet])
+    if (showAll || canDiscover) return ordered
+    return ordered.filter((b) => analyzedSet.has(b.name.toLowerCase()))
+  }, [ordered, q, showAll, analyzedSet, canDiscover])
 
   const toggle = (name: string, on: boolean) =>
     setViewBrands(on ? [...viewBrands, name] : viewBrands.filter((n) => n !== name))
@@ -66,14 +116,23 @@ export function BrandExplorerPanel() {
     <SectionCard
       step="3"
       title="Brands"
-      hint="Every brand detected in this scope. Pick the analyzed ones to view their exposure, economics, legibility and reel."
+      hint={
+        canDiscover
+          ? "Find every sponsor in this collection, then pick the ones to analyze."
+          : "Every brand detected in this scope. Pick the analyzed ones to view their exposure, economics, legibility and reel."
+      }
       actions={
         <div className="flex items-center gap-2">
+          {canDiscover && (
+            <Button size="sm" onClick={onFindBrands} disabled={finding || !activeStore}>
+              {finding ? "Finding brands…" : "Find brands"}
+            </Button>
+          )}
           <Button
             variant="ghosted"
             size="sm"
-            onClick={() => setViewBrands(analyzedNames)}
-            disabled={viewBrands.length === analyzed}
+            onClick={() => setViewBrands(selectableNames)}
+            disabled={viewBrands.length === selectableNames.length}
           >
             select all
           </Button>
@@ -111,9 +170,11 @@ export function BrandExplorerPanel() {
         )}
       </div>
 
+      {findError && <StatusLine tone="error">Find brands failed: {findError}</StatusLine>}
+
       <div className="grid grid-cols-2 gap-1.5 md:grid-cols-3 lg:grid-cols-4">
         {filtered.map((b) => {
-          const isRun = analyzedSet.has(b.name.toLowerCase())
+          const isRun = canDiscover || analyzedSet.has(b.name.toLowerCase())
           const isSel = viewBrands.includes(b.name)
           return (
             <label
@@ -122,7 +183,7 @@ export function BrandExplorerPanel() {
                 "flex items-start gap-2 rounded-tlds-1 px-2 py-1 " +
                 (isRun ? "cursor-pointer hover:bg-surface-body" : "cursor-default opacity-45")
               }
-              title={isRun ? "" : "Detected but not analyzed in this demo scope"}
+              title={isRun ? "" : "Detected, but not analyzed in this pre-baked scope"}
             >
               <Checkbox
                 size="sm"

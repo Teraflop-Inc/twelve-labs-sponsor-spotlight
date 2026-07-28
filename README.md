@@ -188,7 +188,8 @@ tells the backend to use its own `TWELVELABS_API_KEY`. (`x-api-key: <key>` is
 also accepted so the API can be driven with a caller-supplied key, but the UI
 never sends one.)
 
-The four collection-management endpoints return `403` while `DEMO_MODE=True`.
+The collection-management endpoints (`/knowledge-stores`, `/knowledge-stores/create`)
+return `403` while `DEMO_MODE=True`.
 
 | Method | Path | Purpose |
 |--------|------|---------|
@@ -198,7 +199,6 @@ The four collection-management endpoints return `403` while `DEMO_MODE=True`.
 | `GET` | `/api/demo/scope/{game_id}` | All pre-baked data for one scope (fixtures only, no key) |
 | `GET` | `/api/knowledge-stores` | List the account's collections |
 | `POST` | `/api/knowledge-stores/create` | Create a collection with sport-aware enrichment |
-| `POST` | `/api/knowledge-stores/add-assets` | Attach uploaded TwelveLabs assets to a collection |
 | `POST` | `/api/use-knowledge-store` | Load a collection: sport + video roster |
 | `POST` | `/api/jockey/discover` | **Pass 1** — every sponsor brand present (no timestamps) |
 | `POST` | `/api/jockey/analyze` | **Pass 2** — timed appearances per brand |

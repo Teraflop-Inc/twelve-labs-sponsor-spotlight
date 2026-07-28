@@ -28,6 +28,8 @@ export function FootagePanel() {
     defaultSport,
     gameId,
     games,
+    assetId,
+    setAssetId,
   } = useApp()
 
   const [stores, setStores] = useState<StoreSummary[]>([])
@@ -35,11 +37,16 @@ export function FootagePanel() {
   const [creating, setCreating] = useState(false)
   const [newName, setNewName] = useState("")
   const [newSport, setNewSport] = useState(defaultSport)
-  const [assetIds, setAssetIds] = useState("")
   const [busy, setBusy] = useState<string | null>(null)
   const [error, setError] = useState("")
 
   useEffect(() => setNewSport(defaultSport), [defaultSport])
+
+  // Always have a broadcast selected — every run is scoped to exactly one.
+  useEffect(() => {
+    if (!videos.length) return
+    if (!videos.some((v) => v.asset_id === assetId)) setAssetId(videos[0].asset_id)
+  }, [videos, assetId, setAssetId])
 
   // Unlocked (DEMO_MODE=False) runs on the server key, so the picker works
   // without the user supplying one.
@@ -97,25 +104,6 @@ export function FootagePanel() {
       await refreshStore()
     } catch (e) {
       setError(`Could not load collection: ${(e as Error).message}`)
-    } finally {
-      setBusy(null)
-    }
-  }
-
-  const onAttach = async () => {
-    if (!activeStore) return
-    const ids = assetIds.split(/[\s,]+/).map((s) => s.trim()).filter(Boolean)
-    if (!ids.length) return
-    setBusy("attach")
-    setError("")
-    try {
-      const data = await api.addAssets(activeStore.id, ids)
-      const errs = (data.added || []).filter((a) => a.status === "error")
-      if (errs.length) setError(`Some assets failed: ${errs.map((e) => e.asset_id).join(", ")}`)
-      setAssetIds("")
-      await refreshStore()
-    } catch (e) {
-      setError(`Attach failed: ${(e as Error).message}`)
     } finally {
       setBusy(null)
     }
@@ -238,16 +226,34 @@ export function FootagePanel() {
         </div>
       )}
 
-      {/* Add videos */}
-      <div className="mt-5 border-t border-border-secondary pt-4">
-        <div className="text-[11px] uppercase tracking-wide text-foreground-subtle">
-          Add videos{" "}
-          <span className="normal-case text-foreground-subtle">
-            {activeStore ? "— adding to the current collection" : "— load or create a collection first"}
-          </span>
+      {videos.length > 0 && (
+        <div className="mt-4 border-t border-border-secondary pt-3">
+          <div className="mb-1 text-[11px] uppercase tracking-wide text-foreground-subtle">
+            Broadcast
+          </div>
+          <Select value={assetId} onValueChange={setAssetId}>
+            <SelectTrigger size="medium" className="min-w-[18rem]">
+              <SelectValue placeholder="Select a broadcast" />
+            </SelectTrigger>
+            <SelectContent>
+              {videos.map((v) => (
+                <SelectItem key={v.asset_id} value={v.asset_id}>
+                  {v.video_filename || v.asset_id}
+                  {v.status !== "ready" ? ` — ${v.status}` : ""}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <p className="mt-1 text-xs text-foreground-subtle">
+            Analysis is scoped to the selected broadcast.
+          </p>
         </div>
-        <p className="mt-1 max-w-prose text-xs text-foreground-muted">
-          Upload broadcasts in the{" "}
+      )}
+
+      {/* Videos are added to a collection in the TwelveLabs dashboard, not here. */}
+      <div className="mt-5 border-t border-border-secondary pt-4">
+        <p className="max-w-prose text-xs text-foreground-muted">
+          To change what this collection contains, upload and attach broadcasts in the{" "}
           <a
             className="text-foreground-status-info underline-offset-2 hover:underline"
             href="https://playground.twelvelabs.io/assets"
@@ -256,20 +262,8 @@ export function FootagePanel() {
           >
             TwelveLabs Assets dashboard
           </a>
-          , then add them to this collection there and click Load — or paste their asset IDs below to
-          attach &amp; index them here.
+          , then click Load to pick up the changes.
         </p>
-        <div className="mt-2 flex flex-wrap items-center gap-2">
-          <TextField
-            value={assetIds}
-            onChange={(e) => setAssetIds(e.target.value)}
-            placeholder="asset IDs, comma- or newline-separated"
-            className="min-w-[18rem] flex-1 font-tl-mono"
-          />
-          <Button onClick={onAttach} disabled={!canPickStore || !activeStore || !assetIds.trim() || busy === "attach"}>
-            {busy === "attach" ? "attaching…" : "Attach & index"}
-          </Button>
-        </div>
       </div>
 
       {activeStore && (

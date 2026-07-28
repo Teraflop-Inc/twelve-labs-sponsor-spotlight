@@ -78,13 +78,28 @@ def game_scope_phrase(game_id: str | None) -> str:
     )
 
 
+def broadcast_scope_phrase(label: str) -> str:
+    """``{{sel:0}}`` suffix for a broadcast identified by asset id rather than
+    a roster entry."""
+    return (
+        f"\n\nAnalyze ONLY this single broadcast: {{{{sel:0}}}} ({label}). "
+        f"Ignore every other video in the knowledge store. "
+        f"Set each moment's `video` field to this broadcast's filename.\n"
+    )
+
+
 def scope_phrase(
     game_id: str | None,
     videos: list[str],
     selections: list[dict[str, Any]] | None,
+    asset_label: str | None = None,
 ) -> str:
-    """The scoping suffix for a call: per-game ``{{sel:0}}`` or whole-store roster."""
-    return game_scope_phrase(game_id) if selections else videos_roster_for_prompt(videos)
+    """The scoping suffix for a call: single-broadcast ``{{sel:0}}`` or whole-store roster."""
+    if not selections:
+        return videos_roster_for_prompt(videos)
+    if asset_label:
+        return broadcast_scope_phrase(asset_label)
+    return game_scope_phrase(game_id)
 
 
 # --- Pass 1: brand discovery ---------------------------------------------------
