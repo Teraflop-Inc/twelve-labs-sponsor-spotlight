@@ -344,7 +344,15 @@ Tuning knobs for each are documented in the module docstrings and
 
 ## Build & deploy
 
-The frontend builds into `backend/webapp/`, which FastAPI serves at `/`:
+The frontend builds into `backend/webapp/`, which FastAPI serves at `/`. That
+directory is **gitignored** — Vercel runs the build itself on every deploy:
+
+```json
+"buildCommand": "cd frontend && npm ci && npm run build"
+```
+
+So a frontend change ships by pushing the source; there is no bundle to rebuild
+and commit. For a local production check, build it once by hand:
 
 ```bash
 cd frontend && npm install && npm run build
@@ -416,7 +424,7 @@ sponsor-spotlight/
 │   │   └── build_reels.py         # Step 2 — highlight reels → Vercel Blob
 │   ├── demo_fixtures/      # committed pre-baked results
 │   ├── .env.example        # every env var, documented
-│   └── webapp/             # built frontend (served at /)
+│   └── webapp/             # built frontend (gitignored; built on deploy)
 └── frontend/
     ├── src/                # React app (App, state, components, lib)
     └── src/tlds/           # vendored TwelveLabs design system

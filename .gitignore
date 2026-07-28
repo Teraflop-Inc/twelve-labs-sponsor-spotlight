@@ -31,3 +31,8 @@ backend/iconik_ingest.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Built frontend bundle — Vercel builds it at deploy time (see vercel.json
+# buildCommand). Never commit it; a stale committed bundle silently shadows
+# your source changes.
+backend/webapp/

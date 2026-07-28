@@ -1,9 +1,11 @@
 """Serve the built React app.
 
-The Vite build is emitted to ``backend/webapp/`` and committed, because Vercel
-runs this repo as a single Python function — there is no Node build step on
-deploy. **Frontend changes only ship if you re-run the build and commit the
-output.**
+The Vite build is emitted to ``backend/webapp/``, which is gitignored — Vercel
+runs ``npm run build`` at deploy time (``buildCommand`` in ``vercel.json``) and
+the function bundle picks up the result via ``includeFiles``.
+
+Locally, run ``npm run build`` in ``frontend/`` once to populate it, or use the
+Vite dev server on :5173 and let it proxy ``/api`` to this app.
 """
 from __future__ import annotations
 
