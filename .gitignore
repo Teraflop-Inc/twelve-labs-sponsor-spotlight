@@ -31,6 +31,12 @@ backend/iconik_ingest.json
 /workspace/
 /.fabric/
 
+# QC / accuracy measurements. These were committed once and still sit in git
+# history; keep any regenerated copy out of future commits. How candid to be
+# about accuracy in public is a partner decision, not a default.
+/MOMENT-QC-*.md
+/REEL-QC-*.md
+
 # OS
 .DS_Store
 Thumbs.db
