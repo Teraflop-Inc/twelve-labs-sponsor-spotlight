@@ -18,7 +18,6 @@ export function FootagePanel() {
   const {
     mode,
     demo,
-    keyTick,
     activeStore,
     setActiveStore,
     videos,
@@ -74,7 +73,7 @@ export function FootagePanel() {
   useEffect(() => {
     void loadStores(activeStore?.id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [keyTick, canPickStore])
+  }, [canPickStore])
 
   const onCreate = async () => {
     if (!newName.trim()) return

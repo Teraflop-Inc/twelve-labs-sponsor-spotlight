@@ -8,7 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react"
-import { api, getKey, setKey as persistKey, clearKey as wipeKey, setDemoMode } from "./lib/api"
+import { api } from "./lib/api"
 import { DEFAULT_ECON, loadEcon, saveEcon, type EconState } from "./lib/econ"
 import type {
   ActiveStore,
@@ -34,7 +34,6 @@ export const ALL_GAMES = "all"
 export const PINNED_GAME_ID = "ars-tot-2018"
 
 const STORE_LS = "sponsor-spotlight-store-v2" // BYO-key user's chosen collection
-const MODE_LS = "sponsor-spotlight-mode-v1"
 
 export type Mode = "demo" | "byok"
 
@@ -49,14 +48,7 @@ export interface PlayerHandle {
 interface AppContextValue {
   // --- mode (locked server-key demo vs. bring-your-own-key) ---
   mode: Mode
-  setMode(m: Mode): void
   demo: DemoInfo | null
-
-  // --- API key (BYO mode) ---
-  hasKey: boolean
-  keyTick: number // bumps on key change to retrigger key-gated effects
-  saveKey(k: string): void
-  clearKey(): void
 
   // --- knowledge store (held client-side; server is stateless) ---
   activeStore: ActiveStore | null
@@ -103,7 +95,6 @@ interface AppContextValue {
 
   // --- demo explore: view the pre-baked outputs for the selected scope ---
   demoBrands: string[]
-  demoCached: boolean
   // All brands detected in the scope vs. the analyzed ("run") subset with data.
   scopeDiscovery: DiscoveryBrand[]
   setScopeDiscovery(b: DiscoveryBrand[]): void
@@ -149,8 +140,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [mode, setModeState] = useState<Mode>(initialMode)
   const [demo, setDemo] = useState<DemoInfo | null>(null)
 
-  const [keyTick, setKeyTick] = useState(0)
-  const [hasKey, setHasKey] = useState(() => getKey().length > 0)
 
   // The BYO-key user's chosen store (persisted). In demo mode the active store
   // is derived from `demo` instead, and this is ignored.
@@ -191,7 +180,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const pollTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const demoBrands = useMemo(() => demo?.demo_brands ?? [], [demo])
-  const demoCached = Boolean(demo?.cached)
   const games = useMemo<GameOption[]>(() => demo?.games ?? [], [demo])
   const pickedInitialGame = useRef(false)
 
@@ -233,14 +221,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
     },
     [mode, persistStore],
   )
-
-  const setMode = useCallback((m: Mode) => {
-    setModeState(m)
-    localStorage.setItem(MODE_LS, m)
-    setDemoMode(m === "demo") // flip the API client header immediately
-    setSessionId(null)
-    setStoreEpoch((e) => e + 1)
-  }, [])
 
   const stopPoll = useCallback(() => {
     if (pollTimer.current) {
@@ -284,9 +264,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return stopPoll
   }, [videos, activeStore, refreshStore, stopPoll])
 
-  // Load sports + demo availability once; sync the API client to the saved mode.
+  // Load sports + demo availability once; the server decides the mode.
   useEffect(() => {
-    setDemoMode(mode === "demo")
     api
       .sports()
       .then((r) => {
@@ -304,11 +283,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
       .catch(() => setDemo(null))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  // Keep the API client's demo flag in sync with mode.
-  useEffect(() => {
-    setDemoMode(mode === "demo")
-  }, [mode])
 
   // Clear all analysis state whenever the store/mode changes.
   useEffect(() => {
@@ -330,19 +304,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     void refreshStore()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [keyTick, activeStore?.id, mode])
-
-  const saveKey = useCallback((k: string) => {
-    persistKey(k)
-    setHasKey(getKey().length > 0)
-    setKeyTick((t) => t + 1)
-  }, [])
-
-  const clearKey = useCallback(() => {
-    wipeKey()
-    setHasKey(false)
-    setKeyTick((t) => t + 1)
-  }, [])
+  }, [activeStore?.id, mode])
 
   const seekTo = useCallback((sec: number, videoFilename?: string) => {
     playerRef.current?.seekTo(sec, videoFilename)
@@ -427,12 +389,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const value: AppContextValue = {
     mode,
-    setMode,
     demo,
-    hasKey,
-    keyTick,
-    saveKey,
-    clearKey,
     activeStore,
     setActiveStore,
     videos: visibleVideos,
@@ -461,7 +418,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setBrandA,
     setBrandB,
     demoBrands,
-    demoCached,
     scopeDiscovery,
     scopeInventory,
     scopeLegibility,

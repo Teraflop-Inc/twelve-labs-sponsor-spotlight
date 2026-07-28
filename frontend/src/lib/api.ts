@@ -11,31 +11,11 @@ import type {
   UseStoreResponse,
 } from "./types"
 
-const KEY_LS = "tl_api_key" // user's TwelveLabs key (this browser only)
 
-export function getKey(): string {
-  return (localStorage.getItem(KEY_LS) || "").trim()
-}
-export function setKey(k: string) {
-  localStorage.setItem(KEY_LS, k.trim())
-}
-export function clearKey() {
-  localStorage.removeItem(KEY_LS)
-}
-export function hasKey(): boolean {
-  return getKey().length > 0
-}
-
-// Which key the backend should use.
-//
-// `x-demo` tells it to use the server's own TWELVELABS_API_KEY. That is the
-// normal path in both DEMO_MODE=True (pinned collection) and DEMO_MODE=False
-// (collection selectable) — the difference is what the server allows, not whose
-// key it is. `x-api-key` is only sent when the user has stored one themselves.
-let _demoMode = false
-export function setDemoMode(on: boolean) {
-  _demoMode = on
-}
+// The browser never holds a TwelveLabs key. Every request carries `x-demo`,
+// which tells the backend to use its own TWELVELABS_API_KEY — in both
+// DEMO_MODE=True (pinned collection) and DEMO_MODE=False (collection
+// selectable). The difference is what the server allows, not whose key it is.
 
 export class ApiError extends Error {
   status: number
@@ -56,11 +36,7 @@ interface ReqOpts {
 async function request<T>(path: string, opts: ReqOpts = {}): Promise<T> {
   const { method = "GET", body, noKey = false } = opts
   const headers: Record<string, string> = {}
-  if (!noKey) {
-    const userKey = getKey()
-    if (userKey) headers["x-api-key"] = userKey
-    else headers["x-demo"] = "1"
-  }
+  if (!noKey) headers["x-demo"] = "1"
   if (body != null) headers["Content-Type"] = "application/json"
 
   const res = await fetch(path, {
@@ -101,8 +77,7 @@ export interface StoreCtx {
 /** POST that returns raw text (not JSON) — used for the HTML report. */
 async function requestText(path: string, body: unknown): Promise<string> {
   const headers: Record<string, string> = { "Content-Type": "application/json" }
-  if (_demoMode) headers["x-demo"] = "1"
-  else headers["x-api-key"] = getKey()
+  headers["x-demo"] = "1"
   const res = await fetch(path, { method: "POST", headers, body: JSON.stringify(body) })
   if (!res.ok) {
     let detail = res.statusText

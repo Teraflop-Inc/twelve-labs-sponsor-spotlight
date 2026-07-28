@@ -10,7 +10,6 @@ import {
   shareOfVoice,
   type BrandEconomics,
 } from "../lib/econ"
-import { SOURCE_LABEL } from "../lib/econData"
 import { momentTags } from "../lib/moments"
 import { ALL_GAMES, useApp } from "../state"
 import {
@@ -47,7 +46,6 @@ export function AnalyzePanel() {
     legibility,
     setBrandA,
     setBrandB,
-    demoCached,
     scopeInventory,
     scopeLegibility,
     scopeReels,

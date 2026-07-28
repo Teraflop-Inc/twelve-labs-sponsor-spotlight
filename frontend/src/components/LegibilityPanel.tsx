@@ -41,7 +41,6 @@ export function LegibilityPanel() {
     gameId,
     brandA,
     brandB,
-    demoCached,
     scopeLegibility,
     viewBrands,
     setLegibility,
