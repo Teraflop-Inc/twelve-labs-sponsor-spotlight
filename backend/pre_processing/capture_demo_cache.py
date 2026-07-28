@@ -9,7 +9,7 @@ executes the real discover → analyze → legibility flow and writes
 
 Usage::
 
-    TWELVELABS_API_KEY=tlk_... uv run python capture_demo_cache.py
+    TWELVELABS_API_KEY=tlk_... uv run python -m pre_processing.capture_demo_cache
 
 Analyze runs **one brand per Jockey call, sequentially, paced** (Jockey allows
 ~2 req/min) and writes the fixture **incrementally** — so a run that dies on a

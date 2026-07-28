@@ -3,20 +3,21 @@ to a dedicated Jockey knowledge store for the demo's pre-indexed footage path
 (CWORK-1032), and poll until each item is indexed.
 
 Run from backend/:
-    source ../../set-env.sh
-    uv run python ingest_assets.py
+    TWELVELABS_API_KEY=tlk_... uv run python -m pre_processing.ingest_assets
 """
 from __future__ import annotations
 
 import asyncio
 import json
 import time
-from pathlib import Path
 from typing import Any
 
+import games
 import jockey
 
-MANIFEST = Path(__file__).resolve().parent / "iconik_ingest.json"
+# Single source of truth for the manifest location — ``games`` reads it back to
+# resolve knowledge-store item ids, so both must agree on the path.
+MANIFEST = games.MANIFEST_PATH
 
 STORE_NAME = "Sponsor Spotlight — PL Classics (enriched)"
 SPORT = "soccer"
@@ -82,6 +83,16 @@ async def index_one(state: dict[str, Any], store_id: str, asset_id: str, label: 
 
 
 async def main() -> None:
+    # Resolve the key BEFORE touching the manifest. This script overwrites
+    # iconik_ingest.json (asset_id → item_id, gitignored and not recoverable
+    # from git) as its first action, so an accidental keyless run used to wipe
+    # it and only then fail on the first API call.
+    if not jockey.key_from_env():
+        raise SystemExit(
+            f"No TwelveLabs key found. Set {jockey.API_KEY_ENV_VAR}.\n"
+            f"Refusing to run — this would overwrite {MANIFEST}."
+        )
+
     state: dict[str, Any] = {
         "store_name": STORE_NAME,
         "knowledge_store_id": None,

@@ -15,7 +15,7 @@ Pipeline (per game × brand):
 Usage::
 
     TWELVELABS_API_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
-        uv run python build_reels.py
+        uv run python -m pre_processing.build_reels
 
 Env knobs: SPONSOR_SPOTLIGHT_REEL_BRANDS, SPONSOR_SPOTLIGHT_REEL_GAMES,
 SPONSOR_SPOTLIGHT_REEL_MAXSECS (default 60), SPONSOR_SPOTLIGHT_REEL_PAD (default 1),

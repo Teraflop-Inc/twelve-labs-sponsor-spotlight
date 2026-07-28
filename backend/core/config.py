@@ -15,6 +15,10 @@ from __future__ import annotations
 import os
 
 import jockey
+from core import env
+
+# Must run before the module-level reads below.
+env.load()
 
 DEMO_STORE_ID = os.environ.get(
     "SPONSOR_SPOTLIGHT_STORE_ID", "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f"

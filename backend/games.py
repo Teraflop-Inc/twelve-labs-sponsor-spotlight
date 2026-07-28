@@ -52,7 +52,10 @@ AGGREGATE_ID = "aggregate"
 _BY_ID = {g["id"]: g for g in GAMES}
 _BY_ASSET = {g["asset_id"]: g for g in GAMES}
 
-_MANIFEST = Path(__file__).resolve().parent / "iconik_ingest.json"
+# Written by ``pre_processing.ingest_assets``, read here. Lives beside this
+# module (backend/) rather than next to the script, so both agree on one path.
+# Gitignored, so it may be absent (e.g. on Vercel) — callers fall back.
+MANIFEST_PATH = Path(__file__).resolve().parent / "iconik_ingest.json"
 
 
 def all_games() -> list[dict[str, str]]:
@@ -90,7 +93,7 @@ def _manifest_item_ids() -> dict[str, str]:
     be absent (e.g. on Vercel). Callers fall back to live resolution.
     """
     try:
-        data = json.loads(_MANIFEST.read_text())
+        data = json.loads(MANIFEST_PATH.read_text())
     except (OSError, json.JSONDecodeError):
         return {}
     out: dict[str, str] = {}

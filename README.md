@@ -57,29 +57,7 @@ Jockey `/responses` `selections` param (`backend/games.py` maps `game_id` →
 Analyze/legibility fixtures hold the full brand set — a request for a subset is
 served by trimming the fixture in-memory.
 
-**Regenerating fixtures.** Runs the real discover → analyze → legibility flow per
-game (scoped) + aggregate. Resumable (existing files are skipped) and
-rate-limited (~2 req/min):
-
-```bash
-cd backend
-TWELVELABS_API_KEY=tlk_... uv run python capture_demo_cache.py
-# knobs: SPONSOR_SPOTLIGHT_CAPTURE_BRANDS=A,B  CAPTURE_GAMES=aggregate,mci-liv-2019
-#        CAPTURE_TOP_N=8  CAPTURE_DELAY=30  CAPTURE_FORCE=1
-# then commit backend/demo_fixtures/<scope>/*.json
-```
-
-**Highlight reels** (`POST`-free, offline → Vercel Blob). Builds a ~30s MP4 of a
-brand's top moments per game (FFmpeg `-c copy` over the broadcast HLS), uploads
-to Vercel Blob, and records the URL in `demo_fixtures/<game_id>/reels.json`.
-`GET /api/reel/{game_id}/{brand}` redirects to it (404 until built):
-
-```bash
-cd backend
-TWELVELABS_API_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
-    uv run python build_reels.py
-# commit the updated demo_fixtures/<game_id>/reels.json
-```
+Regenerating these is the **offline pipeline** below.
 
 **Performance report.** `POST /api/report {brand, game_ids[], media_values}`
 renders a printable HTML report (`backend/report.py`) from the fixtures; the
@@ -122,6 +100,7 @@ Jockey Agents API  (api.twelvelabs.io/v1.3/responses)
 # 1. Backend — JSON API on :8001
 cd backend
 uv sync                      # or: pip install -r ../requirements.txt uvicorn
+cp .env.example .env         # then set TWELVELABS_API_KEY
 uv run uvicorn main:app --port 8001
 
 # 2. Frontend — Vite dev server on :5173, proxies /api → :8001
@@ -130,15 +109,78 @@ npm install
 npm run dev
 ```
 
-Open the Vite URL. To enable the **Demo** tab, start the backend with a key:
+Open the Vite URL. Setting `TWELVELABS_API_KEY` enables the **Demo** tab; without
+it, use **"Use your own key"** and paste a key in the UI. Exported environment
+variables take precedence over `.env`, so this works too:
 
 ```bash
 TWELVELABS_API_KEY=tlk_... uv run uvicorn main:app --port 8001
 ```
 
-Without it, use the **"Use your own key"** tab and paste a key in the UI.
-
 > Jockey (`jockey1.0`) is in private beta and requires an allowlisted API key.
+
+---
+
+## Offline pipeline
+
+**Nothing in this section runs on Vercel.** These scripts call Jockey directly,
+take minutes to hours, and write results into `backend/demo_fixtures/`
+(committed) and Vercel Blob. The deployed app only ever *reads* what they
+produce — so the flow is: run locally → commit the output → redeploy.
+
+Run them from `backend/` as modules:
+
+### Step 0 — Ingest footage
+
+Creates a knowledge store with the sponsor-aware enrichment prompt, attaches
+each already-uploaded TwelveLabs asset, and polls until every item is indexed.
+Writes `backend/iconik_ingest.json` (gitignored) mapping `asset_id` → `item_id`.
+
+```bash
+uv run python -m pre_processing.ingest_assets
+```
+
+Edit `ASSETS` in `pre_processing/ingest_assets.py` and the matching `GAMES`
+registry in `games.py` to point at your own footage. Assets must already exist
+in your TwelveLabs account.
+
+### Step 1 — Capture demo fixtures
+
+Runs the real discover → analyze → legibility flow per game (scoped via
+`selections`) plus a whole-collection aggregate. **Resumable** — existing files
+are skipped, so a run killed by a rate limit can just be re-invoked — and paced
+at ~2 req/min to stay inside Jockey's beta limit.
+
+```bash
+uv run python -m pre_processing.capture_demo_cache
+# then commit backend/demo_fixtures/<scope>/*.json
+```
+
+### Step 2 — Build highlight reels
+
+Builds a ~60s MP4 of a brand's top moments per game (FFmpeg over the broadcast
+HLS), uploads it to Vercel Blob, and records the URL in
+`demo_fixtures/<game_id>/reels.json`. `GET /api/reel/{game_id}/{brand}`
+redirects to it, and 404s until a reel has been built.
+
+```bash
+BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
+    uv run python -m pre_processing.build_reels
+# then commit the updated demo_fixtures/<game_id>/reels.json
+```
+
+Requires FFmpeg on `PATH` (v8.0.1 verified).
+
+### Script reference
+
+| Script | Command | Description |
+|--------|---------|-------------|
+| `pre_processing/ingest_assets.py` | `python -m pre_processing.ingest_assets` | Create the knowledge store; attach + index assets |
+| `pre_processing/capture_demo_cache.py` | `python -m pre_processing.capture_demo_cache` | Regenerate `demo_fixtures/` (discover / analyze / legibility) |
+| `pre_processing/build_reels.py` | `python -m pre_processing.build_reels` | Build highlight reels → Vercel Blob |
+
+Tuning knobs for each are documented in the module docstrings and
+`backend/.env.example`.
 
 ## Build & deploy
 
@@ -206,10 +248,12 @@ sponsor-spotlight/
 │   ├── routes/             # thin HTTP layer
 │   ├── sports.py           # per-sport prompt/enrichment profiles
 │   ├── games.py            # curated demo-game registry
-│   ├── ingest_assets.py    # offline: upload + register assets
-│   ├── capture_demo_cache.py  # offline: regenerate demo fixtures
-│   ├── build_reels.py      # offline: build highlight reels → Vercel Blob
+│   ├── pre_processing/     # offline pipeline — never runs on Vercel
+│   │   ├── ingest_assets.py       # Step 0 — create store, index assets
+│   │   ├── capture_demo_cache.py  # Step 1 — regenerate demo fixtures
+│   │   └── build_reels.py         # Step 2 — highlight reels → Vercel Blob
 │   ├── demo_fixtures/      # committed pre-baked results
+│   ├── .env.example        # every env var, documented
 │   └── webapp/             # built frontend (served at /)
 └── frontend/
     ├── src/                # React app (App, state, components, lib)
