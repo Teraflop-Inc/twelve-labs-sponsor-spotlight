@@ -56,8 +56,12 @@ _MANIFEST = Path(__file__).resolve().parent / "iconik_ingest.json"
 
 
 def all_games() -> list[dict[str, str]]:
-    """Public list for the UI selector / demo info (id + label only)."""
-    return [{"id": g["id"], "label": g["label"]} for g in GAMES]
+    """Public list for the UI selector / demo info (id, label, asset_id).
+
+    ``asset_id`` lets the frontend join a game to its knowledge-store video
+    (Video.asset_id) so the player + roster can scope to a single game.
+    """
+    return [{"id": g["id"], "label": g["label"], "asset_id": g["asset_id"]} for g in GAMES]
 
 
 def game_ids() -> list[str]:

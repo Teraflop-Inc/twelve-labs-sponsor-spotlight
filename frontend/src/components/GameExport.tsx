@@ -13,9 +13,10 @@ export function GameExport() {
 
   const gameLabel =
     gameId === ALL_GAMES ? "All games" : games.find((g) => g.id === gameId)?.label ?? gameId
+  const scopeGameId = gameId === ALL_GAMES ? null : gameId
   const detected = scopeDiscovery.map((d) => d.name)
   const run = (format: "csv" | "json") =>
-    exportData(scopeInventory, scopeLegibility, econ, format, gameLabel, detected)
+    exportData(scopeInventory, scopeLegibility, econ, format, gameLabel, scopeGameId, detected)
 
   return (
     <div className="rounded-dialog border border-border-secondary bg-surface-white p-3">
@@ -38,7 +39,7 @@ export function GameExport() {
           <Button
             size="sm"
             variant="outlined-gray"
-            onClick={() => exportNielsen(scopeInventory, econ, gameLabel)}
+            onClick={() => exportNielsen(scopeInventory, econ, gameLabel, scopeGameId, scopeLegibility)}
             title="Value / Impressions / Exposures / Duration / Share of Voice, by partner × asset"
           >
             Nielsen CSV

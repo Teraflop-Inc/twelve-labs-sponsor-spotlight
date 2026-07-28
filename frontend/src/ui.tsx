@@ -2,8 +2,92 @@ import type { ReactNode } from "react"
 import { Chip } from "@twelvelabs-io/react"
 import { cn } from "@/lib/utils"
 import { fmtTime, formatGameTime } from "./lib/econ"
+import { SOURCE_LABEL, type DataSource } from "./lib/econData"
+import { momentEvents, momentView } from "./lib/moments"
 import { useApp } from "./state"
 import type { Moment } from "./lib/types"
+
+// Data-provenance badge (PRD step 9): every economics number is labelled
+// Detected / Customer-Uploaded / Simulated so a simulated placeholder never
+// reads as a real measured value.
+const SOURCE_STYLE: Record<DataSource, string> = {
+  detected: "bg-tl-embed-lightest-green text-tl-embed-dark-green",
+  customer_upload: "bg-tl-system-color-lightest-blue text-tl-system-color-dark-blue",
+  simulated: "bg-tl-analyze-lightest-orange text-tl-analyze-dark-orange",
+}
+
+export function SourceBadge({
+  source,
+  label,
+  title,
+}: {
+  source: DataSource
+  /** Override the default source word (e.g. prefix with what it describes). */
+  label?: string
+  title?: string
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex h-5 shrink-0 items-center rounded-[6px] px-1.5 font-tl-mono text-[10px] uppercase leading-4 tracking-wide",
+        SOURCE_STYLE[source],
+      )}
+      title={title ?? `Data source: ${SOURCE_LABEL[source]}`}
+    >
+      {label ?? SOURCE_LABEL[source]}
+    </span>
+  )
+}
+
+/**
+ * Minimal inline SVG sparkline (no chart lib). Draws `values` as a filled line
+ * over a fixed internal viewBox that CSS stretches to the container width, so it
+ * stays crisp at any size. `peakIndex` gets a marker dot. Colour comes from
+ * `currentColor`, so callers set it with a text-* class.
+ */
+export function Sparkline({
+  values,
+  peakIndex,
+  className,
+}: {
+  values: number[]
+  peakIndex?: number
+  className?: string
+}) {
+  if (values.length < 2) return null
+  const W = 240
+  const H = 40
+  const PAD = 3
+  const max = Math.max(...values)
+  const min = Math.min(...values)
+  const range = max - min || 1
+  const stepX = W / (values.length - 1)
+  const y = (v: number) => H - PAD - ((v - min) / range) * (H - PAD * 2)
+  const pts = values.map((v, i) => `${(i * stepX).toFixed(1)},${y(v).toFixed(1)}`).join(" ")
+  const px = peakIndex != null ? peakIndex * stepX : null
+  const py = peakIndex != null ? y(values[peakIndex]) : null
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      preserveAspectRatio="none"
+      className={cn("h-10 w-full", className)}
+      role="img"
+      aria-hidden
+    >
+      <polyline points={`0,${H} ${pts} ${W},${H}`} fill="currentColor" opacity={0.1} stroke="none" />
+      <polyline
+        points={pts}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        vectorEffect="non-scaling-stroke"
+      />
+      {px != null && py != null && <circle cx={px} cy={py} r={2.75} fill="currentColor" />}
+    </svg>
+  )
+}
 
 /** A numbered section card — the spine of the demo layout. */
 export function SectionCard({
@@ -45,6 +129,7 @@ const CTX_STYLE: Record<string, string> = {
   halftime: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
   postgame: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
   timeout: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
+  substitution: "bg-tl-search-lightest-purple text-tl-search-dark-purple",
   commercial: "bg-tl-gray-100 text-foreground-muted",
   other: "bg-tl-gray-100 text-foreground-subtle",
 }
@@ -58,8 +143,24 @@ export function ContextChip({ context }: { context?: string }) {
         CTX_STYLE[ctx] || CTX_STYLE.other,
       )}
     >
-      {ctx}
+      {ctx.replace(/_/g, " ")}
     </span>
+  )
+}
+
+/** Both axes of a moment as chips: each event (0..n) then the camera view.
+ *  Falls back to a single "other" chip when a moment carries neither. */
+export function MomentTags({ m }: { m: Moment }) {
+  const events = momentEvents(m)
+  const view = momentView(m)
+  if (!events.length && !view) return <ContextChip context="other" />
+  return (
+    <>
+      {events.map((e) => (
+        <ContextChip key={`e-${e}`} context={e} />
+      ))}
+      {view && <ContextChip context={view} />}
+    </>
   )
 }
 
@@ -133,7 +234,7 @@ export function MomentRow({
           </span>
         )}
       </span>
-      <ContextChip context={m.context} />
+      <MomentTags m={m} />
       {m.placement === "primary" && (
         <Chip variant="success" size="sm" title="primary / foreground exposure">
           primary

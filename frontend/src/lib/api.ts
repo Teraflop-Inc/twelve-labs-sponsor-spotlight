@@ -114,6 +114,8 @@ export interface ReportArgs {
   total_media_value?: number
   context_weights?: Record<string, number>
   generated_note?: string
+  /** Data-source labels for the resolved economics (PRD step 10). */
+  sources?: { audience?: string; rate?: string; rights_fee?: string }
 }
 
 export const api = {

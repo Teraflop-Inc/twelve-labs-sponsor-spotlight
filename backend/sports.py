@@ -17,8 +17,12 @@ DEFAULT_SPORT = "soccer"
 
 
 def _profile(
-    label: str, surfaces_phrase: str, enrichment_lead: str, contexts: str
-) -> dict[str, str]:
+    label: str,
+    surfaces_phrase: str,
+    enrichment_lead: str,
+    contexts: str,
+    event_kinds: list[dict[str, str]],
+) -> dict[str, Any]:
     enrichment = (
         f"{enrichment_lead} Extract every visible sponsor, advertiser, and brand "
         f"and where each one appears. Sponsor surfaces include: {surfaces_phrase}. "
@@ -31,7 +35,9 @@ def _profile(
     instructions = (
         "You are a sponsorship ROI analyst. Identify every moment where a sponsor "
         f"brand is visible across these surfaces: {surfaces_phrase}. "
-        f"Classify each moment's broadcast context ({contexts}). "
+        "For each moment capture two orthogonal tags: the camera VIEW (how it's "
+        "framed: close_up / wide_shot / other) and the match EVENTS happening at "
+        f"that moment ({contexts}) — a moment can have several events or none. "
         "Pay special attention to exposure outside live play (pre-game, breaks, "
         "post-game) — that's where conventional reporting misses value. "
         "Always include precise start/end timestamps in seconds from the video "
@@ -42,6 +48,10 @@ def _profile(
         "surfaces_phrase": surfaces_phrase,
         "enrichment": enrichment,
         "instructions": instructions,
+        # Match events each queried in its own focused extraction pass (one
+        # /responses call per kind — see capture_demo_cache.py). Focused,
+        # single-question prompts maximize recall vs. the per-brand pass.
+        "event_kinds": event_kinds,
     }
 
 
@@ -58,6 +68,11 @@ SPORT_PROFILES: dict[str, dict[str, str]] = {
         "This is a soccer (association football) broadcast.",
         "open play, goal, celebration, replay, close-up, wide shot, pregame, "
         "halftime, postgame, substitution, commercial, other",
+        [
+            {"kind": "goal", "phrase": "a goal is scored — the ball crosses the goal line"},
+            {"kind": "celebration", "phrase": "players or fans celebrate a goal"},
+            {"kind": "replay", "phrase": "a slow-motion replay of a goal or key incident is shown"},
+        ],
     ),
     "basketball": _profile(
         "Basketball",
@@ -68,6 +83,10 @@ SPORT_PROFILES: dict[str, dict[str, str]] = {
         "This is a basketball broadcast.",
         "score, celebration, replay, close_up, wide_shot, pregame, halftime, "
         "postgame, timeout, commercial, other",
+        [
+            {"kind": "celebration", "phrase": "players or fans celebrate a big play"},
+            {"kind": "replay", "phrase": "a slow-motion replay of a key play is shown"},
+        ],
     ),
     "american_football": _profile(
         "American Football",
@@ -78,6 +97,10 @@ SPORT_PROFILES: dict[str, dict[str, str]] = {
         "This is an American football broadcast.",
         "play, scoring_play, celebration, replay, close_up, wide_shot, pregame, "
         "halftime, postgame, timeout, commercial, other",
+        [
+            {"kind": "celebration", "phrase": "players or fans celebrate a touchdown or big play"},
+            {"kind": "replay", "phrase": "a slow-motion replay of a key play is shown"},
+        ],
     ),
     "baseball": _profile(
         "Baseball",
@@ -88,6 +111,10 @@ SPORT_PROFILES: dict[str, dict[str, str]] = {
         "This is a baseball broadcast.",
         "at_bat, scoring_play, celebration, replay, close_up, wide_shot, pregame, "
         "inning_break, postgame, commercial, other",
+        [
+            {"kind": "celebration", "phrase": "players or fans celebrate a home run or big play"},
+            {"kind": "replay", "phrase": "a slow-motion replay of a key play is shown"},
+        ],
     ),
     "hockey": _profile(
         "Ice Hockey",
@@ -97,6 +124,11 @@ SPORT_PROFILES: dict[str, dict[str, str]] = {
         "This is an ice hockey broadcast.",
         "play, goal, celebration, replay, close_up, wide_shot, pregame, "
         "intermission, postgame, commercial, other",
+        [
+            {"kind": "goal", "phrase": "a goal is scored — the puck crosses the goal line"},
+            {"kind": "celebration", "phrase": "players or fans celebrate a goal"},
+            {"kind": "replay", "phrase": "a slow-motion replay of a goal or key incident is shown"},
+        ],
     ),
     "generic": _profile(
         "Generic / Other",
@@ -107,6 +139,10 @@ SPORT_PROFILES: dict[str, dict[str, str]] = {
         "This is a sports broadcast.",
         "live_play, scoring, celebration, replay, close_up, wide_shot, pregame, "
         "break, postgame, commercial, other",
+        [
+            {"kind": "celebration", "phrase": "players or fans celebrate a scoring play"},
+            {"kind": "replay", "phrase": "a slow-motion replay of a key moment is shown"},
+        ],
     ),
 }
 

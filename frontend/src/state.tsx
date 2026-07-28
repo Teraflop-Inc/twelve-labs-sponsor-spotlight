@@ -25,6 +25,14 @@ import type {
 /** Sentinel game id for the whole-collection ("All games") scope. */
 export const ALL_GAMES = "all"
 
+/**
+ * The single game the demo is pinned to. ars-tot-2018 has the strongest sponsor
+ * detection accuracy (100% reel-QC), so the demo shows only this broadcast; the
+ * other games' data still ships (fixtures + ALL_GAMES plumbing) but the picker
+ * is hidden. Set to `ALL_GAMES` to restore the multi-game dropdown.
+ */
+export const PINNED_GAME_ID = "ars-tot-2018"
+
 const STORE_LS = "sponsor-spotlight-store-v2" // BYO-key user's chosen collection
 const MODE_LS = "sponsor-spotlight-mode-v1"
 
@@ -148,8 +156,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [sessionId, setSessionId] = useState<string | null>(null)
   const [econ, setEconState] = useState<EconState>(() => loadEcon())
   const [storeEpoch, setStoreEpoch] = useState(0)
-  // Per-game scope; "all" = whole collection (the aggregate fixture).
-  const [gameId, setGameId] = useState<string>(ALL_GAMES)
+  // Per-game scope. Demo is pinned to one game (PINNED_GAME_ID); "all" = whole
+  // collection (the aggregate fixture) remains available via the ALL_GAMES paths.
+  const [gameId, setGameId] = useState<string>(PINNED_GAME_ID)
   // BYO generate flow: brand inventory shared across Discover/Analyze/Legibility.
   const [selectedBrands, setSelectedBrands] = useState<string[]>([])
   const [inventory, setInventory] = useState<Brand[] | null>(null)
@@ -293,7 +302,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setLegibility(null)
     setBrandA("")
     setBrandB("")
-    setGameId(ALL_GAMES)
+    setGameId(PINNED_GAME_ID)
     setScopeDiscovery([])
     setScopeInventory([])
     setScopeLegibility(null)
@@ -323,26 +332,46 @@ export function AppProvider({ children }: { children: ReactNode }) {
     playerRef.current?.seekTo(sec, videoFilename)
   }, [])
 
-  const readyVideos = useMemo(() => videos.filter((v) => v.status === "ready"), [videos])
+  // Raw roster readiness — drives the status chip (watches ALL store videos).
+  const readyVideosAll = useMemo(() => videos.filter((v) => v.status === "ready"), [videos])
+
+  // Demo is pinned to one game (PINNED_GAME_ID): show only that game's broadcast
+  // in the player + roster. Join game→video by asset_id. BYOK shows all videos.
+  const pinnedAssetId = useMemo(
+    () => games.find((g) => g.id === gameId)?.asset_id ?? null,
+    [games, gameId],
+  )
+  const visibleVideos = useMemo(
+    () =>
+      mode === "demo" && pinnedAssetId
+        ? videos.filter((v) => v.asset_id === pinnedAssetId)
+        : videos,
+    [mode, pinnedAssetId, videos],
+  )
+  const readyVideos = useMemo(
+    () => visibleVideos.filter((v) => v.status === "ready"),
+    [visibleVideos],
+  )
 
   const storeStatus = useMemo<AppContextValue["storeStatus"]>(() => {
     if (!activeStore) return "idle"
     if (videos.some((v) => v.status && !INDEXING_DONE.has(v.status))) return "indexing"
-    if (readyVideos.length > 0) return "ready"
+    if (readyVideosAll.length > 0) return "ready"
     if (videos.length > 0) return "failed"
     return "empty"
-  }, [activeStore, videos, readyVideos])
+  }, [activeStore, videos, readyVideosAll])
 
-  // Open the demo on a random game rather than "All games" — the aggregate scope
-  // has no reels and thin legibility, so a single game is the stronger first
-  // impression. Picked once per load (fresh game each refresh) before the scope
-  // loader fires; the user can still switch to "All games" afterwards.
+  // Open the demo on the pinned game (PINNED_GAME_ID) — the aggregate scope has
+  // no reels and thin legibility, and this is our highest-accuracy broadcast, so
+  // it's the strongest first impression. Falls back to the first available game
+  // if the pinned id isn't in the collection. Runs once per load.
   useEffect(() => {
     if (mode !== "demo" || pickedInitialGame.current) return
     const gs = demo?.games ?? []
     if (!gs.length) return
     pickedInitialGame.current = true
-    setGameId(gs[Math.floor(Math.random() * gs.length)].id)
+    const pinned = gs.find((g) => g.id === PINNED_GAME_ID)
+    setGameId(pinned ? pinned.id : gs[0].id)
   }, [mode, demo])
 
   // Demo explore: load the selected scope's pre-baked outputs (all detected
@@ -390,7 +419,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     clearKey,
     activeStore,
     setActiveStore,
-    videos,
+    videos: visibleVideos,
     readyVideos,
     refreshStore,
     storeStatus,

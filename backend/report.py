@@ -64,10 +64,39 @@ def _top_moments(
         for m in (sc.get("metrics") or {}).get("appearances") or []:
             dur = max((float(m.get("end_sec") or 0) - float(m.get("start_sec") or 0)), 0.0)
             conf = float(m.get("confidence") or 0.5)
-            cw = ctx_weights.weight_for(m.get("context"), weights)
+            cw = ctx_weights.weight_for_moment(m, weights)
             moments.append({**m, "_game": label, "_impact": cw * dur * conf})
     moments.sort(key=lambda m: m["_impact"], reverse=True)
     return moments[:limit]
+
+
+def _moment_tags(m: dict[str, Any]) -> str:
+    """Human-readable tag string for a moment: events + view (both axes), with a
+    fallback to the legacy single ``context`` for pre-split fixtures."""
+    tags = [str(e) for e in (m.get("events") or [])]
+    view = m.get("view")
+    if view:
+        tags.append(str(view))
+    if not tags and m.get("context"):
+        tags.append(str(m.get("context")))
+    return ", ".join(t.replace("_", " ") for t in tags)
+
+
+def _source_badges(sources: dict[str, str] | None) -> str:
+    """Provenance badges (Detected / Customer-Uploaded / Simulated) per input."""
+    if not sources:
+        return ""
+    labels = {"audience": "Audience", "rate": "Rate card", "rights_fee": "Rights fee"}
+    chips = ""
+    for key, label in labels.items():
+        src = sources.get(key)
+        if not src:
+            continue
+        cls = "sim" if src.lower().startswith("sim") else "real"
+        chips += (
+            f'<span class="src {cls}">{html.escape(label)}: {html.escape(src)}</span>'
+        )
+    return f'<div class="sources">{chips}</div>' if chips else ""
 
 
 def build_report_html(
@@ -77,14 +106,18 @@ def build_report_html(
     total_media_value: float | None = None,
     generated_note: str = "",
     weights: dict[str, float] | None = None,
+    sources: dict[str, str] | None = None,
 ) -> str:
     """Assemble the report HTML.
 
     ``scopes`` = per-game dicts: ``{game_id, label, metrics{...}, avg_legibility,
     media_value}``. ``metrics`` mirrors an analyze-fixture brand entry.
+    ``sources`` = data-source labels for the resolved economics, rendered as
+    provenance badges so simulated placeholders never read as measured values.
     """
     brand_e = html.escape(brand)
     game_labels = ", ".join(html.escape(s.get("label", "")) for s in scopes) or "All games"
+    source_badges = _source_badges(sources)
 
     # Roll-up totals across scopes.
     total_secs = sum(float((s.get("metrics") or {}).get("total_seconds") or 0) for s in scopes)
@@ -130,7 +163,7 @@ def build_report_html(
             "<li>"
             f"<span class='mono'>{_fmt_time(m.get('start_sec'))}</span> "
             f"<strong>{html.escape(str(m.get('asset_type') or 'exposure'))}</strong> "
-            f"<span class='ctx'>{html.escape(str(m.get('context') or ''))}</span> — "
+            f"<span class='ctx'>{html.escape(_moment_tags(m))}</span> — "
             f"{html.escape(str(m.get('description') or ''))} "
             f"<span class='muted'>({html.escape(str(m.get('_game') or ''))})</span>"
             "</li>"
@@ -172,6 +205,10 @@ def build_report_html(
   .mono {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--green); }}
   .ctx {{ color:var(--muted); font-size:12px; }}
   .muted {{ color:var(--muted); }}
+  .sources {{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 4px; }}
+  .src {{ font-size:11px; padding:2px 8px; border-radius:20px; border:1px solid var(--line); }}
+  .src.sim {{ background:#fff4e6; color:#b5651d; border-color:#f0d3ad; }}
+  .src.real {{ background:#e7f3ee; color:var(--green); border-color:#bfe0d2; }}
   footer {{ margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
            color:var(--muted); font-size:11px; }}
   @media print {{ body {{ padding:0; }} .tile {{ break-inside:avoid; }} }}
@@ -186,6 +223,7 @@ def build_report_html(
       <div class="sub">Powered by TwelveLabs Jockey</div></div>
   </header>
 
+  {source_badges}
   <div class="tiles">{''.join(tiles)}</div>
 
   <h2>Game-by-game breakdown</h2>
@@ -202,7 +240,8 @@ def build_report_html(
 
   <footer>
     Exposure, moments and legibility measured by TwelveLabs Jockey over the
-    broadcast footage. Economic figures are computed from the buyer's own
-    assumptions (CPM, reach, audience). {note}
+    broadcast footage. Media value = seconds × legibility × clutter × audience ×
+    spot rate, using customer-uploaded data where provided and clearly-labelled
+    synthetic placeholders otherwise. {note}
   </footer>
 </body></html>"""

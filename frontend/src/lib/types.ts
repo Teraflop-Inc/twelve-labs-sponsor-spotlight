@@ -4,6 +4,7 @@
 
 export type Context =
   | "score"
+  | "goal"
   | "celebration"
   | "replay"
   | "close_up"
@@ -12,6 +13,7 @@ export type Context =
   | "halftime"
   | "postgame"
   | "timeout"
+  | "substitution"
   | "commercial"
   | "other"
 
@@ -30,6 +32,11 @@ export type AssetType =
 export interface Moment {
   start_sec: number
   end_sec: number
+  /** Camera framing (single): close_up / wide_shot / other. New two-axis shape. */
+  view?: string
+  /** Match game-state at this moment (0..n): goal / celebration / replay / … */
+  events?: string[]
+  /** Legacy single tag (pre-split fixtures); helpers in moments.ts fall back to it. */
   context?: Context | string
   asset_type?: AssetType | string
   description?: string
@@ -139,6 +146,8 @@ export interface SportsResponse {
 export interface GameOption {
   id: string
   label: string
+  /** Knowledge-store asset id for this game's broadcast — joins to Video.asset_id. */
+  asset_id?: string
 }
 export interface DemoInfo {
   enabled: boolean

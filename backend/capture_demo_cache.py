@@ -27,6 +27,7 @@ Environment knobs:
 from __future__ import annotations
 
 import asyncio
+import json
 import os
 import sys
 
@@ -89,6 +90,42 @@ async def _throttle() -> None:
         await asyncio.sleep(DELAY)
 
 
+def _overlaps(a_start: float, a_end: float, w_start: float, w_end: float) -> bool:
+    """True if two [start, end] intervals intersect (touching endpoints excluded)."""
+    return a_start < w_end and w_start < a_end
+
+
+def _stamp_events(appearances: list[dict], windows: list[dict]) -> None:
+    """Merge match-event windows onto each appearance by time overlap (in place).
+
+    ``events = union(model_events, {w.kind for overlapping windows})`` — the
+    dedicated per-kind passes are the authority for goals, so a sponsor moment
+    that overlaps a goal window gets ``goal`` even if the per-brand pass (focused
+    on the logo) missed it. ``view`` is untouched.
+    """
+    for app in appearances:
+        try:
+            s, e = float(app.get("start_sec")), float(app.get("end_sec"))
+        except (TypeError, ValueError):
+            continue
+        model_events = {str(x).strip().lower() for x in (app.get("events") or [])}
+        overlap = {
+            w["kind"] for w in windows if _overlaps(s, e, w["start_sec"], w["end_sec"])
+        }
+        app["events"] = sorted(model_events | overlap)
+
+
+def _load_events(scope_id: str) -> dict | None:
+    """Read a scope's committed events fixture (intermediate capture artifact)."""
+    path = demo_cache.FIXTURE_DIR / scope_id / "events.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text())
+    except (ValueError, OSError):
+        return None
+
+
 def _analyzed_names(scope_id: str) -> set[str]:
     """Brand names already present in a scope's analyze fixture (for resume)."""
     env = demo_cache.load("analyze", scope_id)
@@ -136,8 +173,31 @@ async def capture_scope(
     # calls on absent brands); BRAND_OVERRIDE forces an explicit list instead.
     brands = BRAND_OVERRIDE or _top_brands(discovered, ANALYZE_TOPN)
 
-    # --- analyze: one brand per call, paced, resumable ------------------------
     selections = await main._game_selections(store, game_id)
+
+    # --- match events: one focused pass per event kind, paced -----------------
+    # A dedicated "find every goal / celebration / replay" call per kind — far
+    # higher recall than the per-brand pass, which tunnel-visions on one logo.
+    # Windows are the authority for goals; stamped onto appearances below.
+    ev = None if FORCE else _load_events(scope_id)
+    if ev is None:
+        event_kinds = main._active_profile(sport).get("event_kinds") or []
+        print(f"→ events: {len(event_kinds)} kind(s) (live)…", flush=True)
+        windows: list[dict] = []
+        for k in event_kinds:
+            w = await main._fetch_event_windows(
+                k["kind"], k["phrase"], store, sport, videos, game_id, selections
+            )
+            windows.extend(w)
+            print(f"  {k['kind']}: {len(w)} window(s)", flush=True)
+            await _throttle()
+        demo_cache.save("events", {"windows": windows}, scope_id)
+        ev = {"windows": windows}
+    else:
+        print(f"• events cached ({len(ev.get('windows') or [])} window(s))", flush=True)
+    windows = ev.get("windows") or []
+
+    # --- analyze: one brand per call, paced, resumable ------------------------
     done = set() if FORCE else _analyzed_names(scope_id)
     existing = [] if FORCE else (
         (demo_cache.load("analyze", scope_id) or {}).get("inventory", {}).get("brands", [])
@@ -149,14 +209,34 @@ async def capture_scope(
         r = await main._fetch_brand_appearances(brand, store, sport, videos, game_id, selections)
         if r:
             r.setdefault("name", brand)
+            # Stamp goal/celebration/replay windows onto overlapping appearances.
+            _stamp_events(r.get("appearances") or [], windows)
             merged.append(r)
             demo_cache.save(
                 "analyze",
                 {"session_id": None, "inventory": {"brands": merged, "summary": ""}, "timings": {}},
                 scope_id,
             )
-        print(f"  [{i}/{len(todo)}] {brand}{'' if r else '  (no data)'}", flush=True)
+        goals = sum(1 for a in (r or {}).get("appearances", []) if "goal" in (a.get("events") or []))
+        print(
+            f"  [{i}/{len(todo)}] {brand}"
+            f"{'' if r else '  (no data)'}"
+            f"{f'  ({goals} goal-moment(s))' if goals else ''}",
+            flush=True,
+        )
         await _throttle()
+
+    # Re-stamp the full merged set (idempotent) so brands carried over from a
+    # prior resume — captured before the events pass ran — also get their goal
+    # windows, then persist once.
+    if merged and windows:
+        for b in merged:
+            _stamp_events(b.get("appearances") or [], windows)
+        demo_cache.save(
+            "analyze",
+            {"session_id": None, "inventory": {"brands": merged, "summary": ""}, "timings": {}},
+            scope_id,
+        )
 
     # --- legibility: top-N brands only (a detailed per-asset audit) -----------
     if FORCE or demo_cache.load("legibility", scope_id) is None:

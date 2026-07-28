@@ -1,55 +1,78 @@
-import type { Brand, Moment } from "./types"
+// Economics — rebuilt per Tom's "Economics Section Rebuild" PRD.
+//
+// The old model (manual CPM, reach slider, audience sliders, streaming
+// multiplier, editable context-weight table) is gone. Economics now runs off a
+// resolver: for each broadcast we use CUSTOMER-UPLOADED data if present, else
+// SYNTHETIC data — and every number is tagged with its source. The only manual
+// number is the rights fee (that one is *supposed* to be a manual input).
+//
+// EMV formula (never changes; only its data source does):
+//     seconds × legibility × clutter × audience-at-that-moment × rate
+//
+// All of this stays in the browser (the backend does no economics), so the
+// on-screen numbers, the export, and the report always agree.
 
-// Per-context value multipliers. Keys match the backend context enum
-// (`score` is the scoring play; the dark-app's `goal` alias maps to it).
-export const DEFAULT_WEIGHTS: Record<string, number> = {
-  score: 3,
-  celebration: 2.5,
-  replay: 2,
-  close_up: 1.5,
-  wide_shot: 1,
-  pregame: 1.2,
-  halftime: 1.2,
-  postgame: 1.0,
-  timeout: 1.0,
-  commercial: 0.5,
-  other: 1,
-}
+import type { Brand, LegibilityReport, Moment } from "./types"
+import {
+  amaAtMinute,
+  audienceModelFromUpload,
+  broadcastFor,
+  goalMinutes,
+  resolveRate,
+  scopeDurationMin,
+  syntheticAudienceCurve,
+  SYNTHETIC_RATE_CARD,
+  type AudienceModel,
+  type AudiencePoint,
+  type Broadcast,
+  type DataSource,
+  type RateCard,
+  type RateCardRow,
+} from "./econData"
+import { CONTEXT_WEIGHTS, momentWeight } from "./moments"
+
+// Context multipliers live in moments.ts (single source of truth, shared with the
+// tag helpers). Re-exported here so existing importers of econ.CONTEXT_WEIGHTS
+// keep working. They RANK moments ("top plays", reel/report selection), NOT the
+// EMV dollar figure (the PRD uses audience-at-that-moment for value).
+export { CONTEXT_WEIGHTS }
+
+// --- state (what the user can actually set / upload) -------------------------
 
 export interface EconState {
-  cpm: number
-  reach: number // millions
-  audPremium: number // % age 18-49
-  audRegional: number // % in home region
-  audStreaming: number // % streaming vs linear
-  weights: Record<string, number>
+  /** The one number that's supposed to be manual (PRD: "rights fee field stays"). */
+  rightsFee: number
+  /** Customer-uploaded audience curve (Nielsen/Comscore), or null → synthetic. */
+  audienceUpload: AudiencePoint[] | null
+  audienceUploadName: string | null
+  /** Customer-uploaded media rate card, or null → synthetic. */
+  rateCardUpload: RateCardRow[] | null
+  rateCardUploadName: string | null
 }
 
 export const DEFAULT_ECON: EconState = {
-  cpm: 14,
-  reach: 2.1,
-  audPremium: 55,
-  audRegional: 65,
-  audStreaming: 35,
-  weights: { ...DEFAULT_WEIGHTS },
+  rightsFee: 2_000_000,
+  audienceUpload: null,
+  audienceUploadName: null,
+  rateCardUpload: null,
+  rateCardUploadName: null,
 }
 
-const ECON_LS_KEY = "sponsor-spotlight-econ-v2"
+const ECON_LS_KEY = "sponsor-spotlight-econ-v3"
 
 export function loadEcon(): EconState {
   try {
     const saved = JSON.parse(localStorage.getItem(ECON_LS_KEY) || "null")
-    if (!saved) return { ...DEFAULT_ECON, weights: { ...DEFAULT_WEIGHTS } }
+    if (!saved) return { ...DEFAULT_ECON }
     return {
-      cpm: num(saved.cpm, DEFAULT_ECON.cpm),
-      reach: num(saved.reach, DEFAULT_ECON.reach),
-      audPremium: num(saved.audPremium, DEFAULT_ECON.audPremium),
-      audRegional: num(saved.audRegional, DEFAULT_ECON.audRegional),
-      audStreaming: num(saved.audStreaming, DEFAULT_ECON.audStreaming),
-      weights: { ...DEFAULT_WEIGHTS, ...(saved.weights || {}) },
+      rightsFee: num(saved.rightsFee, DEFAULT_ECON.rightsFee),
+      audienceUpload: Array.isArray(saved.audienceUpload) ? saved.audienceUpload : null,
+      audienceUploadName: saved.audienceUploadName ?? null,
+      rateCardUpload: Array.isArray(saved.rateCardUpload) ? saved.rateCardUpload : null,
+      rateCardUploadName: saved.rateCardUploadName ?? null,
     }
   } catch {
-    return { ...DEFAULT_ECON, weights: { ...DEFAULT_WEIGHTS } }
+    return { ...DEFAULT_ECON }
   }
 }
 
@@ -66,89 +89,218 @@ function num(v: unknown, fallback: number): number {
   return isFinite(n) ? n : fallback
 }
 
-/**
- * Simple, transparent demo audience model:
- *   premium-demo (18-49) boost up to +40% at 100%
- *   regional concentration discount up to -20% (worth less to national buyers)
- *   streaming engagement boost up to +30%
- */
-export function audienceMultiplier(e: EconState): number {
-  return (
-    (1 + (e.audPremium / 100) * 0.4) *
-    (1 - (e.audRegional / 100) * 0.2) *
-    (1 + (e.audStreaming / 100) * 0.3)
-  )
+// --- the resolver ("traffic cop") --------------------------------------------
+
+export interface ResolvedEcon {
+  audience: AudienceModel
+  rate: { value: number; source: DataSource; broadcast: Broadcast; row: RateCardRow }
+  /** The rate card actually consulted (customer upload or synthetic) — for UI preview. */
+  card: RateCard
+  rightsFee: number
+  /** Rights fee is a manual customer input → labelled Customer-Uploaded. */
+  rightsFeeSource: DataSource
 }
 
 /**
- * Merge overlapping appearances into time-union intervals so simultaneous
- * exposures on multiple surfaces count as ONE eyeball-second, not N. Each
- * merged interval inherits the MAX context weight of its constituents — the
- * strongest classification wins, matching how a viewer perceives the moment.
+ * Resolve the economics inputs for one scope: audience curve + spot rate, each
+ * tagged with its true source. Customer upload wins; otherwise synthetic.
+ * `appearances` = every moment in the scope (used to size + spike the synthetic
+ * curve, and to pick the broadcast for the rate lookup).
  */
-export function unionWeightedSeconds(
-  moments: Moment[],
-  weights: Record<string, number>,
-): { unionSecs: number; weightedSecs: number } {
+export function resolveEcon(
+  econ: EconState,
+  gameId: string | null,
+  appearances: Moment[],
+): ResolvedEcon {
+  const broadcast = broadcastFor(gameId)
+
+  const card: RateCard = econ.rateCardUpload
+    ? { rows: econ.rateCardUpload, source: "customer_upload" }
+    : SYNTHETIC_RATE_CARD
+  const rate = resolveRate(card, broadcast)
+
+  const audience: AudienceModel = econ.audienceUpload
+    ? audienceModelFromUpload(econ.audienceUpload)
+    : syntheticAudienceCurve(scopeDurationMin(appearances), goalMinutes(appearances))
+
+  return {
+    audience,
+    rate: { ...rate, broadcast },
+    card,
+    rightsFee: econ.rightsFee,
+    rightsFeeSource: "customer_upload",
+  }
+}
+
+// --- interval merge (simultaneous exposures = one eyeball-second) -------------
+
+export interface MergedInterval {
+  start: number
+  end: number
+  /** True only when EVERY constituent is a secondary/background placement. */
+  secondary: boolean
+}
+
+export function mergeIntervals(moments: Moment[]): MergedInterval[] {
   const norm = moments
     .map((m) => ({
       s: Number(m.start_sec) || 0,
       e: Number(m.end_sec) || 0,
-      w: weights[m.context ?? "other"] ?? 1,
+      secondary: String(m.placement) === "secondary",
     }))
     .filter((m) => m.e > m.s)
     .sort((a, b) => a.s - b.s)
+  if (!norm.length) return []
 
-  if (!norm.length) return { unionSecs: 0, weightedSecs: 0 }
-
-  let unionSecs = 0
-  let weightedSecs = 0
+  const out: MergedInterval[] = []
   let curS = norm[0].s
   let curE = norm[0].e
-  let curW = norm[0].w
+  let curSecondary = norm[0].secondary
   for (let i = 1; i < norm.length; i++) {
     const m = norm[i]
     if (m.s <= curE) {
       curE = Math.max(curE, m.e)
+      curSecondary = curSecondary && m.secondary // primary wins
+    } else {
+      out.push({ start: curS, end: curE, secondary: curSecondary })
+      curS = m.s
+      curE = m.e
+      curSecondary = m.secondary
+    }
+  }
+  out.push({ start: curS, end: curE, secondary: curSecondary })
+  return out
+}
+
+/** Union (de-overlapped) exposure seconds for a set of moments. */
+export function unionSeconds(moments: Moment[]): number {
+  return mergeIntervals(moments).reduce((s, iv) => s + (iv.end - iv.start), 0)
+}
+
+/**
+ * Back-compat: union seconds + context-weighted seconds. Kept for the export's
+ * duration rollups; context weights here rank/roll-up, they don't set EMV.
+ */
+export function unionWeightedSeconds(
+  moments: Moment[],
+  weights: Record<string, number> = CONTEXT_WEIGHTS,
+): { unionSecs: number; weightedSecs: number } {
+  const merged = moments
+    .map((m) => ({
+      s: Number(m.start_sec) || 0,
+      e: Number(m.end_sec) || 0,
+      w: momentWeight(m, weights),
+    }))
+    .filter((m) => m.e > m.s)
+    .sort((a, b) => a.s - b.s)
+  if (!merged.length) return { unionSecs: 0, weightedSecs: 0 }
+  let unionSecs = 0
+  let weightedSecs = 0
+  let curS = merged[0].s
+  let curE = merged[0].e
+  let curW = merged[0].w
+  for (let i = 1; i < merged.length; i++) {
+    const m = merged[i]
+    if (m.s <= curE) {
+      curE = Math.max(curE, m.e)
       curW = Math.max(curW, m.w)
     } else {
-      const dur = curE - curS
-      unionSecs += dur
-      weightedSecs += dur * curW
+      unionSecs += curE - curS
+      weightedSecs += (curE - curS) * curW
       curS = m.s
       curE = m.e
       curW = m.w
     }
   }
-  const dur = curE - curS
-  unionSecs += dur
-  weightedSecs += dur * curW
+  unionSecs += curE - curS
+  weightedSecs += (curE - curS) * curW
   return { unionSecs, weightedSecs }
 }
 
-/**
- * Weighted media value: union-of-intervals × weight × per-second rate.
- * per-sec rate = (CPM × reach_M × 1000) / 30 × audience multiplier.
- * Accepts either head-to-head `top_moments` or inventory `appearances`.
- */
-export function brandValue(b: Brand, e: EconState): number {
-  const moments = b.top_moments || b.appearances || []
-  const ratePerSec = ((e.cpm * e.reach * 1000) / 30) * audienceMultiplier(e)
-  let { unionSecs, weightedSecs } = unionWeightedSeconds(moments, e.weights)
+// --- EMV + derived figures ---------------------------------------------------
 
-  // If Jockey reported a larger total_seconds than the sampled union covers,
-  // extrapolate the remainder using the average weight of the sampled moments.
-  const total = b.total_seconds || 0
-  if (unionSecs > 0 && total > unionSecs) {
-    const avgWeight = weightedSecs / unionSecs
-    weightedSecs += (total - unionSecs) * avgWeight
-  } else if (unionSecs === 0) {
-    weightedSecs = total // weight 1.0 fallback
-  }
-  return weightedSecs * ratePerSec
+const DEFAULT_LEGIBILITY_01 = 0.7 // neutral when no legibility audit exists
+
+/** Legibility factor 0–1 for a brand from the legibility report (avg/10). */
+export function legibility01(report: LegibilityReport | null, brand: string): number {
+  const b = report?.brands.find(
+    (x) => x.name.trim().toLowerCase() === brand.trim().toLowerCase(),
+  )
+  const scores = (b?.assets || [])
+    .map((a) => Number(a.overall_score))
+    .filter((n) => Number.isFinite(n))
+  if (!scores.length) return DEFAULT_LEGIBILITY_01
+  const mean = scores.reduce((s, n) => s + n, 0) / scores.length
+  return Math.max(0.05, Math.min(1, mean / 10))
 }
 
-// --- formatting -------------------------------------------------------------
+/**
+ * EMV for a brand: Σ over merged exposure intervals of
+ *     (seconds / 30) × rate × audienceFactor × legibility × clutter
+ * where audienceFactor = AMA-at-that-minute ÷ mean AMA (mean → 1.0), and
+ * clutter discounts background/secondary placements. If Jockey reported more
+ * total seconds than the sampled moments cover, the remainder is extrapolated
+ * at the sampled average.
+ */
+export function brandEMV(b: Brand, r: ResolvedEcon, leg01: number): number {
+  const moments = b.appearances || b.top_moments || []
+  const merged = mergeIntervals(moments)
+  if (!merged.length) {
+    // Only a rollup total, no timed moments → value at mean audience.
+    const total = b.total_seconds || 0
+    return (total / 30) * r.rate.value * 1 * leg01 * 1
+  }
+  let emv = 0
+  let sampledSecs = 0
+  for (const iv of merged) {
+    const secs = iv.end - iv.start
+    sampledSecs += secs
+    const minute = Math.floor(iv.start / 60)
+    const ama = amaAtMinute(r.audience, minute)
+    const audienceFactor = r.audience.mean > 0 ? ama / r.audience.mean : 1
+    const clutter = iv.secondary ? 0.6 : 1.0
+    emv += (secs / 30) * r.rate.value * audienceFactor * leg01 * clutter
+  }
+  // Extrapolate to Jockey's fuller total_seconds when it exceeds the sample.
+  const total = b.total_seconds || 0
+  if (sampledSecs > 0 && total > sampledSecs) emv *= total / sampledSecs
+  return emv
+}
+
+export interface BrandEconomics {
+  emv: number
+  roi: number | null // EMV ÷ rights fee
+  cleanExposurePct: number | null // in-play (whistle-to-whistle) share of exposure
+  impressions: number // gross audience-seconds impressions
+}
+
+/** Full economics for one brand (EMV, ROI, Clean Exposure %, impressions). */
+export function brandEconomics(b: Brand, r: ResolvedEcon, leg01: number): BrandEconomics {
+  const emv = brandEMV(b, r, leg01)
+  const roi = r.rightsFee > 0 ? emv / r.rightsFee : null
+
+  const total = b.total_seconds || 0
+  const outside = b.outside_whistle_to_whistle_seconds || 0
+  const cleanExposurePct = total > 0 ? Math.max(0, Math.min(100, ((total - outside) / total) * 100)) : null
+
+  // Gross impressions = Σ over merged intervals (viewers present × 1 exposure).
+  const merged = mergeIntervals(b.appearances || b.top_moments || [])
+  let impressions = 0
+  for (const iv of merged) {
+    const minute = Math.floor(iv.start / 60)
+    impressions += amaAtMinute(r.audience, minute) * 1_000_000
+  }
+
+  return { emv, roi, cleanExposurePct, impressions: Math.round(impressions) }
+}
+
+/** Share-of-voice %: a brand's EMV as a fraction of the scope's total EMV. */
+export function shareOfVoice(emvByBrand: number[]): number[] {
+  const total = emvByBrand.reduce((s, v) => s + v, 0) || 1
+  return emvByBrand.map((v) => Math.round((v / total) * 1000) / 10)
+}
+
+// --- formatting --------------------------------------------------------------
 
 export function fmtTime(sec: number | null | undefined): string {
   if (sec == null) return "—"

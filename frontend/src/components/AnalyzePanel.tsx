@@ -1,10 +1,20 @@
 import { useMemo, useState } from "react"
 import { Button, Chip } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
-import { brandValue, fmtMoney } from "../lib/econ"
+import {
+  brandEconomics,
+  CONTEXT_WEIGHTS,
+  fmtMoney,
+  legibility01,
+  resolveEcon,
+  shareOfVoice,
+  type BrandEconomics,
+} from "../lib/econ"
+import { SOURCE_LABEL } from "../lib/econData"
+import { momentTags } from "../lib/moments"
 import { ALL_GAMES, useApp } from "../state"
-import { MetricTile, MomentRow, SectionCard, StatusLine } from "../ui"
-import { Timeline } from "./Timeline"
+import { MetricTile, MomentRow, SectionCard, SourceBadge, StatusLine } from "../ui"
+import { CTX_COLOR, ctxLabel, Timeline } from "./Timeline"
 import type { Brand, Moment } from "../lib/types"
 
 /** Stable DOM id for a brand card, so the Viewing chips can scroll to it. */
@@ -29,6 +39,7 @@ export function AnalyzePanel() {
     setBrandB,
     demoCached,
     scopeInventory,
+    scopeLegibility,
     scopeReels,
     viewBrands,
     playerRef,
@@ -47,6 +58,7 @@ export function AnalyzePanel() {
   const displayBrands = demoView
     ? scopeInventory.filter((b) => viewBrands.includes(b.name))
     : inventory
+  const legReport = demoView ? scopeLegibility : legibility
 
   const onAnalyze = async (opts: { live?: boolean } = {}) => {
     const names = selectedBrands.filter(Boolean)
@@ -80,10 +92,50 @@ export function AnalyzePanel() {
     }
   }
 
+  // Resolve the scope's economics inputs once (audience curve + spot rate, each
+  // source-tagged), then compute EMV / ROI / Clean-Exposure per brand and
+  // Share-of-Voice across the set.
+  const resolved = useMemo(() => {
+    const apps: Moment[] = []
+    for (const b of displayBrands ?? []) apps.push(...(b.appearances || b.top_moments || []))
+    return resolveEcon(econ, gameId === ALL_GAMES ? null : gameId, apps)
+  }, [displayBrands, econ, gameId])
+
   const ranked = useMemo(() => {
     if (!displayBrands) return null
-    return displayBrands.map((b) => ({ b, v: brandValue(b, econ) })).sort((a, b) => b.v - a.v)
-  }, [displayBrands, econ])
+    const withEcon = displayBrands.map((b) => ({
+      b,
+      ec: brandEconomics(b, resolved, legibility01(legReport, b.name)),
+    }))
+    const sov = shareOfVoice(withEcon.map((x) => x.ec.emv))
+    return withEcon
+      .map((x, i) => ({ ...x, sov: sov[i] }))
+      .sort((a, b) => b.ec.emv - a.ec.emv)
+  }, [displayBrands, resolved, legReport])
+
+  // Tag filter — POSITIVE/solo: click a tag (e.g. `goal`) to show ONLY moments
+  // carrying it in the Timeline + Appearances list. Click more to widen the
+  // selection (OR); click again to remove; "all" clears. Economics above are
+  // never touched. Counts are computed across every displayed brand so the row
+  // is stable regardless of what's selected.
+  const [activeCtx, setActiveCtx] = useState<Set<string>>(new Set())
+  const ctxCounts = useMemo(() => {
+    // Count per TAG (a moment contributes to each of its events + its view), so
+    // a goal+close-up moment shows under both the "goal" and "close-up" chips.
+    const counts = new Map<string, number>()
+    for (const b of displayBrands ?? [])
+      for (const m of b.appearances || b.top_moments || [])
+        for (const t of momentTags(m)) counts.set(t, (counts.get(t) ?? 0) + 1)
+    return [...counts.entries()].sort((a, b) => b[1] - a[1])
+  }, [displayBrands])
+  const toggleCtx = (ctx: string) =>
+    setActiveCtx((prev) => {
+      const next = new Set(prev)
+      if (next.has(ctx)) next.delete(ctx)
+      else next.add(ctx)
+      return next
+    })
+  const anyActive = activeCtx.size > 0
 
   const gameLabel =
     gameId === ALL_GAMES ? "All games" : games.find((g) => g.id === gameId)?.label ?? gameId
@@ -106,15 +158,20 @@ export function AnalyzePanel() {
   const onReport = async (b: Brand) => {
     setReportBusy(b.name)
     try {
-      const value = Math.round(brandValue(b, econ))
+      const value = Math.round(brandEconomics(b, resolved, legibility01(legReport, b.name)).emv)
       const scopeKey = gameId === ALL_GAMES ? "aggregate" : gameId
       const html = await api.report({
         brand: b.name,
         game_ids: gameId === ALL_GAMES ? [] : [gameId],
         media_values: { [scopeKey]: value },
         total_media_value: value,
-        context_weights: econ.weights,
+        context_weights: CONTEXT_WEIGHTS,
         generated_note: `Scope: ${gameLabel}.`,
+        sources: {
+          audience: resolved.audience.source,
+          rate: resolved.rate.source,
+          rights_fee: resolved.rightsFeeSource,
+        },
       })
       const url = URL.createObjectURL(new Blob([html], { type: "text/html" }))
       window.open(url, "_blank")
@@ -196,17 +253,95 @@ export function AnalyzePanel() {
         )}
       </StatusLine>
 
+      {ranked && ranked.length > 0 && (
+        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-foreground-subtle">
+          <span className="inline-flex items-center gap-1">
+            Audience <SourceBadge source={resolved.audience.source} />
+          </span>
+          <span className="inline-flex items-center gap-1">
+            Rate ${resolved.rate.value.toLocaleString()}/:30 <SourceBadge source={resolved.rate.source} />
+          </span>
+          <span className="text-foreground-subtle">
+            EMV = seconds × legibility × clutter × audience × rate
+          </span>
+        </div>
+      )}
+
+      {ranked && ranked.length > 0 && ctxCounts.length > 1 && (
+        <div className="mt-3 rounded-tlds-2 border border-border-secondary bg-surface-secondary/40 p-2.5">
+          <div className="mb-1.5 flex items-center gap-2">
+            <span className="text-[11px] font-semibold uppercase tracking-wide text-foreground-body">
+              Filter by tag
+            </span>
+            <span className="text-[10px] text-foreground-subtle">
+              {anyActive ? "showing only selected — click to add/remove" : "click a tag to show only those moments"}
+            </span>
+            {anyActive && (
+              <Button size="sm" variant="ghosted" onClick={() => setActiveCtx(new Set())}>
+                clear ({activeCtx.size})
+              </Button>
+            )}
+          </div>
+          <div className="flex flex-wrap items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => setActiveCtx(new Set())}
+              aria-pressed={!anyActive}
+              title="Show all moments"
+              className={`inline-flex items-center rounded-tlds-1 border px-2 py-1 text-xs font-medium transition-colors ${
+                !anyActive
+                  ? "border-tl-embed-dark-green bg-tl-embed-dark-green text-white"
+                  : "border-border-secondary bg-surface-white text-foreground-body hover:border-foreground-subtle"
+              }`}
+            >
+              All
+            </button>
+            {ctxCounts.map(([ctx, count]) => {
+              const active = activeCtx.has(ctx)
+              const color = CTX_COLOR[ctx] || CTX_COLOR.other
+              return (
+                <button
+                  key={ctx}
+                  type="button"
+                  onClick={() => toggleCtx(ctx)}
+                  aria-pressed={active}
+                  title={active ? `Stop filtering ${ctxLabel(ctx)}` : `Show only ${ctxLabel(ctx)} moments`}
+                  className={`inline-flex cursor-pointer items-center gap-1.5 rounded-tlds-1 border px-2 py-1 text-xs font-medium transition-colors ${
+                    active
+                      ? "border-transparent text-white"
+                      : "border-border-secondary bg-surface-white text-foreground-body hover:border-foreground-subtle"
+                  }`}
+                  style={active ? { background: color } : undefined}
+                >
+                  <span
+                    aria-hidden
+                    className="h-2.5 w-2.5 shrink-0 rounded-full"
+                    style={{ background: active ? "rgba(255,255,255,0.9)" : color }}
+                  />
+                  {ctxLabel(ctx)}
+                  <span className={active ? "font-tl-mono text-white/80" : "font-tl-mono text-foreground-subtle"}>
+                    {count}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      )}
+
       {ranked && (
         <div className="mt-3 flex flex-col gap-2">
           {ranked.length === 0 && (
             <div className="text-xs text-foreground-subtle">No brands returned.</div>
           )}
-          {ranked.map(({ b, v }, i) => (
+          {ranked.map(({ b, ec, sov }, i) => (
             <BrandCard
               key={b.name}
               brand={b}
-              value={v}
+              ec={ec}
+              sov={sov}
               rank={i + 1}
+              activeCtx={activeCtx}
               open={Boolean(openBrands[b.name])}
               onToggle={() => toggleBrand(b.name)}
               onReport={() => onReport(b)}
@@ -223,8 +358,10 @@ export function AnalyzePanel() {
 
 function BrandCard({
   brand,
-  value,
+  ec,
+  sov,
   rank,
+  activeCtx,
   open,
   onToggle,
   onReport,
@@ -233,8 +370,10 @@ function BrandCard({
   hasReel,
 }: {
   brand: Brand
-  value: number
+  ec: BrandEconomics
+  sov: number
   rank: number
+  activeCtx: Set<string>
   open: boolean
   onToggle: () => void
   onReport: () => void
@@ -242,7 +381,19 @@ function BrandCard({
   reportBusy: boolean
   hasReel: boolean
 }) {
-  const apps: Moment[] = brand.appearances || []
+  const allApps: Moment[] = brand.appearances || []
+  // Positive/solo tag filter: with nothing selected, show every moment; once
+  // tags are active, keep only moments carrying at least one of them (OR) — so
+  // selecting "goal" shows just the goal moments. Summary tiles + economics
+  // above always stay on the full set.
+  const apps = useMemo(
+    () =>
+      activeCtx.size === 0
+        ? allApps
+        : allApps.filter((m) => momentTags(m).some((t) => activeCtx.has(t))),
+    [allApps, activeCtx],
+  )
+  const hiddenCount = allApps.length - apps.length
   return (
     <div
       id={brandDomId(brand.name)}
@@ -262,8 +413,8 @@ function BrandCard({
           #{rank}
         </Chip>
         <h3 className="truncate font-tl-sans text-base font-semibold">{brand.name}</h3>
-        <span className="ml-auto font-tl-mono text-sm text-tl-embed-dark-green">
-          {fmtMoney(value)}
+        <span className="ml-auto font-tl-mono text-sm text-tl-embed-dark-green" title="Estimated Media Value">
+          {fmtMoney(ec.emv)}
         </span>
       </button>
 
@@ -274,6 +425,12 @@ function BrandCard({
         <MetricTile
           label="Outside W2W"
           value={`${(brand.outside_whistle_to_whistle_seconds || 0).toFixed(0)}s`}
+        />
+        <MetricTile label="ROI" value={ec.roi == null ? "—" : `${ec.roi.toFixed(2)}×`} accent />
+        <MetricTile label="Share of voice" value={`${sov.toFixed(1)}%`} />
+        <MetricTile
+          label="Clean exposure"
+          value={ec.cleanExposurePct == null ? "—" : `${ec.cleanExposurePct.toFixed(0)}%`}
         />
       </div>
 
@@ -306,9 +463,18 @@ function BrandCard({
           <Timeline moments={apps} />
           <div className="mb-1 mt-1 text-[10px] uppercase tracking-wide text-foreground-subtle">
             Appearances ({apps.length})
+            {hiddenCount > 0 && (
+              <span className="ml-1 normal-case text-foreground-subtle">
+                · {hiddenCount} filtered out
+              </span>
+            )}
           </div>
           <ul className="max-h-60 overflow-y-auto">
-            {apps.length === 0 && <li className="text-xs text-foreground-subtle">none returned</li>}
+            {apps.length === 0 && (
+              <li className="text-xs text-foreground-subtle">
+                {hiddenCount > 0 ? "no moments match the selected tag(s)" : "none returned"}
+              </li>
+            )}
             {apps.map((m, i) => (
               <MomentRow key={i} m={m}>
                 {m.asset_type || m.description || ""}

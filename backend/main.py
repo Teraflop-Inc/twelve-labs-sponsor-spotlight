@@ -212,22 +212,29 @@ SPONSOR_MOMENTS_SCHEMA: dict[str, Any] = {
                             "type": "number",
                             "description": "Clip end in seconds from video beginning",
                         },
-                        "context": {
+                        "view": {
                             "type": "string",
-                            "enum": [
-                                "score",
-                                "celebration",
-                                "replay",
-                                "close_up",
-                                "wide_shot",
-                                "pregame",
-                                "halftime",
-                                "postgame",
-                                "timeout",
-                                "commercial",
-                                "other",
-                            ],
-                            "description": "Broadcast context at the moment of exposure",
+                            "enum": ["close_up", "wide_shot", "other"],
+                            "description": "How the exposure is framed (single value)",
+                        },
+                        "events": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "goal",
+                                    "celebration",
+                                    "replay",
+                                    "pregame",
+                                    "halftime",
+                                    "postgame",
+                                    "timeout",
+                                    "substitution",
+                                    "commercial",
+                                    "other",
+                                ],
+                            },
+                            "description": "Match game-state at the moment of exposure (0..n)",
                         },
                         "suggested_weight": {
                             "type": "number",
@@ -246,7 +253,6 @@ SPONSOR_MOMENTS_SCHEMA: dict[str, Any] = {
                     "required": [
                         "start_sec",
                         "end_sec",
-                        "context",
                         "suggested_weight",
                     ],
                 },
@@ -441,21 +447,29 @@ INVENTORY_SCHEMA: dict[str, Any] = {
                                 "properties": {
                                     "start_sec": {"type": "number"},
                                     "end_sec": {"type": "number"},
-                                    "context": {
+                                    "view": {
                                         "type": "string",
-                                        "enum": [
-                                            "score",
-                                            "celebration",
-                                            "replay",
-                                            "close_up",
-                                            "wide_shot",
-                                            "pregame",
-                                            "halftime",
-                                            "postgame",
-                                            "timeout",
-                                            "commercial",
-                                            "other",
-                                        ],
+                                        "enum": ["close_up", "wide_shot", "other"],
+                                        "description": "How the exposure is framed (single value)",
+                                    },
+                                    "events": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string",
+                                            "enum": [
+                                                "goal",
+                                                "celebration",
+                                                "replay",
+                                                "pregame",
+                                                "halftime",
+                                                "postgame",
+                                                "timeout",
+                                                "substitution",
+                                                "commercial",
+                                                "other",
+                                            ],
+                                        },
+                                        "description": "Match game-state at this moment (0..n)",
                                     },
                                     "asset_type": {
                                         "type": "string",
@@ -539,13 +553,22 @@ PER_BRAND_SCHEMA: dict[str, Any] = {
                     "properties": {
                         "start_sec": {"type": "number"},
                         "end_sec": {"type": "number"},
-                        "context": {
+                        "view": {
                             "type": "string",
-                            "enum": [
-                                "score", "celebration", "replay", "close_up",
-                                "wide_shot", "pregame", "halftime", "postgame",
-                                "timeout", "commercial", "other",
-                            ],
+                            "enum": ["close_up", "wide_shot", "other"],
+                            "description": "How the exposure is framed by the camera (single value)",
+                        },
+                        "events": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "goal", "celebration", "replay", "pregame",
+                                    "halftime", "postgame", "timeout",
+                                    "substitution", "commercial", "other",
+                                ],
+                            },
+                            "description": "Match game-state at this moment (0..n; empty if nothing notable)",
                         },
                         "asset_type": {
                             "type": "string",
@@ -578,6 +601,43 @@ PER_BRAND_SCHEMA: dict[str, Any] = {
             "legibility_notes": {"type": "string"},
         },
         "required": ["name", "appearances"],
+    },
+}
+
+
+# One focused match-events extraction pass emits a flat list of time windows for a
+# SINGLE event kind (goal / celebration / replay …). The kind is fixed by which
+# pass produced it (see ``_fetch_event_windows``), so the model never has to
+# choose it — it only has to find every occurrence and time it precisely. These
+# windows are then deterministically stamped onto overlapping sponsor
+# appearances in ``capture_demo_cache.py`` (the authority for goal tags).
+GAME_EVENTS_SCHEMA: dict[str, Any] = {
+    "name": "game_events",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "windows": {
+                "type": "array",
+                "description": "Every occurrence of the requested event, chronologically. Do not cap.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "start_sec": {"type": "number"},
+                        "end_sec": {"type": "number"},
+                        "team": {
+                            "type": "string",
+                            "description": "Team involved, if identifiable; else empty",
+                        },
+                        "description": {"type": "string"},
+                        "confidence": {"type": "number"},
+                        "video": {"type": "string"},
+                    },
+                    "required": ["start_sec", "end_sec"],
+                },
+            },
+            "summary": {"type": "string"},
+        },
+        "required": ["windows"],
     },
 }
 
@@ -941,7 +1001,11 @@ async def _fetch_brand_appearances(
         f"  - outside_whistle_to_whistle_seconds (pregame, halftime, postgame, timeouts)\n"
         f"  - asset_types: every surface it appears on\n"
         f"  - appearances[]: every distinct exposure with start_sec, end_sec, "
-        f"context, asset_type, brief description, confidence, source video filename, "
+        f"view (how it's framed: close_up / wide_shot / other — a single value), "
+        f"events (what's happening in the match at that moment: goal, celebration, "
+        f"replay, pregame, halftime, postgame, timeout, substitution, commercial — "
+        f"zero or more; leave empty if nothing notable is happening), "
+        f"asset_type, brief description, confidence, source video filename, "
         f"placement (primary = large/sharp/foreground, secondary = small/background), and — "
         f"read from the on-screen scorebug — the match period (first half / halftime / "
         f"second half / stoppage / pre/postgame) and the game_clock exactly as shown "
@@ -969,6 +1033,65 @@ async def _fetch_brand_appearances(
     except json.JSONDecodeError:
         log.warning("per-brand JSON decode failed for %r", brand_name)
         return None
+
+
+async def _fetch_event_windows(
+    kind: str,
+    phrase: str,
+    store_id: str,
+    sport: str | None,
+    videos: list[str],
+    game_id: str | None = None,
+    selections: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    """One focused ``/responses`` call: find every occurrence of a single event kind.
+
+    A single-question prompt ("find every goal") maximizes recall vs. the
+    per-brand pass, which is tunnel-visioned on one logo. Returns the window list
+    with each window stamped ``kind`` (so callers can flatten across kinds). The
+    caller stamps these onto overlapping sponsor appearances by interval overlap.
+    """
+    scope = (
+        _game_scope_phrase(game_id) if selections else _videos_roster_for_prompt(videos)
+    )
+    user_message = (
+        f"Identify EVERY moment in this broadcast where {phrase}. "
+        f"For each occurrence return a window with precise start_sec and end_sec "
+        f"(seconds from the video start), the team involved if identifiable, a "
+        f"brief description, a confidence 0-1, and the source video filename. "
+        f"Be exhaustive — list every occurrence, do not cap or summarize away any."
+        + scope
+    )
+    try:
+        resp = await jockey.responses(
+            instructions=_active_profile(sport)["instructions"],
+            user_message=user_message,
+            knowledge_store_id=store_id,
+            session_id=None,
+            json_schema=GAME_EVENTS_SCHEMA,
+            selections=selections,
+        )
+    except Exception as e:  # noqa: BLE001
+        log.warning("event fetch failed for kind=%r: %s", kind, e)
+        return []
+    text = jockey.extract_text(resp)
+    if not text:
+        return []
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        log.warning("event JSON decode failed for kind=%r", kind)
+        return []
+    windows = []
+    for w in data.get("windows") or []:
+        try:
+            s, e = float(w.get("start_sec")), float(w.get("end_sec"))
+        except (TypeError, ValueError):
+            continue
+        if e <= s:
+            continue
+        windows.append({**w, "kind": kind, "start_sec": s, "end_sec": e})
+    return windows
 
 
 @app.post("/api/jockey/analyze")
@@ -1146,6 +1269,11 @@ class ReportRequest(BaseModel):
     # monetizability. Falls back to weights.CONTEXT_WEIGHTS when omitted.
     context_weights: dict[str, float] = Field(default_factory=dict)
     generated_note: str = ""
+    # Data-source labels for the resolved economics (Detected / Customer-Uploaded
+    # / Simulated), e.g. {"audience": "Simulated", "rate": "Simulated"}. Rendered
+    # as provenance badges on the report so a simulated placeholder is never
+    # mistaken for a measured value (PRD step 10).
+    sources: dict[str, str] = Field(default_factory=dict)
 
 
 def _brand_in_inventory(envelope: dict[str, Any] | None, brand: str) -> dict[str, Any] | None:
@@ -1247,6 +1375,7 @@ async def performance_report(req: ReportRequest, is_demo: bool = Depends(tl_key)
         total_media_value=req.total_media_value,
         generated_note=req.generated_note,
         weights=req.context_weights or None,
+        sources=req.sources or None,
     )
     return HTMLResponse(content=html)
 
