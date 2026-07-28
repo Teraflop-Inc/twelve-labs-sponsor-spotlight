@@ -151,6 +151,9 @@ export interface GameOption {
 }
 export interface DemoInfo {
   enabled: boolean
+  /** False = the collection picker is available and any store can be analyzed.
+   *  True (default) = the app is pinned to the collection below. */
+  demo_mode: boolean
   store_id: string
   name: string
   sport: string
@@ -180,16 +183,42 @@ export interface AddAssetsResponse {
   store_id: string
   added: { asset_id: string; item_id?: string; status: string; error?: string }[]
 }
+/** Where a result came from — stated by the server, never inferred here.
+ *
+ * The backend stamps this on every analysis response (see
+ * `backend/domain/sponsor/provenance.py`). Previously the UI guessed
+ * "this is cached" from `mode === "demo" && demoCached`, which is a guess about
+ * server state — and it was wrong whenever a fixture was refused (missing
+ * brand, or captured for a different knowledge store) and the request quietly
+ * ran live instead.
+ */
+export interface Provenance {
+  source: "demo_fixture" | "jockey_live"
+  from_cache: boolean
+  store_id: string
+  game_id: string
+  provider: string
+  model: string
+  /** Live runs only — when this result was computed. */
+  generated_at?: string
+  /** Fixtures only — when the underlying Jockey run happened. */
+  captured_at?: string | null
+  /** Fixtures only — when this request served it. */
+  served_at?: string
+}
+
 export interface DiscoverResponse {
   session_id: string | null
   discovery: Discovery
   answer?: string
   timings?: { discover_secs?: number }
+  provenance?: Provenance
 }
 export interface AnalyzeResponse {
   session_id: string | null
   inventory: Inventory
   timings?: { analyze_secs?: number; requested?: number; succeeded?: number }
+  provenance?: Provenance
 }
 export interface CompareResponse {
   session_id: string | null
@@ -200,6 +229,7 @@ export interface LegibilityResponse {
   session_id: string | null
   report: LegibilityReport | null
   answer?: string
+  provenance?: Provenance
 }
 
 /** A built highlight reel's metadata (Vercel Blob URL). */

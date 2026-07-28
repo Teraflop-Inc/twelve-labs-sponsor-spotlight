@@ -27,8 +27,12 @@ export function hasKey(): boolean {
   return getKey().length > 0
 }
 
-// Demo mode: requests carry `x-demo` and the backend uses its own
-// SPONSOR_SPOTLIGHT_TL_KEY, pinned to the demo collection. No user key sent.
+// Which key the backend should use.
+//
+// `x-demo` tells it to use the server's own TWELVELABS_API_KEY. That is the
+// normal path in both DEMO_MODE=True (pinned collection) and DEMO_MODE=False
+// (collection selectable) — the difference is what the server allows, not whose
+// key it is. `x-api-key` is only sent when the user has stored one themselves.
 let _demoMode = false
 export function setDemoMode(on: boolean) {
   _demoMode = on
@@ -54,8 +58,9 @@ async function request<T>(path: string, opts: ReqOpts = {}): Promise<T> {
   const { method = "GET", body, noKey = false } = opts
   const headers: Record<string, string> = {}
   if (!noKey) {
-    if (_demoMode) headers["x-demo"] = "1"
-    else headers["x-api-key"] = getKey()
+    const userKey = getKey()
+    if (userKey) headers["x-api-key"] = userKey
+    else headers["x-demo"] = "1"
   }
   if (body != null) headers["Content-Type"] = "application/json"
 

@@ -3,8 +3,20 @@ import { Button, Chip } from "@twelvelabs-io/react"
 import { api, type StoreCtx } from "../lib/api"
 import { cn } from "@/lib/utils"
 import { ALL_GAMES, useApp } from "../state"
-import { MomentRow, ScoreBar, SectionCard, StatusLine } from "../ui"
-import type { LegibilityAsset, LegibilityBrand, LegibilityReport } from "../lib/types"
+import {
+  MomentRow,
+  ProvenanceBadge,
+  ReRunButton,
+  ScoreBar,
+  SectionCard,
+  StatusLine,
+} from "../ui"
+import type {
+  LegibilityAsset,
+  LegibilityBrand,
+  LegibilityReport,
+  Provenance,
+} from "../lib/types"
 
 /** Stable DOM id for a legibility card, so the Viewing chips can scroll to it. */
 const legibDomId = (name: string) => "legib-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
@@ -37,12 +49,14 @@ export function LegibilityPanel() {
   const [report, setReport] = useState<LegibilityReport | null>(null)
   const [status, setStatus] = useState("")
   const [busy, setBusy] = useState(false)
-  const [fromCache, setFromCache] = useState(false)
+  const [prov, setProv] = useState<Provenance | null>(null)
+  // A live audit in demo mode replaces the pre-baked scope view with its result.
+  const [liveRun, setLiveRun] = useState(false)
 
   useEffect(() => {
     setReport(null)
     setStatus("")
-    setFromCache(false)
+    setProv(null)
   }, [storeEpoch])
 
   // Mirror the report into shared state so the export/report tools can read the
@@ -54,15 +68,19 @@ export function LegibilityPanel() {
   const ready = storeStatus === "ready"
   const haveBrands = Boolean(brandA.trim() && brandB.trim())
   const demoView = mode === "demo"
-  const showCacheHint = mode === "demo" && demoCached
 
   // Demo = the scope's cached audit filtered to the viewed brands; BYO = the
   // locally-run `report`. Only some scopes/brands have legibility data.
-  const displayReport: LegibilityReport | null = demoView
-    ? scopeLegibility
-      ? { brands: scopeLegibility.brands.filter((b) => viewBrands.includes(b.name)) }
-      : null
-    : report
+  const displayReport: LegibilityReport | null =
+    demoView && !liveRun
+      ? scopeLegibility
+        ? { brands: scopeLegibility.brands.filter((b) => viewBrands.includes(b.name)) }
+        : null
+      : report
+
+  // Which brands an audit covers: demo audits the brands being viewed, BYO the
+  // pair carried over from the analyze step.
+  const auditBrands = demoView ? viewBrands : [brandA.trim(), brandB.trim()].filter(Boolean)
 
   // Card expand/collapse lifted here so the Viewing chips can open + scroll to a
   // brand's audit. All start collapsed.
@@ -77,11 +95,12 @@ export function LegibilityPanel() {
   }
 
   const onAudit = async (opts: { live?: boolean } = {}) => {
+    if (opts.live) setLiveRun(true)
     const a = brandA.trim()
     const b = brandB.trim()
     if (!a || !b || !activeStore) return
     setBusy(true)
-    setStatus(opts.live ? "Auditing with Jockey (live)…" : "Auditing with Jockey…")
+    setStatus("Running legibility audit…")
     setReport(null)
     try {
       const ctx: StoreCtx = {
@@ -93,7 +112,7 @@ export function LegibilityPanel() {
       const data = await api.legibility(ctx, [a, b], sessionId, opts.live)
       setSessionId(data.session_id ?? sessionId)
       setReport(data.report)
-      setFromCache(showCacheHint && !opts.live && Boolean(data.report))
+      setProv(data.provenance ?? null)
       setStatus(data.report ? "" : "No audit could be generated for these brands — please try again.")
     } catch (e) {
       setStatus(`ERROR: ${(e as Error).message}`)
@@ -108,7 +127,15 @@ export function LegibilityPanel() {
       title="Legibility audit"
       hint="Per-asset visibility scores for the selected brands."
       actions={
-        demoView ? undefined : (
+        demoView ? (
+          auditBrands.length > 0 && (
+            <ReRunButton
+              onClick={() => onAudit({ live: true })}
+              disabled={!ready || busy}
+              busy={busy}
+            />
+          )
+        ) : (
           <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
             {busy ? "auditing…" : "Run audit"}
           </Button>
@@ -131,10 +158,10 @@ export function LegibilityPanel() {
       )}
       {!demoView && (
         <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
-          {status}
-          {fromCache && !status && (
-            <span className="text-foreground-subtle">Cached demo result.</span>
-          )}
+          <span className="inline-flex items-center gap-1.5">
+            {status}
+            {prov && !status.startsWith("ERROR") && <ProvenanceBadge prov={prov} />}
+          </span>
         </StatusLine>
       )}
       {demoView && !displayReport && (

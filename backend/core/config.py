@@ -20,6 +20,24 @@ from core import env
 # Must run before the module-level reads below.
 env.load()
 
+def _flag(name: str, default: bool) -> bool:
+    raw = (os.environ.get(name) or "").strip().lower()
+    if not raw:
+        return default
+    return raw not in ("0", "false", "no", "off")
+
+
+#: Lock the app to one read-only collection.
+#:
+#: ``True`` (default) is the sales demo: the collection and game roster are
+#: pinned, the collection picker is hidden, and results come from the committed
+#: fixtures. ``DEMO_MODE=False`` opens it up — any knowledge store in the
+#: account can be selected and any of its videos analyzed.
+#:
+#: This is separate from *which* key is used. Both modes run on the server's
+#: ``TWELVELABS_API_KEY``; this only controls whether the collection is fixed.
+DEMO_MODE = _flag("DEMO_MODE", True)
+
 DEMO_STORE_ID = os.environ.get(
     "SPONSOR_SPOTLIGHT_STORE_ID", "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f"
 )

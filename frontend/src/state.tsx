@@ -129,9 +129,16 @@ export function useApp(): AppContextValue {
 
 const INDEXING_DONE = new Set(["ready", "failed", "error"])
 
+// Until /api/demo/info answers, assume the locked demo — the safe default, and
+// what a public deployment runs. The server decides via DEMO_MODE; see
+// backend/core/config.py.
 function initialMode(): Mode {
-  // The bring-your-own-key tab was removed — the app is demo-only.
   return "demo"
+}
+
+/** Locked demo, or open collection selection? Decided by the server. */
+function modeFor(info: DemoInfo | null): Mode {
+  return info && info.demo_mode === false ? "byok" : "demo"
 }
 
 export function AppProvider({ children }: { children: ReactNode }) {
@@ -286,7 +293,14 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setDefaultSport(r.default || "generic")
       })
       .catch(() => {})
-    api.demoInfo().then(setDemo).catch(() => setDemo(null))
+    api
+      .demoInfo()
+      .then((info) => {
+        setDemo(info)
+        // DEMO_MODE=False unlocks the collection picker + game selection.
+        setModeState(modeFor(info))
+      })
+      .catch(() => setDemo(null))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 

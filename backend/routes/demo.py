@@ -18,6 +18,9 @@ async def demo_info() -> dict[str, Any]:
     """Whether the locked server-key demo is available, and its collection."""
     return {
         "enabled": bool(config.demo_key()),
+        # False = the collection picker is available and any store can be
+        # analyzed. True (default) = pinned to the collection below.
+        "demo_mode": config.DEMO_MODE,
         "store_id": config.DEMO_STORE_ID,
         "name": config.DEMO_STORE_NAME,
         "sport": config.DEMO_SPORT,

@@ -1,7 +1,9 @@
 """Knowledge-store (collection) endpoints.
 
-Collections are locked in demo mode: the demo key is pinned to one read-only
-store and must never be pointed at another.
+Gated on :data:`core.config.DEMO_MODE`. When the demo is locked (the default)
+the server key is pinned to one read-only collection and these endpoints are
+refused, so an anonymous visitor can't point our key at an arbitrary store or
+create things in our account. ``DEMO_MODE=False`` opens them up.
 """
 from __future__ import annotations
 
@@ -17,11 +19,19 @@ from services import stores as svc
 router = APIRouter(prefix="/api")
 
 
+def _require_unlocked(is_demo: bool) -> None:
+    """Refuse collection management while the demo is locked."""
+    if is_demo and config.DEMO_MODE:
+        raise HTTPException(
+            status_code=403,
+            detail="Collections are locked in demo mode. Set DEMO_MODE=False to select your own.",
+        )
+
+
 @router.get("/knowledge-stores")
 async def knowledge_stores(is_demo: bool = Depends(tl_key)) -> dict[str, Any]:
     """List the account's loadable knowledge stores (collections) for the picker."""
-    if is_demo:
-        raise HTTPException(status_code=403, detail="Collections are locked in demo mode.")
+    _require_unlocked(is_demo)
     return await svc.list_stores()
 
 
@@ -29,8 +39,7 @@ async def knowledge_stores(is_demo: bool = Depends(tl_key)) -> dict[str, Any]:
 async def create_store(
     req: CreateStoreRequest, is_demo: bool = Depends(tl_key)
 ) -> dict[str, Any]:
-    if is_demo:
-        raise HTTPException(status_code=403, detail="Collections are locked in demo mode.")
+    _require_unlocked(is_demo)
     name = req.name.strip()
     if not name:
         raise HTTPException(status_code=400, detail="name is required")
@@ -41,8 +50,8 @@ async def create_store(
 async def use_knowledge_store(
     req: UseStoreRequest, is_demo: bool = Depends(tl_key)
 ) -> dict[str, Any]:
-    """Load a store's sport + video roster. In demo mode, pinned to the demo store."""
-    store_id = config.DEMO_STORE_ID if is_demo else req.store_id
+    """Load a store's sport + video roster. Pinned to the demo store while locked."""
+    store_id = config.DEMO_STORE_ID if (is_demo and config.DEMO_MODE) else req.store_id
     return await svc.load(store_id)
 
 
@@ -50,8 +59,7 @@ async def use_knowledge_store(
 async def add_assets(
     req: AddAssetsRequest, is_demo: bool = Depends(tl_key)
 ) -> dict[str, Any]:
-    if is_demo:
-        raise HTTPException(status_code=403, detail="Collections are locked in demo mode.")
+    _require_unlocked(is_demo)
     ids = [a.strip() for a in req.asset_ids if a.strip()]
     if not ids:
         raise HTTPException(status_code=400, detail="no asset_ids provided")

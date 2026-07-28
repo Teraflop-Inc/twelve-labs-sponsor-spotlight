@@ -13,12 +13,23 @@ import {
 import { SOURCE_LABEL } from "../lib/econData"
 import { momentTags } from "../lib/moments"
 import { ALL_GAMES, useApp } from "../state"
-import { MetricTile, MomentRow, SectionCard, SourceBadge, StatusLine } from "../ui"
+import {
+  MetricTile,
+  MomentRow,
+  ProvenanceBadge,
+  ReRunButton,
+  SectionCard,
+  SourceBadge,
+  StatusLine,
+} from "../ui"
 import { CTX_COLOR, ctxLabel, Timeline } from "./Timeline"
-import type { Brand, Moment } from "../lib/types"
+import type { Brand, Moment, Provenance } from "../lib/types"
 
 /** Stable DOM id for a brand card, so the Viewing chips can scroll to it. */
 const brandDomId = (name: string) => "brand-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()
+
+// One Jockey call per brand, against a ~2 req/min beta limit.
+const MAX_LIVE_BRANDS = 2
 
 export function AnalyzePanel() {
   const {
@@ -47,26 +58,40 @@ export function AnalyzePanel() {
 
   const [status, setStatus] = useState("")
   const [busy, setBusy] = useState(false)
-  const [fromCache, setFromCache] = useState(false)
+  const [prov, setProv] = useState<Provenance | null>(null)
+  // A live run in demo mode replaces the pre-baked scope view with its result.
+  const [liveRun, setLiveRun] = useState(false)
 
   const ready = storeStatus === "ready"
   const demoView = mode === "demo"
-  const showCacheHint = mode === "demo" && demoCached
 
   // Demo = explore the pre-baked scope filtered to the chosen brands; BYO = the
   // generated `inventory`. Legibility/econ sources follow the same split.
-  const displayBrands = demoView
-    ? scopeInventory.filter((b) => viewBrands.includes(b.name))
-    : inventory
+  // Once a live run completes in demo mode we show its result instead, so the
+  // "Run live" button visibly replaces the cached numbers.
+  const displayBrands =
+    demoView && !liveRun ? scopeInventory.filter((b) => viewBrands.includes(b.name)) : inventory
+
+  // Which brands a run applies to: the demo surface drives off the brands being
+  // viewed (BrandExplorerPanel), BYO off the discover selection.
+  //
+  // Capped either way: analyze fans out one Jockey call per brand and the beta
+  // allows ~2 requests/minute, so running the full viewed set (often 5+) is a
+  // guaranteed 429 storm. The backoff recovers, but it turns a demo into a
+  // three-minute wait.
+  const runBrands = (demoView ? viewBrands : selectedBrands.filter(Boolean)).slice(
+    0,
+    MAX_LIVE_BRANDS,
+  )
+  const cappedFrom = demoView ? viewBrands.length : selectedBrands.filter(Boolean).length
   const legReport = demoView ? scopeLegibility : legibility
 
   const onAnalyze = async (opts: { live?: boolean } = {}) => {
-    const names = selectedBrands.filter(Boolean)
+    const names = runBrands
     if (!names.length || !activeStore) return
+    if (opts.live) setLiveRun(true)
     setBusy(true)
-    setStatus(
-      `Analyzing ${names.length} brand${names.length > 1 ? "s" : ""}${opts.live ? " (live)" : ""}…`,
-    )
+    setStatus(`Analyzing ${names.length} brand${names.length > 1 ? "s" : ""}…`)
     setInventory(null)
     try {
       const ctx: StoreCtx = {
@@ -79,7 +104,7 @@ export function AnalyzePanel() {
       setSessionId(data.session_id ?? sessionId)
       const brands = data.inventory?.brands || []
       setInventory(brands)
-      setFromCache(showCacheHint && !opts.live)
+      setProv(data.provenance ?? null)
       // Hand the two analyzed brands to the Legibility audit (#5).
       setBrandA(names[0] || "")
       setBrandB(names[1] || "")
@@ -203,9 +228,22 @@ export function AnalyzePanel() {
           : "Analyze the selected brands and rank them by weighted media value."
       }
       actions={
-        demoView ? undefined : (
-          <Button onClick={() => onAnalyze()} disabled={!ready || busy || selectedBrands.length === 0}>
-            {busy ? "analyzing…" : `Analyze ${selectedBrands.length || ""} selected`.trim()}
+        demoView ? (
+          runBrands.length > 0 && (
+            <ReRunButton
+              onClick={() => onAnalyze({ live: true })}
+              disabled={!ready || busy}
+              busy={busy}
+              scope={
+                cappedFrom > runBrands.length
+                  ? `${runBrands.length} of ${cappedFrom} brands`
+                  : undefined
+              }
+            />
+          )
+        ) : (
+          <Button onClick={() => onAnalyze()} disabled={!ready || busy || runBrands.length === 0}>
+            {busy ? "analyzing…" : `Analyze ${runBrands.length || ""} selected`.trim()}
           </Button>
         )
       }
@@ -247,10 +285,10 @@ export function AnalyzePanel() {
       </div>
 
       <StatusLine tone={status.startsWith("ERROR") ? "error" : "muted"}>
-        {status}
-        {fromCache && status && (
-          <span className="ml-1 text-foreground-subtle">· cached demo result</span>
-        )}
+        <span className="inline-flex items-center gap-1.5">
+          {status}
+          {prov && status && !status.startsWith("ERROR") && <ProvenanceBadge prov={prov} />}
+        </span>
       </StatusLine>
 
       {ranked && ranked.length > 0 && (

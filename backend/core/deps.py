@@ -40,10 +40,18 @@ async def tl_key(
 
 
 def apply_mode(req, is_demo: bool) -> None:
-    """In demo mode, pin every analysis to the demo collection + sport.
+    """Pin the analysis to the demo collection, when the demo is locked.
+
+    Two separate conditions have to hold:
+
+    - ``is_demo`` — this request is spending the *server's* key, so it must not
+      be pointed at an arbitrary store by an anonymous caller.
+    - :data:`core.config.DEMO_MODE` — the deployment is locked to one
+      collection. With ``DEMO_MODE=False`` the caller chooses the store and we
+      leave ``req`` alone.
 
     ``req`` is any :class:`domain.sponsor.models.StoreContext`.
     """
-    if is_demo:
+    if is_demo and config.DEMO_MODE:
         req.store_id = config.DEMO_STORE_ID
         req.sport = config.DEMO_SPORT

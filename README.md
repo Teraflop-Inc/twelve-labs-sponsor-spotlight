@@ -80,7 +80,7 @@ schema-constrained `/responses` call.
 
 | Step | Section | What happens |
 |------|---------|--------------|
-| 1 | **Footage** | Select the broadcast collection (locked in demo mode). |
+| 1 | **Footage** | Select the broadcast collection and game (locked when `DEMO_MODE=True`). |
 | 2 | **Economic assumptions** | Editable CPM, reach, audience mix, and per-context weights — every $ figure recomputes live. |
 | 3 | **Brand discovery** | One Jockey call lists every sponsor in the footage; pick up to two to analyze. |
 | 4 | **Analyze brands** | Deep-analyzes the selected brands and ranks them by weighted media value, with a seekable exposure timeline per brand. |
@@ -88,20 +88,32 @@ schema-constrained `/responses` call.
 
 A sticky video player plays the broadcast inline; clicking any moment seeks to it.
 
-## Two modes
+## Two modes — `DEMO_MODE`
 
-- **Demo** — uses a server-side key (`TWELVELABS_API_KEY`) pinned to one
-  preloaded collection. No key or setup required; the collection cannot be
-  changed and the key is never exposed to the browser.
-- **Use your own key** — paste a TwelveLabs API key (stored only in your browser)
-  and bring your own collections.
+Both run on the server's `TWELVELABS_API_KEY`, which is never exposed to the
+browser. The flag controls what the app *lets you do*, not whose key it uses.
+
+- **`DEMO_MODE=True`** (default) — the sales demo. Pinned to one preloaded
+  collection with a fixed game roster; the collection picker is hidden and the
+  collection-management endpoints return `403`. Results come from committed
+  fixtures, so the whole flow renders in milliseconds.
+- **`DEMO_MODE=False`** — the working app. Every knowledge store in the account
+  is listed and selectable, you can create collections and attach assets, and
+  each game in the loaded store can be analyzed. Results are computed live
+  (~45s–3min per call).
+
+Selecting a collection other than the demo one automatically bypasses the
+fixtures — they record the store they were captured from and no longer match —
+so you always get real analysis of your own footage.
 
 ### Demo caching (instant first impression)
 
-In **Demo** mode the three Jockey steps (discover, analyze, legibility) are
-served from pre-baked JSON fixtures, so the tab renders the full flow in
-milliseconds instead of minutes. "Use your own key" mode never touches the
-cache; `?live=1` (and any brand not present in the fixture) bypasses it.
+With `DEMO_MODE=True` the three Jockey steps (discover, analyze, legibility) are
+served from pre-baked JSON fixtures, so the app renders the full flow in
+milliseconds instead of minutes. Three things bypass the cache and force a real
+run: `?live=1` (the **Re-run analysis** button), a brand absent from the fixture,
+and a request for any collection other than the one the fixtures were captured
+from.
 
 **Per-game layout (v2).** Fixtures are keyed by game, plus a whole-collection
 aggregate:
@@ -137,7 +149,7 @@ matches the on-screen numbers exactly.
 
 ```
 Browser (React + TwelveLabs design system)
-    │  fetch /api/*   (x-api-key in BYO mode, x-demo in demo mode)
+    │  fetch /api/*   (x-demo → server key)
     ▼
 FastAPI  (backend/main.py)  ── pure JSON API; stateless
     │  httpx
@@ -149,9 +161,9 @@ Jockey Agents API  (api.twelvelabs.io/v1.3/responses)
   design system (vendored under `frontend/src/tlds`, aliased to
   `@twelvelabs-io/react`). The Vite build is emitted to `backend/webapp/` and
   served by FastAPI at `/`.
-- **Backend** — FastAPI. Stateless: the active collection and the user's key
-  live in the browser and are sent with each request. All Jockey calls happen
-  server-side; the backend persists nothing.
+- **Backend** — FastAPI. Stateless: the active collection is held in the browser
+  and sent with each request. The TwelveLabs key stays server-side and is never
+  sent to the browser; the backend persists nothing.
 
 ### Offline vs. runtime
 
@@ -171,8 +183,12 @@ build_reels        → Vercel Blob    ──▶ /api/reel redirects
 
 ## API reference
 
-Base URL is the deployment root. Analysis endpoints require either
-`x-api-key: <your key>` (BYO mode) or `x-demo: 1` (locked demo mode).
+Base URL is the deployment root. Analysis endpoints require `x-demo: 1`, which
+tells the backend to use its own `TWELVELABS_API_KEY`. (`x-api-key: <key>` is
+also accepted so the API can be driven with a caller-supplied key, but the UI
+never sends one.)
+
+The four collection-management endpoints return `403` while `DEMO_MODE=True`.
 
 | Method | Path | Purpose |
 |--------|------|---------|
@@ -226,8 +242,8 @@ npm install
 npm run dev
 ```
 
-Open the Vite URL. Setting `TWELVELABS_API_KEY` enables the **Demo** tab; without
-it, use **"Use your own key"** and paste a key in the UI.
+Open the Vite URL. `TWELVELABS_API_KEY` is required — the app has no in-browser
+key entry. Add `DEMO_MODE=False` to unlock collection and game selection.
 
 `backend/.env` is only one way to supply it. Exported variables take precedence
 over the file, so any of these work equally well:
@@ -347,7 +363,8 @@ Set the environment variables below in the Vercel project.
 
 | Variable | Required | Purpose |
 |----------|----------|---------|
-| `TWELVELABS_API_KEY` | for Demo mode + offline scripts | Your TwelveLabs key. Used by `ingest_assets.py` / `capture_demo_cache.py` / `build_reels.py`, and — when set on a deployed server — by the locked Demo tab. Leave it unset to ship "Use your own key" mode only. |
+| `TWELVELABS_API_KEY` | **yes** | Your TwelveLabs key. Used by the offline scripts and by the running app for every Jockey call. Without it the app cannot analyze anything — there is no in-browser key entry. |
+| `DEMO_MODE` | optional | `True` (default) locks the app to one collection and serves committed fixtures. `False` lists every collection in the account, allows creating collections and attaching assets, and analyzes live. |
 | `SPONSOR_SPOTLIGHT_STORE_ID` | optional | Knowledge-store id the demo is pinned to. Defaults to the bundled PL Classics collection. |
 | `SPONSOR_SPOTLIGHT_STORE_NAME` | optional | Display name for the demo collection. |
 | `SPONSOR_SPOTLIGHT_SPORT` | optional | Sport profile for the demo collection (default `soccer`). |

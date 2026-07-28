@@ -18,7 +18,6 @@ export function FootagePanel() {
   const {
     mode,
     demo,
-    hasKey,
     keyTick,
     activeStore,
     setActiveStore,
@@ -42,9 +41,13 @@ export function FootagePanel() {
 
   useEffect(() => setNewSport(defaultSport), [defaultSport])
 
+  // Unlocked (DEMO_MODE=False) runs on the server key, so the picker works
+  // without the user supplying one.
+  const canPickStore = mode === "byok"
+
   const loadStores = useCallback(
     async (selectId?: string) => {
-      if (!hasKey) {
+      if (!canPickStore) {
         setStores([])
         return
       }
@@ -58,13 +61,13 @@ export function FootagePanel() {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [hasKey],
+    [canPickStore],
   )
 
   useEffect(() => {
     void loadStores(activeStore?.id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [keyTick])
+  }, [keyTick, canPickStore])
 
   const onCreate = async () => {
     if (!newName.trim()) return
@@ -189,9 +192,9 @@ export function FootagePanel() {
       {/* Collection picker */}
       <div className="text-[11px] uppercase tracking-wide text-foreground-subtle">Collection</div>
       <div className="mt-1 flex flex-wrap items-center gap-2">
-        <Select value={picked} onValueChange={setPicked} disabled={!hasKey || stores.length === 0}>
+        <Select value={picked} onValueChange={setPicked} disabled={!canPickStore || stores.length === 0}>
           <SelectTrigger size="medium" className="min-w-[18rem] flex-1">
-            <SelectValue placeholder={hasKey ? "Select a collection" : "Add your API key first"} />
+            <SelectValue placeholder={stores.length ? "Select a collection" : "No collections found"} />
           </SelectTrigger>
           <SelectContent>
             {stores.map((s) => (
@@ -201,10 +204,10 @@ export function FootagePanel() {
             ))}
           </SelectContent>
         </Select>
-        <Button onClick={onLoad} disabled={!hasKey || !picked || busy === "load"}>
+        <Button onClick={onLoad} disabled={!canPickStore || !picked || busy === "load"}>
           {busy === "load" ? "loading…" : "Load"}
         </Button>
-        <Button variant="outlined-gray" onClick={() => setCreating((v) => !v)} disabled={!hasKey}>
+        <Button variant="outlined-gray" onClick={() => setCreating((v) => !v)} disabled={!canPickStore}>
           + New
         </Button>
       </div>
@@ -263,7 +266,7 @@ export function FootagePanel() {
             placeholder="asset IDs, comma- or newline-separated"
             className="min-w-[18rem] flex-1 font-tl-mono"
           />
-          <Button onClick={onAttach} disabled={!hasKey || !activeStore || !assetIds.trim() || busy === "attach"}>
+          <Button onClick={onAttach} disabled={!canPickStore || !activeStore || !assetIds.trim() || busy === "attach"}>
             {busy === "attach" ? "attaching…" : "Attach & index"}
           </Button>
         </div>

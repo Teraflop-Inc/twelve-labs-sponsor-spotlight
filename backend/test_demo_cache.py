@@ -319,3 +319,56 @@ def test_malformed_roster_override_falls_back_to_bundled(monkeypatch, bad):
     finally:
         monkeypatch.delenv(games.GAMES_ENV_VAR)
         games.reload_games()
+
+
+# --- DEMO_MODE: locked demo vs. open collection selection -----------------------
+
+
+@pytest.fixture
+def unlocked(monkeypatch):
+    """Run with DEMO_MODE=False — collections and games become selectable."""
+    monkeypatch.setattr(config, "DEMO_MODE", False)
+
+
+def test_demo_info_reports_lock_state(client):
+    assert client.get("/api/demo/info").json()["demo_mode"] is True
+
+
+def test_demo_info_reports_unlocked(client, unlocked):
+    assert client.get("/api/demo/info").json()["demo_mode"] is False
+
+
+def test_collections_are_locked_by_default(client):
+    r = client.get("/api/knowledge-stores", headers=DEMO)
+    assert r.status_code == 403
+    assert "DEMO_MODE=False" in r.json()["detail"]
+
+
+def test_collections_selectable_when_unlocked(client, unlocked, monkeypatch):
+    async def fake_list(*_a, **_k):
+        return [{"_id": "ks_mine", "name": "My Footage 1700000000", "item_count": 3}]
+
+    monkeypatch.setattr(jockey, "list_knowledge_stores", fake_list)
+    r = client.get("/api/knowledge-stores", headers=DEMO)
+    assert r.status_code == 200
+    assert r.json()["stores"] == [{"id": "ks_mine", "name": "My Footage", "item_count": 3}]
+
+
+def test_locked_demo_pins_requests_to_the_demo_store(client, spy):
+    # store_id in the body is ignored while locked.
+    r = client.post("/api/jockey/discover?live=1", json=BODY, headers=DEMO)
+    assert r.json()["provenance"]["store_id"] == config.DEMO_STORE_ID
+
+
+def test_unlocked_mode_honours_the_requested_store(client, spy, unlocked):
+    body = {**BODY, "store_id": "ks_my_own_collection"}
+    r = client.post("/api/jockey/discover?live=1", json=body, headers=DEMO)
+    assert r.json()["provenance"]["store_id"] == "ks_my_own_collection"
+
+
+def test_unlocked_mode_does_not_serve_demo_fixtures_for_another_store(client, spy, unlocked):
+    # The store binding still applies: our fixtures describe the demo collection.
+    body = {**BODY, "store_id": "ks_my_own_collection"}
+    r = client.post("/api/jockey/discover", json=body, headers=DEMO)
+    assert r.json()["provenance"]["source"] == "jockey_live"
+    assert spy["n"] == 1
