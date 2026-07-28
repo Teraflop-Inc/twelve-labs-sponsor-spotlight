@@ -1,42 +1,27 @@
 {
   "emirates": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/emirates-KLrQOUIrXth5yu8DlKN2TjznN9PJGq.mp4",
-    "duration_sec": 29.1,
-    "clips": 4
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/emirates-ERSyr7jbxBtXvkWsxlF5dWm5cIQGVq.mp4",
+    "duration_sec": 60.1,
+    "clips": 3
   },
   "aia": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/aia-MdRMWzQbVqdCSfdzrR4DQC8DR7K13K.mp4",
-    "duration_sec": 28.2,
-    "clips": 5
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/aia-DPQeJw3jCUVPGiXc550wmadOiZe0B4.mp4",
+    "duration_sec": 60.3,
+    "clips": 8
   },
   "nike": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/nike-kyt6wn9O0YEhgCvy0SdjOcxcOLPdeE.mp4",
-    "duration_sec": 27.1,
-    "clips": 4
-  },
-  "126 live premier league games": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/126-live-premier-league-games-KrWqtxYsOhVVNWUsBE8gIEFrdzmq3P.mp4",
-    "duration_sec": 18.2,
-    "clips": 6
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/nike-UJF7fp5OTypGB4g1kLj7J44zIlSgNz.mp4",
+    "duration_sec": 53.2,
+    "clips": 8
   },
   "12bet": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/12bet-HE1D3VMAZRDm6H9rFLLHhhdMBS6W20.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/12bet-nhkUZvLhDFWbRO0yZ18QfJQqz8fIXG.mp4",
+    "duration_sec": 48.0,
+    "clips": 1
   },
   "acronis": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/acronis-MQK3ehpfWzFtosI7q7S9R1zjBJPwn5.mp4",
-    "duration_sec": 16.1,
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/acronis-Qiflt3gaTkyJzVr8SLHInKl8sfO5Lm.mp4",
+    "duration_sec": 22.1,
     "clips": 2
-  },
-  "arsenal": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/arsenal-SgwAYKTC4GSk9wsnZcr4WtjXwPLi3A.mp4",
-    "duration_sec": 24.1,
-    "clips": 3
-  },
-  "arsenal.com/membership": {
-    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/arsenal-com-membership-s3MiUYa2MJ8keA0BG3izVutuW1DtxP.mp4",
-    "duration_sec": 8.0,
-    "clips": 1
   }
 }

@@ -1,6 +1,6 @@
 """Offline highlight-reel builder → Vercel Blob.
 
-Builds a ~30s MP4 of a brand's top moments per game from the committed analyze
+Builds a ~60s MP4 of a brand's top moments per game from the committed analyze
 fixtures, then uploads it to Vercel Blob and records the URL in
 ``demo_fixtures/<game_id>/reels.json`` (see ``reels.py``). We never commit the
 binaries or write them at runtime — Vercel's FS is read-only.
@@ -18,7 +18,8 @@ Usage::
         uv run python build_reels.py
 
 Env knobs: SPONSOR_SPOTLIGHT_REEL_BRANDS, SPONSOR_SPOTLIGHT_REEL_GAMES,
-SPONSOR_SPOTLIGHT_REEL_MAXSECS (default 30), SPONSOR_SPOTLIGHT_REEL_PAD (default 1).
+SPONSOR_SPOTLIGHT_REEL_MAXSECS (default 60), SPONSOR_SPOTLIGHT_REEL_PAD (default 1),
+SPONSOR_SPOTLIGHT_REEL_MAXCLIP (default 0 = no per-clip cap / no truncation).
 Requires FFmpeg on PATH (v8.0.1 verified).
 """
 from __future__ import annotations
@@ -40,9 +41,11 @@ import jockey
 import reels
 import weights as ctx_weights
 
-MAX_SECS = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_MAXSECS", "30"))
+MAX_SECS = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_MAXSECS", "60"))
 PAD = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_PAD", "1"))
-MAX_CLIP = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_MAXCLIP", "8"))  # hard cap per clip
+# Per-clip hard cap. 0 (default) = **no cap** → every picked moment plays in
+# full (goal celebrations are never truncated). Set a positive value to clip.
+MAX_CLIP = float(os.environ.get("SPONSOR_SPOTLIGHT_REEL_MAXCLIP", "0"))
 REEL_TOPN = int(os.environ.get("SPONSOR_SPOTLIGHT_REEL_TOPN", "8"))
 BLOB_ENDPOINT = "https://blob.vercel-storage.com"
 
@@ -87,7 +90,7 @@ def _rank_moments(brand_entry: dict[str, Any]) -> list[dict[str, Any]]:
     goal board-flashes are short (a 2s goal would lose to a 29s background board
     under weight × duration), so ranking on duration would bury exactly the
     moments the reel exists to show. Weight-first guarantees every goal moment
-    makes the ~30s reel before any idle exposure fills the leftover budget.
+    makes the reel before any idle exposure fills the leftover budget.
     """
     apps = []
     for m in brand_entry.get("appearances") or []:
@@ -102,10 +105,11 @@ def _rank_moments(brand_entry: dict[str, Any]) -> list[dict[str, Any]]:
     apps.sort(key=lambda m: (m["_w"], m["_tie"]), reverse=True)
     picked, total = [], 0.0
     for m in apps:
-        # Final clip length = moment ± PAD, hard-capped at MAX_CLIP. This is the
-        # single source of truth for both the budget and the actual FFmpeg cut,
-        # so long LED-board moments can't blow the reel past MAX_SECS.
-        m["_clip"] = min(m["_dur"] + 2 * PAD, MAX_CLIP)
+        # Final clip length = full moment ± PAD (no truncation by default so
+        # goal celebrations play in full). MAX_CLIP>0 re-enables a hard cap.
+        # This is the single source of truth for both the budget and the cut.
+        clip = m["_dur"] + 2 * PAD
+        m["_clip"] = min(clip, MAX_CLIP) if MAX_CLIP > 0 else clip
         if total + m["_clip"] > MAX_SECS and picked:
             break
         picked.append(m)

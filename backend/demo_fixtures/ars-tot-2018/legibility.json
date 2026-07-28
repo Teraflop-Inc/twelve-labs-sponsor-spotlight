@@ -10,59 +10,10 @@
             "contrast": 8,
             "examples": [
               {
-                "end_sec": 102,
-                "note": "Arsenal crest on Unai Emery jacket is visible but modest in size; readable only in the bench close-up.",
-                "start_sec": 97,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
-              }
-            ],
-            "issues": "Observed as Arsenal crest/jacket branding in the pregame bench close-up rather than a large standalone sponsor execution. Legibility drops outside close framing.",
-            "motion_blur": 9,
-            "overall_score": 7.5,
-            "position": 7,
-            "size": 6,
-            "suggestions": "If this crest/jacket branding is being counted as Arsenal brand presence, increase scale on outerwear or place staff in mixed zones/interview positions for longer dwell. Current exposure depends on editorial close-ups."
-          },
-          {
-            "asset_type": "broadcast_overlay",
-            "camera_angle": 10,
-            "contrast": 9,
-            "examples": [
-              {
-                "end_sec": 1001,
-                "note": "Only the abbreviated team label/scorebug is visible; brand impact is functional rather than promotional.",
-                "start_sec": 998,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
-              }
-            ],
-            "issues": "Arsenal appears as team identification in the scorebug/graphics, not as a sponsor asset. Small but crisp.",
-            "motion_blur": 10,
-            "overall_score": 8.5,
-            "position": 9,
-            "size": 5,
-            "suggestions": "No creative fix needed for readability. If the objective is commercial branding rather than editorial team ID, pair team wordmark with larger branded inserts elsewhere."
-          }
-        ],
-        "name": "Arsenal",
-        "summary": "Arsenal is visible mainly as club branding rather than paid sponsor creative: pregame staff apparel and broadcast team-identification graphics. Readability is good in close-ups and overlays, but exposure volume is limited."
-      },
-      {
-        "assets": [],
-        "name": "Arsenal.com/membership",
-        "summary": "I did not find a metadata-grounded or clearly verified example of Arsenal.com/membership in the inspected windows. A vision pass suggested possible perimeter presence, but I would not treat that as confirmed without a wider manual scan."
-      },
-      {
-        "assets": [
-          {
-            "asset_type": "jersey_patch",
-            "camera_angle": 8,
-            "contrast": 8,
-            "examples": [
-              {
                 "end_sec": 6185,
                 "note": "Back-of-shirt shot of Harry Kane after full time offers no AIA exposure; sponsor disappears when editorial favors reverse angles.",
                 "start_sec": 6181,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+                "video": "Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4"
               }
             ],
             "issues": "AIA is naturally strong on Tottenham shirt fronts, but visibility is highly angle-dependent. Reverse-angle walk-offs and wider live-play frames reduce legibility fast.",
@@ -92,7 +43,7 @@
                 "end_sec": 1001,
                 "note": "Emery bench close-up shows Emirates branding in a small apparel execution; readable but not dominant.",
                 "start_sec": 983,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+                "video": "Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4"
               }
             ],
             "issues": "On Arsenal apparel/shirt-front contexts, Emirates benefits from strong white-on-red contrast, but size still depends on how tight the director frames the subject.",
@@ -111,7 +62,7 @@
                 "end_sec": 1048,
                 "note": "'Emirates - Fly Better to Dubai' is readable in the wide live-play pan, but copy density limits instant recognition compared with a shorter logo-only execution.",
                 "start_sec": 1011,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+                "video": "Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4"
               }
             ],
             "issues": "Good luminance and field-side position, but the long tagline execution loses punch in panning wide shots. Exposure quality depends on board angle and camera motion.",
@@ -126,11 +77,6 @@
         "summary": "Emirates is one of the strongest brands in this broadcast, appearing both on Arsenal apparel/shirt-front contexts and on perimeter LED. Its main weakness is not contrast but copy length on LED boards during moving wide shots."
       },
       {
-        "assets": [],
-        "name": "126 Live Premier League Games",
-        "summary": "Not confidently verified in metadata-backed evidence. A vision pass suggested perimeter-board exposure, but I cannot confirm it robustly enough to score as an observed asset."
-      },
-      {
         "assets": [
           {
             "asset_type": "courtside_led",
@@ -141,13 +87,13 @@
                 "end_sec": 486,
                 "note": "Visible during live-play wide shot, but fast ball movement and camera pan soften edge detail; Chinese-character variant is less immediately legible for some audiences.",
                 "start_sec": 433,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+                "video": "Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4"
               },
               {
                 "end_sec": 4363,
                 "note": "At 66:05 match clock, the board is visible again, but only briefly before play resumes and the eye follows the action.",
                 "start_sec": 4343,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+                "video": "Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4"
               }
             ],
             "issues": "Bright, high-contrast board with strong sideline position, but exposure is mostly in wide live-play frames where motion blur and short dwell reduce readability. Alternate-language/character executions can further slow recognition.",
@@ -172,7 +118,7 @@
                 "end_sec": 1072,
                 "note": "On Tottenham players, the swoosh is tiny and becomes effectively unreadable once the camera widens or pans.",
                 "start_sec": 1069,
-                "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+                "video": "Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4"
               }
             ],
             "issues": "Nike appears as a small kit manufacturer logo on Tottenham kit. High familiarity helps recognition, but physical size is the limiting factor, especially in live play.",
@@ -184,9 +130,9 @@
           }
         ],
         "name": "Nike",
-        "summary": "Nike is present as Tottenham’s kit manufacturer mark. Brand recognition is helped by the iconic shape, but the logo is simply too small to perform strongly except in close-ups."
+        "summary": "Nike is present as Tottenham\u2019s kit manufacturer mark. Brand recognition is helped by the iconic shape, but the logo is simply too small to perform strongly except in close-ups."
       }
     ]
   },
-  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":102,\"note\":\"Arsenal crest on Unai Emery jacket is visible but modest in size; readable only in the bench close-up.\",\"start_sec\":97,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Observed as Arsenal crest/jacket branding in the pregame bench close-up rather than a large standalone sponsor execution. Legibility drops outside close framing.\",\"motion_blur\":9,\"overall_score\":7.5,\"position\":7,\"size\":6,\"suggestions\":\"If this crest/jacket branding is being counted as Arsenal brand presence, increase scale on outerwear or place staff in mixed zones/interview positions for longer dwell. Current exposure depends on editorial close-ups.\"},{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":1001,\"note\":\"Only the abbreviated team label/scorebug is visible; brand impact is functional rather than promotional.\",\"start_sec\":998,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Arsenal appears as team identification in the scorebug/graphics, not as a sponsor asset. Small but crisp.\",\"motion_blur\":10,\"overall_score\":8.5,\"position\":9,\"size\":5,\"suggestions\":\"No creative fix needed for readability. If the objective is commercial branding rather than editorial team ID, pair team wordmark with larger branded inserts elsewhere.\"}],\"name\":\"Arsenal\",\"summary\":\"Arsenal is visible mainly as club branding rather than paid sponsor creative: pregame staff apparel and broadcast team-identification graphics. Readability is good in close-ups and overlays, but exposure volume is limited.\"},{\"assets\":[],\"name\":\"Arsenal.com/membership\",\"summary\":\"I did not find a metadata-grounded or clearly verified example of Arsenal.com/membership in the inspected windows. A vision pass suggested possible perimeter presence, but I would not treat that as confirmed without a wider manual scan.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":6185,\"note\":\"Back-of-shirt shot of Harry Kane after full time offers no AIA exposure; sponsor disappears when editorial favors reverse angles.\",\"start_sec\":6181,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"AIA is naturally strong on Tottenham shirt fronts, but visibility is highly angle-dependent. Reverse-angle walk-offs and wider live-play frames reduce legibility fast.\",\"motion_blur\":8,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Maintain high-contrast red-on-white lockup, but maximize front-facing exposure in player walk-ins, set pieces, and celebration/reaction shots. Back-view editorial moments waste the asset.\"}],\"name\":\"AIA\",\"summary\":\"AIA appears on Tottenham shirt fronts. The creative is strong and clean, but actual legibility varies with whether players are front-facing and how tight the camera is.\"},{\"assets\":[],\"name\":\"Acronis\",\"summary\":\"Not confidently verified in the metadata-backed clips I inspected. One vision pass suggested perimeter-board presence, but I would not score it as confirmed without additional manual review.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":1001,\"note\":\"Emery bench close-up shows Emirates branding in a small apparel execution; readable but not dominant.\",\"start_sec\":983,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"On Arsenal apparel/shirt-front contexts, Emirates benefits from strong white-on-red contrast, but size still depends on how tight the director frames the subject.\",\"motion_blur\":9,\"overall_score\":8,\"position\":8,\"size\":7,\"suggestions\":\"Already strong creatively. To improve secondary shots, add more front-on editorial opportunities during walkouts, celebrations, and bench reactions.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":1048,\"note\":\"'Emirates - Fly Better to Dubai' is readable in the wide live-play pan, but copy density limits instant recognition compared with a shorter logo-only execution.\",\"start_sec\":1011,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Good luminance and field-side position, but the long tagline execution loses punch in panning wide shots. Exposure quality depends on board angle and camera motion.\",\"motion_blur\":7,\"overall_score\":7.5,\"position\":8,\"size\":6,\"suggestions\":\"For live-play boards, shorten copy or increase logo-to-copy ratio. A simpler 'Emirates' or 'Fly Better' lockup with more whitespace would hold better during pans.\"}],\"name\":\"Emirates\",\"summary\":\"Emirates is one of the strongest brands in this broadcast, appearing both on Arsenal apparel/shirt-front contexts and on perimeter LED. Its main weakness is not contrast but copy length on LED boards during moving wide shots.\"},{\"assets\":[],\"name\":\"126 Live Premier League Games\",\"summary\":\"Not confidently verified in metadata-backed evidence. A vision pass suggested perimeter-board exposure, but I cannot confirm it robustly enough to score as an observed asset.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":9,\"examples\":[{\"end_sec\":486,\"note\":\"Visible during live-play wide shot, but fast ball movement and camera pan soften edge detail; Chinese-character variant is less immediately legible for some audiences.\",\"start_sec\":433,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"},{\"end_sec\":4363,\"note\":\"At 66:05 match clock, the board is visible again, but only briefly before play resumes and the eye follows the action.\",\"start_sec\":4343,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Bright, high-contrast board with strong sideline position, but exposure is mostly in wide live-play frames where motion blur and short dwell reduce readability. Alternate-language/character executions can further slow recognition.\",\"motion_blur\":5,\"overall_score\":7,\"position\":8,\"size\":6,\"suggestions\":\"Keep the bright palette, but simplify copy and increase static hold time during stoppages or replays. If using character-based creative, add a Latin-script companion mark/logo for faster recognition in motion.\"}],\"name\":\"12BET\",\"summary\":\"12BET is clearly present on perimeter LED boards and benefits from strong brightness and placement. Its main challenge is wide-shot motion and short dwell time rather than contrast.\"},{\"assets\":[{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":6,\"examples\":[{\"end_sec\":1072,\"note\":\"On Tottenham players, the swoosh is tiny and becomes effectively unreadable once the camera widens or pans.\",\"start_sec\":1069,\"video\":\"Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Nike appears as a small kit manufacturer logo on Tottenham kit. High familiarity helps recognition, but physical size is the limiting factor, especially in live play.\",\"motion_blur\":8,\"overall_score\":6,\"position\":7,\"size\":3,\"suggestions\":\"Manufacturer marks are inherently small; best fix is editorial rather than creative. Seek more chest-up player close-ups, tunnel shots, and set-piece holds where the swoosh sits square to camera.\"}],\"name\":\"Nike\",\"summary\":\"Nike is present as Tottenham’s kit manufacturer mark. Brand recognition is helped by the iconic shape, but the logo is simply too small to perform strongly except in close-ups.\"}]}"
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":102,\"note\":\"Arsenal crest on Unai Emery jacket is visible but modest in size; readable only in the bench close-up.\",\"start_sec\":97,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Observed as Arsenal crest/jacket branding in the pregame bench close-up rather than a large standalone sponsor execution. Legibility drops outside close framing.\",\"motion_blur\":9,\"overall_score\":7.5,\"position\":7,\"size\":6,\"suggestions\":\"If this crest/jacket branding is being counted as Arsenal brand presence, increase scale on outerwear or place staff in mixed zones/interview positions for longer dwell. Current exposure depends on editorial close-ups.\"},{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":1001,\"note\":\"Only the abbreviated team label/scorebug is visible; brand impact is functional rather than promotional.\",\"start_sec\":998,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Arsenal appears as team identification in the scorebug/graphics, not as a sponsor asset. Small but crisp.\",\"motion_blur\":10,\"overall_score\":8.5,\"position\":9,\"size\":5,\"suggestions\":\"No creative fix needed for readability. If the objective is commercial branding rather than editorial team ID, pair team wordmark with larger branded inserts elsewhere.\"}],\"name\":\"Arsenal\",\"summary\":\"Arsenal is visible mainly as club branding rather than paid sponsor creative: pregame staff apparel and broadcast team-identification graphics. Readability is good in close-ups and overlays, but exposure volume is limited.\"},{\"assets\":[],\"name\":\"Arsenal.com/membership\",\"summary\":\"I did not find a metadata-grounded or clearly verified example of Arsenal.com/membership in the inspected windows. A vision pass suggested possible perimeter presence, but I would not treat that as confirmed without a wider manual scan.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":6185,\"note\":\"Back-of-shirt shot of Harry Kane after full time offers no AIA exposure; sponsor disappears when editorial favors reverse angles.\",\"start_sec\":6181,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"AIA is naturally strong on Tottenham shirt fronts, but visibility is highly angle-dependent. Reverse-angle walk-offs and wider live-play frames reduce legibility fast.\",\"motion_blur\":8,\"overall_score\":7,\"position\":7,\"size\":5,\"suggestions\":\"Maintain high-contrast red-on-white lockup, but maximize front-facing exposure in player walk-ins, set pieces, and celebration/reaction shots. Back-view editorial moments waste the asset.\"}],\"name\":\"AIA\",\"summary\":\"AIA appears on Tottenham shirt fronts. The creative is strong and clean, but actual legibility varies with whether players are front-facing and how tight the camera is.\"},{\"assets\":[],\"name\":\"Acronis\",\"summary\":\"Not confidently verified in the metadata-backed clips I inspected. One vision pass suggested perimeter-board presence, but I would not score it as confirmed without additional manual review.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":1001,\"note\":\"Emery bench close-up shows Emirates branding in a small apparel execution; readable but not dominant.\",\"start_sec\":983,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"On Arsenal apparel/shirt-front contexts, Emirates benefits from strong white-on-red contrast, but size still depends on how tight the director frames the subject.\",\"motion_blur\":9,\"overall_score\":8,\"position\":8,\"size\":7,\"suggestions\":\"Already strong creatively. To improve secondary shots, add more front-on editorial opportunities during walkouts, celebrations, and bench reactions.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":8,\"examples\":[{\"end_sec\":1048,\"note\":\"'Emirates - Fly Better to Dubai' is readable in the wide live-play pan, but copy density limits instant recognition compared with a shorter logo-only execution.\",\"start_sec\":1011,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Good luminance and field-side position, but the long tagline execution loses punch in panning wide shots. Exposure quality depends on board angle and camera motion.\",\"motion_blur\":7,\"overall_score\":7.5,\"position\":8,\"size\":6,\"suggestions\":\"For live-play boards, shorten copy or increase logo-to-copy ratio. A simpler 'Emirates' or 'Fly Better' lockup with more whitespace would hold better during pans.\"}],\"name\":\"Emirates\",\"summary\":\"Emirates is one of the strongest brands in this broadcast, appearing both on Arsenal apparel/shirt-front contexts and on perimeter LED. Its main weakness is not contrast but copy length on LED boards during moving wide shots.\"},{\"assets\":[],\"name\":\"126 Live Premier League Games\",\"summary\":\"Not confidently verified in metadata-backed evidence. A vision pass suggested perimeter-board exposure, but I cannot confirm it robustly enough to score as an observed asset.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":9,\"examples\":[{\"end_sec\":486,\"note\":\"Visible during live-play wide shot, but fast ball movement and camera pan soften edge detail; Chinese-character variant is less immediately legible for some audiences.\",\"start_sec\":433,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"},{\"end_sec\":4363,\"note\":\"At 66:05 match clock, the board is visible again, but only briefly before play resumes and the eye follows the action.\",\"start_sec\":4343,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Bright, high-contrast board with strong sideline position, but exposure is mostly in wide live-play frames where motion blur and short dwell reduce readability. Alternate-language/character executions can further slow recognition.\",\"motion_blur\":5,\"overall_score\":7,\"position\":8,\"size\":6,\"suggestions\":\"Keep the bright palette, but simplify copy and increase static hold time during stoppages or replays. If using character-based creative, add a Latin-script companion mark/logo for faster recognition in motion.\"}],\"name\":\"12BET\",\"summary\":\"12BET is clearly present on perimeter LED boards and benefits from strong brightness and placement. Its main challenge is wide-shot motion and short dwell time rather than contrast.\"},{\"assets\":[{\"asset_type\":\"other\",\"camera_angle\":8,\"contrast\":6,\"examples\":[{\"end_sec\":1072,\"note\":\"On Tottenham players, the swoosh is tiny and becomes effectively unreadable once the camera widens or pans.\",\"start_sec\":1069,\"video\":\"Premier League Classics\uff1a Arsenal v. Tottenham Hotspur \uff5c FULL MATCH \uff5c 12\u29f82\u29f82018 \uff5c NBC Sports [D29dNXViqJw].mp4\"}],\"issues\":\"Nike appears as a small kit manufacturer logo on Tottenham kit. High familiarity helps recognition, but physical size is the limiting factor, especially in live play.\",\"motion_blur\":8,\"overall_score\":6,\"position\":7,\"size\":3,\"suggestions\":\"Manufacturer marks are inherently small; best fix is editorial rather than creative. Seek more chest-up player close-ups, tunnel shots, and set-piece holds where the swoosh sits square to camera.\"}],\"name\":\"Nike\",\"summary\":\"Nike is present as Tottenham\u2019s kit manufacturer mark. Brand recognition is helped by the iconic shape, but the logo is simply too small to perform strongly except in close-ups.\"}]}"
 }
