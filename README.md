@@ -348,8 +348,12 @@ The frontend builds into `backend/webapp/`, which FastAPI serves at `/`. That
 directory is **gitignored** — Vercel runs the build itself on every deploy:
 
 ```json
-"buildCommand": "cd frontend && npm ci && npm run build"
+"buildCommand": "cd frontend && npm ci && npm run build",
+"outputDirectory": "backend/webapp"
 ```
+
+`outputDirectory` matters: with a `buildCommand` set, Vercel looks for `public/`
+by default and fails the deploy even though the build succeeded.
 
 So a frontend change ships by pushing the source; there is no bundle to rebuild
 and commit. For a local production check, build it once by hand:
