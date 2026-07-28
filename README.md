@@ -27,7 +27,7 @@ A sticky video player plays the broadcast inline; clicking any moment seeks to i
 
 ## Two modes
 
-- **Demo** — uses a server-side key (`SPONSOR_SPOTLIGHT_TL_KEY`) pinned to one
+- **Demo** — uses a server-side key (`TWELVELABS_API_KEY`) pinned to one
   preloaded collection. No key or setup required; the collection cannot be
   changed and the key is never exposed to the browser.
 - **Use your own key** — paste a TwelveLabs API key (stored only in your browser)
@@ -63,7 +63,7 @@ rate-limited (~2 req/min):
 
 ```bash
 cd backend
-SPONSOR_SPOTLIGHT_TL_KEY=tlk_... uv run python capture_demo_cache.py
+TWELVELABS_API_KEY=tlk_... uv run python capture_demo_cache.py
 # knobs: SPONSOR_SPOTLIGHT_CAPTURE_BRANDS=A,B  CAPTURE_GAMES=aggregate,mci-liv-2019
 #        CAPTURE_TOP_N=8  CAPTURE_DELAY=30  CAPTURE_FORCE=1
 # then commit backend/demo_fixtures/<scope>/*.json
@@ -76,7 +76,7 @@ to Vercel Blob, and records the URL in `demo_fixtures/<game_id>/reels.json`.
 
 ```bash
 cd backend
-SPONSOR_SPOTLIGHT_TL_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
+TWELVELABS_API_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
     uv run python build_reels.py
 # commit the updated demo_fixtures/<game_id>/reels.json
 ```
@@ -133,7 +133,7 @@ npm run dev
 Open the Vite URL. To enable the **Demo** tab, start the backend with a key:
 
 ```bash
-SPONSOR_SPOTLIGHT_TL_KEY=tlk_... uv run uvicorn main:app --port 8001
+TWELVELABS_API_KEY=tlk_... uv run uvicorn main:app --port 8001
 ```
 
 Without it, use the **"Use your own key"** tab and paste a key in the UI.
@@ -163,12 +163,15 @@ Set the environment variables below in the Vercel project.
 
 | Variable | Required | Purpose |
 |----------|----------|---------|
-| `SPONSOR_SPOTLIGHT_TL_KEY` | for Demo mode | Server-side TwelveLabs key used by the locked demo tab. If unset, only "Use your own key" is available. |
+| `TWELVELABS_API_KEY` | for Demo mode + offline scripts | Your TwelveLabs key. Used by `ingest_assets.py` / `capture_demo_cache.py` / `build_reels.py`, and — when set on a deployed server — by the locked Demo tab. Leave it unset to ship "Use your own key" mode only. |
 | `SPONSOR_SPOTLIGHT_STORE_ID` | optional | Knowledge-store id the demo is pinned to. Defaults to the bundled PL Classics collection. |
 | `SPONSOR_SPOTLIGHT_STORE_NAME` | optional | Display name for the demo collection. |
 | `SPONSOR_SPOTLIGHT_SPORT` | optional | Sport profile for the demo collection (default `soccer`). |
 | `SPONSOR_SPOTLIGHT_DEMO_BRANDS` | optional | Comma-separated canonical brands the demo tab pre-bakes + auto-runs (default `Etihad,Emirates`). Must match the captured `demo_fixtures/`. |
-| `TWELVELABS_API_KEY` | CLI only | Used only by `backend/ingest_assets.py` for offline ingestion. **Not** used by the web app — there is no server-key fallback for browser requests, so a stray value can never become a shared key. |
+
+> **Deploying:** setting `TWELVELABS_API_KEY` on a public deployment means every
+> visitor's Demo-tab request spends that key. The demo is served from committed
+> fixtures so this is cheap today, but see the live-run notes before changing that.
 
 ## Notes
 
@@ -184,16 +187,36 @@ Set the environment variables below in the Vercel project.
 
 ```
 sponsor-spotlight/
-├── api/index.py          # Vercel entrypoint (re-exports the FastAPI app)
-├── vercel.json           # single-function routing + bundling
-├── requirements.txt      # Vercel Python deps
+├── api/index.py            # Vercel entrypoint (re-exports the FastAPI app)
+├── vercel.json             # single-function routing + bundling
+├── requirements.txt        # Vercel Python deps
 ├── backend/
-│   ├── main.py           # FastAPI app: endpoints, schemas, demo mode
-│   ├── jockey.py         # TwelveLabs Jockey API client (retry/backoff)
-│   ├── sports.py         # per-sport prompt/enrichment profiles
-│   ├── ingest_assets.py  # offline ingestion CLI
-│   └── webapp/           # built frontend (served at /)
+│   ├── main.py             # app factory — start here
+│   ├── jockey.py           # TwelveLabs Jockey API client (retry/backoff)
+│   ├── core/
+│   │   ├── config.py       # every env var the app reads
+│   │   └── deps.py         # key resolution + demo-mode pinning
+│   ├── domain/sponsor/
+│   │   ├── schemas.py      # ← the JSON schemas sent to /responses
+│   │   ├── prompts.py      # ← the prompts, incl. {{sel:N}} game scoping
+│   │   └── models.py       # request models
+│   ├── services/           # one module per pass: discover, analyze,
+│   │                       #   legibility, compare, query + stores,
+│   │                       #   scoping, demo, reporting
+│   ├── routes/             # thin HTTP layer
+│   ├── sports.py           # per-sport prompt/enrichment profiles
+│   ├── games.py            # curated demo-game registry
+│   ├── ingest_assets.py    # offline: upload + register assets
+│   ├── capture_demo_cache.py  # offline: regenerate demo fixtures
+│   ├── build_reels.py      # offline: build highlight reels → Vercel Blob
+│   ├── demo_fixtures/      # committed pre-baked results
+│   └── webapp/             # built frontend (served at /)
 └── frontend/
-    ├── src/              # React app (App, state, components, lib)
-    └── src/tlds/         # vendored TwelveLabs design system
+    ├── src/                # React app (App, state, components, lib)
+    └── src/tlds/           # vendored TwelveLabs design system
 ```
+
+**Reading the Jockey integration.** `domain/sponsor/schemas.py` and
+`domain/sponsor/prompts.py` are the whole contract with the API — what we ask
+for and the shape we ask it back in. Everything in `services/` and `routes/` is
+plumbing around those two files.

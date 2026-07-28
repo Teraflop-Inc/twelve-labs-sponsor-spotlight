@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import contextvars
+import json
 import logging
 import os
 import re
@@ -14,6 +15,16 @@ import httpx
 BASE_URL = "https://api.twelvelabs.io/v1.3"
 
 log = logging.getLogger("jockey")
+
+# The one environment variable holding a TwelveLabs key. Used by the offline
+# scripts and, when set on the server, by the locked demo tab.
+API_KEY_ENV_VAR = "TWELVELABS_API_KEY"
+
+
+def key_from_env() -> str | None:
+    """The configured TwelveLabs key, or ``None``."""
+    return (os.environ.get(API_KEY_ENV_VAR) or "").strip() or None
+
 
 # Per-request API key. The web UI lets each user paste their own TwelveLabs key,
 # which the app forwards as an `x-api-key` header; a request-scoped ContextVar
@@ -30,15 +41,15 @@ def set_api_key(key: str | None) -> None:
 
 
 def _api_key() -> str:
-    key = _API_KEY_CTX.get() or os.environ.get("TWELVELABS_API_KEY")
+    key = _API_KEY_CTX.get() or key_from_env()
     if not key:
-        raise RuntimeError("TWELVELABS_API_KEY is not set")
+        raise RuntimeError(f"No TwelveLabs API key — set {API_KEY_ENV_VAR}")
     return key
 
 
-def _headers(json: bool = True) -> dict[str, str]:
+def _headers(send_json: bool = True) -> dict[str, str]:
     h = {"x-api-key": _api_key()}
-    if json:
+    if send_json:
         h["Content-Type"] = "application/json"
     return h
 
@@ -108,7 +119,7 @@ async def list_knowledge_stores(limit: int = 50) -> list[dict[str, Any]]:
     async with httpx.AsyncClient(timeout=30.0) as client:
         r = await client.get(
             f"{BASE_URL}/knowledge-stores",
-            headers=_headers(json=False),
+            headers=_headers(send_json=False),
             params={"page_limit": limit},
         )
         r.raise_for_status()
@@ -122,7 +133,7 @@ async def get_knowledge_store(store_id: str) -> dict[str, Any]:
     async with httpx.AsyncClient(timeout=30.0) as client:
         r = await client.get(
             f"{BASE_URL}/knowledge-stores/{store_id}",
-            headers=_headers(json=False),
+            headers=_headers(send_json=False),
         )
         r.raise_for_status()
         return r.json()
@@ -133,7 +144,7 @@ async def list_items(store_id: str, limit: int = 50) -> list[dict[str, Any]]:
     async with httpx.AsyncClient(timeout=30.0) as client:
         r = await client.get(
             f"{BASE_URL}/knowledge-stores/{store_id}/items",
-            headers=_headers(json=False),
+            headers=_headers(send_json=False),
             params={"page_limit": min(limit, 50)},
         )
         r.raise_for_status()
@@ -234,6 +245,22 @@ def extract_text(response: dict[str, Any]) -> str:
         return response["output"][0]["content"][0]["text"]
     except (KeyError, IndexError, TypeError):
         return ""
+
+
+def extract_json(response: dict[str, Any]) -> tuple[str, Any]:
+    """``(text, parsed)`` for a schema-constrained ``/responses`` call.
+
+    ``parsed`` is ``None`` when the payload had no text or the model returned
+    something that isn't valid JSON despite the ``json_schema`` — callers decide
+    whether that's fatal or just an empty result.
+    """
+    text = extract_text(response)
+    if not text:
+        return text, None
+    try:
+        return text, json.loads(text)
+    except json.JSONDecodeError:
+        return text, None
 
 
 async def wait_for_asset(asset_id: str, *, timeout_s: int = 1800) -> dict[str, Any]:

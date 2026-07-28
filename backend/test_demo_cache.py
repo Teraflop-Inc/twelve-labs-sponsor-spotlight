@@ -7,7 +7,7 @@ import json
 import os
 
 # Demo mode requires a server key to be configured before importing main.
-os.environ.setdefault("SPONSOR_SPOTLIGHT_TL_KEY", "test-demo-key")
+os.environ.setdefault("TWELVELABS_API_KEY", "test-demo-key")
 
 import pytest
 from fastapi.testclient import TestClient

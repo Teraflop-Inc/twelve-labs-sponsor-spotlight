@@ -1,0 +1,44 @@
+"""Environment-derived configuration.
+
+Everything the app reads from the environment lives here, so a cloner can see
+the full set of knobs in one file (and ``.env.example`` can mirror it).
+
+**Demo mode.** A locked, server-key demo: requests carrying the ``x-demo``
+header use the server's own TwelveLabs key (``TWELVELABS_API_KEY``) and are
+pinned to one read-only collection — the caller never supplies a key and cannot
+point our key at another store. The v2 store (2026-07-14) is re-indexed with an
+enrichment prompt that also captures game state (scorebug score/period/clock)
+and primary-vs-background placement.
+"""
+from __future__ import annotations
+
+import os
+
+import jockey
+
+DEMO_STORE_ID = os.environ.get(
+    "SPONSOR_SPOTLIGHT_STORE_ID", "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f"
+)
+DEMO_STORE_NAME = os.environ.get("SPONSOR_SPOTLIGHT_STORE_NAME", "PL Classics (enriched v2)")
+DEMO_SPORT = os.environ.get("SPONSOR_SPOTLIGHT_SPORT", "soccer")
+
+# The canonical brand pair the demo tab pre-bakes (see demo_cache / capture script).
+# Analyze + legibility cache hits require the request to match this set.
+DEMO_BRANDS = [
+    b.strip()
+    for b in os.environ.get("SPONSOR_SPOTLIGHT_DEMO_BRANDS", "Etihad,Emirates").split(",")
+    if b.strip()
+]
+
+
+def demo_key() -> str | None:
+    """The server-side TwelveLabs key backing demo mode, if configured.
+
+    One name for every context: ``TWELVELABS_API_KEY`` (:data:`jockey.API_KEY_ENV_VAR`).
+    Read at call time (not import time) so tests and the capture script can set
+    it after import.
+
+    Setting it on a deployed server turns on the demo tab, which spends that key
+    on behalf of every visitor. Leave it unset to ship BYO-key mode only.
+    """
+    return jockey.key_from_env()

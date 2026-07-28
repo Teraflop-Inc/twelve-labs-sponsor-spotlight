@@ -9,7 +9,7 @@ executes the real discover → analyze → legibility flow and writes
 
 Usage::
 
-    SPONSOR_SPOTLIGHT_TL_KEY=tlk_... uv run python capture_demo_cache.py
+    TWELVELABS_API_KEY=tlk_... uv run python capture_demo_cache.py
 
 Analyze runs **one brand per Jockey call, sequentially, paced** (Jockey allows
 ~2 req/min) and writes the fixture **incrementally** — so a run that dies on a
@@ -34,17 +34,16 @@ import sys
 import demo_cache
 import games
 import jockey
-import main
+from core import config
+from domain.sponsor import prompts
+from services import analyze, discover, legibility, scoping, stores
 
 
 def _key() -> str:
-    for var in ("SPONSOR_SPOTLIGHT_TL_KEY", "TWELVELABS_API_KEY", "TWELVE_LABS_API_KEY"):
-        v = os.environ.get(var)
-        if v:
-            return v.strip()
-    sys.exit(
-        "No TwelveLabs key found. Set SPONSOR_SPOTLIGHT_TL_KEY (or TWELVELABS_API_KEY)."
-    )
+    key = jockey.key_from_env()
+    if not key:
+        sys.exit(f"No TwelveLabs key found. Set {jockey.API_KEY_ENV_VAR}.")
+    return key
 
 
 def _env_list(name: str) -> list[str]:
@@ -148,10 +147,8 @@ async def capture_scope(
     disc = None if FORCE else demo_cache.load("discover", scope_id)
     if disc is None:
         print("→ discover (live)…", flush=True)
-        d = await main.jockey_discover(
-            main.DiscoverRequest(store_id=store, sport=sport, videos=videos, game_id=game_id),
-            live=True,
-            is_demo=True,
+        d = await discover.run(
+            store_id=store, sport=sport, videos=videos, game_id=game_id
         )
         demo_cache.save("discover", _slim(d), scope_id)
         disc = d
@@ -173,7 +170,7 @@ async def capture_scope(
     # calls on absent brands); BRAND_OVERRIDE forces an explicit list instead.
     brands = BRAND_OVERRIDE or _top_brands(discovered, ANALYZE_TOPN)
 
-    selections = await main._game_selections(store, game_id)
+    selections = await scoping.game_selections(store, game_id)
 
     # --- match events: one focused pass per event kind, paced -----------------
     # A dedicated "find every goal / celebration / replay" call per kind — far
@@ -181,11 +178,11 @@ async def capture_scope(
     # Windows are the authority for goals; stamped onto appearances below.
     ev = None if FORCE else _load_events(scope_id)
     if ev is None:
-        event_kinds = main._active_profile(sport).get("event_kinds") or []
+        event_kinds = prompts.active_profile(sport).get("event_kinds") or []
         print(f"→ events: {len(event_kinds)} kind(s) (live)…", flush=True)
         windows: list[dict] = []
         for k in event_kinds:
-            w = await main._fetch_event_windows(
+            w = await analyze.fetch_event_windows(
                 k["kind"], k["phrase"], store, sport, videos, game_id, selections
             )
             windows.extend(w)
@@ -206,7 +203,7 @@ async def capture_scope(
     todo = [b for b in brands if b.strip().lower() not in done]
     print(f"→ analyze: {len(todo)} to do, {len(done)} cached ({len(brands)} total)", flush=True)
     for i, brand in enumerate(todo, 1):
-        r = await main._fetch_brand_appearances(brand, store, sport, videos, game_id, selections)
+        r = await analyze.fetch_brand_appearances(brand, store, sport, videos, game_id, selections)
         if r:
             r.setdefault("name", brand)
             # Stamp goal/celebration/replay windows onto overlapping appearances.
@@ -242,12 +239,8 @@ async def capture_scope(
     if FORCE or demo_cache.load("legibility", scope_id) is None:
         top = brands[:LEGIBILITY_TOPN]
         print(f"→ legibility (live): top {len(top)} brand(s)…", flush=True)
-        legib = await main.jockey_legibility(
-            main.LegibilityRequest(
-                store_id=store, sport=sport, videos=videos, brands=top, game_id=game_id
-            ),
-            live=True,
-            is_demo=True,
+        legib = await legibility.run(
+            brands=top, store_id=store, sport=sport, videos=videos, game_id=game_id
         )
         demo_cache.save("legibility", _slim(legib), scope_id)
         await _throttle()
@@ -257,8 +250,8 @@ async def capture_scope(
 
 async def main_async() -> None:
     jockey.set_api_key(_key())
-    store = main.DEMO_STORE_ID
-    sport = main.DEMO_SPORT
+    store = config.DEMO_STORE_ID
+    sport = config.DEMO_SPORT
 
     requested = _env_list("SPONSOR_SPOTLIGHT_CAPTURE_GAMES")
     scopes: list[tuple[str, str | None]] = [(demo_cache.AGGREGATE, None)]
@@ -270,7 +263,7 @@ async def main_async() -> None:
     print(f"Scopes     : {', '.join(sid for sid, _ in scopes)}")
     print(f"Delay      : {DELAY}s/call   Legibility top-N: {LEGIBILITY_TOPN}   Force: {FORCE}")
 
-    vids = await main._videos_from_store(store)
+    vids = await stores.videos_from_store(store)
     videos = [
         v["video_filename"]
         for v in vids

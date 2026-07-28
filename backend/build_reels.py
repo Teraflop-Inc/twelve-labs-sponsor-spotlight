@@ -14,7 +14,7 @@ Pipeline (per game × brand):
 
 Usage::
 
-    SPONSOR_SPOTLIGHT_TL_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
+    TWELVELABS_API_KEY=tlk_... BLOB_READ_WRITE_TOKEN=vercel_blob_rw_... \
         uv run python build_reels.py
 
 Env knobs: SPONSOR_SPOTLIGHT_REEL_BRANDS, SPONSOR_SPOTLIGHT_REEL_GAMES,
@@ -59,11 +59,10 @@ REEL_WEIGHTS: dict[str, float] = {**ctx_weights.CONTEXT_WEIGHTS, "goal": _GOAL_W
 
 
 def _key() -> str:
-    for var in ("SPONSOR_SPOTLIGHT_TL_KEY", "TWELVELABS_API_KEY", "TWELVE_LABS_API_KEY"):
-        v = os.environ.get(var)
-        if v:
-            return v.strip()
-    sys.exit("No TwelveLabs key found. Set SPONSOR_SPOTLIGHT_TL_KEY.")
+    key = jockey.key_from_env()
+    if not key:
+        sys.exit(f"No TwelveLabs key found. Set {jockey.API_KEY_ENV_VAR}.")
+    return key
 
 
 def _blob_token() -> str:
