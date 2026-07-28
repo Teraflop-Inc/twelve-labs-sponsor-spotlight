@@ -6,7 +6,6 @@ import { ALL_GAMES, useApp } from "../state"
 import {
   MomentRow,
   ProvenanceBadge,
-  ReRunButton,
   ScoreBar,
   SectionCard,
   StatusLine,
@@ -126,17 +125,14 @@ export function LegibilityPanel() {
       title="Legibility audit"
       hint="Per-asset visibility scores for the selected brands."
       actions={
-        demoView ? (
-          auditBrands.length > 0 && (
-            <ReRunButton
-              onClick={() => onAudit({ live: true })}
-              disabled={!ready || busy}
-              busy={busy}
-            />
-          )
-        ) : (
-          <Button onClick={() => onAudit()} disabled={!ready || busy || !haveBrands}>
-            {busy ? "auditing…" : "Run audit"}
+        auditBrands.length > 0 && (
+          <Button
+            size="sm"
+            onClick={() => onAudit({ live: demoView })}
+            disabled={!ready || busy}
+            title="Scores each brand's assets against the source footage. Around 1–3 minutes."
+          >
+            {busy ? "Auditing…" : "Run audit"}
           </Button>
         )
       }

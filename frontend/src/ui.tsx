@@ -1,5 +1,5 @@
 import type { ReactNode } from "react"
-import { Button, Chip } from "@twelvelabs-io/react"
+import { Chip } from "@twelvelabs-io/react"
 import { cn } from "@/lib/utils"
 import { fmtTime, formatGameTime } from "./lib/econ"
 import { SOURCE_LABEL, type DataSource } from "./lib/econData"
@@ -69,48 +69,6 @@ export function ProvenanceBadge({ prov }: { prov?: Provenance | null }) {
       }
     >
       {saved ? "Saved" : "Live"}
-    </span>
-  )
-}
-
-/**
- * Re-runs the analysis against the source footage instead of showing the
- * results saved from a previous run.
- *
- * A secondary action by design: each brand is a separate model call taking
- * 1–3 minutes, against a rate limit of roughly two requests per minute.
- */
-export function ReRunButton({
-  onClick,
-  disabled,
-  busy,
-  scope,
-  label = "Re-run analysis",
-  busyLabel = "Analyzing…",
-}: {
-  onClick: () => void
-  disabled?: boolean
-  busy?: boolean
-  /** How much of the selection the run covers, e.g. "2 of 5 brands". */
-  scope?: string
-  label?: string
-  busyLabel?: string
-}) {
-  return (
-    <span className="inline-flex items-center gap-2">
-      {scope && !busy && <span className="text-xs text-foreground-subtle">{scope}</span>}
-      <Button
-        variant="ghosted"
-        size="sm"
-        onClick={onClick}
-        disabled={disabled}
-        title={
-          "Re-runs the analysis against the source footage. Approximately 1–3 minutes per brand." +
-          (scope ? ` This run covers ${scope}.` : "")
-        }
-      >
-        {busy ? busyLabel : label}
-      </Button>
     </span>
   )
 }

@@ -16,7 +16,6 @@ import {
   MetricTile,
   MomentRow,
   ProvenanceBadge,
-  ReRunButton,
   SectionCard,
   SourceBadge,
   StatusLine,
@@ -222,23 +221,22 @@ export function AnalyzePanel() {
           : "Analyze the selected brands and rank them by weighted media value."
       }
       actions={
-        demoView ? (
-          runBrands.length > 0 && (
-            <ReRunButton
-              onClick={() => onAnalyze({ live: true })}
+        runBrands.length > 0 && (
+          <span className="inline-flex items-center gap-2">
+            {cappedFrom > runBrands.length && (
+              <span className="text-xs text-foreground-subtle">
+                {runBrands.length} of {cappedFrom} brands
+              </span>
+            )}
+            <Button
+              size="sm"
+              onClick={() => onAnalyze({ live: demoView })}
               disabled={!ready || busy}
-              busy={busy}
-              scope={
-                cappedFrom > runBrands.length
-                  ? `${runBrands.length} of ${cappedFrom} brands`
-                  : undefined
-              }
-            />
-          )
-        ) : (
-          <Button onClick={() => onAnalyze()} disabled={!ready || busy || runBrands.length === 0}>
-            {busy ? "analyzing…" : `Analyze ${runBrands.length || ""} selected`.trim()}
-          </Button>
+              title="Analyzes the selected brands against the source footage. Around 1–3 minutes per brand."
+            >
+              {busy ? "Analyzing…" : "Analyze"}
+            </Button>
+          </span>
         )
       }
     >

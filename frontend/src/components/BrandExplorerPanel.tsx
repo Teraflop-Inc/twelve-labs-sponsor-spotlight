@@ -134,7 +134,7 @@ export function BrandExplorerPanel() {
             disabled={finding || !activeStore}
             title="Runs brand discovery against the selected broadcast. Takes 1–3 minutes."
           >
-            {finding ? "Finding brands…" : canDiscover ? "Find brands" : "Re-run brands"}
+            {finding ? "Finding brands…" : "Find brands"}
           </Button>
           <Button
             variant="ghosted"
