@@ -17,7 +17,7 @@ import time
 from typing import Any
 
 import jockey
-from domain.sponsor import prompts
+from domain.sponsor import prompts, provenance
 from domain.sponsor.schemas import GAME_EVENTS_SCHEMA, PER_BRAND_SCHEMA
 from services import scoping
 
@@ -129,7 +129,7 @@ async def run(
             merged.append(r)
     log.info("analyze: %.1fs, %d/%d brands succeeded", secs, len(merged), len(brand_names))
 
-    return {
+    return provenance.stamp_live({
         "session_id": session_id,
         "inventory": {"brands": merged, "summary": ""},
         "timings": {
@@ -137,4 +137,4 @@ async def run(
             "requested": len(brand_names),
             "succeeded": len(merged),
         },
-    }
+    }, store_id=store_id, game_id=game_id)

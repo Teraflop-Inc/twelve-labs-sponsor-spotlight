@@ -15,6 +15,7 @@ from fastapi.testclient import TestClient
 import demo_cache
 import jockey
 import main
+from core import config
 
 DEMO = {"x-demo": "1"}
 BYOK = {"x-api-key": "user-key"}
@@ -126,7 +127,10 @@ def test_demo_scope_returns_detected_and_analyzed(client, spy):
     assert s["game_id"] == "ars-tot-2018"
     detected = {b["name"] for b in s["discovery"]}
     analyzed = {b["name"] for b in s["inventory"]}
-    assert len(analyzed) == 8  # top-8 analyzed
+    # How many brands get analyzed is a capture-time knob (ANALYZE_TOPN, capped
+    # by how many brands actually appear in this game), so assert the invariant
+    # rather than a count that drifts with every re-capture.
+    assert analyzed, "expected at least one analyzed brand"
     assert analyzed <= detected  # every analyzed brand is also in the detected list
     assert isinstance(s["reels"], dict) and s["reels"]  # reels present
     assert spy["n"] == 0
@@ -162,18 +166,79 @@ def test_analyze_brand_not_in_game_falls_through_to_live(client, spy):
     assert spy["n"] >= 1
 
 
+def _fixture(marker: str, store_id: str = config.DEMO_STORE_ID) -> str:
+    """A discover fixture stamped as captured from ``store_id``."""
+    return json.dumps(
+        {
+            "discovery": {"brands": [{"name": marker}], "summary": marker},
+            "provenance": {"store_id": store_id, "source": "jockey_live"},
+        }
+    )
+
+
 def test_two_games_return_different_cached_data(client, spy, tmp_path, monkeypatch):
     monkeypatch.setattr(demo_cache, "FIXTURE_DIR", tmp_path)
     for gid, marker in (("mci-liv-2019", "g1"), ("ars-tot-2018", "g2")):
         (tmp_path / gid).mkdir()
-        (tmp_path / gid / "discover.json").write_text(
-            json.dumps({"discovery": {"brands": [{"name": marker}], "summary": marker}})
-        )
+        (tmp_path / gid / "discover.json").write_text(_fixture(marker))
     r1 = client.post("/api/jockey/discover", json={**BODY, "game_id": "mci-liv-2019"}, headers=DEMO)
     r2 = client.post("/api/jockey/discover", json={**BODY, "game_id": "ars-tot-2018"}, headers=DEMO)
     assert r1.json()["discovery"]["summary"] == "g1"
     assert r2.json()["discovery"]["summary"] == "g2"
     assert spy["n"] == 0  # both served from the per-game fixtures
+
+
+# --- fixtures are bound to the store they were captured from --------------------
+
+
+def test_fixture_captured_for_another_store_is_not_served(client, spy, tmp_path, monkeypatch):
+    """The bug this guards: a cloner points the app at their own knowledge store
+    and is served our Premier League results because the cache only keyed on
+    endpoint + brands + game id. A fixture stamped for a different store must be
+    refused and the request run live instead."""
+    monkeypatch.setattr(demo_cache, "FIXTURE_DIR", tmp_path)
+    (tmp_path / "mci-liv-2019").mkdir()
+    (tmp_path / "mci-liv-2019" / "discover.json").write_text(
+        _fixture("someone-elses-data", store_id="ks_a_completely_different_store")
+    )
+    r = client.post("/api/jockey/discover", json={**BODY, "game_id": "mci-liv-2019"}, headers=DEMO)
+    assert r.status_code == 200
+    assert r.json()["discovery"]["summary"] != "someone-elses-data"
+    assert spy["n"] == 1  # fell through to a live run
+
+
+def test_fixture_with_no_recorded_store_is_not_served(client, spy, tmp_path, monkeypatch):
+    """An unstamped fixture can't be proven to describe this store, so it is
+    treated the same as a mismatch."""
+    monkeypatch.setattr(demo_cache, "FIXTURE_DIR", tmp_path)
+    (tmp_path / "mci-liv-2019").mkdir()
+    (tmp_path / "mci-liv-2019" / "discover.json").write_text(
+        json.dumps({"discovery": {"brands": [], "summary": "unstamped"}})
+    )
+    r = client.post("/api/jockey/discover", json={**BODY, "game_id": "mci-liv-2019"}, headers=DEMO)
+    assert r.json()["discovery"]["summary"] != "unstamped"
+    assert spy["n"] == 1
+
+
+# --- provenance is reported by the server, not guessed by the UI ----------------
+
+
+def test_cached_response_declares_itself_cached(client, spy):
+    r = client.post("/api/jockey/discover", json=BODY, headers=DEMO)
+    prov = r.json()["provenance"]
+    assert prov["source"] == "demo_fixture"
+    assert prov["from_cache"] is True
+    assert prov["store_id"] == config.DEMO_STORE_ID
+    assert spy["n"] == 0
+
+
+def test_live_response_declares_itself_live(client, spy):
+    r = client.post("/api/jockey/discover?live=1", json=BODY, headers=DEMO)
+    prov = r.json()["provenance"]
+    assert prov["source"] == "jockey_live"
+    assert prov["from_cache"] is False
+    assert prov["generated_at"]  # timestamped
+    assert spy["n"] == 1
 
 
 # --- report + reel (v2) ---------------------------------------------------------

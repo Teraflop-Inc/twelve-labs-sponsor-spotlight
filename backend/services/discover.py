@@ -11,7 +11,7 @@ import time
 from typing import Any
 
 import jockey
-from domain.sponsor import prompts
+from domain.sponsor import prompts, provenance
 from domain.sponsor.schemas import DISCOVERY_SCHEMA
 from services import scoping
 
@@ -42,10 +42,10 @@ async def run(
 
     secs = round(time.time() - t0, 1)
     log.info("discover: %.1fs, %d brands", secs, len((parsed or {}).get("brands", [])))
-    return {
+    return provenance.stamp_live({
         "session_id": resp.get("session_id") or session_id,
         "discovery": parsed or {"brands": [], "summary": ""},
         "answer": text,
         "raw": resp,
         "timings": {"discover_secs": secs},
-    }
+    }, store_id=store_id, game_id=game_id)

@@ -9,7 +9,7 @@ from __future__ import annotations
 from typing import Any
 
 import jockey
-from domain.sponsor import prompts
+from domain.sponsor import prompts, provenance
 from domain.sponsor.schemas import LEGIBILITY_SCHEMA
 from services import scoping
 
@@ -36,9 +36,9 @@ async def run(
     )
     text, parsed = jockey.extract_json(resp)
 
-    return {
+    return provenance.stamp_live({
         "session_id": resp.get("session_id") or session_id,
         "report": parsed,
         "answer": text,
         "raw": resp,
-    }
+    }, store_id=store_id, game_id=game_id)

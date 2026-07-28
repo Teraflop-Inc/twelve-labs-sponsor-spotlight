@@ -1989,5 +1989,14 @@
     "analyze_secs": 37.5,
     "requested": 2,
     "succeeded": 2
+  },
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
   }
 }

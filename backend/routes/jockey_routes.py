@@ -54,7 +54,7 @@ async def jockey_discover(
     """
     apply_mode(req, is_demo)
     if is_demo and not live:
-        cached = demo.cache_hit("discover", game_id=req.game_id)
+        cached = demo.cache_hit("discover", req.store_id, game_id=req.game_id)
         if cached is not None:
             log.info("discover: served from demo cache (game=%s)", req.game_id or "all")
             return cached
@@ -81,7 +81,7 @@ async def jockey_analyze(
         raise HTTPException(status_code=400, detail="provide at least one brand name")
 
     if is_demo and not live:
-        cached = demo.cache_hit("analyze", brand_names, game_id=req.game_id)
+        cached = demo.cache_hit("analyze", req.store_id, brand_names, game_id=req.game_id)
         if cached is not None:
             log.info(
                 "analyze: served from demo cache (game=%s, %s)",
@@ -107,7 +107,7 @@ async def jockey_legibility(
     """Pass 3: contrast / size / position / angle / blur audit per brand asset."""
     apply_mode(req, is_demo)
     if is_demo and not live:
-        cached = demo.cache_hit("legibility", req.brands, game_id=req.game_id)
+        cached = demo.cache_hit("legibility", req.store_id, req.brands, game_id=req.game_id)
         if cached is not None:
             log.info(
                 "legibility: served from demo cache (game=%s, %s)",
