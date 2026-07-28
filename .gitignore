@@ -21,21 +21,12 @@ node_modules/
 # pre_processing.ingest_assets, machine-specific.
 backend/iconik_ingest.json
 
-# Internal working notes — this repo is published alongside the Jockey
-# tutorial, so meeting summaries, customer plans and partner updates must never
-# be committed. Keep them locally; they are deliberately untracked.
-/V2-PLAN.md
-/TUTORIAL-PLAN.md
-/MEETING-SUMMARY-*.md
-/UPDATES-FOR-*.md
+# Internal working notes live in workspace/ and are never committed — this repo
+# is published alongside the Jockey tutorial, so meeting summaries, customer
+# plans, partner updates and QC/accuracy measurements all belong in there
+# rather than at the repo root.
 /workspace/
 /.fabric/
-
-# QC / accuracy measurements. These were committed once and still sit in git
-# history; keep any regenerated copy out of future commits. How candid to be
-# about accuracy in public is a partner decision, not a default.
-/MOMENT-QC-*.md
-/REEL-QC-*.md
 
 # OS
 .DS_Store
