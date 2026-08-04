@@ -1,0 +1,560 @@
+{
+  "session_id": "sess_019f6278-0a6c-7c10-8d44-01f4139ceac3",
+  "discovery": {
+    "brands": [
+      {
+        "name": "AVATRADE",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Aabar",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Abu Dhabi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Acronis",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Ally",
+        "asset_types": [
+          "broadcast_graphic",
+          "scorebug"
+        ]
+      },
+      {
+        "name": "AutoZone",
+        "asset_types": [
+          "broadcast_graphic",
+          "on_screen_ident"
+        ]
+      },
+      {
+        "name": "AvaTrade",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "BETADINE",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "BETVICTOR",
+        "asset_types": [
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Betadine",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Canton",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Choose Well.",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Corona",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "DIRECTV",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "DirecTV",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Dsquared2",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "E&",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "EA Sports",
+        "asset_types": [
+          "broadcast_graphic",
+          "other",
+          "perimeter_led_board_rotating",
+          "substitution_board_branding"
+        ]
+      },
+      {
+        "name": "ETIHAD",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_front_sponsor"
+        ]
+      },
+      {
+        "name": "EXTRAORDINARY CITY STORY",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Etihad",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Etihad Airways",
+        "asset_types": [
+          "other",
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage",
+          "stand_signage",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Etihad Stadium",
+        "asset_types": [
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Etihad.com",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Etisalat",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "FIFA Online 4",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "GEICO",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "scorebug"
+        ]
+      },
+      {
+        "name": "Gatorade",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Geico",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Hays",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Intel",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Kia",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "LEXUS",
+        "asset_types": [
+          "scorebug"
+        ]
+      },
+      {
+        "name": "Lexus",
+        "asset_types": [
+          "broadcast_graphic",
+          "on_screen_ident",
+          "scorebug"
+        ]
+      },
+      {
+        "name": "MARATHONBET",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "MERCURIAL SERIES",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Marathon Bet",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Marathonbet",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Mercedes-Benz",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Mercurial",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "NBCSN",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "NEXEN TIRE",
+        "asset_types": [
+          "perimeter_led_board_static",
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "NIKE.COM/FOOTBALL",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "New Balance",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "other",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Nexen Tire",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Nike",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Nike.com/football",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Nissan",
+        "asset_types": [
+          "other",
+          "perimeter_led_board_rotating",
+          "stadium_fascia_signage",
+          "stand_signage"
+        ]
+      },
+      {
+        "name": "One Step From Wembley",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Optimum",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "PHANTOM SERIES",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "PRECISION",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Phantom",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Power Horse",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Precision",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Premier League",
+        "asset_types": [
+          "broadcast_graphic",
+          "on_screen_ident",
+          "scorebug"
+        ]
+      },
+      {
+        "name": "QNET",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Rexona",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "SAP",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "SPEED",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Speed",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Standard Chartered",
+        "asset_types": [
+          "other",
+          "shirt_front_sponsor"
+        ]
+      },
+      {
+        "name": "Sure",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "TAG Heuer",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "scorebug",
+          "substitution_board_branding"
+        ]
+      },
+      {
+        "name": "TAGHeuer",
+        "asset_types": [
+          "scorebug"
+        ]
+      },
+      {
+        "name": "Tag Heuer",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Tecno Mobile",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "The Stadium Citystore",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Tinder",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Ubtech",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "VISIT ABU DHABI",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Valvoline",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Visit Abu Dhabi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Visit Etihad.com",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Volkswagen",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "WIX.com",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "Wega",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Western Union",
+        "asset_types": [
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Wix.com",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Wixx",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Xylem",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "aabar",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "etisalat",
+        "asset_types": [
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "fuboTV",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      }
+    ],
+    "summary": "The broadcast features a diverse mix of sponsor brands appearing across multiple surface placement types, with exact brand names preserved and each brand’s visible asset types deduplicated."
+  },
+  "answer": "{\"brands\": [{\"name\": \"AVATRADE\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Aabar\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Abu Dhabi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Acronis\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Ally\", \"asset_types\": [\"broadcast_graphic\", \"scorebug\"]}, {\"name\": \"AutoZone\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\"]}, {\"name\": \"AvaTrade\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"BETADINE\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"BETVICTOR\", \"asset_types\": [\"training_kit_sponsor\"]}, {\"name\": \"Betadine\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Canton\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Choose Well.\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Corona\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"DIRECTV\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"DirecTV\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Dsquared2\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"E&\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"EA Sports\", \"asset_types\": [\"broadcast_graphic\", \"other\", \"perimeter_led_board_rotating\", \"substitution_board_branding\"]}, {\"name\": \"ETIHAD\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_front_sponsor\"]}, {\"name\": \"EXTRAORDINARY CITY STORY\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Etihad\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_front_sponsor\", \"stadium_fascia_signage\"]}, {\"name\": \"Etihad Airways\", \"asset_types\": [\"other\", \"perimeter_led_board_rotating\", \"perimeter_led_board_static\", \"shirt_front_sponsor\", \"stadium_fascia_signage\", \"stand_signage\", \"training_kit_sponsor\"]}, {\"name\": \"Etihad Stadium\", \"asset_types\": [\"stadium_fascia_signage\"]}, {\"name\": \"Etihad.com\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Etisalat\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"FIFA Online 4\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"GEICO\", \"asset_types\": [\"perimeter_led_board_rotating\", \"scorebug\"]}, {\"name\": \"Gatorade\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Geico\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\"]}, {\"name\": \"Hays\", \"asset_types\": [\"perimeter_led_board_rotating\", \"stadium_fascia_signage\"]}, {\"name\": \"Intel\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Kia\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"LEXUS\", \"asset_types\": [\"scorebug\"]}, {\"name\": \"Lexus\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\", \"scorebug\"]}, {\"name\": \"MARATHONBET\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"MERCURIAL SERIES\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Marathon Bet\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Marathonbet\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Mercedes-Benz\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\"]}, {\"name\": \"Mercurial\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"NBCSN\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"NEXEN TIRE\", \"asset_types\": [\"perimeter_led_board_static\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"NIKE.COM/FOOTBALL\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"New Balance\", \"asset_types\": [\"kit_manufacturer_logo\", \"other\", \"training_kit_sponsor\"]}, {\"name\": \"Nexen Tire\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"Nike\", \"asset_types\": [\"kit_manufacturer_logo\", \"perimeter_led_board_rotating\"]}, {\"name\": \"Nike.com/football\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Nissan\", \"asset_types\": [\"other\", \"perimeter_led_board_rotating\", \"stadium_fascia_signage\", \"stand_signage\"]}, {\"name\": \"One Step From Wembley\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Optimum\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"PHANTOM SERIES\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"PRECISION\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Phantom\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Power Horse\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Precision\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Premier League\", \"asset_types\": [\"broadcast_graphic\", \"on_screen_ident\", \"scorebug\"]}, {\"name\": \"QNET\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Rexona\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"SAP\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"SPEED\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Speed\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Standard Chartered\", \"asset_types\": [\"other\", \"shirt_front_sponsor\"]}, {\"name\": \"Sure\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"TAG Heuer\", \"asset_types\": [\"perimeter_led_board_rotating\", \"scorebug\", \"substitution_board_branding\"]}, {\"name\": \"TAGHeuer\", \"asset_types\": [\"scorebug\"]}, {\"name\": \"Tag Heuer\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\"]}, {\"name\": \"Tecno Mobile\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"The Stadium Citystore\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Tinder\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Ubtech\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"VISIT ABU DHABI\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Valvoline\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Visit Abu Dhabi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Visit Etihad.com\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Volkswagen\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\"]}, {\"name\": \"WIX.com\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"Wega\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Western Union\", \"asset_types\": [\"shirt_sleeve_sponsor\"]}, {\"name\": \"Wix.com\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Wixx\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Xylem\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"aabar\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"etisalat\", \"asset_types\": [\"perimeter_led_board_static\"]}, {\"name\": \"fuboTV\", \"asset_types\": [\"broadcast_graphic\"]}], \"summary\": \"The broadcast features a diverse mix of sponsor brands appearing across multiple surface placement types, with exact brand names preserved and each brand’s visible asset types deduplicated.\"}",
+  "timings": {
+    "discover_secs": 20.2
+  },
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "mci-liv-2019",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

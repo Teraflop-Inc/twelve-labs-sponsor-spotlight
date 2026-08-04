@@ -1,0 +1,164 @@
+import type {
+  DemoInfo,
+  DemoScope,
+  AnalyzeResponse,
+  CompareResponse,
+  CreateStoreResponse,
+  DiscoverResponse,
+  LegibilityResponse,
+  SportsResponse,
+  StoresResponse,
+  UseStoreResponse,
+} from "./types"
+
+
+// The browser never holds a TwelveLabs key. Every request carries `x-demo`,
+// which tells the backend to use its own TWELVELABS_API_KEY — in both
+// DEMO_MODE=True (pinned collection) and DEMO_MODE=False (collection
+// selectable). The difference is what the server allows, not whose key it is.
+
+export class ApiError extends Error {
+  status: number
+  constructor(status: number, message: string) {
+    super(message)
+    this.status = status
+    this.name = "ApiError"
+  }
+}
+
+interface ReqOpts {
+  method?: string
+  body?: unknown
+  /** GET /api/sports + /api/health don't require the key header. */
+  noKey?: boolean
+}
+
+async function request<T>(path: string, opts: ReqOpts = {}): Promise<T> {
+  const { method = "GET", body, noKey = false } = opts
+  const headers: Record<string, string> = {}
+  if (!noKey) headers["x-demo"] = "1"
+  if (body != null) headers["Content-Type"] = "application/json"
+
+  const res = await fetch(path, {
+    method,
+    headers,
+    body: body != null ? JSON.stringify(body) : undefined,
+  })
+
+  if (!res.ok) {
+    let detail = res.statusText
+    try {
+      const j = await res.json()
+      detail = j.detail || j.message || detail
+    } catch {
+      /* non-JSON error body */
+    }
+    throw new ApiError(res.status, detail)
+  }
+  // 204 / empty body tolerance
+  const text = await res.text()
+  return (text ? JSON.parse(text) : {}) as T
+}
+
+/** Store context merged into every analysis request body. */
+export interface StoreCtx {
+  store_id: string
+  sport?: string
+  videos: string[]
+  /** Optional per-game scope (games.GAMES id). Omit for the whole collection. */
+  game_id?: string
+  /** Scope to one broadcast by asset id — works for any collection, no roster
+   *  entry needed. Takes precedence over game_id. */
+  asset_id?: string
+  /** Display name for asset_id, used in the prompt. */
+  asset_label?: string
+}
+
+/** POST that returns raw text (not JSON) — used for the HTML report. */
+async function requestText(path: string, body: unknown): Promise<string> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" }
+  headers["x-demo"] = "1"
+  const res = await fetch(path, { method: "POST", headers, body: JSON.stringify(body) })
+  if (!res.ok) {
+    let detail = res.statusText
+    try {
+      detail = (await res.json()).detail || detail
+    } catch {
+      /* non-JSON error body */
+    }
+    throw new ApiError(res.status, detail)
+  }
+  return res.text()
+}
+
+export interface ReportArgs {
+  brand: string
+  game_ids: string[]
+  media_values?: Record<string, number>
+  total_media_value?: number
+  context_weights?: Record<string, number>
+  generated_note?: string
+  /** Data-source labels for the resolved economics (PRD step 10). */
+  sources?: { audience?: string; rate?: string; rights_fee?: string }
+}
+
+export const api = {
+  sports: () => request<SportsResponse>("/api/sports", { noKey: true }),
+
+  demoInfo: () => request<DemoInfo>("/api/demo/info", { noKey: true }),
+
+  // Explore payload for one scope (game id or "all") — all cached brands, no run.
+  demoScope: (game_id: string) =>
+    request<DemoScope>(`/api/demo/scope/${encodeURIComponent(game_id)}`, { noKey: true }),
+
+  listStores: () => request<StoresResponse>("/api/knowledge-stores"),
+
+  createStore: (name: string, sport?: string) =>
+    request<CreateStoreResponse>("/api/knowledge-stores/create", {
+      method: "POST",
+      body: { name, sport },
+    }),
+
+  useStore: (store_id: string) =>
+    request<UseStoreResponse>("/api/use-knowledge-store", {
+      method: "POST",
+      body: { store_id },
+    }),
+
+  // `live` forces a fresh Jockey run in demo mode, bypassing the pre-baked cache.
+  discover: (ctx: StoreCtx, session_id: string | null, live = false) =>
+    request<DiscoverResponse>(`/api/jockey/discover${live ? "?live=1" : ""}`, {
+      method: "POST",
+      body: { ...ctx, session_id },
+    }),
+
+  analyze: (ctx: StoreCtx, brands: string[], session_id: string | null, live = false) =>
+    request<AnalyzeResponse>(`/api/jockey/analyze${live ? "?live=1" : ""}`, {
+      method: "POST",
+      body: { ...ctx, brands, session_id },
+    }),
+
+  compare: (
+    ctx: StoreCtx,
+    brands: string[],
+    session_id: string | null,
+    max_top_moments = 5,
+  ) =>
+    request<CompareResponse>("/api/jockey/compare", {
+      method: "POST",
+      body: { ...ctx, brands, session_id, max_top_moments },
+    }),
+
+  legibility: (ctx: StoreCtx, brands: string[], session_id: string | null, live = false) =>
+    request<LegibilityResponse>(`/api/jockey/legibility${live ? "?live=1" : ""}`, {
+      method: "POST",
+      body: { ...ctx, brands, session_id },
+    }),
+
+  // Templated performance report — returns standalone HTML (print-to-PDF).
+  report: (args: ReportArgs) => requestText("/api/report", args),
+
+  // Highlight reel — public redirect to the Blob URL; safe to open in a new tab.
+  reelUrl: (game_id: string, brand: string) =>
+    `/api/reel/${encodeURIComponent(game_id)}/${encodeURIComponent(brand)}`,
+}

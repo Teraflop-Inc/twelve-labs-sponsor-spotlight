@@ -1,0 +1,397 @@
+{
+  "session_id": "sess_019f628f-c67c-7463-8e3a-2de3730f33c6",
+  "report": {
+    "brands": [
+      {
+        "assets": [
+          {
+            "asset_type": "substitution_board",
+            "camera_angle": 9,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 42,
+                "note": "Formation graphic is clean, but shirt crop is still smaller than live close-ups.",
+                "start_sec": 6,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Strong pregame graphic exposure. Minor limitation: logo is embedded inside player cutouts rather than isolated creative.",
+            "motion_blur": 10,
+            "overall_score": 8.8,
+            "position": 8.5,
+            "size": 8,
+            "suggestions": "Keep this treatment; if optimizing further, enlarge the shirt crop area 10-15% or add a subtle zoom on central players so the chest sponsor reads even faster."
+          },
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 8.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 1858,
+                "note": "In long open-play sequence the mark drops to partially legible in wider framing.",
+                "start_sec": 1800,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 1499,
+                "note": "Background-only glimpse behind Tottenham player; logo-only readability.",
+                "start_sec": 1498,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Very strong in close-ups and celebrations, but chest sponsor softens in wide live-play phases and when City players are side-on.",
+            "motion_blur": 7.5,
+            "overall_score": 8.4,
+            "position": 8,
+            "size": 8.5,
+            "suggestions": "For future kits/broadcast optimization, add slightly heavier dark edge definition around the wordmark to preserve readability in motion and oblique angles."
+          },
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6.5,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 137,
+                "note": "Readable early, but still secondary in wide game camera.",
+                "start_sec": 116,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 1089,
+                "note": "Competes with Hublot and other rotations during corner setup.",
+                "start_sec": 1079,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Frequent board presence, but mostly as a secondary-background asset; loses impact in high/wide angles and during rotation clutter.",
+            "motion_blur": 6.5,
+            "overall_score": 7.4,
+            "position": 6.5,
+            "size": 7,
+            "suggestions": "Reduce rotation crowding around set pieces; hold Etihad longer during dead-ball moments. Increase luminance separation from adjacent blue/cyan creative so the brand does not blend into the City visual palette."
+          },
+          {
+            "asset_type": "stadium_fascia",
+            "camera_angle": 7,
+            "contrast": 7.5,
+            "examples": [
+              {
+                "end_sec": 931,
+                "note": "Fascia sign is visible but small and far from center action.",
+                "start_sec": 916,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 1498,
+                "note": "Bench-area fascia reads clearly but remains background-only.",
+                "start_sec": 1497,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Useful contextual branding in stadium architecture, but small on screen and rarely heroed.",
+            "motion_blur": 8.5,
+            "overall_score": 7,
+            "position": 5.5,
+            "size": 5.5,
+            "suggestions": "Move key fascia marks closer to camera-facing technical area or use larger repeated wordmarks across bench/tunnel sightlines to convert background impressions into readable exposures."
+          }
+        ],
+        "name": "Etihad",
+        "summary": "Best-performing brand in the broadcast. It appears across pregame graphics, Manchester City shirt-front close-ups, perimeter LEDs, and stadium fascia. Creative is consistently readable, with the only recurring weakness coming in wide live-play shots where the shirt-front sponsor becomes background detail."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "substitution_board",
+            "camera_angle": 9,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 73,
+                "note": "Pregame formation graphic is strong overall, but Nike and AIA compete within the same shirt crop.",
+                "start_sec": 42,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Excellent pregame visibility on the lineup graphic; minor sponsor clutter from other kit details.",
+            "motion_blur": 10,
+            "overall_score": 8.9,
+            "position": 8.5,
+            "size": 8.5,
+            "suggestions": "Maintain this asset; consider slightly tighter torso framing on featured players to isolate AIA even more clearly."
+          },
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 8.5,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 4498,
+                "note": "Lo Celso walk-and-graphic shot records only partial legibility.",
+                "start_sec": 4492,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 4575,
+                "note": "Reaction close-up still only partially legible due to crop and body angle.",
+                "start_sec": 4571,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 2696,
+                "note": "In wide live play AIA drops to secondary/background and partial readability.",
+                "start_sec": 2692,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "One of the strongest assets in the match: repeated close-ups, goal celebration, substitutions, and postgame reactions. Weakness appears when players are turning, hunched, or framed mid-run.",
+            "motion_blur": 8,
+            "overall_score": 8.7,
+            "position": 8.5,
+            "size": 8.5,
+            "suggestions": "Very effective already. To improve marginal cases, use slightly thicker stroke/outline around the red letterforms or a micro drop-shadow so the mark holds when shirts crease during motion."
+          }
+        ],
+        "name": "AIA",
+        "summary": "Highest repetition of any target brand. AIA benefits from Tottenham’s many close-ups, celebrations, substitutions, and postgame coverage. Visibility is excellent overall, with only occasional softness in angled or fast-motion live-play frames."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 7.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 83,
+                "note": "Overhead huddle shot makes sleeve branding secondary rather than hero.",
+                "start_sec": 73,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 1862,
+                "note": "Readable on Doku in reaction close-up, but sleeve placement is still smaller than chest sponsor.",
+                "start_sec": 1858,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Sleeve placement gives solid incidental exposure, especially in player close-ups, but it underperforms when camera framing favors torso/front rather than sleeve side.",
+            "motion_blur": 7,
+            "overall_score": 7.8,
+            "position": 7,
+            "size": 6.5,
+            "suggestions": "Increase logo scale on sleeve if rights allow, and favor high-contrast monochrome execution with stronger edge separation from shirt color. Broadcast-side, isolate more side-on player close-ups to exploit sleeve visibility."
+          },
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 220,
+                "note": "Wide live-play boards are readable but remain peripheral.",
+                "start_sec": 174,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 912,
+                "note": "Competes with Etihad in dual-board exposure during record graphic.",
+                "start_sec": 897,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Good board legibility, but mostly in wide gameplay where screen share is limited and rotation clutter reduces stand-out.",
+            "motion_blur": 6.5,
+            "overall_score": 7.5,
+            "position": 6.5,
+            "size": 7,
+            "suggestions": "Hold the OKX creative longer in set-piece/stoppage windows and use simpler negative-space layouts with fewer visual elements so it punches through at wide focal lengths."
+          },
+          {
+            "asset_type": "stadium_fascia",
+            "camera_angle": 5.5,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 90,
+                "note": "Pregame fascia exposure is readable but distant and brief.",
+                "start_sec": 83,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Single metadata-detected fascia moment; visibility is modest because the sign sits far from center frame.",
+            "motion_blur": 9,
+            "overall_score": 6.3,
+            "position": 5,
+            "size": 4.5,
+            "suggestions": "If this is a stadium ribbon/fascia buy, enlarge the wordmark or repeat it more densely near dugout and corner-camera sightlines."
+          }
+        ],
+        "name": "OKX",
+        "summary": "OKX appears both as Manchester City sleeve branding and on rotating LEDs. The sleeve asset is better in close player shots; the LED asset delivers frequency but not dominance. Overall solid, not standout."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 7,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 999,
+                "note": "Board is part of a transition sequence with Etihad and Midea, so exclusive ownership is diluted.",
+                "start_sec": 977,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              },
+              {
+                "end_sec": 5681,
+                "note": "Late-game boards are frequent but still peripheral in wide action.",
+                "start_sec": 5671,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Strong contrast and repeated second-half presence. Main limitation is peripheral placement in wide gameplay and occasional adjacency to other bright board creative.",
+            "motion_blur": 7,
+            "overall_score": 7.9,
+            "position": 6.5,
+            "size": 7,
+            "suggestions": "This creative already reads well; biggest gain would come from longer static holds during stoppages and corner setups, plus slight enlargement of the wordmark relative to border/device graphics."
+          }
+        ],
+        "name": "NEXEN TIRE",
+        "summary": "NEXEN TIRE is a durable perimeter-board performer. It appears repeatedly across live play, stoppages, and replays, especially in the middle and late phases. Visibility is good thanks to strong contrast, but the asset rarely owns the frame."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 5183,
+                "note": "Only detected exposure is a brief celebration background hit, so total recall value is limited.",
+                "start_sec": 5179,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Single brief LED appearance only; readable, but fleeting and backgrounded.",
+            "motion_blur": 7,
+            "overall_score": 6.8,
+            "position": 6,
+            "size": 6,
+            "suggestions": "Increase dwell time on rotations and schedule around celebrations/stoppages rather than active wide play. A brighter white lockup or illuminated border would help the brand pop faster on short exposures."
+          }
+        ],
+        "name": "Emirates",
+        "summary": "Minimal presence in this broadcast. Only one metadata-detected perimeter-board exposure appears, during a Manchester City celebration. Readable, but too brief to generate strong cumulative value."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "substitution_board",
+            "camera_angle": 9,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 73,
+                "note": "Logo-only read on lineup graphic; Nike is visible but smaller than AIA shirt-front sponsor.",
+                "start_sec": 42,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Pregame lineup graphic provides a clean logo-only exposure, though it competes with the shirt-front sponsor for attention.",
+            "motion_blur": 10,
+            "overall_score": 7.5,
+            "position": 8,
+            "size": 5.5,
+            "suggestions": "Increase manufacturer logo scale in lineup graphics or add a brief isolated kit detail insert before kickoff."
+          },
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 8,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 1511,
+                "note": "Kulusevski close-up gives only logo-only read rather than full hero treatment.",
+                "start_sec": 1508,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Nike benefits from sharp close-ups on Tottenham players, but manufacturer marks are inherently small and secondary to front-of-shirt sponsors.",
+            "motion_blur": 8.5,
+            "overall_score": 7.2,
+            "position": 7.5,
+            "size": 4.5,
+            "suggestions": "To improve broadcast pickup, use higher-contrast application against the away shirt and seek more isolated beauty shots of players warming up or preparing restarts."
+          }
+        ],
+        "name": "Nike",
+        "summary": "Nike appears as Tottenham’s kit manufacturer logo. It is clean and recognizable in pregame graphics and several close-ups, but its small physical footprint caps total impact."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "broadcast_overlay",
+            "camera_angle": 10,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 137,
+                "note": "Tiny by design; scorebug presence is constant but not attention-dominant.",
+                "start_sec": 116,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Excellent technical clarity because it sits in the scorebug, but brand scale is very small and passive.",
+            "motion_blur": 10,
+            "overall_score": 7.6,
+            "position": 9,
+            "size": 4.5,
+            "suggestions": "If rights permit, enlarge the Hublot lockup within the clock/scorebug area or use occasional branded timekeeping stings to convert passive visibility into active recall."
+          },
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 1089,
+                "note": "Corner-setup board is visible but remains peripheral and secondary to the set-piece action.",
+                "start_sec": 1079,
+                "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+              }
+            ],
+            "issues": "Readable on LED rotation, but only briefly observed and never centered.",
+            "motion_blur": 7,
+            "overall_score": 7,
+            "position": 6,
+            "size": 6.5,
+            "suggestions": "Extend hold during dead-ball phases and simplify any supporting elements around the logo so the brand lands faster in sideboard glimpses."
+          }
+        ],
+        "name": "HUBLOT",
+        "summary": "HUBLOT shows up in two useful but non-dominant forms: the scorebug and a brief perimeter-board rotation. The scorebug is technically the clearest asset, but its small size limits salience."
+      },
+      {
+        "assets": [],
+        "name": "NISSAN",
+        "summary": "Detected only on rotating perimeter LED boards, with a clear early live-play exposure around 677-700 seconds. No additional asset types were surfaced in metadata, so overall broadcast value appears limited and board-only."
+      }
+    ]
+  },
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"scorers_table\",\"camera_angle\":9,\"contrast\":9,\"examples\":[{\"end_sec\":42,\"note\":\"Formation graphic is clean, but shirt crop is still smaller than live close-ups.\",\"start_sec\":6,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Strong pregame graphic exposure. Minor limitation: logo is embedded inside player cutouts rather than isolated creative.\",\"motion_blur\":10,\"overall_score\":8.8,\"position\":8.5,\"size\":8,\"suggestions\":\"Keep this treatment; if optimizing further, enlarge the shirt crop area 10-15% or add a subtle zoom on central players so the chest sponsor reads even faster.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":8.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":1858,\"note\":\"In long open-play sequence the mark drops to partially legible in wider framing.\",\"start_sec\":1800,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":1499,\"note\":\"Background-only glimpse behind Tottenham player; logo-only readability.\",\"start_sec\":1498,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Very strong in close-ups and celebrations, but chest sponsor softens in wide live-play phases and when City players are side-on.\",\"motion_blur\":7.5,\"overall_score\":8.4,\"position\":8,\"size\":8.5,\"suggestions\":\"For future kits/broadcast optimization, add slightly heavier dark edge definition around the wordmark to preserve readability in motion and oblique angles.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":8,\"examples\":[{\"end_sec\":137,\"note\":\"Readable early, but still secondary in wide game camera.\",\"start_sec\":116,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":1089,\"note\":\"Competes with Hublot and other rotations during corner setup.\",\"start_sec\":1079,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Frequent board presence, but mostly as a secondary-background asset; loses impact in high/wide angles and during rotation clutter.\",\"motion_blur\":6.5,\"overall_score\":7.4,\"position\":6.5,\"size\":7,\"suggestions\":\"Reduce rotation crowding around set pieces; hold Etihad longer during dead-ball moments. Increase luminance separation from adjacent blue/cyan creative so the brand does not blend into the City visual palette.\"},{\"asset_type\":\"floor_decal\",\"camera_angle\":7,\"contrast\":7.5,\"examples\":[{\"end_sec\":931,\"note\":\"Fascia sign is visible but small and far from center action.\",\"start_sec\":916,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":1498,\"note\":\"Bench-area fascia reads clearly but remains background-only.\",\"start_sec\":1497,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Useful contextual branding in stadium architecture, but small on screen and rarely heroed.\",\"motion_blur\":8.5,\"overall_score\":7,\"position\":5.5,\"size\":5.5,\"suggestions\":\"Move key fascia marks closer to camera-facing technical area or use larger repeated wordmarks across bench/tunnel sightlines to convert background impressions into readable exposures.\"}],\"name\":\"Etihad\",\"summary\":\"Best-performing brand in the broadcast. It appears across pregame graphics, Manchester City shirt-front close-ups, perimeter LEDs, and stadium fascia. Creative is consistently readable, with the only recurring weakness coming in wide live-play shots where the shirt-front sponsor becomes background detail.\"},{\"assets\":[{\"asset_type\":\"scorers_table\",\"camera_angle\":9,\"contrast\":9,\"examples\":[{\"end_sec\":73,\"note\":\"Pregame formation graphic is strong overall, but Nike and AIA compete within the same shirt crop.\",\"start_sec\":42,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Excellent pregame visibility on the lineup graphic; minor sponsor clutter from other kit details.\",\"motion_blur\":10,\"overall_score\":8.9,\"position\":8.5,\"size\":8.5,\"suggestions\":\"Maintain this asset; consider slightly tighter torso framing on featured players to isolate AIA even more clearly.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":8.5,\"contrast\":9,\"examples\":[{\"end_sec\":4498,\"note\":\"Lo Celso walk-and-graphic shot records only partial legibility.\",\"start_sec\":4492,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":4575,\"note\":\"Reaction close-up still only partially legible due to crop and body angle.\",\"start_sec\":4571,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":2696,\"note\":\"In wide live play AIA drops to secondary/background and partial readability.\",\"start_sec\":2692,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"One of the strongest assets in the match: repeated close-ups, goal celebration, substitutions, and postgame reactions. Weakness appears when players are turning, hunched, or framed mid-run.\",\"motion_blur\":8,\"overall_score\":8.7,\"position\":8.5,\"size\":8.5,\"suggestions\":\"Very effective already. To improve marginal cases, use slightly thicker stroke/outline around the red letterforms or a micro drop-shadow so the mark holds when shirts crease during motion.\"}],\"name\":\"AIA\",\"summary\":\"Highest repetition of any target brand. AIA benefits from Tottenham’s many close-ups, celebrations, substitutions, and postgame coverage. Visibility is excellent overall, with only occasional softness in angled or fast-motion live-play frames.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":7.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":83,\"note\":\"Overhead huddle shot makes sleeve branding secondary rather than hero.\",\"start_sec\":73,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":1862,\"note\":\"Readable on Doku in reaction close-up, but sleeve placement is still smaller than chest sponsor.\",\"start_sec\":1858,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Sleeve placement gives solid incidental exposure, especially in player close-ups, but it underperforms when camera framing favors torso/front rather than sleeve side.\",\"motion_blur\":7,\"overall_score\":7.8,\"position\":7,\"size\":6.5,\"suggestions\":\"Increase logo scale on sleeve if rights allow, and favor high-contrast monochrome execution with stronger edge separation from shirt color. Broadcast-side, isolate more side-on player close-ups to exploit sleeve visibility.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":220,\"note\":\"Wide live-play boards are readable but remain peripheral.\",\"start_sec\":174,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":912,\"note\":\"Competes with Etihad in dual-board exposure during record graphic.\",\"start_sec\":897,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Good board legibility, but mostly in wide gameplay where screen share is limited and rotation clutter reduces stand-out.\",\"motion_blur\":6.5,\"overall_score\":7.5,\"position\":6.5,\"size\":7,\"suggestions\":\"Hold the OKX creative longer in set-piece/stoppage windows and use simpler negative-space layouts with fewer visual elements so it punches through at wide focal lengths.\"},{\"asset_type\":\"floor_decal\",\"camera_angle\":5.5,\"contrast\":8,\"examples\":[{\"end_sec\":90,\"note\":\"Pregame fascia exposure is readable but distant and brief.\",\"start_sec\":83,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Single metadata-detected fascia moment; visibility is modest because the sign sits far from center frame.\",\"motion_blur\":9,\"overall_score\":6.3,\"position\":5,\"size\":4.5,\"suggestions\":\"If this is a stadium ribbon/fascia buy, enlarge the wordmark or repeat it more densely near dugout and corner-camera sightlines.\"}],\"name\":\"OKX\",\"summary\":\"OKX appears both as Manchester City sleeve branding and on rotating LEDs. The sleeve asset is better in close player shots; the LED asset delivers frequency but not dominance. Overall solid, not standout.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":7,\"contrast\":9,\"examples\":[{\"end_sec\":999,\"note\":\"Board is part of a transition sequence with Etihad and Midea, so exclusive ownership is diluted.\",\"start_sec\":977,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"},{\"end_sec\":5681,\"note\":\"Late-game boards are frequent but still peripheral in wide action.\",\"start_sec\":5671,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Strong contrast and repeated second-half presence. Main limitation is peripheral placement in wide gameplay and occasional adjacency to other bright board creative.\",\"motion_blur\":7,\"overall_score\":7.9,\"position\":6.5,\"size\":7,\"suggestions\":\"This creative already reads well; biggest gain would come from longer static holds during stoppages and corner setups, plus slight enlargement of the wordmark relative to border/device graphics.\"}],\"name\":\"NEXEN TIRE\",\"summary\":\"NEXEN TIRE is a durable perimeter-board performer. It appears repeatedly across live play, stoppages, and replays, especially in the middle and late phases. Visibility is good thanks to strong contrast, but the asset rarely owns the frame.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":5183,\"note\":\"Only detected exposure is a brief celebration background hit, so total recall value is limited.\",\"start_sec\":5179,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Single brief LED appearance only; readable, but fleeting and backgrounded.\",\"motion_blur\":7,\"overall_score\":6.8,\"position\":6,\"size\":6,\"suggestions\":\"Increase dwell time on rotations and schedule around celebrations/stoppages rather than active wide play. A brighter white lockup or illuminated border would help the brand pop faster on short exposures.\"}],\"name\":\"Emirates\",\"summary\":\"Minimal presence in this broadcast. Only one metadata-detected perimeter-board exposure appears, during a Manchester City celebration. Readable, but too brief to generate strong cumulative value.\"},{\"assets\":[{\"asset_type\":\"scorers_table\",\"camera_angle\":9,\"contrast\":8.5,\"examples\":[{\"end_sec\":73,\"note\":\"Logo-only read on lineup graphic; Nike is visible but smaller than AIA shirt-front sponsor.\",\"start_sec\":42,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Pregame lineup graphic provides a clean logo-only exposure, though it competes with the shirt-front sponsor for attention.\",\"motion_blur\":10,\"overall_score\":7.5,\"position\":8,\"size\":5.5,\"suggestions\":\"Increase manufacturer logo scale in lineup graphics or add a brief isolated kit detail insert before kickoff.\"},{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8,\"examples\":[{\"end_sec\":1511,\"note\":\"Kulusevski close-up gives only logo-only read rather than full hero treatment.\",\"start_sec\":1508,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Nike benefits from sharp close-ups on Tottenham players, but manufacturer marks are inherently small and secondary to front-of-shirt sponsors.\",\"motion_blur\":8.5,\"overall_score\":7.2,\"position\":7.5,\"size\":4.5,\"suggestions\":\"To improve broadcast pickup, use higher-contrast application against the away shirt and seek more isolated beauty shots of players warming up or preparing restarts.\"}],\"name\":\"Nike\",\"summary\":\"Nike appears as Tottenham’s kit manufacturer logo. It is clean and recognizable in pregame graphics and several close-ups, but its small physical footprint caps total impact.\"},{\"assets\":[{\"asset_type\":\"broadcast_overlay\",\"camera_angle\":10,\"contrast\":9,\"examples\":[{\"end_sec\":137,\"note\":\"Tiny by design; scorebug presence is constant but not attention-dominant.\",\"start_sec\":116,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Excellent technical clarity because it sits in the scorebug, but brand scale is very small and passive.\",\"motion_blur\":10,\"overall_score\":7.6,\"position\":9,\"size\":4.5,\"suggestions\":\"If rights permit, enlarge the Hublot lockup within the clock/scorebug area or use occasional branded timekeeping stings to convert passive visibility into active recall.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":1089,\"note\":\"Corner-setup board is visible but remains peripheral and secondary to the set-piece action.\",\"start_sec\":1079,\"video\":\"Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4\"}],\"issues\":\"Readable on LED rotation, but only briefly observed and never centered.\",\"motion_blur\":7,\"overall_score\":7,\"position\":6,\"size\":6.5,\"suggestions\":\"Extend hold during dead-ball phases and simplify any supporting elements around the logo so the brand lands faster in sideboard glimpses.\"}],\"name\":\"HUBLOT\",\"summary\":\"HUBLOT shows up in two useful but non-dominant forms: the scorebug and a brief perimeter-board rotation. The scorebug is technically the clearest asset, but its small size limits salience.\"},{\"assets\":[],\"name\":\"NISSAN\",\"summary\":\"Detected only on rotating perimeter LED boards, with a clear early live-play exposure around 677-700 seconds. No additional asset types were surfaced in metadata, so overall broadcast value appears limited and board-only.\"}]}",
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "mci-tot-2023",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

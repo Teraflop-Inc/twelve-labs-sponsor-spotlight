@@ -1,0 +1,305 @@
+{
+  "session_id": "sess_019f62ae-14a5-7f90-8b28-9f21ad47f354",
+  "discovery": {
+    "brands": [
+      {
+        "name": "AIA",
+        "asset_types": [
+          "perimeter_led_board",
+          "shirt_front_sponsor",
+          "stadium_or_stand_signage"
+        ]
+      },
+      {
+        "name": "Acura",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "Aimscap",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Alipay+",
+        "asset_types": [
+          "perimeter_led_board",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Antom",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Barclays",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "BetMGM",
+        "asset_types": [
+          "other",
+          "perimeter_led_board",
+          "stadium_or_stand_signage",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "BingX",
+        "asset_types": [
+          "shirt_sleeve_sponsor",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Coca-Cola",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "DeWalt",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "DirecTV",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "EA Sports",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "ExpressVPN",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "FC Mobile",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Fever",
+        "asset_types": [
+          "shirt_front_sponsor",
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Fubo",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "GEICO",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "HSBC",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Heineken",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Hewlett Packard Enterprise",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Hublot",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "perimeter_led_board",
+          "substitution_board_branding"
+        ]
+      },
+      {
+        "name": "INEOS Grenadier",
+        "asset_types": [
+          "perimeter_led_board",
+          "stadium_or_stand_signage"
+        ]
+      },
+      {
+        "name": "Infinite Athlete",
+        "asset_types": [
+          "shirt_front_sponsor"
+        ]
+      },
+      {
+        "name": "Kraken",
+        "asset_types": [
+          "perimeter_led_board",
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Kumho Tyre",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Lexus",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "Monster Energy",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "NBC",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "Nike",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "perimeter_led_board",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Oracle Cloud",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Peacock",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "flash_interview_backdrop"
+        ]
+      },
+      {
+        "name": "Phantom",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Premier League",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Samsung Galaxy",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "Sidiz",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Sky Sports",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Socios.com",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Sports Direct",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Tempo",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "Toyota",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug",
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "USA Network",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "Verizon",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      },
+      {
+        "name": "WorldFirst",
+        "asset_types": [
+          "perimeter_led_board"
+        ]
+      },
+      {
+        "name": "YouTube TV",
+        "asset_types": [
+          "broadcast_graphic_or_scorebug"
+        ]
+      }
+    ],
+    "summary": "44 distinct sponsor brands were identified across multiple broadcast surfaces, with visibility spanning signage, on-kit placements, graphics, and other in-broadcast sponsorship inventory."
+  },
+  "answer": "{\"brands\": [{\"name\": \"AIA\", \"asset_types\": [\"perimeter_led_board\", \"shirt_front_sponsor\", \"stadium_or_stand_signage\"]}, {\"name\": \"Acura\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"Aimscap\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Alipay+\", \"asset_types\": [\"perimeter_led_board\", \"training_kit_sponsor\"]}, {\"name\": \"Antom\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Barclays\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"BetMGM\", \"asset_types\": [\"other\", \"perimeter_led_board\", \"stadium_or_stand_signage\", \"training_kit_sponsor\"]}, {\"name\": \"BingX\", \"asset_types\": [\"shirt_sleeve_sponsor\", \"training_kit_sponsor\"]}, {\"name\": \"Coca-Cola\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"DeWalt\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"DirecTV\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"EA Sports\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"perimeter_led_board\"]}, {\"name\": \"ExpressVPN\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"FC Mobile\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Fever\", \"asset_types\": [\"shirt_front_sponsor\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"Fubo\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"GEICO\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"HSBC\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Heineken\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Hewlett Packard Enterprise\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Hublot\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"perimeter_led_board\", \"substitution_board_branding\"]}, {\"name\": \"INEOS Grenadier\", \"asset_types\": [\"perimeter_led_board\", \"stadium_or_stand_signage\"]}, {\"name\": \"Infinite Athlete\", \"asset_types\": [\"shirt_front_sponsor\"]}, {\"name\": \"Kraken\", \"asset_types\": [\"perimeter_led_board\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"Kumho Tyre\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Lexus\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"Monster Energy\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"NBC\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"Nike\", \"asset_types\": [\"kit_manufacturer_logo\", \"perimeter_led_board\", \"training_kit_sponsor\"]}, {\"name\": \"Oracle Cloud\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"perimeter_led_board\"]}, {\"name\": \"Peacock\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"flash_interview_backdrop\"]}, {\"name\": \"Phantom\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Premier League\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"perimeter_led_board\"]}, {\"name\": \"Samsung Galaxy\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"Sidiz\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Sky Sports\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"perimeter_led_board\"]}, {\"name\": \"Socios.com\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Sports Direct\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Tempo\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"Toyota\", \"asset_types\": [\"broadcast_graphic_or_scorebug\", \"perimeter_led_board\"]}, {\"name\": \"USA Network\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"Verizon\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}, {\"name\": \"WorldFirst\", \"asset_types\": [\"perimeter_led_board\"]}, {\"name\": \"YouTube TV\", \"asset_types\": [\"broadcast_graphic_or_scorebug\"]}], \"summary\": \"44 distinct sponsor brands were identified across multiple broadcast surfaces, with visibility spanning signage, on-kit placements, graphics, and other in-broadcast sponsorship inventory.\"}",
+  "timings": {
+    "discover_secs": 23.0
+  },
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "tot-che-2024",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

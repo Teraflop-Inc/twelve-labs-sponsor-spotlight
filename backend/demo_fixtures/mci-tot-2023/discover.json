@@ -1,0 +1,505 @@
+{
+  "session_id": "sess_019f6286-8164-7003-816e-eed80005d52f",
+  "discovery": {
+    "brands": [
+      {
+        "name": "8Xbet",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "8xbet",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "AIA",
+        "asset_types": [
+          "shirt_front_sponsor"
+        ]
+      },
+      {
+        "name": "ALDAR",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Abu Dhabi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Aldar",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Asahi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Asahi Super Dry",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Axi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Barclays",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Cinch",
+        "asset_types": [
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "City v United",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Dsquared2",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "EA Sports",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "EA Sports FC 24",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "ETIHAD STADIUM",
+        "asset_types": [
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Emirates",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Emirates Palace",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Emirates Palace Mandarin Oriental",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Emirates Palace Mandarin Oriental Abu Dhabi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Etihad",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Etihad Airways",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_front_sponsor",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Etisalat",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Etisalat and",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "FUTURE",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "GET READY FOR HALF TIME",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Getir",
+        "asset_types": [
+          "shirt_sleeve_sponsor",
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "Getty",
+        "asset_types": [
+          "other"
+        ]
+      },
+      {
+        "name": "Gsaka",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "HUBLOT",
+        "asset_types": [
+          "substitution_board_branding"
+        ]
+      },
+      {
+        "name": "Hublot",
+        "asset_types": [
+          "broadcast_graphic",
+          "perimeter_led_board_rotating",
+          "scoreboard_advert",
+          "scorebug",
+          "substitution_board_branding"
+        ]
+      },
+      {
+        "name": "LeoVegas",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Mandarin Oriental",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Midea",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Mobile Casino of the Year",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Mykonos",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "NEXEN TIRE",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "NISSAN",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "NOBU",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Nexen Tire",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Nike",
+        "asset_types": [
+          "kit_manufacturer_logo"
+        ]
+      },
+      {
+        "name": "Nissan",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "Nobu",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "OKX",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_sleeve_sponsor",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "ORACLE CLOUD",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Oracle Cloud",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "PUMA",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "PUMA.COM/FOOTBALL",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Peacock",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Premier League",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "Puma",
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "perimeter_led_board_rotating",
+          "stadium_fascia_signage"
+        ]
+      },
+      {
+        "name": "QNET",
+        "asset_types": [
+          "perimeter_led_board_rotating",
+          "perimeter_led_board_static"
+        ]
+      },
+      {
+        "name": "RAINBOW ACES",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Rexona",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "SO CLEAN",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "SOMETHING EXCITING IS COMING",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "SPORTIUM",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Socios.com",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Sportium",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "St. Petersburg",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Super Dry",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Thiruvananthapuram",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "ULTRA",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Verizon",
+        "asset_types": [
+          "broadcast_graphic"
+        ]
+      },
+      {
+        "name": "Visit Abu Dhabi",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "WIX",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Wix",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "Xylem",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "alltoplayfor.com",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "cinch",
+        "asset_types": [
+          "shirt_sleeve_sponsor"
+        ]
+      },
+      {
+        "name": "e&",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "e-POWER",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "etisalat",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "etisalat and",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "etisalat and so much more",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      },
+      {
+        "name": "getir",
+        "asset_types": [
+          "training_kit_sponsor"
+        ]
+      },
+      {
+        "name": "xylem",
+        "asset_types": [
+          "perimeter_led_board_rotating"
+        ]
+      }
+    ],
+    "summary": "This broadcast features 77 distinct sponsor brands across 12 surface placement types, spanning broadcast graphics, in-venue signage, and other visible branding integrations."
+  },
+  "answer": "{\"brands\": [{\"name\": \"8Xbet\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"8xbet\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"AIA\", \"asset_types\": [\"shirt_front_sponsor\"]}, {\"name\": \"ALDAR\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Abu Dhabi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Aldar\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Asahi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Asahi Super Dry\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Axi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Barclays\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\"]}, {\"name\": \"Cinch\", \"asset_types\": [\"shirt_sleeve_sponsor\"]}, {\"name\": \"City v United\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Dsquared2\", \"asset_types\": [\"perimeter_led_board_rotating\", \"stadium_fascia_signage\"]}, {\"name\": \"EA Sports\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\"]}, {\"name\": \"EA Sports FC 24\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"ETIHAD STADIUM\", \"asset_types\": [\"stadium_fascia_signage\"]}, {\"name\": \"Emirates\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Emirates Palace\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Emirates Palace Mandarin Oriental\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Emirates Palace Mandarin Oriental Abu Dhabi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Etihad\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_front_sponsor\", \"stadium_fascia_signage\"]}, {\"name\": \"Etihad Airways\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_front_sponsor\", \"stadium_fascia_signage\"]}, {\"name\": \"Etisalat\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Etisalat and\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"FUTURE\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"GET READY FOR HALF TIME\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Getir\", \"asset_types\": [\"shirt_sleeve_sponsor\", \"training_kit_sponsor\"]}, {\"name\": \"Getty\", \"asset_types\": [\"other\"]}, {\"name\": \"Gsaka\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"HUBLOT\", \"asset_types\": [\"substitution_board_branding\"]}, {\"name\": \"Hublot\", \"asset_types\": [\"broadcast_graphic\", \"perimeter_led_board_rotating\", \"scoreboard_advert\", \"scorebug\", \"substitution_board_branding\"]}, {\"name\": \"LeoVegas\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Mandarin Oriental\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Midea\", \"asset_types\": [\"perimeter_led_board_rotating\", \"stadium_fascia_signage\"]}, {\"name\": \"Mobile Casino of the Year\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Mykonos\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"NEXEN TIRE\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"NISSAN\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"NOBU\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Nexen Tire\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Nike\", \"asset_types\": [\"kit_manufacturer_logo\"]}, {\"name\": \"Nissan\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\", \"stadium_fascia_signage\"]}, {\"name\": \"Nobu\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"OKX\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_sleeve_sponsor\", \"stadium_fascia_signage\"]}, {\"name\": \"ORACLE CLOUD\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Oracle Cloud\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"PUMA\", \"asset_types\": [\"kit_manufacturer_logo\", \"perimeter_led_board_rotating\"]}, {\"name\": \"PUMA.COM/FOOTBALL\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Peacock\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Premier League\", \"asset_types\": [\"perimeter_led_board_rotating\", \"shirt_sleeve_sponsor\"]}, {\"name\": \"Puma\", \"asset_types\": [\"kit_manufacturer_logo\", \"perimeter_led_board_rotating\", \"stadium_fascia_signage\"]}, {\"name\": \"QNET\", \"asset_types\": [\"perimeter_led_board_rotating\", \"perimeter_led_board_static\"]}, {\"name\": \"RAINBOW ACES\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Rexona\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"SO CLEAN\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"SOMETHING EXCITING IS COMING\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"SPORTIUM\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Socios.com\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Sportium\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"St. Petersburg\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Super Dry\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Thiruvananthapuram\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"ULTRA\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Verizon\", \"asset_types\": [\"broadcast_graphic\"]}, {\"name\": \"Visit Abu Dhabi\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"WIX\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Wix\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"Xylem\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"alltoplayfor.com\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"cinch\", \"asset_types\": [\"shirt_sleeve_sponsor\"]}, {\"name\": \"e&\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"e-POWER\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"etisalat\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"etisalat and\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"etisalat and so much more\", \"asset_types\": [\"perimeter_led_board_rotating\"]}, {\"name\": \"getir\", \"asset_types\": [\"training_kit_sponsor\"]}, {\"name\": \"xylem\", \"asset_types\": [\"perimeter_led_board_rotating\"]}], \"summary\": \"This broadcast features 77 distinct sponsor brands across 12 surface placement types, spanning broadcast graphics, in-venue signage, and other visible branding integrations.\"}",
+  "timings": {
+    "discover_secs": 21.3
+  },
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "mci-tot-2023",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

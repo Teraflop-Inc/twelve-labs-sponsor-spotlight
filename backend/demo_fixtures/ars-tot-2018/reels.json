@@ -1,0 +1,27 @@
+{
+  "emirates": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/emirates-ERSyr7jbxBtXvkWsxlF5dWm5cIQGVq.mp4",
+    "duration_sec": 60.1,
+    "clips": 3
+  },
+  "aia": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/aia-DPQeJw3jCUVPGiXc550wmadOiZe0B4.mp4",
+    "duration_sec": 60.3,
+    "clips": 8
+  },
+  "nike": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/nike-UJF7fp5OTypGB4g1kLj7J44zIlSgNz.mp4",
+    "duration_sec": 53.2,
+    "clips": 8
+  },
+  "12bet": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/12bet-nhkUZvLhDFWbRO0yZ18QfJQqz8fIXG.mp4",
+    "duration_sec": 48.0,
+    "clips": 1
+  },
+  "acronis": {
+    "url": "https://ycnior4hqxx8byxw.public.blob.vercel-storage.com/reels/ars-tot-2018/acronis-Qiflt3gaTkyJzVr8SLHInKl8sfO5Lm.mp4",
+    "duration_sec": 22.1,
+    "clips": 2
+  }
+}

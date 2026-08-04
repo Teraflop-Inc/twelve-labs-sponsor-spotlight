@@ -1,0 +1,29 @@
+import * as React from "react"
+
+import { cn } from "@/lib/utils"
+
+function OrganizationFilledIcon({ className, ...props }: React.ComponentProps<"svg">) {
+  return (
+    <svg
+      data-slot="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      aria-hidden="true"
+      className={cn("shrink-0", className)}
+      {...props}
+    >
+      <path d="M12.667 12.666H11.334V11.333H12.667V12.666Z" />
+      <path d="M12.667 10H11.334V8.66699H12.667V10Z" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M6.66699 1.33301C7.77156 1.33301 8.66699 2.22844 8.66699 3.33301V6.66699H12.999C13.7353 6.66699 14.3328 7.26377 14.333 8V13.334C14.3328 14.0702 13.7353 14.667 12.999 14.667L3.33398 14.666C2.22942 14.666 1.33398 13.7706 1.33398 12.666V3.33301C1.33398 2.22844 2.22941 1.33301 3.33398 1.33301H6.66699ZM8.66699 8.66699H9.99902V10H8.66699V11.333H9.99902V12.666H8.66699V13.667H12.999C13.183 13.667 13.3328 13.5179 13.333 13.334V8C13.3328 7.81605 13.183 7.66699 12.999 7.66699H8.66699V8.66699ZM2.66797 12.666H4.00098V11.333H2.66797V12.666ZM6 12.666H7.33301V11.333H6V12.666ZM2.66797 10H4.00098V8.66602H2.66797V10ZM6 10H7.33301V8.66602H6V10ZM2.66797 7.33301H4.00098V6H2.66797V7.33301ZM6 7.33301H7.33301V6H6V7.33301ZM2.66797 4.66602H4.00098V3.33301H2.66797V4.66602ZM6 4.66602H7.33301V3.33301H6V4.66602Z"
+      />
+    </svg>
+  )
+}
+
+export { OrganizationFilledIcon }

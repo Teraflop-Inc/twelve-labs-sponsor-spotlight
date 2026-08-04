@@ -1,0 +1,396 @@
+{
+  "session_id": "sess_019f6283-d7fb-72b3-902a-35b9106c58ed",
+  "report": {
+    "brands": [
+      {
+        "assets": [
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 8,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 1451,
+                "note": "Partially legible in live play when players turn away or are mid-stride.",
+                "start_sec": 1433,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 2910,
+                "note": "Strong in halftime walk-off close-up of Agüero.",
+                "start_sec": 2903,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Manchester City shirt-front sponsor. Usually excellent in close-ups and medium shots; weaker in fast live-play sequences when torsos are angled or distant. Poorer render example: 1433-1451s, where the logo drops to partially legible in motion.",
+            "motion_blur": 7.5,
+            "overall_score": 8.3,
+            "position": 7.5,
+            "size": 8,
+            "suggestions": "Keep current high-contrast dark wordmark on sky blue, but add slightly thicker stroke/weight for long-lens live play. Favor tighter replay/cutaway framing after key actions to convert more live-play exposure into fully readable exposure."
+          },
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6.5,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 1451,
+                "note": "Board visible but secondary and less readable in fast, wide build-up.",
+                "start_sec": 1433,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 3777,
+                "note": "Visit Etihad.com/Etihad reads well, but wide-angle distance limits impact versus close sideline shots.",
+                "start_sec": 3763,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Perimeter LED appears as ETIHAD / Etihad / Etihad.com / Visit Etihad.com. Generally readable, but often background-only in wide live-play angles. Dynamic camera pans reduce dwell time even when legible.",
+            "motion_blur": 6.5,
+            "overall_score": 7.5,
+            "position": 5.5,
+            "size": 6.5,
+            "suggestions": "Increase dwell length on the ETIHAD creative rotation during sustained open play. Use fewer words per execution—prefer ETIHAD over URL-heavy variants in wide shots. Consider brighter board background or stronger outline to improve pickup at long camera distances."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 2612,
+                "note": "Dugout/bench branding is visible but secondary during Pep cutaway.",
+                "start_sec": 2609,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 3855,
+                "note": "Fascia/dugout signage remains readable but background-only behind Pep.",
+                "start_sec": 3846,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Includes stadium fascia, stand, and dugout signage. Strong in bench/touchline cutaways and some wide stadium views; weaker only when relegated to background during manager shots.",
+            "motion_blur": 9,
+            "overall_score": 8.1,
+            "position": 6.5,
+            "size": 7.5,
+            "suggestions": "This is already one of the better non-play surfaces. To lift value further, concentrate branding in the camera-facing dugout fascia and enlarge the wordmark on bench-seat blocks so touchline cutaways carry more dominant exposure."
+          }
+        ],
+        "name": "ETIHAD",
+        "summary": "Best-performing brand in the broadcast. Appears across shirt-front sponsor, perimeter LED, and stadium/dugout/fascia signage, with strongest exposure in close player shots and touchline cutaways."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 7.5,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 5749,
+                "note": "Sleeve reduces to logo-only visibility in live play.",
+                "start_sec": 5734,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 4592,
+                "note": "Partially legible from behind Sané during score update.",
+                "start_sec": 4587,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Manchester City shirt-sleeve sponsor. Excellent in close throw-in and stoppage shots, especially 881-888s. Weakens in open play because the sleeve rotates away from camera and logo area is small.",
+            "motion_blur": 7,
+            "overall_score": 7.8,
+            "position": 7,
+            "size": 6,
+            "suggestions": "Use a larger sleeve lockup and bolder letter spacing; current asset is clear in stills but loses authority in motion. A higher-contrast sleeve patch border would help when the arm is turned away from the lens."
+          },
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 1743,
+                "note": "Visible in stoppage background but not dominant.",
+                "start_sec": 1738,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 3969,
+                "note": "Readable behind touchline close-up, but still secondary.",
+                "start_sec": 3963,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Board creative is consistently legible, but usually background-secondary rather than hero exposure. Performs better in stoppages and throw-ins than in fluid central play.",
+            "motion_blur": 6.5,
+            "overall_score": 7.2,
+            "position": 5.5,
+            "size": 6.5,
+            "suggestions": "Maintain the high-contrast board palette, but buy longer uninterrupted rotations near throw-ins/corners. If possible, simplify to the shortest brand form and avoid competing adjacency with other bright creatives."
+          }
+        ],
+        "name": "NEXEN TIRE",
+        "summary": "Strong overall. Sleeve placement delivers premium close-up exposure; LED exposure is solid but more background-dependent."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6.5,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 3490,
+                "note": "Readable in wide live-play sequence, but small and backgrounded.",
+                "start_sec": 3486,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 5506,
+                "note": "Late-game open-play exposure remains legible but not prominent.",
+                "start_sec": 5504,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Pitchside LED Nissan boards show repeatedly and remain readable, though mostly as wide-shot background media rather than focal branding.",
+            "motion_blur": 6.5,
+            "overall_score": 7.3,
+            "position": 5.5,
+            "size": 6.5,
+            "suggestions": "Increase letter height and reduce negative space in the creative so the wordmark holds up better in high-wide angles. Pair rotations with dead-ball moments for longer dwell."
+          },
+          {
+            "asset_type": "other",
+            "camera_angle": 7.5,
+            "contrast": 7.5,
+            "examples": [
+              {
+                "end_sec": 1533,
+                "note": "Bench/fascia branding visible behind Pep but secondary.",
+                "start_sec": 1533,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 4728,
+                "note": "Dugout branding present behind Klopp/Shaqiri substitution sequence, but not centered.",
+                "start_sec": 4720,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Appears on dugout/fascia/bench signage. Good non-play value in manager cutaways, but often partially occluded by bodies or shallow framing.",
+            "motion_blur": 9,
+            "overall_score": 7.6,
+            "position": 6,
+            "size": 7,
+            "suggestions": "Excellent opportunity area: enlarge the dugout-facing Nissan mark and center it higher in the camera line so manager and substitute cutaways capture more uninterrupted exposure."
+          }
+        ],
+        "name": "Nissan",
+        "summary": "Good multi-surface visibility. Best value comes from non-play dugout/fascia exposure, with LED boards adding steady but mostly background impressions."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "shirt_front",
+            "camera_angle": 7,
+            "contrast": 7.5,
+            "examples": [
+              {
+                "end_sec": 1451,
+                "note": "Kit logo drops to logo-only visibility in live play.",
+                "start_sec": 1433,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 5172,
+                "note": "Logo visible but small during moving player close-up.",
+                "start_sec": 5169,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Nike swoosh on Manchester City kit is crisp in stoppage close-up at 881-888s, but naturally small. It often resolves as logo-only rather than a strong brand impression during motion.",
+            "motion_blur": 7.5,
+            "overall_score": 6.9,
+            "position": 7,
+            "size": 4.5,
+            "suggestions": "As a kit-manufacturer mark, size is the main constraint. For broadcast impact, a slightly larger chest swoosh or stronger contrast treatment would help. Supplement with more board creative near City attacking thirds."
+          },
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 2787,
+                "note": "NIKE.COM/FOOTBALL is readable but long URL format reduces instant recognition in wide shot.",
+                "start_sec": 2780,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 2040,
+                "note": "Nike.com/football clear, but still secondary in live attack sequence.",
+                "start_sec": 2007,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Board creative is legible, but URL-led copy is less efficient than a pure Nike brand mark in fast soccer coverage. Strong contrast; only real weakness is message complexity in wide shots.",
+            "motion_blur": 6.5,
+            "overall_score": 7.4,
+            "position": 5.5,
+            "size": 6.5,
+            "suggestions": "Swap URL-heavy board creative for a larger swoosh + NIKE or a shorter football callout. The simpler lockup will read faster in panning open-play camera angles."
+          }
+        ],
+        "name": "Nike",
+        "summary": "Good but not dominant. The swoosh is clear when isolated, yet small; Nike’s board creative would benefit from simpler branding and less URL dependency."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6,
+            "contrast": 8.5,
+            "examples": [
+              {
+                "end_sec": 4714,
+                "note": "Visible in long midfield sequence but background-only for much of the run.",
+                "start_sec": 4663,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 5323,
+                "note": "Present during replay package, but not the focal element.",
+                "start_sec": 5314,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "AvaTrade boards are generally clean and readable, with strong color contrast. Main limitation is camera priority: the brand appears mostly as secondary backdrop during live play.",
+            "motion_blur": 6.5,
+            "overall_score": 7.1,
+            "position": 5.5,
+            "size": 6.5,
+            "suggestions": "Very solid base creative. To improve return, secure more rotation share in stoppages, corners, and throw-ins where the board can sit longer in frame. Keep the bold brand name; avoid adding extra copy beyond one short tagline."
+          }
+        ],
+        "name": "AVATRADE",
+        "summary": "Strong creative fundamentals on LED boards, but exposure is mostly passive/background rather than hero-level."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6,
+            "contrast": 9,
+            "examples": [
+              {
+                "end_sec": 3052,
+                "note": "Readable in transition-wide shot but not held long enough to maximize impact.",
+                "start_sec": 3042,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 2825,
+                "note": "Strong red-board contrast, though camera distance limits detail.",
+                "start_sec": 2816,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Aabar benefits from one of the best contrast profiles in the match: bright text against a saturated board. The weakness is not legibility but limited duration and background placement.",
+            "motion_blur": 6.5,
+            "overall_score": 7.4,
+            "position": 5.5,
+            "size": 6.5,
+            "suggestions": "Lean into the high-contrast red execution—it works. Increase rotation frequency in attacking-third wide shots and hold the creative longer rather than swapping quickly."
+          }
+        ],
+        "name": "Aabar",
+        "summary": "Efficient LED creative with excellent contrast. Visibility is good whenever on screen, but total screen time looks limited."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 6,
+            "contrast": 8,
+            "examples": [
+              {
+                "end_sec": 600,
+                "note": "Readable in wide restart shot, but not large enough to dominate frame.",
+                "start_sec": 594,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 5239,
+                "note": "Visible during major Liverpool chance, but still a background board in fast action.",
+                "start_sec": 5218,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Appears as Abu Dhabi / Visit Abu Dhabi on perimeter LED. Good contextual exposure in live play, including a high-tension late chance, but mostly from wide angles where brand size is moderate.",
+            "motion_blur": 6.5,
+            "overall_score": 7,
+            "position": 5.5,
+            "size": 6,
+            "suggestions": "Prefer the shortest brand form in fast live play and reserve 'Visit Abu Dhabi' for slower/stoppage phases. Larger type and fewer words would improve immediate read from the main camera."
+          }
+        ],
+        "name": "Abu Dhabi",
+        "summary": "Solid LED presence with decent contrast, but wide-angle framing and longer copy versions reduce impact."
+      },
+      {
+        "assets": [
+          {
+            "asset_type": "perimeter_led",
+            "camera_angle": 5.5,
+            "contrast": 7.5,
+            "examples": [
+              {
+                "end_sec": 328,
+                "note": "Replay segment contains Acronis board in background only; low focal priority.",
+                "start_sec": 318,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 4639,
+                "note": "Visible during Liverpool attack, but compressed by wide angle and motion.",
+                "start_sec": 4631,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              },
+              {
+                "end_sec": 4874,
+                "note": "Readable in open final-phase wide shot, but still secondary among multiple active brands.",
+                "start_sec": 4855,
+                "video": "Manchester City v. Liverpool (2019-01-03)"
+              }
+            ],
+            "issues": "Acronis is present on rotating perimeter LED, but mostly in wide or replay background. It is legible, yet less visually forceful than the highest-contrast board brands in this match.",
+            "motion_blur": 6,
+            "overall_score": 6.6,
+            "position": 5,
+            "size": 6,
+            "suggestions": "Boost contrast and letter weight so the mark survives distant main-camera angles better. If possible, avoid cluttered adjacency with other bright board creatives and prioritize replay/stoppage rotations where the camera is steadier."
+          }
+        ],
+        "name": "Acronis",
+        "summary": "Visible but comparatively less commanding than other LED brands. Best fix is stronger creative contrast and better timing of board rotation."
+      }
+    ]
+  },
+  "answer": "{\"brands\":[{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":8,\"contrast\":8.5,\"examples\":[{\"end_sec\":1451,\"note\":\"Partially legible in live play when players turn away or are mid-stride.\",\"start_sec\":1433,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":2910,\"note\":\"Strong in halftime walk-off close-up of Agüero.\",\"start_sec\":2903,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Manchester City shirt-front sponsor. Usually excellent in close-ups and medium shots; weaker in fast live-play sequences when torsos are angled or distant. Poorer render example: 1433-1451s, where the logo drops to partially legible in motion.\",\"motion_blur\":7.5,\"overall_score\":8.3,\"position\":7.5,\"size\":8,\"suggestions\":\"Keep current high-contrast dark wordmark on sky blue, but add slightly thicker stroke/weight for long-lens live play. Favor tighter replay/cutaway framing after key actions to convert more live-play exposure into fully readable exposure.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":8,\"examples\":[{\"end_sec\":1451,\"note\":\"Board visible but secondary and less readable in fast, wide build-up.\",\"start_sec\":1433,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":3777,\"note\":\"Visit Etihad.com/Etihad reads well, but wide-angle distance limits impact versus close sideline shots.\",\"start_sec\":3763,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Perimeter LED appears as ETIHAD / Etihad / Etihad.com / Visit Etihad.com. Generally readable, but often background-only in wide live-play angles. Dynamic camera pans reduce dwell time even when legible.\",\"motion_blur\":6.5,\"overall_score\":7.5,\"position\":5.5,\"size\":6.5,\"suggestions\":\"Increase dwell length on the ETIHAD creative rotation during sustained open play. Use fewer words per execution—prefer ETIHAD over URL-heavy variants in wide shots. Consider brighter board background or stronger outline to improve pickup at long camera distances.\"},{\"asset_type\":\"other\",\"camera_angle\":7.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":2612,\"note\":\"Dugout/bench branding is visible but secondary during Pep cutaway.\",\"start_sec\":2609,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":3855,\"note\":\"Fascia/dugout signage remains readable but background-only behind Pep.\",\"start_sec\":3846,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Includes stadium fascia, stand, and dugout signage. Strong in bench/touchline cutaways and some wide stadium views; weaker only when relegated to background during manager shots.\",\"motion_blur\":9,\"overall_score\":8.1,\"position\":6.5,\"size\":7.5,\"suggestions\":\"This is already one of the better non-play surfaces. To lift value further, concentrate branding in the camera-facing dugout fascia and enlarge the wordmark on bench-seat blocks so touchline cutaways carry more dominant exposure.\"}],\"name\":\"ETIHAD\",\"summary\":\"Best-performing brand in the broadcast. Appears across shirt-front sponsor, perimeter LED, and stadium/dugout/fascia signage, with strongest exposure in close player shots and touchline cutaways.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":7.5,\"contrast\":8.5,\"examples\":[{\"end_sec\":5749,\"note\":\"Sleeve reduces to logo-only visibility in live play.\",\"start_sec\":5734,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":4592,\"note\":\"Partially legible from behind Sané during score update.\",\"start_sec\":4587,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Manchester City shirt-sleeve sponsor. Excellent in close throw-in and stoppage shots, especially 881-888s. Weakens in open play because the sleeve rotates away from camera and logo area is small.\",\"motion_blur\":7,\"overall_score\":7.8,\"position\":7,\"size\":6,\"suggestions\":\"Use a larger sleeve lockup and bolder letter spacing; current asset is clear in stills but loses authority in motion. A higher-contrast sleeve patch border would help when the arm is turned away from the lens.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":8.5,\"examples\":[{\"end_sec\":1743,\"note\":\"Visible in stoppage background but not dominant.\",\"start_sec\":1738,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":3969,\"note\":\"Readable behind touchline close-up, but still secondary.\",\"start_sec\":3963,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Board creative is consistently legible, but usually background-secondary rather than hero exposure. Performs better in stoppages and throw-ins than in fluid central play.\",\"motion_blur\":6.5,\"overall_score\":7.2,\"position\":5.5,\"size\":6.5,\"suggestions\":\"Maintain the high-contrast board palette, but buy longer uninterrupted rotations near throw-ins/corners. If possible, simplify to the shortest brand form and avoid competing adjacency with other bright creatives.\"}],\"name\":\"NEXEN TIRE\",\"summary\":\"Strong overall. Sleeve placement delivers premium close-up exposure; LED exposure is solid but more background-dependent.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6.5,\"contrast\":8,\"examples\":[{\"end_sec\":3490,\"note\":\"Readable in wide live-play sequence, but small and backgrounded.\",\"start_sec\":3486,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":5506,\"note\":\"Late-game open-play exposure remains legible but not prominent.\",\"start_sec\":5504,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Pitchside LED Nissan boards show repeatedly and remain readable, though mostly as wide-shot background media rather than focal branding.\",\"motion_blur\":6.5,\"overall_score\":7.3,\"position\":5.5,\"size\":6.5,\"suggestions\":\"Increase letter height and reduce negative space in the creative so the wordmark holds up better in high-wide angles. Pair rotations with dead-ball moments for longer dwell.\"},{\"asset_type\":\"other\",\"camera_angle\":7.5,\"contrast\":7.5,\"examples\":[{\"end_sec\":1533,\"note\":\"Bench/fascia branding visible behind Pep but secondary.\",\"start_sec\":1533,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":4728,\"note\":\"Dugout branding present behind Klopp/Shaqiri substitution sequence, but not centered.\",\"start_sec\":4720,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Appears on dugout/fascia/bench signage. Good non-play value in manager cutaways, but often partially occluded by bodies or shallow framing.\",\"motion_blur\":9,\"overall_score\":7.6,\"position\":6,\"size\":7,\"suggestions\":\"Excellent opportunity area: enlarge the dugout-facing Nissan mark and center it higher in the camera line so manager and substitute cutaways capture more uninterrupted exposure.\"}],\"name\":\"Nissan\",\"summary\":\"Good multi-surface visibility. Best value comes from non-play dugout/fascia exposure, with LED boards adding steady but mostly background impressions.\"},{\"assets\":[{\"asset_type\":\"jersey_patch\",\"camera_angle\":7,\"contrast\":7.5,\"examples\":[{\"end_sec\":1451,\"note\":\"Kit logo drops to logo-only visibility in live play.\",\"start_sec\":1433,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":5172,\"note\":\"Logo visible but small during moving player close-up.\",\"start_sec\":5169,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Nike swoosh on Manchester City kit is crisp in stoppage close-up at 881-888s, but naturally small. It often resolves as logo-only rather than a strong brand impression during motion.\",\"motion_blur\":7.5,\"overall_score\":6.9,\"position\":7,\"size\":4.5,\"suggestions\":\"As a kit-manufacturer mark, size is the main constraint. For broadcast impact, a slightly larger chest swoosh or stronger contrast treatment would help. Supplement with more board creative near City attacking thirds.\"},{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":8.5,\"examples\":[{\"end_sec\":2787,\"note\":\"NIKE.COM/FOOTBALL is readable but long URL format reduces instant recognition in wide shot.\",\"start_sec\":2780,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":2040,\"note\":\"Nike.com/football clear, but still secondary in live attack sequence.\",\"start_sec\":2007,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Board creative is legible, but URL-led copy is less efficient than a pure Nike brand mark in fast soccer coverage. Strong contrast; only real weakness is message complexity in wide shots.\",\"motion_blur\":6.5,\"overall_score\":7.4,\"position\":5.5,\"size\":6.5,\"suggestions\":\"Swap URL-heavy board creative for a larger swoosh + NIKE or a shorter football callout. The simpler lockup will read faster in panning open-play camera angles.\"}],\"name\":\"Nike\",\"summary\":\"Good but not dominant. The swoosh is clear when isolated, yet small; Nike’s board creative would benefit from simpler branding and less URL dependency.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":8.5,\"examples\":[{\"end_sec\":4714,\"note\":\"Visible in long midfield sequence but background-only for much of the run.\",\"start_sec\":4663,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":5323,\"note\":\"Present during replay package, but not the focal element.\",\"start_sec\":5314,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"AvaTrade boards are generally clean and readable, with strong color contrast. Main limitation is camera priority: the brand appears mostly as secondary backdrop during live play.\",\"motion_blur\":6.5,\"overall_score\":7.1,\"position\":5.5,\"size\":6.5,\"suggestions\":\"Very solid base creative. To improve return, secure more rotation share in stoppages, corners, and throw-ins where the board can sit longer in frame. Keep the bold brand name; avoid adding extra copy beyond one short tagline.\"}],\"name\":\"AVATRADE\",\"summary\":\"Strong creative fundamentals on LED boards, but exposure is mostly passive/background rather than hero-level.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":9,\"examples\":[{\"end_sec\":3052,\"note\":\"Readable in transition-wide shot but not held long enough to maximize impact.\",\"start_sec\":3042,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":2825,\"note\":\"Strong red-board contrast, though camera distance limits detail.\",\"start_sec\":2816,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Aabar benefits from one of the best contrast profiles in the match: bright text against a saturated board. The weakness is not legibility but limited duration and background placement.\",\"motion_blur\":6.5,\"overall_score\":7.4,\"position\":5.5,\"size\":6.5,\"suggestions\":\"Lean into the high-contrast red execution—it works. Increase rotation frequency in attacking-third wide shots and hold the creative longer rather than swapping quickly.\"}],\"name\":\"Aabar\",\"summary\":\"Efficient LED creative with excellent contrast. Visibility is good whenever on screen, but total screen time looks limited.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":6,\"contrast\":8,\"examples\":[{\"end_sec\":600,\"note\":\"Readable in wide restart shot, but not large enough to dominate frame.\",\"start_sec\":594,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":5239,\"note\":\"Visible during major Liverpool chance, but still a background board in fast action.\",\"start_sec\":5218,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Appears as Abu Dhabi / Visit Abu Dhabi on perimeter LED. Good contextual exposure in live play, including a high-tension late chance, but mostly from wide angles where brand size is moderate.\",\"motion_blur\":6.5,\"overall_score\":7,\"position\":5.5,\"size\":6,\"suggestions\":\"Prefer the shortest brand form in fast live play and reserve 'Visit Abu Dhabi' for slower/stoppage phases. Larger type and fewer words would improve immediate read from the main camera.\"}],\"name\":\"Abu Dhabi\",\"summary\":\"Solid LED presence with decent contrast, but wide-angle framing and longer copy versions reduce impact.\"},{\"assets\":[{\"asset_type\":\"courtside_led\",\"camera_angle\":5.5,\"contrast\":7.5,\"examples\":[{\"end_sec\":328,\"note\":\"Replay segment contains Acronis board in background only; low focal priority.\",\"start_sec\":318,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":4639,\"note\":\"Visible during Liverpool attack, but compressed by wide angle and motion.\",\"start_sec\":4631,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"},{\"end_sec\":4874,\"note\":\"Readable in open final-phase wide shot, but still secondary among multiple active brands.\",\"start_sec\":4855,\"video\":\"Manchester City v. Liverpool (2019-01-03)\"}],\"issues\":\"Acronis is present on rotating perimeter LED, but mostly in wide or replay background. It is legible, yet less visually forceful than the highest-contrast board brands in this match.\",\"motion_blur\":6,\"overall_score\":6.6,\"position\":5,\"size\":6,\"suggestions\":\"Boost contrast and letter weight so the mark survives distant main-camera angles better. If possible, avoid cluttered adjacency with other bright board creatives and prioritize replay/stoppage rotations where the camera is steadier.\"}],\"name\":\"Acronis\",\"summary\":\"Visible but comparatively less commanding than other LED brands. Best fix is stronger creative contrast and better timing of board rotation.\"}]}",
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "mci-liv-2019",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

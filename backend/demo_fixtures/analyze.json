@@ -1,0 +1,2002 @@
+{
+  "session_id": null,
+  "inventory": {
+    "brands": [
+      {
+        "name": "Etihad",
+        "total_seconds": 1100.0,
+        "moments_count": 134,
+        "outside_whistle_to_whistle_seconds": 111.0,
+        "asset_types": [
+          "perimeter_led",
+          "shirt_front",
+          "other"
+        ],
+        "appearances": [
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the pitch as Manchester City maintains possession. They are looking for a way through Liverpool's compact defensive block. Advertising for Etihad is visible.",
+            "end_sec": 834.0,
+            "start_sec": 821.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City regain possession and start building an attack from their defensive line. The Etihad logo is now visible on the perimeter LED board.",
+            "end_sec": 881.0,
+            "start_sec": 873.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A medium shot of Aymeric Laporte running with the ball, looking for a passing option. The Etihad logo is visible in the background.",
+            "end_sec": 885.0,
+            "start_sec": 881.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot as the ball goes out of play for a Manchester City throw-in. The Etihad logo is visible on the perimeter boards.",
+            "end_sec": 887.0,
+            "start_sec": 885.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Aymeric Laporte as he prepares for the next play. The Etihad logo is visible in the background.",
+            "end_sec": 892.0,
+            "start_sec": 887.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot featuring both Aymeric Laporte and Mohamed Salah in the frame. The Etihad logo is visible behind them.",
+            "end_sec": 896.0,
+            "start_sec": 892.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Danilo, who is positioned on the right side of the Manchester City defense. The Etihad logo is visible in the background.",
+            "end_sec": 899.0,
+            "start_sec": 896.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City continue to control the game, passing the ball across their midfield and defensive lines. The Etihad logo is visible on the perimeter boards.",
+            "end_sec": 914.0,
+            "start_sec": 899.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "James Milner passes the ball to Trent Alexander-Arnold as Liverpool continues to probe the Manchester City defense. The camera pans to follow the ball. Etihad branding is visible on the perimeter boards.",
+            "end_sec": 1181.0,
+            "start_sec": 1175.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Trent Alexander-Arnold delivers a cross into the Manchester City penalty area. The camera pans to follow the cross. Etihad branding is visible on the perimeter boards.",
+            "end_sec": 1186.0,
+            "start_sec": 1181.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The match resumes with a wide shot of the pitch. Players from both teams are seen moving as play continues. Etihad branding is visible on the perimeter boards.",
+            "end_sec": 1337.0,
+            "start_sec": 1330.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The match continues with a wide shot of the pitch. Players from both teams are seen moving as play continues. Etihad branding is visible on the perimeter boards.",
+            "end_sec": 1431.0,
+            "start_sec": 1421.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera pans to follow the action as Manchester City attempts to build an attack. Etihad branding is visible on the perimeter boards.",
+            "end_sec": 1433.0,
+            "start_sec": 1431.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera pans right as Manchester City launches an attack. A long ball is played over the top to Raheem Sterling, who chases it down the right wing. He cuts back and crosses the ball into the box for David Silva. Silva takes a touch and shoots, but his effort is blocked by Virgil van Dijk near the goal line.",
+            "end_sec": 1730.0,
+            "start_sec": 1723.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of the Manchester City chance from a wide angle. The ball is played over the top to Sterling, who crosses for David Silva. Silva's shot is blocked by Van Dijk.",
+            "end_sec": 1756.0,
+            "start_sec": 1744.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Play resumes with a wide shot of the pitch. Manchester City players are in possession in their own half, looking to build an attack. Liverpool players are pressing high.",
+            "end_sec": 1776.0,
+            "start_sec": 1770.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera pans as Ederson plays a long ball from his goal area towards the midfield. The ball is contested in the air by players from both teams.",
+            "end_sec": 1787.0,
+            "start_sec": 1776.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Sergio Aguero controls the ball brilliantly in the center circle. He turns and looks for a pass as Manchester City continues their possession. The camera pans to follow the play.",
+            "end_sec": 1792.0,
+            "start_sec": 1787.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City continues to pass the ball in the midfield area. The camera pans as they move the ball from side to side, looking for an opening in the Liverpool defense.",
+            "end_sec": 1813.0,
+            "start_sec": 1798.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Vincent Kompany makes a lunging tackle on Mohamed Salah in the center circle. Salah goes down, and the referee blows his whistle for a foul. The camera pans to follow the action.",
+            "end_sec": 1818.0,
+            "start_sec": 1813.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of Vincent Kompany's tackle on Mohamed Salah from multiple angles. The footage shows the intensity of the challenge and Salah's reaction as he is tripped.",
+            "end_sec": 1848.0,
+            "start_sec": 1833.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the pitch as Liverpool prepares to take the free kick. Players from both teams are positioning themselves in and around the penalty area.",
+            "end_sec": 1878.0,
+            "start_sec": 1864.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "James Milner takes the free kick, chipping the ball into the box. Manchester City's defense, led by Bernardo Silva, clears the ball away. The camera pans to follow the ball's flight.",
+            "end_sec": 1904.0,
+            "start_sec": 1894.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Play continues as Jordan Henderson chases the ball back into his own half. Manchester City players are pressing to regain possession. The camera pans to follow the movement.",
+            "end_sec": 1911.0,
+            "start_sec": 1904.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Play resumes with a wide shot of the pitch. Manchester City is in possession, passing the ball around the midfield area. Liverpool players are maintaining their defensive shape.",
+            "end_sec": 1933.0,
+            "start_sec": 1918.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera pans as Manchester City moves the ball across the midfield. They are looking for gaps in the Liverpool defense, while Liverpool players press to win the ball back.",
+            "end_sec": 1947.0,
+            "start_sec": 1933.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City continues their patient build-up play. The camera pans as they pass the ball between their defenders and midfielders, trying to draw Liverpool out of their defensive block.",
+            "end_sec": 1960.0,
+            "start_sec": 1947.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City maintains possession in the midfield. The camera pans as they move the ball from the left wing to the center, with Liverpool players tracking their movements closely.",
+            "end_sec": 1980.0,
+            "start_sec": 1965.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera pans as Manchester City continues to dominate possession. They are passing the ball with precision, looking for a way to penetrate the Liverpool defense.",
+            "end_sec": 1995.0,
+            "start_sec": 1980.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The final sequence of the clip shows Manchester City still in possession in the midfield. The camera pans as they continue their tactical play, with both teams showing high levels of concentration.",
+            "end_sec": 2007.0,
+            "start_sec": 1995.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Wide view of the pitch. Players from both teams are positioned around the center circle. The referee is visible. The score bug shows MC 1-0 LIV at 46:37.",
+            "end_sec": 2875.0,
+            "start_sec": 2870.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A cross is sent into the Manchester City box. Lovren jumps for it. Two City players clash and fall to the ground.",
+            "end_sec": 2896.0,
+            "start_sec": 2890.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Van Dijk is at the back post. A header comes in, but Fernandinho clears it from the edge of the six-yard box.",
+            "end_sec": 2902.0,
+            "start_sec": 2896.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Sergio Aguero. He is walking, looking focused. The halftime whistle blows.",
+            "end_sec": 2910.0,
+            "start_sec": 2902.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The second half kicks off. Manchester City starts with the ball in the center circle.",
+            "end_sec": 2945.0,
+            "start_sec": 2943.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City passes the ball back to their defenders and then across the pitch.",
+            "end_sec": 2950.0,
+            "start_sec": 2945.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City continues to pass the ball in their own half. Ederson, Laporte, and Stones are involved in the buildup.",
+            "end_sec": 2957.0,
+            "start_sec": 2950.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Jurgen Klopp, the Liverpool manager, on the touchline. He is gesturing and shouting instructions to his players.",
+            "end_sec": 2999.0,
+            "start_sec": 2990.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Trent Alexander-Arnold preparing to take a throw-in. He is holding the ball above his head.",
+            "end_sec": 3002.0,
+            "start_sec": 2999.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Alexander-Arnold takes the throw-in. Play continues in the midfield with both teams battling for possession.",
+            "end_sec": 3010.0,
+            "start_sec": 3002.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Sadio Mane after a foul. He is looking towards the referee.",
+            "end_sec": 3104.0,
+            "start_sec": 3101.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Raheem Sterling, who has just been fouled. He is looking at the referee.",
+            "end_sec": 3107.0,
+            "start_sec": 3104.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Replay of the foul by Sadio Mane on Raheem Sterling. Mane's foot catches Sterling's leg as they both challenge for the ball.",
+            "end_sec": 3117.0,
+            "start_sec": 3107.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Fernandinho wins the ball back for Manchester City in the midfield. The camera pans to follow his movement as he looks for a teammate. Etihad branding is visible in the background.",
+            "end_sec": 3445.0,
+            "start_sec": 3443.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Trent Alexander-Arnold gains possession and begins a marauding run down the right flank. The wide shot shows the positioning of both teams as Liverpool looks to counter-attack. Etihad branding continues to be visible.",
+            "end_sec": 3450.0,
+            "start_sec": 3445.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Sadio Mane receives the ball after a deflection and attempts to drive forward. The camera tracks his progress as he is closed down by Manchester City defenders.",
+            "end_sec": 3453.0,
+            "start_sec": 3450.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of the goal from a wide angle, showing the entire sequence from Alexander-Arnold's cross to Firmino's header. Etihad branding is visible on the stadium structure.",
+            "end_sec": 4067.0,
+            "start_sec": 4058.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Jurgen Klopp is seen on the touchline, looking focused and giving instructions. Etihad branding is visible behind him.",
+            "end_sec": 4123.0,
+            "start_sec": 4113.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Sergio Aguero as he prepares for the next play.",
+            "end_sec": 4184.0,
+            "start_sec": 4181.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Ilkay Gundogan, who has just entered the match.",
+            "end_sec": 4187.0,
+            "start_sec": 4184.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the Etihad Stadium as Manchester City prepares to take the free kick. Etihad branding is prominent.",
+            "end_sec": 4239.0,
+            "start_sec": 4230.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Pep Guardiola is seen on the touchline, looking concerned and reacting to the missed chance. Etihad branding is visible on the dugout.",
+            "end_sec": 4271.0,
+            "start_sec": 4257.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the pitch showing Manchester City in possession in their own half. The players are spread out, and the camera pans to follow the movement of the ball.",
+            "end_sec": 4301.0,
+            "start_sec": 4300.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The camera follows the ball as it is played out of bounds for a Liverpool throw-in. Players from both teams move towards the sideline.",
+            "end_sec": 4302.0,
+            "start_sec": 4301.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Ederson after catching the ball. He looks downfield, preparing to distribute the ball to his teammates.",
+            "end_sec": 4345.0,
+            "start_sec": 4344.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Alisson Becker as he controls the ball with his feet. He looks composed as he prepares his next pass.",
+            "end_sec": 4385.0,
+            "start_sec": 4383.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot as Alisson plays a long pass forward. The camera pans to follow the flight of the ball into the Manchester City half.",
+            "end_sec": 4389.0,
+            "start_sec": 4385.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City launch an attack. Leroy Sané receives the ball on the left and drives into the box. He takes a shot, but it is blocked by a Liverpool defender.",
+            "end_sec": 4415.0,
+            "start_sec": 4389.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Kevin De Bruyne warming up on the touchline. He is wearing a training bib and looks ready to be called into action.",
+            "end_sec": 4424.0,
+            "start_sec": 4419.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City have a throw-in. Play continues in the midfield area with both teams battling for control of the ball.",
+            "end_sec": 4436.0,
+            "start_sec": 4424.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Sané is joined in his celebration by teammates and substitutes, including Kevin De Bruyne. They hug and celebrate the crucial goal together.",
+            "end_sec": 4520.0,
+            "start_sec": 4511.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "More Manchester City players join the celebration. İlkay Gündoğan and Aymeric Laporte are seen congratulating Sané as they head back towards the center circle.",
+            "end_sec": 4528.0,
+            "start_sec": 4520.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "A shot of Leroy Sané and Raheem Sterling celebrating together. Sterling provided the assist for Sané's goal, and they share a moment of joy.",
+            "end_sec": 4530.0,
+            "start_sec": 4528.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Leroy Sané is seen celebrating with Sergio Agüero. The two players embrace as the Manchester City fans continue to celebrate in the stands.",
+            "end_sec": 4535.0,
+            "start_sec": 4530.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Manchester City manager Pep Guardiola is seen reacting to the goal on the touchline. He looks relieved and happy as his team takes the lead.",
+            "end_sec": 4571.0,
+            "start_sec": 4569.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "Guardiola celebrates with his coaching staff, including Mikel Arteta. They hug and cheer as the goal is confirmed.",
+            "end_sec": 4577.0,
+            "start_sec": 4571.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "celebration",
+            "description": "The camera pans across the Manchester City fans in the stands, who are celebrating the goal with great enthusiasm. Leroy Sané is seen being hugged by a substitute player in the foreground.",
+            "end_sec": 4587.0,
+            "start_sec": 4577.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Trent Alexander-Arnold walking back into position. He looks focused. Etihad branding is visible in the background.",
+            "end_sec": 4921.0,
+            "start_sec": 4918.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Leroy Sane. He gives a thumbs up to a teammate. Etihad branding is visible in the background.",
+            "end_sec": 4929.0,
+            "start_sec": 4921.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Liverpool crosses the ball into the box. A scramble ensues as both teams fight for the ball. Manchester City eventually clears it. Etihad branding is visible on the stadium fascia.",
+            "end_sec": 5106.0,
+            "start_sec": 5094.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Manchester City launches a swift counter-attack. Raheem Sterling carries the ball forward and passes it to Sergio Aguero. Aguero tries to round the goalkeeper, but Alisson Becker makes a brilliant save. Etihad branding is visible.",
+            "end_sec": 5119.0,
+            "start_sec": 5106.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Alisson Becker after his crucial save. He looks focused and determined.",
+            "end_sec": 5123.0,
+            "start_sec": 5119.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Sergio Aguero. He looks disappointed after missing the chance.",
+            "end_sec": 5124.0,
+            "start_sec": 5123.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Replay of the Manchester City counter-attack. Raheem Sterling's run and pass to Sergio Aguero are shown. Etihad branding is visible.",
+            "end_sec": 5137.0,
+            "start_sec": 5124.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Replay of Alisson Becker's save from a different angle. It shows how he stayed on his feet and blocked Sergio Aguero's attempt. Etihad branding is visible.",
+            "end_sec": 5146.0,
+            "start_sec": 5137.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Medium shot of Pep Guardiola reacting to the missed chance. He puts his hands on his head in frustration. Etihad branding is visible in the background.",
+            "end_sec": 5151.0,
+            "start_sec": 5146.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Sergio Aguero. He looks frustrated as he prepares for the next play.",
+            "end_sec": 5157.0,
+            "start_sec": 5151.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of the players lining up in the penalty area for a corner kick.",
+            "end_sec": 5160.0,
+            "start_sec": 5157.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Manchester City manager Pep Guardiola is seen on the touchline talking to Gabriel Jesus, who is preparing to come on. Mikel Arteta is also visible on the bench. 'Nissan' branding is seen on the dugout.",
+            "end_sec": 5180.0,
+            "start_sec": 5176.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Liverpool players pass the ball among themselves in their own half, looking for an opening. 'Etihad' branding is visible in the background.",
+            "end_sec": 5203.0,
+            "start_sec": 5198.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Liverpool continues to build their attack from the back. The camera follows the ball as it moves into the midfield.",
+            "end_sec": 5208.0,
+            "start_sec": 5203.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Liverpool breaks quickly. Mohamed Salah is played through on goal, but Ederson makes a fantastic save to deny him. The ball goes out for a corner.",
+            "end_sec": 5239.0,
+            "start_sec": 5234.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Pep Guardiola is seen arguing heatedly with the fourth official, Martin Atkinson, on the touchline. He is gesturing wildly.",
+            "end_sec": 5252.0,
+            "start_sec": 5245.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Guardiola continues his protest, clearly unhappy with a recent decision. Atkinson remains calm as he listens to the manager.",
+            "end_sec": 5257.0,
+            "start_sec": 5252.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Guardiola walks away from the official but continues to talk back over his shoulder. He then turns back to continue the argument. 'Nissan' branding is visible on the dugout.",
+            "end_sec": 5262.0,
+            "start_sec": 5257.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the touchline area as Taylor walks back onto the pitch. Guardiola is seen walking back towards his technical area. 'Etihad' branding is visible.",
+            "end_sec": 5296.0,
+            "start_sec": 5291.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Guardiola walks back to his technical area, still looking agitated. He throws his scarf onto the ground in frustration.",
+            "end_sec": 5300.0,
+            "start_sec": 5296.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Guardiola stands with his coaching staff, including Mikel Arteta. He is still talking about the incident. 'Etihad' branding is visible on their jackets.",
+            "end_sec": 5303.0,
+            "start_sec": 5300.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Play resumes with a Manchester City throw-in. The camera pans to follow the action in the midfield. 'Etihad' branding is visible on the stadium fascia.",
+            "end_sec": 5309.0,
+            "start_sec": 5303.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Guardiola is talking to his assistant coaches on the bench. He is gesturing towards the pitch, likely discussing tactical changes. 'Etihad' branding is visible on their jackets.",
+            "end_sec": 5338.0,
+            "start_sec": 5331.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Guardiola is seen talking to Kyle Walker, who is preparing to come on as a substitute. He is giving him specific instructions. 'Etihad' branding is visible.",
+            "end_sec": 5341.0,
+            "start_sec": 5338.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Guardiola is seen giving final instructions to Kyle Walker before he enters the pitch. He is pointing towards a specific area of the field. 'Etihad' branding is visible.",
+            "end_sec": 5369.0,
+            "start_sec": 5363.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "timeout",
+            "description": "Laporte walks off the pitch, clapping to the fans. He looks tired but satisfied with his performance. 'Etihad' branding is visible in the background.",
+            "end_sec": 5385.0,
+            "start_sec": 5374.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "A replay of Mohamed Salah's chance from earlier. It shows his run into the box and the subsequent save by Ederson. 'Etihad' branding is visible in the background.",
+            "end_sec": 5438.0,
+            "start_sec": 5429.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "The replay continues, showing the ball going just wide of the post after Ederson's save. 'Etihad' branding is visible.",
+            "end_sec": 5440.0,
+            "start_sec": 5438.0,
+            "video": "Manchester City v. Liverpool (FULL MATCH) ｜ 1⧸3⧸2019 ｜ Premier League Classics ｜ NBC Sports [Y7WATEOPM8A].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "pregame",
+            "description": "A wide aerial view of the Etihad Stadium pitch is shown, with the Manchester City starting lineup and formation (4-1-4-1) overlaid on the left side of the screen. The manager, Pep Guardiola, is listed, along with the starting eleven: Ederson, Walker, Dias, Gvardiol, Akanji, Rodri, Foden, Alvarez, Silva, Doku, and Haaland. Substitutes are also listed. The camera slowly pans across the stadium, showing the players warming up on the green grass under the bright stadium lights.",
+            "end_sec": 42.0,
+            "start_sec": 7.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "pregame",
+            "description": "The broadcast switches to the Tottenham Hotspur starting lineup and formation (4-2-3-1). The head coach, Ange Postecoglou, is listed, along with the starting eleven: Vicario, Porro, Royal, Davies, Udogie, Bissouma, Lo Celso, Johnson, Kulusevski, Gil, and Son. Substitutes are listed on the right. The background continues to show the wide view of the Etihad Stadium as players prepare for the match.",
+            "end_sec": 73.0,
+            "start_sec": 42.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "pregame",
+            "description": "A wide, high-angle shot of the entire pitch at the Etihad Stadium. The players from both teams are spread out in their respective halves, waiting for the referee's whistle. The stadium is filled with spectators, and the bright lights illuminate the scene. The center circle is clearly visible.",
+            "end_sec": 111.0,
+            "start_sec": 90.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The match begins as Bernardo Silva passes the ball back. Manchester City starts to build their first attack. The camera follows the ball as it is moved across the midfield. Tottenham players press high, trying to win possession. The play is fluid and fast-paced.",
+            "end_sec": 137.0,
+            "start_sec": 115.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "The match continues with a goal kick for Tottenham. Vicario plays the ball short to a defender. Manchester City immediately starts pressing again. The camera follows the play as it moves back into the midfield.",
+            "end_sec": 299.0,
+            "start_sec": 280.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot. Manchester City moves the ball to the right flank. The camera pans to follow the action. Etihad branding is visible on the perimeter boards.",
+            "end_sec": 1221.0,
+            "start_sec": 1212.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Julian Alvarez (number 19) being fouled by Emerson Royal (number 12) near the touchline. Alvarez goes down. The camera is static. Etihad branding is visible.",
+            "end_sec": 1223.0,
+            "start_sec": 1221.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot. The referee allows play to continue or a quick free kick is taken. The ball is moved back into the center. The camera pans. Etihad branding is visible.",
+            "end_sec": 1233.0,
+            "start_sec": 1223.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot. Manchester City switches play to the left side. The camera pans left. Etihad branding is visible.",
+            "end_sec": 1240.0,
+            "start_sec": 1233.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Brennan Johnson (number 22) as he sprints down the right wing with the ball. The camera is static. Etihad branding is visible.",
+            "end_sec": 1470.0,
+            "start_sec": 1464.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot. Brennan Johnson crosses the ball into the box. Ruben Dias (number 3) makes a crucial sliding clearance. The camera pans to follow the cross and clearance. Etihad branding is visible.",
+            "end_sec": 1475.0,
+            "start_sec": 1470.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Ruben Dias (number 3) and Manuel Akanji (number 25) after the clearance. They look focused. The camera is static. Etihad branding is visible.",
+            "end_sec": 1477.0,
+            "start_sec": 1475.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Brennan Johnson (number 22) lying on the grass, smiling after his effort. The camera is static. Etihad branding is visible.",
+            "end_sec": 1480.0,
+            "start_sec": 1477.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Wide shot replay of the build-up to Tottenham's attack. The camera pans. Etihad branding is visible.",
+            "end_sec": 1485.0,
+            "start_sec": 1480.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Wide shot replay of Brennan Johnson's run and cross, and Ruben Dias's clearance. The camera pans. Etihad branding is visible.",
+            "end_sec": 1492.0,
+            "start_sec": 1485.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Wide shot of the pitch at the end of the first half. Players from both teams are scattered across the field. The score is MC 2-1 TOT. The camera pans slightly to the right as the halftime whistle is about to blow.",
+            "end_sec": 2999.0,
+            "start_sec": 2991.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Phil Foden, Manchester City player, walking. He is wearing the light blue Manchester City home kit.",
+            "end_sec": 3021.0,
+            "start_sec": 3016.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of the second half kickoff. Manchester City starts with the ball. The camera follows the play as they move it around the midfield.",
+            "end_sec": 3044.0,
+            "start_sec": 3034.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Medium shot of Manchester City's attack. Julian Alvarez passes to Bernardo Silva, who takes a shot from the edge of the box. Vicario makes a spectacular diving save to his left.",
+            "end_sec": 3049.0,
+            "start_sec": 3044.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Replay of Bernardo Silva's shot and Vicario's save from a camera angle behind the goal, showing the intensity of the strike and the quality of the save.",
+            "end_sec": 3063.0,
+            "start_sec": 3053.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "replay",
+            "description": "Another replay angle of the save, showing the ball's trajectory and Vicario's reach from a side view.",
+            "end_sec": 3068.0,
+            "start_sec": 3063.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Erling Haaland in the box, waiting for the corner. He is being marked by a Tottenham defender and looks determined.",
+            "end_sec": 3077.0,
+            "start_sec": 3073.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of the corner kick being taken by Julian Alvarez. The ball is played into a crowded area and cleared by the Tottenham defense.",
+            "end_sec": 3088.0,
+            "start_sec": 3077.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Medium shot of the corner delivery. Rodri gets a head on it, but it goes wide of the post. The camera follows the ball's path.",
+            "end_sec": 3094.0,
+            "start_sec": 3088.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Rodri reacting to his missed header. He looks disappointed with the outcome.",
+            "end_sec": 3096.0,
+            "start_sec": 3094.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of play continuing in the midfield. Tottenham tries to build an attack from the back.",
+            "end_sec": 3114.0,
+            "start_sec": 3096.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of play. Højbjerg passes the ball. Kulusevski is visible on the right wing as Tottenham moves forward.",
+            "end_sec": 3126.0,
+            "start_sec": 3114.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of play. Tottenham is in possession in the midfield, looking for an opening in the Manchester City defense.",
+            "end_sec": 3147.0,
+            "start_sec": 3126.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Close-up of a tackle on Erling Haaland by a Tottenham defender. Haaland falls to the ground in pain.",
+            "end_sec": 3150.0,
+            "start_sec": 3147.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Medium shot of players reacting to the foul. The referee, Simon Hooper, blows his whistle and approaches the scene.",
+            "end_sec": 3156.0,
+            "start_sec": 3150.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Wide shot of the aftermath. Haaland remains on the ground, receiving attention. The referee talks to players from both sides as the game is paused.",
+            "end_sec": 3197.0,
+            "start_sec": 3156.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Wide shot of the players gathered around the referee and the injured Haaland. The medical staff is on the pitch.",
+            "end_sec": 3221.0,
+            "start_sec": 3209.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "shirt_front",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "Close-up of Manchester City players Bernardo Silva, Julian Alvarez, and Kyle Walker discussing the play and the referee's decision.",
+            "end_sec": 3226.0,
+            "start_sec": 3221.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of play moving back towards the center of the pitch as both teams regroup.",
+            "end_sec": 3271.0,
+            "start_sec": 3253.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of a Tottenham attack. Pedro Porro and Dejan Kulusevski are involved in a quick passing sequence on the right side, trying to break through.",
+            "end_sec": 3291.0,
+            "start_sec": 3271.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A medium shot of Manchester City's Julian Alvarez as he moves across the pitch. He is wearing the number 19 jersey.",
+            "end_sec": 3981.0,
+            "start_sec": 3977.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Julian Alvarez as he looks towards the action. The Etihad branding is visible in the background.",
+            "end_sec": 3985.0,
+            "start_sec": 3981.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up of Jack Grealish from behind. His name and number 10 are clearly visible on his jersey.",
+            "end_sec": 3988.0,
+            "start_sec": 3985.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A wide shot of the pitch as play continues. The score is 2-1 at 64:06. An 'ETIHAD' advertisement is visible on the perimeter LED board.",
+            "end_sec": 4188.0,
+            "start_sec": 4176.0,
+            "video": "s3://tl-api-assets-prod/assets/user/66eb19b9ef76a37c1ceb75a7/6a21c1828f3198b7e05f988f.mp4"
+          }
+        ],
+        "legibility_notes": "All detected Etihad appearances were fully legible in metadata results."
+      },
+      {
+        "name": "Emirates",
+        "appearances": [
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "High angle wide shot of the Manchester City penalty area. Players from both teams are positioning themselves for a corner kick. The camera is static. Emirates branding is visible on the boards. Surface: perimeter_led_board",
+            "end_sec": 1315.0,
+            "start_sec": 1306.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "wide_shot",
+            "description": "Wide shot of the penalty area from a lower angle. Players are jostling for position. The camera is static. Emirates branding is visible. Surface: perimeter_led_board",
+            "end_sec": 1320.0,
+            "start_sec": 1315.0,
+            "video": "Manchester City v. Tottenham Hotspur (FULL MATCH) ｜ 12⧸3⧸2023 ｜ Premier League Classics ｜ NBC Sports [Kh3jsAQos7Y].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "pregame",
+            "description": "A wide shot of the Emirates Stadium filled with fans. A graphic overlay announces the upcoming match: Arsenal v. Tottenham Hotspur on NBCSN. Surface: stadium_fascia_signage",
+            "end_sec": 11.0,
+            "start_sec": 0.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "pregame",
+            "description": "A wide shot of the pitch as the players from both teams line up for the start of the match. The referee, Mike Dean, is also visible. Surface: perimeter_led_board",
+            "end_sec": 130.0,
+            "start_sec": 102.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Play continues near the touchline, with players from both teams competing for the ball. Surface: perimeter_led_board",
+            "end_sec": 167.0,
+            "start_sec": 162.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Play continues with Arsenal building an attack from the midfield. Surface: perimeter_led_board",
+            "end_sec": 208.0,
+            "start_sec": 194.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "A close-up of Henrikh Mkhitaryan as he reacts to the missed opportunity. Surface: shirt_front_sponsor",
+            "end_sec": 220.0,
+            "start_sec": 217.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Another close-up of Aubameyang, showing his intensity and focus. Surface: shirt_front_sponsor",
+            "end_sec": 256.0,
+            "start_sec": 248.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Arsenal wins the ball back and starts another attack down the right flank. Surface: perimeter_led_board",
+            "end_sec": 265.0,
+            "start_sec": 256.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Ben Davies of Tottenham Hotspur is seen from behind, walking towards the touchline with the soccer ball in his hands. He is wearing his white home jersey with the number 33 and his name on the back. The stadium stands, filled with fans, are visible in the background. Surface: stadium_fascia_signage",
+            "end_sec": 294.0,
+            "start_sec": 290.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the match in progress, showing the tactical positioning of both teams as play unfolds. Surface: stadium_fascia_signage",
+            "end_sec": 1048.0,
+            "start_sec": 1011.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot of the pitch. Arsenal players are passing the ball around the midfield. Moussa Sissoko of Tottenham intercepts a pass and starts running forward with the ball. Surface: perimeter_led_board",
+            "end_sec": 1528.0,
+            "start_sec": 1501.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot. Arsenal players pass the ball around the Tottenham penalty area. Pierre-Emerick Aubameyang passes to Hector Bellerin, who crosses the ball into the box. Harry Kane of Tottenham heads the ball away to clear it. Surface: perimeter_led_board",
+            "end_sec": 1672.0,
+            "start_sec": 1659.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Wide shot. Eric Dier of Tottenham commits a foul on an Arsenal player, but the referee plays advantage. Arsenal continues their attack, and Alex Iwobi crosses the ball into the penalty area. Surface: perimeter_led_board",
+            "end_sec": 1724.0,
+            "start_sec": 1712.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A close-up shot of a tackle between an Arsenal player and Tottenham's Serge Aurier (#24) near the touchline. The Emirates logo is visible on the perimeter board in the background. Surface: perimeter_led_board",
+            "end_sec": 1725.0,
+            "start_sec": 1724.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "The camera pans as the ball goes out of play. Arsenal's Sead Kolasinac (#31) is seen nearby. The Emirates logo is prominent on the perimeter board. Surface: perimeter_led_board",
+            "end_sec": 1726.0,
+            "start_sec": 1725.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A medium shot of Sead Kolasinac with the ball at his feet, preparing to restart play. The Emirates logo remains visible in the background. Surface: perimeter_led_board",
+            "end_sec": 1727.0,
+            "start_sec": 1726.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot as Tottenham Hotspur begins a counter-attack after winning the ball back in their own half. Surface: perimeter_led_board",
+            "end_sec": 1735.0,
+            "start_sec": 1733.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of Tottenham continuing to pass the ball. 'Emirates' is now visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1853.0,
+            "start_sec": 1850.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of Tottenham passing the ball under pressure from Arsenal players. 'Emirates' is visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1862.0,
+            "start_sec": 1853.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of Tottenham passing the ball in the midfield area. 'Emirates' is visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1866.0,
+            "start_sec": 1862.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of Son Heung-min being fouled by Sokratis Papastathopoulos (#5) near the touchline. 'Emirates' is visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1871.0,
+            "start_sec": 1866.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A medium shot of Son Heung-min on the ground after the foul, with Sokratis Papastathopoulos standing nearby. 'Emirates' is visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1877.0,
+            "start_sec": 1873.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "A medium shot showing a replay of Sokratis Papastathopoulos fouling Son Heung-min. 'Emirates' is visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1888.0,
+            "start_sec": 1881.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of Tottenham players preparing to take the free kick. 'Emirates' is visible on the perimeter boards. Surface: perimeter_led_board",
+            "end_sec": 1929.0,
+            "start_sec": 1925.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "A wide shot of the crowd at the Emirates Stadium reacting to the goal. Surface: stadium_fascia_signage",
+            "end_sec": 1951.0,
+            "start_sec": 1948.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the pitch at Emirates Stadium. Arsenal, in their red and white home kit, are in possession and passing the ball around their defensive third. Tottenham players in white shirts are pressing high. The camera pans to follow the ball as it moves from the right side to the center. Surface: perimeter_led_board",
+            "end_sec": 2328.0,
+            "start_sec": 2299.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "wide_shot",
+            "description": "A cut to the Arsenal supporters in the stands. They are reacting to the foul and the referee's decision, with many shouting and gesturing towards the pitch. Surface: stadium_fascia_signage",
+            "end_sec": 2342.0,
+            "start_sec": 2338.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "wide_shot",
+            "description": "The camera cuts to the Arsenal fans again. They are chanting loudly and clapping, creating a vibrant atmosphere in the stadium. Surface: stadium_fascia_signage",
+            "end_sec": 2492.0,
+            "start_sec": 2486.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the Arsenal penalty area during a free kick. Several players from both teams are positioned in and around the box. The ball is delivered into the area but is eventually cleared out of play for a corner. Surface: perimeter_led_board",
+            "end_sec": 2881.0,
+            "start_sec": 2874.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Pierre-Emerick Aubameyang as he walks back from the goal line, looking focused after his cross was cleared. Surface: perimeter_led_board",
+            "end_sec": 2936.0,
+            "start_sec": 2928.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Pierre-Emerick Aubameyang finds Alex Iwobi on the left. Iwobi's cross is deflected and goes out for another Arsenal corner. Surface: perimeter_led_board",
+            "end_sec": 2983.0,
+            "start_sec": 2975.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the players from both teams jostling for position inside the Tottenham penalty area as they wait for the corner to be taken. Surface: perimeter_led_board",
+            "end_sec": 2995.0,
+            "start_sec": 2993.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "Another replay angle, this time from behind the goal, showing the trajectory of the ball and Lloris's crucial intervention. Surface: stadium_fascia_signage",
+            "end_sec": 3032.0,
+            "start_sec": 3024.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "The second half kicks off. Tottenham starts with the ball, looking to maintain their lead. Surface: perimeter_led_board",
+            "end_sec": 3083.0,
+            "start_sec": 3080.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Play continues with Arsenal in possession, trying to build an attack from the back under pressure from Tottenham. Surface: perimeter_led_board",
+            "end_sec": 3131.0,
+            "start_sec": 3125.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "score",
+            "description": "Wide shot. Aaron Ramsey plays a brilliant first-time pass through to Aubameyang, who strikes the ball beautifully from outside the area into the bottom corner of the net. Goal for Arsenal! The stadium erupts in celebration. Surface: stadium_fascia_signage",
+            "end_sec": 3716.0,
+            "start_sec": 3712.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Wide shot of Aubameyang celebrating his goal, joined by his teammates. The crowd is erupting, with fans waving flags and cheering. The atmosphere is electric. Surface: stadium_fascia_signage",
+            "end_sec": 3722.0,
+            "start_sec": 3718.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "A wide shot of the Emirates Stadium shows the crowd celebrating Arsenal's goal. Fans are waving flags and cheering. The scoreboard shows Arsenal 2, Tottenham 2. Surface: stadium_fascia_signage",
+            "end_sec": 3739.0,
+            "start_sec": 3736.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "A shot from behind Aubameyang as he celebrates in front of the Arsenal fans. The crowd is a sea of red and white, cheering wildly. Surface: stadium_fascia_signage",
+            "end_sec": 3752.0,
+            "start_sec": 3748.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "Another replay angle shows the build-up to the goal. The ball is played across the edge of the box, and Aubameyang strikes it first-time. Surface: perimeter_led_board",
+            "end_sec": 3766.0,
+            "start_sec": 3761.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "A low-angle replay from behind the goal captures the moment the ball hits the back of the net. The goalkeeper is left stranded. Surface: stadium_fascia_signage",
+            "end_sec": 3776.0,
+            "start_sec": 3768.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the pitch as play continues. Arsenal are in possession and trying to build an attack. Surface: perimeter_led_board",
+            "end_sec": 3826.0,
+            "start_sec": 3819.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "wide_shot",
+            "description": "A wide shot of the crowd at the Emirates Stadium. Fans are cheering and waving flags. Surface: stadium_fascia_signage",
+            "end_sec": 3850.0,
+            "start_sec": 3847.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "wide_shot",
+            "description": "A wide shot of the crowd at the Emirates Stadium. Fans are cheering and waving flags. Surface: stadium_fascia_signage",
+            "end_sec": 3928.0,
+            "start_sec": 3926.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of play resuming after the foul. Arsenal players pass the ball around the midfield, maintaining possession. Surface: stadium_fascia_signage",
+            "end_sec": 4311.0,
+            "start_sec": 4297.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "score",
+            "description": "Alexandre Lacazette is seen on the ground after scoring, with Eric Dier standing nearby. The scoreboard shows Arsenal leading 3-2. Surface: perimeter_led_board",
+            "end_sec": 4888.0,
+            "start_sec": 4886.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "A replay of Alexandre Lacazette's goal. He receives the ball outside the box, turns, and strikes a low shot that deflects off Eric Dier and into the bottom corner of the net. Surface: perimeter_led_board",
+            "end_sec": 4896.0,
+            "start_sec": 4888.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Alexandre Lacazette runs back towards the center circle, looking focused after his goal. Surface: shirt_front_sponsor",
+            "end_sec": 4905.0,
+            "start_sec": 4902.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Aubameyang attempts a cross into the box, but Eric Dier is there to clear the ball for a throw-in. Surface: perimeter_led_board",
+            "end_sec": 4928.0,
+            "start_sec": 4923.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A close-up of Alexandre Lacazette, looking ready for the next phase of play. Surface: shirt_front_sponsor",
+            "end_sec": 4941.0,
+            "start_sec": 4938.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A close-up of Pierre-Emerick Aubameyang, showing his focus and intensity. Surface: shirt_front_sponsor",
+            "end_sec": 4945.0,
+            "start_sec": 4941.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Sead Kolasinac prepares to take a long throw-in into the Tottenham penalty area. Surface: shirt_front_sponsor",
+            "end_sec": 4949.0,
+            "start_sec": 4945.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Kolasinac throws the ball in, and Aaron Ramsey controls it under pressure from a Tottenham defender. Surface: perimeter_led_board",
+            "end_sec": 4954.0,
+            "start_sec": 4949.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Sead Kolasinac and Serge Aurier battle for possession near the touchline. Surface: perimeter_led_board",
+            "end_sec": 4960.0,
+            "start_sec": 4956.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Arsenal maintains possession, with players moving into space and supporting each other. Surface: perimeter_led_board",
+            "end_sec": 4971.0,
+            "start_sec": 4966.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Lucas Torreira receives the ball, drives into the right side of the penalty area, and prepares to shoot. Surface: perimeter_led_board",
+            "end_sec": 4982.0,
+            "start_sec": 4975.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "score",
+            "description": "Lucas Torreira strikes a powerful low shot across the goalkeeper and into the far corner of the net. Goal for Arsenal! Surface: perimeter_led_board",
+            "end_sec": 4987.0,
+            "start_sec": 4982.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "A group of Arsenal players, including Hector Bellerin and Pierre-Emerick Aubameyang, embrace Torreira in a jubilant group hug. Surface: shirt_front_sponsor",
+            "end_sec": 5002.0,
+            "start_sec": 4997.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Close-up shots of Arsenal fans in the stands, cheering, waving scarves, and celebrating the goal. Surface: stadium_fascia_signage",
+            "end_sec": 5007.0,
+            "start_sec": 5004.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Lucas Torreira is seen being hugged by Aaron Ramsey and other teammates as they celebrate the goal. Surface: shirt_front_sponsor",
+            "end_sec": 5010.0,
+            "start_sec": 5007.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Torreira is on the ground, overwhelmed with emotion, as his teammates continue to celebrate around him. Surface: shirt_front_sponsor",
+            "end_sec": 5019.0,
+            "start_sec": 5010.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Lucas Torreira performs a knee slide celebration on the grass, his face filled with joy. Surface: shirt_front_sponsor",
+            "end_sec": 5022.0,
+            "start_sec": 5019.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "Torreira puts his shirt back on and is congratulated by Sead Kolasinac and Pierre-Emerick Aubameyang. Surface: shirt_front_sponsor",
+            "end_sec": 5030.0,
+            "start_sec": 5022.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "Another replay of the goal, this time from a lower angle, focusing on Torreira's strike and the goalkeeper's attempt to save it. Surface: perimeter_led_board",
+            "end_sec": 5055.0,
+            "start_sec": 5047.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "celebration",
+            "description": "A close-up of Lucas Torreira, screaming in celebration as he looks towards the fans. Surface: shirt_front_sponsor",
+            "end_sec": 5068.0,
+            "start_sec": 5062.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A close-up of Lucas Torreira, looking focused and ready to continue the match after his goal. Surface: shirt_front_sponsor",
+            "end_sec": 5074.0,
+            "start_sec": 5068.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Play resumes, and Lucas Torreira is fouled in midfield, winning a free-kick for Arsenal. Surface: perimeter_led_board",
+            "end_sec": 5082.0,
+            "start_sec": 5074.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Eric Dier clears the ball away from danger as Arsenal continues to attack. Surface: perimeter_led_board",
+            "end_sec": 5095.0,
+            "start_sec": 5089.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "Play resumes after the substitutions, with Arsenal continuing to control the game. Surface: perimeter_led_board",
+            "end_sec": 5146.0,
+            "start_sec": 5134.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Tottenham gains possession briefly, but Arsenal quickly wins it back. The play moves towards the Tottenham penalty area before a foul is committed on Granit Xhaka. Surface: perimeter_led_board",
+            "end_sec": 5610.0,
+            "start_sec": 5573.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.98,
+            "context": "other",
+            "description": "Hugo Lloris throws the ball out, and play continues in the midfield. Surface: perimeter_led_board",
+            "end_sec": 5749.0,
+            "start_sec": 5740.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the Emirates Stadium pitch during the final minutes of the Arsenal vs Tottenham match. The score is 4-2 to Arsenal. Players from both teams are positioned across the field. The 'Emirates Fly Better' sponsorship is visible on the perimeter LED boards. The crowd is visible in the background, filling the stands. Surface: perimeter_led_board",
+            "end_sec": 5750.0,
+            "start_sec": 5749.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up, tracking shot of Lucas Torreira running across the pitch. He is wearing the red and white Arsenal home kit with the 'Emirates' sponsor logo. He has a focused expression. The broadcast scoreboard in the top left corner shows the match time at 89:30. Surface: shirt_front_sponsor",
+            "end_sec": 5759.0,
+            "start_sec": 5750.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot following the action as Arsenal's Lucas Torreira is fouled by Tottenham's Serge Aurier in the center of the pitch. Torreira falls to the ground, and the referee immediately blows his whistle. The camera pans to follow the players. Perimeter advertising for 'Emirates' is visible. Surface: perimeter_led_board",
+            "end_sec": 5765.0,
+            "start_sec": 5759.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "replay",
+            "description": "A slow-motion replay of Serge Aurier's foul on Lucas Torreira. The camera follows the action as Aurier slides in recklessly, catching Torreira's ankle. Torreira is seen tumbling onto the pitch. The 'Emirates' branding is visible on the LED boards in the background. Surface: perimeter_led_board",
+            "end_sec": 5776.0,
+            "start_sec": 5773.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up, tracking shot of Aaron Ramsey running on the pitch. He has a slight smile on his face, looking pleased with the team's performance. He is wearing the Arsenal home kit with the 'Emirates' logo. The background shows the blurred crowd. Surface: shirt_front_sponsor",
+            "end_sec": 5813.0,
+            "start_sec": 5806.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the pitch showing players from both teams as they prepare for a set piece. The atmosphere in the stadium is electric. 'Emirates' branding is visible on the LED boards. Surface: perimeter_led_board",
+            "end_sec": 5833.0,
+            "start_sec": 5827.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A medium shot of Serge Aurier and Arsenal's Alexandre Lacazette near the touchline. They are walking past each other. Lacazette is wearing the Arsenal home kit. The background shows the pitch and other players. Surface: shirt_front_sponsor",
+            "end_sec": 5838.0,
+            "start_sec": 5833.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "perimeter_led",
+            "confidence": 0.9299999999999999,
+            "context": "other",
+            "description": "A wide shot of the pitch as Arsenal prepares to take a corner kick. The crowd is cheering loudly. 'Emirates' branding is visible on the LED boards. Surface: perimeter_led_board",
+            "end_sec": 5841.0,
+            "start_sec": 5838.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Aaron Ramsey reacting to the missed chance. He looks slightly disappointed but quickly refocuses on the game. He is wearing the Arsenal home kit. The background shows the blurred crowd. Surface: shirt_front_sponsor",
+            "end_sec": 5908.0,
+            "start_sec": 5906.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Arsenal's Granit Xhaka as he prepares for the next phase of play. He is wearing the Arsenal home kit with the captain's armband. He looks focused and determined. The background shows the blurred pitch. Surface: shirt_front_sponsor",
+            "end_sec": 5925.0,
+            "start_sec": 5923.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          },
+          {
+            "asset_type": "other",
+            "confidence": 0.98,
+            "context": "close_up",
+            "description": "A close-up shot of Pierre-Emerick Aubameyang as he runs into space. He is wearing the Arsenal home kit. He looks alert, watching the movement of the ball. The background shows the blurred crowd. Surface: shirt_front_sponsor",
+            "end_sec": 5941.0,
+            "start_sec": 5938.0,
+            "video": "Premier League Classics： Arsenal v. Tottenham Hotspur ｜ FULL MATCH ｜ 12⧸2⧸2018 ｜ NBC Sports [D29dNXViqJw].mp4"
+          }
+        ],
+        "asset_types": [
+          "perimeter_led",
+          "other"
+        ],
+        "legibility_notes": "All detected appearances were fully legible.",
+        "moments_count": 83,
+        "outside_whistle_to_whistle_seconds": 39.0,
+        "total_seconds": 589.0
+      }
+    ],
+    "summary": ""
+  },
+  "timings": {
+    "analyze_secs": 37.5,
+    "requested": 2,
+    "succeeded": 2
+  },
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

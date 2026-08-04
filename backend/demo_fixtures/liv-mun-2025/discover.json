@@ -1,0 +1,251 @@
+{
+  "session_id": "sess_019f629d-de75-72f3-a2c8-65b3cc35bc01",
+  "discovery": {
+    "brands": [
+      {
+        "asset_types": [
+          "broadcast_graphic",
+          "starting_lineup_graphic"
+        ],
+        "name": "Barclays"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "GEICO"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Kodansha"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Expedia"
+      },
+      {
+        "asset_types": [
+          "perimeter_led",
+          "scorebug_sponsor",
+          "substitution_board",
+          "replay_sponsor"
+        ],
+        "name": "Hublot"
+      },
+      {
+        "asset_types": [
+          "perimeter_led",
+          "replay_sponsor"
+        ],
+        "name": "Verizon"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Coca-Cola"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Strauss"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Google Pixel 9"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "JAL"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Japan Airlines"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Carlsberg"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Sky Store"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Wasabi Air"
+      },
+      {
+        "asset_types": [
+          "shirt_front_sponsor"
+        ],
+        "name": "Snapdragon"
+      },
+      {
+        "asset_types": [
+          "kit_manufacturer_logo",
+          "perimeter_led"
+        ],
+        "name": "Adidas"
+      },
+      {
+        "asset_types": [
+          "perimeter_led",
+          "shirt_front_sponsor"
+        ],
+        "name": "Standard Chartered"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Nike"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Orion"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "Premier League"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "EA Sports"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Workwear"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "UPS"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Peloton"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Nivea Men"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Mercurial"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Phantom"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Tiempo"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "AXA"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Ladbrokes"
+      },
+      {
+        "asset_types": [
+          "replay_sponsor"
+        ],
+        "name": "New Balance"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "USA"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "NBC Sports"
+      },
+      {
+        "asset_types": [
+          "broadcast_graphic"
+        ],
+        "name": "Oracle Cloud"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Lucozade"
+      },
+      {
+        "asset_types": [
+          "perimeter_led"
+        ],
+        "name": "Husqvarna"
+      },
+      {
+        "asset_types": [
+          "perimeter_led",
+          "stadium_signage"
+        ],
+        "name": "LFC Store"
+      }
+    ],
+    "summary": "The broadcast mixes heavy in-play perimeter LED rotation with team-shirt branding and several sponsor-led broadcast elements, led by a deep board roster (travel, telecom, finance, apparel, betting, drinks, skincare, retail) plus recurring replay/graphic integrations from Hublot, Barclays, New Balance, Oracle Cloud, NBC Sports, USA, and EA Sports."
+  },
+  "answer": "{\"brands\":[{\"asset_types\":[\"broadcast_graphic\",\"starting_lineup_graphic\"],\"name\":\"Barclays\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"GEICO\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Kodansha\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Expedia\"},{\"asset_types\":[\"perimeter_led\",\"scorebug_sponsor\",\"substitution_board\",\"replay_sponsor\"],\"name\":\"Hublot\"},{\"asset_types\":[\"perimeter_led\",\"replay_sponsor\"],\"name\":\"Verizon\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Coca-Cola\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Strauss\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Google Pixel 9\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"JAL\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Japan Airlines\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Carlsberg\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Sky Store\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Wasabi Air\"},{\"asset_types\":[\"shirt_front_sponsor\"],\"name\":\"Snapdragon\"},{\"asset_types\":[\"kit_manufacturer_logo\",\"perimeter_led\"],\"name\":\"Adidas\"},{\"asset_types\":[\"perimeter_led\",\"shirt_front_sponsor\"],\"name\":\"Standard Chartered\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Nike\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Orion\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"Premier League\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"EA Sports\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Workwear\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"UPS\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Peloton\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Nivea Men\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Mercurial\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Phantom\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Tiempo\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"AXA\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Ladbrokes\"},{\"asset_types\":[\"replay_sponsor\"],\"name\":\"New Balance\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"USA\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"NBC Sports\"},{\"asset_types\":[\"broadcast_graphic\"],\"name\":\"Oracle Cloud\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Lucozade\"},{\"asset_types\":[\"perimeter_led\"],\"name\":\"Husqvarna\"},{\"asset_types\":[\"perimeter_led\",\"stadium_signage\"],\"name\":\"LFC Store\"}],\"summary\":\"The broadcast mixes heavy in-play perimeter LED rotation with team-shirt branding and several sponsor-led broadcast elements, led by a deep board roster (travel, telecom, finance, apparel, betting, drinks, skincare, retail) plus recurring replay/graphic integrations from Hublot, Barclays, New Balance, Oracle Cloud, NBC Sports, USA, and EA Sports.\"}",
+  "timings": {
+    "discover_secs": 29.7
+  },
+  "provenance": {
+    "source": "jockey_live",
+    "from_cache": false,
+    "store_id": "ks_019f620e-9a99-7e92-92c7-b50eb0daed4f",
+    "game_id": "liv-mun-2025",
+    "provider": "twelvelabs",
+    "model": "jockey1.0",
+    "generated_at": null
+  }
+}

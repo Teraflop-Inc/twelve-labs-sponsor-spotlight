@@ -1,0 +1,34 @@
+/*
+ * Dev-only entry used by Storybook and local development.
+ * Do NOT publish this file; consumers should import tokens.css and
+ * theme.css separately from their own Tailwind v4 setup.
+ */
+
+@import "tailwindcss";
+
+@source "./**/*.{ts,tsx}";
+
+@import "./tokens.css";
+@import "./theme.css";
+
+@layer base {
+  * {
+    @apply border-border-secondary outline-misc-ring/50;
+  }
+  :root {
+    @apply font-tl-sans;
+  }
+  body {
+    @apply bg-surface-body text-foreground-body;
+  }
+}
+
+/* Shiki code blocks on the home site (`src/site.tsx`). Drop the theme's own
+   background so the surface-primary token shows through, and give the emitted
+   <pre> consistent padding with room on the right for the copy button. */
+.tl-code .shiki {
+  margin: 0;
+  padding: 1rem 3rem 1rem 1rem;
+  overflow-x: auto;
+  background-color: transparent !important;
+}
