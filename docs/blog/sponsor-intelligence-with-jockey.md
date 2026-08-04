@@ -16,6 +16,10 @@ What you will build:
 4. A **Creative Quality Auditor** that scores legibility and returns timestamped recommendations.
 5. A **Sponsor Valuation Dashboard** that calculates estimated media value and supports filtering, playback, and exports.
 
+[![Watch the walkthrough](../media/sponsor-spotlight-demo-poster.png)](../media/sponsor-spotlight-demo.mp4)
+
+*A short walkthrough of the finished application. [Play the video](../media/sponsor-spotlight-demo.mp4).*
+
 ![The finished analysis](../screenshots/01-report.png)
 *Figure 1: The finished report — brands ranked by estimated media value, with every economic input labelled by source.*
 
